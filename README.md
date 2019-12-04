@@ -1,7 +1,7 @@
 # Platy's Fishbowl
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/sylvia-moonfish/fishbowl/blob/master/LICENSE)
-[![Build Status](https://travis-ci.org/sylvia-moonfish/fishbowl.svg?branch=master)](https://travis-ci.org/sylvia-moonfish/fishbowl)
+Built on [platy.now.sh](https://platy.now.sh)
 
 ### Build
 

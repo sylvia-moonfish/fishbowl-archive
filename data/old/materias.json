@@ -1,0 +1,98 @@
+{
+  "craftsmanship+3": {
+    "name": "장인아",
+    "effect": "작업 숙련도 +3"
+  },
+  "craftsmanship+4": {
+    "name": "장인라",
+    "effect": "작업 숙련도 +4"
+  },
+  "craftsmanship+5": {
+    "name": "장인다",
+    "effect": "작업 숙련도 +5"
+  },
+  "craftsmanship+6": {
+    "name": "장인가",
+    "effect": "작업 숙련도 +6"
+  },
+  "craftsmanship+11": {
+    "name": "장인쟈",
+    "effect": "작업 숙련도 +11"
+  },
+  "craftsmanship+16": {
+    "name": "장인하이쟈",
+    "effect": "작업 숙련도 +16"
+  },
+  "craftsmanship+14": {
+    "name": "장인메가쟈",
+    "effect": "작업 숙련도 +14"
+  },
+  "craftsmanship+21": {
+    "name": "장인엑스쟈",
+    "effect": "작업 숙련도 +21"
+  },
+  "control+1": {
+    "name": "거장아",
+    "effect": "가공 숙련도 +1"
+  },
+  "control+2": {
+    "name": "거장라",
+    "effect": "가공 숙련도 +2"
+  },
+  "control+3": {
+    "name": "거장다",
+    "effect": "가공 숙련도 +3"
+  },
+  "control+4": {
+    "name": "거장가",
+    "effect": "가공 숙련도 +4"
+  },
+  "control+7": {
+    "name": "거장쟈",
+    "effect": "가공 숙련도 +7"
+  },
+  "control+10": {
+    "name": "거장하이쟈",
+    "effect": "가공 숙련도 +10"
+  },
+  "control+9": {
+    "name": "거장메가쟈",
+    "effect": "가공 숙련도 +9"
+  },
+  "control+13": {
+    "name": "거장엑스쟈",
+    "effect": "가공 숙련도 +13"
+  },
+  "cp+1": {
+    "name": "명인아",
+    "effect": "CP +1"
+  },
+  "cp+2": {
+    "name": "명인라",
+    "effect": "CP +2"
+  },
+  "cp+3": {
+    "name": "명인다",
+    "effect": "CP +3"
+  },
+  "cp+4": {
+    "name": "명인가",
+    "effect": "CP +4"
+  },
+  "cp+6": {
+    "name": "명인쟈",
+    "effect": "CP +6"
+  },
+  "cp+8": {
+    "name": "명인하이쟈",
+    "effect": "CP +8"
+  },
+  "cp+7": {
+    "name": "명인메가쟈",
+    "effect": "CP +7"
+  },
+  "cp+9": {
+    "name": "명인엑스쟈",
+    "effect": "CP +9"
+  }
+}

@@ -1,6 +1,5 @@
 import Head from "next/head";
-import Router from "next/router";
-import React, { useEffect } from "react";
+import React from "react";
 
 import Container from "@material-ui/core/Container";
 import Divider from "@material-ui/core/Divider";
@@ -17,6 +16,7 @@ import TableRow from "@material-ui/core/TableRow";
 import CloseIcon from "@material-ui/icons/Close";
 
 import GuideCenteredItem from "../../../../src/components/old/guide/guide-centered-item";
+import GuideGearTable from "../../../../src/components/old/guide/guide-gear-table";
 import GuideMacro from "../../../../src/components/old/guide/guide-macro";
 import GuideNormalText from "../../../../src/components/old/guide/guide-normal-text";
 import GuideRotationCard from "../../../../src/components/old/guide/guide-rotation-card";
@@ -1121,6 +1121,141 @@ const FiveZeroCraftGuide = props => {
                     </a>
                   </GuideNormalText>
                 </Grid>
+                <GuideGearTable
+                  data={[
+                    [
+                      {
+                        // 주도구
+                        gearId: 27140,
+                        materiaIds: ["cp+6", "", "", "", ""]
+                      },
+                      {
+                        gearId: -1,
+                        materiaIds: []
+                      }
+                    ],
+                    [
+                      {
+                        // 머리
+                        gearId: 27191,
+                        materiaIds: [
+                          "craftsmanship+16",
+                          "craftsmanship+16",
+                          "control+4",
+                          "control+4",
+                          "cp+2"
+                        ]
+                      },
+                      {
+                        // 부도구
+                        gearId: 27151,
+                        materiaIds: ["cp+6", "", "", "", ""]
+                      }
+                    ],
+                    [
+                      {
+                        // 몸
+                        gearId: 27192,
+                        materiaIds: [
+                          "control+10",
+                          "control+10",
+                          "control+4",
+                          "control+4",
+                          "cp+1"
+                        ]
+                      },
+                      {
+                        // 귀걸이
+                        gearId: 27222,
+                        materiaIds: ["cp+8", "cp+4", "craftsmanship+6", "", ""]
+                      }
+                    ],
+                    [
+                      {
+                        // 손
+                        gearId: 27193,
+                        materiaIds: [
+                          "craftsmanship+16",
+                          "craftsmanship+16",
+                          "control+4",
+                          "control+4",
+                          "cp+2"
+                        ]
+                      },
+                      {
+                        // 목걸이
+                        gearId: 27223,
+                        materiaIds: ["cp+8", "cp+4", "craftsmanship+6", "", ""]
+                      }
+                    ],
+                    [
+                      {
+                        // 허리
+                        gearId: 27221,
+                        materiaIds: [
+                          "control+10",
+                          "cp+4",
+                          "control+4",
+                          "cp+3",
+                          "cp+2"
+                        ]
+                      },
+                      {
+                        // 팔찌
+                        gearId: 27224,
+                        materiaIds: ["cp+8", "cp+4", "craftsmanship+6", "", ""]
+                      }
+                    ],
+                    [
+                      {
+                        // 다리
+                        gearId: 27194,
+                        materiaIds: [
+                          "control+10",
+                          "control+10",
+                          "cp+4",
+                          "cp+3",
+                          "cp+2"
+                        ]
+                      },
+                      {
+                        // 반지
+                        gearId: 27225,
+                        materiaIds: [
+                          "cp+6",
+                          "craftsmanship+6",
+                          "craftsmanship+4",
+                          "craftsmanship+4",
+                          ""
+                        ]
+                      }
+                    ],
+                    [
+                      {
+                        // 발
+                        gearId: 27195,
+                        materiaIds: [
+                          "control+10",
+                          "control+10",
+                          "cp+4",
+                          "cp+3",
+                          "cp+2"
+                        ]
+                      },
+                      {
+                        // 반지
+                        gearId: 27225,
+                        materiaIds: [
+                          "cp+6",
+                          "craftsmanship+6",
+                          "craftsmanship+4",
+                          "craftsmanship+4",
+                          ""
+                        ]
+                      }
+                    ]
+                  ]}
+                />
                 <GuideNormalText>{translate("guide-text-12")}</GuideNormalText>
               </Grid>
             ]}
