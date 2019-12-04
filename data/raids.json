@@ -1,0 +1,23 @@
+{
+  "imageBase": "https://sylvia-moonfish.github.io/fishbowl-assets/raid-guide/",
+  "imageExtension": ".png",
+  "linkBase": "/guide/raid-guide/",
+  "data": [
+    {
+      "title": "shb",
+      "patches": [
+        {
+          "patch": "5.0",
+          "items": [
+            {
+              "title": "edens-gate-sepulture-savage",
+              "level": 80,
+              "ilevel": 450,
+              "disabled": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

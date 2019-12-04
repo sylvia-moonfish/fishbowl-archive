@@ -1,0 +1,34 @@
+{
+  "name": "fishbowl",
+  "version": "1.0.0",
+  "description": "fishbowl",
+  "private": true,
+  "scripts": {
+    "format": "prettier --write pages/**/*.js src/**/*.{js,json}",
+    "develop": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sylvia-moonfish/fishbowl.git"
+  },
+  "author": "sylvia-moonfish",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sylvia-moonfish/fishbowl/issues"
+  },
+  "homepage": "https://platy.now.sh/",
+  "dependencies": {
+    "@material-ui/core": "^4.7.0",
+    "@material-ui/icons": "^4.5.1",
+    "@material-ui/styles": "^4.6.0",
+    "@next/plugin-material-ui": "^9.1.4",
+    "babel-plugin-styled-components": "^1.10.6",
+    "next": "^9.1.4",
+    "prettier": "^1.19.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "storyblok-js-client": "^2.0.10"
+  }
+}

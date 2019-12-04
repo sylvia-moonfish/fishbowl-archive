@@ -1,0 +1,11 @@
+{
+  "check-condition": "状態確認",
+  "cross-class-setup": "ロールスキル設定",
+  "cross-class-setup-finish": "ロールスキル設定完了",
+  "macro-1": "マクロ#1",
+  "macro-1-finish": "マクロ#1完了",
+  "macro-2": "マクロ#2",
+  "if-excellent": "状態が「最高品質」",
+  "if-not-excellent": "状態が「最高品質」以外",
+  "craft-finish": "完了"
+}
