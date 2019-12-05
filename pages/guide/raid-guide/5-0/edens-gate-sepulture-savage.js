@@ -1,5 +1,5 @@
 import Container from "@material-ui/core/Container";
-import { blue, blueGrey, red, teal } from "@material-ui/core/colors";
+import { blue, blueGrey, deepPurple, red } from "@material-ui/core/colors";
 import Divider from "@material-ui/core/Divider";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
@@ -38,29 +38,34 @@ class EdensGateSepultureSavage extends PageComponent {
     const types = {
       tankBuster: {
         name: "탱크버스터",
-        color: this.props.currentTheme === "light" ? red[900] : red[100]
+        color: this.props.currentTheme === "light" ? red[800] : red[200]
       },
       partyBuster: {
         name: "광역기",
-        color: this.props.currentTheme === "light" ? teal[900] : teal[100]
+        color:
+          this.props.currentTheme === "light"
+            ? deepPurple[800]
+            : deepPurple[200]
       },
       gimmick: {
         name: "기믹",
-        color: this.props.currentTheme === "light" ? blue[900] : blue[100]
+        color: this.props.currentTheme === "light" ? blue[800] : blue[200]
       },
       instruction: {
         name: "instruction",
         color:
-          this.props.currentTheme === "light" ? blueGrey[900] : blueGrey[100]
+          this.props.currentTheme === "light" ? blueGrey[800] : blueGrey[200]
       }
     };
 
     const titles = {
       stonecrusher: "Stonecrusher",
-      "weight of the land + pulse of the land":
+      "weight-of-the-land-pulse-of-the-land":
         "Weight of the Land + Pulse of the Land",
-      "evil earth": "Evil Earth",
-      "force of the land": "Force of the Land"
+      "evil-earth": "Evil Earth",
+      "force-of-the-land": "Force of the Land",
+      "voice-of-the-land": "Voice of the Land",
+      geocrush: "Geocrush"
     };
 
     const timelines = [
@@ -72,21 +77,33 @@ class EdensGateSepultureSavage extends PageComponent {
           type: types.tankBuster
         },
         {
-          id: "weight of the land + pulse of the land",
-          title: titles["weight of the land + pulse of the land"],
+          id: "weight-of-the-land-pulse-of-the-land",
+          title: titles["weight-of-the-land-pulse-of-the-land"],
           timestamp: "0:26",
           type: types.gimmick
         },
         {
-          id: "evil earth",
-          title: titles["evil earth"],
+          id: "evil-earth",
+          title: titles["evil-earth"],
           timestamp: "0:35",
           type: types.gimmick
         },
         {
-          id: "force of the land",
-          title: titles["force of the land"],
-          timestamp: "0:37",
+          id: "force-of-the-land",
+          title: titles["force-of-the-land"],
+          timestamp: "0:48",
+          type: types.gimmick
+        },
+        {
+          id: "voice-of-the-land",
+          title: titles["voice-of-the-land"],
+          timestamp: "0:51",
+          type: types.partyBuster
+        },
+        {
+          id: "geocrush",
+          title: titles["geocrush"],
+          timestamp: "1:01",
           type: types.gimmick
         }
       ]
@@ -147,8 +164,8 @@ class EdensGateSepultureSavage extends PageComponent {
         )
       },
       {
-        id: "weight of the land + pulse of the land",
-        title: titles["weight of the land + pulse of the land"],
+        id: "weight-of-the-land-pulse-of-the-land",
+        title: titles["weight-of-the-land-pulse-of-the-land"],
         children: (
           <React.Fragment>
             <CenteredBlock>
@@ -188,7 +205,7 @@ class EdensGateSepultureSavage extends PageComponent {
             </Grid>
             <CenteredBlock>
               <ImageBlock src={pageData.videoBaseUrl + "/7.png"} width={300} />
-              <ImageBlock src={pageData.videoBaseUrl + "/8.png"} width={500} />
+              <ImageBlock src={pageData.videoBaseUrl + "/8.png"} width={300} />
             </CenteredBlock>
             <Grid item>
               <Typography variant="body2">
@@ -219,8 +236,8 @@ class EdensGateSepultureSavage extends PageComponent {
         )
       },
       {
-        id: "evil earth",
-        title: titles["evil earth"],
+        id: "evil-earth",
+        title: titles["evil-earth"],
         children: (
           <React.Fragment>
             <CenteredBlock>
@@ -301,8 +318,8 @@ class EdensGateSepultureSavage extends PageComponent {
         )
       },
       {
-        id: "force of the land",
-        title: titles["force of the land"],
+        id: "force-of-the-land",
+        title: titles["force-of-the-land"],
         children: (
           <React.Fragment>
             <CenteredBlock>
@@ -339,6 +356,73 @@ class EdensGateSepultureSavage extends PageComponent {
                 것이 아니라 플레이어가 밟고 있는 바닥의 네모 칸을 기준으로
                 이루어지는 것이므로, 함께 맞을 플레이어들은 항상 바닥 칸을 잘
                 보고 같은 칸에 서 있도록 합니다.
+              </Typography>
+            </Grid>
+          </React.Fragment>
+        )
+      },
+      {
+        id: "voice-of-the-land",
+        title: titles["voice-of-the-land"],
+        children: (
+          <React.Fragment>
+            <CenteredBlock>
+              <LoopingVideoBlock
+                height={360}
+                src={pageData.videoBaseUrl + "/20.mp4"}
+              />
+            </CenteredBlock>
+            <Grid item>
+              <Typography variant="body2">
+                미니 타이탄이 사용하는 단발 광역기로 모든 파티원에게 약 5만
+                정도의 마법 피해를 줍니다.
+              </Typography>
+            </Grid>
+          </React.Fragment>
+        )
+      },
+      {
+        id: "geocrush",
+        title: titles["geocrush"],
+        children: (
+          <React.Fragment>
+            <CenteredBlock>
+              <ImageBlock src={pageData.videoBaseUrl + "/21.png"} width={500} />
+            </CenteredBlock>
+            <Grid item>
+              <Typography variant="body2">
+                타이탄이 모서리를 제외한 바깥 바닥칸 중 무작위로 한 칸을 골라
+                바라보며 Geocrush 시전을 시작합니다.
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography variant="body2">
+                타이탄이 바라보고 있는 바닥칸을 중심으로 화살표가 뻗어나가는
+                모양의 장판이 표시됩니다.
+              </Typography>
+            </Grid>
+            <CenteredBlock>
+              <LoopingVideoBlock
+                height={360}
+                src={pageData.videoBaseUrl + "/22.mp4"}
+              />
+            </CenteredBlock>
+            <Grid item>
+              <Typography variant="body2">
+                이후 시전이 끝나면 바라보고 있던 바닥칸을 향해 점프해 착지하며
+                모든 파티원들을 해당 칸의 바깥 방향으로 밀어냅니다.
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography variant="body2">
+                밀어내는 거리가 상당히 길기 때문에 해당 바닥칸 안쪽에 서 있지
+                않으면 맵 바깥까지 밀려 낙사할 수 있으므로 주의해주세요.
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography variant="body2">
+                밀쳐내기 무효화 기술을 사용하거나 밀려나는 도중에 돌진 기술 등을
+                사용해 밀려나는 것을 방지할 수 있습니다.
               </Typography>
             </Grid>
           </React.Fragment>
