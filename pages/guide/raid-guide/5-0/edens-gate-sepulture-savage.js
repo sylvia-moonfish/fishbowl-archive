@@ -65,7 +65,9 @@ class EdensGateSepultureSavage extends PageComponent {
       "evil-earth": "Evil Earth",
       "force-of-the-land": "Force of the Land",
       "voice-of-the-land": "Voice of the Land",
-      geocrush: "Geocrush"
+      geocrush: "Geocrush",
+      "earthen-gauntlets": "Earthen Gauntlets",
+      "massive-landslide": "Massive Landslide"
     };
 
     const timelines = [
@@ -73,37 +75,73 @@ class EdensGateSepultureSavage extends PageComponent {
         {
           id: "stonecrusher",
           title: titles["stonecrusher"],
+          description: "3연속 탱크 버스터",
           timestamp: "0:11",
           type: types.tankBuster
         },
         {
           id: "weight-of-the-land-pulse-of-the-land",
           title: titles["weight-of-the-land-pulse-of-the-land"],
+          description: "바닥 장판 + 노란색 세모 징",
           timestamp: "0:26",
           type: types.gimmick
         },
         {
           id: "evil-earth",
           title: titles["evil-earth"],
+          description: "연속 폭발 장판",
           timestamp: "0:35",
           type: types.gimmick
         },
         {
           id: "force-of-the-land",
           title: titles["force-of-the-land"],
+          description: "오렌지색 네모 징",
           timestamp: "0:48",
           type: types.gimmick
         },
         {
           id: "voice-of-the-land",
           title: titles["voice-of-the-land"],
+          description: "미니 타이탄 광역기",
           timestamp: "0:51",
           type: types.partyBuster
         },
         {
           id: "geocrush",
           title: titles["geocrush"],
+          description: "미니 타이탄 점프 + 넉백",
           timestamp: "1:01",
+          type: types.gimmick
+        },
+        {
+          id: "",
+          title:
+            "이후 무작위로 Earthen Gauntlets 혹은 Earthen Wheels 페이즈가 이어집니다.",
+          description: "",
+          timestamp: "",
+          type: types.instruction
+        },
+        {
+          id: "",
+          title:
+            "여기서는 Earthen Gauntlets가 사용되었다고 가정하고 진행하겠습니다.",
+          description: "",
+          timestamp: "",
+          type: types.instruction
+        },
+        {
+          id: "earthen-gauntlets",
+          title: titles["earthen-gauntlets"],
+          description: "산사태 모드로 변신",
+          timestamp: "1:10",
+          type: types.gimmick
+        },
+        {
+          id: "massive-landslide",
+          title: titles["massive-landslide"],
+          description: "산사태 + 세모네모 징",
+          timestamp: "1:17",
           type: types.gimmick
         }
       ]
@@ -427,6 +465,42 @@ class EdensGateSepultureSavage extends PageComponent {
             </Grid>
           </React.Fragment>
         )
+      },
+      {
+        id: "earthen-gauntlets",
+        title: titles["earthen-gauntlets"],
+        children: (
+          <React.Fragment>
+            <CenteredBlock>
+              <LoopingVideoBlock
+                height={360}
+                src={pageData.videoBaseUrl + "/23.mp4"}
+              />
+            </CenteredBlock>
+            <Grid item>
+              <Typography variant="body2">
+                미니 타이탄이 형태를 바꿉니다.
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography variant="body2">
+                시전 바나 기술 명칭이 보여지지 않으므로 타이탄의 모션을 보고
+                판단해야 합니다.
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography variant="body2">
+                Gauntlet의 경우 등 뒤의 바퀴가 양 손으로 가서 붙는 모션을 통해
+                확인할 수 있습니다.
+              </Typography>
+            </Grid>
+          </React.Fragment>
+        )
+      },
+      {
+        id: "massive-landslide",
+        title: titles["massive-landslide"],
+        children: <React.Fragment></React.Fragment>
       }
     ];
 

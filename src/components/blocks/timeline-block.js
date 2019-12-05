@@ -43,7 +43,7 @@ class TimelineBlock extends React.Component {
                     <Grid item>
                       <ListItemText
                         primary={item.title}
-                        secondary={item.type.name}
+                        secondary={item.description}
                         style={{
                           color: item.type.color
                         }}
