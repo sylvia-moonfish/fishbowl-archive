@@ -1,5 +1,6 @@
 import Head from "next/head";
-import React from "react";
+import Router from "next/router";
+import React, { useEffect } from "react";
 
 import Container from "@material-ui/core/Container";
 import Divider from "@material-ui/core/Divider";
@@ -34,7 +35,17 @@ import actionsJa from "../../../../src/translations/special/actions/ja";
 import actionsKo from "../../../../src/translations/special/actions/ko";
 import macroTime from "../../../../data/old/macro-time";
 
+import SiteInfo from "../../../../data/site-info";
+
 const FiveZeroCraftGuide = props => {
+  useEffect(() => {
+    Router.onRouteChangeComplete = url => {
+      window.gtag("config", SiteInfo.gtmId, {
+        page_location: url
+      });
+    };
+  });
+
   const assetsUrl = url => {
     return "https://sylvia-moonfish.github.io/fishbowl-assets/" + url;
   };
@@ -1113,11 +1124,11 @@ const FiveZeroCraftGuide = props => {
                     {translate("guide-text-3")}
                     <a
                       className={classes.link}
-                      href="https://ffxiv.ariyala.com/19TTD"
+                      href="https://ffxiv.ariyala.com/1BH7L"
                       rel="noopener noreferrer"
                       target="_blank"
                     >
-                      https://ffxiv.ariyala.com/19TTD
+                      https://ffxiv.ariyala.com/1BH7L
                     </a>
                   </GuideNormalText>
                 </Grid>
@@ -1366,12 +1377,141 @@ const FiveZeroCraftGuide = props => {
             금단 예제:{" "}
             <a
               className={classes.link}
-              href="https://ffxiv.ariyala.com/1B486"
+              href="https://ffxiv.ariyala.com/1BH7M"
               rel="noopener noreferrer"
               target="_blank"
             >
-              https://ffxiv.ariyala.com/1B486
+              https://ffxiv.ariyala.com/1BH7M
             </a>
+          </GuideNormalText>
+          <GuideGearTable
+            data={[
+              [
+                {
+                  // 주도구
+                  gearId: 27140,
+                  materiaIds: ["", "", "", "", ""]
+                },
+                {
+                  gearId: -1,
+                  materiaIds: []
+                }
+              ],
+              [
+                {
+                  // 머리
+                  gearId: 27191,
+                  materiaIds: ["", "", "", "", ""]
+                },
+                {
+                  // 부도구
+                  gearId: 27151,
+                  materiaIds: ["", "", "", "", ""]
+                }
+              ],
+              [
+                {
+                  // 몸
+                  gearId: 27192,
+                  materiaIds: ["", "", "", "", ""]
+                },
+                {
+                  // 귀걸이
+                  gearId: 27222,
+                  materiaIds: [
+                    "control+13",
+                    "cp+8",
+                    "control+9",
+                    "control+9",
+                    "cp+4"
+                  ]
+                }
+              ],
+              [
+                {
+                  // 손
+                  gearId: 27193,
+                  materiaIds: ["", "", "", "", ""]
+                },
+                {
+                  // 목걸이
+                  gearId: 27223,
+                  materiaIds: [
+                    "control+13",
+                    "cp+8",
+                    "control+9",
+                    "control+9",
+                    "cp+4"
+                  ]
+                }
+              ],
+              [
+                {
+                  // 허리
+                  gearId: 27221,
+                  materiaIds: [
+                    "cp+9",
+                    "craftsmanship+14",
+                    "control+9",
+                    "control+9",
+                    "control+9"
+                  ]
+                },
+                {
+                  // 팔찌
+                  gearId: 27224,
+                  materiaIds: [
+                    "control+13",
+                    "cp+8",
+                    "control+9",
+                    "control+9",
+                    "cp+4"
+                  ]
+                }
+              ],
+              [
+                {
+                  // 다리
+                  gearId: 27194,
+                  materiaIds: ["", "", "", "", ""]
+                },
+                {
+                  // 반지
+                  gearId: 27225,
+                  materiaIds: [
+                    "craftsmanship+21",
+                    "craftsmanship+14",
+                    "craftsmanship+14",
+                    "control+9",
+                    "cp+6"
+                  ]
+                }
+              ],
+              [
+                {
+                  // 발
+                  gearId: 27195,
+                  materiaIds: ["", "", "", "", ""]
+                },
+                {
+                  // 반지
+                  gearId: 27225,
+                  materiaIds: [
+                    "craftsmanship+21",
+                    "craftsmanship+14",
+                    "control+9",
+                    "cp+6",
+                    "control+4"
+                  ]
+                }
+              ]
+            ]}
+          />
+          <GuideNormalText>
+            다만 초기 80 금단 스펙으로도 초품 HQ 1개만 있으면 5.1에 추가되는
+            신규 2성 제작 장비를 HQ로 제작할 수 있으며 5.1 이슈가르드 재건 패치
+            후 제작 마테리아의 가격이 많이 떨어지기 때문에 위 금단이 너무
+            부담된다면 80 초기 금단 스펙 그대로 5.1까지 기다리셔도 괜찮습니다.
           </GuideNormalText>
         </Grid>
       </Container>

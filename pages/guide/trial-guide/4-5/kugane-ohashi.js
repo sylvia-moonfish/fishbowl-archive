@@ -19,7 +19,17 @@ import GuideYtFrame from "../../../../src/components/old/guide/guide-yt-frame";
 import en from "../../../../src/translations/pages/guide/trial-guide/kugane-ohashi/en";
 import ko from "../../../../src/translations/pages/guide/trial-guide/kugane-ohashi/ko";
 
+import SiteInfo from "../../../../data/site-info";
+
 const KuganeOhashi = props => {
+  useEffect(() => {
+    Router.onRouteChangeComplete = url => {
+      window.gtag("config", SiteInfo.gtmId, {
+        page_location: url
+      });
+    };
+  });
+
   const assetUrl = url => {
     return "https://sylvia-moonfish.github.io/fishbowl-assets/" + url;
   };

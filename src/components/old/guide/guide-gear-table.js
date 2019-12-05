@@ -79,7 +79,17 @@ const GuideGearTable = props => {
                         return (
                           <TableCell align="center" key={i} padding="none">
                             {m && m.length > 0 && (
-                              <Chip label={materias[m].name} />
+                              <Tooltip
+                                title={
+                                  <React.Fragment>
+                                    <Typography variant="body2">
+                                      {materias[m].effect}
+                                    </Typography>
+                                  </React.Fragment>
+                                }
+                              >
+                                <Chip label={materias[m].name} />
+                              </Tooltip>
                             )}
                           </TableCell>
                         );
