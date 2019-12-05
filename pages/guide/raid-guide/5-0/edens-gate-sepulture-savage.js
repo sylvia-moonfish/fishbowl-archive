@@ -58,91 +58,99 @@ class EdensGateSepultureSavage extends PageComponent {
       }
     };
 
-    const titles = {
-      stonecrusher: "Stonecrusher",
-      "weight-of-the-land-pulse-of-the-land":
-        "Weight of the Land + Pulse of the Land",
-      "evil-earth": "Evil Earth",
-      "force-of-the-land": "Force of the Land",
-      "voice-of-the-land": "Voice of the Land",
-      geocrush: "Geocrush",
-      "earthen-gauntlets": "Earthen Gauntlets",
-      "massive-landslide": "Massive Landslide"
+    const names = {
+      stonecrusher: {
+        name: "Stonecrusher",
+        description: "3연속 탱크 버스터"
+      },
+      weightOfTheLandPulseOfTheLand: {
+        name: "Weight of the Land + Pulse of the Land",
+        description: "바닥 장판 + 노란색 세모 징"
+      },
+      evilEarth: {
+        name: "Evil Earth",
+        description: "연속 폭발 장판"
+      },
+      forceOfTheLand: {
+        name: "Force of the Land",
+        description: "오렌지색 네모 징"
+      },
+      voiceOfTheLand: {
+        name: "Voice of the Land",
+        description: "미니 타이탄 광역기"
+      },
+      geocrush: {
+        name: "Geocrush",
+        description: "미니 타이탄 점프 + 넉백"
+      },
+      earthenGauntlets: {
+        name: "Earthen Gauntlets",
+        description: "산사태 형태로 변신"
+      },
+      massiveLandslide: {
+        name: "Massive Landslide",
+        description: "산사태 + 세모네모 징"
+      }
     };
 
     const timelines = [
       [
         {
           id: "stonecrusher",
-          title: titles["stonecrusher"],
-          description: "3연속 탱크 버스터",
           timestamp: "0:11",
           type: types.tankBuster
         },
         {
-          id: "weight-of-the-land-pulse-of-the-land",
-          title: titles["weight-of-the-land-pulse-of-the-land"],
-          description: "바닥 장판 + 노란색 세모 징",
+          id: "weightOfTheLandPulseOfTheLand",
           timestamp: "0:26",
           type: types.gimmick
         },
         {
-          id: "evil-earth",
-          title: titles["evil-earth"],
-          description: "연속 폭발 장판",
+          id: "evilEarth",
           timestamp: "0:35",
           type: types.gimmick
         },
         {
-          id: "force-of-the-land",
-          title: titles["force-of-the-land"],
-          description: "오렌지색 네모 징",
+          id: "forceOfTheLand",
           timestamp: "0:48",
           type: types.gimmick
         },
         {
-          id: "voice-of-the-land",
-          title: titles["voice-of-the-land"],
-          description: "미니 타이탄 광역기",
+          id: "voiceOfTheLand",
           timestamp: "0:51",
           type: types.partyBuster
         },
         {
           id: "geocrush",
-          title: titles["geocrush"],
-          description: "미니 타이탄 점프 + 넉백",
           timestamp: "1:01",
           type: types.gimmick
         },
         {
-          id: "",
-          title:
+          id:
             "이후 무작위로 Earthen Gauntlets 혹은 Earthen Wheels 페이즈가 이어집니다.",
-          description: "",
           timestamp: "",
           type: types.instruction
         },
         {
-          id: "",
-          title:
+          id:
             "여기서는 Earthen Gauntlets가 사용되었다고 가정하고 진행하겠습니다.",
-          description: "",
           timestamp: "",
           type: types.instruction
         },
         {
-          id: "earthen-gauntlets",
-          title: titles["earthen-gauntlets"],
-          description: "산사태 모드로 변신",
+          id: "earthenGauntlets",
           timestamp: "1:10",
           type: types.gimmick
         },
         {
-          id: "massive-landslide",
-          title: titles["massive-landslide"],
-          description: "산사태 + 세모네모 징",
+          id: "massiveLandslide",
           timestamp: "1:17",
           type: types.gimmick
+        },
+        {
+          id: "voiceOfTheLand",
+          timestamp: "1:27",
+          type: types.partyBuster
         }
       ]
     ];
@@ -150,7 +158,6 @@ class EdensGateSepultureSavage extends PageComponent {
     const dialogs = [
       {
         id: "stonecrusher",
-        title: titles["stonecrusher"],
         children: (
           <React.Fragment>
             <CenteredBlock>
@@ -202,8 +209,7 @@ class EdensGateSepultureSavage extends PageComponent {
         )
       },
       {
-        id: "weight-of-the-land-pulse-of-the-land",
-        title: titles["weight-of-the-land-pulse-of-the-land"],
+        id: "weightOfTheLandPulseOfTheLand",
         children: (
           <React.Fragment>
             <CenteredBlock>
@@ -274,8 +280,7 @@ class EdensGateSepultureSavage extends PageComponent {
         )
       },
       {
-        id: "evil-earth",
-        title: titles["evil-earth"],
+        id: "evilEarth",
         children: (
           <React.Fragment>
             <CenteredBlock>
@@ -323,7 +328,12 @@ class EdensGateSepultureSavage extends PageComponent {
               </Typography>
             </Grid>
             <Grid item>
-              <Typography variant="body2">
+              <Typography
+                style={{
+                  color: types.tankBuster.color
+                }}
+                variant="body2"
+              >
                 * "Evil Earth" 회피 전 "Pulse of the Land (노란색 세모 징)"
                 처리를 위해 산개한 상태이므로 집합 장소 반대쪽으로 산개한
                 플레이어들은 "전력 질주"를 꼭 사용해주세요.
@@ -356,8 +366,7 @@ class EdensGateSepultureSavage extends PageComponent {
         )
       },
       {
-        id: "force-of-the-land",
-        title: titles["force-of-the-land"],
+        id: "forceOfTheLand",
         children: (
           <React.Fragment>
             <CenteredBlock>
@@ -400,8 +409,7 @@ class EdensGateSepultureSavage extends PageComponent {
         )
       },
       {
-        id: "voice-of-the-land",
-        title: titles["voice-of-the-land"],
+        id: "voiceOfTheLand",
         children: (
           <React.Fragment>
             <CenteredBlock>
@@ -421,7 +429,6 @@ class EdensGateSepultureSavage extends PageComponent {
       },
       {
         id: "geocrush",
-        title: titles["geocrush"],
         children: (
           <React.Fragment>
             <CenteredBlock>
@@ -430,7 +437,7 @@ class EdensGateSepultureSavage extends PageComponent {
             <Grid item>
               <Typography variant="body2">
                 타이탄이 모서리를 제외한 바깥 바닥칸 중 무작위로 한 칸을 골라
-                바라보며 Geocrush 시전을 시작합니다.
+                바라보며 "Geocrush" 시전을 시작합니다.
               </Typography>
             </Grid>
             <Grid item>
@@ -467,8 +474,7 @@ class EdensGateSepultureSavage extends PageComponent {
         )
       },
       {
-        id: "earthen-gauntlets",
-        title: titles["earthen-gauntlets"],
+        id: "earthenGauntlets",
         children: (
           <React.Fragment>
             <CenteredBlock>
@@ -490,17 +496,64 @@ class EdensGateSepultureSavage extends PageComponent {
             </Grid>
             <Grid item>
               <Typography variant="body2">
-                Gauntlet의 경우 등 뒤의 바퀴가 양 손으로 가서 붙는 모션을 통해
-                확인할 수 있습니다.
+                "Earthen Gauntlets" 의 경우 등 뒤의 바퀴가 양 손으로 가서 붙는
+                모션을 통해 확인할 수 있습니다.
               </Typography>
             </Grid>
           </React.Fragment>
         )
       },
       {
-        id: "massive-landslide",
-        title: titles["massive-landslide"],
-        children: <React.Fragment></React.Fragment>
+        id: "massiveLandslide",
+        children: (
+          <React.Fragment>
+            <Grid item>
+              <Typography variant="body2">
+                "Earthen Gauntlets" 이후 곧바로 시전 바 없이 "Massive Landslide"
+                와 "Pulse of the Land (노란색 세모 징)", "Force of the Land
+                (오렌지색 네모 징)" 를 사용합니다.
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography variant="body2">
+                무작위로 한 명의 탱커, 한 명의 딜러, 한 명의 힐러에게 "Pulse of
+                the Land (노란색 세모 징)" 이 표시되고 나머지 파티원들에게는
+                "Force of the Land (오랜지색 네모 징)" 이 표시됩니다.
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography variant="body2">
+                이와 동시에 타이탄이 "Massive Landslide" 를 사용합니다. 정면
+                직선 범위를 제외한 맵 전체를 덮는 범위 공격이며 맞을 경우 맵
+                바깥으로 밀려나 낙사하게 됩니다.
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography variant="body2">
+                "Massive Landslide" 에서 안전한 바닥칸이 4칸 뿐이므로 위와 같이
+                산개해 "Massive Landslide" 와 징을 동시에 처리합니다.
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography
+                style={{
+                  color: types.tankBuster.color
+                }}
+                variant="body2"
+              >
+                * 예외로 노란색 세모 징에 걸린 딜러가 원거리 딜러일 경우에는
+                노란색 세모 징에 걸린 탱커와 자리를 바꿔 탱커가 조금이나마 딜을
+                더 넣을 수 있도록 할 수도 있습니다.
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography variant="body2">
+                이후 "Massive Landslide" 때 공격하지 않았던 정면 직선 범위로
+                후속타가 오므로 재빨리 피해줍니다.
+              </Typography>
+            </Grid>
+          </React.Fragment>
+        )
       }
     ];
 
@@ -575,6 +628,7 @@ class EdensGateSepultureSavage extends PageComponent {
                         </Typography>
                       </Grid>
                       <TimelineBlock
+                        names={names}
                         onClick={dialogId => {
                           this.state.openedDialog = dialogId;
                           this.setState(this.state);
@@ -614,12 +668,12 @@ class EdensGateSepultureSavage extends PageComponent {
               children={dialog.children}
               id={dialog.id}
               key={dialogIndex}
+              names={names}
               onClose={() => {
                 this.state.openedDialog = false;
                 this.setState(this.state);
               }}
               openedDialog={this.state.openedDialog}
-              title={dialog.title}
             />
           );
         })}

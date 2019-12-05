@@ -20,7 +20,7 @@ class TimelineBlock extends React.Component {
               return (
                 <ListItem key={itemIndex}>
                   <ListItemText
-                    primary={item.title}
+                    primary={item.id}
                     style={{
                       color: item.type.color
                     }}
@@ -42,8 +42,8 @@ class TimelineBlock extends React.Component {
                     </Grid>
                     <Grid item>
                       <ListItemText
-                        primary={item.title}
-                        secondary={item.description}
+                        primary={this.props.names[item.id].name}
+                        secondary={this.props.names[item.id].description}
                         style={{
                           color: item.type.color
                         }}

@@ -37,7 +37,9 @@ class TimelineDialogBlock extends React.Component {
                 flexGrow: 1
               }}
             >
-              <Typography variant="h6">{this.props.title}</Typography>
+              <Typography variant="h6">
+                {this.props.names[this.props.id].name}
+              </Typography>
             </div>
             <IconButton onClick={this.props.onClose}>
               <CloseIcon />
