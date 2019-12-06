@@ -14,7 +14,8 @@ class ExpansionPanelsBlock extends React.Component {
     super(props);
 
     this.state = {
-      expandedPanel: false
+      //expandedPanel: false
+      expandedPanel: 0
     };
   }
 

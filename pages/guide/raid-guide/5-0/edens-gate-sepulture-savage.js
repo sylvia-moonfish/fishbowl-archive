@@ -10,6 +10,7 @@ import ExpansionTitles from "../../../../data/expansion-titles";
 import SiteInfo from "../../../../data/site-info";
 import CenteredBlock from "../../../../src/components/blocks/centered-block";
 import ExpansionPanelsBlock from "../../../../src/components/blocks/expansion-panels-block";
+import GimmicksBlock from "../../../../src/components/blocks/gimmicks-block";
 import ImageBlock from "../../../../src/components/blocks/image-block";
 import LoopingVideoBlock from "../../../../src/components/blocks/looping-video-block";
 import TimelineBlock from "../../../../src/components/blocks/timeline-block";
@@ -35,247 +36,154 @@ class EdensGateSepultureSavage extends PageComponent {
   }
 
   render() {
-    const types = {
-      tankBuster: {
-        name: "탱크버스터",
-        color: this.props.currentTheme === "light" ? red[800] : red[200]
-      },
-      partyBuster: {
-        name: "광역기",
-        color:
-          this.props.currentTheme === "light"
-            ? deepPurple[800]
-            : deepPurple[200]
-      },
-      gimmick: {
-        name: "기믹",
-        color: this.props.currentTheme === "light" ? blue[800] : blue[200]
-      },
-      instruction: {
-        name: "instruction",
-        color:
-          this.props.currentTheme === "light" ? blueGrey[800] : blueGrey[200]
-      }
+    const colors = {
+      red: this.props.currentTheme === "light" ? red[800] : red[200],
+      deepPurple:
+        this.props.currentTheme === "light" ? deepPurple[800] : deepPurple[200],
+      blue: this.props.currentTheme === "light" ? blue[800] : blue[200],
+      blueGrey:
+        this.props.currentTheme === "light" ? blueGrey[800] : blueGrey[200]
     };
 
-    const names = {
-      stonecrusher: {
-        name: "Stonecrusher",
-        description: "3연속 탱크 버스터"
-      },
-      weightOfTheLandPulseOfTheLand: {
-        name: "Weight of the Land + Pulse of the Land",
-        description: "바닥 장판 + 노란색 세모 징"
+    const gimmickTypeColors = {
+      tankBuster: colors.red,
+      partyBuster: colors.deepPurple,
+      gimmick: colors.blue,
+      instruction: colors.blueGrey
+    };
+
+    const gimmickData = {
+      earthenGauntlets: {
+        name: "Earthen Gauntlets",
+        description: "산사태 형태로 변신",
+        color: gimmickTypeColors.gimmick
       },
       evilEarth: {
         name: "Evil Earth",
-        description: "연속 폭발 장판"
+        description: "연속 폭발 장판",
+        color: gimmickTypeColors.gimmick
       },
       forceOfTheLand: {
         name: "Force of the Land",
-        description: "오렌지색 네모 징"
-      },
-      voiceOfTheLand: {
-        name: "Voice of the Land",
-        description: "미니 타이탄 광역기"
+        description: "오렌지색 네모 징",
+        color: gimmickTypeColors.gimmick
       },
       geocrush: {
         name: "Geocrush",
-        description: "미니 타이탄 점프 + 넉백"
-      },
-      earthenGauntlets: {
-        name: "Earthen Gauntlets",
-        description: "산사태 형태로 변신"
+        description: "미니 타이탄 점프 + 넉백",
+        color: gimmickTypeColors.gimmick
       },
       massiveLandslide: {
         name: "Massive Landslide",
-        description: "산사태 + 세모네모 징"
+        description: "산사태 + 세모네모 징",
+        color: gimmickTypeColors.gimmick
+      },
+      stonecrusher: {
+        name: "Stonecrusher",
+        description: "3연속 탱크 버스터",
+        color: gimmickTypeColors.tankBuster
+      },
+      voiceOfTheLand: {
+        name: "Voice of the Land",
+        description: "미니 타이탄 광역기",
+        color: gimmickTypeColors.partyBuster
+      },
+      weightOfTheLandPulseOfTheLand: {
+        name: "Weight of the Land + Pulse of the Land",
+        description: "바닥 장판 + 노란색 세모 징",
+        color: gimmickTypeColors.gimmick
       }
     };
+
+    const gimmicks = [
+      "earthenGauntlets",
+      "evilEarth",
+      "forceOfTheLand",
+      "geocrush",
+      "massiveLandslide",
+      "stonecrusher",
+      "voiceOfTheLand"
+    ];
 
     const timelines = [
       [
         {
           id: "stonecrusher",
-          timestamp: "0:11",
-          type: types.tankBuster
+          timestamp: "0:11"
         },
         {
           id: "weightOfTheLandPulseOfTheLand",
-          timestamp: "0:26",
-          type: types.gimmick
+          timestamp: "0:26"
         },
         {
           id: "evilEarth",
-          timestamp: "0:35",
-          type: types.gimmick
+          timestamp: "0:35"
         },
         {
           id: "forceOfTheLand",
-          timestamp: "0:48",
-          type: types.gimmick
+          timestamp: "0:48"
         },
         {
           id: "voiceOfTheLand",
-          timestamp: "0:51",
-          type: types.partyBuster
+          timestamp: "0:51"
         },
         {
           id: "geocrush",
-          timestamp: "1:01",
-          type: types.gimmick
+          timestamp: "1:01"
         },
         {
-          id:
+          instruction:
             "이후 무작위로 Earthen Gauntlets 혹은 Earthen Wheels 페이즈가 이어집니다.",
-          timestamp: "",
-          type: types.instruction
+          color: gimmickTypeColors.instruction
         },
         {
-          id:
+          instruction:
             "여기서는 Earthen Gauntlets가 사용되었다고 가정하고 진행하겠습니다.",
-          timestamp: "",
-          type: types.instruction
+          color: gimmickTypeColors.instruction
         },
         {
           id: "earthenGauntlets",
-          timestamp: "1:10",
-          type: types.gimmick
+          timestamp: "1:10"
         },
         {
           id: "massiveLandslide",
-          timestamp: "1:17",
-          type: types.gimmick
+          timestamp: "1:17"
         },
         {
           id: "voiceOfTheLand",
-          timestamp: "1:27",
-          type: types.partyBuster
+          timestamp: "1:27"
         }
       ]
     ];
 
     const dialogs = [
       {
-        id: "stonecrusher",
+        id: "earthenGauntlets",
         children: (
           <React.Fragment>
             <CenteredBlock>
               <LoopingVideoBlock
                 height={360}
-                src={pageData.videoBaseUrl + "/2.mp4"}
+                src={pageData.videoBaseUrl + "/23.mp4"}
               />
             </CenteredBlock>
             <Grid item>
               <Typography variant="body2">
-                1어글자를 총 3번 넓은 원형 범위로 타격하는 탱크 버스터입니다.
+                미니 타이탄이 형태를 바꿉니다.
               </Typography>
             </Grid>
             <Grid item>
               <Typography variant="body2">
-                각 타격마다 "물리 방어 감소" 디버프를 부여하므로 2번의 도발을
-                통해 각 타격을 나눠맞거나 무적기로 처리할 수 있습니다.
+                시전 바나 기술 명칭이 보여지지 않으므로 타이탄의 모션을 보고
+                판단해야 합니다.
               </Typography>
             </Grid>
             <Grid item>
               <Typography variant="body2">
-                첫 페이즈에 총 2번밖에 사용하지 않으므로 보통 탱커 둘이 돌아가며
-                무적기로 처리하는 것이 일반적입니다.
+                "Earthen Gauntlets" 의 경우 등 뒤의 바퀴가 양 손으로 가서 붙는
+                모션을 통해 확인할 수 있습니다.
               </Typography>
             </Grid>
-            <Grid item>
-              <Typography variant="body2">
-                타격 범위가 넓은 편이므로 탱커 근처에 갔다가 휩쓸리지 않도록
-                주의해주세요.
-              </Typography>
-            </Grid>
-            <Grid item>
-              <Divider variant="middle" />
-            </Grid>
-            <CenteredBlock>
-              <LoopingVideoBlock
-                height={360}
-                src={pageData.videoBaseUrl + "/3.mp4"}
-              />
-            </CenteredBlock>
-            <Grid item>
-              <Typography variant="body2">
-                전사나 건브레이커의 경우 무적기의 지속 시간이 아슬아슬해서 3번의
-                타격 전부를 커버할 수 없으므로 "보복" 등의 생존기를 사용해 첫
-                타격을 맞고 이후 후속타를 무적기로 넘기는 것을 추천드립니다.
-              </Typography>
-            </Grid>
-          </React.Fragment>
-        )
-      },
-      {
-        id: "weightOfTheLandPulseOfTheLand",
-        children: (
-          <React.Fragment>
-            <CenteredBlock>
-              <LoopingVideoBlock
-                height={360}
-                src={pageData.videoBaseUrl + "/4.mp4"}
-              />
-            </CenteredBlock>
-            <Grid item>
-              <Typography variant="body2">
-                "Weight of the Land" 를 시전합니다. 시전이 끝나면 무작위로 8칸의
-                바닥 위에 장판이 표시됩니다.
-              </Typography>
-            </Grid>
-            <CenteredBlock>
-              <ImageBlock src={pageData.videoBaseUrl + "/5.png"} width={182} />
-            </CenteredBlock>
-            <Grid item>
-              <Typography variant="body2">
-                이후 모든 파티원들의 머리 위에 "Pulse of the Land" 징 (노란색
-                세모 모양) 이 표시됩니다.
-              </Typography>
-            </Grid>
-            <CenteredBlock>
-              <LoopingVideoBlock
-                height={360}
-                src={pageData.videoBaseUrl + "/6.mp4"}
-              />
-            </CenteredBlock>
-            <Grid item>
-              <Typography variant="body2">
-                노란색 세모 징이 사라지는 시점에 해당 플레이어가 서 있는 바닥
-                칸이 폭발하며 약 5만 정도의 마법 피해를 입게 됩니다. 또한 "받는
-                마법 피해 증가" 디버프를 부여받으므로 다른 플레이어와 겹쳐 맞지
-                않도록 해야 합니다.
-              </Typography>
-            </Grid>
-            <CenteredBlock>
-              <ImageBlock src={pageData.videoBaseUrl + "/7.png"} width={300} />
-              <ImageBlock src={pageData.videoBaseUrl + "/8.png"} width={300} />
-            </CenteredBlock>
-            <Grid item>
-              <Typography variant="body2">
-                "Pulse of the Land" 의 폭발 판정은 플레이어를 중심으로
-                이루어지는 것이 아니라 플레이어가 밟고 있는 바닥의 네모 칸을
-                기준으로 이루어지는 것이므로, 항상 바닥 칸을 잘 보고 다른
-                플레이어와 같은 칸에 서 있지 않도록 합니다.
-              </Typography>
-            </Grid>
-            <CenteredBlock>
-              <LoopingVideoBlock
-                height={360}
-                src={pageData.videoBaseUrl + "/9.mp4"}
-              />
-            </CenteredBlock>
-            <Grid item>
-              <Typography variant="body2">
-                기믹 발동 순서는 "Weight of the Land (8개 바닥 장판)" → "Pulse
-                of the Land (노란색 세모 징)" 순서이므로 일단 바닥 장판을 먼저
-                피하고 나서 산개 매크로 위치대로 이동해 "Pulse of the Land" 를
-                처리해줍니다. 산개 위치는 아래와 같습니다.
-              </Typography>
-            </Grid>
-            <CenteredBlock>
-              <ImageBlock src={pageData.videoBaseUrl + "/10.png"} width={500} />
-            </CenteredBlock>
           </React.Fragment>
         )
       },
@@ -330,7 +238,7 @@ class EdensGateSepultureSavage extends PageComponent {
             <Grid item>
               <Typography
                 style={{
-                  color: types.tankBuster.color
+                  color: colors.red
                 }}
                 variant="body2"
               >
@@ -409,25 +317,6 @@ class EdensGateSepultureSavage extends PageComponent {
         )
       },
       {
-        id: "voiceOfTheLand",
-        children: (
-          <React.Fragment>
-            <CenteredBlock>
-              <LoopingVideoBlock
-                height={360}
-                src={pageData.videoBaseUrl + "/20.mp4"}
-              />
-            </CenteredBlock>
-            <Grid item>
-              <Typography variant="body2">
-                미니 타이탄이 사용하는 단발 광역기로 모든 파티원에게 약 5만
-                정도의 마법 피해를 줍니다.
-              </Typography>
-            </Grid>
-          </React.Fragment>
-        )
-      },
-      {
         id: "geocrush",
         children: (
           <React.Fragment>
@@ -474,36 +363,6 @@ class EdensGateSepultureSavage extends PageComponent {
         )
       },
       {
-        id: "earthenGauntlets",
-        children: (
-          <React.Fragment>
-            <CenteredBlock>
-              <LoopingVideoBlock
-                height={360}
-                src={pageData.videoBaseUrl + "/23.mp4"}
-              />
-            </CenteredBlock>
-            <Grid item>
-              <Typography variant="body2">
-                미니 타이탄이 형태를 바꿉니다.
-              </Typography>
-            </Grid>
-            <Grid item>
-              <Typography variant="body2">
-                시전 바나 기술 명칭이 보여지지 않으므로 타이탄의 모션을 보고
-                판단해야 합니다.
-              </Typography>
-            </Grid>
-            <Grid item>
-              <Typography variant="body2">
-                "Earthen Gauntlets" 의 경우 등 뒤의 바퀴가 양 손으로 가서 붙는
-                모션을 통해 확인할 수 있습니다.
-              </Typography>
-            </Grid>
-          </React.Fragment>
-        )
-      },
-      {
         id: "massiveLandslide",
         children: (
           <React.Fragment>
@@ -537,7 +396,7 @@ class EdensGateSepultureSavage extends PageComponent {
             <Grid item>
               <Typography
                 style={{
-                  color: types.tankBuster.color
+                  color: colors.red
                 }}
                 variant="body2"
               >
@@ -552,6 +411,148 @@ class EdensGateSepultureSavage extends PageComponent {
                 후속타가 오므로 재빨리 피해줍니다.
               </Typography>
             </Grid>
+          </React.Fragment>
+        )
+      },
+      {
+        id: "stonecrusher",
+        children: (
+          <React.Fragment>
+            <CenteredBlock>
+              <LoopingVideoBlock
+                height={360}
+                src={pageData.videoBaseUrl + "/2.mp4"}
+              />
+            </CenteredBlock>
+            <Grid item>
+              <Typography variant="body2">
+                1어글자를 총 3번 넓은 원형 범위로 타격하는 탱크 버스터입니다.
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography variant="body2">
+                각 타격마다 "물리 방어 감소" 디버프를 부여하므로 2번의 도발을
+                통해 각 타격을 나눠맞거나 무적기로 처리할 수 있습니다.
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography variant="body2">
+                첫 페이즈에 총 2번밖에 사용하지 않으므로 보통 탱커 둘이 돌아가며
+                무적기로 처리하는 것이 일반적입니다.
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography variant="body2">
+                타격 범위가 넓은 편이므로 탱커 근처에 갔다가 휩쓸리지 않도록
+                주의해주세요.
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Divider variant="middle" />
+            </Grid>
+            <CenteredBlock>
+              <LoopingVideoBlock
+                height={360}
+                src={pageData.videoBaseUrl + "/3.mp4"}
+              />
+            </CenteredBlock>
+            <Grid item>
+              <Typography variant="body2">
+                전사나 건브레이커의 경우 무적기의 지속 시간이 아슬아슬해서 3번의
+                타격 전부를 커버할 수 없으므로 "보복" 등의 생존기를 사용해 첫
+                타격을 맞고 이후 후속타를 무적기로 넘기는 것을 추천드립니다.
+              </Typography>
+            </Grid>
+          </React.Fragment>
+        )
+      },
+      {
+        id: "voiceOfTheLand",
+        children: (
+          <React.Fragment>
+            <CenteredBlock>
+              <LoopingVideoBlock
+                height={360}
+                src={pageData.videoBaseUrl + "/20.mp4"}
+              />
+            </CenteredBlock>
+            <Grid item>
+              <Typography variant="body2">
+                미니 타이탄이 사용하는 단발 광역기로 모든 파티원에게 약 5만
+                정도의 마법 피해를 줍니다.
+              </Typography>
+            </Grid>
+          </React.Fragment>
+        )
+      },
+      {
+        id: "weightOfTheLandPulseOfTheLand",
+        children: (
+          <React.Fragment>
+            <CenteredBlock>
+              <LoopingVideoBlock
+                height={360}
+                src={pageData.videoBaseUrl + "/4.mp4"}
+              />
+            </CenteredBlock>
+            <Grid item>
+              <Typography variant="body2">
+                "Weight of the Land" 를 시전합니다. 시전이 끝나면 무작위로 8칸의
+                바닥 위에 장판이 표시됩니다.
+              </Typography>
+            </Grid>
+            <CenteredBlock>
+              <ImageBlock src={pageData.videoBaseUrl + "/5.png"} width={182} />
+            </CenteredBlock>
+            <Grid item>
+              <Typography variant="body2">
+                이후 모든 파티원들의 머리 위에 "Pulse of the Land" 징 (노란색
+                세모 모양) 이 표시됩니다.
+              </Typography>
+            </Grid>
+            <CenteredBlock>
+              <LoopingVideoBlock
+                height={360}
+                src={pageData.videoBaseUrl + "/6.mp4"}
+              />
+            </CenteredBlock>
+            <Grid item>
+              <Typography variant="body2">
+                노란색 세모 징이 사라지는 시점에 해당 플레이어가 서 있는 바닥
+                칸이 폭발하며 약 5만 정도의 마법 피해를 입게 됩니다. 또한 "받는
+                마법 피해 증가" 디버프를 부여받으므로 다른 플레이어와 겹쳐 맞지
+                않도록 해야 합니다.
+              </Typography>
+            </Grid>
+            <CenteredBlock>
+              <ImageBlock src={pageData.videoBaseUrl + "/7.png"} width={300} />
+              <ImageBlock src={pageData.videoBaseUrl + "/8.png"} width={300} />
+            </CenteredBlock>
+            <Grid item>
+              <Typography variant="body2">
+                "Pulse of the Land" 의 폭발 판정은 플레이어를 중심으로
+                이루어지는 것이 아니라 플레이어가 밟고 있는 바닥의 네모 칸을
+                기준으로 이루어지는 것이므로, 항상 바닥 칸을 잘 보고 다른
+                플레이어와 같은 칸에 서 있지 않도록 합니다.
+              </Typography>
+            </Grid>
+            <CenteredBlock>
+              <LoopingVideoBlock
+                height={360}
+                src={pageData.videoBaseUrl + "/9.mp4"}
+              />
+            </CenteredBlock>
+            <Grid item>
+              <Typography variant="body2">
+                기믹 발동 순서는 "Weight of the Land (8개 바닥 장판)" → "Pulse
+                of the Land (노란색 세모 징)" 순서이므로 일단 바닥 장판을 먼저
+                피하고 나서 산개 매크로 위치대로 이동해 "Pulse of the Land" 를
+                처리해줍니다. 산개 위치는 아래와 같습니다.
+              </Typography>
+            </Grid>
+            <CenteredBlock>
+              <ImageBlock src={pageData.videoBaseUrl + "/10.png"} width={500} />
+            </CenteredBlock>
           </React.Fragment>
         )
       }
@@ -616,10 +617,46 @@ class EdensGateSepultureSavage extends PageComponent {
             <Divider />
           </Grid>
           <Grid item>
+            <Typography variant="body2">
+              * 아래 메뉴 중 열람하고자 하는 메뉴를 클릭하시면 내용을 펼치거나
+              접을 수 있습니다.
+            </Typography>
+          </Grid>
+          <Grid item>
             <ExpansionPanelsBlock
               panels={[
                 {
-                  title: "1 페이즈 - 미니 타이탄",
+                  title: "기믹 살펴보기",
+                  children: (
+                    <React.Fragment>
+                      <Grid item>
+                        <Typography variant="body2">
+                          * 기믹 이름을 클릭하면 상세 설명을 볼 수 있습니다.
+                        </Typography>
+                        <Typography
+                          style={{
+                            color: colors.red
+                          }}
+                          variant="body2"
+                        >
+                          * 등장하는 모든 기믹을 ㄱㄴㄷ순으로 정리해놓은
+                          목록입니다. 기믹의 등장 순서 및 전체 공략을
+                          열람하시려면 아래 페이즈별 타임라인을 참조해주세요!
+                        </Typography>
+                      </Grid>
+                      <GimmicksBlock
+                        gimmickData={gimmickData}
+                        gimmicks={gimmicks}
+                        onClick={dialogId => {
+                          this.state.openedDialog = dialogId;
+                          this.setState(this.state);
+                        }}
+                      />
+                    </React.Fragment>
+                  )
+                },
+                {
+                  title: "1 페이즈 타임라인 - 미니 타이탄",
                   children: (
                     <React.Fragment>
                       <Grid item>
@@ -628,7 +665,7 @@ class EdensGateSepultureSavage extends PageComponent {
                         </Typography>
                       </Grid>
                       <TimelineBlock
-                        names={names}
+                        gimmickData={gimmickData}
                         onClick={dialogId => {
                           this.state.openedDialog = dialogId;
                           this.setState(this.state);
@@ -666,9 +703,9 @@ class EdensGateSepultureSavage extends PageComponent {
           return (
             <TimelineDialogBlock
               children={dialog.children}
+              gimmickData={gimmickData}
               id={dialog.id}
               key={dialogIndex}
-              names={names}
               onClose={() => {
                 this.state.openedDialog = false;
                 this.setState(this.state);

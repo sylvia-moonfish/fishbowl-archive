@@ -38,7 +38,7 @@ class TimelineDialogBlock extends React.Component {
               }}
             >
               <Typography variant="h6">
-                {this.props.names[this.props.id].name}
+                {this.props.gimmickData[this.props.id].name}
               </Typography>
             </div>
             <IconButton onClick={this.props.onClose}>

@@ -16,13 +16,13 @@ class TimelineBlock extends React.Component {
       <Grid item>
         <List>
           {this.props.timeline.map((item, itemIndex) => {
-            if (item.type.name === "instruction") {
+            if (item.instruction && item.color) {
               return (
                 <ListItem key={itemIndex}>
                   <ListItemText
-                    primary={item.id}
+                    primary={item.instruction}
                     style={{
-                      color: item.type.color
+                      color: item.color
                     }}
                   />
                 </ListItem>
@@ -42,10 +42,10 @@ class TimelineBlock extends React.Component {
                     </Grid>
                     <Grid item>
                       <ListItemText
-                        primary={this.props.names[item.id].name}
-                        secondary={this.props.names[item.id].description}
+                        primary={this.props.gimmickData[item.id].name}
+                        secondary={this.props.gimmickData[item.id].description}
                         style={{
-                          color: item.type.color
+                          color: this.props.gimmickData[item.id].color
                         }}
                       />
                     </Grid>
