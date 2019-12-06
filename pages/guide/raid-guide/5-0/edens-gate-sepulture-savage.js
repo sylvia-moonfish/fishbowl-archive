@@ -1,5 +1,13 @@
 import Container from "@material-ui/core/Container";
-import { blue, blueGrey, deepPurple, red } from "@material-ui/core/colors";
+import {
+  blue,
+  blueGrey,
+  brown,
+  green,
+  purple,
+  red,
+  yellow
+} from "@material-ui/core/colors";
 import Divider from "@material-ui/core/Divider";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
@@ -31,79 +39,89 @@ class EdensGateSepultureSavage extends PageComponent {
     super(props);
 
     this.state = {
-      openedDialog: false
+      //openedDialog: false
+      openedDialog: "earthenGauntlets"
     };
   }
 
   render() {
+    const colorHue = this.props.currentTheme === "light" ? 800 : 200;
+
     const colors = {
-      red: this.props.currentTheme === "light" ? red[800] : red[200],
-      deepPurple:
-        this.props.currentTheme === "light" ? deepPurple[800] : deepPurple[200],
-      blue: this.props.currentTheme === "light" ? blue[800] : blue[200],
-      blueGrey:
-        this.props.currentTheme === "light" ? blueGrey[800] : blueGrey[200]
+      blue: blue[colorHue],
+      blueGrey: blueGrey[colorHue],
+      brown: brown[colorHue],
+      green: green[colorHue],
+      purple: purple[colorHue],
+      red: red[colorHue],
+      yellow: yellow[colorHue]
     };
 
-    const gimmickTypeColors = {
-      tankBuster: colors.red,
-      partyBuster: colors.deepPurple,
-      gimmick: colors.blue,
-      instruction: colors.blueGrey
+    const colorTypes = {
+      tank: colors.blue,
+      heal: colors.green,
+      dps: colors.red,
+      anyone: colors.purple,
+      everyone: colors.yellow,
+      noOne: colors.brown,
+      instruction: colors.blueGrey,
+      warning: colors.red
     };
 
     const gimmickData = {
       earthenGauntlets: {
         name: "Earthen Gauntlets",
         description: "산사태 형태로 변신",
-        color: gimmickTypeColors.gimmick
+        color: colorTypes.noOne
       },
       evilEarth: {
         name: "Evil Earth",
         description: "연속 폭발 장판",
-        color: gimmickTypeColors.gimmick
+        color: colorTypes.everyone
       },
       forceOfTheLand: {
         name: "Force of the Land",
         description: "오렌지색 네모 징",
-        color: gimmickTypeColors.gimmick
+        color: colorTypes.anyone
       },
       geocrush: {
         name: "Geocrush",
         description: "미니 타이탄 점프 + 넉백",
-        color: gimmickTypeColors.gimmick
+        color: colorTypes.noOne
       },
       massiveLandslide: {
         name: "Massive Landslide",
         description: "산사태 + 세모네모 징",
-        color: gimmickTypeColors.gimmick
+        color: colorTypes.everyone
+      },
+      pulseOfTheLand: {
+        name: "Pulse of the Land",
+        description: "노란색 세모 징",
+        color: colorTypes.anyone
       },
       stonecrusher: {
         name: "Stonecrusher",
         description: "3연속 탱크 버스터",
-        color: gimmickTypeColors.tankBuster
+        color: colorTypes.tank
       },
       voiceOfTheLand: {
         name: "Voice of the Land",
         description: "미니 타이탄 광역기",
-        color: gimmickTypeColors.partyBuster
+        color: colorTypes.heal
+      },
+      weightOfTheLand: {
+        name: "Weight of the Land",
+        description: "랜덤 장판 8개",
+        color: colorTypes.noOne
       },
       weightOfTheLandPulseOfTheLand: {
-        name: "Weight of the Land + Pulse of the Land",
-        description: "바닥 장판 + 노란색 세모 징",
-        color: gimmickTypeColors.gimmick
+        ids: ["weightOfTheLand", "pulseOfTheLand"]
       }
     };
 
-    const gimmicks = [
-      "earthenGauntlets",
-      "evilEarth",
-      "forceOfTheLand",
-      "geocrush",
-      "massiveLandslide",
-      "stonecrusher",
-      "voiceOfTheLand"
-    ];
+    const gimmicks = Object.keys(gimmickData).filter(gimmick => {
+      return !gimmickData[gimmick].ids;
+    });
 
     const timelines = [
       [
@@ -134,12 +152,12 @@ class EdensGateSepultureSavage extends PageComponent {
         {
           instruction:
             "이후 무작위로 Earthen Gauntlets 혹은 Earthen Wheels 페이즈가 이어집니다.",
-          color: gimmickTypeColors.instruction
+          color: colorTypes.instruction
         },
         {
           instruction:
             "여기서는 Earthen Gauntlets가 사용되었다고 가정하고 진행하겠습니다.",
-          color: gimmickTypeColors.instruction
+          color: colorTypes.instruction
         },
         {
           id: "earthenGauntlets",
@@ -164,7 +182,7 @@ class EdensGateSepultureSavage extends PageComponent {
             <CenteredBlock>
               <LoopingVideoBlock
                 height={360}
-                src={pageData.videoBaseUrl + "/23.mp4"}
+                src={pageData.videoBaseUrl + "earthen-gauntlets/1.mp4"}
               />
             </CenteredBlock>
             <Grid item>
@@ -238,7 +256,7 @@ class EdensGateSepultureSavage extends PageComponent {
             <Grid item>
               <Typography
                 style={{
-                  color: colors.red
+                  color: colorTypes.warning
                 }}
                 variant="body2"
               >
@@ -396,7 +414,7 @@ class EdensGateSepultureSavage extends PageComponent {
             <Grid item>
               <Typography
                 style={{
-                  color: colors.red
+                  color: colorTypes.warning
                 }}
                 variant="body2"
               >

@@ -38,7 +38,13 @@ class TimelineDialogBlock extends React.Component {
               }}
             >
               <Typography variant="h6">
-                {this.props.gimmickData[this.props.id].name}
+                {this.props.gimmickData[this.props.id].ids
+                  ? this.props.gimmickData[this.props.id].ids
+                      .map(id => {
+                        return this.props.gimmickData[id].name;
+                      })
+                      .join(" + ")
+                  : this.props.gimmickData[this.props.id].name}
               </Typography>
             </div>
             <IconButton onClick={this.props.onClose}>

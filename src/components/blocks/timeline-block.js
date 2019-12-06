@@ -41,13 +41,46 @@ class TimelineBlock extends React.Component {
                       <Chip label={item.timestamp} />
                     </Grid>
                     <Grid item>
-                      <ListItemText
-                        primary={this.props.gimmickData[item.id].name}
-                        secondary={this.props.gimmickData[item.id].description}
-                        style={{
-                          color: this.props.gimmickData[item.id].color
-                        }}
-                      />
+                      {this.props.gimmickData[item.id].ids ? (
+                        <ListItemText
+                          primary={
+                            <React.Fragment>
+                              {this.props.gimmickData[item.id].ids.map(
+                                (id, idIndex) => {
+                                  return (
+                                    <React.Fragment key={idIndex}>
+                                      {idIndex !== 0 && <span> + </span>}
+                                      <span
+                                        style={{
+                                          color: this.props.gimmickData[id]
+                                            .color
+                                        }}
+                                      >
+                                        {this.props.gimmickData[id].name}
+                                      </span>
+                                    </React.Fragment>
+                                  );
+                                }
+                              )}
+                            </React.Fragment>
+                          }
+                          secondary={this.props.gimmickData[item.id].ids
+                            .map(id => {
+                              return this.props.gimmickData[id].description;
+                            })
+                            .join(" + ")}
+                        />
+                      ) : (
+                        <ListItemText
+                          primary={this.props.gimmickData[item.id].name}
+                          secondary={
+                            this.props.gimmickData[item.id].description
+                          }
+                          style={{
+                            color: this.props.gimmickData[item.id].color
+                          }}
+                        />
+                      )}
                     </Grid>
                   </Grid>
                 </ListItem>
