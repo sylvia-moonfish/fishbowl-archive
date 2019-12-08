@@ -20,6 +20,7 @@ import CenteredBlock from "../../../../src/components/blocks/centered-block";
 import ExpansionPanelsBlock from "../../../../src/components/blocks/expansion-panels-block";
 import GimmicksBlock from "../../../../src/components/blocks/gimmicks-block";
 import ImageBlock from "../../../../src/components/blocks/image-block";
+import InlineChip from "../../../../src/components/blocks/inline-chip";
 import LoopingVideoBlock from "../../../../src/components/blocks/looping-video-block";
 import TimelineBlock from "../../../../src/components/blocks/timeline-block";
 import TimelineDialogBlock from "../../../../src/components/blocks/timeline-dialog-block";
@@ -40,11 +41,31 @@ class EdensGateSepultureSavage extends PageComponent {
 
     this.state = {
       //openedDialog: false
-      openedDialog: "earthenGauntlets"
+      openedDialog: "weightOfTheLandPulseOfTheLand",
+      dialogHistory: []
     };
   }
 
   render() {
+    const openDialog = (newDialogId, currentDialogId) => {
+      if (currentDialogId) {
+        this.state.dialogHistory.push(currentDialogId);
+      }
+
+      this.state.openedDialog = newDialogId;
+      this.setState(this.state);
+    };
+
+    const closeDialog = () => {
+      if (this.state.dialogHistory.length > 0) {
+        this.state.openedDialog = this.state.dialogHistory.pop();
+      } else {
+        this.state.openedDialog = false;
+      }
+
+      this.setState(this.state);
+    };
+
     const colorHue = this.props.currentTheme === "light" ? 800 : 200;
 
     const colors = {
@@ -74,10 +95,18 @@ class EdensGateSepultureSavage extends PageComponent {
         description: "산사태 형태로 변신",
         color: colorTypes.noOne
       },
+      earthenWheels: {
+        name: "Earthen Wheels",
+        description: "자동차 형태로 변신",
+        color: colorTypes.noOne
+      },
       evilEarth: {
         name: "Evil Earth",
         description: "연속 폭발 장판",
         color: colorTypes.everyone
+      },
+      evilEarth1: {
+        ids: ["evilEarth"]
       },
       forceOfTheLand: {
         name: "Force of the Land",
@@ -134,7 +163,7 @@ class EdensGateSepultureSavage extends PageComponent {
           timestamp: "0:26"
         },
         {
-          id: "evilEarth",
+          id: "evilEarth1",
           timestamp: "0:35"
         },
         {
@@ -182,7 +211,7 @@ class EdensGateSepultureSavage extends PageComponent {
             <CenteredBlock>
               <LoopingVideoBlock
                 height={360}
-                src={pageData.videoBaseUrl + "earthen-gauntlets/1.mp4"}
+                src={pageData.videoBaseUrl + "/earthen-gauntlets/1.mp4"}
               />
             </CenteredBlock>
             <Grid item>
@@ -198,8 +227,50 @@ class EdensGateSepultureSavage extends PageComponent {
             </Grid>
             <Grid item>
               <Typography variant="body2">
-                "Earthen Gauntlets" 의 경우 등 뒤의 바퀴가 양 손으로 가서 붙는
-                모션을 통해 확인할 수 있습니다.
+                <InlineChip
+                  currentId="earthenGauntlets"
+                  gimmickData={gimmickData}
+                  id="earthenGauntlets"
+                  openDialog={openDialog}
+                />{" "}
+                의 경우 등 뒤의 바퀴가 양 손으로 가서 붙는 모션을 통해 확인할 수
+                있습니다.
+              </Typography>
+            </Grid>
+          </React.Fragment>
+        )
+      },
+      {
+        id: "earthenWheels",
+        children: (
+          <React.Fragment>
+            <CenteredBlock>
+              <LoopingVideoBlock
+                height={360}
+                src={pageData.videoBaseUrl + "/earthen-wheels/1.mp4"}
+              />
+            </CenteredBlock>
+            <Grid item>
+              <Typography variant="body2">
+                미니 타이탄이 형태를 바꿉니다.
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography variant="body2">
+                시전 바나 기술 명칭이 보여지지 않으므로 타이탄의 모션을 보고
+                판단해야 합니다.
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography variant="body2">
+                <InlineChip
+                  currentId="earthenWheels"
+                  gimmickData={gimmickData}
+                  id="earthenWheels"
+                  openDialog={openDialog}
+                />{" "}
+                의 경우 등 뒤의 바퀴가 양 발로 가서 붙는 모션을 통해 확인할 수
+                있습니다.
               </Typography>
             </Grid>
           </React.Fragment>
@@ -210,18 +281,27 @@ class EdensGateSepultureSavage extends PageComponent {
         children: (
           <React.Fragment>
             <CenteredBlock>
-              <ImageBlock src={pageData.videoBaseUrl + "/11.png"} width={500} />
+              <ImageBlock
+                src={pageData.videoBaseUrl + "/evil-earth/1.png"}
+                width={500}
+              />
             </CenteredBlock>
             <Grid item>
               <Typography variant="body2">
-                타이탄이 "Evil Earth" 시전을 시작하는 순간 바닥에 2개의 "Evil
-                Earth" 장판이 표시됩니다.
+                타이탄이{" "}
+                <InlineChip
+                  currentId="evilEarth"
+                  gimmickData={gimmickData}
+                  id="evilEarth"
+                  openDialog={openDialog}
+                />{" "}
+                시전을 시작하는 순간 바닥에 특수 장판이 표시됩니다.
               </Typography>
             </Grid>
             <CenteredBlock>
               <LoopingVideoBlock
                 height={360}
-                src={pageData.videoBaseUrl + "/12.mp4"}
+                src={pageData.videoBaseUrl + "/evil-earth/2.mp4"}
               />
             </CenteredBlock>
             <Grid item>
@@ -230,21 +310,46 @@ class EdensGateSepultureSavage extends PageComponent {
                 바깥쪽으로 한 칸씩 넓어져가면서 순차적으로 폭발합니다.
               </Typography>
             </Grid>
+          </React.Fragment>
+        )
+      },
+      {
+        id: "evilEarth1",
+        children: (
+          <React.Fragment>
+            <Grid item>
+              <Typography variant="body2">
+                2개의{" "}
+                <InlineChip
+                  currentId="evilEarth1"
+                  gimmickData={gimmickData}
+                  id="evilEarth"
+                  openDialog={openDialog}
+                />{" "}
+                장판이 등장합니다.
+              </Typography>
+            </Grid>
             <CenteredBlock>
               <LoopingVideoBlock
                 height={360}
-                src={pageData.videoBaseUrl + "/13.mp4"}
+                src={pageData.videoBaseUrl + "/evil-earth-1/1.mp4"}
               />
               <LoopingVideoBlock
                 height={360}
-                src={pageData.videoBaseUrl + "/14.mp4"}
+                src={pageData.videoBaseUrl + "/evil-earth-1/2.mp4"}
               />
             </CenteredBlock>
             <Grid item>
               <Typography variant="body2">
-                "Evil Earth" 장판은 항상 2개가 대각선으로 마주 보는 위치에서
-                나타나므로, 위 2가지의 조합 + 위 조합을 좌우반전한 버전 총 4가지
-                조합 중 하나가 나오게 됩니다.
+                <InlineChip
+                  currentId="evilEarth1"
+                  gimmickData={gimmickData}
+                  id="evilEarth"
+                  openDialog={openDialog}
+                />{" "}
+                장판은 항상 2개가 대각선으로 마주 보는 위치에서 나타나므로, 위
+                2가지의 조합 + 위 조합을 좌우반전한 버전 총 4가지 조합 중 하나가
+                나오게 됩니다.
               </Typography>
             </Grid>
             <Grid item>
@@ -260,7 +365,20 @@ class EdensGateSepultureSavage extends PageComponent {
                 }}
                 variant="body2"
               >
-                * "Evil Earth" 회피 전 "Pulse of the Land (노란색 세모 징)"
+                *{" "}
+                <InlineChip
+                  currentId="evilEarth1"
+                  gimmickData={gimmickData}
+                  id="evilEarth"
+                  openDialog={openDialog}
+                />{" "}
+                회피 전{" "}
+                <InlineChip
+                  currentId="evilEarth1"
+                  gimmickData={gimmickData}
+                  id="pulseOfTheLand"
+                  openDialog={openDialog}
+                />
                 처리를 위해 산개한 상태이므로 집합 장소 반대쪽으로 산개한
                 플레이어들은 "전력 질주"를 꼭 사용해주세요.
               </Typography>
@@ -268,24 +386,43 @@ class EdensGateSepultureSavage extends PageComponent {
             <CenteredBlock>
               <LoopingVideoBlock
                 height={360}
-                src={pageData.videoBaseUrl + "/15.mp4"}
+                src={pageData.videoBaseUrl + "/evil-earth-1/3.mp4"}
               />
             </CenteredBlock>
             <Grid item>
               <Typography variant="body2">
-                일단 "Evil Earth" 시전이 시작되면 장판이 시작하는 장소를 보고
-                파티 집합 장소가 어디인지 재빨리 확인합니다.
+                일단{" "}
+                <InlineChip
+                  currentId="evilEarth1"
+                  gimmickData={gimmickData}
+                  id="evilEarth"
+                  openDialog={openDialog}
+                />{" "}
+                시전이 시작되면 장판이 시작하는 장소를 보고 파티 집합 장소가
+                어디인지 재빨리 확인합니다.
               </Typography>
             </Grid>
             <Grid item>
               <Typography variant="body2">
-                "Pulse of the Land (노란색 세모 징)" 처리가 끝나면 곧바로 집합
-                장소에 모두 집합합니다.
+                <InlineChip
+                  currentId="evilEarth1"
+                  gimmickData={gimmickData}
+                  id="pulseOfTheLand"
+                  openDialog={openDialog}
+                />{" "}
+                처리가 끝나면 곧바로 집합 장소에 모두 집합합니다.
               </Typography>
             </Grid>
             <Grid item>
               <Typography variant="body2">
-                이후 파티원 전원이 함께 움직여 "Evil Earth" 를 피해줍니다.
+                이후 파티원 전원이 함께 움직여{" "}
+                <InlineChip
+                  currentId="evilEarth1"
+                  gimmickData={gimmickData}
+                  id="evilEarth"
+                  openDialog={openDialog}
+                />{" "}
+                를 피해줍니다.
               </Typography>
             </Grid>
           </React.Fragment>
@@ -296,18 +433,26 @@ class EdensGateSepultureSavage extends PageComponent {
         children: (
           <React.Fragment>
             <CenteredBlock>
-              <ImageBlock src={pageData.videoBaseUrl + "/16.png"} width={342} />
+              <ImageBlock
+                src={pageData.videoBaseUrl + "/force-of-the-land/1.png"}
+                width={342}
+              />
             </CenteredBlock>
             <Grid item>
               <Typography variant="body2">
-                "Force of the Land" 대상자의 머리 위에는 오렌지색 네모 징이
-                표시됩니다.
+                <InlineChip
+                  currentId="forceOfTheLand"
+                  gimmickData={gimmickData}
+                  id="forceOfTheLand"
+                  openDialog={openDialog}
+                />{" "}
+                대상자의 머리 위에는 오렌지색 네모 징이 표시됩니다.
               </Typography>
             </Grid>
             <CenteredBlock>
               <LoopingVideoBlock
                 height={720}
-                src={pageData.videoBaseUrl + "/17.mp4"}
+                src={pageData.videoBaseUrl + "/force-of-the-land/2.mp4"}
               />
             </CenteredBlock>
             <Grid item>
@@ -320,15 +465,27 @@ class EdensGateSepultureSavage extends PageComponent {
               </Typography>
             </Grid>
             <CenteredBlock>
-              <ImageBlock src={pageData.videoBaseUrl + "/18.png"} width={300} />
-              <ImageBlock src={pageData.videoBaseUrl + "/19.png"} width={300} />
+              <ImageBlock
+                src={pageData.videoBaseUrl + "/force-of-the-land/3.png"}
+                width={300}
+              />
+              <ImageBlock
+                src={pageData.videoBaseUrl + "/force-of-the-land/4.png"}
+                width={300}
+              />
             </CenteredBlock>
             <Grid item>
               <Typography variant="body2">
-                "Force of the Land" 의 판정은 플레이어를 중심으로 이루어지는
-                것이 아니라 플레이어가 밟고 있는 바닥의 네모 칸을 기준으로
-                이루어지는 것이므로, 함께 맞을 플레이어들은 항상 바닥 칸을 잘
-                보고 같은 칸에 서 있도록 합니다.
+                <InlineChip
+                  currentId="forceOfTheLand"
+                  gimmickData={gimmickData}
+                  id="forceOfTheLand"
+                  openDialog={openDialog}
+                />{" "}
+                의 판정은 플레이어를 중심으로 이루어지는 것이 아니라 플레이어가
+                밟고 있는 바닥의 네모 칸을 기준으로 이루어지는 것이므로, 함께
+                맞을 플레이어들은 항상 바닥 칸을 잘 보고 같은 칸에 서 있도록
+                합니다.
               </Typography>
             </Grid>
           </React.Fragment>
@@ -339,12 +496,22 @@ class EdensGateSepultureSavage extends PageComponent {
         children: (
           <React.Fragment>
             <CenteredBlock>
-              <ImageBlock src={pageData.videoBaseUrl + "/21.png"} width={500} />
+              <ImageBlock
+                src={pageData.videoBaseUrl + "/geocrush/1.png"}
+                width={500}
+              />
             </CenteredBlock>
             <Grid item>
               <Typography variant="body2">
                 타이탄이 모서리를 제외한 바깥 바닥칸 중 무작위로 한 칸을 골라
-                바라보며 "Geocrush" 시전을 시작합니다.
+                바라보며{" "}
+                <InlineChip
+                  currentId="geocrush"
+                  gimmickData={gimmickData}
+                  id="geocrush"
+                  openDialog={openDialog}
+                />{" "}
+                시전을 시작합니다.
               </Typography>
             </Grid>
             <Grid item>
@@ -356,7 +523,7 @@ class EdensGateSepultureSavage extends PageComponent {
             <CenteredBlock>
               <LoopingVideoBlock
                 height={360}
-                src={pageData.videoBaseUrl + "/22.mp4"}
+                src={pageData.videoBaseUrl + "/geocrush/2.mp4"}
               />
             </CenteredBlock>
             <Grid item>
@@ -386,29 +553,95 @@ class EdensGateSepultureSavage extends PageComponent {
           <React.Fragment>
             <Grid item>
               <Typography variant="body2">
-                "Earthen Gauntlets" 이후 곧바로 시전 바 없이 "Massive Landslide"
-                와 "Pulse of the Land (노란색 세모 징)", "Force of the Land
-                (오렌지색 네모 징)" 를 사용합니다.
+                <InlineChip
+                  currentId="massiveLandslide"
+                  gimmickData={gimmickData}
+                  id="earthenGauntlets"
+                  openDialog={openDialog}
+                />{" "}
+                이후 곧바로 시전 바 없이{" "}
+                <InlineChip
+                  currentId="massiveLandslide"
+                  gimmickData={gimmickData}
+                  id="pulseOfTheLand"
+                  openDialog={openDialog}
+                />{" "}
+                와{" "}
+                <InlineChip
+                  currentId="massiveLandslide"
+                  gimmickData={gimmickData}
+                  id="forceOfTheLand"
+                  openDialog={openDialog}
+                />{" "}
+                를 사용합니다.
               </Typography>
             </Grid>
+            <CenteredBlock>
+              <ImageBlock
+                src={pageData.videoBaseUrl + "/massive-landslide/1.png"}
+                width={500}
+              />
+            </CenteredBlock>
             <Grid item>
               <Typography variant="body2">
-                무작위로 한 명의 탱커, 한 명의 딜러, 한 명의 힐러에게 "Pulse of
-                the Land (노란색 세모 징)" 이 표시되고 나머지 파티원들에게는
-                "Force of the Land (오랜지색 네모 징)" 이 표시됩니다.
+                무작위로 한 명의 탱커, 한 명의 딜러, 한 명의 힐러에게{" "}
+                <InlineChip
+                  currentId="massiveLandslide"
+                  gimmickData={gimmickData}
+                  id="pulseOfTheLand"
+                  openDialog={openDialog}
+                />{" "}
+                징이 표시되고 나머지 파티원들에게는{" "}
+                <InlineChip
+                  currentId="massiveLandslide"
+                  gimmickData={gimmickData}
+                  id="forceOfTheLand"
+                  openDialog={openDialog}
+                />{" "}
+                징이 표시됩니다.
               </Typography>
             </Grid>
+            <CenteredBlock>
+              <LoopingVideoBlock
+                height={360}
+                src={pageData.videoBaseUrl + "/massive-landslide/2.mp4"}
+              />
+            </CenteredBlock>
             <Grid item>
               <Typography variant="body2">
-                이와 동시에 타이탄이 "Massive Landslide" 를 사용합니다. 정면
-                직선 범위를 제외한 맵 전체를 덮는 범위 공격이며 맞을 경우 맵
-                바깥으로 밀려나 낙사하게 됩니다.
+                징이 처리된 직후 타이탄이{" "}
+                <InlineChip
+                  currentId="massiveLandslide"
+                  gimmickData={gimmickData}
+                  id="massiveLandslide"
+                  openDialog={openDialog}
+                />{" "}
+                를 사용합니다. 정면 직선 범위를 제외한 맵 전체를 덮는 범위
+                공격이며 맞을 경우 맵 바깥으로 밀려나 낙사하게 됩니다.
               </Typography>
             </Grid>
+            <CenteredBlock>
+              <ImageBlock
+                src={pageData.videoBaseUrl + "/massive-landslide/3.png"}
+                width={500}
+              />
+            </CenteredBlock>
             <Grid item>
               <Typography variant="body2">
-                "Massive Landslide" 에서 안전한 바닥칸이 4칸 뿐이므로 위와 같이
-                산개해 "Massive Landslide" 와 징을 동시에 처리합니다.
+                <InlineChip
+                  currentId="massiveLandslide"
+                  gimmickData={gimmickData}
+                  id="massiveLandslide"
+                  openDialog={openDialog}
+                />{" "}
+                에서 안전한 바닥칸이 4칸 뿐이므로 위와 같이 산개해{" "}
+                <InlineChip
+                  currentId="massiveLandslide"
+                  gimmickData={gimmickData}
+                  id="massiveLandslide"
+                  openDialog={openDialog}
+                />{" "}
+                와 징을 동시에 처리합니다.
               </Typography>
             </Grid>
             <Grid item>
@@ -418,15 +651,170 @@ class EdensGateSepultureSavage extends PageComponent {
                 }}
                 variant="body2"
               >
-                * 예외로 노란색 세모 징에 걸린 딜러가 원거리 딜러일 경우에는
-                노란색 세모 징에 걸린 탱커와 자리를 바꿔 탱커가 조금이나마 딜을
-                더 넣을 수 있도록 할 수도 있습니다.
+                * 예외로{" "}
+                <InlineChip
+                  currentId="massiveLandslide"
+                  gimmickData={gimmickData}
+                  id="pulseOfTheLand"
+                  openDialog={openDialog}
+                />{" "}
+                에 걸린 딜러가 원거리 딜러일 경우에는{" "}
+                <InlineChip
+                  currentId="massiveLandslide"
+                  gimmickData={gimmickData}
+                  id="pulseOfTheLand"
+                  openDialog={openDialog}
+                />{" "}
+                에 걸린 탱커와 자리를 바꿔 탱커가 조금이나마 딜을 더 넣을 수
+                있도록 할 수도 있습니다.
+              </Typography>
+            </Grid>
+            <CenteredBlock>
+              <LoopingVideoBlock
+                height={360}
+                src={pageData.videoBaseUrl + "/massive-landslide/4.mp4"}
+              />
+            </CenteredBlock>
+            <Grid item>
+              <Typography variant="body2">
+                이후{" "}
+                <InlineChip
+                  currentId="massiveLandslide"
+                  gimmickData={gimmickData}
+                  id="massiveLandslide"
+                  openDialog={openDialog}
+                />{" "}
+                때 공격하지 않았던 정면 직선 범위로 푸른색 후속타가 오므로
+                재빨리 피해줍니다.
+              </Typography>
+            </Grid>
+            <CenteredBlock>
+              <LoopingVideoBlock
+                height={360}
+                src={pageData.videoBaseUrl + "/massive-landslide/5.mp4"}
+              />
+            </CenteredBlock>
+            <Grid item>
+              <Typography variant="body2">
+                전체적인 타이밍은 다음과 같습니다.
               </Typography>
             </Grid>
             <Grid item>
               <Typography variant="body2">
-                이후 "Massive Landslide" 때 공격하지 않았던 정면 직선 범위로
-                후속타가 오므로 재빨리 피해줍니다.
+                1.{" "}
+                <InlineChip
+                  currentId="massiveLandslide"
+                  gimmickData={gimmickData}
+                  id="geocrush"
+                  openDialog={openDialog}
+                />{" "}
+                이후 징이 생기면 일단 자신의 징을 확인합니다.
+              </Typography>
+              <Typography variant="body2">
+                2. 이후 타이탄이 형태를 바꾸는 모션을 통해 이어지는 페이즈가{" "}
+                <InlineChip
+                  currentId="massiveLandslide"
+                  gimmickData={gimmickData}
+                  id="earthenGauntlets"
+                  openDialog={openDialog}
+                />{" "}
+                인지{" "}
+                <InlineChip
+                  currentId="massiveLandslide"
+                  gimmickData={gimmickData}
+                  id="earthenWheels"
+                  openDialog={openDialog}
+                />{" "}
+                인지를 판단합니다.
+              </Typography>
+              <Typography variant="body2">
+                3. 타이탄의 형태가{" "}
+                <InlineChip
+                  currentId="massiveLandslide"
+                  gimmickData={gimmickData}
+                  id="earthenGauntlets"
+                  openDialog={openDialog}
+                />{" "}
+                인 것이 확인되면{" "}
+                <InlineChip
+                  currentId="massiveLandslide"
+                  gimmickData={gimmickData}
+                  id="massiveLandslide"
+                  openDialog={openDialog}
+                />{" "}
+                처리를 위해 정해진 위치로 산개합니다.
+              </Typography>
+              <Typography variant="body2">
+                4.{" "}
+                <InlineChip
+                  currentId="massiveLandslide"
+                  gimmickData={gimmickData}
+                  id="massiveLandslide"
+                  openDialog={openDialog}
+                />{" "}
+                처리 이후 재빨리 이동해 후속타를 피해줍니다.
+              </Typography>
+            </Grid>
+          </React.Fragment>
+        )
+      },
+      {
+        id: "pulseOfTheLand",
+        children: (
+          <React.Fragment>
+            <CenteredBlock>
+              <ImageBlock
+                src={pageData.videoBaseUrl + "/pulse-of-the-land/1.png"}
+                width={182}
+              />
+            </CenteredBlock>
+            <Grid item>
+              <Typography variant="body2">
+                <InlineChip
+                  currentId="pulseOfTheLand"
+                  gimmickData={gimmickData}
+                  id="pulseOfTheLand"
+                  openDialog={openDialog}
+                />{" "}
+                대상자의 머리 위에는 노란색 세모 징이 표시됩니다.
+              </Typography>
+            </Grid>
+            <CenteredBlock>
+              <LoopingVideoBlock
+                height={360}
+                src={pageData.videoBaseUrl + "/pulse-of-the-land/2.mp4"}
+              />
+            </CenteredBlock>
+            <Grid item>
+              <Typography variant="body2">
+                노란색 세모 징이 사라지는 시점에 해당 플레이어가 서 있는 바닥
+                칸이 폭발하며 약 5만 정도의 마법 피해를 입게 됩니다. 또한 "받는
+                마법 피해 증가" 디버프를 부여받으므로 다른 플레이어와 겹쳐 맞지
+                않도록 해야 합니다.
+              </Typography>
+            </Grid>
+            <CenteredBlock>
+              <ImageBlock
+                src={pageData.videoBaseUrl + "/pulse-of-the-land/3.png"}
+                width={300}
+              />
+              <ImageBlock
+                src={pageData.videoBaseUrl + "/pulse-of-the-land/4.png"}
+                width={300}
+              />
+            </CenteredBlock>
+            <Grid item>
+              <Typography variant="body2">
+                <InlineChip
+                  currentId="pulseOfTheLand"
+                  gimmickData={gimmickData}
+                  id="pulseOfTheLand"
+                  openDialog={openDialog}
+                />{" "}
+                의 폭발 판정은 플레이어를 중심으로 이루어지는 것이 아니라
+                플레이어가 밟고 있는 바닥의 네모 칸을 기준으로 이루어지는
+                것이므로, 항상 바닥 칸을 잘 보고 다른 플레이어와 같은 칸에 서
+                있지 않도록 합니다.
               </Typography>
             </Grid>
           </React.Fragment>
@@ -439,7 +827,7 @@ class EdensGateSepultureSavage extends PageComponent {
             <CenteredBlock>
               <LoopingVideoBlock
                 height={360}
-                src={pageData.videoBaseUrl + "/2.mp4"}
+                src={pageData.videoBaseUrl + "/stonecrusher/1.mp4"}
               />
             </CenteredBlock>
             <Grid item>
@@ -471,7 +859,7 @@ class EdensGateSepultureSavage extends PageComponent {
             <CenteredBlock>
               <LoopingVideoBlock
                 height={360}
-                src={pageData.videoBaseUrl + "/3.mp4"}
+                src={pageData.videoBaseUrl + "/stonecrusher/2.mp4"}
               />
             </CenteredBlock>
             <Grid item>
@@ -491,7 +879,7 @@ class EdensGateSepultureSavage extends PageComponent {
             <CenteredBlock>
               <LoopingVideoBlock
                 height={360}
-                src={pageData.videoBaseUrl + "/20.mp4"}
+                src={pageData.videoBaseUrl + "/voice-of-the-land/1.mp4"}
               />
             </CenteredBlock>
             <Grid item>
@@ -504,72 +892,94 @@ class EdensGateSepultureSavage extends PageComponent {
         )
       },
       {
-        id: "weightOfTheLandPulseOfTheLand",
+        id: "weightOfTheLand",
         children: (
           <React.Fragment>
             <CenteredBlock>
               <LoopingVideoBlock
                 height={360}
-                src={pageData.videoBaseUrl + "/4.mp4"}
+                src={pageData.videoBaseUrl + "/weight-of-the-land/1.mp4"}
               />
             </CenteredBlock>
             <Grid item>
               <Typography variant="body2">
-                "Weight of the Land" 를 시전합니다. 시전이 끝나면 무작위로 8칸의
-                바닥 위에 장판이 표시됩니다.
+                시전이 끝나면 무작위로 8칸의 바닥 위에 장판이 표시됩니다.
               </Typography>
             </Grid>
-            <CenteredBlock>
-              <ImageBlock src={pageData.videoBaseUrl + "/5.png"} width={182} />
-            </CenteredBlock>
             <Grid item>
               <Typography variant="body2">
-                이후 모든 파티원들의 머리 위에 "Pulse of the Land" 징 (노란색
-                세모 모양) 이 표시됩니다.
+                표시된 장판은 일정 시간이 지나면 폭발합니다.
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography variant="body2">
+                다른 기믹들과 섞여나오는 경우가 많으므로 기믹 처리 중 피격당하지
+                않도록 주의해주세요.
+              </Typography>
+            </Grid>
+          </React.Fragment>
+        )
+      },
+      {
+        id: "weightOfTheLandPulseOfTheLand",
+        children: (
+          <React.Fragment>
+            <Grid item>
+              <Typography variant="body2">
+                바닥에{" "}
+                <InlineChip
+                  currentId="weightOfTheLandPulseOfTheLand"
+                  gimmickData={gimmickData}
+                  id="weightOfTheLand"
+                  openDialog={openDialog}
+                />{" "}
+                장판이 나타난 후 모든 파티원들의 머리 위에{" "}
+                <InlineChip
+                  currentId="weightOfTheLandPulseOfTheLand"
+                  gimmickData={gimmickData}
+                  id="pulseOfTheLand"
+                  openDialog={openDialog}
+                />{" "}
+                징이 표시됩니다.
               </Typography>
             </Grid>
             <CenteredBlock>
               <LoopingVideoBlock
                 height={360}
-                src={pageData.videoBaseUrl + "/6.mp4"}
+                src={
+                  pageData.videoBaseUrl +
+                  "/weight-of-the-land-pulse-of-the-land/1.mp4"
+                }
               />
             </CenteredBlock>
             <Grid item>
               <Typography variant="body2">
-                노란색 세모 징이 사라지는 시점에 해당 플레이어가 서 있는 바닥
-                칸이 폭발하며 약 5만 정도의 마법 피해를 입게 됩니다. 또한 "받는
-                마법 피해 증가" 디버프를 부여받으므로 다른 플레이어와 겹쳐 맞지
-                않도록 해야 합니다.
+                기믹 발동 순서는{" "}
+                <InlineChip
+                  currentId="weightOfTheLandPulseOfTheLand"
+                  gimmickData={gimmickData}
+                  id="weightOfTheLand"
+                  openDialog={openDialog}
+                />{" "}
+                →{" "}
+                <InlineChip
+                  currentId="weightOfTheLandPulseOfTheLand"
+                  gimmickData={gimmickData}
+                  id="pulseOfTheLand"
+                  openDialog={openDialog}
+                />{" "}
+                순서이므로 일단 바닥 장판을 먼저 피하고 나서 산개 매크로
+                위치대로 이동해 징을 처리해줍니다. 산개 위치는 아래와 같습니다.
               </Typography>
             </Grid>
             <CenteredBlock>
-              <ImageBlock src={pageData.videoBaseUrl + "/7.png"} width={300} />
-              <ImageBlock src={pageData.videoBaseUrl + "/8.png"} width={300} />
-            </CenteredBlock>
-            <Grid item>
-              <Typography variant="body2">
-                "Pulse of the Land" 의 폭발 판정은 플레이어를 중심으로
-                이루어지는 것이 아니라 플레이어가 밟고 있는 바닥의 네모 칸을
-                기준으로 이루어지는 것이므로, 항상 바닥 칸을 잘 보고 다른
-                플레이어와 같은 칸에 서 있지 않도록 합니다.
-              </Typography>
-            </Grid>
-            <CenteredBlock>
-              <LoopingVideoBlock
-                height={360}
-                src={pageData.videoBaseUrl + "/9.mp4"}
+              <ImageBlock
+                src={
+                  pageData.videoBaseUrl +
+                  "/weight-of-the-land-pulse-of-the-land/2.png"
+                }
+                width={500}
               />
-            </CenteredBlock>
-            <Grid item>
-              <Typography variant="body2">
-                기믹 발동 순서는 "Weight of the Land (8개 바닥 장판)" → "Pulse
-                of the Land (노란색 세모 징)" 순서이므로 일단 바닥 장판을 먼저
-                피하고 나서 산개 매크로 위치대로 이동해 "Pulse of the Land" 를
-                처리해줍니다. 산개 위치는 아래와 같습니다.
-              </Typography>
-            </Grid>
-            <CenteredBlock>
-              <ImageBlock src={pageData.videoBaseUrl + "/10.png"} width={500} />
             </CenteredBlock>
           </React.Fragment>
         )
@@ -665,10 +1075,7 @@ class EdensGateSepultureSavage extends PageComponent {
                       <GimmicksBlock
                         gimmickData={gimmickData}
                         gimmicks={gimmicks}
-                        onClick={dialogId => {
-                          this.state.openedDialog = dialogId;
-                          this.setState(this.state);
-                        }}
+                        openDialog={openDialog}
                       />
                     </React.Fragment>
                   )
@@ -684,10 +1091,7 @@ class EdensGateSepultureSavage extends PageComponent {
                       </Grid>
                       <TimelineBlock
                         gimmickData={gimmickData}
-                        onClick={dialogId => {
-                          this.state.openedDialog = dialogId;
-                          this.setState(this.state);
-                        }}
+                        openDialog={openDialog}
                         timeline={timelines[0]}
                       />
                     </React.Fragment>
@@ -721,13 +1125,11 @@ class EdensGateSepultureSavage extends PageComponent {
           return (
             <TimelineDialogBlock
               children={dialog.children}
+              closeDialog={closeDialog}
+              dialogHistory={this.state.dialogHistory}
               gimmickData={gimmickData}
               id={dialog.id}
               key={dialogIndex}
-              onClose={() => {
-                this.state.openedDialog = false;
-                this.setState(this.state);
-              }}
               openedDialog={this.state.openedDialog}
             />
           );

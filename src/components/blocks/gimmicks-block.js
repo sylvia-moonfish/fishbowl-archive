@@ -32,7 +32,7 @@ class GimmicksBlock extends React.Component {
                   <Chip
                     label={this.props.gimmickData[gimmick].name}
                     onClick={() => {
-                      this.props.onClick(gimmick);
+                      this.props.openDialog(gimmick);
                     }}
                     style={{
                       color: this.props.gimmickData[gimmick].color

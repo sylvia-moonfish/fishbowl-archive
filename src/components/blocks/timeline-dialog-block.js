@@ -8,6 +8,7 @@ import { withTheme } from "@material-ui/core/styles";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 
+import ArrowBackIcon from "@material-ui/icons/ArrowBack";
 import CloseIcon from "@material-ui/icons/Close";
 
 import React from "react";
@@ -25,13 +26,18 @@ class TimelineDialogBlock extends React.Component {
       <Dialog
         fullWidth={true}
         maxWidth="md"
-        onClose={this.props.onClose}
+        onClose={this.props.closeDialog}
         open={this.props.openedDialog === this.props.id}
         scroll="paper"
         TransitionComponent={Transition}
       >
         <AppBar position="static">
           <Toolbar variant="dense">
+            {this.props.dialogHistory.length > 0 && (
+              <IconButton onClick={this.props.closeDialog}>
+                <ArrowBackIcon />
+              </IconButton>
+            )}
             <div
               style={{
                 flexGrow: 1
@@ -47,7 +53,7 @@ class TimelineDialogBlock extends React.Component {
                   : this.props.gimmickData[this.props.id].name}
               </Typography>
             </div>
-            <IconButton onClick={this.props.onClose}>
+            <IconButton onClick={this.props.closeDialog}>
               <CloseIcon />
             </IconButton>
           </Toolbar>

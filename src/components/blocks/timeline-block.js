@@ -33,7 +33,7 @@ class TimelineBlock extends React.Component {
                   button
                   key={itemIndex}
                   onClick={() => {
-                    this.props.onClick(item.id);
+                    this.props.openDialog(item.id);
                   }}
                 >
                   <Grid alignItems="center" container spacing={3}>
