@@ -41,7 +41,7 @@ class EdensGateSepultureSavage extends PageComponent {
 
     this.state = {
       //openedDialog: false
-      openedDialog: "weightOfTheLandPulseOfTheLand",
+      openedDialog: "landslide",
       dialogHistory: []
     };
   }
@@ -117,6 +117,11 @@ class EdensGateSepultureSavage extends PageComponent {
         name: "Geocrush",
         description: "미니 타이탄 점프 + 넉백",
         color: colorTypes.noOne
+      },
+      landslide: {
+        name: "Landslide",
+        description: "T자형 공격 + 지뢰",
+        color: colorTypes.everyone
       },
       massiveLandslide: {
         name: "Massive Landslide",
@@ -199,6 +204,10 @@ class EdensGateSepultureSavage extends PageComponent {
         {
           id: "voiceOfTheLand",
           timestamp: "1:27"
+        },
+        {
+          id: "landslide",
+          timestamp: "1:42"
         }
       ]
     ];
@@ -548,6 +557,79 @@ class EdensGateSepultureSavage extends PageComponent {
         )
       },
       {
+        id: "landslide",
+        children: (
+          <React.Fragment>
+            <Grid item>
+              <Typography variant="body2">
+                미니 타이탄이 맵의 동서남북 중 한 군데를 바라보며{" "}
+                <InlineChip
+                  currentId="landslide"
+                  gimmickData={gimmickData}
+                  id="landslide"
+                  openDialog={openDialog}
+                />{" "}
+                시전을 시작합니다.
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography variant="body2">
+                시전이 끝나면 바라보고 있던 방향으로 점프해 착지하며 위 그림처럼
+                T자 형태의 넉백 공격을 하게 됩니다.
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography variant="body2">
+                시전이 끝나기 전에 타이탄이 바라보고 있는 방향을 확인 후 안전
+                지역으로 이동해 T자 공격을 피해줍니다.
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography variant="body2">
+                이후 안전 지역에 후속타가 오므로 쟤빨리 안전 지역을 벗어나 미니
+                타이탄 아래에 모두 모입니다.
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography variant="body2">
+                미니 타이탄이 빙글 돌아 맵 중앙을 향하며 자신의 왼쪽 혹은 오른쪽
+                맵 전부를 덮는 장판 공격을 시전합니다.
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography variant="body2">
+                친절하게 바닥에 장판을 보여주므로 간단하게 피해줍니다.
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography variant="body2">
+                이후 공격하지 않은 영역에 후속타가 오므로 장판 공격을 피하고
+                나서 재빨리 넘어가 후속타도 피해줍니다.
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography variant="body2">
+                바닥의 돌덩이들이 빛나기 시작합니다. 빛나지 않는 돌덩이의 위치를
+                확인합니다.
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography variant="body2">
+                만약 맵 모서리의 돌덩이들이 빛나고 있다면 그대로 현재 위치에서
+                대기하고, 현재 위치의 돌덩이가 빛나고 있다면 후속타가 오지 않는
+                맵 모서리 부분으로 이동합니다.
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography variant="body2">
+                이후 첫 번째로 빛나던 돌덩이들이 터지고 나면 맵 중앙으로 이동해
+                나머지 돌덩이들의 폭발을 피해줍니다.
+              </Typography>
+            </Grid>
+          </React.Fragment>
+        )
+      },
+      {
         id: "massiveLandslide",
         children: (
           <React.Fragment>
@@ -753,6 +835,11 @@ class EdensGateSepultureSavage extends PageComponent {
                   openDialog={openDialog}
                 />{" "}
                 처리 이후 재빨리 이동해 후속타를 피해줍니다.
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography variant="body2">
+                이후 기믹 처리를 위해 미니 타이탄을 맵 중앙에 주차해주세요.
               </Typography>
             </Grid>
           </React.Fragment>
