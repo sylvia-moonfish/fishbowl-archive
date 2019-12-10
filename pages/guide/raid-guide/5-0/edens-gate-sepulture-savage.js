@@ -41,6 +41,7 @@ class EdensGateSepultureSavage extends PageComponent {
 
     this.state = {
       openedDialog: false,
+      //openedDialog: 'crumblingDown',
       dialogHistory: []
     };
   }
@@ -89,6 +90,19 @@ class EdensGateSepultureSavage extends PageComponent {
     };
 
     const gimmickData = {
+      bombBoulders: {
+        name: "Bomb Boulders",
+        description: "3줄 시한폭탄",
+        color: colorTypes.everyone
+      },
+      crumblingDown: {
+        name: "Crumbling Down",
+        description: "거리 비례 피해 돌 소환",
+        color: colorTypes.anyone
+      },
+      crumblingDownBombBouldersSeismicWave: {
+        ids: ["crumblingDown", "bombBoulders", "seismicWave"]
+      },
       earthenGauntlets: {
         name: "Earthen Gauntlets",
         description: "산사태 형태로 변신",
@@ -131,6 +145,11 @@ class EdensGateSepultureSavage extends PageComponent {
         name: "Pulse of the Land",
         description: "노란색 세모 징",
         color: colorTypes.anyone
+      },
+      seismicWave: {
+        name: "Seismic Wave",
+        description: "큰 돌 뒤에 숨기",
+        color: colorTypes.everyone
       },
       stonecrusher: {
         name: "Stonecrusher",
@@ -184,12 +203,18 @@ class EdensGateSepultureSavage extends PageComponent {
         },
         {
           instruction:
-            "이후 무작위로 Earthen Gauntlets 혹은 Earthen Wheels 페이즈가 이어집니다.",
+            "이후 무작위로 " +
+            gimmickData.earthenGauntlets.name +
+            " 혹은 " +
+            gimmickData.earthenWheels.name +
+            " 페이즈가 이어집니다.",
           color: colorTypes.instruction
         },
         {
           instruction:
-            "여기서는 Earthen Gauntlets가 사용되었다고 가정하고 진행하겠습니다.",
+            "여기서는 " +
+            gimmickData.earthenGauntlets.name +
+            " 가 사용되었다고 가정하고 진행하겠습니다.",
           color: colorTypes.instruction
         },
         {
@@ -207,11 +232,29 @@ class EdensGateSepultureSavage extends PageComponent {
         {
           id: "landslide",
           timestamp: "1:42"
+        },
+        {
+          instruction:
+            gimmickData.earthenGauntlets.name + " 페이즈가 끝났습니다.",
+          color: colorTypes.instruction
+        },
+        {
+          instruction:
+            "미니 타이탄이 다시 기본 형태로 변신한 후 아래 기믹을 이어갑니다.",
+          color: colorTypes.instruction
+        },
+        {
+          id: "crumblingDownBombBouldersSeismicWave",
+          timestamp: "2:08"
         }
       ]
     ];
 
     const dialogs = [
+      {
+        id: "crumblingDown",
+        children: <React.Fragment></React.Fragment>
+      },
       {
         id: "earthenGauntlets",
         children: (
