@@ -1,7 +1,7 @@
 import Chip from "@material-ui/core/Chip";
 import Tooltip from "@material-ui/core/Tooltip";
 
-import LinkIcon from "@material-ui/icons/Launch";
+import LaunchIcon from "@material-ui/icons/Launch";
 
 import React from "react";
 
@@ -16,7 +16,7 @@ class InlineChip extends React.Component {
         {this.props.currentId !== this.props.id ? (
           <Chip
             component="span"
-            icon={<LinkIcon />}
+            icon={<LaunchIcon />}
             label={this.props.gimmickData[this.props.id].name}
             onClick={() => {
               this.props.openDialog(this.props.id, this.props.currentId);

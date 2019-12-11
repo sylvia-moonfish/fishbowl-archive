@@ -1,3 +1,4 @@
+import Chip from "@material-ui/core/Chip";
 import Container from "@material-ui/core/Container";
 import {
   blue,
@@ -11,6 +12,8 @@ import {
 import Divider from "@material-ui/core/Divider";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
+
+import LaunchIcon from "@material-ui/icons/Launch";
 
 import React from "react";
 
@@ -112,11 +115,6 @@ class EdensGateSepultureSavage extends PageComponent {
         description: "자동차 형태로 변신",
         color: colorTypes.noOne
       },
-      explosion: {
-        name: "Explosion",
-        description: "시한폭탄",
-        color: colorTypes.noOne
-      },
       evilEarth: {
         name: "Evil Earth",
         description: "연속 폭발 장판",
@@ -124,6 +122,14 @@ class EdensGateSepultureSavage extends PageComponent {
       },
       evilEarth1: {
         ids: ["evilEarth"]
+      },
+      faultLine: {
+        name: "Fault Line",
+        description: "직선 주행",
+        color: colorTypes.everyone
+      },
+      faultLineMagnitude50: {
+        ids: ["faultLine", "magnitude50"]
       },
       forceOfTheLand: {
         name: "Force of the Land",
@@ -138,6 +144,11 @@ class EdensGateSepultureSavage extends PageComponent {
       landslide: {
         name: "Landslide",
         description: "T자형 공격 + 지뢰",
+        color: colorTypes.everyone
+      },
+      magnitude50: {
+        name: "Magnitude 5.0",
+        description: "도넛 범위 공격",
         color: colorTypes.everyone
       },
       massiveLandslide: {
@@ -175,6 +186,14 @@ class EdensGateSepultureSavage extends PageComponent {
       }
     };
 
+    const dummyGimmickData = {
+      explosion: {
+        name: "Explosion",
+        description: "시한폭탄",
+        color: colorTypes.noOne
+      }
+    };
+
     const gimmicks = Object.keys(gimmickData).filter(gimmick => {
       return !gimmickData[gimmick].ids;
     });
@@ -191,7 +210,7 @@ class EdensGateSepultureSavage extends PageComponent {
         },
         {
           id: "evilEarth1",
-          timestamp: "0:35"
+          timestamp: "0:36"
         },
         {
           id: "forceOfTheLand",
@@ -250,6 +269,48 @@ class EdensGateSepultureSavage extends PageComponent {
         {
           id: "crumblingDownBombBouldersSeismicWave",
           timestamp: "2:08"
+        },
+        {
+          id: "voiceOfTheLand",
+          timestamp: "2:42"
+        },
+        {
+          id: "stonecrusher",
+          timestamp: "2:50"
+        },
+        {
+          id: "geocrush",
+          timestamp: "3:13"
+        },
+        {
+          instruction:
+            "이전에 " +
+            gimmickData.earthenGauntlets.name +
+            " 를 사용했다면 " +
+            gimmickData.earthenWheels.name +
+            " 을, " +
+            gimmickData.earthenWheels.name +
+            " 을 사용했다면 " +
+            gimmickData.earthenGauntlets.name +
+            " 을 사용합니다.",
+          color: colorTypes.instruction
+        },
+        {
+          instruction:
+            "본 타임라인은 위에 " +
+            gimmickData.earthenGauntlets.name +
+            " 를 사용했다고 가정했으므로 " +
+            gimmickData.earthenWheels.name +
+            " 이 사용됩니다.",
+          color: colorTypes.instruction
+        },
+        {
+          id: "earthenWheels",
+          timestamp: "3:21"
+        },
+        {
+          id: "faultLineMagnitude50",
+          timestamp: "3:26"
         }
       ]
     ];
@@ -575,6 +636,12 @@ class EdensGateSepultureSavage extends PageComponent {
             <Grid item>
               <Divider />
             </Grid>
+            <CenteredBlock>
+              <LoopingVideoBlock
+                height={360}
+                src={pageData.videoBaseUrl + "/seismic-wave/1.mp4"}
+              />
+            </CenteredBlock>
             <Grid item>
               <Typography variant="body2">
                 돌덩어리 뒤에 숨어{" "}
@@ -592,10 +659,21 @@ class EdensGateSepultureSavage extends PageComponent {
             </Grid>
             <Grid item>
               <Typography variant="body2">
-                순서에 관계없이 시한폭탄을 무조건 회피할 수 있는 방법은 다음과
-                같습니다:
+                이제 시한폭탄을 회피할 차례입니다. A, C 징 줄 시한폭탄이 가장
+                마지막으로 소환되었다면 피하기가 수월하지만, A, C 징 줄
+                시한폭탄이 2 번째로 소환되었다면 회피하는 타이밍이 꽤 빡빡한
+                편입니다.
               </Typography>
             </Grid>
+            <CenteredBlock>
+              <LoopingVideoBlock
+                height={360}
+                src={
+                  pageData.videoBaseUrl +
+                  "/crumbling-down-bomb-boulders-seismic-wave/7.mp4"
+                }
+              />
+            </CenteredBlock>
             <Grid item>
               <Typography variant="body2">
                 1.{" "}
@@ -612,7 +690,7 @@ class EdensGateSepultureSavage extends PageComponent {
                 2. 적개심 목록에서 첫 번째 시한폭탄의{" "}
                 <InlineChip
                   currentId="explosion"
-                  gimmickData={gimmickData}
+                  gimmickData={dummyGimmickData}
                   id="explosion"
                   openDialog={openDialog}
                 />{" "}
@@ -622,11 +700,63 @@ class EdensGateSepultureSavage extends PageComponent {
                 3. 첫 번째 시한폭탄의{" "}
                 <InlineChip
                   currentId="explosion"
-                  gimmickData={gimmickData}
+                  gimmickData={dummyGimmickData}
                   id="explosion"
                   openDialog={openDialog}
                 />{" "}
                 시전이 완료되자마자 동쪽으로 이동.
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography
+                style={{
+                  color: colorTypes.warning
+                }}
+                variant="body2"
+              >
+                * 폭발 모션을 보고 이동하면 늦습니다. 꼭 적개심 목록을 통해 시전
+                바를 확인하고 시전이 완료되자마자 움직이는 습관을 들입시다.
+              </Typography>
+              <Typography
+                style={{
+                  color: colorTypes.warning
+                }}
+                variant="body2"
+              >
+                * 너무 피하기 어렵다면 "전력 질주" 등을 사용하는 것도 좋은
+                방법입니다.
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography variant="body2">무편집 예시 영상: </Typography>
+            </Grid>
+            <CenteredBlock>
+              <LoopingVideoBlock
+                height={360}
+                src={
+                  pageData.videoBaseUrl +
+                  "/crumbling-down-bomb-boulders-seismic-wave/8.mp4"
+                }
+              />
+            </CenteredBlock>
+            <Grid item>
+              <Divider />
+            </Grid>
+            <Grid item>
+              <Typography variant="body2">
+                이후 기믹을 위해 미니 타이탄을 중앙에 주차해주세요.
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography variant="body2">
+                또한 곧{" "}
+                <InlineChip
+                  currentId="crumblingDownBombBouldersSeismicWave"
+                  gimmickData={gimmickData}
+                  id="stonecrusher"
+                  openDialog={openDialog}
+                />{" "}
+                가 이어지므로 탱교대를 해줍시다.
               </Typography>
             </Grid>
           </React.Fragment>
@@ -1073,6 +1203,21 @@ class EdensGateSepultureSavage extends PageComponent {
                 나머지 돌덩이들의 폭발을 피해줍니다.
               </Typography>
             </Grid>
+            <Grid item>
+              <Divider />
+            </Grid>
+            <Grid item>
+              <Typography variant="body2">
+                아래는 맵 모서리의 돌덩이들이 빛나지 않고 현재 위치의 돌덩이가
+                빛날 때의 예시 영상입니다.
+              </Typography>
+            </Grid>
+            <CenteredBlock>
+              <LoopingVideoBlock
+                height={360}
+                src={pageData.videoBaseUrl + "/landslide/6.mp4"}
+              />
+            </CenteredBlock>
           </React.Fragment>
         )
       },
@@ -1645,7 +1790,18 @@ class EdensGateSepultureSavage extends PageComponent {
                     <React.Fragment>
                       <Grid item>
                         <Typography variant="body2">
-                          * 기믹 이름을 클릭하면 상세 공략을 볼 수 있습니다.
+                          * 타임라인 내 기믹 이름을 클릭해 상세 공략을 볼 수
+                          있습니다.
+                        </Typography>
+                        <Typography
+                          style={{
+                            color: colorTypes.warning
+                          }}
+                          variant="body2"
+                        >
+                          상세 공략 중 <LaunchIcon /> 아이콘이 붙어있는 기믹
+                          이름의 경우 클릭해 더 자세한 내용을 열람할 수
+                          있습니다.
                         </Typography>
                       </Grid>
                       <TimelineBlock
