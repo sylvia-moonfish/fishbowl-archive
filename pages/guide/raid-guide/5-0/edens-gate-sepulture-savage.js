@@ -41,7 +41,6 @@ class EdensGateSepultureSavage extends PageComponent {
 
     this.state = {
       openedDialog: false,
-      //openedDialog: 'crumblingDown',
       dialogHistory: []
     };
   }
@@ -111,6 +110,11 @@ class EdensGateSepultureSavage extends PageComponent {
       earthenWheels: {
         name: "Earthen Wheels",
         description: "자동차 형태로 변신",
+        color: colorTypes.noOne
+      },
+      explosion: {
+        name: "Explosion",
+        description: "시한폭탄",
         color: colorTypes.noOne
       },
       evilEarth: {
@@ -252,8 +256,381 @@ class EdensGateSepultureSavage extends PageComponent {
 
     const dialogs = [
       {
+        id: "bombBoulders",
+        children: (
+          <React.Fragment>
+            <CenteredBlock>
+              <ImageBlock
+                src={pageData.videoBaseUrl + "/bomb-boulders/1.png"}
+                width={300}
+              />
+            </CenteredBlock>
+            <Grid item>
+              <Typography variant="body2">
+                미니 타이탄이 작은 시한폭탄 돌덩어리들을 순차적으로 소환합니다.
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography variant="body2">
+                시한폭탄들은 소환된 순서대로 폭발하며 피격당한 대상에게 큰 마법
+                피해와 함께 "주는 피해 감소", "받는 피해 증가" 등의 디버프를
+                거므로 꼭 피해주어야 합니다.
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography variant="body2">
+                세로줄 총 3줄이 소환되며 항상 가운데줄이 가장 먼저 소환됩니다.
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography variant="body2">
+                즉 등장 가능한 시한폭탄의 조합은 다음과 같습니다. (각 아이콘의
+                숫자가 등장 순서를 나타냅니다.)
+              </Typography>
+            </Grid>
+            <CenteredBlock>
+              <ImageBlock
+                src={pageData.videoBaseUrl + "/bomb-boulders/2.png"}
+                width={300}
+              />
+              <ImageBlock
+                src={pageData.videoBaseUrl + "/bomb-boulders/3.png"}
+                width={300}
+              />
+            </CenteredBlock>
+          </React.Fragment>
+        )
+      },
+      {
         id: "crumblingDown",
-        children: <React.Fragment></React.Fragment>
+        children: (
+          <React.Fragment>
+            <CenteredBlock>
+              <LoopingVideoBlock
+                height={360}
+                src={pageData.videoBaseUrl + "/crumbling-down/1.mp4"}
+              />
+            </CenteredBlock>
+            <Grid item>
+              <Typography variant="body2">
+                <InlineChip
+                  currentId="crumblingDown"
+                  gimmickData={gimmickData}
+                  id="crumblingDown"
+                  openDialog={openDialog}
+                />{" "}
+                시전을 시작하는 순간 대상자 두 명의 머리 위에 빨간 징이
+                표시됩니다.
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography variant="body2">
+                대상자는 총 2명으로 탱힐 중 1명과 딜러 중 1명이 무작위로
+                선택됩니다.
+              </Typography>
+            </Grid>
+            <CenteredBlock>
+              <LoopingVideoBlock
+                height={360}
+                src={pageData.videoBaseUrl + "/crumbling-down/2.mp4"}
+              />
+            </CenteredBlock>
+            <Grid item>
+              <Typography variant="body2">
+                시전이 끝나는 순간 빨간 징 대상자 두 명의 발 밑에 거리 비례 피해
+                징이 생성됩니다.
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography variant="body2">
+                동시에 첫 번째 대상자가 아니었던 나머지 6명의 파티원 중 무작위로
+                탱힐 중 1명, 딜러 중 1명의 머리 위에 두 번째 빨간 징이
+                표시됩니다.
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography variant="body2">
+                이 빨간 징 역시 일정 시간이 지나면 사라지며 징 대상자의 발 밑에
+                거리 비례 피해 징을 생성합니다.
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography variant="body2">
+                이후 거리 비례 피해 징의 위치에 커다란 돌덩어리가 낙하하며
+                파티원 모두에게 강력한 거리 비례 마법 피해를 입힙니다.
+              </Typography>
+            </Grid>
+          </React.Fragment>
+        )
+      },
+      {
+        id: "crumblingDownBombBouldersSeismicWave",
+        children: (
+          <React.Fragment>
+            <Grid item>
+              <Typography variant="body2">
+                이후 나올 기믹 처리를 위해 미니 타이탄을 미리 맵 중앙에 주차하고
+                머리를 북쪽으로 돌려주면 좋습니다.
+              </Typography>
+            </Grid>
+            <CenteredBlock>
+              <ImageBlock
+                src={
+                  pageData.videoBaseUrl +
+                  "/crumbling-down-bomb-boulders-seismic-wave/1.png"
+                }
+                width={500}
+              />
+            </CenteredBlock>
+            <Grid item>
+              <Typography variant="body2">
+                <InlineChip
+                  currentId="crumblingDownBombBouldersSeismicWave"
+                  gimmickData={gimmickData}
+                  id="crumblingDown"
+                  openDialog={openDialog}
+                />{" "}
+                처리를 위해 바닥징을 사용할 것입니다. 바닥징은 위와 같이
+                찍혀있다고 가정합니다.
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography variant="body2">
+                <InlineChip
+                  currentId="crumblingDownBombBouldersSeismicWave"
+                  gimmickData={gimmickData}
+                  id="crumblingDown"
+                  openDialog={openDialog}
+                />
+                ,{" "}
+                <InlineChip
+                  currentId="crumblingDownBombBouldersSeismicWave"
+                  gimmickData={gimmickData}
+                  id="bombBoulders"
+                  openDialog={openDialog}
+                />
+                ,{" "}
+                <InlineChip
+                  currentId="crumblingDownBombBouldersSeismicWave"
+                  gimmickData={gimmickData}
+                  id="seismicWave"
+                  openDialog={openDialog}
+                />{" "}
+                가 빠르게 순차적으로 등장하게 됩니다. 일단 등장하는 순서에 따라
+                차근차근 하나씩 자세히 살펴본 후, 전체 타이밍을 살펴보도록
+                하겠습니다.
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Divider />
+            </Grid>
+            <CenteredBlock>
+              <ImageBlock
+                src={
+                  pageData.videoBaseUrl +
+                  "/crumbling-down-bomb-boulders-seismic-wave/2.png"
+                }
+                width={500}
+              />
+            </CenteredBlock>
+            <Grid item>
+              <Typography variant="body2">
+                미니 타이탄이{" "}
+                <InlineChip
+                  currentId="crumblingDownBombBouldersSeismicWave"
+                  gimmickData={gimmickData}
+                  id="crumblingDown"
+                  openDialog={openDialog}
+                />{" "}
+                시전을 시작합니다. 빨간 징이 찍힌 탱힐은 A징 위에, 빨간 징이
+                찍힌 딜러는 C징 위에 돌덩어리를 떨어트려줍니다. 빨간 징이 찍히지
+                않은 플레이어들은 B 징과 D 징의 사이에 모여 A, C 징으로부터
+                최대한 멀리 자리잡아 줍니다.
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography variant="body2">
+                빨간 징 대상자들은 바위를 깔고 나서 재빨리 본진에 합류합니다.{" "}
+                <InlineChip
+                  currentId="crumblingDownBombBouldersSeismicWave"
+                  gimmickData={gimmickData}
+                  id="crumblingDown"
+                  openDialog={openDialog}
+                />{" "}
+                시전이 끝나는 순간 돌덩어리의 위치는 고정되므로 시전 바가 끝나는
+                것을 확인하자마자 곧바로 본진에 합류하면 됩니다.
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Divider />
+            </Grid>
+            <CenteredBlock>
+              <ImageBlock
+                src={
+                  pageData.videoBaseUrl +
+                  "/crumbling-down-bomb-boulders-seismic-wave/3.png"
+                }
+                width={500}
+              />
+            </CenteredBlock>
+            <Grid item>
+              <Typography variant="body2">
+                거리 비례 징이 나타남과 동시에 두 번째{" "}
+                <InlineChip
+                  currentId="crumblingDownBombBouldersSeismicWave"
+                  gimmickData={gimmickData}
+                  id="crumblingDown"
+                  openDialog={openDialog}
+                />{" "}
+                징이 표시됩니다. 자신이 징이 찍혔는지 재빨리 확인한 후 징이 찍힌
+                탱힐은 B징 위에, 딜러는 D징 위에 돌덩어리를 떨어트려줍니다.
+                나머지 파티원들은 그대로 B 징과 D 징의 사이에서 대기합니다.
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography variant="body2">
+                빨간 징 대상자들은 빨간 징이 사라지는 순간 위치가 고정되므로
+                징이 사라지자마자 바로 본진에 합류합니다.
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Divider />
+            </Grid>
+            <CenteredBlock>
+              <LoopingVideoBlock
+                height={360}
+                src={
+                  pageData.videoBaseUrl +
+                  "/crumbling-down-bomb-boulders-seismic-wave/4.mp4"
+                }
+              />
+            </CenteredBlock>
+            <Grid item>
+              <Typography variant="body2">
+                A 징과 C 징에 돌덩어리가 떨어지며 파티원 모두에게 마법 피해를
+                입힙니다. 돌덩어리가 떨어진 것을 확인하자마자 모두 미니 타이탄을
+                가로질러 A 징과 C 징의 사이로 이동합니다.
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Divider />
+            </Grid>
+            <CenteredBlock>
+              <LoopingVideoBlock
+                height={360}
+                src={
+                  pageData.videoBaseUrl +
+                  "/crumbling-down-bomb-boulders-seismic-wave/5.mp4"
+                }
+              />
+            </CenteredBlock>
+            <Grid item>
+              <Typography variant="body2">
+                미니 타이탄이{" "}
+                <InlineChip
+                  currentId="crumblingDownBombBouldersSeismicWave"
+                  gimmickData={gimmickData}
+                  id="bombBoulders"
+                  openDialog={openDialog}
+                />{" "}
+                시전을 완료함과 동시에 A 징과 C 징의 돌덩어리 중 하나가 빛나기
+                시작합니다.
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography variant="body2">
+                빛나지 않는 돌덩어리 쪽으로 미니 타이탄을 데려갑니다.
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography variant="body2">
+                동시에 B 징과 D 징에서 거리 비례 징이 터지므로 힐업에
+                유의해주세요.
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Divider />
+            </Grid>
+            <CenteredBlock>
+              <LoopingVideoBlock
+                height={360}
+                src={
+                  pageData.videoBaseUrl +
+                  "/crumbling-down-bomb-boulders-seismic-wave/6.mp4"
+                }
+              />
+            </CenteredBlock>
+            <Grid item>
+              <Typography variant="body2">
+                미니 타이탄을 데려가면서 소환되는 시한폭탄의 순서를
+                눈여겨봅시다. 언제나 가운뎃줄이 가장 먼저 소환됩니다.
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography variant="body2">
+                만약 A, C 징 쪽 시한폭탄이 2번째로 소환되었다면 회피하는 것이 꽤
+                까다로울 수 있으므로 마음의 준비를 하세요.
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Divider />
+            </Grid>
+            <Grid item>
+              <Typography variant="body2">
+                돌덩어리 뒤에 숨어{" "}
+                <InlineChip
+                  currentId="crumblingDownBombBouldersSeismicWave"
+                  gimmickData={gimmickData}
+                  id="seismicWave"
+                  openDialog={openDialog}
+                />{" "}
+                를 피해줍니다.
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Divider />
+            </Grid>
+            <Grid item>
+              <Typography variant="body2">
+                순서에 관계없이 시한폭탄을 무조건 회피할 수 있는 방법은 다음과
+                같습니다:
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography variant="body2">
+                1.{" "}
+                <InlineChip
+                  currentId="crumblingDownBombBouldersSeismicWave"
+                  gimmickData={gimmickData}
+                  id="seismicWave"
+                  openDialog={openDialog}
+                />{" "}
+                시전이 끝나자마자 A 징에서 살짝 남쪽, 시한폭탄 2개의 정가운데
+                부근으로 이동.
+              </Typography>
+              <Typography variant="body2">
+                2. 적개심 목록에서 첫 번째 시한폭탄의{" "}
+                <InlineChip
+                  currentId="explosion"
+                  gimmickData={gimmickData}
+                  id="explosion"
+                  openDialog={openDialog}
+                />{" "}
+                시전 바를 확인.
+              </Typography>
+              <Typography variant="body2">
+                3. 첫 번째 시한폭탄의{" "}
+                <InlineChip
+                  currentId="explosion"
+                  gimmickData={gimmickData}
+                  id="explosion"
+                  openDialog={openDialog}
+                />{" "}
+                시전이 완료되자마자 동쪽으로 이동.
+              </Typography>
+            </Grid>
+          </React.Fragment>
+        )
       },
       {
         id: "earthenGauntlets",
@@ -972,6 +1349,31 @@ class EdensGateSepultureSavage extends PageComponent {
                 플레이어가 밟고 있는 바닥의 네모 칸을 기준으로 이루어지는
                 것이므로, 항상 바닥 칸을 잘 보고 다른 플레이어와 같은 칸에 서
                 있지 않도록 합니다.
+              </Typography>
+            </Grid>
+          </React.Fragment>
+        )
+      },
+      {
+        id: "seismicWave",
+        children: (
+          <React.Fragment>
+            <CenteredBlock>
+              <LoopingVideoBlock
+                height={360}
+                src={pageData.videoBaseUrl + "/seismic-wave/1.mp4"}
+              />
+            </CenteredBlock>
+            <Grid item>
+              <Typography variant="body2">
+                피격당할 경우 즉사하는 광역기입니다.{" "}
+                <InlineChip
+                  currentId="seismicWave"
+                  gimmickData={gimmickData}
+                  id="crumblingDown"
+                  openDialog={openDialog}
+                />{" "}
+                에서 생성되는 커다란 돌덩어리 뒤에 숨어 피할 수 있습니다.
               </Typography>
             </Grid>
           </React.Fragment>
