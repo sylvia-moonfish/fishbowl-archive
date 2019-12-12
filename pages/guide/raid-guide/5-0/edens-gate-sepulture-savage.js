@@ -1,4 +1,3 @@
-import Chip from "@material-ui/core/Chip";
 import Container from "@material-ui/core/Container";
 import {
   blue,
@@ -237,7 +236,9 @@ class EdensGateSepultureSavage extends PageComponent {
           instruction:
             "여기서는 " +
             gimmickData.earthenGauntlets.name +
-            " 가 사용되었다고 가정하고 진행하겠습니다.",
+            " " +
+            this.generatePostposition(gimmickData.earthenGauntlets.name, "가") +
+            " 사용되었다고 가정하고 진행하겠습니다.",
           color: colorTypes.instruction
         },
         {
@@ -286,13 +287,21 @@ class EdensGateSepultureSavage extends PageComponent {
           instruction:
             "이전에 " +
             gimmickData.earthenGauntlets.name +
-            " 를 사용했다면 " +
+            " " +
+            this.generatePostposition(gimmickData.earthenGauntlets.name, "를") +
+            " 사용했다면 " +
             gimmickData.earthenWheels.name +
-            " 을, " +
+            " " +
+            this.generatePostposition(gimmickData.earthenWheels.name, "를") +
+            ", " +
             gimmickData.earthenWheels.name +
-            " 을 사용했다면 " +
+            " " +
+            this.generatePostposition(gimmickData.earthenWheels.name, "를") +
+            " 사용했다면 " +
             gimmickData.earthenGauntlets.name +
-            " 을 사용합니다.",
+            " " +
+            this.generatePostposition(gimmickData.earthenGauntlets.name, "를") +
+            " 사용합니다.",
           color: colorTypes.instruction
         },
         {
@@ -301,7 +310,9 @@ class EdensGateSepultureSavage extends PageComponent {
             gimmickData.earthenGauntlets.name +
             " 를 사용했다고 가정했으므로 " +
             gimmickData.earthenWheels.name +
-            " 이 사용됩니다.",
+            " " +
+            this.generatePostposition(gimmickData.earthenWheels.name, "가") +
+            " 사용됩니다.",
           color: colorTypes.instruction
         },
         {
@@ -311,6 +322,14 @@ class EdensGateSepultureSavage extends PageComponent {
         {
           id: "faultLineMagnitude50",
           timestamp: "3:26"
+        },
+        {
+          instruction: gimmickData.earthenWheels.name + " 페이즈가 끝났습니다.",
+          color: colorTypes.instruction
+        },
+        {
+          instruction: "2 페이즈 - 거대 타이탄으로 이어집니다.",
+          color: colorTypes.instruction
         }
       ]
     ];
@@ -477,7 +496,8 @@ class EdensGateSepultureSavage extends PageComponent {
                   id="seismicWave"
                   openDialog={openDialog}
                 />{" "}
-                가 빠르게 순차적으로 등장하게 됩니다. 일단 등장하는 순서에 따라
+                {this.generatePostposition(gimmickData.seismicWave.name, "가")}{" "}
+                빠르게 순차적으로 등장하게 됩니다. 일단 등장하는 순서에 따라
                 차근차근 하나씩 자세히 살펴본 후, 전체 타이밍을 살펴보도록
                 하겠습니다.
               </Typography>
@@ -651,7 +671,8 @@ class EdensGateSepultureSavage extends PageComponent {
                   id="seismicWave"
                   openDialog={openDialog}
                 />{" "}
-                를 피해줍니다.
+                {this.generatePostposition(gimmickData.seismicWave.name, "를")}{" "}
+                피해줍니다.
               </Typography>
             </Grid>
             <Grid item>
@@ -756,7 +777,8 @@ class EdensGateSepultureSavage extends PageComponent {
                   id="stonecrusher"
                   openDialog={openDialog}
                 />{" "}
-                가 이어지므로 탱교대를 해줍시다.
+                {this.generatePostposition(gimmickData.stonecrusher.name, "가")}{" "}
+                이어지므로 탱교대를 해줍시다.
               </Typography>
             </Grid>
           </React.Fragment>
@@ -846,7 +868,7 @@ class EdensGateSepultureSavage extends PageComponent {
             </CenteredBlock>
             <Grid item>
               <Typography variant="body2">
-                타이탄이{" "}
+                미니 타이탄이{" "}
                 <InlineChip
                   currentId="evilEarth"
                   gimmickData={gimmickData}
@@ -936,7 +958,7 @@ class EdensGateSepultureSavage extends PageComponent {
                   gimmickData={gimmickData}
                   id="pulseOfTheLand"
                   openDialog={openDialog}
-                />
+                />{" "}
                 처리를 위해 산개한 상태이므로 집합 장소 반대쪽으로 산개한
                 플레이어들은 "전력 질주"를 꼭 사용해주세요.
               </Typography>
@@ -980,7 +1002,285 @@ class EdensGateSepultureSavage extends PageComponent {
                   id="evilEarth"
                   openDialog={openDialog}
                 />{" "}
-                를 피해줍니다.
+                {this.generatePostposition(gimmickData.evilEarth.name, "를")}{" "}
+                피해줍니다.
+              </Typography>
+            </Grid>
+          </React.Fragment>
+        )
+      },
+      {
+        id: "faultLine",
+        children: (
+          <React.Fragment>
+            <CenteredBlock>
+              <LoopingVideoBlock
+                height={360}
+                src={pageData.videoBaseUrl + "/fault-line/1.mp4"}
+              />
+            </CenteredBlock>
+            <Grid item>
+              <Typography variant="body2">
+                미니 타이탄이 직선으로 돌진하며 양 옆으로 충격파를 발생시켜 모든
+                플레이어들을 크게 밀어냅니다. 돌진 경로 위에 있을 경우
+                즉사합니다.
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography variant="body2">
+                이후 돌진 경로로부터 양 옆으로 한 칸씩 후속타가 발생하므로
+                주의해주세요.
+              </Typography>
+            </Grid>
+          </React.Fragment>
+        )
+      },
+      {
+        id: "faultLineMagnitude50",
+        children: (
+          <React.Fragment>
+            <Grid item>
+              <Typography variant="body2">
+                <InlineChip
+                  currentId="faultLineMagnitude50"
+                  gimmickData={gimmickData}
+                  id="earthenWheels"
+                  openDialog={openDialog}
+                />{" "}
+                이후 곧바로 시전 바 없이{" "}
+                <InlineChip
+                  currentId="faultLineMagnitude50"
+                  gimmickData={gimmickData}
+                  id="pulseOfTheLand"
+                  openDialog={openDialog}
+                />{" "}
+                {this.generatePostposition(
+                  gimmickData.pulseOfTheLand.name,
+                  "와"
+                )}{" "}
+                <InlineChip
+                  currentId="faultLineMagnitude50"
+                  gimmickData={gimmickData}
+                  id="forceOfTheLand"
+                  openDialog={openDialog}
+                />{" "}
+                {this.generatePostposition(
+                  gimmickData.forceOfTheLand.name,
+                  "를"
+                )}{" "}
+                사용합니다.
+              </Typography>
+            </Grid>
+            <CenteredBlock>
+              <ImageBlock
+                src={pageData.videoBaseUrl + "/fault-line-magnitude-50/1.png"}
+                width={500}
+              />
+            </CenteredBlock>
+            <Grid item>
+              <Typography variant="body2">
+                무작위로 한 명의 탱커, 한 명의 딜러, 한 명의 힐러에게{" "}
+                <InlineChip
+                  currentId="faultLineMagnitude50"
+                  gimmickData={gimmickData}
+                  id="pulseOfTheLand"
+                  openDialog={openDialog}
+                />{" "}
+                징이 표시되고 나머지 파티원들에게는{" "}
+                <InlineChip
+                  currentId="faultLineMagnitude50"
+                  gimmickData={gimmickData}
+                  id="forceOfTheLand"
+                  openDialog={openDialog}
+                />{" "}
+                징이 표시됩니다.
+              </Typography>
+            </Grid>
+            <CenteredBlock>
+              <LoopingVideoBlock
+                height={360}
+                src={pageData.videoBaseUrl + "/fault-line-magnitude-50/2.mp4"}
+              />
+            </CenteredBlock>
+            <Grid item>
+              <Typography variant="body2">
+                징이 표시된 직후 미니 타이탄이{" "}
+                <InlineChip
+                  currentId="faultLineMagnitude50"
+                  gimmickData={gimmickData}
+                  id="faultLine"
+                  openDialog={openDialog}
+                />{" "}
+                {this.generatePostposition(gimmickData.faultLine.name, "을")}{" "}
+                사용합니다. 정면으로 돌진하며 모든 플레이어를 자신의 양 옆으로
+                밀어냅니다.
+              </Typography>
+            </Grid>
+            <CenteredBlock>
+              <ImageBlock
+                src={pageData.videoBaseUrl + "/fault-line-magnitude-50/3.png"}
+                width={500}
+              />
+            </CenteredBlock>
+            <Grid item>
+              <Typography variant="body2">
+                자신의 징 색깔을 확인한 후 위와 같이 산개합니다. 이후 모든
+                파티원들이{" "}
+                <InlineChip
+                  currentId="faultLineMagnitude50"
+                  gimmickData={gimmickData}
+                  id="faultLine"
+                  openDialog={openDialog}
+                />{" "}
+                에 의해 다음과 같이 밀려나게 됩니다.
+              </Typography>
+            </Grid>
+            <CenteredBlock>
+              <ImageBlock
+                src={pageData.videoBaseUrl + "/fault-line-magnitude-50/4.png"}
+                width={500}
+              />
+            </CenteredBlock>
+            <Grid item>
+              <Typography variant="body2">
+                밀려난 후 징이 처리되고 후속타 판정이 끝날 때까지 시간이 살짝
+                걸리기 때문에 밀려난 칸에서 잠깐 기다려주어야 합니다! 위
+                그림에서 파랗게 표시된 부분이 후속타 공격 범위입니다. 징 처리와
+                후속타 판정은 거의 동시에 일어납니다.
+              </Typography>
+            </Grid>
+            <CenteredBlock>
+              <ImageBlock
+                src={pageData.videoBaseUrl + "/fault-line-magnitude-50/5.png"}
+                width={500}
+              />
+            </CenteredBlock>
+            <Grid item>
+              <Typography variant="body2">
+                징 처리와 후속타 판정이 끝났다면 모든 파티원들은 한 칸 위로
+                이동해 다음 후속타를 피해줍니다. 이 때 미니 타이탄이 1어글자를
+                향해 두 번째{" "}
+                <InlineChip
+                  currentId="faultLineMagnitude50"
+                  gimmickData={gimmickData}
+                  id="faultLine"
+                  openDialog="openDialog"
+                />{" "}
+                {this.generatePostposition(gimmickData.faultLine.name, "을")}{" "}
+                사용하기 때문에 1어글자는 위 포지션으로 이동해 돌진 방향을
+                유도해줍니다. 나머지 파티원들은 뺑소니 당하지 않도록
+                주의해주세요.
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography variant="body2">
+                이 두 번째{" "}
+                <InlineChip
+                  currentId="faultLineMagnitude50"
+                  gimmickData={gimmickData}
+                  id="faultLine"
+                  openDialog="openDialog"
+                />{" "}
+                {this.generatePostposition(gimmickData.faultLine.name, "은")}{" "}
+                대상자에게 거리 비례 데미지를 주므로 위 그림처럼 거리를 최대한
+                띄워주어야 합니다. 약 8만 정도의 꽤 아픈 물리 피해를 입히므로
+                1어글자인 대상자는 빠른 포지셔닝을 위한 "전력 질주" 외에도
+                "방벽", "원초의 직감" 등의 가벼운 생존기를 올려주는 것이
+                좋습니다.
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography
+                style={{
+                  color: colorTypes.warning
+                }}
+                variant="body2"
+              >
+                * 만약 1어글자가{" "}
+                <InlineChip
+                  currentId="faultLineMagnitude50"
+                  gimmickData={gimmickData}
+                  id="pulseOfTheLand"
+                  openDialog="openDialog"
+                />{" "}
+                대상자였다면 빠른 포지셔닝이 힘들 수도 있습니다. 따라서 탱커들은
+                처음 징이 생기자마자 재빨리 자신의 징 색깔을 확인 후 1어글자가{" "}
+                <InlineChip
+                  currentId="faultLineMagnitude50"
+                  gimmickData={gimmickData}
+                  id="pulseOfTheLand"
+                  openDialog="openDialog"
+                />{" "}
+                징을 가지고 있다면 빠르게 탱교대를 해줍시다.
+              </Typography>
+            </Grid>
+            <CenteredBlock>
+              <LoopingVideoBlock
+                height={360}
+                src={pageData.videoBaseUrl + "/fault-line-magnitude-50/6.mp4"}
+              />
+            </CenteredBlock>
+            <Grid item>
+              <Typography variant="body2">
+                전체적인 타이밍은 위 영상을 참고해주세요.
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Divider />
+            </Grid>
+            <CenteredBlock>
+              <LoopingVideoBlock
+                height={360}
+                src={pageData.videoBaseUrl + "/magnitude-50/1.mp4"}
+              />
+            </CenteredBlock>
+            <Grid item>
+              <Typography variant="body2">
+                이후 미니 타이탄이 곧바로{" "}
+                <InlineChip
+                  currentId="faultLineMagnitude50"
+                  gimmickData={gimmickData}
+                  id="magnitude50"
+                  openDialog={openDialog}
+                />{" "}
+                시전을 시작합니다. 모든 파티원들은 시전이 끝나기 전에 재빨리
+                미니 타이탄의 타겟 원 안으로 들어와 공격을 회피해줍니다.
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography variant="body2">
+                동시에 모든 파티원들의 머리 위에{" "}
+                <InlineChip
+                  currentId="faultLineMagnitude50"
+                  gimmickData={gimmickData}
+                  id="pulseOfTheLand"
+                  openDialog={openDialog}
+                />{" "}
+                징이 표시됩니다. 전원 산개해서 처리해줍니다. 산개 예시는 아래와
+                같습니다.
+              </Typography>
+            </Grid>
+            <CenteredBlock>
+              <ImageBlock
+                src={pageData.videoBaseUrl + "/fault-line-magnitude-50/7.png"}
+                width={500}
+              />
+            </CenteredBlock>
+            <Grid item>
+              <Typography
+                style={{
+                  color: colorTypes.warning
+                }}
+                variant="body2"
+              >
+                * 위 산개도는 예시일 뿐입니다. 서로 겹치지만 않는다면 어떻게
+                산개하든 자유입니다. 자신과 자신의 파티원들이 가장 편하다고
+                생각하는 산개 방법을 사용해주세요.
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography variant="body2">
+                이후 기믹 처리를 위해 미니 타이탄을 맵 중앙에 주차해주세요.
               </Typography>
             </Grid>
           </React.Fragment>
@@ -1222,6 +1522,25 @@ class EdensGateSepultureSavage extends PageComponent {
         )
       },
       {
+        id: "magnitude50",
+        children: (
+          <React.Fragment>
+            <CenteredBlock>
+              <LoopingVideoBlock
+                height={360}
+                src={pageData.videoBaseUrl + "/magnitude-50/1.mp4"}
+              />
+            </CenteredBlock>
+            <Grid item>
+              <Typography variant="body2">
+                도넛 모양 범위 공격입니다. 미니 타이탄의 타겟 원 안으로 들어와
+                피할 수 있습니다.
+              </Typography>
+            </Grid>
+          </React.Fragment>
+        )
+      },
+      {
         id: "massiveLandslide",
         children: (
           <React.Fragment>
@@ -1240,14 +1559,21 @@ class EdensGateSepultureSavage extends PageComponent {
                   id="pulseOfTheLand"
                   openDialog={openDialog}
                 />{" "}
-                와{" "}
+                {this.generatePostposition(
+                  gimmickData.pulseOfTheLand.name,
+                  "와"
+                )}{" "}
                 <InlineChip
                   currentId="massiveLandslide"
                   gimmickData={gimmickData}
                   id="forceOfTheLand"
                   openDialog={openDialog}
                 />{" "}
-                를 사용합니다.
+                {this.generatePostposition(
+                  gimmickData.forceOfTheLand.name,
+                  "를"
+                )}{" "}
+                사용합니다.
               </Typography>
             </Grid>
             <CenteredBlock>
@@ -1283,15 +1609,19 @@ class EdensGateSepultureSavage extends PageComponent {
             </CenteredBlock>
             <Grid item>
               <Typography variant="body2">
-                징이 처리된 직후 타이탄이{" "}
+                징이 처리된 직후 미니 타이탄이{" "}
                 <InlineChip
                   currentId="massiveLandslide"
                   gimmickData={gimmickData}
                   id="massiveLandslide"
                   openDialog={openDialog}
                 />{" "}
-                를 사용합니다. 정면 직선 범위를 제외한 맵 전체를 덮는 범위
-                공격이며 맞을 경우 맵 바깥으로 밀려나 낙사하게 됩니다.
+                {this.generatePostposition(
+                  gimmickData.massiveLandslide.name,
+                  "를"
+                )}{" "}
+                사용합니다. 정면 직선 범위를 제외한 맵 전체를 덮는 범위 공격이며
+                맞을 경우 맵 바깥으로 밀려나 낙사하게 됩니다.
               </Typography>
             </Grid>
             <CenteredBlock>
@@ -1315,7 +1645,11 @@ class EdensGateSepultureSavage extends PageComponent {
                   id="massiveLandslide"
                   openDialog={openDialog}
                 />{" "}
-                와 징을 동시에 처리합니다.
+                {this.generatePostposition(
+                  gimmickData.massiveLandslide.name,
+                  "와"
+                )}{" "}
+                징을 동시에 처리합니다.
               </Typography>
             </Grid>
             <Grid item>
