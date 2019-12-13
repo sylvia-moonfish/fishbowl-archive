@@ -104,6 +104,19 @@ class EdensGateSepultureSavage extends PageComponent {
       crumblingDownBombBouldersSeismicWave: {
         ids: ["crumblingDown", "bombBoulders", "seismicWave"]
       },
+      earthenFist: {
+        name: "Earthen Fist",
+        description: "2연속 주먹질",
+        color: colorTypes.everyone
+      },
+      earthenFistWeightOfTheLand: {
+        ids: ["earthenFist", "weightOfTheLand"]
+      },
+      earthenFury: {
+        name: "Earthen Fury",
+        description: "거대 타이탄 광역기",
+        color: colorTypes.heal
+      },
       earthenGauntlets: {
         name: "Earthen Gauntlets",
         description: "산사태 형태로 변신",
@@ -154,6 +167,11 @@ class EdensGateSepultureSavage extends PageComponent {
         name: "Massive Landslide",
         description: "산사태 + 세모네모 징",
         color: colorTypes.everyone
+      },
+      orogenesis: {
+        name: "Orogenesis (미니 타이탄)",
+        description: "미니 타이탄 거대화",
+        color: colorTypes.noOne
       },
       pulseOfTheLand: {
         name: "Pulse of the Land",
@@ -328,8 +346,36 @@ class EdensGateSepultureSavage extends PageComponent {
           color: colorTypes.instruction
         },
         {
+          instruction:
+            "이 시점에 미니 타이탄의 체력이 적어도 71% 이하인 것이 좋습니다.",
+          color: colorTypes.warning
+        },
+        {
           instruction: "2 페이즈 - 거대 타이탄으로 이어집니다.",
           color: colorTypes.instruction
+        }
+      ],
+      [
+        {
+          instruction: "페이즈 전환 중에는 타겟팅/공격이 불가능합니다.",
+          color: colorTypes.instruction
+        },
+        {
+          id: "orogenesis",
+          timestamp: "3:50"
+        },
+        {
+          instruction:
+            "페이즈 전환이 끝나면 거대 타이탄이 맵 북쪽에 고정되며 후측 판정이 사라집니다.",
+          color: colorTypes.instruction
+        },
+        {
+          id: "earthenFury",
+          timestamp: "4:17"
+        },
+        {
+          id: "earthenFistWeightOfTheLand",
+          timestamp: "4:31"
         }
       ]
     ];
@@ -779,6 +825,63 @@ class EdensGateSepultureSavage extends PageComponent {
                 />{" "}
                 {this.generatePostposition(gimmickData.stonecrusher.name, "가")}{" "}
                 이어지므로 탱교대를 해줍시다.
+              </Typography>
+            </Grid>
+          </React.Fragment>
+        )
+      },
+      {
+        id: "earthenFist",
+        children: (
+          <React.Fragment>
+            <CenteredBlock>
+              <LoopingVideoBlock
+                height={360}
+                src={pageData.videoBaseUrl + "/earthen-fist/1.mp4"}
+              />
+            </CenteredBlock>
+            <Grid item>
+              <Typography variant="body2">
+                거대 타이탄이 왼팔 혹은 오른팔에 기를 모으는 것을 2번 반복한 후,
+                기를 모은 순서대로 팔을 내질러 맵의 절반을 덮는 공격을 하고 모든
+                피격자를 크게 밀쳐내 낙사시킵니다.
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography variant="body2">
+                어느 팔에 어느 순서대로 기를 모을 지는 무작위로 정해지므로 거대
+                타이탄의 모션을 보고 공격 위치를 판단해 회피해야 합니다.
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography variant="body2">
+                어느 쪽 팔에 빛이 들어오는지를 잘 관찰한 후 순서를 기억해
+                피해주세요!
+              </Typography>
+            </Grid>
+            <CenteredBlock>
+              <LoopingVideoBlock
+                height={360}
+                src={pageData.videoBaseUrl + "/earthen-fist/2.mp4"}
+              />
+            </CenteredBlock>
+          </React.Fragment>
+        )
+      },
+      {
+        id: "earthenFury",
+        children: (
+          <React.Fragment>
+            <CenteredBlock>
+              <LoopingVideoBlock
+                height={360}
+                src={pageData.videoBaseUrl + "/earthen-fury/1.mp4"}
+              />
+            </CenteredBlock>
+            <Grid item>
+              <Typography variant="body2">
+                거대 타이탄이 사용하는 단발 광역기로 모든 파티원에게 약 8만
+                정도의 강력한 마법 피해를 줍니다.
               </Typography>
             </Grid>
           </React.Fragment>
@@ -1772,6 +1875,31 @@ class EdensGateSepultureSavage extends PageComponent {
         )
       },
       {
+        id: "orogenesis",
+        children: (
+          <React.Fragment>
+            <CenteredBlock>
+              <LoopingVideoBlock
+                height={360}
+                src={pageData.videoBaseUrl + "/orogenesis/1.mp4"}
+              />
+            </CenteredBlock>
+            <Grid item>
+              <Typography variant="body2">
+                2 페이즈의 시작을 알리는 페이즈 전환 연출입니다. 미니 타이탄이
+                거대 타이탄으로 변신합니다. 체력은 그대로 유지됩니다.
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography variant="body2">
+                거대 타이탄 상태에서는 맵 북쪽에 위치가 고정되며 후측 판정이
+                사라집니다.
+              </Typography>
+            </Grid>
+          </React.Fragment>
+        )
+      },
+      {
         id: "pulseOfTheLand",
         children: (
           <React.Fragment>
@@ -2090,6 +2218,7 @@ class EdensGateSepultureSavage extends PageComponent {
           </Grid>
           <Grid item>
             <ExpansionPanelsBlock
+              expandedPanel={2}
               panels={[
                 {
                   title: "기믹 살펴보기",
@@ -2147,11 +2276,35 @@ class EdensGateSepultureSavage extends PageComponent {
                   )
                 },
                 {
-                  title: "2 페이즈 - 거대 타이탄",
-                  children: <React.Fragment></React.Fragment>
+                  title: "2 페이즈 타임라인 - 거대 타이탄",
+                  children: (
+                    <React.Fragment>
+                      <Grid item>
+                        <Typography variant="body2">
+                          * 타임라인 내 기믹 이름을 클릭해 상세 공략을 볼 수
+                          있습니다.
+                        </Typography>
+                        <Typography
+                          style={{
+                            color: colorTypes.warning
+                          }}
+                          variant="body2"
+                        >
+                          상세 공략 중 <LaunchIcon /> 아이콘이 붙어있는 기믹
+                          이름의 경우 클릭해 더 자세한 내용을 열람할 수
+                          있습니다.
+                        </Typography>
+                      </Grid>
+                      <TimelineBlock
+                        gimmickData={gimmickData}
+                        openDialog={openDialog}
+                        timeline={timelines[1]}
+                      />
+                    </React.Fragment>
+                  )
                 },
                 {
-                  title: "3 페이즈 - 더블 타이탄",
+                  title: "3 페이즈 타임라인 - 더블 타이탄",
                   children: <React.Fragment></React.Fragment>
                 }
               ]}
