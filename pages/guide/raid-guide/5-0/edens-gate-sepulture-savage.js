@@ -6,6 +6,7 @@ import {
   green,
   purple,
   red,
+  teal,
   yellow
 } from "@material-ui/core/colors";
 import Divider from "@material-ui/core/Divider";
@@ -76,6 +77,7 @@ class EdensGateSepultureSavage extends PageComponent {
       green: green[colorHue],
       purple: purple[colorHue],
       red: red[colorHue],
+      teal: teal[colorHue],
       yellow: yellow[colorHue]
     };
 
@@ -85,6 +87,7 @@ class EdensGateSepultureSavage extends PageComponent {
       dps: colors.red,
       anyone: colors.purple,
       everyone: colors.yellow,
+      everyoneSpecial: colors.teal,
       noOne: colors.brown,
       instruction: colors.blueGrey,
       warning: colors.red
@@ -103,6 +106,22 @@ class EdensGateSepultureSavage extends PageComponent {
       },
       crumblingDownBombBouldersSeismicWave: {
         ids: ["crumblingDown", "bombBoulders", "seismicWave"]
+      },
+      dualEarthenFists: {
+        name: "Dual Earthen Fists",
+        description: "파란색 원형 장판 넉백",
+        color: colorTypes.everyone
+      },
+      dualEarthenFistsWeightOfTheWorld: {
+        ids: ["dualEarthenFists", "weightOfTheWorld"]
+      },
+      earthenAnguish: {
+        name: "Earthen Anguish",
+        description: "거대 타이탄 탱크 버스터",
+        color: colorTypes.tank
+      },
+      earthenAnguishMegalith: {
+        ids: ["earthenAnguish", "megalith"]
       },
       earthenFist: {
         name: "Earthen Fist",
@@ -168,6 +187,11 @@ class EdensGateSepultureSavage extends PageComponent {
         description: "산사태 + 세모네모 징",
         color: colorTypes.everyone
       },
+      megalith: {
+        name: "Megalith",
+        description: "셰어 탱크 버스터",
+        color: colorTypes.tank
+      },
       orogenesis: {
         name: "Orogenesis (미니 타이탄)",
         description: "미니 타이탄 거대화",
@@ -200,6 +224,11 @@ class EdensGateSepultureSavage extends PageComponent {
       },
       weightOfTheLandPulseOfTheLand: {
         ids: ["weightOfTheLand", "pulseOfTheLand"]
+      },
+      weightOfTheWorld: {
+        name: "Weight of the World",
+        description: "파란색 세모 징",
+        color: colorTypes.anyone
       }
     };
 
@@ -376,6 +405,14 @@ class EdensGateSepultureSavage extends PageComponent {
         {
           id: "earthenFistWeightOfTheLand",
           timestamp: "4:31"
+        },
+        {
+          id: "dualEarthenFistsWeightOfTheWorld",
+          timestamp: "4:47"
+        },
+        {
+          id: "earthenAnguishMegalith",
+          timestamp: "4:56"
         }
       ]
     ];
@@ -831,6 +868,291 @@ class EdensGateSepultureSavage extends PageComponent {
         )
       },
       {
+        id: "dualEarthenFists",
+        children: (
+          <React.Fragment>
+            <CenteredBlock>
+              <ImageBlock
+                src={pageData.videoBaseUrl + "/dual-earthen-fists/1.png"}
+                width={500}
+              />
+            </CenteredBlock>
+            <Grid item>
+              <Typography variant="body2">
+                맵 북쪽에 커다란 푸른 원형 장판이 나타납니다.
+              </Typography>
+            </Grid>
+            <CenteredBlock>
+              <LoopingVideoBlock
+                height={360}
+                src={pageData.videoBaseUrl + "/dual-earthen-fists/2.mp4"}
+              />
+            </CenteredBlock>
+            <Grid item>
+              <Typography variant="body2">
+                시전이 끝나면 거대 타이탄이 푸른 원형 장판으로 표시되었던 곳을
+                주먹으로 내려쳐 모든 파티원들을 밀어냅니다.
+              </Typography>
+            </Grid>
+          </React.Fragment>
+        )
+      },
+      {
+        id: "dualEarthenFistsWeightOfTheWorld",
+        children: (
+          <React.Fragment>
+            <Grid item>
+              <Typography variant="body2">
+                <InlineChip
+                  currentId="dualEarthenFistsWeightOfTheWorld"
+                  gimmickData={gimmickData}
+                  id="dualEarthenFists"
+                  openDialog={openDialog}
+                />{" "}
+                장판이 등장함과 거의 동시에{" "}
+                <InlineChip
+                  currentId="dualEarthenFistsWeightOfTheWorld"
+                  gimmickData={gimmickData}
+                  id="weightOfTheWorld"
+                  openDialog={openDialog}
+                />{" "}
+                징이 탱커를 제외한 파티원 중 한 명의 머리 위에 표시됩니다.
+              </Typography>
+            </Grid>
+            <CenteredBlock>
+              <ImageBlock
+                src={
+                  pageData.videoBaseUrl +
+                  "/dual-earthen-fists-weight-of-the-world/1.png"
+                }
+                width={500}
+              />
+            </CenteredBlock>
+            <Grid item>
+              <Typography variant="body2">
+                탱커는 이후 등장할{" "}
+                <InlineChip
+                  currentId="dualEarthenFistsWeightOfTheWorld"
+                  gimmickData={gimmickData}
+                  id="earthenAnguish"
+                  openDialog={openDialog}
+                />{" "}
+                {this.generatePostposition(
+                  gimmickData.earthenAnguish.name,
+                  "를"
+                )}{" "}
+                대비해 북쪽으로 산개하고 나머지 파티원들은{" "}
+                <InlineChip
+                  currentId="dualEarthenFistsWeightOfTheWorld"
+                  gimmickData={gimmickData}
+                  id="weightOfTheWorld"
+                  openDialog={openDialog}
+                />{" "}
+                처리를 위해 위와 같이 산개합니다.
+              </Typography>
+            </Grid>
+            <CenteredBlock>
+              <LoopingVideoBlock
+                height={360}
+                src={
+                  pageData.videoBaseUrl +
+                  "/dual-earthen-fists-weight-of-the-world/2.mp4"
+                }
+              />
+            </CenteredBlock>
+            <Grid item>
+              <Typography
+                style={{
+                  color: colorTypes.warning
+                }}
+                variant="body2"
+              >
+                * 탱커는 여기서 "거리 유지" 를 사용하기 위해 1 페이즈 두 번째{" "}
+                <InlineChip
+                  currentId="dualEarthenFistsWeightOfTheWorld"
+                  gimmickData={gimmickData}
+                  id="geocrush"
+                  openDialog={openDialog}
+                />{" "}
+                에서 "거리 유지" 를 절대 사용하면 안 됩니다!
+              </Typography>
+            </Grid>
+            <CenteredBlock>
+              <ImageBlock
+                src={
+                  pageData.videoBaseUrl +
+                  "/dual-earthen-fists-weight-of-the-world/3.png"
+                }
+                width={500}
+              />
+            </CenteredBlock>
+            <Grid item>
+              <Typography
+                style={{
+                  color: colorTypes.warning
+                }}
+                variant="body2"
+              >
+                *{" "}
+                <InlineChip
+                  currentId="dualEarthenFistsWeightOfTheWorld"
+                  gimmickData={gimmickData}
+                  id="weightOfTheWorld"
+                  openDialog={openDialog}
+                />{" "}
+                징을 가진 플레이어가 근거리 딜러일 경우 "거리 유지" 를 사용하고
+                위와 같이 산개하는 방식으로 칼끝딜 거리를 유지하고 딜로스를
+                최소화시킬 수 있습니다.
+              </Typography>
+            </Grid>
+          </React.Fragment>
+        )
+      },
+      {
+        id: "earthenAnguish",
+        children: (
+          <React.Fragment>
+            <CenteredBlock>
+              <LoopingVideoBlock
+                height={360}
+                src={pageData.videoBaseUrl + "/earthen-anguish/1.mp4"}
+              />
+            </CenteredBlock>
+            <Grid item>
+              <Typography variant="body2">
+                거대 타이탄이 1어글자와 2어글자에게 동시에 사용하는 탱크
+                버스터입니다. 시전 바 없이 즉시 시전하며 각 대상자에게 약 10만
+                정도의 강력한 마법 피해를 입힙니다.
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography
+                style={{
+                  color: colorTypes.warning
+                }}
+                variant="body2"
+              >
+                1어글자와 2어글자를 대상으로 하는 기술이므로 오프탱은 자신이
+                2어글자인지 꼭 확인해주세요!
+              </Typography>
+              <Typography
+                style={{
+                  color: colorTypes.warning
+                }}
+                variant="body2"
+              >
+                * 대상자를 중심으로 꽤 큰 원형 범위의 공격 판정을 가지고 있는
+                범위 공격이므로 탱커 근처에 있지 않도록 합니다.
+              </Typography>
+            </Grid>
+          </React.Fragment>
+        )
+      },
+      {
+        id: "earthenAnguishMegalith",
+        children: (
+          <React.Fragment>
+            <Grid item>
+              <Typography variant="body2">
+                <InlineChip
+                  currentId="earthenAnguishMegalith"
+                  gimmickData={gimmickData}
+                  id="dualEarthenFists"
+                  openDialog={openDialog}
+                />{" "}
+                직후에 연속으로 사용하는 탱크 버스터 종합 선물 세트입니다.
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography variant="body2">
+                보통 멘탱이 북서쪽, 부탱이 북동쪽에 산개해 "거리 유지" 를
+                사용하고{" "}
+                <InlineChip
+                  currentId="earthenAnguishMegalith"
+                  gimmickData={gimmickData}
+                  id="earthenAnguish"
+                  openDialog={openDialog}
+                />{" "}
+                {this.generatePostposition(
+                  gimmickData.earthenAnguish.name,
+                  "를"
+                )}{" "}
+                처리한 후 맵 북쪽 가운데에 모여{" "}
+                <InlineChip
+                  currentId="earthenAnguishMegalith"
+                  gimmickData={gimmickData}
+                  id="megalith"
+                  openDialog={openDialog}
+                />{" "}
+                {this.generatePostposition(gimmickData.megalith.name, "를")}{" "}
+                함께 처리합니다.
+              </Typography>
+            </Grid>
+            <CenteredBlock>
+              <LoopingVideoBlock
+                height={360}
+                src={pageData.videoBaseUrl + "/earthen-anguish-megalith/1.mp4"}
+              />
+            </CenteredBlock>
+            <Grid item>
+              <Typography variant="body2">
+                "경계" 등의 30% 생존기를 사용하는 타이밍을 잘 조절하면{" "}
+                <InlineChip
+                  currentId="earthenAnguishMegalith"
+                  gimmickData={gimmickData}
+                  id="earthenAnguish"
+                  openDialog={openDialog}
+                />{" "}
+                {this.generatePostposition(
+                  gimmickData.earthenAnguish.name,
+                  "와"
+                )}{" "}
+                <InlineChip
+                  currentId="earthenAnguishMegalith"
+                  gimmickData={gimmickData}
+                  id="megalith"
+                  openDialog={openDialog}
+                />{" "}
+                {this.generatePostposition(gimmickData.megalith.name, "를")} 둘
+                다 커버할 수 있습니다.
+              </Typography>
+            </Grid>
+            <CenteredBlock>
+              <LoopingVideoBlock
+                height={360}
+                src={pageData.videoBaseUrl + "/earthen-anguish-megalith/2.mp4"}
+              />
+            </CenteredBlock>
+            <Grid item>
+              <Typography
+                style={{
+                  color: colorTypes.warning
+                }}
+                variant="body2"
+              >
+                * 전사가 멘탱으로 1 페이즈의 첫{" "}
+                <InlineChip
+                  currentId="earthenAnguishMegalith"
+                  gimmickData={gimmickData}
+                  id="stonecrusher"
+                  openDialog={openDialog}
+                />{" "}
+                {this.generatePostposition(gimmickData.stonecrusher.name, "를")}{" "}
+                처리했었다면 2 페이즈에 등장하는 모든{" "}
+                <InlineChip
+                  currentId="earthenAnguishMegalith"
+                  gimmickData={gimmickData}
+                  id="megalith"
+                  openDialog={openDialog}
+                />{" "}
+                {this.generatePostposition(gimmickData.megalith.name, "를")}{" "}
+                "일대일 결투" 로 처리할 수 있습니다.
+              </Typography>
+            </Grid>
+          </React.Fragment>
+        )
+      },
+      {
         id: "earthenFist",
         children: (
           <React.Fragment>
@@ -865,6 +1187,71 @@ class EdensGateSepultureSavage extends PageComponent {
                 src={pageData.videoBaseUrl + "/earthen-fist/2.mp4"}
               />
             </CenteredBlock>
+          </React.Fragment>
+        )
+      },
+      {
+        id: "earthenFistWeightOfTheLand",
+        children: (
+          <React.Fragment>
+            <CenteredBlock>
+              <LoopingVideoBlock
+                height={360}
+                src={
+                  pageData.videoBaseUrl +
+                  "/earthen-fist-weight-of-the-land/1.mp4"
+                }
+              />
+            </CenteredBlock>
+            <Grid item>
+              <Typography variant="body2">
+                <InlineChip
+                  currentId="earthenFistWeightOfTheLand"
+                  gimmickData={gimmickData}
+                  id="earthenFist"
+                  openDialog={openDialog}
+                />{" "}
+                {this.generatePostposition(gimmickData.earthenFist.name, "와")}{" "}
+                <InlineChip
+                  currentId="earthenFistWeightOfTheLand"
+                  gimmickData={gimmickData}
+                  id="weightOfTheLand"
+                  openDialog={openDialog}
+                />{" "}
+                {this.generatePostposition(
+                  gimmickData.weightOfTheLand.name,
+                  "를"
+                )}{" "}
+                동시에 사용합니다.
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography variant="body2">
+                판정 순서는{" "}
+                <InlineChip
+                  currentId="earthenFistWeightOfTheLand"
+                  gimmickData={gimmickData}
+                  id="earthenFist"
+                  openDialog={openDialog}
+                />{" "}
+                →{" "}
+                <InlineChip
+                  currentId="earthenFistWeightOfTheLand"
+                  gimmickData={gimmickData}
+                  id="weightOfTheLand"
+                  openDialog={openDialog}
+                />{" "}
+                이므로 일단{" "}
+                <InlineChip
+                  currentId="earthenFistWeightOfTheLand"
+                  gimmickData={gimmickData}
+                  id="earthenFist"
+                  openDialog={openDialog}
+                />{" "}
+                {this.generatePostposition(gimmickData.earthenFist.name, "를")}{" "}
+                피하고 나서 바닥 장판을 피해주면 됩니다.
+              </Typography>
+            </Grid>
           </React.Fragment>
         )
       },
@@ -1875,6 +2262,46 @@ class EdensGateSepultureSavage extends PageComponent {
         )
       },
       {
+        id: "megalith",
+        children: (
+          <React.Fragment>
+            <CenteredBlock>
+              <LoopingVideoBlock
+                height={360}
+                src={pageData.videoBaseUrl + "/megalith/1.mp4"}
+              />
+            </CenteredBlock>
+            <Grid item>
+              <Typography variant="body2">
+                1어글자의 머리 위에 셰어징이 표시됩니다. 최대 2명까지 피해를
+                나눠받을 수 있기 때문에 멘탱과 부탱이 나눠맞습니다. 각 탱커에게
+                약 10만 정도의 강력한 물리 피해를 입히므로 "경계" 등의 강력한
+                생존기가 필수로 요구됩니다.
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography
+                style={{
+                  color: colorTypes.warning
+                }}
+                variant="body2"
+              >
+                * 전사의 경우 무적기인 "일대일 결투" 의 재사용 대기 시간이 짧기
+                때문에 2 페이즈에 등장하는 모든{" "}
+                <InlineChip
+                  currentId="megalith"
+                  gimmickData={gimmickData}
+                  id="megalith"
+                  openDialog={openDialog}
+                />{" "}
+                {this.generatePostposition(gimmickData.megalith.name, "를")}{" "}
+                혼자서 "일대일 결투" 로 처리할 수 있습니다.
+              </Typography>
+            </Grid>
+          </React.Fragment>
+        )
+      },
+      {
         id: "orogenesis",
         children: (
           <React.Fragment>
@@ -2147,6 +2574,66 @@ class EdensGateSepultureSavage extends PageComponent {
                 width={500}
               />
             </CenteredBlock>
+          </React.Fragment>
+        )
+      },
+      {
+        id: "weightOfTheWorld",
+        children: (
+          <React.Fragment>
+            <CenteredBlock>
+              <ImageBlock
+                src={pageData.videoBaseUrl + "/weight-of-the-world/1.png"}
+                width={342}
+              />
+            </CenteredBlock>
+            <Grid item>
+              <Typography variant="body2">
+                <InlineChip
+                  currentId="weightOfTheWorld"
+                  gimmickData={gimmickData}
+                  id="weightOfTheWorld"
+                  openDialog={openDialog}
+                />{" "}
+                대상자의 머리 위에는 파란색 세모 징이 표시됩니다.
+              </Typography>
+            </Grid>
+            <CenteredBlock>
+              <LoopingVideoBlock
+                height={360}
+                src={pageData.videoBaseUrl + "/weight-of-the-world/2.mp4"}
+              />
+            </CenteredBlock>
+            <Grid item>
+              <Typography variant="body2">
+                파란색 세모 징이 사라지는 시점에 해당 플레이어가 서 있는 바닥
+                칸과 그 주위 바닥칸이 폭발하며 약 6만 정도의 마법 피해를 입히고
+                "받는 마법 피해 증가" 디버프를 부여합니다.
+              </Typography>
+            </Grid>
+            <CenteredBlock>
+              <ImageBlock
+                src={pageData.videoBaseUrl + "/weight-of-the-world/3.png"}
+                width={500}
+              />
+            </CenteredBlock>
+            <Grid item>
+              <Typography variant="body2">
+                <InlineChip
+                  currentId="weightOfTheWorld"
+                  gimmickData={gimmickData}
+                  id="weightOfTheWorld"
+                  openDialog={openDialog}
+                />{" "}
+                {this.generatePostposition(
+                  gimmickData.weightOfTheWorld.name,
+                  "는"
+                )}{" "}
+                플레이어가 밟고 있는 바닥칸을 포함해 주위 1칸 범위 내의 모든
+                바닥칸을 폭발시키므로 보통 폭발 범위를 최소화하기 위해 대상자는
+                맵 모서리로 산개하게 됩니다.
+              </Typography>
+            </Grid>
           </React.Fragment>
         )
       }
