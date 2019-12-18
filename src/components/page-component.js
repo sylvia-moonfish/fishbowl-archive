@@ -38,27 +38,6 @@ class PageComponent extends React.Component {
       </Head>
     );
   }
-
-  generatePostposition(word, postPosition) {
-    const lastChar = word.charCodeAt(word.length - 1);
-
-    if (lastChar < 0xac00 || lastChar > 0xd7a3) return postPosition;
-
-    switch (postPosition) {
-      case "을":
-      case "를":
-        return (lastChar - 0xac00) % 28 > 0 ? "을" : "를";
-      case "이":
-      case "가":
-        return (lastChar - 0xac00) % 28 > 0 ? "이" : "가";
-      case "은":
-      case "는":
-        return (lastChar - 0xac00) % 28 > 0 ? "은" : "는";
-      case "과":
-      case "와":
-        return (lastChar - 0xac00) % 28 > 0 ? "과" : "와";
-    }
-  }
 }
 
 export default PageComponent;

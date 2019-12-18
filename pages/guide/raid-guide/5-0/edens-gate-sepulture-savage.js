@@ -28,7 +28,7 @@ import LoopingVideoBlock from "../../../../src/components/blocks/looping-video-b
 import TimelineBlock from "../../../../src/components/blocks/timeline-block";
 import TimelineDialogBlock from "../../../../src/components/blocks/timeline-dialog-block";
 import YoutubeFrameBlock from "../../../../src/components/blocks/youtube-frame-block";
-import PageComponent from "../../../../src/components/page-component";
+import GuidePageComponent from "../../../../src/components/guide-page-component";
 
 const pageData = {
   title: "희망의 동산 에덴 영웅: 각성편 4",
@@ -38,37 +38,13 @@ const pageData = {
     "https://sylvia-moonfish.github.io/fishbowl-video-1/guide/raid-guide/shb/edens-gate-sepulture-savage"
 };
 
-class EdensGateSepultureSavage extends PageComponent {
+class EdensGateSepultureSavage extends GuidePageComponent {
   constructor(props) {
     super(props);
 
-    this.state = {
-      openedDialog: false,
-      dialogHistory: []
-    };
-  }
+    this.state.openedDialog = "rockThrow";
 
-  render() {
-    const openDialog = (newDialogId, currentDialogId) => {
-      if (currentDialogId) {
-        this.state.dialogHistory.push(currentDialogId);
-      }
-
-      this.state.openedDialog = newDialogId;
-      this.setState(this.state);
-    };
-
-    const closeDialog = () => {
-      if (this.state.dialogHistory.length > 0) {
-        this.state.openedDialog = this.state.dialogHistory.pop();
-      } else {
-        this.state.openedDialog = false;
-      }
-
-      this.setState(this.state);
-    };
-
-    const colorHue = this.props.currentTheme === "light" ? 800 : 200;
+    const colorHue = props.currentTheme === "light" ? 800 : 200;
 
     const colors = {
       blue: blue[colorHue],
@@ -81,7 +57,7 @@ class EdensGateSepultureSavage extends PageComponent {
       yellow: yellow[colorHue]
     };
 
-    const colorTypes = {
+    this.colorTypes = {
       tank: colors.blue,
       heal: colors.green,
       dps: colors.red,
@@ -93,16 +69,16 @@ class EdensGateSepultureSavage extends PageComponent {
       warning: colors.red
     };
 
-    const gimmickData = {
+    this.gimmickData = {
       bombBoulders: {
         name: "Bomb Boulders",
         description: "3줄 시한폭탄",
-        color: colorTypes.everyone
+        color: this.colorTypes.everyone
       },
       crumblingDown: {
         name: "Crumbling Down",
         description: "거리 비례 피해 돌 소환",
-        color: colorTypes.anyone
+        color: this.colorTypes.anyone
       },
       crumblingDownBombBouldersSeismicWave: {
         ids: ["crumblingDown", "bombBoulders", "seismicWave"]
@@ -110,7 +86,7 @@ class EdensGateSepultureSavage extends PageComponent {
       dualEarthenFists: {
         name: "Dual Earthen Fists",
         description: "파란색 원형 장판 넉백",
-        color: colorTypes.everyone
+        color: this.colorTypes.everyone
       },
       dualEarthenFistsWeightOfTheWorld: {
         ids: ["dualEarthenFists", "weightOfTheWorld"]
@@ -118,7 +94,7 @@ class EdensGateSepultureSavage extends PageComponent {
       earthenAnguish: {
         name: "Earthen Anguish",
         description: "거대 타이탄 탱크 버스터",
-        color: colorTypes.tank
+        color: this.colorTypes.tank
       },
       earthenAnguishMegalith: {
         ids: ["earthenAnguish", "megalith"]
@@ -126,7 +102,7 @@ class EdensGateSepultureSavage extends PageComponent {
       earthenFist: {
         name: "Earthen Fist",
         description: "2연속 주먹질",
-        color: colorTypes.everyone
+        color: this.colorTypes.everyone
       },
       earthenFistWeightOfTheLand: {
         ids: ["earthenFist", "weightOfTheLand"]
@@ -134,22 +110,27 @@ class EdensGateSepultureSavage extends PageComponent {
       earthenFury: {
         name: "Earthen Fury",
         description: "거대 타이탄 광역기",
-        color: colorTypes.heal
+        color: this.colorTypes.heal
       },
       earthenGauntlets: {
         name: "Earthen Gauntlets",
         description: "산사태 형태로 변신",
-        color: colorTypes.noOne
+        color: this.colorTypes.noOne
       },
       earthenWheels: {
         name: "Earthen Wheels",
         description: "자동차 형태로 변신",
-        color: colorTypes.noOne
+        color: this.colorTypes.noOne
+      },
+      explosion: {
+        name: "Explosion",
+        description: "시한폭탄",
+        color: this.colorTypes.noOne
       },
       evilEarth: {
         name: "Evil Earth",
         description: "연속 폭발 장판",
-        color: colorTypes.everyone
+        color: this.colorTypes.everyone
       },
       evilEarth1: {
         ids: ["evilEarth"]
@@ -157,70 +138,91 @@ class EdensGateSepultureSavage extends PageComponent {
       faultLine: {
         name: "Fault Line",
         description: "직선 주행",
-        color: colorTypes.everyone
+        color: this.colorTypes.everyone
       },
       faultLineMagnitude50: {
-        ids: ["faultLine", "magnitude50"]
+        ids: ["faultLine", "pulseOfTheLand", "forceOfTheLand", "magnitude50"]
       },
       forceOfTheLand: {
         name: "Force of the Land",
         description: "오렌지색 네모 징",
-        color: colorTypes.anyone
+        color: this.colorTypes.anyone
       },
       geocrush: {
         name: "Geocrush",
         description: "미니 타이탄 점프 + 넉백",
-        color: colorTypes.noOne
+        color: this.colorTypes.noOne
       },
       landslide: {
         name: "Landslide",
-        description: "T자형 공격 + 지뢰",
-        color: colorTypes.everyone
+        description: "T자형 공격 + 시한폭탄",
+        color: this.colorTypes.everyone
       },
       magnitude50: {
         name: "Magnitude 5.0",
         description: "도넛 범위 공격",
-        color: colorTypes.everyone
+        color: this.colorTypes.everyone
       },
       massiveLandslide: {
         name: "Massive Landslide",
-        description: "산사태 + 세모네모 징",
-        color: colorTypes.everyone
+        description: "산사태",
+        color: this.colorTypes.everyoneSpecial
+      },
+      massiveLandslide1: {
+        ids: ["massiveLandslide", "pulseOfTheLand", "forceOfTheLand"]
       },
       megalith: {
         name: "Megalith",
         description: "셰어 탱크 버스터",
-        color: colorTypes.tank
+        color: this.colorTypes.tank
       },
       orogenesis: {
         name: "Orogenesis (미니 타이탄)",
         description: "미니 타이탄 거대화",
-        color: colorTypes.noOne
+        color: this.colorTypes.noOne
       },
       pulseOfTheLand: {
         name: "Pulse of the Land",
         description: "노란색 세모 징",
-        color: colorTypes.anyone
+        color: this.colorTypes.anyone
+      },
+      rockThrow: {
+        name: "Rock Throw",
+        description: "힐러 돌감옥",
+        color: this.colorTypes.heal
       },
       seismicWave: {
         name: "Seismic Wave",
         description: "큰 돌 뒤에 숨기",
-        color: colorTypes.everyone
+        color: this.colorTypes.everyone
       },
       stonecrusher: {
         name: "Stonecrusher",
         description: "3연속 탱크 버스터",
-        color: colorTypes.tank
+        color: this.colorTypes.tank
+      },
+      tectonicUplift: {
+        name: "Tectonic Uplift",
+        description: "맵 융기",
+        color: this.colorTypes.everyoneSpecial
+      },
+      tectonicUplift1: {
+        ids: [
+          "tectonicUplift",
+          "pulseOfTheLand",
+          "forceOfTheLand",
+          "weightOfTheWorld"
+        ]
       },
       voiceOfTheLand: {
         name: "Voice of the Land",
         description: "미니 타이탄 광역기",
-        color: colorTypes.heal
+        color: this.colorTypes.heal
       },
       weightOfTheLand: {
         name: "Weight of the Land",
         description: "랜덤 장판 8개",
-        color: colorTypes.noOne
+        color: this.colorTypes.noOne
       },
       weightOfTheLandPulseOfTheLand: {
         ids: ["weightOfTheLand", "pulseOfTheLand"]
@@ -228,22 +230,12 @@ class EdensGateSepultureSavage extends PageComponent {
       weightOfTheWorld: {
         name: "Weight of the World",
         description: "파란색 세모 징",
-        color: colorTypes.anyone
+        color: this.colorTypes.anyone
       }
     };
+  }
 
-    const dummyGimmickData = {
-      explosion: {
-        name: "Explosion",
-        description: "시한폭탄",
-        color: colorTypes.noOne
-      }
-    };
-
-    const gimmicks = Object.keys(gimmickData).filter(gimmick => {
-      return !gimmickData[gimmick].ids;
-    });
-
+  render() {
     const timelines = [
       [
         {
@@ -271,29 +263,29 @@ class EdensGateSepultureSavage extends PageComponent {
           timestamp: "1:01"
         },
         {
-          instruction:
-            "이후 무작위로 " +
-            gimmickData.earthenGauntlets.name +
-            " 혹은 " +
-            gimmickData.earthenWheels.name +
-            " 페이즈가 이어집니다.",
-          color: colorTypes.instruction
+          instruction: this.generateString([
+            "이후 무작위로",
+            this.gimmickData.earthenGauntlets.name,
+            "혹은",
+            this.gimmickData.earthenWheels.name,
+            "페이즈가 이어집니다."
+          ]),
+          color: this.colorTypes.instruction
         },
         {
-          instruction:
-            "여기서는 " +
-            gimmickData.earthenGauntlets.name +
-            " " +
-            this.generatePostposition(gimmickData.earthenGauntlets.name, "가") +
-            " 사용되었다고 가정하고 진행하겠습니다.",
-          color: colorTypes.instruction
+          instruction: this.generateString([
+            "여기서는",
+            this.gimmickData.earthenGauntlets.name,
+            "가 사용되었다고 가정하고 진행하겠습니다."
+          ]),
+          color: this.colorTypes.instruction
         },
         {
           id: "earthenGauntlets",
           timestamp: "1:10"
         },
         {
-          id: "massiveLandslide",
+          id: "massiveLandslide1",
           timestamp: "1:17"
         },
         {
@@ -305,14 +297,17 @@ class EdensGateSepultureSavage extends PageComponent {
           timestamp: "1:42"
         },
         {
-          instruction:
-            gimmickData.earthenGauntlets.name + " 페이즈가 끝났습니다.",
-          color: colorTypes.instruction
+          instruction: this.generateString([
+            this.gimmickData.earthenGauntlets.name,
+            "페이즈가 끝났습니다."
+          ]),
+          color: this.colorTypes.instruction
         },
         {
-          instruction:
-            "미니 타이탄이 다시 기본 형태로 변신한 후 아래 기믹을 이어갑니다.",
-          color: colorTypes.instruction
+          instruction: this.generateString([
+            "미니 타이탄이 다시 기본 형태로 변신한 후 아래 기믹을 이어갑니다."
+          ]),
+          color: this.colorTypes.instruction
         },
         {
           id: "crumblingDownBombBouldersSeismicWave",
@@ -331,36 +326,28 @@ class EdensGateSepultureSavage extends PageComponent {
           timestamp: "3:13"
         },
         {
-          instruction:
-            "이전에 " +
-            gimmickData.earthenGauntlets.name +
-            " " +
-            this.generatePostposition(gimmickData.earthenGauntlets.name, "를") +
-            " 사용했다면 " +
-            gimmickData.earthenWheels.name +
-            " " +
-            this.generatePostposition(gimmickData.earthenWheels.name, "를") +
-            ", " +
-            gimmickData.earthenWheels.name +
-            " " +
-            this.generatePostposition(gimmickData.earthenWheels.name, "를") +
-            " 사용했다면 " +
-            gimmickData.earthenGauntlets.name +
-            " " +
-            this.generatePostposition(gimmickData.earthenGauntlets.name, "를") +
-            " 사용합니다.",
-          color: colorTypes.instruction
+          instruction: this.generateString([
+            "이전에",
+            this.gimmickData.earthenGauntlets.name,
+            "를 사용했다면",
+            this.gimmickData.earthenWheels.name,
+            "를,",
+            this.gimmickData.earthenWheels.name,
+            "를 사용했다면",
+            this.gimmickData.earthenGauntlets.name,
+            "를 사용합니다."
+          ]),
+          color: this.colorTypes.instruction
         },
         {
-          instruction:
-            "본 타임라인은 위에 " +
-            gimmickData.earthenGauntlets.name +
-            " 를 사용했다고 가정했으므로 " +
-            gimmickData.earthenWheels.name +
-            " " +
-            this.generatePostposition(gimmickData.earthenWheels.name, "가") +
-            " 사용됩니다.",
-          color: colorTypes.instruction
+          instruction: this.generateString([
+            "본 타임라인은 위에",
+            this.gimmickData.earthenGauntlets.name,
+            "를 사용했다고 가정했으므로",
+            this.gimmickData.earthenWheels.name,
+            "가 사용됩니다."
+          ]),
+          color: this.colorTypes.instruction
         },
         {
           id: "earthenWheels",
@@ -371,32 +358,41 @@ class EdensGateSepultureSavage extends PageComponent {
           timestamp: "3:26"
         },
         {
-          instruction: gimmickData.earthenWheels.name + " 페이즈가 끝났습니다.",
-          color: colorTypes.instruction
+          instruction: this.generateString([
+            this.gimmickData.earthenWheels.name,
+            "페이즈가 끝났습니다."
+          ]),
+          color: this.colorTypes.instruction
         },
         {
-          instruction:
-            "이 시점에 미니 타이탄의 체력이 적어도 71% 이하인 것이 좋습니다.",
-          color: colorTypes.warning
+          instruction: this.generateString([
+            "이 시점에 미니 타이탄의 체력이 적어도 71% 이하인 것이 좋습니다."
+          ]),
+          color: this.colorTypes.warning
         },
         {
-          instruction: "2 페이즈 - 거대 타이탄으로 이어집니다.",
-          color: colorTypes.instruction
+          instruction: this.generateString([
+            "2 페이즈 - 거대 타이탄으로 이어집니다."
+          ]),
+          color: this.colorTypes.instruction
         }
       ],
       [
         {
-          instruction: "페이즈 전환 중에는 타겟팅/공격이 불가능합니다.",
-          color: colorTypes.instruction
+          instruction: this.generateString([
+            "페이즈 전환 중에는 타겟팅/공격이 불가능합니다."
+          ]),
+          color: this.colorTypes.instruction
         },
         {
           id: "orogenesis",
           timestamp: "3:50"
         },
         {
-          instruction:
-            "페이즈 전환이 끝나면 거대 타이탄이 맵 북쪽에 고정되며 후측 판정이 사라집니다.",
-          color: colorTypes.instruction
+          instruction: this.generateString([
+            "페이즈 전환이 끝나면 거대 타이탄이 맵 북쪽에 고정되며 후측 판정이 사라집니다."
+          ]),
+          color: this.colorTypes.instruction
         },
         {
           id: "earthenFury",
@@ -412,177 +408,255 @@ class EdensGateSepultureSavage extends PageComponent {
         },
         {
           id: "earthenAnguishMegalith",
-          timestamp: "4:56"
+          timestamp: "4:57"
+        },
+        {
+          id: "tectonicUplift1",
+          timestamp: "5:12"
+        },
+        {
+          id: "earthenFury",
+          timestamp: "5:32"
         }
       ]
     ];
 
     const dialogs = [
-      {
-        id: "bombBoulders",
-        children: (
-          <React.Fragment>
-            <CenteredBlock>
-              <ImageBlock
-                src={pageData.videoBaseUrl + "/bomb-boulders/1.png"}
-                width={300}
-              />
-            </CenteredBlock>
+      this.generateDialog(
+        "bombBoulders",
+        pageData.videoBaseUrl + "/bomb-boulders",
+        [
+          {
+            type: "images",
+            images: [
+              {
+                src: "/1.png",
+                width: 300
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "미니 타이탄이 작은 시한폭탄 돌덩어리들을 순차적으로 소환합니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  '시한폭탄들은 소환된 순서대로 폭발하며 피격당한 대상에게 큰 마법 피해와 함께 "주는 피해 감소", "받는 피해 증가" 등의 디버프를 부여하므로 꼭 피해주어야 합니다.'
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "세로줄 총 3줄이 소환되며 항상 가운데줄이 가장 먼저 소환됩니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "즉 등장 가능한 시한폭탄의 조합은 다음과 같습니다. (각 아이콘의 숫자가 등장 순서를 나타냅니다.)"
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "images",
+            images: [
+              {
+                src: "/2.png",
+                width: 300
+              },
+              {
+                src: "/3.png",
+                width: 300
+              }
+            ]
+          }
+        ]
+      ),
+      this.generateDialog(
+        "crumblingDown",
+        pageData.videoBaseUrl + "/crumbling-down",
+        [
+          {
+            type: "loopingVideos",
+            loopingVideos: [
+              {
+                height: 360,
+                src: "/1.mp4"
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  {
+                    id: "crumblingDown",
+                    type: "chip"
+                  },
+                  "시전을 시작하는 순간 대상자 두 명의 머리 위에 빨간 징이 표시됩니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "대상자는 총 2명으로 탱힐 중 1명과 딜러 중 1명이 무작위로 선택됩니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "loopingVideos",
+            loopingVideos: [
+              {
+                height: 360,
+                src: "/2.mp4"
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "시전이 끝나는 순간 빨간 징 대상자 두 명의 발 밑에 거리 비례 피해 징이 생성됩니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "동시에 첫 번째 대상자가 아니었던 나머지 6명의 파티원 중 무작위로 탱힐 중 1명, 딜러 중 1명의 머리 위에 두 번째 빨간 징이 표시됩니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "이 빨간 징 역시 일정 시간이 지나면 사라지며 징 대상자의 발 밑에 거리 비례 피해 징을 생성합니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "이후 거리 비례 피해 징의 위치에 커다란 돌덩어리가 낙하하며 파티원 모두에게 강력한 거리 비례 마법 피해를 입힙니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          }
+        ]
+      ),
+      this.generateDialog(
+        "crumblingDownBombBouldersSeismicWave",
+        pageData.videoBaseUrl + "/crumbling-down-bomb-boulders-seismic-wave",
+        [
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "이후 나올 기믹 처리를 위해 미니 타이탄을 미리 맵 중앙에 주차하고 머리를 북쪽으로 돌려주면 좋습니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "images",
+            images: [
+              {
+                src: "/1.png",
+                width: 500
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  {
+                    id: "crumblingDown",
+                    type: "chip"
+                  },
+                  "처리를 위해 바닥징을 사용할 것입니다. 바닥징은 위와 같이 찍혀있다고 가정합니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  {
+                    id: "crumblingDown",
+                    type: "chip"
+                  },
+                  ",",
+                  {
+                    id: "bombBoulders",
+                    type: "chip"
+                  },
+                  ",",
+                  {
+                    id: "seismicWave",
+                    type: "chip"
+                  },
+                  "가 빠르게 순차적으로 등장하게 됩니다. 일단 등장하는 순서에 따라 차근차근 하나씩 자세히 살펴본 후, 전체 타이밍을 살펴보도록 하겠습니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          }
+        ]
+      ) /*
             <Grid item>
               <Typography variant="body2">
-                미니 타이탄이 작은 시한폭탄 돌덩어리들을 순차적으로 소환합니다.
-              </Typography>
-            </Grid>
-            <Grid item>
-              <Typography variant="body2">
-                시한폭탄들은 소환된 순서대로 폭발하며 피격당한 대상에게 큰 마법
-                피해와 함께 "주는 피해 감소", "받는 피해 증가" 등의 디버프를
-                거므로 꼭 피해주어야 합니다.
-              </Typography>
-            </Grid>
-            <Grid item>
-              <Typography variant="body2">
-                세로줄 총 3줄이 소환되며 항상 가운데줄이 가장 먼저 소환됩니다.
-              </Typography>
-            </Grid>
-            <Grid item>
-              <Typography variant="body2">
-                즉 등장 가능한 시한폭탄의 조합은 다음과 같습니다. (각 아이콘의
-                숫자가 등장 순서를 나타냅니다.)
-              </Typography>
-            </Grid>
-            <CenteredBlock>
-              <ImageBlock
-                src={pageData.videoBaseUrl + "/bomb-boulders/2.png"}
-                width={300}
-              />
-              <ImageBlock
-                src={pageData.videoBaseUrl + "/bomb-boulders/3.png"}
-                width={300}
-              />
-            </CenteredBlock>
-          </React.Fragment>
-        )
-      },
-      {
-        id: "crumblingDown",
-        children: (
-          <React.Fragment>
-            <CenteredBlock>
-              <LoopingVideoBlock
-                height={360}
-                src={pageData.videoBaseUrl + "/crumbling-down/1.mp4"}
-              />
-            </CenteredBlock>
-            <Grid item>
-              <Typography variant="body2">
-                <InlineChip
-                  currentId="crumblingDown"
-                  gimmickData={gimmickData}
-                  id="crumblingDown"
-                  openDialog={openDialog}
-                />{" "}
-                시전을 시작하는 순간 대상자 두 명의 머리 위에 빨간 징이
-                표시됩니다.
-              </Typography>
-            </Grid>
-            <Grid item>
-              <Typography variant="body2">
-                대상자는 총 2명으로 탱힐 중 1명과 딜러 중 1명이 무작위로
-                선택됩니다.
-              </Typography>
-            </Grid>
-            <CenteredBlock>
-              <LoopingVideoBlock
-                height={360}
-                src={pageData.videoBaseUrl + "/crumbling-down/2.mp4"}
-              />
-            </CenteredBlock>
-            <Grid item>
-              <Typography variant="body2">
-                시전이 끝나는 순간 빨간 징 대상자 두 명의 발 밑에 거리 비례 피해
-                징이 생성됩니다.
-              </Typography>
-            </Grid>
-            <Grid item>
-              <Typography variant="body2">
-                동시에 첫 번째 대상자가 아니었던 나머지 6명의 파티원 중 무작위로
-                탱힐 중 1명, 딜러 중 1명의 머리 위에 두 번째 빨간 징이
-                표시됩니다.
-              </Typography>
-            </Grid>
-            <Grid item>
-              <Typography variant="body2">
-                이 빨간 징 역시 일정 시간이 지나면 사라지며 징 대상자의 발 밑에
-                거리 비례 피해 징을 생성합니다.
-              </Typography>
-            </Grid>
-            <Grid item>
-              <Typography variant="body2">
-                이후 거리 비례 피해 징의 위치에 커다란 돌덩어리가 낙하하며
-                파티원 모두에게 강력한 거리 비례 마법 피해를 입힙니다.
-              </Typography>
-            </Grid>
-          </React.Fragment>
-        )
-      },
-      {
-        id: "crumblingDownBombBouldersSeismicWave",
-        children: (
-          <React.Fragment>
-            <Grid item>
-              <Typography variant="body2">
-                이후 나올 기믹 처리를 위해 미니 타이탄을 미리 맵 중앙에 주차하고
-                머리를 북쪽으로 돌려주면 좋습니다.
-              </Typography>
-            </Grid>
-            <CenteredBlock>
-              <ImageBlock
-                src={
-                  pageData.videoBaseUrl +
-                  "/crumbling-down-bomb-boulders-seismic-wave/1.png"
-                }
-                width={500}
-              />
-            </CenteredBlock>
-            <Grid item>
-              <Typography variant="body2">
-                <InlineChip
-                  currentId="crumblingDownBombBouldersSeismicWave"
-                  gimmickData={gimmickData}
-                  id="crumblingDown"
-                  openDialog={openDialog}
-                />{" "}
-                처리를 위해 바닥징을 사용할 것입니다. 바닥징은 위와 같이
-                찍혀있다고 가정합니다.
-              </Typography>
-            </Grid>
-            <Grid item>
-              <Typography variant="body2">
-                <InlineChip
-                  currentId="crumblingDownBombBouldersSeismicWave"
-                  gimmickData={gimmickData}
-                  id="crumblingDown"
-                  openDialog={openDialog}
-                />
-                ,{" "}
-                <InlineChip
-                  currentId="crumblingDownBombBouldersSeismicWave"
-                  gimmickData={gimmickData}
-                  id="bombBoulders"
-                  openDialog={openDialog}
-                />
-                ,{" "}
-                <InlineChip
-                  currentId="crumblingDownBombBouldersSeismicWave"
-                  gimmickData={gimmickData}
-                  id="seismicWave"
-                  openDialog={openDialog}
-                />{" "}
-                {this.generatePostposition(gimmickData.seismicWave.name, "가")}{" "}
-                빠르게 순차적으로 등장하게 됩니다. 일단 등장하는 순서에 따라
-                차근차근 하나씩 자세히 살펴본 후, 전체 타이밍을 살펴보도록
-                하겠습니다.
+
               </Typography>
             </Grid>
             <Grid item>
@@ -2636,7 +2710,471 @@ class EdensGateSepultureSavage extends PageComponent {
             </Grid>
           </React.Fragment>
         )
-      }
+      }*/,
+      this.generateDialog("rockThrow", pageData.videoBaseUrl + "/rock-throw", [
+        {
+          type: "typographies",
+          typographies: [
+            {
+              contents: [
+                "시전이 끝나면 2명의 대상자에게 징이 표시됩니다. 대상자는 힐러 2명이 우선으로 선택되지만 힐러가 사망 중인 경우에는 무작위로 선택됩니다."
+              ],
+              variant: "body2"
+            }
+          ]
+        },
+        {
+          type: "typographies",
+          typographies: [
+            {
+              contents: [
+                "일정 시간이 지나면 대상자의 위치에 돌 감옥이 생성되며 대상자는 움직이거나 기술을 사용하지 못하는 상태가 됩니다."
+              ],
+              variant: "body2"
+            }
+          ]
+        },
+        {
+          type: "typographies",
+          typographies: [
+            {
+              contents: [
+                "나머지 파티원들은 돌 감옥을 공격해 부숴서 감옥에 갇힌 파티원을 꺼내주어야 합니다."
+              ],
+              variant: "body2"
+            },
+            {
+              contents: [
+                '* 돌 감옥 2개가 너무 가까이 생성되었을 경우 매우 강력한 "받는 피해 감소" 버프가 걸려 부술 수 없게 됩니다. 따라서 돌 감옥 대상자는 항상 서로에게서부터 일정 거리 이상 떨어져 있어야 합니다.'
+              ],
+              variant: "body2",
+              style: {
+                color: this.colorTypes.warning
+              }
+            }
+          ]
+        }
+      ]),
+      this.generateDialog(
+        "tectonicUplift",
+        pageData.videoBaseUrl + "/tectonic-uplift",
+        [
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  {
+                    id: "tectonicUplift",
+                    type: "chip"
+                  },
+                  "시전이 시작되면 맵 북쪽의 절반과 맵 남쪽의 절반이 장판으로 덮힙니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "images",
+            images: [
+              {
+                src: "/1.png",
+                width: 250
+              },
+              {
+                src: "/2.png",
+                width: 250
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "장판은 항상 대각선으로 마주 보는 형태로 나타납니다. 즉 위 두 가지 조합이 가능합니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "loopingVideos",
+            loopingVideos: [
+              {
+                height: 360,
+                src: "/3.mp4"
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  {
+                    id: "tectonicUplift",
+                    type: "chip"
+                  },
+                  "시전이 끝나면 거대 타이탄이 맵을 내리쳐 장판이 생겼던 부분을 튀어오르게 합니다. 이 때 장판을 밟고 있었을 경우 맵과 함께 튀어오르게 됩니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "튀어나온 곳에서 아래로 내려갈 수는 있지만 아래에서 위로 올라갈 수는 없습니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          }
+        ]
+      ),
+      this.generateDialog(
+        "tectonicUplift1",
+        pageData.videoBaseUrl + "/tectonic-uplift-1",
+        [
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  {
+                    id: "tectonicUplift",
+                    type: "chip"
+                  },
+                  "시전이 시작됩니다. 탱힐은 맵의 남쪽으로, 딜러는 맵의 북쪽으로 산개할 것입니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  {
+                    id: "weightOfTheWorld",
+                    type: "chip"
+                  },
+                  "징이 탱힐 중 1명과 딜러 중 1명에게 표시됩니다. 이후",
+                  {
+                    id: "tectonicUplift",
+                    type: "chip"
+                  },
+                  "시전이 끝나기 전에 아래와 같이 산개합니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "images",
+            images: [
+              {
+                src: "/1.png",
+                width: 500
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  {
+                    id: "tectonicUplift",
+                    type: "chip"
+                  },
+                  "시전이 끝나고 나면",
+                  {
+                    id: "weightOfTheWorld",
+                    type: "chip"
+                  },
+                  "징을 받은 파티원들은 낮은 곳에서 징을 처리하고 나머지 파티원들은 높은 곳에 위치하게 됩니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "loopingVideos",
+            loopingVideos: [
+              {
+                height: 360,
+                src: "/2.mp4"
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "동시에 낮은 곳 바닥칸 일부를 덮는 장판이 생성됩니다. 한 곳에는 1개의 바닥 장판이, 다른 곳에는 2개의 바닥 장판이 생성됩니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "loopingVideos",
+            loopingVideos: [
+              {
+                height: 360,
+                src: "/3.mp4"
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "생성되는 장판의 위치는 무작위입니다. 높은 곳에 위치한 파티원들은 바닥칸 장판이 생성되고 난 후 어느 곳에 2개의 장판이 생겼고 어느 곳에 1개의 장판이 생겼는지 재빨리 확인해야 합니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "새로운",
+                  {
+                    id: "pulseOfTheLand",
+                    type: "chip"
+                  },
+                  ",",
+                  {
+                    id: "forceOfTheLand",
+                    type: "chip"
+                  },
+                  ", 그리고",
+                  {
+                    id: "weightOfTheWorld",
+                    type: "chip"
+                  },
+                  "징이 표시됩니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "images",
+            images: [
+              {
+                src: "/4.png",
+                width: 500
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "초반에",
+                  {
+                    id: "weightOfTheWorld",
+                    type: "chip"
+                  },
+                  "를 받았던 파티원들을 제외한 플레이어들 중 탱힐 3명이 각 징을 1개씩, 그리고 딜러 3명이 역시 각 징을 1개씩 나눠받게 됩니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  {
+                    id: "pulseOfTheLand",
+                    type: "chip"
+                  },
+                  "징을 받은 파티원들은 바닥 장판이 1칸인 곳으로,",
+                  {
+                    id: "forceOfTheLand",
+                    type: "chip"
+                  },
+                  "징을 받은 파티원들은 바닥 장판이 2칸인 곳으로,",
+                  {
+                    id: "weightOfTheWorld",
+                    type: "chip"
+                  },
+                  "징을 받은 파티원들은 낮은 곳으로 내려가지 않고 맵 모서리로 산개해야 합니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "images",
+            images: [
+              {
+                src: "/5.png",
+                width: 500
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "바닥 장판의 위치는 무작위입니다! 낮은 곳에 생성된 바닥 장판의 갯수와 위치를 꼭 다시 한 번 잘 확인한 후 산개해주세요. 위 그림은 산개 예제입니다. 장판의 생성 위치가 무작위이므로 생성된 장판의 위치를 잘 보고 판단해 이동해야 합니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "divider"
+          },
+          {
+            type: "loopingVideos",
+            loopingVideos: [
+              {
+                height: 360,
+                src: "/6.mp4"
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  {
+                    id: "pulseOfTheLand",
+                    type: "chip"
+                  },
+                  "징을 받은 플레이어들은 바닥 장판이 1칸인 곳으로 내려가 다른 파티원들이 겹쳐맞지 않도록 산개해 징을 처리해줍니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "divider"
+          },
+          {
+            type: "loopingVideos",
+            loopingVideos: [
+              {
+                height: 360,
+                src: "/7.mp4"
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  {
+                    id: "forceOfTheLand",
+                    type: "chip"
+                  },
+                  "징을 받은 플레이어들은 바닥 장판이 2칸인 곳으로 내려가 모여 서서 징을 처리해줍니다."
+                ],
+                variant: "body2"
+              },
+              {
+                contents: [
+                  "* 초반에",
+                  {
+                    id: "weightOfTheWorld",
+                    type: "chip"
+                  },
+                  '징을 받았던 플레이어의 경우 그 때 부여받은 "받는 마법 피해 증가" 디버프가 아직 남아있으므로 절대',
+                  {
+                    id: "forceOfTheLand",
+                    type: "chip"
+                  },
+                  "를 같이 맞으면 안 됩니다!"
+                ],
+                variant: "body2",
+                style: {
+                  color: this.colorTypes.warning
+                }
+              }
+            ]
+          },
+          {
+            type: "divider"
+          },
+          {
+            type: "loopingVideos",
+            loopingVideos: [
+              {
+                height: 360,
+                src: "/8.mp4"
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  {
+                    id: "weightOfTheWorld",
+                    type: "chip"
+                  },
+                  "징을 받은 플레이어들은 다른 파티원들이 피격당하지 않도록 높은 곳 모서리로 산개해 징을 처리해줍니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "divider"
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "이후 거대 타이탄이",
+                  {
+                    id: "earthenFury",
+                    type: "chip"
+                  },
+                  "를 사용하므로 중앙에 모여 힐업해줍니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  {
+                    id: "earthenFury",
+                    type: "chip"
+                  },
+                  "시전이 끝나면 맵이 원래대로 돌아갑니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          }
+        ]
+      )
     ];
 
     return (
@@ -2705,35 +3243,8 @@ class EdensGateSepultureSavage extends PageComponent {
           </Grid>
           <Grid item>
             <ExpansionPanelsBlock
-              expandedPanel={2}
+              expandedPanel={1}
               panels={[
-                {
-                  title: "기믹 살펴보기",
-                  children: (
-                    <React.Fragment>
-                      <Grid item>
-                        <Typography variant="body2">
-                          * 기믹 이름을 클릭하면 상세 설명을 볼 수 있습니다.
-                        </Typography>
-                        <Typography
-                          style={{
-                            color: colors.red
-                          }}
-                          variant="body2"
-                        >
-                          * 등장하는 모든 기믹을 ㄱㄴㄷ순으로 정리해놓은
-                          목록입니다. 기믹의 등장 순서 및 전체 공략을
-                          열람하시려면 아래 페이즈별 타임라인을 참조해주세요!
-                        </Typography>
-                      </Grid>
-                      <GimmicksBlock
-                        gimmickData={gimmickData}
-                        gimmicks={gimmicks}
-                        openDialog={openDialog}
-                      />
-                    </React.Fragment>
-                  )
-                },
                 {
                   title: "1 페이즈 타임라인 - 미니 타이탄",
                   children: (
@@ -2745,7 +3256,7 @@ class EdensGateSepultureSavage extends PageComponent {
                         </Typography>
                         <Typography
                           style={{
-                            color: colorTypes.warning
+                            color: this.colorTypes.warning
                           }}
                           variant="body2"
                         >
@@ -2755,8 +3266,8 @@ class EdensGateSepultureSavage extends PageComponent {
                         </Typography>
                       </Grid>
                       <TimelineBlock
-                        gimmickData={gimmickData}
-                        openDialog={openDialog}
+                        gimmickData={this.gimmickData}
+                        openDialog={this.openDialog}
                         timeline={timelines[0]}
                       />
                     </React.Fragment>
@@ -2773,7 +3284,7 @@ class EdensGateSepultureSavage extends PageComponent {
                         </Typography>
                         <Typography
                           style={{
-                            color: colorTypes.warning
+                            color: this.colorTypes.warning
                           }}
                           variant="body2"
                         >
@@ -2783,8 +3294,8 @@ class EdensGateSepultureSavage extends PageComponent {
                         </Typography>
                       </Grid>
                       <TimelineBlock
-                        gimmickData={gimmickData}
-                        openDialog={openDialog}
+                        gimmickData={this.gimmickData}
+                        openDialog={this.openDialog}
                         timeline={timelines[1]}
                       />
                     </React.Fragment>
@@ -2814,9 +3325,9 @@ class EdensGateSepultureSavage extends PageComponent {
           return (
             <TimelineDialogBlock
               children={dialog.children}
-              closeDialog={closeDialog}
+              closeDialog={this.closeDialog}
               dialogHistory={this.state.dialogHistory}
-              gimmickData={gimmickData}
+              gimmickData={this.gimmickData}
               id={dialog.id}
               key={dialogIndex}
               openedDialog={this.state.openedDialog}

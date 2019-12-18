@@ -37,12 +37,12 @@ class TimelineBlock extends React.Component {
                   button
                   key={itemIndex}
                   onClick={() => {
-                    this.state.lastItem = item.id;
+                    this.state.lastItem = itemIndex;
                     this.setState(this.state, () => {
                       this.props.openDialog(item.id);
                     });
                   }}
-                  selected={this.state.lastItem === item.id}
+                  selected={this.state.lastItem === itemIndex}
                 >
                   <Grid alignItems="center" container spacing={3}>
                     <Grid item>
