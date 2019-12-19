@@ -45,9 +45,11 @@ class TimelineBlock extends React.Component {
                   selected={this.state.lastItem === itemIndex}
                 >
                   <Grid alignItems="center" container spacing={3}>
-                    <Grid item>
-                      <Chip label={item.timestamp} />
-                    </Grid>
+                    {item.timestamp && (
+                      <Grid item>
+                        <Chip label={item.timestamp} />
+                      </Grid>
+                    )}
                     <Grid item>
                       {this.props.gimmickData[item.id].ids ? (
                         <ListItemText

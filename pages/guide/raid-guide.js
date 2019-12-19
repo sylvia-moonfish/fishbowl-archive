@@ -18,6 +18,14 @@ const pageData = {
           name: "5.0",
           items: [
             {
+              name: "희망의 동산 에덴: 각성편 4",
+              level: 80,
+              itemLevel: 425,
+              thumbnailSrc:
+                SiteInfo.assetsUrl + "/raid-guide/edens-gate-sepulture.png",
+              href: "/guide/raid-guide/5-0/edens-gate-sepulture"
+            }
+            /*{
               name: "희망의 동산 에덴 영웅: 각성편 4",
               level: 80,
               itemLevel: 450,
@@ -25,7 +33,7 @@ const pageData = {
                 SiteInfo.assetsUrl +
                 "/raid-guide/edens-gate-sepulture-savage.png",
               href: "/guide/raid-guide/5-0/edens-gate-sepulture-savage"
-            }
+            }*/
           ]
         }
       ]

@@ -12,16 +12,17 @@ class YoutubeFrameBlock extends React.Component {
       <Grid
         item
         style={{
-          maxWidth: this.props.width + "px",
+          maxWidth: this.props.width,
           width: "100%"
         }}
       >
         <iframe
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
           frameBorder="0"
           height={this.props.height}
           style={{
-            maxWidth: this.props.width + "px",
+            maxWidth: this.props.width,
             width: "100%"
           }}
           src={this.props.src}

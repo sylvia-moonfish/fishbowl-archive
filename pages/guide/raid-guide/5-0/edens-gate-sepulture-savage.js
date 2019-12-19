@@ -1,14 +1,4 @@
 import Container from "@material-ui/core/Container";
-import {
-  blue,
-  blueGrey,
-  brown,
-  green,
-  purple,
-  red,
-  teal,
-  yellow
-} from "@material-ui/core/colors";
 import Divider from "@material-ui/core/Divider";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
@@ -18,13 +8,10 @@ import LaunchIcon from "@material-ui/icons/Launch";
 import React from "react";
 
 import ExpansionTitles from "../../../../data/expansion-titles";
+import GimmickColorType from "../../../../data/gimmick-color-type";
 import SiteInfo from "../../../../data/site-info";
 import CenteredBlock from "../../../../src/components/blocks/centered-block";
 import ExpansionPanelsBlock from "../../../../src/components/blocks/expansion-panels-block";
-import GimmicksBlock from "../../../../src/components/blocks/gimmicks-block";
-import ImageBlock from "../../../../src/components/blocks/image-block";
-import InlineChip from "../../../../src/components/blocks/inline-chip";
-import LoopingVideoBlock from "../../../../src/components/blocks/looping-video-block";
 import TimelineBlock from "../../../../src/components/blocks/timeline-block";
 import TimelineDialogBlock from "../../../../src/components/blocks/timeline-dialog-block";
 import YoutubeFrameBlock from "../../../../src/components/blocks/youtube-frame-block";
@@ -43,42 +30,21 @@ class EdensGateSepultureSavage extends GuidePageComponent {
     super(props);
 
     this.state.openedDialog = "rockThrow";
+  }
 
-    const colorHue = props.currentTheme === "light" ? 800 : 200;
-
-    const colors = {
-      blue: blue[colorHue],
-      blueGrey: blueGrey[colorHue],
-      brown: brown[colorHue],
-      green: green[colorHue],
-      purple: purple[colorHue],
-      red: red[colorHue],
-      teal: teal[colorHue],
-      yellow: yellow[colorHue]
-    };
-
-    this.colorTypes = {
-      tank: colors.blue,
-      heal: colors.green,
-      dps: colors.red,
-      anyone: colors.purple,
-      everyone: colors.yellow,
-      everyoneSpecial: colors.teal,
-      noOne: colors.brown,
-      instruction: colors.blueGrey,
-      warning: colors.red
-    };
+  render() {
+    const colorTypes = GimmickColorType[this.props.currentTheme];
 
     this.gimmickData = {
       bombBoulders: {
         name: "Bomb Boulders",
         description: "3줄 시한폭탄",
-        color: this.colorTypes.everyone
+        color: colorTypes.everyone
       },
       crumblingDown: {
         name: "Crumbling Down",
         description: "거리 비례 피해 돌 소환",
-        color: this.colorTypes.anyone
+        color: colorTypes.anyone
       },
       crumblingDownBombBouldersSeismicWave: {
         ids: ["crumblingDown", "bombBoulders", "seismicWave"]
@@ -86,7 +52,7 @@ class EdensGateSepultureSavage extends GuidePageComponent {
       dualEarthenFists: {
         name: "Dual Earthen Fists",
         description: "파란색 원형 장판 넉백",
-        color: this.colorTypes.everyone
+        color: colorTypes.everyone
       },
       dualEarthenFistsWeightOfTheWorld: {
         ids: ["dualEarthenFists", "weightOfTheWorld"]
@@ -94,7 +60,7 @@ class EdensGateSepultureSavage extends GuidePageComponent {
       earthenAnguish: {
         name: "Earthen Anguish",
         description: "거대 타이탄 탱크 버스터",
-        color: this.colorTypes.tank
+        color: colorTypes.tank
       },
       earthenAnguishMegalith: {
         ids: ["earthenAnguish", "megalith"]
@@ -102,7 +68,7 @@ class EdensGateSepultureSavage extends GuidePageComponent {
       earthenFist: {
         name: "Earthen Fist",
         description: "2연속 주먹질",
-        color: this.colorTypes.everyone
+        color: colorTypes.everyone
       },
       earthenFistWeightOfTheLand: {
         ids: ["earthenFist", "weightOfTheLand"]
@@ -110,27 +76,27 @@ class EdensGateSepultureSavage extends GuidePageComponent {
       earthenFury: {
         name: "Earthen Fury",
         description: "거대 타이탄 광역기",
-        color: this.colorTypes.heal
+        color: colorTypes.heal
       },
       earthenGauntlets: {
         name: "Earthen Gauntlets",
         description: "산사태 형태로 변신",
-        color: this.colorTypes.noOne
+        color: colorTypes.noOne
       },
       earthenWheels: {
         name: "Earthen Wheels",
         description: "자동차 형태로 변신",
-        color: this.colorTypes.noOne
+        color: colorTypes.noOne
       },
       explosion: {
         name: "Explosion",
         description: "시한폭탄",
-        color: this.colorTypes.noOne
+        color: colorTypes.noOne
       },
       evilEarth: {
         name: "Evil Earth",
         description: "연속 폭발 장판",
-        color: this.colorTypes.everyone
+        color: colorTypes.everyone
       },
       evilEarth1: {
         ids: ["evilEarth"]
@@ -138,7 +104,7 @@ class EdensGateSepultureSavage extends GuidePageComponent {
       faultLine: {
         name: "Fault Line",
         description: "직선 주행",
-        color: this.colorTypes.everyone
+        color: colorTypes.everyone
       },
       faultLineMagnitude50: {
         ids: ["faultLine", "pulseOfTheLand", "forceOfTheLand", "magnitude50"]
@@ -146,27 +112,27 @@ class EdensGateSepultureSavage extends GuidePageComponent {
       forceOfTheLand: {
         name: "Force of the Land",
         description: "오렌지색 네모 징",
-        color: this.colorTypes.anyone
+        color: colorTypes.anyone
       },
       geocrush: {
         name: "Geocrush",
         description: "미니 타이탄 점프 + 넉백",
-        color: this.colorTypes.noOne
+        color: colorTypes.noOne
       },
       landslide: {
         name: "Landslide",
         description: "T자형 공격 + 시한폭탄",
-        color: this.colorTypes.everyone
+        color: colorTypes.everyone
       },
       magnitude50: {
         name: "Magnitude 5.0",
         description: "도넛 범위 공격",
-        color: this.colorTypes.everyone
+        color: colorTypes.everyone
       },
       massiveLandslide: {
         name: "Massive Landslide",
         description: "산사태",
-        color: this.colorTypes.everyoneSpecial
+        color: colorTypes.everyoneSpecial
       },
       massiveLandslide1: {
         ids: ["massiveLandslide", "pulseOfTheLand", "forceOfTheLand"]
@@ -174,37 +140,37 @@ class EdensGateSepultureSavage extends GuidePageComponent {
       megalith: {
         name: "Megalith",
         description: "셰어 탱크 버스터",
-        color: this.colorTypes.tank
+        color: colorTypes.tank
       },
       orogenesis: {
         name: "Orogenesis (미니 타이탄)",
         description: "미니 타이탄 거대화",
-        color: this.colorTypes.noOne
+        color: colorTypes.noOne
       },
       pulseOfTheLand: {
         name: "Pulse of the Land",
         description: "노란색 세모 징",
-        color: this.colorTypes.anyone
+        color: colorTypes.anyone
       },
       rockThrow: {
         name: "Rock Throw",
         description: "힐러 돌감옥",
-        color: this.colorTypes.heal
+        color: colorTypes.heal
       },
       seismicWave: {
         name: "Seismic Wave",
         description: "큰 돌 뒤에 숨기",
-        color: this.colorTypes.everyone
+        color: colorTypes.everyone
       },
       stonecrusher: {
         name: "Stonecrusher",
         description: "3연속 탱크 버스터",
-        color: this.colorTypes.tank
+        color: colorTypes.tank
       },
       tectonicUplift: {
         name: "Tectonic Uplift",
         description: "맵 융기",
-        color: this.colorTypes.everyoneSpecial
+        color: colorTypes.everyoneSpecial
       },
       tectonicUplift1: {
         ids: [
@@ -217,12 +183,12 @@ class EdensGateSepultureSavage extends GuidePageComponent {
       voiceOfTheLand: {
         name: "Voice of the Land",
         description: "미니 타이탄 광역기",
-        color: this.colorTypes.heal
+        color: colorTypes.heal
       },
       weightOfTheLand: {
         name: "Weight of the Land",
         description: "랜덤 장판 8개",
-        color: this.colorTypes.noOne
+        color: colorTypes.noOne
       },
       weightOfTheLandPulseOfTheLand: {
         ids: ["weightOfTheLand", "pulseOfTheLand"]
@@ -230,12 +196,10 @@ class EdensGateSepultureSavage extends GuidePageComponent {
       weightOfTheWorld: {
         name: "Weight of the World",
         description: "파란색 세모 징",
-        color: this.colorTypes.anyone
+        color: colorTypes.anyone
       }
     };
-  }
 
-  render() {
     const timelines = [
       [
         {
@@ -270,7 +234,7 @@ class EdensGateSepultureSavage extends GuidePageComponent {
             this.gimmickData.earthenWheels.name,
             "페이즈가 이어집니다."
           ]),
-          color: this.colorTypes.instruction
+          color: colorTypes.instruction
         },
         {
           instruction: this.generateString([
@@ -278,7 +242,7 @@ class EdensGateSepultureSavage extends GuidePageComponent {
             this.gimmickData.earthenGauntlets.name,
             "가 사용되었다고 가정하고 진행하겠습니다."
           ]),
-          color: this.colorTypes.instruction
+          color: colorTypes.instruction
         },
         {
           id: "earthenGauntlets",
@@ -301,13 +265,13 @@ class EdensGateSepultureSavage extends GuidePageComponent {
             this.gimmickData.earthenGauntlets.name,
             "페이즈가 끝났습니다."
           ]),
-          color: this.colorTypes.instruction
+          color: colorTypes.instruction
         },
         {
           instruction: this.generateString([
             "미니 타이탄이 다시 기본 형태로 변신한 후 아래 기믹을 이어갑니다."
           ]),
-          color: this.colorTypes.instruction
+          color: colorTypes.instruction
         },
         {
           id: "crumblingDownBombBouldersSeismicWave",
@@ -337,7 +301,7 @@ class EdensGateSepultureSavage extends GuidePageComponent {
             this.gimmickData.earthenGauntlets.name,
             "를 사용합니다."
           ]),
-          color: this.colorTypes.instruction
+          color: colorTypes.instruction
         },
         {
           instruction: this.generateString([
@@ -347,7 +311,7 @@ class EdensGateSepultureSavage extends GuidePageComponent {
             this.gimmickData.earthenWheels.name,
             "가 사용됩니다."
           ]),
-          color: this.colorTypes.instruction
+          color: colorTypes.instruction
         },
         {
           id: "earthenWheels",
@@ -362,19 +326,19 @@ class EdensGateSepultureSavage extends GuidePageComponent {
             this.gimmickData.earthenWheels.name,
             "페이즈가 끝났습니다."
           ]),
-          color: this.colorTypes.instruction
+          color: colorTypes.instruction
         },
         {
           instruction: this.generateString([
             "이 시점에 미니 타이탄의 체력이 적어도 71% 이하인 것이 좋습니다."
           ]),
-          color: this.colorTypes.warning
+          color: colorTypes.warning
         },
         {
           instruction: this.generateString([
             "2 페이즈 - 거대 타이탄으로 이어집니다."
           ]),
-          color: this.colorTypes.instruction
+          color: colorTypes.instruction
         }
       ],
       [
@@ -382,7 +346,7 @@ class EdensGateSepultureSavage extends GuidePageComponent {
           instruction: this.generateString([
             "페이즈 전환 중에는 타겟팅/공격이 불가능합니다."
           ]),
-          color: this.colorTypes.instruction
+          color: colorTypes.instruction
         },
         {
           id: "orogenesis",
@@ -392,7 +356,7 @@ class EdensGateSepultureSavage extends GuidePageComponent {
           instruction: this.generateString([
             "페이즈 전환이 끝나면 거대 타이탄이 맵 북쪽에 고정되며 후측 판정이 사라집니다."
           ]),
-          color: this.colorTypes.instruction
+          color: colorTypes.instruction
         },
         {
           id: "earthenFury",
@@ -2724,6 +2688,15 @@ class EdensGateSepultureSavage extends GuidePageComponent {
           ]
         },
         {
+          type: "images",
+          images: [
+            {
+              src: "/1.png",
+              width: 290
+            }
+          ]
+        },
+        {
           type: "typographies",
           typographies: [
             {
@@ -2731,6 +2704,15 @@ class EdensGateSepultureSavage extends GuidePageComponent {
                 "일정 시간이 지나면 대상자의 위치에 돌 감옥이 생성되며 대상자는 움직이거나 기술을 사용하지 못하는 상태가 됩니다."
               ],
               variant: "body2"
+            }
+          ]
+        },
+        {
+          type: "loopingVideos",
+          loopingVideos: [
+            {
+              height: 360,
+              src: "/2.mp4"
             }
           ]
         },
@@ -2749,7 +2731,7 @@ class EdensGateSepultureSavage extends GuidePageComponent {
               ],
               variant: "body2",
               style: {
-                color: this.colorTypes.warning
+                color: colorTypes.warning
               }
             }
           ]
@@ -3107,7 +3089,7 @@ class EdensGateSepultureSavage extends GuidePageComponent {
                 ],
                 variant: "body2",
                 style: {
-                  color: this.colorTypes.warning
+                  color: colorTypes.warning
                 }
               }
             ]
@@ -3256,7 +3238,7 @@ class EdensGateSepultureSavage extends GuidePageComponent {
                         </Typography>
                         <Typography
                           style={{
-                            color: this.colorTypes.warning
+                            color: colorTypes.warning
                           }}
                           variant="body2"
                         >
@@ -3284,7 +3266,7 @@ class EdensGateSepultureSavage extends GuidePageComponent {
                         </Typography>
                         <Typography
                           style={{
-                            color: this.colorTypes.warning
+                            color: colorTypes.warning
                           }}
                           variant="body2"
                         >

@@ -8,12 +8,11 @@ import CenteredBlock from "./blocks/centered-block";
 import ImageBlock from "./blocks/image-block";
 import InlineChip from "./blocks/inline-chip";
 import LoopingVideoBlock from "./blocks/looping-video-block";
+import TimelineDialogBlock from "./blocks/timeline-dialog-block";
+import YoutubeFrameBlock from "./blocks/youtube-frame-block";
 import PageComponent from "./page-component";
 
 class GuidePageComponent extends PageComponent {
-  colorTypes = {};
-  gimmickData = {};
-
   openDialog = (newDialogId, currentDialogId) => {
     if (currentDialogId) {
       this.state.dialogHistory.push(currentDialogId);
@@ -123,10 +122,72 @@ class GuidePageComponent extends PageComponent {
             />{" "}
           </React.Fragment>
         );
-      } else {
+      } else if (typeof content === "string") {
         return (
           <React.Fragment key={contentIndex}>{content + " "}</React.Fragment>
         );
+      } else {
+        return <React.Fragment key={contentIndex}>{content}</React.Fragment>;
+      }
+    });
+  }
+
+  generateBlocks(contents, mediaBaseUrl, id) {
+    return contents.map((content, contentIndex) => {
+      switch (content.type) {
+        case "centered":
+          return (
+            <CenteredBlock key={contentIndex}>
+              {this.generateBlocks(content.contents, mediaBaseUrl, id)}
+            </CenteredBlock>
+          );
+        case "image":
+          return (
+            <ImageBlock
+              key={contentIndex}
+              src={mediaBaseUrl + content.src}
+              width={content.width}
+            />
+          );
+        case "typographies":
+          return (
+            <Grid item key={contentIndex}>
+              {content.typographies.map((typography, typographyIndex) => {
+                return (
+                  <Typography
+                    key={typographyIndex}
+                    style={typography.style}
+                    variant={typography.variant}
+                  >
+                    {this.generateTypographyString(id, typography.contents)}
+                  </Typography>
+                );
+              })}
+            </Grid>
+          );
+        case "loopingVideo":
+          return (
+            <LoopingVideoBlock
+              height={content.height}
+              key={contentIndex}
+              src={mediaBaseUrl + content.src}
+            />
+          );
+        case "divider":
+          return (
+            <Grid item key={contentIndex}>
+              <Divider />
+            </Grid>
+          );
+        case "youtubeFrame":
+          return (
+            <YoutubeFrameBlock
+              height={content.height}
+              key={contentIndex}
+              src={content.src}
+              width={content.width}
+            />
+          );
       }
     });
   }
@@ -136,68 +197,30 @@ class GuidePageComponent extends PageComponent {
       id: id,
       children: (
         <React.Fragment>
-          {contents.map((content, contentIndex) => {
-            switch (content.type) {
-              case "images":
-                return (
-                  <CenteredBlock key={contentIndex}>
-                    {content.images.map((image, imageIndex) => {
-                      return (
-                        <ImageBlock
-                          key={imageIndex}
-                          src={mediaBaseUrl + image.src}
-                          width={image.width}
-                        />
-                      );
-                    })}
-                  </CenteredBlock>
-                );
-              case "typographies":
-                return (
-                  <Grid item key={contentIndex}>
-                    {content.typographies.map((typography, typographyIndex) => {
-                      return (
-                        <Typography
-                          key={typographyIndex}
-                          style={typography.style}
-                          variant={typography.variant}
-                        >
-                          {this.generateTypographyString(
-                            id,
-                            typography.contents
-                          )}
-                        </Typography>
-                      );
-                    })}
-                  </Grid>
-                );
-              case "loopingVideos":
-                return (
-                  <CenteredBlock key={contentIndex}>
-                    {content.loopingVideos.map(
-                      (loopingVideo, loopingVideoIndex) => {
-                        return (
-                          <LoopingVideoBlock
-                            height={loopingVideo.height}
-                            key={loopingVideoIndex}
-                            src={mediaBaseUrl + loopingVideo.src}
-                          />
-                        );
-                      }
-                    )}
-                  </CenteredBlock>
-                );
-              case "divider":
-                return (
-                  <Grid item>
-                    <Divider />
-                  </Grid>
-                );
-            }
-          })}
+          {this.generateBlocks(contents, mediaBaseUrl, id)}
         </React.Fragment>
       )
     };
+  }
+
+  generateDialogs(dialogs) {
+    return (
+      <React.Fragment>
+        {dialogs.map((dialog, dialogIndex) => {
+          return (
+            <TimelineDialogBlock
+              children={dialog.children}
+              closeDialog={this.closeDialog}
+              dialogHistory={this.state.dialogHistory}
+              gimmickData={this.gimmickData}
+              id={dialog.id}
+              key={dialogIndex}
+              openedDialog={this.state.openedDialog}
+            />
+          );
+        })}
+      </React.Fragment>
+    );
   }
 }
 
