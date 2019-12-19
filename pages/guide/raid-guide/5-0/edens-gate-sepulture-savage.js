@@ -1,7 +1,5 @@
 import Container from "@material-ui/core/Container";
-import Divider from "@material-ui/core/Divider";
 import Grid from "@material-ui/core/Grid";
-import Typography from "@material-ui/core/Typography";
 
 import LaunchIcon from "@material-ui/icons/Launch";
 
@@ -10,17 +8,14 @@ import React from "react";
 import ExpansionTitles from "../../../../data/expansion-titles";
 import GimmickColorType from "../../../../data/gimmick-color-type";
 import SiteInfo from "../../../../data/site-info";
-import CenteredBlock from "../../../../src/components/blocks/centered-block";
 import ExpansionPanelsBlock from "../../../../src/components/blocks/expansion-panels-block";
 import TimelineBlock from "../../../../src/components/blocks/timeline-block";
-import TimelineDialogBlock from "../../../../src/components/blocks/timeline-dialog-block";
-import YoutubeFrameBlock from "../../../../src/components/blocks/youtube-frame-block";
 import GuidePageComponent from "../../../../src/components/guide-page-component";
 
 const pageData = {
-  title: "희망의 동산 에덴 영웅: 각성편 4",
+  title: "희망의 낙원 에덴 영웅: 각성편 4",
   description:
-    "파이널 판타지 14 레이드 가이드 - 희망의 동산 에덴 영웅: 각성편 4",
+    "파이널 판타지 14 레이드 가이드 - 희망의 낙원 에덴 영웅: 각성편 4",
   videoBaseUrl:
     "https://sylvia-moonfish.github.io/fishbowl-video-1/guide/raid-guide/shb/edens-gate-sepulture-savage"
 };
@@ -29,7 +24,7 @@ class EdensGateSepultureSavage extends GuidePageComponent {
   constructor(props) {
     super(props);
 
-    this.state.openedDialog = "rockThrow";
+    this.state.openedDialog = "crumblingDownBombBouldersSeismicWave";
   }
 
   render() {
@@ -391,15 +386,6 @@ class EdensGateSepultureSavage extends GuidePageComponent {
         pageData.videoBaseUrl + "/bomb-boulders",
         [
           {
-            type: "images",
-            images: [
-              {
-                src: "/1.png",
-                width: 300
-              }
-            ]
-          },
-          {
             type: "typographies",
             typographies: [
               {
@@ -411,11 +397,21 @@ class EdensGateSepultureSavage extends GuidePageComponent {
             ]
           },
           {
+            type: "centered",
+            contents: [
+              {
+                type: "image",
+                src: "/1.png",
+                width: 300
+              }
+            ]
+          },
+          {
             type: "typographies",
             typographies: [
               {
                 contents: [
-                  '시한폭탄들은 소환된 순서대로 폭발하며 피격당한 대상에게 큰 마법 피해와 함께 "주는 피해 감소", "받는 피해 증가" 등의 디버프를 부여하므로 꼭 피해주어야 합니다.'
+                  '시한폭탄들은 소환된 순서대로 폭발하며 피격당한 대상에게 큰 마법 피해와 함께 "주는 피해 감소", "받는 피해 증가" 등의 디버프를 부여하므로 꼭 회피해주세요.'
                 ],
                 variant: "body2"
               }
@@ -444,13 +440,15 @@ class EdensGateSepultureSavage extends GuidePageComponent {
             ]
           },
           {
-            type: "images",
-            images: [
+            type: "centered",
+            contents: [
               {
+                type: "image",
                 src: "/2.png",
                 width: 300
               },
               {
+                type: "image",
                 src: "/3.png",
                 width: 300
               }
@@ -462,15 +460,6 @@ class EdensGateSepultureSavage extends GuidePageComponent {
         "crumblingDown",
         pageData.videoBaseUrl + "/crumbling-down",
         [
-          {
-            type: "loopingVideos",
-            loopingVideos: [
-              {
-                height: 360,
-                src: "/1.mp4"
-              }
-            ]
-          },
           {
             type: "typographies",
             typographies: [
@@ -498,11 +487,12 @@ class EdensGateSepultureSavage extends GuidePageComponent {
             ]
           },
           {
-            type: "loopingVideos",
-            loopingVideos: [
+            type: "centered",
+            contents: [
               {
+                type: "loopingVideo",
                 height: 360,
-                src: "/2.mp4"
+                src: "/1.mp4"
               }
             ]
           },
@@ -525,6 +515,16 @@ class EdensGateSepultureSavage extends GuidePageComponent {
                   "동시에 첫 번째 대상자가 아니었던 나머지 6명의 파티원 중 무작위로 탱힐 중 1명, 딜러 중 1명의 머리 위에 두 번째 빨간 징이 표시됩니다."
                 ],
                 variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "centered",
+            contents: [
+              {
+                type: "loopingVideo",
+                height: 360,
+                src: "/2.mp4"
               }
             ]
           },
@@ -561,18 +561,9 @@ class EdensGateSepultureSavage extends GuidePageComponent {
             typographies: [
               {
                 contents: [
-                  "이후 나올 기믹 처리를 위해 미니 타이탄을 미리 맵 중앙에 주차하고 머리를 북쪽으로 돌려주면 좋습니다."
+                  "이후 나올 기믹 처리를 위해 미니 타이탄을 미리 맵 중앙에 주차하고 머리를 북쪽으로 돌려주세요."
                 ],
                 variant: "body2"
-              }
-            ]
-          },
-          {
-            type: "images",
-            images: [
-              {
-                src: "/1.png",
-                width: 500
               }
             ]
           },
@@ -585,9 +576,19 @@ class EdensGateSepultureSavage extends GuidePageComponent {
                     id: "crumblingDown",
                     type: "chip"
                   },
-                  "처리를 위해 바닥징을 사용할 것입니다. 바닥징은 위와 같이 찍혀있다고 가정합니다."
+                  "처리를 위해 바닥징을 사용할 것입니다. 바닥징은 아래와 같이 찍혀있다고 가정합니다."
                 ],
                 variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "centered",
+            contents: [
+              {
+                type: "image",
+                src: "/1.png",
+                width: 500
               }
             ]
           },
@@ -610,113 +611,148 @@ class EdensGateSepultureSavage extends GuidePageComponent {
                     id: "seismicWave",
                     type: "chip"
                   },
-                  "가 빠르게 순차적으로 등장하게 됩니다. 일단 등장하는 순서에 따라 차근차근 하나씩 자세히 살펴본 후, 전체 타이밍을 살펴보도록 하겠습니다."
+                  "가 빠르게 순차적으로 등장합니다. 일단 등장하는 순서에 따라 차근차근 하나씩 자세히 살펴본 후, 전체 타이밍을 살펴보도록 할게요."
                 ],
                 variant: "body2"
               }
             ]
+          },
+          {
+            type: "divider"
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "미니 타이탄이",
+                  {
+                    id: "crumblingDown",
+                    type: "chip"
+                  },
+                  "시전을 시작합니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "아래 그림처럼 빨간 징이 찍힌 탱힐은 A징 위에, 빨간 징이 찍힌 딜러는 C징 위에 돌덩어리를 떨어트려주세요. 빨간 징이 찍히지 않은 플레이어들은 B 징과 D 징의 사이에 모여 A, C 징으로부터 최대한 멀리 자리잡아줍니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "centered",
+            contents: [
+              {
+                type: "image",
+                src: "/2.png",
+                width: 500
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "빨간 징 대상자들은 바위를 깔고 나서 재빨리 본진에 합류해주세요.",
+                  {
+                    id: "crumblingDown",
+                    type: "chip"
+                  },
+                  "시전이 끝나는 순간 돌덩어리의 위치는 고정되므로 시전 바가 끝나는 것을 확인하자마자 곧바로 본진에 합류하면 됩니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "divider"
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "거리 비례 징이 나타남과 동시에 두 번째",
+                  {
+                    id: "crumblingDown",
+                    type: "chip"
+                  },
+                  "징이 표시됩니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "자신이 징이 찍혔는지 재빨리 확인한 후 아래 그림처럼 징이 찍힌 탱힐은 B징 위에, 딜러는 D징 위에 돌덩어리를 떨어트려주세요. 나머지 파티원들은 그대로 B 징과 D 징의 사이에서 대기합니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "centered",
+            contents: [
+              {
+                type: "image",
+                src: "/3.png",
+                width: 500
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "빨간 징 대상자들은 빨간 징이 사라지는 순간 위치가 고정되므로 징이 사라지자마자 바로 본진에 합류해주세요."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "divider"
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "A 징과 C 징에 첫 번째 돌덩어리가 떨어지며 파티원 모두에게 마법 피해를 입힙니다. 돌덩어리가 떨어진 것을 확인하자마자 모두 미니 타이탄을 가로질러 A 징과 C 징의 사이로 이동해주세요."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "centered",
+            contents: [
+              {
+                type: "loopingVideo",
+                height: 360,
+                src: "/4.mp4"
+              }
+            ]
+          },
+          {
+            type: "divider"
           }
         ]
       ) /*
-            <Grid item>
-              <Typography variant="body2">
-
-              </Typography>
-            </Grid>
-            <Grid item>
-              <Divider />
-            </Grid>
-            <CenteredBlock>
-              <ImageBlock
-                src={
-                  pageData.videoBaseUrl +
-                  "/crumbling-down-bomb-boulders-seismic-wave/2.png"
-                }
-                width={500}
-              />
-            </CenteredBlock>
-            <Grid item>
-              <Typography variant="body2">
-                미니 타이탄이{" "}
-                <InlineChip
-                  currentId="crumblingDownBombBouldersSeismicWave"
-                  gimmickData={gimmickData}
-                  id="crumblingDown"
-                  openDialog={openDialog}
-                />{" "}
-                시전을 시작합니다. 빨간 징이 찍힌 탱힐은 A징 위에, 빨간 징이
-                찍힌 딜러는 C징 위에 돌덩어리를 떨어트려줍니다. 빨간 징이 찍히지
-                않은 플레이어들은 B 징과 D 징의 사이에 모여 A, C 징으로부터
-                최대한 멀리 자리잡아 줍니다.
-              </Typography>
-            </Grid>
-            <Grid item>
-              <Typography variant="body2">
-                빨간 징 대상자들은 바위를 깔고 나서 재빨리 본진에 합류합니다.{" "}
-                <InlineChip
-                  currentId="crumblingDownBombBouldersSeismicWave"
-                  gimmickData={gimmickData}
-                  id="crumblingDown"
-                  openDialog={openDialog}
-                />{" "}
-                시전이 끝나는 순간 돌덩어리의 위치는 고정되므로 시전 바가 끝나는
-                것을 확인하자마자 곧바로 본진에 합류하면 됩니다.
-              </Typography>
-            </Grid>
-            <Grid item>
-              <Divider />
-            </Grid>
-            <CenteredBlock>
-              <ImageBlock
-                src={
-                  pageData.videoBaseUrl +
-                  "/crumbling-down-bomb-boulders-seismic-wave/3.png"
-                }
-                width={500}
-              />
-            </CenteredBlock>
-            <Grid item>
-              <Typography variant="body2">
-                거리 비례 징이 나타남과 동시에 두 번째{" "}
-                <InlineChip
-                  currentId="crumblingDownBombBouldersSeismicWave"
-                  gimmickData={gimmickData}
-                  id="crumblingDown"
-                  openDialog={openDialog}
-                />{" "}
-                징이 표시됩니다. 자신이 징이 찍혔는지 재빨리 확인한 후 징이 찍힌
-                탱힐은 B징 위에, 딜러는 D징 위에 돌덩어리를 떨어트려줍니다.
-                나머지 파티원들은 그대로 B 징과 D 징의 사이에서 대기합니다.
-              </Typography>
-            </Grid>
-            <Grid item>
-              <Typography variant="body2">
-                빨간 징 대상자들은 빨간 징이 사라지는 순간 위치가 고정되므로
-                징이 사라지자마자 바로 본진에 합류합니다.
-              </Typography>
-            </Grid>
-            <Grid item>
-              <Divider />
-            </Grid>
-            <CenteredBlock>
-              <LoopingVideoBlock
-                height={360}
-                src={
-                  pageData.videoBaseUrl +
-                  "/crumbling-down-bomb-boulders-seismic-wave/4.mp4"
-                }
-              />
-            </CenteredBlock>
-            <Grid item>
-              <Typography variant="body2">
-                A 징과 C 징에 돌덩어리가 떨어지며 파티원 모두에게 마법 피해를
-                입힙니다. 돌덩어리가 떨어진 것을 확인하자마자 모두 미니 타이탄을
-                가로질러 A 징과 C 징의 사이로 이동합니다.
-              </Typography>
-            </Grid>
-            <Grid item>
-              <Divider />
-            </Grid>
             <CenteredBlock>
               <LoopingVideoBlock
                 height={360}
@@ -3169,84 +3205,134 @@ class EdensGateSepultureSavage extends GuidePageComponent {
           <Grid item>
             <Container maxWidth="md">
               <Grid container direction="column" spacing={5}>
-                <CenteredBlock>
-                  <Grid item>
-                    <Typography variant="h6">{pageData.title}</Typography>
-                  </Grid>
-                </CenteredBlock>
-                <CenteredBlock>
-                  <img
-                    src={
-                      SiteInfo.assetsUrl +
-                      "/raid-guide/edens-gate-sepulture-savage.png"
+                {this.generateBlocks(
+                  [
+                    {
+                      type: "centered",
+                      contents: [
+                        {
+                          type: "typographies",
+                          typographies: [
+                            {
+                              contents: [pageData.title],
+                              variant: "h6"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      type: "centered",
+                      contents: [
+                        {
+                          type: "image",
+                          src: "/raid-guide/edens-gate-sepulture-savage.png",
+                          width: 376
+                        }
+                      ]
+                    },
+                    {
+                      type: "typographies",
+                      typographies: [
+                        {
+                          contents: [
+                            '연대기 퀘스트 "The Next Piece of the Puzzle" 을 완료한 후, 아므 아렝 (X: 26.8, Y: 16.4) 에 위치한 NPC "Lewrey" 에게 말을 걸어 개방할 수 있습니다.'
+                          ],
+                          variant: "body2"
+                        }
+                      ]
+                    },
+                    {
+                      type: "centered",
+                      contents: [
+                        {
+                          type: "youtubeFrame",
+                          height: 360,
+                          src: "https://www.youtube.com/embed/3kQqQ4WNqMQ",
+                          width: 576
+                        }
+                      ]
+                    },
+                    {
+                      type: "typographies",
+                      typographies: [
+                        {
+                          contents: [
+                            "파이널 판타지 14 <" +
+                              ExpansionTitles.shb +
+                              '> 패치 5.05에 추가되는 8인 레이드, "' +
+                              pageData.title +
+                              " 가이드입니다."
+                          ],
+                          variant: "body2"
+                        }
+                      ]
+                    },
+                    {
+                      type: "typographies",
+                      typographies: [
+                        {
+                          contents: [
+                            "요구 레벨은 80이며 최소 아이템 레벨 제한은 450입니다."
+                          ],
+                          variant: "body2"
+                        }
+                      ]
                     }
-                    style={{
-                      maxWidth: "376px",
-                      width: "100%"
-                    }}
-                  />
-                </CenteredBlock>
-                <Grid item>
-                  <Typography variant="body2">
-                    연대기 퀘스트 'The Next Piece of the Puzzle'을 완료한 후,
-                    아므 아렝 (X: 26.8, Y: 16.4) 에 위치한 NPC 'Lewrey' 에게
-                    말을 걸어 개방할 수 있습니다.
-                  </Typography>
-                </Grid>
-                <CenteredBlock>
-                  <YoutubeFrameBlock
-                    height="360"
-                    src="https://www.youtube.com/embed/3kQqQ4WNqMQ"
-                    width="576"
-                  />
-                </CenteredBlock>
-                <Grid item>
-                  <Typography variant="body2">
-                    파이널 판타지 14 &lt;{ExpansionTitles.shb}&gt; 패치 5.05에
-                    추가되는 8인 레이드, "{pageData.title}" 가이드입니다.
-                  </Typography>
-                </Grid>
-                <Grid item>
-                  <Typography variant="body2">
-                    요구 레벨은 80이며 최소 아이템 레벨 제한은 450입니다.
-                  </Typography>
-                </Grid>
+                  ],
+                  SiteInfo.assetsUrl
+                )}
               </Grid>
             </Container>
           </Grid>
-          <Grid item>
-            <Divider />
-          </Grid>
-          <Grid item>
-            <Typography variant="body2">
-              * 아래 메뉴 중 열람하고자 하는 메뉴를 클릭하시면 내용을 펼치거나
-              접을 수 있습니다.
-            </Typography>
-          </Grid>
+          {this.generateBlocks([
+            {
+              type: "divider"
+            },
+            {
+              type: "typographies",
+              typographies: [
+                {
+                  contents: [
+                    "* 아래 메뉴 중 열람하고자 하는 메뉴를 클릭하시면 내용을 펼치거나 접을 수 있습니다."
+                  ],
+                  variant: "body2"
+                }
+              ]
+            }
+          ])}
           <Grid item>
             <ExpansionPanelsBlock
-              expandedPanel={1}
+              expandedPanel={0}
               panels={[
                 {
                   title: "1 페이즈 타임라인 - 미니 타이탄",
                   children: (
                     <React.Fragment>
-                      <Grid item>
-                        <Typography variant="body2">
-                          * 타임라인 내 기믹 이름을 클릭해 상세 공략을 볼 수
-                          있습니다.
-                        </Typography>
-                        <Typography
-                          style={{
-                            color: colorTypes.warning
-                          }}
-                          variant="body2"
-                        >
-                          상세 공략 중 <LaunchIcon /> 아이콘이 붙어있는 기믹
-                          이름의 경우 클릭해 더 자세한 내용을 열람할 수
-                          있습니다.
-                        </Typography>
-                      </Grid>
+                      {this.generateBlocks([
+                        {
+                          type: "typographies",
+                          typographies: [
+                            {
+                              contents: [
+                                "* 타임라인 내 기믹 이름을 클릭해 상세 공략을 볼 수 있습니다."
+                              ],
+                              variant: "body2"
+                            },
+                            {
+                              contents: [
+                                "상세 공략 중",
+                                <LaunchIcon />,
+                                " 아이콘이 붙어있는 기믹 이름의 경우 클릭해 더 자세한 내용을 열람할 수 있습니다."
+                              ],
+                              style: {
+                                color: colorTypes.warning
+                              },
+                              variant: "body2"
+                            }
+                          ]
+                        }
+                      ])}
                       <TimelineBlock
                         gimmickData={this.gimmickData}
                         openDialog={this.openDialog}
@@ -3259,22 +3345,30 @@ class EdensGateSepultureSavage extends GuidePageComponent {
                   title: "2 페이즈 타임라인 - 거대 타이탄",
                   children: (
                     <React.Fragment>
-                      <Grid item>
-                        <Typography variant="body2">
-                          * 타임라인 내 기믹 이름을 클릭해 상세 공략을 볼 수
-                          있습니다.
-                        </Typography>
-                        <Typography
-                          style={{
-                            color: colorTypes.warning
-                          }}
-                          variant="body2"
-                        >
-                          상세 공략 중 <LaunchIcon /> 아이콘이 붙어있는 기믹
-                          이름의 경우 클릭해 더 자세한 내용을 열람할 수
-                          있습니다.
-                        </Typography>
-                      </Grid>
+                      {this.generateBlocks([
+                        {
+                          type: "typographies",
+                          typographies: [
+                            {
+                              contents: [
+                                "* 타임라인 내 기믹 이름을 클릭해 상세 공략을 볼 수 있습니다."
+                              ],
+                              variant: "body2"
+                            },
+                            {
+                              contents: [
+                                "상세 공략 중",
+                                <LaunchIcon />,
+                                " 아이콘이 붙어있는 기믹 이름의 경우 클릭해 더 자세한 내용을 열람할 수 있습니다."
+                              ],
+                              style: {
+                                color: colorTypes.warning
+                              },
+                              variant: "body2"
+                            }
+                          ]
+                        }
+                      ])}
                       <TimelineBlock
                         gimmickData={this.gimmickData}
                         openDialog={this.openDialog}
@@ -3290,32 +3384,24 @@ class EdensGateSepultureSavage extends GuidePageComponent {
               ]}
             />
           </Grid>
-          <Grid item>
-            <Divider />
-          </Grid>
-          <Grid item>
-            <CenteredBlock>
-              <YoutubeFrameBlock
-                height="360"
-                src="https://www.youtube.com/embed/Dk-gt18mMBs"
-                width="576"
-              />
-            </CenteredBlock>
-          </Grid>
+          {this.generateBlocks([
+            {
+              type: "divider"
+            },
+            {
+              type: "centered",
+              contents: [
+                {
+                  type: "youtubeFrame",
+                  height: 360,
+                  src: "https://www.youtube.com/embed/Dk-gt18mMBs",
+                  width: 576
+                }
+              ]
+            }
+          ])}
         </Grid>
-        {dialogs.map((dialog, dialogIndex) => {
-          return (
-            <TimelineDialogBlock
-              children={dialog.children}
-              closeDialog={this.closeDialog}
-              dialogHistory={this.state.dialogHistory}
-              gimmickData={this.gimmickData}
-              id={dialog.id}
-              key={dialogIndex}
-              openedDialog={this.state.openedDialog}
-            />
-          );
-        })}
+        {this.generateDialogs(dialogs)}
       </React.Fragment>
     );
   }

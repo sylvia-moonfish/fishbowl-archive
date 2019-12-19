@@ -13,8 +13,8 @@ import TimelineBlock from "../../../../src/components/blocks/timeline-block";
 import GuidePageComponent from "../../../../src/components/guide-page-component";
 
 const pageData = {
-  title: "희망의 동산 에덴: 각성편 4",
-  description: "파이널 판타지 14 레이드 가이드 - 희망의 동산 에덴: 각성편 4",
+  title: "희망의 낙원 에덴: 각성편 4",
+  description: "파이널 판타지 14 레이드 가이드 - 희망의 낙원 에덴: 각성편 4",
   videoBaseUrl:
     "https://sylvia-moonfish.github.io/fishbowl-video-1/guide/raid-guide/shb/edens-gate-sepulture"
 };
@@ -342,7 +342,7 @@ class EdensGateSepulture extends GuidePageComponent {
                       typographies: [
                         {
                           contents: [
-                            "The Crystarium (X: 9.7, Y: 12.3) 에 위치한 NPC 'Anxious Crystarium Guard' 에게 말을 걸어 받을 수 있는 연대기 퀘스트 'In the Middle of Nowhere' 퀘스트 라인을 끝까지 완료하면 개방할 수 있습니다."
+                            '크리스타리움 (X: 9.7, Y: 12.3) 에 위치한 NPC "착실한 위병" 에게 말을 걸어 받을 수 있는 연대기 퀘스트 "태초의 \'낙원\'" 퀘스트 라인을 끝까지 완료하면 개방할 수 있습니다.'
                           ],
                           variant: "body2"
                         }
@@ -366,9 +366,9 @@ class EdensGateSepulture extends GuidePageComponent {
                           contents: [
                             "파이널 판타지 14 <" +
                               ExpansionTitles.shb +
-                              "> 패치 5.01에 추가되는 8인 레이드, '" +
+                              '> 패치 5.01에 추가되는 8인 레이드, "' +
                               pageData.title +
-                              "' 가이드입니다."
+                              '" 가이드입니다.'
                           ],
                           variant: "body2"
                         }
