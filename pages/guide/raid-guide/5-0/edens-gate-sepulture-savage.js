@@ -24,7 +24,7 @@ class EdensGateSepultureSavage extends GuidePageComponent {
   constructor(props) {
     super(props);
 
-    this.state.openedDialog = "crumblingDownBombBouldersSeismicWave";
+    this.state.openedDialog = "dualEarthenFistsWeightOfTheWorld";
   }
 
   render() {
@@ -411,7 +411,7 @@ class EdensGateSepultureSavage extends GuidePageComponent {
             typographies: [
               {
                 contents: [
-                  '시한폭탄들은 소환된 순서대로 폭발하며 피격당한 대상에게 큰 마법 피해와 함께 "주는 피해 감소", "받는 피해 증가" 등의 디버프를 부여하므로 꼭 회피해주세요.'
+                  '시한폭탄들은 소환된 순서대로 폭발하며 피격당한 대상에게 큰 마법 피해와 함께 "주는 피해 감소", "받는 피해 증가" 등의 디버프를 부여하므로 꼭 회피해줍니다.'
                 ],
                 variant: "body2"
               }
@@ -491,8 +491,8 @@ class EdensGateSepultureSavage extends GuidePageComponent {
             contents: [
               {
                 type: "loopingVideo",
-                height: 360,
-                src: "/1.mp4"
+                src: "/1.mp4",
+                width: 750
               }
             ]
           },
@@ -523,8 +523,8 @@ class EdensGateSepultureSavage extends GuidePageComponent {
             contents: [
               {
                 type: "loopingVideo",
-                height: 360,
-                src: "/2.mp4"
+                src: "/2.mp4",
+                width: 750
               }
             ]
           },
@@ -561,7 +561,7 @@ class EdensGateSepultureSavage extends GuidePageComponent {
             typographies: [
               {
                 contents: [
-                  "이후 나올 기믹 처리를 위해 미니 타이탄을 미리 맵 중앙에 주차하고 머리를 북쪽으로 돌려주세요."
+                  "이후 나올 기믹 처리를 위해 미니 타이탄을 미리 맵 중앙에 주차하고 머리를 북쪽으로 돌려줍니다."
                 ],
                 variant: "body2"
               }
@@ -611,7 +611,7 @@ class EdensGateSepultureSavage extends GuidePageComponent {
                     id: "seismicWave",
                     type: "chip"
                   },
-                  "가 빠르게 순차적으로 등장합니다. 일단 등장하는 순서에 따라 차근차근 하나씩 자세히 살펴본 후, 전체 타이밍을 살펴보도록 할게요."
+                  "가 빠르게 순차적으로 등장합니다. 등장하는 순서에 따라 차근차근 하나씩 자세히 살펴보겠습니다."
                 ],
                 variant: "body2"
               }
@@ -641,7 +641,7 @@ class EdensGateSepultureSavage extends GuidePageComponent {
             typographies: [
               {
                 contents: [
-                  "아래 그림처럼 빨간 징이 찍힌 탱힐은 A징 위에, 빨간 징이 찍힌 딜러는 C징 위에 돌덩어리를 떨어트려주세요. 빨간 징이 찍히지 않은 플레이어들은 B 징과 D 징의 사이에 모여 A, C 징으로부터 최대한 멀리 자리잡아줍니다."
+                  "아래 그림처럼 빨간 징이 찍힌 탱힐은 A징 위에, 빨간 징이 찍힌 딜러는 C징 위에 돌덩어리를 떨어트려줍니다. 빨간 징이 찍히지 않은 플레이어들은 B징과 D징의 사이에 모여 A, C징으로부터 최대한 멀리 자리잡아줍니다."
                 ],
                 variant: "body2"
               }
@@ -662,7 +662,7 @@ class EdensGateSepultureSavage extends GuidePageComponent {
             typographies: [
               {
                 contents: [
-                  "빨간 징 대상자들은 바위를 깔고 나서 재빨리 본진에 합류해주세요.",
+                  "빨간 징 대상자들은 바위를 깔고 나서 재빨리 본진에 합류해줍니다.",
                   {
                     id: "crumblingDown",
                     type: "chip"
@@ -697,7 +697,7 @@ class EdensGateSepultureSavage extends GuidePageComponent {
             typographies: [
               {
                 contents: [
-                  "자신이 징이 찍혔는지 재빨리 확인한 후 아래 그림처럼 징이 찍힌 탱힐은 B징 위에, 딜러는 D징 위에 돌덩어리를 떨어트려주세요. 나머지 파티원들은 그대로 B 징과 D 징의 사이에서 대기합니다."
+                  "자신이 징이 찍혔는지 재빨리 확인한 후 아래 그림처럼 징이 찍힌 탱힐은 B징 위에, 딜러는 D징 위에 돌덩어리를 떨어트려줍니다. 나머지 파티원들은 그대로 B징과 D징의 사이에서 대기합니다."
                 ],
                 variant: "body2"
               }
@@ -718,7 +718,7 @@ class EdensGateSepultureSavage extends GuidePageComponent {
             typographies: [
               {
                 contents: [
-                  "빨간 징 대상자들은 빨간 징이 사라지는 순간 위치가 고정되므로 징이 사라지자마자 바로 본진에 합류해주세요."
+                  "빨간 징 대상자들은 빨간 징이 사라지는 순간 위치가 고정되므로 징이 사라지자마자 바로 본진에 합류해줍니다."
                 ],
                 variant: "body2"
               }
@@ -732,7 +732,7 @@ class EdensGateSepultureSavage extends GuidePageComponent {
             typographies: [
               {
                 contents: [
-                  "A 징과 C 징에 첫 번째 돌덩어리가 떨어지며 파티원 모두에게 마법 피해를 입힙니다. 돌덩어리가 떨어진 것을 확인하자마자 모두 미니 타이탄을 가로질러 A 징과 C 징의 사이로 이동해주세요."
+                  "A징과 C징에 첫 번째 돌덩어리가 떨어지며 파티원 모두에게 마법 피해를 입힙니다. 돌덩어리가 떨어진 것을 확인하자마자 모두 미니 타이탄을 가로질러 A징과 C징의 사이로 이동해줍니다."
                 ],
                 variant: "body2"
               }
@@ -743,288 +743,360 @@ class EdensGateSepultureSavage extends GuidePageComponent {
             contents: [
               {
                 type: "loopingVideo",
-                height: 360,
-                src: "/4.mp4"
+                src: "/4.mp4",
+                width: 750
               }
             ]
           },
           {
             type: "divider"
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "미니 타이탄이",
+                  {
+                    id: "bombBoulders",
+                    type: "chip"
+                  },
+                  "시전을 완료함과 동시에 A징과 C징의 돌덩어리 중 하나가 빛나기 시작합니다. 빛나지 않는 돌덩어리 쪽으로 미니 타이탄을 데려가줍니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "centered",
+            contents: [
+              {
+                type: "loopingVideo",
+                src: "/5.mp4",
+                width: 750
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "동시에 B징과 D징에서 거리 비례 징이 터지므로 힐업에 유의합니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "divider"
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "미니 타이탄을 데려가면서 소환되는 시한폭탄의 순서를 눈여겨봅시다. 언제나 가운뎃줄이 가장 먼저 소환됩니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "centered",
+            contents: [
+              {
+                type: "loopingVideo",
+                src: "/6.mp4",
+                width: 750
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "만약 A, C징 쪽 시한폭탄이 2번째로 소환되었다면 회피하는 것이 꽤 까다로울 수 있으므로 마음의 준비를 합니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "divider"
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "돌덩어리 뒤에 숨어",
+                  {
+                    id: "seismicWave",
+                    type: "chip"
+                  },
+                  "를 피해줍니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "centered",
+            contents: [
+              {
+                type: "loopingVideo",
+                src: "/7.mp4",
+                width: 750
+              }
+            ]
+          },
+          {
+            type: "divider"
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "이제 시한폭탄을 회피할 차례입니다. A, C징 줄 시한폭탄이 가장 마지막으로 소환되었다면 피하기가 수월하지만, A, C징 줄 시한폭탄이 2 번째로 소환되었다면 회피하는 타이밍이 꽤 빡빡한 편입니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "1.",
+                  {
+                    id: "seismicWave",
+                    type: "chip"
+                  },
+                  "시전이 끝나자마자 A징에서 살짝 남쪽, 시한폭탄 2개의 정가운데 부근으로 이동."
+                ],
+                variant: "body2"
+              },
+              {
+                contents: [
+                  "2. 적개심 목록에서 첫 번째 시한폭탄의",
+                  {
+                    id: "explosion",
+                    showNoLink: true,
+                    type: "chip"
+                  },
+                  "시전 바를 확인."
+                ],
+                variant: "body2"
+              },
+              {
+                contents: [
+                  "3. 첫 번째 시한폭탄의",
+                  {
+                    id: "explosion",
+                    showNoLink: true,
+                    type: "chip"
+                  },
+                  "시전이 완료되자마자 동쪽으로 이동."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "centered",
+            contents: [
+              {
+                type: "loopingVideo",
+                src: "/8.mp4",
+                width: 750
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "* 폭발 모션을 보고 이동하면 늦습니다. 꼭 적개심 목록을 통해 시전 바를 확인하고 시전이 완료되자마자 움직이는 습관을 들입시다."
+                ],
+                style: {
+                  color: colorTypes.warning
+                },
+                variant: "body2"
+              },
+              {
+                contents: [
+                  '* 너무 피하기 어렵다면 "전력 질주" 등을 사용하는 것도 좋은 방법입니다.'
+                ],
+                style: {
+                  color: colorTypes.warning
+                },
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: ["무편집 예시 영상:"],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "centered",
+            contents: [
+              {
+                type: "loopingVideo",
+                src: "/9.mp4",
+                width: 750
+              }
+            ]
+          },
+          {
+            type: "divider"
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "이후 기믹을 위해 미니 타이탄을 중앙에 주차해줍니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "또한 곧",
+                  {
+                    id: "stonecrusher",
+                    type: "chip"
+                  },
+                  "가 이어지므로 탱교대를 해줍니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          }
+        ]
+      ),
+      this.generateDialog(
+        "dualEarthenFists",
+        pageData.videoBaseUrl + "/dual-earthen-fists",
+        [
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: ["맵 북쪽에 커다란 푸른 원형 장판이 나타납니다."],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "centered",
+            contents: [
+              {
+                type: "image",
+                src: "/1.png",
+                width: 500
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "시전이 끝나면 거대 타이탄이 푸른 원형 장판으로 표시되었던 곳을 주먹으로 내려치며 모든 파티원들을 밀어냅니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "centered",
+            contents: [
+              {
+                type: "loopingVideo",
+                src: "/2.mp4",
+                width: 750
+              }
+            ]
+          }
+        ]
+      ),
+      this.generateDialog(
+        "dualEarthenFistsWeightOfTheWorld",
+        pageData.videoBaseUrl + "/dual-earthen-fists-weight-of-the-world",
+        [
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  {
+                    id: "dualEarthenFists",
+                    type: "chip"
+                  },
+                  "장판이 등장함과 거의 동시에",
+                  {
+                    id: "weightOfTheWorld",
+                    type: "chip"
+                  },
+                  "징이 탱커를 제외한 파티원 중 한 명의 머리 위에 표시됩니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "탱커는 이후 등장할",
+                  {
+                    id: "earthenAnguish",
+                    type: "chip"
+                  },
+                  "를 대비해 북쪽으로 산개하고 나머지 파티원들은",
+                  {
+                    id: "weightOfTheWorld",
+                    type: "chip"
+                  },
+                  "처리를 위해 아래와 같이 산개합니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "centered",
+            contents: [
+              {
+                type: "image",
+                src: "/1.png",
+                width: 500
+              }
+            ]
           }
         ]
       ) /*
-            <CenteredBlock>
-              <LoopingVideoBlock
-                height={360}
-                src={
-                  pageData.videoBaseUrl +
-                  "/crumbling-down-bomb-boulders-seismic-wave/5.mp4"
-                }
-              />
-            </CenteredBlock>
-            <Grid item>
-              <Typography variant="body2">
-                미니 타이탄이{" "}
-                <InlineChip
-                  currentId="crumblingDownBombBouldersSeismicWave"
-                  gimmickData={gimmickData}
-                  id="bombBoulders"
-                  openDialog={openDialog}
-                />{" "}
-                시전을 완료함과 동시에 A 징과 C 징의 돌덩어리 중 하나가 빛나기
-                시작합니다.
-              </Typography>
-            </Grid>
-            <Grid item>
-              <Typography variant="body2">
-                빛나지 않는 돌덩어리 쪽으로 미니 타이탄을 데려갑니다.
-              </Typography>
-            </Grid>
-            <Grid item>
-              <Typography variant="body2">
-                동시에 B 징과 D 징에서 거리 비례 징이 터지므로 힐업에
-                유의해주세요.
-              </Typography>
-            </Grid>
-            <Grid item>
-              <Divider />
-            </Grid>
-            <CenteredBlock>
-              <LoopingVideoBlock
-                height={360}
-                src={
-                  pageData.videoBaseUrl +
-                  "/crumbling-down-bomb-boulders-seismic-wave/6.mp4"
-                }
-              />
-            </CenteredBlock>
-            <Grid item>
-              <Typography variant="body2">
-                미니 타이탄을 데려가면서 소환되는 시한폭탄의 순서를
-                눈여겨봅시다. 언제나 가운뎃줄이 가장 먼저 소환됩니다.
-              </Typography>
-            </Grid>
-            <Grid item>
-              <Typography variant="body2">
-                만약 A, C 징 쪽 시한폭탄이 2번째로 소환되었다면 회피하는 것이 꽤
-                까다로울 수 있으므로 마음의 준비를 하세요.
-              </Typography>
-            </Grid>
-            <Grid item>
-              <Divider />
-            </Grid>
-            <CenteredBlock>
-              <LoopingVideoBlock
-                height={360}
-                src={pageData.videoBaseUrl + "/seismic-wave/1.mp4"}
-              />
-            </CenteredBlock>
-            <Grid item>
-              <Typography variant="body2">
-                돌덩어리 뒤에 숨어{" "}
-                <InlineChip
-                  currentId="crumblingDownBombBouldersSeismicWave"
-                  gimmickData={gimmickData}
-                  id="seismicWave"
-                  openDialog={openDialog}
-                />{" "}
-                {this.generatePostposition(gimmickData.seismicWave.name, "를")}{" "}
-                피해줍니다.
-              </Typography>
-            </Grid>
-            <Grid item>
-              <Divider />
-            </Grid>
-            <Grid item>
-              <Typography variant="body2">
-                이제 시한폭탄을 회피할 차례입니다. A, C 징 줄 시한폭탄이 가장
-                마지막으로 소환되었다면 피하기가 수월하지만, A, C 징 줄
-                시한폭탄이 2 번째로 소환되었다면 회피하는 타이밍이 꽤 빡빡한
-                편입니다.
-              </Typography>
-            </Grid>
-            <CenteredBlock>
-              <LoopingVideoBlock
-                height={360}
-                src={
-                  pageData.videoBaseUrl +
-                  "/crumbling-down-bomb-boulders-seismic-wave/7.mp4"
-                }
-              />
-            </CenteredBlock>
-            <Grid item>
-              <Typography variant="body2">
-                1.{" "}
-                <InlineChip
-                  currentId="crumblingDownBombBouldersSeismicWave"
-                  gimmickData={gimmickData}
-                  id="seismicWave"
-                  openDialog={openDialog}
-                />{" "}
-                시전이 끝나자마자 A 징에서 살짝 남쪽, 시한폭탄 2개의 정가운데
-                부근으로 이동.
-              </Typography>
-              <Typography variant="body2">
-                2. 적개심 목록에서 첫 번째 시한폭탄의{" "}
-                <InlineChip
-                  currentId="explosion"
-                  gimmickData={dummyGimmickData}
-                  id="explosion"
-                  openDialog={openDialog}
-                />{" "}
-                시전 바를 확인.
-              </Typography>
-              <Typography variant="body2">
-                3. 첫 번째 시한폭탄의{" "}
-                <InlineChip
-                  currentId="explosion"
-                  gimmickData={dummyGimmickData}
-                  id="explosion"
-                  openDialog={openDialog}
-                />{" "}
-                시전이 완료되자마자 동쪽으로 이동.
-              </Typography>
-            </Grid>
-            <Grid item>
-              <Typography
-                style={{
-                  color: colorTypes.warning
-                }}
-                variant="body2"
-              >
-                * 폭발 모션을 보고 이동하면 늦습니다. 꼭 적개심 목록을 통해 시전
-                바를 확인하고 시전이 완료되자마자 움직이는 습관을 들입시다.
-              </Typography>
-              <Typography
-                style={{
-                  color: colorTypes.warning
-                }}
-                variant="body2"
-              >
-                * 너무 피하기 어렵다면 "전력 질주" 등을 사용하는 것도 좋은
-                방법입니다.
-              </Typography>
-            </Grid>
-            <Grid item>
-              <Typography variant="body2">무편집 예시 영상: </Typography>
-            </Grid>
-            <CenteredBlock>
-              <LoopingVideoBlock
-                height={360}
-                src={
-                  pageData.videoBaseUrl +
-                  "/crumbling-down-bomb-boulders-seismic-wave/8.mp4"
-                }
-              />
-            </CenteredBlock>
-            <Grid item>
-              <Divider />
-            </Grid>
-            <Grid item>
-              <Typography variant="body2">
-                이후 기믹을 위해 미니 타이탄을 중앙에 주차해주세요.
-              </Typography>
-            </Grid>
-            <Grid item>
-              <Typography variant="body2">
-                또한 곧{" "}
-                <InlineChip
-                  currentId="crumblingDownBombBouldersSeismicWave"
-                  gimmickData={gimmickData}
-                  id="stonecrusher"
-                  openDialog={openDialog}
-                />{" "}
-                {this.generatePostposition(gimmickData.stonecrusher.name, "가")}{" "}
-                이어지므로 탱교대를 해줍시다.
-              </Typography>
-            </Grid>
-          </React.Fragment>
-        )
-      },
-      {
-        id: "dualEarthenFists",
-        children: (
-          <React.Fragment>
-            <CenteredBlock>
-              <ImageBlock
-                src={pageData.videoBaseUrl + "/dual-earthen-fists/1.png"}
-                width={500}
-              />
-            </CenteredBlock>
-            <Grid item>
-              <Typography variant="body2">
-                맵 북쪽에 커다란 푸른 원형 장판이 나타납니다.
-              </Typography>
-            </Grid>
-            <CenteredBlock>
-              <LoopingVideoBlock
-                height={360}
-                src={pageData.videoBaseUrl + "/dual-earthen-fists/2.mp4"}
-              />
-            </CenteredBlock>
-            <Grid item>
-              <Typography variant="body2">
-                시전이 끝나면 거대 타이탄이 푸른 원형 장판으로 표시되었던 곳을
-                주먹으로 내려쳐 모든 파티원들을 밀어냅니다.
-              </Typography>
-            </Grid>
-          </React.Fragment>
-        )
-      },
       {
         id: "dualEarthenFistsWeightOfTheWorld",
         children: (
           <React.Fragment>
-            <Grid item>
-              <Typography variant="body2">
-                <InlineChip
-                  currentId="dualEarthenFistsWeightOfTheWorld"
-                  gimmickData={gimmickData}
-                  id="dualEarthenFists"
-                  openDialog={openDialog}
-                />{" "}
-                장판이 등장함과 거의 동시에{" "}
-                <InlineChip
-                  currentId="dualEarthenFistsWeightOfTheWorld"
-                  gimmickData={gimmickData}
-                  id="weightOfTheWorld"
-                  openDialog={openDialog}
-                />{" "}
-                징이 탱커를 제외한 파티원 중 한 명의 머리 위에 표시됩니다.
-              </Typography>
-            </Grid>
-            <CenteredBlock>
-              <ImageBlock
-                src={
-                  pageData.videoBaseUrl +
-                  "/dual-earthen-fists-weight-of-the-world/1.png"
-                }
-                width={500}
-              />
-            </CenteredBlock>
-            <Grid item>
-              <Typography variant="body2">
-                탱커는 이후 등장할{" "}
-                <InlineChip
-                  currentId="dualEarthenFistsWeightOfTheWorld"
-                  gimmickData={gimmickData}
-                  id="earthenAnguish"
-                  openDialog={openDialog}
-                />{" "}
-                {this.generatePostposition(
-                  gimmickData.earthenAnguish.name,
-                  "를"
-                )}{" "}
-                대비해 북쪽으로 산개하고 나머지 파티원들은{" "}
-                <InlineChip
-                  currentId="dualEarthenFistsWeightOfTheWorld"
-                  gimmickData={gimmickData}
-                  id="weightOfTheWorld"
-                  openDialog={openDialog}
-                />{" "}
-                처리를 위해 위와 같이 산개합니다.
-              </Typography>
-            </Grid>
             <CenteredBlock>
               <LoopingVideoBlock
                 height={360}
@@ -2711,6 +2783,7 @@ class EdensGateSepultureSavage extends GuidePageComponent {
           </React.Fragment>
         )
       }*/,
+      ,
       this.generateDialog("rockThrow", pageData.videoBaseUrl + "/rock-throw", [
         {
           type: "typographies",

@@ -9,14 +9,21 @@ class LoopingVideoBlock extends React.Component {
 
   render() {
     return (
-      <Grid item>
+      <Grid
+        item
+        style={{
+          maxWidth: this.props.width,
+          width: "100%"
+        }}
+      >
         <video
           autoPlay
           loop
           muted
           preload="auto"
           style={{
-            height: this.props.height
+            maxWidth: this.props.width,
+            width: "100%"
           }}
           src={this.props.src}
         />

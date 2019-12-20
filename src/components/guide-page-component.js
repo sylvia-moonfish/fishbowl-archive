@@ -168,9 +168,9 @@ class GuidePageComponent extends PageComponent {
         case "loopingVideo":
           return (
             <LoopingVideoBlock
-              height={content.height}
               key={contentIndex}
               src={mediaBaseUrl + content.src}
+              width={content.width}
             />
           );
         case "divider":
