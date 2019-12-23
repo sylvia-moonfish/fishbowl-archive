@@ -23,13 +23,26 @@ class EdensGateSepulture extends GuidePageComponent {
   constructor(props) {
     super(props);
 
-    this.state.openedDialog = "crumblingDownSeismicWave";
+    this.state.openedDialog = "faultZone";
   }
 
   render() {
     const colorTypes = GimmickColorType[this.props.currentTheme];
 
     this.gimmickData = {
+      bombBoulders: {
+        name: "Bomb Boulders",
+        description: "시한폭탄 4개",
+        color: colorTypes.everyone
+      },
+      bombBouldersCobaltBomb: {
+        ids: ["bombBoulders", "cobaltBomb"]
+      },
+      cobaltBomb: {
+        name: "Cobalt Bomb",
+        description: "시한폭탄 강화",
+        color: colorTypes.noOne
+      },
       crumblingDown: {
         name: "Crumbling Down",
         description: "거리 비례 피해 돌 소환",
@@ -41,6 +54,21 @@ class EdensGateSepulture extends GuidePageComponent {
       evilEarth: {
         name: "Evil Earth",
         description: "연속 폭발 장판",
+        color: colorTypes.everyone
+      },
+      faultZone: {
+        name: "Fault Zone",
+        description: "자동차 직선 주행",
+        color: colorTypes.everyoneSpecial
+      },
+      geocrush: {
+        name: "Geocrush",
+        description: "타이탄 점프 + 넉백",
+        color: colorTypes.noOne
+      },
+      massiveLandslide: {
+        name: "Massive Landslide",
+        description: "산사태 공격",
         color: colorTypes.everyone
       },
       seismicWave: {
@@ -80,10 +108,92 @@ class EdensGateSepulture extends GuidePageComponent {
       },
       {
         id: "crumblingDownSeismicWave"
+      },
+      {
+        id: "geocrush"
+      },
+      {
+        id: "massiveLandslide"
+      },
+      {
+        id: "bombBouldersCobaltBomb"
+      },
+      {
+        id: "faultZone"
       }
     ];
 
     const dialogs = [
+      this.generateDialog(
+        "bombBouldersCobaltBomb",
+        pageData.videoBaseUrl + "/bomb-boulders-cobalt-bomb",
+        [
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  {
+                    id: "bombBoulders",
+                    showNoLink: true,
+                    type: "chip"
+                  },
+                  "시전이 끝나면 맵의 네 모서리 부근에 4개의 시한폭탄이 소환됩니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "centered",
+            contents: [
+              {
+                type: "loopingVideo",
+                src: "/1.mp4",
+                width: 750
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "이후 타이탄이 무작위로 한 개의 시한폭탄과 줄로 연결되며",
+                  {
+                    id: "cobaltBomb",
+                    showNoLink: true,
+                    type: "chip"
+                  },
+                  "을 사용해 해당 시한폭탄을 강화시킵니다. 강화된 시한폭탄은 기존보다 폭발범위가 커집니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "강화된 시한폭탄이 없는 면으로 이동해 2개의 시한폭탄 사이에 모여 폭발을 피해줍니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "centered",
+            contents: [
+              {
+                type: "loopingVideo",
+                src: "/2.mp4",
+                width: 750
+              }
+            ]
+          }
+        ]
+      ),
       this.generateDialog(
         "crumblingDownSeismicWave",
         pageData.videoBaseUrl + "/crumbling-down-seismic-wave",
@@ -105,6 +215,16 @@ class EdensGateSepulture extends GuidePageComponent {
               {
                 contents: ["이후 징이 있던 자리에 커다란 돌 2개가 떨어집니다."],
                 variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "centered",
+            contents: [
+              {
+                type: "loopingVideo",
+                src: "/1.mp4",
+                width: 750
               }
             ]
           },
@@ -133,6 +253,16 @@ class EdensGateSepulture extends GuidePageComponent {
                   "를 피해줍니다."
                 ],
                 variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "centered",
+            contents: [
+              {
+                type: "loopingVideo",
+                src: "/2.mp4",
+                width: 750
               }
             ]
           }
@@ -180,8 +310,8 @@ class EdensGateSepulture extends GuidePageComponent {
           contents: [
             {
               type: "loopingVideo",
-              height: 360,
-              src: "/2.mp4"
+              src: "/2.mp4",
+              width: 500
             }
           ]
         },
@@ -201,12 +331,144 @@ class EdensGateSepulture extends GuidePageComponent {
           contents: [
             {
               type: "loopingVideo",
-              height: 360,
-              src: "/3.mp4"
+              src: "/3.mp4",
+              width: 750
             }
           ]
         }
       ]),
+      this.generateDialog(
+        "faultZone",
+        pageData.videoBaseUrl + "/fault-zone",
+        []
+      ),
+      this.generateDialog("geocrush", pageData.videoBaseUrl + "/geocrush", [
+        {
+          type: "typographies",
+          typographies: [
+            {
+              contents: [
+                "타이탄이 모서리를 제외한 바깥 바닥칸 중 무작위로 한 칸을 골라 바라보며",
+                {
+                  id: "geocrush",
+                  type: "chip"
+                },
+                "시전을 시작합니다."
+              ],
+              variant: "body2"
+            }
+          ]
+        },
+        {
+          type: "typographies",
+          typographies: [
+            {
+              contents: [
+                "타이탄이 바라보고 있는 바닥칸을 중심으로 화살표가 뻗어나가는 모양의 장판이 표시됩니다."
+              ],
+              variant: "body2"
+            }
+          ]
+        },
+        {
+          type: "centered",
+          contents: [
+            {
+              type: "image",
+              src: "/1.png",
+              width: 500
+            }
+          ]
+        },
+        {
+          type: "typographies",
+          typographies: [
+            {
+              contents: [
+                "이후 시전이 끝나면 바라보고 있던 바닥칸을 향해 점프해 착지하며 모든 파티원들을 해당 칸의 바깥 방향으로 밀어냅니다."
+              ],
+              variant: "body2"
+            }
+          ]
+        },
+        {
+          type: "typographies",
+          typographies: [
+            {
+              contents: [
+                "밀어내는 거리가 상당히 길기 때문에 최대한 해당 바닥칸 근처에 서서 낙사를 방지해주도록 합니다."
+              ],
+              variant: "body2"
+            },
+            {
+              contents: [
+                "* 밀쳐내기 무효화 기술을 사용하거나 밀려나는 도중에 돌진 기술 등을 사용해 밀려나는 것을 방지할 수 있습니다."
+              ],
+              style: {
+                color: colorTypes.warning
+              },
+              variant: "body2"
+            }
+          ]
+        },
+        {
+          type: "centered",
+          contents: [
+            {
+              type: "loopingVideo",
+              src: "/2.mp4",
+              width: 750
+            }
+          ]
+        }
+      ]),
+      this.generateDialog(
+        "massiveLandslide",
+        pageData.videoBaseUrl + "/massive-landslide",
+        [
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "시전이 끝나면 타이탄이 자신의 정면 직선 범위를 제외한 맵 전부를 공격하며 맞은 대상을 밀쳐내 낙사시킵니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: ["타이탄의 정면에 모여 넉백 공격을 피해줍니다."],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "centered",
+            contents: [
+              {
+                type: "loopingVideo",
+                src: "/1.mp4",
+                width: 750
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "이후 정면 직선 범위로 파란색 후속타 장판이 표시되므로 옆으로 이동해 피해주도록 합니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          }
+        ]
+      ),
       this.generateDialog(
         "stonecrusher",
         pageData.videoBaseUrl + "/stonecrusher",
@@ -236,8 +498,8 @@ class EdensGateSepulture extends GuidePageComponent {
             contents: [
               {
                 type: "loopingVideo",
-                height: 360,
-                src: "/1.mp4"
+                src: "/1.mp4",
+                width: 750
               }
             ]
           }
@@ -248,21 +510,21 @@ class EdensGateSepulture extends GuidePageComponent {
         pageData.videoBaseUrl + "/voice-of-the-land",
         [
           {
-            type: "centered",
-            contents: [
-              {
-                type: "loopingVideo",
-                height: 360,
-                src: "/1.mp4"
-              }
-            ]
-          },
-          {
             type: "typographies",
             typographies: [
               {
                 contents: ["약 3만 정도의 마법 피해를 주는 단발 광역기입니다."],
                 variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "centered",
+            contents: [
+              {
+                type: "loopingVideo",
+                src: "/1.mp4",
+                width: 750
               }
             ]
           }
@@ -292,8 +554,8 @@ class EdensGateSepulture extends GuidePageComponent {
             contents: [
               {
                 type: "loopingVideo",
-                height: 360,
-                src: "/1.mp4"
+                src: "/1.mp4",
+                width: 750
               }
             ]
           }
