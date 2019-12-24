@@ -4,7 +4,7 @@ import Tooltip from "@material-ui/core/Tooltip";
 
 import React from "react";
 
-class GimmicksBlock extends React.Component {
+class GimmickChipsBlock extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -49,4 +49,4 @@ class GimmicksBlock extends React.Component {
   }
 }
 
-export default GimmicksBlock;
+export default GimmickChipsBlock;

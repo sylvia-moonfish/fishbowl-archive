@@ -1,0 +1,10 @@
+{
+  "goetia": {
+    "name": "알라그 석판: 마전",
+    "imageSrc": "https://sylvia-moonfish.github.io/fishbowl-assets/icons/tomestones/goetia.png"
+  },
+  "phantasmagoria": {
+    "name": "알라그 석판: 환상",
+    "imageSrc": "https://sylvia-moonfish.github.io/fishbowl-assets/icons/tomestones/phantasmagoria.png"
+  }
+}
