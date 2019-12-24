@@ -18,6 +18,14 @@ const pageData = {
           name: "5.0",
           items: [
             {
+              name: "희망의 낙원 에덴: 각성편 3",
+              level: 80,
+              itemLevel: 425,
+              thumbnailSrc:
+                SiteInfo.assetsUrl + "/raid-guide/edens-gate-inundation.png",
+              href: "/guide/raid-guide/5-0/edens-gate-inundation"
+            },
+            {
               name: "희망의 낙원 에덴: 각성편 4",
               level: 80,
               itemLevel: 425,

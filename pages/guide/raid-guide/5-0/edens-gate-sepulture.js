@@ -30,17 +30,17 @@ class EdensGateSepulture extends GuidePageComponent {
 
     this.gimmickData = {
       bombBoulders: {
-        name: "Bomb Boulders",
+        name: "바위폭탄",
         description: "시한폭탄 4개",
         color: colorTypes.everyone
       },
       bombBoulders1: {
-        name: "Bomb Boulders",
+        name: "바위폭탄",
         description: "3줄 시한폭탄",
         color: colorTypes.everyone
       },
       bombBoulders2: {
-        name: "Bomb Boulders",
+        name: "바위폭탄",
         description: "+자/x자 시한폭탄",
         color: colorTypes.everyone
       },
@@ -54,12 +54,12 @@ class EdensGateSepulture extends GuidePageComponent {
         ids: ["bombBoulders2", "evilEarth"]
       },
       cobaltBomb: {
-        name: "Cobalt Bomb",
+        name: "코발트 폭탄",
         description: "시한폭탄 강화",
         color: colorTypes.noOne
       },
       crumblingDown: {
-        name: "Crumbling Down",
+        name: "암반 낙하",
         description: "거리 비례 피해 돌 소환",
         color: colorTypes.everyone
       },
@@ -70,17 +70,17 @@ class EdensGateSepulture extends GuidePageComponent {
         ids: ["crumblingDown", "evilEarth", "seismicWave"]
       },
       earthenFury: {
-        name: "Earthen Fury",
+        name: "대지의 분노",
         description: "광역기 + 도트 + 패턴 강화",
         color: colorTypes.heal
       },
       evilEarth: {
-        name: "Evil Earth",
+        name: "사악한 대지",
         description: "연속 폭발 장판",
         color: colorTypes.everyone
       },
       faultZone: {
-        name: "Fault Zone",
+        name: "단층대",
         description: "자동차 직선 주행",
         color: colorTypes.everyoneSpecial
       },
@@ -88,22 +88,22 @@ class EdensGateSepulture extends GuidePageComponent {
         ids: ["faultZone", "magnitude50"]
       },
       geocrush: {
-        name: "Geocrush",
+        name: "대지 붕괴",
         description: "타이탄 점프 + 넉백",
         color: colorTypes.noOne
       },
       landslide: {
-        name: "Landslide",
+        name: "산사태",
         description: "십자 장판",
         color: colorTypes.noOne
       },
       magnitude50: {
-        name: "Magnitude 5.0",
+        name: "진도 5.0",
         description: "도넛 범위 공격",
         color: colorTypes.noOne
       },
       massiveLandslide: {
-        name: "Massive Landslide",
+        name: "대규모 산사태",
         description: "산사태 공격",
         color: colorTypes.everyoneSpecial
       },
@@ -111,22 +111,22 @@ class EdensGateSepulture extends GuidePageComponent {
         ids: ["massiveLandslide", "landslide"]
       },
       seismicWave: {
-        name: "Seismic Wave",
+        name: "지진파",
         description: "큰 돌 뒤에 숨기",
         color: colorTypes.everyone
       },
       stonecrusher: {
-        name: "Stonecrusher",
+        name: "암석 붕괴",
         description: "탱크 버스터",
         color: colorTypes.tank
       },
       voiceOfTheLand: {
-        name: "Voice of the Land",
+        name: "대지의 외침",
         description: "단발 광역기",
         color: colorTypes.heal
       },
       weightOfTheLand: {
-        name: "Weight of the Land",
+        name: "대지의 무게",
         description: "랜덤 장판 8개",
         color: colorTypes.noOne
       }
