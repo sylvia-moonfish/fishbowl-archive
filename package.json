@@ -3,18 +3,6 @@
   "version": "1.0.0",
   "description": "fishbowl",
   "private": true,
-  "dependencies": {
-    "@material-ui/core": "^4.8.0",
-    "@material-ui/icons": "^4.5.1",
-    "@material-ui/styles": "^4.7.1",
-    "@next/plugin-material-ui": "^9.1.6",
-    "babel-plugin-styled-components": "^1.10.6",
-    "next": "^9.1.6",
-    "prettier": "^1.19.1",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0"
-  },
-  "devDependencies": {},
   "scripts": {
     "format": "prettier --write data/*.{js,json} pages/**/*.{js,json} src/**/*.{js,json}",
     "develop": "next",
@@ -30,5 +18,16 @@
   "bugs": {
     "url": "https://github.com/sylvia-moonfish/fishbowl/issues"
   },
-  "homepage": "https://platy.now.sh/"
+  "homepage": "https://platy.now.sh",
+  "dependencies": {
+    "@material-ui/core": "^4.8.1",
+    "@material-ui/icons": "^4.5.1",
+    "@material-ui/styles": "^4.7.1",
+    "@next/plugin-material-ui": "^9.1.6",
+    "babel-plugin-styled-components": "^1.10.6",
+    "next": "^9.1.6",
+    "prettier": "^1.19.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  }
 }
