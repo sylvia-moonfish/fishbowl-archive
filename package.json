@@ -18,11 +18,11 @@
   "bugs": {
     "url": "https://github.com/sylvia-moonfish/fishbowl/issues"
   },
-  "homepage": "https://platy.now.sh",
+  "homepage": "https://platy.now.sh/",
   "dependencies": {
-    "@material-ui/core": "^4.8.1",
+    "@material-ui/core": "^4.8.2",
     "@material-ui/icons": "^4.5.1",
-    "@material-ui/styles": "^4.7.1",
+    "@material-ui/styles": "^4.8.2",
     "@next/plugin-material-ui": "^9.1.6",
     "babel-plugin-styled-components": "^1.10.6",
     "next": "^9.1.6",

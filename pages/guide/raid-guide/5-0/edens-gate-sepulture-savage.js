@@ -24,7 +24,7 @@ class EdensGateSepultureSavage extends GuidePageComponent {
   constructor(props) {
     super(props);
 
-    this.state.openedDialog = "evilEarth";
+    this.state.openedDialog = "rockThrowPlateFracture";
   }
 
   render() {
@@ -142,6 +142,11 @@ class EdensGateSepultureSavage extends GuidePageComponent {
         description: "미니 타이탄 거대화",
         color: colorTypes.noOne
       },
+      plateFracture: {
+        name: "Plate Fracture",
+        description: "맵 파괴",
+        color: colorTypes.everyone
+      },
       pulseOfTheLand: {
         name: "Pulse of the Land",
         description: "노란색 세모 징",
@@ -151,6 +156,9 @@ class EdensGateSepultureSavage extends GuidePageComponent {
         name: "Rock Throw",
         description: "힐러 돌감옥",
         color: colorTypes.heal
+      },
+      rockThrowPlateFracture: {
+        ids: ["rockThrow", "plateFracture"]
       },
       seismicWave: {
         name: "Seismic Wave",
@@ -376,6 +384,10 @@ class EdensGateSepultureSavage extends GuidePageComponent {
         {
           id: "earthenFury",
           timestamp: "5:32"
+        },
+        {
+          id: "rockThrowPlateFracture",
+          timestamp: "5:49"
         }
       ]
     ];
@@ -1400,6 +1412,20 @@ class EdensGateSepultureSavage extends GuidePageComponent {
                   "를 동시에 사용합니다."
                 ],
                 variant: "body2"
+              },
+              {
+                contents: [
+                  "*",
+                  {
+                    id: "earthenFist",
+                    type: "chip"
+                  },
+                  "회피 방법은 해당 기술 상세 공략을 참고해주세요. 기술 이름을 클릭하면 상세 공략으로 넘어갑니다."
+                ],
+                style: {
+                  color: colorTypes.warning
+                },
+                variant: "body2"
               }
             ]
           },
@@ -1601,1037 +1627,1389 @@ class EdensGateSepultureSavage extends GuidePageComponent {
           ]
         }
       ]),
-      /*
-      {
-        id: "evilEarth1",
-        children: (
-          <React.Fragment>
-            <Grid item>
-              <Typography variant="body2">
-                2개의{" "}
-                <InlineChip
-                  currentId="evilEarth1"
-                  gimmickData={gimmickData}
-                  id="evilEarth"
-                  openDialog={openDialog}
-                />{" "}
-                장판이 등장합니다.
-              </Typography>
-            </Grid>
-            <CenteredBlock>
-              <LoopingVideoBlock
-                height={360}
-                src={pageData.videoBaseUrl + "/evil-earth-1/1.mp4"}
-              />
-              <LoopingVideoBlock
-                height={360}
-                src={pageData.videoBaseUrl + "/evil-earth-1/2.mp4"}
-              />
-            </CenteredBlock>
-            <Grid item>
-              <Typography variant="body2">
-                <InlineChip
-                  currentId="evilEarth1"
-                  gimmickData={gimmickData}
-                  id="evilEarth"
-                  openDialog={openDialog}
-                />{" "}
-                장판은 항상 2개가 대각선으로 마주 보는 위치에서 나타나므로, 위
-                2가지의 조합 + 위 조합을 좌우반전한 버전 총 4가지 조합 중 하나가
-                나오게 됩니다.
-              </Typography>
-            </Grid>
-            <Grid item>
-              <Typography variant="body2">
-                위 영상에서 하얀 원으로 표시된 곳에 파티원 전원이 집합했다가
-                함께 움직이면 쉽게 피할 수 있습니다.
-              </Typography>
-            </Grid>
-            <Grid item>
-              <Typography
-                style={{
+      this.generateDialog(
+        "evilEarth1",
+        pageData.videoBaseUrl + "/evil-earth-1",
+        [
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "2개의",
+                  {
+                    id: "evilEarth",
+                    type: "chip"
+                  },
+                  "장판이 등장합니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  {
+                    id: "evilEarth",
+                    type: "chip"
+                  },
+                  "장판은 항상 2개가 대각선으로 마주 보는 위치에서 나타나므로, 아래 2가지의 조합 + 위 조합을 좌우반전한 버전 총 4가지 조합 중 하나가 나오게 됩니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "centered",
+            contents: [
+              {
+                type: "loopingVideo",
+                src: "/1.mp4",
+                width: 360
+              },
+              {
+                type: "loopingVideo",
+                src: "/2.mp4",
+                width: 360
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "위 영상의 하얀 원을 따라 파티원 전원이 함께 움직이면 쉽게 피할 수 있습니다."
+                ],
+                variant: "body2"
+              },
+              {
+                contents: [
+                  "*",
+                  {
+                    id: "evilEarth",
+                    type: "chip"
+                  },
+                  "회피 전",
+                  {
+                    id: "pulseOfTheLand",
+                    type: "chip"
+                  },
+                  '처리를 위해 산개한 상태이므로 집합 장소 반대쪽으로 산개한 플레이어들은 "전력 질주"를 꼭 사용해주세요.'
+                ],
+                style: {
                   color: colorTypes.warning
-                }}
-                variant="body2"
-              >
-                *{" "}
-                <InlineChip
-                  currentId="evilEarth1"
-                  gimmickData={gimmickData}
-                  id="evilEarth"
-                  openDialog={openDialog}
-                />{" "}
-                회피 전{" "}
-                <InlineChip
-                  currentId="evilEarth1"
-                  gimmickData={gimmickData}
-                  id="pulseOfTheLand"
-                  openDialog={openDialog}
-                />{" "}
-                처리를 위해 산개한 상태이므로 집합 장소 반대쪽으로 산개한
-                플레이어들은 "전력 질주"를 꼭 사용해주세요.
-              </Typography>
-            </Grid>
-            <CenteredBlock>
-              <LoopingVideoBlock
-                height={360}
-                src={pageData.videoBaseUrl + "/evil-earth-1/3.mp4"}
-              />
-            </CenteredBlock>
-            <Grid item>
-              <Typography variant="body2">
-                일단{" "}
-                <InlineChip
-                  currentId="evilEarth1"
-                  gimmickData={gimmickData}
-                  id="evilEarth"
-                  openDialog={openDialog}
-                />{" "}
-                시전이 시작되면 장판이 시작하는 장소를 보고 파티 집합 장소가
-                어디인지 재빨리 확인합니다.
-              </Typography>
-            </Grid>
-            <Grid item>
-              <Typography variant="body2">
-                <InlineChip
-                  currentId="evilEarth1"
-                  gimmickData={gimmickData}
-                  id="pulseOfTheLand"
-                  openDialog={openDialog}
-                />{" "}
-                처리가 끝나면 곧바로 집합 장소에 모두 집합합니다.
-              </Typography>
-            </Grid>
-            <Grid item>
-              <Typography variant="body2">
-                이후 파티원 전원이 함께 움직여{" "}
-                <InlineChip
-                  currentId="evilEarth1"
-                  gimmickData={gimmickData}
-                  id="evilEarth"
-                  openDialog={openDialog}
-                />{" "}
-                {this.generatePostposition(gimmickData.evilEarth.name, "를")}{" "}
-                피해줍니다.
-              </Typography>
-            </Grid>
-          </React.Fragment>
-        )
-      },
-      {
-        id: "faultLine",
-        children: (
-          <React.Fragment>
-            <CenteredBlock>
-              <LoopingVideoBlock
-                height={360}
-                src={pageData.videoBaseUrl + "/fault-line/1.mp4"}
-              />
-            </CenteredBlock>
-            <Grid item>
-              <Typography variant="body2">
-                미니 타이탄이 직선으로 돌진하며 양 옆으로 충격파를 발생시켜 모든
-                플레이어들을 크게 밀어냅니다. 돌진 경로 위에 있을 경우
-                즉사합니다.
-              </Typography>
-            </Grid>
-            <Grid item>
-              <Typography variant="body2">
-                이후 돌진 경로로부터 양 옆으로 한 칸씩 후속타가 발생하므로
-                주의해주세요.
-              </Typography>
-            </Grid>
-          </React.Fragment>
-        )
-      },
-      {
-        id: "faultLineMagnitude50",
-        children: (
-          <React.Fragment>
-            <Grid item>
-              <Typography variant="body2">
-                <InlineChip
-                  currentId="faultLineMagnitude50"
-                  gimmickData={gimmickData}
-                  id="earthenWheels"
-                  openDialog={openDialog}
-                />{" "}
-                이후 곧바로 시전 바 없이{" "}
-                <InlineChip
-                  currentId="faultLineMagnitude50"
-                  gimmickData={gimmickData}
-                  id="pulseOfTheLand"
-                  openDialog={openDialog}
-                />{" "}
-                {this.generatePostposition(
-                  gimmickData.pulseOfTheLand.name,
-                  "와"
-                )}{" "}
-                <InlineChip
-                  currentId="faultLineMagnitude50"
-                  gimmickData={gimmickData}
-                  id="forceOfTheLand"
-                  openDialog={openDialog}
-                />{" "}
-                {this.generatePostposition(
-                  gimmickData.forceOfTheLand.name,
-                  "를"
-                )}{" "}
-                사용합니다.
-              </Typography>
-            </Grid>
-            <CenteredBlock>
-              <ImageBlock
-                src={pageData.videoBaseUrl + "/fault-line-magnitude-50/1.png"}
-                width={500}
-              />
-            </CenteredBlock>
-            <Grid item>
-              <Typography variant="body2">
-                무작위로 한 명의 탱커, 한 명의 딜러, 한 명의 힐러에게{" "}
-                <InlineChip
-                  currentId="faultLineMagnitude50"
-                  gimmickData={gimmickData}
-                  id="pulseOfTheLand"
-                  openDialog={openDialog}
-                />{" "}
-                징이 표시되고 나머지 파티원들에게는{" "}
-                <InlineChip
-                  currentId="faultLineMagnitude50"
-                  gimmickData={gimmickData}
-                  id="forceOfTheLand"
-                  openDialog={openDialog}
-                />{" "}
-                징이 표시됩니다.
-              </Typography>
-            </Grid>
-            <CenteredBlock>
-              <LoopingVideoBlock
-                height={360}
-                src={pageData.videoBaseUrl + "/fault-line-magnitude-50/2.mp4"}
-              />
-            </CenteredBlock>
-            <Grid item>
-              <Typography variant="body2">
-                징이 표시된 직후 미니 타이탄이{" "}
-                <InlineChip
-                  currentId="faultLineMagnitude50"
-                  gimmickData={gimmickData}
-                  id="faultLine"
-                  openDialog={openDialog}
-                />{" "}
-                {this.generatePostposition(gimmickData.faultLine.name, "을")}{" "}
-                사용합니다. 정면으로 돌진하며 모든 플레이어를 자신의 양 옆으로
-                밀어냅니다.
-              </Typography>
-            </Grid>
-            <CenteredBlock>
-              <ImageBlock
-                src={pageData.videoBaseUrl + "/fault-line-magnitude-50/3.png"}
-                width={500}
-              />
-            </CenteredBlock>
-            <Grid item>
-              <Typography variant="body2">
-                자신의 징 색깔을 확인한 후 위와 같이 산개합니다. 이후 모든
-                파티원들이{" "}
-                <InlineChip
-                  currentId="faultLineMagnitude50"
-                  gimmickData={gimmickData}
-                  id="faultLine"
-                  openDialog={openDialog}
-                />{" "}
-                에 의해 다음과 같이 밀려나게 됩니다.
-              </Typography>
-            </Grid>
-            <CenteredBlock>
-              <ImageBlock
-                src={pageData.videoBaseUrl + "/fault-line-magnitude-50/4.png"}
-                width={500}
-              />
-            </CenteredBlock>
-            <Grid item>
-              <Typography variant="body2">
-                밀려난 후 징이 처리되고 후속타 판정이 끝날 때까지 시간이 살짝
-                걸리기 때문에 밀려난 칸에서 잠깐 기다려주어야 합니다! 위
-                그림에서 파랗게 표시된 부분이 후속타 공격 범위입니다. 징 처리와
-                후속타 판정은 거의 동시에 일어납니다.
-              </Typography>
-            </Grid>
-            <CenteredBlock>
-              <ImageBlock
-                src={pageData.videoBaseUrl + "/fault-line-magnitude-50/5.png"}
-                width={500}
-              />
-            </CenteredBlock>
-            <Grid item>
-              <Typography variant="body2">
-                징 처리와 후속타 판정이 끝났다면 모든 파티원들은 한 칸 위로
-                이동해 다음 후속타를 피해줍니다. 이 때 미니 타이탄이 1어글자를
-                향해 두 번째{" "}
-                <InlineChip
-                  currentId="faultLineMagnitude50"
-                  gimmickData={gimmickData}
-                  id="faultLine"
-                  openDialog="openDialog"
-                />{" "}
-                {this.generatePostposition(gimmickData.faultLine.name, "을")}{" "}
-                사용하기 때문에 1어글자는 위 포지션으로 이동해 돌진 방향을
-                유도해줍니다. 나머지 파티원들은 뺑소니 당하지 않도록
-                주의해주세요.
-              </Typography>
-            </Grid>
-            <Grid item>
-              <Typography variant="body2">
-                이 두 번째{" "}
-                <InlineChip
-                  currentId="faultLineMagnitude50"
-                  gimmickData={gimmickData}
-                  id="faultLine"
-                  openDialog="openDialog"
-                />{" "}
-                {this.generatePostposition(gimmickData.faultLine.name, "은")}{" "}
-                대상자에게 거리 비례 데미지를 주므로 위 그림처럼 거리를 최대한
-                띄워주어야 합니다. 약 8만 정도의 꽤 아픈 물리 피해를 입히므로
-                1어글자인 대상자는 빠른 포지셔닝을 위한 "전력 질주" 외에도
-                "방벽", "원초의 직감" 등의 가벼운 생존기를 올려주는 것이
-                좋습니다.
-              </Typography>
-            </Grid>
-            <Grid item>
-              <Typography
-                style={{
+                },
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "divider"
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "일단",
+                  {
+                    id: "evilEarth",
+                    type: "chip"
+                  },
+                  "시전이 시작되면 장판이 시작하는 장소를 보고 파티 집합 장소가 어디인지 재빨리 확인합니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  {
+                    id: "pulseOfTheLand",
+                    type: "chip"
+                  },
+                  "처리가 끝나면 곧바로 집합 장소에 모두 집합합니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "이후 파티원 전원이 함께 움직여",
+                  {
+                    id: "evilEarth",
+                    type: "chip"
+                  },
+                  "를 피해줍니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "centered",
+            contents: [
+              {
+                type: "loopingVideo",
+                src: "/3.mp4",
+                width: 750
+              }
+            ]
+          }
+        ]
+      ),
+      this.generateDialog("faultLine", pageData.videoBaseUrl + "/fault-line", [
+        {
+          type: "typographies",
+          typographies: [
+            {
+              contents: [
+                "미니 타이탄이 직선으로 돌진하며 양 옆으로 충격파를 발생시켜 모든 플레이어들을 크게 밀어냅니다. 돌진 경로 위에 있을 경우 즉사합니다."
+              ],
+              variant: "body2"
+            }
+          ]
+        },
+        {
+          type: "centered",
+          contents: [
+            {
+              type: "loopingVideo",
+              src: "/1.mp4",
+              width: 750
+            }
+          ]
+        },
+        {
+          type: "typographies",
+          typographies: [
+            {
+              contents: [
+                "이후 돌진 경로로부터 양 옆으로 한 칸씩 후속타가 발생하므로 주의해주세요."
+              ],
+              variant: "body2"
+            }
+          ]
+        }
+      ]),
+      this.generateDialog(
+        "faultLineMagnitude50",
+        pageData.videoBaseUrl + "/fault-line-magnitude-50",
+        [
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  {
+                    id: "earthenWheels",
+                    type: "chip"
+                  },
+                  "이후 곧바로 시전 바 없이",
+                  {
+                    id: "pulseOfTheLand",
+                    type: "chip"
+                  },
+                  "와",
+                  {
+                    id: "forceOfTheLand",
+                    type: "chip"
+                  },
+                  "를 사용합니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "무작위로 한 명의 탱커, 한 명의 딜러, 한 명의 힐러에게",
+                  {
+                    id: "pulseOfTheLand",
+                    type: "chip"
+                  },
+                  "징이 표시되고 나머지 파티원들에게는",
+                  {
+                    id: "forceOfTheLand",
+                    type: "chip"
+                  },
+                  "징이 표시됩니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "centered",
+            contents: [
+              {
+                type: "image",
+                src: "/1.png",
+                width: 500
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "자신의 징 색깔을 확인한 후 아래와 같이 산개합니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "centered",
+            contents: [
+              {
+                type: "image",
+                src: "/2.png",
+                width: 500
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "이후 미니 타이탄이",
+                  {
+                    id: "faultLine",
+                    type: "chip"
+                  },
+                  "을 사용합니다. 정면으로 돌진하며 모든 플레이어를 자신의 양 옆으로 밀어냅니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "centered",
+            contents: [
+              {
+                type: "loopingVideo",
+                src: "/3.mp4",
+                width: 750
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "밀려난 후 징이 처리되고 후속타 판정이 끝날 때까지 시간이 살짝 걸리기 때문에 밀려난 칸에서 잠깐 기다려주어야 합니다! 아래 그림에서 파랗게 표시된 부분이 후속타 공격 범위입니다. 징 처리와 후속타 판정은 거의 동시에 일어납니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "centered",
+            contents: [
+              {
+                type: "image",
+                src: "/4.png",
+                width: 500
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "징 처리와 후속타 판정이 끝났다면 모든 파티원들은 한 칸 위로 이동해 다음 후속타를 피해줍니다. 이 때 미니 타이탄이 1어글자를 향해 두 번째",
+                  {
+                    id: "faultLine",
+                    type: "chip"
+                  },
+                  "을 사용하기 때문에 1어글자는 아래 그림처럼 이동해 돌진 방향을 유도해줍니다. 나머지 파티원들은 뺑소니 당하지 않도록 주의해주세요."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "centered",
+            contents: [
+              {
+                type: "image",
+                src: "/5.png",
+                width: 500
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "이 두 번째",
+                  {
+                    id: "faultLine",
+                    type: "chip"
+                  },
+                  '은 대상자에게 거리 비례 데미지를 주므로 위 그림처럼 거리를 최대한 띄워주어야 합니다. 약 8만 정도의 꽤 아픈 물리 피해를 입히므로 1어글자인 대상자는 빠른 포지셔닝을 위한 "전력 질주" 외에도 "방벽", "원초의 직감" 등의 가벼운 생존기를 올려주는 것이 좋습니다.'
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "* 만약 1어글자가",
+                  {
+                    id: "pulseOfTheLand",
+                    type: "chip"
+                  },
+                  "대상자였다면 빠른 포지셔닝이 힘들 수도 있습니다. 따라서 탱커들은 처음 징이 생기자마자 재빨리 자신의 징 색깔을 확인 후 1어글자가",
+                  {
+                    id: "pulseOfTheLand",
+                    type: "chip"
+                  },
+                  "징을 가지고 있다면 빠르게 탱교대를 해줍시다."
+                ],
+                style: {
                   color: colorTypes.warning
-                }}
-                variant="body2"
-              >
-                * 만약 1어글자가{" "}
-                <InlineChip
-                  currentId="faultLineMagnitude50"
-                  gimmickData={gimmickData}
-                  id="pulseOfTheLand"
-                  openDialog="openDialog"
-                />{" "}
-                대상자였다면 빠른 포지셔닝이 힘들 수도 있습니다. 따라서 탱커들은
-                처음 징이 생기자마자 재빨리 자신의 징 색깔을 확인 후 1어글자가{" "}
-                <InlineChip
-                  currentId="faultLineMagnitude50"
-                  gimmickData={gimmickData}
-                  id="pulseOfTheLand"
-                  openDialog="openDialog"
-                />{" "}
-                징을 가지고 있다면 빠르게 탱교대를 해줍시다.
-              </Typography>
-            </Grid>
-            <CenteredBlock>
-              <LoopingVideoBlock
-                height={360}
-                src={pageData.videoBaseUrl + "/fault-line-magnitude-50/6.mp4"}
-              />
-            </CenteredBlock>
-            <Grid item>
-              <Typography variant="body2">
-                전체적인 타이밍은 위 영상을 참고해주세요.
-              </Typography>
-            </Grid>
-            <Grid item>
-              <Divider />
-            </Grid>
-            <CenteredBlock>
-              <LoopingVideoBlock
-                height={360}
-                src={pageData.videoBaseUrl + "/magnitude-50/1.mp4"}
-              />
-            </CenteredBlock>
-            <Grid item>
-              <Typography variant="body2">
-                이후 미니 타이탄이 곧바로{" "}
-                <InlineChip
-                  currentId="faultLineMagnitude50"
-                  gimmickData={gimmickData}
-                  id="magnitude50"
-                  openDialog={openDialog}
-                />{" "}
-                시전을 시작합니다. 모든 파티원들은 시전이 끝나기 전에 재빨리
-                미니 타이탄의 타겟 원 안으로 들어와 공격을 회피해줍니다.
-              </Typography>
-            </Grid>
-            <Grid item>
-              <Typography variant="body2">
-                동시에 모든 파티원들의 머리 위에{" "}
-                <InlineChip
-                  currentId="faultLineMagnitude50"
-                  gimmickData={gimmickData}
-                  id="pulseOfTheLand"
-                  openDialog={openDialog}
-                />{" "}
-                징이 표시됩니다. 전원 산개해서 처리해줍니다. 산개 예시는 아래와
-                같습니다.
-              </Typography>
-            </Grid>
-            <CenteredBlock>
-              <ImageBlock
-                src={pageData.videoBaseUrl + "/fault-line-magnitude-50/7.png"}
-                width={500}
-              />
-            </CenteredBlock>
-            <Grid item>
-              <Typography
-                style={{
+                },
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: ["전체적인 타이밍은 아래 영상을 참고해주세요."],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "centered",
+            contents: [
+              {
+                type: "loopingVideo",
+                src: "/6.mp4",
+                width: 750
+              }
+            ]
+          },
+          {
+            type: "divider"
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "이후 미니 타이탄이 곧바로",
+                  {
+                    id: "magnitude50",
+                    type: "chip"
+                  },
+                  "시전을 시작합니다. 모든 파티원들은 시전이 끝나기 전에 재빨리 미니 타이탄의 타겟 원 안으로 들어와 공격을 회피해줍니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "centered",
+            contents: [
+              {
+                type: "loopingVideo",
+                src: "/7.mp4",
+                width: 750
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "동시에 모든 파티원들의 머리 위에",
+                  {
+                    id: "pulseOfTheLand",
+                    type: "chip"
+                  },
+                  "징이 표시됩니다. 전원 산개해서 처리해줍니다. 산개 예시는 아래와 같습니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "centered",
+            contents: [
+              {
+                type: "image",
+                src: "/8.png",
+                width: 500
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "* 위 산개도는 예시일 뿐입니다. 서로 겹치지만 않는다면 어떻게 산개하든 자유입니다. 자신과 자신의 파티원들이 가장 편하다고 생각하는 산개 방법을 사용해주세요."
+                ],
+                style: {
                   color: colorTypes.warning
-                }}
-                variant="body2"
-              >
-                * 위 산개도는 예시일 뿐입니다. 서로 겹치지만 않는다면 어떻게
-                산개하든 자유입니다. 자신과 자신의 파티원들이 가장 편하다고
-                생각하는 산개 방법을 사용해주세요.
-              </Typography>
-            </Grid>
-            <Grid item>
-              <Typography variant="body2">
-                이후 기믹 처리를 위해 미니 타이탄을 맵 중앙에 주차해주세요.
-              </Typography>
-            </Grid>
-          </React.Fragment>
-        )
-      },
-      {
-        id: "forceOfTheLand",
-        children: (
-          <React.Fragment>
-            <CenteredBlock>
-              <ImageBlock
-                src={pageData.videoBaseUrl + "/force-of-the-land/1.png"}
-                width={342}
-              />
-            </CenteredBlock>
-            <Grid item>
-              <Typography variant="body2">
-                <InlineChip
-                  currentId="forceOfTheLand"
-                  gimmickData={gimmickData}
-                  id="forceOfTheLand"
-                  openDialog={openDialog}
-                />{" "}
-                대상자의 머리 위에는 오렌지색 네모 징이 표시됩니다.
-              </Typography>
-            </Grid>
-            <CenteredBlock>
-              <LoopingVideoBlock
-                height={720}
-                src={pageData.videoBaseUrl + "/force-of-the-land/2.mp4"}
-              />
-            </CenteredBlock>
-            <Grid item>
-              <Typography variant="body2">
-                오렌지색 네모 징이 사라지는 시점에 대상 플레이어가 서 있는
-                바닥에 돌이 떨어지며 피해를 입힙니다. 해당 바닥칸에 대상
-                플레이어 혼자 서 있을 경우 즉사하게 되지만 1명 이상의 다른
-                플레이어가 같이 있다면 약 4만 정도의 마법 피해를 입고 "받는 마법
-                피해 증가" 디버프를 부여받습니다.
-              </Typography>
-            </Grid>
-            <CenteredBlock>
-              <ImageBlock
-                src={pageData.videoBaseUrl + "/force-of-the-land/3.png"}
-                width={300}
-              />
-              <ImageBlock
-                src={pageData.videoBaseUrl + "/force-of-the-land/4.png"}
-                width={300}
-              />
-            </CenteredBlock>
-            <Grid item>
-              <Typography variant="body2">
-                <InlineChip
-                  currentId="forceOfTheLand"
-                  gimmickData={gimmickData}
-                  id="forceOfTheLand"
-                  openDialog={openDialog}
-                />{" "}
-                의 판정은 플레이어를 중심으로 이루어지는 것이 아니라 플레이어가
-                밟고 있는 바닥의 네모 칸을 기준으로 이루어지는 것이므로, 함께
-                맞을 플레이어들은 항상 바닥 칸을 잘 보고 같은 칸에 서 있도록
-                합니다.
-              </Typography>
-            </Grid>
-          </React.Fragment>
-        )
-      },
-      {
-        id: "geocrush",
-        children: (
-          <React.Fragment>
-            <CenteredBlock>
-              <ImageBlock
-                src={pageData.videoBaseUrl + "/geocrush/1.png"}
-                width={500}
-              />
-            </CenteredBlock>
-            <Grid item>
-              <Typography variant="body2">
-                타이탄이 모서리를 제외한 바깥 바닥칸 중 무작위로 한 칸을 골라
-                바라보며{" "}
-                <InlineChip
-                  currentId="geocrush"
-                  gimmickData={gimmickData}
-                  id="geocrush"
-                  openDialog={openDialog}
-                />{" "}
-                시전을 시작합니다.
-              </Typography>
-            </Grid>
-            <Grid item>
-              <Typography variant="body2">
-                타이탄이 바라보고 있는 바닥칸을 중심으로 화살표가 뻗어나가는
-                모양의 장판이 표시됩니다.
-              </Typography>
-            </Grid>
-            <CenteredBlock>
-              <LoopingVideoBlock
-                height={360}
-                src={pageData.videoBaseUrl + "/geocrush/2.mp4"}
-              />
-            </CenteredBlock>
-            <Grid item>
-              <Typography variant="body2">
-                이후 시전이 끝나면 바라보고 있던 바닥칸을 향해 점프해 착지하며
-                모든 파티원들을 해당 칸의 바깥 방향으로 밀어냅니다.
-              </Typography>
-            </Grid>
-            <Grid item>
-              <Typography variant="body2">
-                밀어내는 거리가 상당히 길기 때문에 해당 바닥칸 안쪽에 서 있지
-                않으면 맵 바깥까지 밀려 낙사할 수 있으므로 주의해주세요.
-              </Typography>
-            </Grid>
-            <Grid item>
-              <Typography variant="body2">
-                밀쳐내기 무효화 기술을 사용하거나 밀려나는 도중에 돌진 기술 등을
-                사용해 밀려나는 것을 방지할 수 있습니다.
-              </Typography>
-            </Grid>
-          </React.Fragment>
-        )
-      },
-      {
-        id: "landslide",
-        children: (
-          <React.Fragment>
-            <Grid item>
-              <Typography variant="body2">
-                미니 타이탄이 맵의 동서남북 중 한 군데를 바라보며{" "}
-                <InlineChip
-                  currentId="landslide"
-                  gimmickData={gimmickData}
-                  id="landslide"
-                  openDialog={openDialog}
-                />{" "}
-                시전을 시작합니다.
-              </Typography>
-            </Grid>
-            <CenteredBlock>
-              <ImageBlock
-                src={pageData.videoBaseUrl + "/landslide/1.png"}
-                width={500}
-              />
-            </CenteredBlock>
-            <Grid item>
-              <Typography variant="body2">
-                시전이 끝나면 바라보고 있던 방향으로 점프해 착지하며 위 그림처럼
-                T자 형태의 넉백 공격을 하게 됩니다.
-              </Typography>
-            </Grid>
-            <CenteredBlock>
-              <LoopingVideoBlock
-                height={360}
-                src={pageData.videoBaseUrl + "/landslide/2.mp4"}
-              />
-            </CenteredBlock>
-            <Grid item>
-              <Typography variant="body2">
-                시전이 끝나기 전에 타이탄이 바라보고 있는 방향을 확인 후 안전
-                지역으로 이동해 T자 공격을 피해줍니다.
-              </Typography>
-            </Grid>
-            <CenteredBlock>
-              <LoopingVideoBlock
-                height={360}
-                src={pageData.videoBaseUrl + "/landslide/3.mp4"}
-              />
-            </CenteredBlock>
-            <Grid item>
-              <Typography variant="body2">
-                이후 안전 지역에 후속타가 오므로 쟤빨리 안전 지역을 벗어나 미니
-                타이탄 아래에 모두 모입니다.
-              </Typography>
-            </Grid>
-            <Grid item>
-              <Typography variant="body2">
-                미니 타이탄이 빙글 돌아 맵 중앙을 향하며 자신의 왼쪽 혹은 오른쪽
-                맵 전부를 덮는 장판 공격을 시전합니다. 친절하게 바닥에 장판을
-                보여주므로 간단하게 피해줍니다.
-              </Typography>
-            </Grid>
-            <Grid item>
-              <Typography variant="body2">
-                이후 공격하지 않은 영역에 후속타가 오므로 장판 공격을 피하고
-                나서 재빨리 넘어가 후속타도 피해줍니다.
-              </Typography>
-            </Grid>
-            <CenteredBlock>
-              <ImageBlock
-                src={pageData.videoBaseUrl + "/landslide/4.png"}
-                width={500}
-              />
-            </CenteredBlock>
-            <Grid item>
-              <Typography variant="body2">
-                장판 공격이 끝났을 때 쯤에 바닥의 돌덩이들이 빛나기 시작합니다.
-                빛나는 돌덩이와 빛나지 않는 돌덩이의 위치를 확인합니다. 먼저
-                빛나기 시작한 돌덩이가 먼저 폭발하므로 빛나지 않는 돌덩이의
-                위치에 서 있어야 합니다.
-              </Typography>
-            </Grid>
-            <CenteredBlock>
-              <LoopingVideoBlock
-                height={360}
-                src={pageData.videoBaseUrl + "/landslide/5.mp4"}
-              />
-            </CenteredBlock>
-            <Grid item>
-              <Typography variant="body2">
-                만약 맵 모서리의 돌덩이들이 빛나고 있다면 그대로 현재 위치에서
-                대기하고, 현재 위치의 돌덩이가 빛나고 있다면 후속타가 오지 않는
-                맵 모서리 돌덩이 위로 이동합니다.
-              </Typography>
-            </Grid>
-            <Grid item>
-              <Typography variant="body2">
-                이후 첫 번째로 빛나던 돌덩이들이 터지고 나면 맵 중앙으로 이동해
-                나머지 돌덩이들의 폭발을 피해줍니다.
-              </Typography>
-            </Grid>
-            <Grid item>
-              <Divider />
-            </Grid>
-            <Grid item>
-              <Typography variant="body2">
-                아래는 맵 모서리의 돌덩이들이 빛나지 않고 현재 위치의 돌덩이가
-                빛날 때의 예시 영상입니다.
-              </Typography>
-            </Grid>
-            <CenteredBlock>
-              <LoopingVideoBlock
-                height={360}
-                src={pageData.videoBaseUrl + "/landslide/6.mp4"}
-              />
-            </CenteredBlock>
-          </React.Fragment>
-        )
-      },
-      {
-        id: "magnitude50",
-        children: (
-          <React.Fragment>
-            <CenteredBlock>
-              <LoopingVideoBlock
-                height={360}
-                src={pageData.videoBaseUrl + "/magnitude-50/1.mp4"}
-              />
-            </CenteredBlock>
-            <Grid item>
-              <Typography variant="body2">
-                도넛 모양 범위 공격입니다. 미니 타이탄의 타겟 원 안으로 들어와
-                피할 수 있습니다.
-              </Typography>
-            </Grid>
-          </React.Fragment>
-        )
-      },
-      {
-        id: "massiveLandslide",
-        children: (
-          <React.Fragment>
-            <Grid item>
-              <Typography variant="body2">
-                <InlineChip
-                  currentId="massiveLandslide"
-                  gimmickData={gimmickData}
-                  id="earthenGauntlets"
-                  openDialog={openDialog}
-                />{" "}
-                이후 곧바로 시전 바 없이{" "}
-                <InlineChip
-                  currentId="massiveLandslide"
-                  gimmickData={gimmickData}
-                  id="pulseOfTheLand"
-                  openDialog={openDialog}
-                />{" "}
-                {this.generatePostposition(
-                  gimmickData.pulseOfTheLand.name,
-                  "와"
-                )}{" "}
-                <InlineChip
-                  currentId="massiveLandslide"
-                  gimmickData={gimmickData}
-                  id="forceOfTheLand"
-                  openDialog={openDialog}
-                />{" "}
-                {this.generatePostposition(
-                  gimmickData.forceOfTheLand.name,
-                  "를"
-                )}{" "}
-                사용합니다.
-              </Typography>
-            </Grid>
-            <CenteredBlock>
-              <ImageBlock
-                src={pageData.videoBaseUrl + "/massive-landslide/1.png"}
-                width={500}
-              />
-            </CenteredBlock>
-            <Grid item>
-              <Typography variant="body2">
-                무작위로 한 명의 탱커, 한 명의 딜러, 한 명의 힐러에게{" "}
-                <InlineChip
-                  currentId="massiveLandslide"
-                  gimmickData={gimmickData}
-                  id="pulseOfTheLand"
-                  openDialog={openDialog}
-                />{" "}
-                징이 표시되고 나머지 파티원들에게는{" "}
-                <InlineChip
-                  currentId="massiveLandslide"
-                  gimmickData={gimmickData}
-                  id="forceOfTheLand"
-                  openDialog={openDialog}
-                />{" "}
-                징이 표시됩니다.
-              </Typography>
-            </Grid>
-            <CenteredBlock>
-              <LoopingVideoBlock
-                height={360}
-                src={pageData.videoBaseUrl + "/massive-landslide/2.mp4"}
-              />
-            </CenteredBlock>
-            <Grid item>
-              <Typography variant="body2">
-                징이 처리된 직후 미니 타이탄이{" "}
-                <InlineChip
-                  currentId="massiveLandslide"
-                  gimmickData={gimmickData}
-                  id="massiveLandslide"
-                  openDialog={openDialog}
-                />{" "}
-                {this.generatePostposition(
-                  gimmickData.massiveLandslide.name,
-                  "를"
-                )}{" "}
-                사용합니다. 정면 직선 범위를 제외한 맵 전체를 덮는 범위 공격이며
-                맞을 경우 맵 바깥으로 밀려나 낙사하게 됩니다.
-              </Typography>
-            </Grid>
-            <CenteredBlock>
-              <ImageBlock
-                src={pageData.videoBaseUrl + "/massive-landslide/3.png"}
-                width={500}
-              />
-            </CenteredBlock>
-            <Grid item>
-              <Typography variant="body2">
-                <InlineChip
-                  currentId="massiveLandslide"
-                  gimmickData={gimmickData}
-                  id="massiveLandslide"
-                  openDialog={openDialog}
-                />{" "}
-                에서 안전한 바닥칸이 4칸 뿐이므로 위와 같이 산개해{" "}
-                <InlineChip
-                  currentId="massiveLandslide"
-                  gimmickData={gimmickData}
-                  id="massiveLandslide"
-                  openDialog={openDialog}
-                />{" "}
-                {this.generatePostposition(
-                  gimmickData.massiveLandslide.name,
-                  "와"
-                )}{" "}
-                징을 동시에 처리합니다.
-              </Typography>
-            </Grid>
-            <Grid item>
-              <Typography
-                style={{
+                },
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "이후 기믹 처리를 위해 미니 타이탄을 맵 중앙에 주차해주세요."
+                ],
+                variant: "body2"
+              }
+            ]
+          }
+        ]
+      ),
+      this.generateDialog(
+        "forceOfTheLand",
+        pageData.videoBaseUrl + "/force-of-the-land",
+        [
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  {
+                    id: "forceOfTheLand",
+                    type: "chip"
+                  },
+                  "대상자의 머리 위에는 오렌지색 네모 징이 표시됩니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "centered",
+            contents: [
+              {
+                type: "image",
+                src: "/1.png",
+                width: 500
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  '오렌지색 네모 징이 사라지는 시점에 대상 플레이어가 서 있는 바닥에 돌이 떨어지며 피해를 입힙니다. 해당 바닥칸에 대상 플레이어 혼자 서 있을 경우 즉사하게 되지만 1명 이상의 다른 플레이어가 같이 있다면 약 4만 정도의 마법 피해를 입고 "받는 마법 피해 증가" 디버프를 부여받습니다.'
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "centered",
+            contents: [
+              {
+                type: "loopingVideo",
+                src: "/2.mp4",
+                width: 500
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  {
+                    id: "forceOfTheLand",
+                    type: "chip"
+                  },
+                  "의 판정은 플레이어를 중심으로 이루어지는 것이 아니라 플레이어가 밟고 있는 바닥의 네모 칸을 기준으로 이루어지는 것이므로, 함께 맞을 플레이어들은 항상 바닥 칸을 잘 보고 같은 칸에 서 있도록 합니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "centered",
+            contents: [
+              {
+                type: "image",
+                src: "/3.png",
+                width: 360
+              },
+              {
+                type: "image",
+                src: "/4.png",
+                width: 360
+              }
+            ]
+          }
+        ]
+      ),
+      this.generateDialog("geocrush", pageData.videoBaseUrl + "/geocrush", [
+        {
+          type: "typographies",
+          typographies: [
+            {
+              contents: [
+                "미니 타이탄이 모서리를 제외한 바깥 바닥칸 중 무작위로 한 칸을 골라 바라보며",
+                {
+                  id: "geocrush",
+                  type: "chip"
+                },
+                "시전을 시작합니다."
+              ],
+              variant: "body2"
+            }
+          ]
+        },
+        {
+          type: "typographies",
+          typographies: [
+            {
+              contents: [
+                "미니 타이탄이 바라보고 있는 바닥칸을 중심으로 화살표가 뻗어나가는 모양의 장판이 표시됩니다."
+              ],
+              variant: "body2"
+            }
+          ]
+        },
+        {
+          type: "centered",
+          contents: [
+            {
+              type: "image",
+              src: "/1.png",
+              width: 500
+            }
+          ]
+        },
+        {
+          type: "typographies",
+          typographies: [
+            {
+              contents: [
+                "이후 시전이 끝나면 바라보고 있던 바닥칸을 향해 점프해 착지하며 모든 파티원들을 해당 칸의 바깥 방향으로 밀어냅니다."
+              ],
+              variant: "body2"
+            }
+          ]
+        },
+        {
+          type: "typographies",
+          typographies: [
+            {
+              contents: [
+                "밀어내는 거리가 상당히 길기 때문에 해당 바닥칸 안쪽에 서 있지 않으면 맵 바깥까지 밀려 낙사할 수 있으므로 주의를 요합니다."
+              ],
+              variant: "body2"
+            },
+            {
+              contents: [
+                "* 밀쳐내기 무효화 기술을 사용하거나 밀려나는 도중에 돌진 기술 등을 사용해 밀려나는 것을 방지할 수 있습니다."
+              ],
+              style: {
+                color: colorTypes.warning
+              },
+              variant: "body2"
+            }
+          ]
+        },
+        {
+          type: "centered",
+          contents: [
+            {
+              type: "loopingVideo",
+              src: "/2.mp4",
+              width: 750
+            }
+          ]
+        }
+      ]),
+      this.generateDialog("landslide", pageData.videoBaseUrl + "/landslide", [
+        {
+          type: "typographies",
+          typographies: [
+            {
+              contents: [
+                "미니 타이탄이 맵의 동서남북 중 한 군데를 바라보며",
+                {
+                  id: "landslide",
+                  type: "chip"
+                },
+                "시전을 시작합니다."
+              ],
+              variant: "body2"
+            }
+          ]
+        },
+        {
+          type: "typographies",
+          typographies: [
+            {
+              contents: [
+                "시전이 끝나면 바라보고 있던 방향으로 점프해 착지하며 아래 그림처럼 T자 형태의 넉백 공격을 하게 됩니다."
+              ],
+              variant: "body2"
+            }
+          ]
+        },
+        {
+          type: "centered",
+          contents: [
+            {
+              type: "image",
+              src: "/1.png",
+              width: 500
+            }
+          ]
+        },
+        {
+          type: "typographies",
+          typographies: [
+            {
+              contents: [
+                "시전이 끝나기 전에 미니 타이탄이 바라보고 있는 방향을 확인 후 안전 지역으로 이동해 T자 공격을 피해줍니다."
+              ],
+              variant: "body2"
+            }
+          ]
+        },
+        {
+          type: "centered",
+          contents: [
+            {
+              type: "loopingVideo",
+              src: "/2.mp4",
+              width: 750
+            }
+          ]
+        },
+        {
+          type: "divider"
+        },
+        {
+          type: "typographies",
+          typographies: [
+            {
+              contents: [
+                "이후 안전 지역에 후속타가 오므로 재빨리 안전 지역을 벗어나 미니 타이탄 아래에 모두 모입니다."
+              ],
+              variant: "body2"
+            }
+          ]
+        },
+        {
+          type: "typographies",
+          typographies: [
+            {
+              contents: [
+                "미니 타이탄이 빙글 돌아 맵 중앙을 향하며 자신의 왼쪽 혹은 오른쪽 맵 전부를 덮는 장판 공격을 시전합니다. 친절하게 바닥에 장판을 보여주므로 간단하게 피해줍니다."
+              ],
+              variant: "body2"
+            }
+          ]
+        },
+        {
+          type: "typographies",
+          typographies: [
+            {
+              contents: [
+                "이후 공격하지 않은 영역에 후속타가 오므로 장판 공격을 피하고 나서 재빨리 넘어가 후속타도 피해줍니다."
+              ],
+              variant: "body2"
+            }
+          ]
+        },
+        {
+          type: "centered",
+          contents: [
+            {
+              type: "loopingVideo",
+              src: "/3.mp4",
+              width: 750
+            }
+          ]
+        },
+        {
+          type: "divider"
+        },
+        {
+          type: "typographies",
+          typographies: [
+            {
+              contents: [
+                "장판 공격이 끝났을 때 쯤에 바닥의 돌덩이들이 빛나기 시작합니다. 빛나는 돌덩이와 빛나지 않는 돌덩이의 위치를 확인합니다. 먼저 빛나기 시작한 돌덩이가 먼저 폭발하므로 빛나지 않는 돌덩이의 위치에 서 있어야 합니다."
+              ],
+              variant: "body2"
+            }
+          ]
+        },
+        {
+          type: "centered",
+          contents: [
+            {
+              type: "image",
+              src: "/4.png",
+              width: 500
+            }
+          ]
+        },
+        {
+          type: "typographies",
+          typographies: [
+            {
+              contents: [
+                "만약 맵 모서리의 돌덩이들이 빛나고 있다면 그대로 현재 위치에서 대기하고, 현재 위치의 돌덩이가 빛나고 있다면 후속타가 오지 않는 맵 모서리 돌덩이 위로 이동합니다."
+              ],
+              variant: "body2"
+            }
+          ]
+        },
+        {
+          type: "typographies",
+          typographies: [
+            {
+              contents: [
+                "이후 첫 번째로 빛나던 돌덩이들이 터지고 나면 맵 중앙으로 이동해 나머지 돌덩이들의 폭발을 피해줍니다."
+              ],
+              variant: "body2"
+            }
+          ]
+        },
+        {
+          type: "centered",
+          contents: [
+            {
+              type: "loopingVideo",
+              src: "/5.mp4",
+              width: 750
+            }
+          ]
+        },
+        {
+          type: "divider"
+        },
+        {
+          type: "typographies",
+          typographies: [
+            {
+              contents: [
+                "아래는 맵 모서리의 돌덩이들이 빛나지 않고 현재 위치의 돌덩이가 빛날 때의 예시 영상입니다."
+              ],
+              variant: "body2"
+            }
+          ]
+        },
+        {
+          type: "centered",
+          contents: [
+            {
+              type: "loopingVideo",
+              src: "/6.mp4",
+              width: 750
+            }
+          ]
+        }
+      ]),
+      this.generateDialog(
+        "magnitude50",
+        pageData.videoBaseUrl + "/magnitude-50",
+        [
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "도넛 모양 범위 공격입니다. 미니 타이탄의 타겟 원 안으로 들어와 피할 수 있습니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "centered",
+            contents: [
+              {
+                type: "loopingVideo",
+                src: "/1.mp4",
+                width: 750
+              }
+            ]
+          }
+        ]
+      ),
+      this.generateDialog(
+        "massiveLandslide",
+        pageData.videoBaseUrl + "/massive-landslide",
+        [
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "미니 타이탄의 정면 직선 범위를 제외한 맵 전체를 덮는 범위 공격이며 맞을 경우 맵 바깥으로 밀려나 낙사하게 됩니다. 미니 타이탄의 정면에 모여 피해주어야 합니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "centered",
+            contents: [
+              {
+                type: "loopingVideo",
+                src: "/2.mp4",
+                width: 750
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "이후 정면 직선 범위로 푸른색 후속타가 오므로 재빨리 피해줍니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "centered",
+            contents: [
+              {
+                type: "loopingVideo",
+                src: "/4.mp4",
+                width: 750
+              }
+            ]
+          }
+        ]
+      ),
+      this.generateDialog(
+        "massiveLandslide1",
+        pageData.videoBaseUrl + "/massive-landslide",
+        [
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  {
+                    id: "earthenGauntlets",
+                    type: "chip"
+                  },
+                  "이후 곧바로 시전 바 없이",
+                  {
+                    id: "pulseOfTheLand",
+                    type: "chip"
+                  },
+                  "와",
+                  {
+                    id: "forceOfTheLand",
+                    type: "chip"
+                  },
+                  "를 사용합니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "무작위로 한 명의 탱커, 한 명의 딜러, 한 명의 힐러에게",
+                  {
+                    id: "pulseOfTheLand",
+                    type: "chip"
+                  },
+                  "징이 표시되고 나머지 파티원들에게는",
+                  {
+                    id: "forceOfTheLand",
+                    type: "chip"
+                  },
+                  "징이 표시됩니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "centered",
+            contents: [
+              {
+                type: "image",
+                src: "/1.png",
+                width: 500
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "또한 징이 처리되는 타이밍에 미니 타이탄이",
+                  {
+                    id: "massiveLandslide",
+                    type: "chip"
+                  },
+                  "를 사용합니다. 정면 직선 범위를 제외한 맵 전체를 덮는 범위 공격이며 맞을 경우 맵 바깥으로 밀려나 낙사하게 됩니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "centered",
+            contents: [
+              {
+                type: "loopingVideo",
+                src: "/2.mp4",
+                width: 750
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  {
+                    id: "massiveLandslide",
+                    type: "chip"
+                  },
+                  "에서 안전한 바닥칸이 4칸 뿐이므로 아래와 같이 산개해",
+                  {
+                    id: "massiveLandslide",
+                    type: "chip"
+                  },
+                  "와 징을 동시에 처리합니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "centered",
+            contents: [
+              {
+                type: "image",
+                src: "/3.png",
+                width: 500
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "* 예외로",
+                  {
+                    id: "pulseOfTheLand",
+                    type: "chip"
+                  },
+                  "에 걸린 딜러가 원거리 딜러일 경우에는",
+                  {
+                    id: "pulseOfTheLand",
+                    type: "chip"
+                  },
+                  "에 걸린 탱커와 자리를 바꿔 탱커가 조금이나마 딜을 더 넣을 수 있도록 할 수도 있습니다."
+                ],
+                style: {
                   color: colorTypes.warning
-                }}
-                variant="body2"
-              >
-                * 예외로{" "}
-                <InlineChip
-                  currentId="massiveLandslide"
-                  gimmickData={gimmickData}
-                  id="pulseOfTheLand"
-                  openDialog={openDialog}
-                />{" "}
-                에 걸린 딜러가 원거리 딜러일 경우에는{" "}
-                <InlineChip
-                  currentId="massiveLandslide"
-                  gimmickData={gimmickData}
-                  id="pulseOfTheLand"
-                  openDialog={openDialog}
-                />{" "}
-                에 걸린 탱커와 자리를 바꿔 탱커가 조금이나마 딜을 더 넣을 수
-                있도록 할 수도 있습니다.
-              </Typography>
-            </Grid>
-            <CenteredBlock>
-              <LoopingVideoBlock
-                height={360}
-                src={pageData.videoBaseUrl + "/massive-landslide/4.mp4"}
-              />
-            </CenteredBlock>
-            <Grid item>
-              <Typography variant="body2">
-                이후{" "}
-                <InlineChip
-                  currentId="massiveLandslide"
-                  gimmickData={gimmickData}
-                  id="massiveLandslide"
-                  openDialog={openDialog}
-                />{" "}
-                때 공격하지 않았던 정면 직선 범위로 푸른색 후속타가 오므로
-                재빨리 피해줍니다.
-              </Typography>
-            </Grid>
-            <CenteredBlock>
-              <LoopingVideoBlock
-                height={360}
-                src={pageData.videoBaseUrl + "/massive-landslide/5.mp4"}
-              />
-            </CenteredBlock>
-            <Grid item>
-              <Typography variant="body2">
-                전체적인 타이밍은 다음과 같습니다.
-              </Typography>
-            </Grid>
-            <Grid item>
-              <Typography variant="body2">
-                1.{" "}
-                <InlineChip
-                  currentId="massiveLandslide"
-                  gimmickData={gimmickData}
-                  id="geocrush"
-                  openDialog={openDialog}
-                />{" "}
-                이후 징이 생기면 일단 자신의 징을 확인합니다.
-              </Typography>
-              <Typography variant="body2">
-                2. 이후 타이탄이 형태를 바꾸는 모션을 통해 이어지는 페이즈가{" "}
-                <InlineChip
-                  currentId="massiveLandslide"
-                  gimmickData={gimmickData}
-                  id="earthenGauntlets"
-                  openDialog={openDialog}
-                />{" "}
-                인지{" "}
-                <InlineChip
-                  currentId="massiveLandslide"
-                  gimmickData={gimmickData}
-                  id="earthenWheels"
-                  openDialog={openDialog}
-                />{" "}
-                인지를 판단합니다.
-              </Typography>
-              <Typography variant="body2">
-                3. 타이탄의 형태가{" "}
-                <InlineChip
-                  currentId="massiveLandslide"
-                  gimmickData={gimmickData}
-                  id="earthenGauntlets"
-                  openDialog={openDialog}
-                />{" "}
-                인 것이 확인되면{" "}
-                <InlineChip
-                  currentId="massiveLandslide"
-                  gimmickData={gimmickData}
-                  id="massiveLandslide"
-                  openDialog={openDialog}
-                />{" "}
-                처리를 위해 정해진 위치로 산개합니다.
-              </Typography>
-              <Typography variant="body2">
-                4.{" "}
-                <InlineChip
-                  currentId="massiveLandslide"
-                  gimmickData={gimmickData}
-                  id="massiveLandslide"
-                  openDialog={openDialog}
-                />{" "}
-                처리 이후 재빨리 이동해 후속타를 피해줍니다.
-              </Typography>
-            </Grid>
-            <Grid item>
-              <Typography variant="body2">
-                이후 기믹 처리를 위해 미니 타이탄을 맵 중앙에 주차해주세요.
-              </Typography>
-            </Grid>
-          </React.Fragment>
-        )
-      },
-      {
-        id: "megalith",
-        children: (
-          <React.Fragment>
-            <CenteredBlock>
-              <LoopingVideoBlock
-                height={360}
-                src={pageData.videoBaseUrl + "/megalith/1.mp4"}
-              />
-            </CenteredBlock>
-            <Grid item>
-              <Typography variant="body2">
-                1어글자의 머리 위에 셰어징이 표시됩니다. 최대 2명까지 피해를
-                나눠받을 수 있기 때문에 멘탱과 부탱이 나눠맞습니다. 각 탱커에게
-                약 10만 정도의 강력한 물리 피해를 입히므로 "경계" 등의 강력한
-                생존기가 필수로 요구됩니다.
-              </Typography>
-            </Grid>
-            <Grid item>
-              <Typography
-                style={{
-                  color: colorTypes.warning
-                }}
-                variant="body2"
-              >
-                * 전사의 경우 무적기인 "일대일 결투" 의 재사용 대기 시간이 짧기
-                때문에 2 페이즈에 등장하는 모든{" "}
-                <InlineChip
-                  currentId="megalith"
-                  gimmickData={gimmickData}
-                  id="megalith"
-                  openDialog={openDialog}
-                />{" "}
-                {this.generatePostposition(gimmickData.megalith.name, "를")}{" "}
-                혼자서 "일대일 결투" 로 처리할 수 있습니다.
-              </Typography>
-            </Grid>
-          </React.Fragment>
-        )
-      },
-      {
-        id: "orogenesis",
-        children: (
-          <React.Fragment>
-            <CenteredBlock>
-              <LoopingVideoBlock
-                height={360}
-                src={pageData.videoBaseUrl + "/orogenesis/1.mp4"}
-              />
-            </CenteredBlock>
-            <Grid item>
-              <Typography variant="body2">
-                2 페이즈의 시작을 알리는 페이즈 전환 연출입니다. 미니 타이탄이
-                거대 타이탄으로 변신합니다. 체력은 그대로 유지됩니다.
-              </Typography>
-            </Grid>
-            <Grid item>
-              <Typography variant="body2">
-                거대 타이탄 상태에서는 맵 북쪽에 위치가 고정되며 후측 판정이
-                사라집니다.
-              </Typography>
-            </Grid>
-          </React.Fragment>
-        )
-      },
-      {
-        id: "pulseOfTheLand",
-        children: (
-          <React.Fragment>
-            <CenteredBlock>
-              <ImageBlock
-                src={pageData.videoBaseUrl + "/pulse-of-the-land/1.png"}
-                width={182}
-              />
-            </CenteredBlock>
-            <Grid item>
-              <Typography variant="body2">
-                <InlineChip
-                  currentId="pulseOfTheLand"
-                  gimmickData={gimmickData}
-                  id="pulseOfTheLand"
-                  openDialog={openDialog}
-                />{" "}
-                대상자의 머리 위에는 노란색 세모 징이 표시됩니다.
-              </Typography>
-            </Grid>
-            <CenteredBlock>
-              <LoopingVideoBlock
-                height={360}
-                src={pageData.videoBaseUrl + "/pulse-of-the-land/2.mp4"}
-              />
-            </CenteredBlock>
-            <Grid item>
-              <Typography variant="body2">
-                노란색 세모 징이 사라지는 시점에 해당 플레이어가 서 있는 바닥
-                칸이 폭발하며 약 5만 정도의 마법 피해를 입게 됩니다. 또한 "받는
-                마법 피해 증가" 디버프를 부여받으므로 다른 플레이어와 겹쳐 맞지
-                않도록 해야 합니다.
-              </Typography>
-            </Grid>
-            <CenteredBlock>
-              <ImageBlock
-                src={pageData.videoBaseUrl + "/pulse-of-the-land/3.png"}
-                width={300}
-              />
-              <ImageBlock
-                src={pageData.videoBaseUrl + "/pulse-of-the-land/4.png"}
-                width={300}
-              />
-            </CenteredBlock>
-            <Grid item>
-              <Typography variant="body2">
-                <InlineChip
-                  currentId="pulseOfTheLand"
-                  gimmickData={gimmickData}
-                  id="pulseOfTheLand"
-                  openDialog={openDialog}
-                />{" "}
-                의 폭발 판정은 플레이어를 중심으로 이루어지는 것이 아니라
-                플레이어가 밟고 있는 바닥의 네모 칸을 기준으로 이루어지는
-                것이므로, 항상 바닥 칸을 잘 보고 다른 플레이어와 같은 칸에 서
-                있지 않도록 합니다.
-              </Typography>
-            </Grid>
-          </React.Fragment>
-        )
-      },
-      {
-        id: "seismicWave",
-        children: (
-          <React.Fragment>
-            <CenteredBlock>
-              <LoopingVideoBlock
-                height={360}
-                src={pageData.videoBaseUrl + "/seismic-wave/1.mp4"}
-              />
-            </CenteredBlock>
-            <Grid item>
-              <Typography variant="body2">
-                피격당할 경우 즉사하는 광역기입니다.{" "}
-                <InlineChip
-                  currentId="seismicWave"
-                  gimmickData={gimmickData}
-                  id="crumblingDown"
-                  openDialog={openDialog}
-                />{" "}
-                에서 생성되는 커다란 돌덩어리 뒤에 숨어 피할 수 있습니다.
-              </Typography>
-            </Grid>
-          </React.Fragment>
-        )
-      },*/
+                },
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "divider"
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "이후",
+                  {
+                    id: "massiveLandslide",
+                    type: "chip"
+                  },
+                  "때 공격하지 않았던 정면 직선 범위로 푸른색 후속타가 오므로 재빨리 피해줍니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "centered",
+            contents: [
+              {
+                type: "loopingVideo",
+                src: "/4.mp4"
+              }
+            ]
+          },
+          {
+            type: "divider"
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: ["전체적인 타이밍은 다음과 같습니다."],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "1.",
+                  {
+                    id: "geocrush",
+                    type: "chip"
+                  },
+                  "이후 징이 생기면 일단 자신의 징을 확인합니다."
+                ],
+                variant: "body2"
+              },
+              {
+                contents: [
+                  "2. 이후 미니 타이탄이 형태를 바꾸는 모션을 통해 이어지는 페이즈가",
+                  {
+                    id: "earthenGauntlets",
+                    type: "chip"
+                  },
+                  "인지",
+                  { id: "earthenWheels", type: "chip" },
+                  "인지를 판단합니다."
+                ],
+                variant: "body2"
+              },
+              {
+                contents: [
+                  "3. 타이탄의 형태가",
+                  { id: "earthenGauntlets", type: "chip" },
+                  "인 것이 확인되면",
+                  { id: "massiveLandslide", type: "chip" },
+                  "처리를 위해 정해진 위치로 산개합니다."
+                ],
+                variant: "body2"
+              },
+              {
+                contents: [
+                  "4.",
+                  { id: "massiveLandslide", type: "chip" },
+                  "처리 이후 재빨리 이동해 후속타를 피해줍니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "centered",
+            contents: [
+              {
+                type: "loopingVideo",
+                src: "/5.mp4",
+                width: 750
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "이후 기믹 처리를 위해 미니 타이탄을 맵 중앙에 주차해주세요."
+                ],
+                variant: "body2"
+              }
+            ]
+          }
+        ]
+      ),
+      this.generateDialog("megalith", pageData.videoBaseUrl + "/megalith", [
+        {
+          type: "typographies",
+          typographies: [
+            {
+              contents: [
+                '1어글자의 머리 위에 셰어징이 표시됩니다. 최대 2명까지 피해를 나눠받을 수 있기 때문에 멘탱과 부탱이 나눠맞습니다. 각 탱커에게 약 10만 정도의 강력한 물리 피해를 입히므로 "경계" 등의 강력한 생존기가 필수로 요구됩니다.'
+              ],
+              variant: "body2"
+            }
+          ]
+        },
+        {
+          type: "centered",
+          contents: [
+            {
+              type: "loopingVideo",
+              src: "/1.mp4",
+              width: 750
+            }
+          ]
+        },
+        {
+          type: "typographies",
+          typographies: [
+            {
+              contents: [
+                '* 전사의 경우 무적기인 "일대일 결투" 의 재사용 대기 시간이 짧기 때문에 2 페이즈에 등장하는 모든',
+                {
+                  id: "megalith",
+                  type: "chip"
+                },
+                '를 혼자서 "일대일 결투" 로 처리할 수 있습니다.'
+              ],
+              style: {
+                color: colorTypes.warning
+              },
+              variant: "body2"
+            }
+          ]
+        }
+      ]),
+      this.generateDialog("orogenesis", pageData.videoBaseUrl + "/orogenesis", [
+        {
+          type: "typographies",
+          typographies: [
+            {
+              contents: [
+                "2 페이즈의 시작을 알리는 페이즈 전환 연출입니다. 미니 타이탄이 거대 타이탄으로 변신합니다. 체력은 그대로 유지됩니다."
+              ],
+              variant: "body2"
+            }
+          ]
+        },
+        {
+          type: "centered",
+          contents: [
+            {
+              type: "loopingVideo",
+              src: "/1.mp4",
+              width: 750
+            }
+          ]
+        },
+        {
+          type: "typographies",
+          typographies: [
+            {
+              contents: [
+                "거대 타이탄 상태에서는 맵 북쪽에 위치가 고정되며 후측 판정이 사라집니다."
+              ],
+              variant: "body2"
+            }
+          ]
+        }
+      ]),
+      this.generateDialog(
+        "plateFracture",
+        pageData.videoBaseUrl + "/plate-fracture",
+        [
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "시전 시작과 함께 거대 타이탄이 왼팔 혹은 오른팔을 뒤로 젖힙니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "시전이 끝나면 거대 타이탄이 젖혔던 팔을 내려쳐 맵의 일부분을 파괴합니다. 파괴되는 부분에 서 있었다면 즉사하게 되므로 꼭 피해주어야 합니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "맵의 어느 부분이 파괴될지는 거대 타이탄의 모션을 보고 파악해야합니다. 팔을 젖힌 쪽을 파괴하므로 팔을 젖히지 않은 쪽으로 피해주세요. 팔을 젖힌 쪽의 북쪽을 파괴할지 남쪽을 파괴할지는 무작위로 결정됩니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "centered",
+            contents: [
+              {
+                type: "loopingVideo",
+                src: "/1.mp4",
+                width: 750
+              }
+            ]
+          }
+        ]
+      ),
+      this.generateDialog(
+        "pulseOfTheLand",
+        pageData.videoBaseUrl + "/pulse-of-the-land",
+        [
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  {
+                    id: "pulseOfTheLand",
+                    type: "chip"
+                  },
+                  "대상자의 머리 위에는 노란색 세모 징이 표시됩니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "centered",
+            contents: [
+              {
+                type: "image",
+                src: "/1.png",
+                width: 250
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  '노란색 세모 징이 사라지는 시점에 해당 플레이어가 서 있는 바닥 칸이 폭발하며 약 5만 정도의 마법 피해를 입게 됩니다. 또한 "받는 마법 피해 증가" 디버프를 부여받으므로 다른 플레이어와 겹쳐 맞지 않도록 해야 합니다.'
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "centered",
+            contents: [
+              {
+                type: "loopingVideo",
+                src: "/2.mp4",
+                width: 750
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  {
+                    id: "pulseOfTheLand",
+                    type: "chip"
+                  },
+                  "의 폭발 판정은 플레이어를 중심으로 이루어지는 것이 아니라 플레이어가 밟고 있는 바닥의 네모 칸을 기준으로 이루어지는 것이므로, 항상 바닥 칸을 잘 보고 다른 플레이어와 같은 칸에 서 있지 않도록 합니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "centered",
+            contents: [
+              {
+                type: "image",
+                src: "/3.png",
+                width: 360
+              },
+              {
+                type: "image",
+                src: "/4.png",
+                width: 360
+              }
+            ]
+          }
+        ]
+      ),
+      this.generateDialog(
+        "seismicWave",
+        pageData.videoBaseUrl + "/seismic-wave",
+        [
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "피격당할 경우 즉사하는 광역기입니다.",
+                  {
+                    id: "crumblingDown",
+                    type: "chip"
+                  },
+                  "에서 생성되는 커다란 돌덩어리 뒤에 숨어 피할 수 있습니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "centered",
+            contents: [
+              {
+                type: "loopingVideo",
+                src: "/1.mp4",
+                width: 750
+              }
+            ]
+          }
+        ]
+      ),
       this.generateDialog("rockThrow", pageData.videoBaseUrl + "/rock-throw", [
         {
           type: "typographies",
@@ -2645,11 +3023,12 @@ class EdensGateSepultureSavage extends GuidePageComponent {
           ]
         },
         {
-          type: "images",
-          images: [
+          type: "centered",
+          contents: [
             {
+              type: "image",
               src: "/1.png",
-              width: 290
+              width: 360
             }
           ]
         },
@@ -2665,11 +3044,12 @@ class EdensGateSepultureSavage extends GuidePageComponent {
           ]
         },
         {
-          type: "loopingVideos",
-          loopingVideos: [
+          type: "centered",
+          contents: [
             {
-              height: 360,
-              src: "/2.mp4"
+              type: "loopingVideo",
+              src: "/2.mp4",
+              width: 750
             }
           ]
         },
@@ -2694,59 +3074,204 @@ class EdensGateSepultureSavage extends GuidePageComponent {
           ]
         }
       ]),
-      /*
-      {
-        id: "stonecrusher",
-        children: (
-          <React.Fragment>
-            <CenteredBlock>
-              <LoopingVideoBlock
-                height={360}
-                src={pageData.videoBaseUrl + "/stonecrusher/1.mp4"}
-              />
-            </CenteredBlock>
-            <Grid item>
-              <Typography variant="body2">
-                1어글자를 총 3번 넓은 원형 범위로 타격하는 탱크 버스터입니다.
-              </Typography>
-            </Grid>
-            <Grid item>
-              <Typography variant="body2">
-                각 타격마다 "물리 방어 감소" 디버프를 부여하므로 2번의 도발을
-                통해 각 타격을 나눠맞거나 무적기로 처리할 수 있습니다.
-              </Typography>
-            </Grid>
-            <Grid item>
-              <Typography variant="body2">
-                첫 페이즈에 총 2번밖에 사용하지 않으므로 보통 탱커 둘이 돌아가며
-                무적기로 처리하는 것이 일반적입니다.
-              </Typography>
-            </Grid>
-            <Grid item>
-              <Typography variant="body2">
-                타격 범위가 넓은 편이므로 탱커 근처에 갔다가 휩쓸리지 않도록
-                주의해주세요.
-              </Typography>
-            </Grid>
-            <Grid item>
-              <Divider variant="middle" />
-            </Grid>
-            <CenteredBlock>
-              <LoopingVideoBlock
-                height={360}
-                src={pageData.videoBaseUrl + "/stonecrusher/2.mp4"}
-              />
-            </CenteredBlock>
-            <Grid item>
-              <Typography variant="body2">
-                전사나 건브레이커의 경우 무적기의 지속 시간이 아슬아슬해서 3번의
-                타격 전부를 커버할 수 없으므로 "보복" 등의 생존기를 사용해 첫
-                타격을 맞고 이후 후속타를 무적기로 넘기는 것을 추천드립니다.
-              </Typography>
-            </Grid>
-          </React.Fragment>
-        )
-      },*/
+      this.generateDialog(
+        "rockThrowPlateFracture",
+        pageData.videoBaseUrl + "/rock-throw-plate-fracture",
+        [
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "거대 타이탄이",
+                  {
+                    id: "rockThrow",
+                    type: "chip"
+                  },
+                  "를 사용해 힐러 두 명을 마크한 후",
+                  {
+                    id: "plateFracture",
+                    type: "chip"
+                  },
+                  "시전을 시작합니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "일단 거대 타이탄의 모션을 통해",
+                  {
+                    id: "plateFracture",
+                    type: "chip"
+                  },
+                  "로부터 안전한 지역을 파악한 후 안전지역으로 이동합니다. 힐러들의 경우",
+                  {
+                    id: "rockThrow",
+                    type: "chip"
+                  },
+                  "처리를 위해 안전지역 북쪽과 서쪽으로 산개합니다."
+                ],
+                variant: "body2"
+              },
+              {
+                contents: [
+                  "*",
+                  {
+                    id: "plateFracture",
+                    type: "chip"
+                  },
+                  "회피 방법은 해당 기술 상세 공략을 참고해주세요. 기술 이름을 클릭하면 상세 공략으로 넘어갑니다."
+                ],
+                style: {
+                  color: colorTypes.warning
+                },
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "centered",
+            contents: [
+              {
+                type: "image",
+                src: "/1.png",
+                width: 500
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "* 위 그림은",
+                  {
+                    id: "plateFracture",
+                    type: "chip"
+                  },
+                  "공격 영역이 동쪽이라고 가정했을 때의 예시입니다."
+                ],
+                style: {
+                  color: colorTypes.warning
+                },
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  {
+                    id: "plateFracture",
+                    type: "chip"
+                  },
+                  "시전이 끝나고 맵의 한 구역이 파괴됨과 동시에",
+                  {
+                    id: "rockThrow",
+                    type: "chip"
+                  },
+                  "가 발동해 힐러 두 명이 돌감옥에 갇히게 됩니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          }
+        ]
+      ),
+      this.generateDialog(
+        "stonecrusher",
+        pageData.videoBaseUrl + "/stonecrusher",
+        [
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "1어글자를 총 3번 넓은 원형 범위로 타격하는 탱크 버스터입니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  '각 타격마다 "물리 방어 감소" 디버프를 부여하므로 2번의 도발을 통해 각 타격을 나눠맞거나 무적기로 처리할 수 있습니다.'
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "첫 페이즈에 총 2번밖에 사용하지 않으므로 보통 탱커 둘이 돌아가며 무적기로 처리하는 것이 일반적입니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "centered",
+            contents: [
+              {
+                type: "loopingVideo",
+                src: "/1.mp4",
+                width: 750
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "* 타격 범위가 넓은 편이므로 탱커 근처에 갔다가 휩쓸리지 않도록 주의해주세요."
+                ],
+                style: {
+                  color: colorTypes.warning
+                },
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "divider"
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  '전사나 건브레이커의 경우 무적기의 지속 시간이 아슬아슬해서 3번의 타격 전부를 커버할 수 없으므로 "보복" 등의 생존기를 사용해 첫 타격을 맞고 이후 후속타를 무적기로 넘기는 것을 추천드립니다.'
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "centered",
+            contents: [
+              {
+                type: "loopingVideo",
+                src: "/2.mp4",
+                width: 750
+              }
+            ]
+          }
+        ]
+      ),
       this.generateDialog(
         "tectonicUplift",
         pageData.videoBaseUrl + "/tectonic-uplift",
@@ -2767,35 +3292,28 @@ class EdensGateSepultureSavage extends GuidePageComponent {
             ]
           },
           {
-            type: "images",
-            images: [
-              {
-                src: "/1.png",
-                width: 250
-              },
-              {
-                src: "/2.png",
-                width: 250
-              }
-            ]
-          },
-          {
             type: "typographies",
             typographies: [
               {
                 contents: [
-                  "장판은 항상 대각선으로 마주 보는 형태로 나타납니다. 즉 위 두 가지 조합이 가능합니다."
+                  "장판은 항상 대각선으로 마주 보는 형태로 나타납니다. 즉 아래 두 가지 조합이 가능합니다."
                 ],
                 variant: "body2"
               }
             ]
           },
           {
-            type: "loopingVideos",
-            loopingVideos: [
+            type: "centered",
+            contents: [
               {
-                height: 360,
-                src: "/3.mp4"
+                type: "image",
+                src: "/1.png",
+                width: 360
+              },
+              {
+                type: "image",
+                src: "/2.png",
+                width: 360
               }
             ]
           },
@@ -2811,6 +3329,16 @@ class EdensGateSepultureSavage extends GuidePageComponent {
                   "시전이 끝나면 거대 타이탄이 맵을 내리쳐 장판이 생겼던 부분을 튀어오르게 합니다. 이 때 장판을 밟고 있었을 경우 맵과 함께 튀어오르게 됩니다."
                 ],
                 variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "centered",
+            contents: [
+              {
+                type: "loopingVideo",
+                src: "/3.mp4",
+                width: 750
               }
             ]
           },
@@ -2867,9 +3395,10 @@ class EdensGateSepultureSavage extends GuidePageComponent {
             ]
           },
           {
-            type: "images",
-            images: [
+            type: "centered",
+            contents: [
               {
+                type: "image",
                 src: "/1.png",
                 width: 500
               }
@@ -2896,11 +3425,12 @@ class EdensGateSepultureSavage extends GuidePageComponent {
             ]
           },
           {
-            type: "loopingVideos",
-            loopingVideos: [
+            type: "centered",
+            contents: [
               {
-                height: 360,
-                src: "/2.mp4"
+                type: "loopingVideo",
+                src: "/2.mp4",
+                width: 750
               }
             ]
           },
@@ -2916,11 +3446,12 @@ class EdensGateSepultureSavage extends GuidePageComponent {
             ]
           },
           {
-            type: "loopingVideos",
-            loopingVideos: [
+            type: "centered",
+            contents: [
               {
-                height: 360,
-                src: "/3.mp4"
+                type: "loopingVideo",
+                src: "/3.mp4",
+                width: 750
               }
             ]
           },
@@ -2962,9 +3493,10 @@ class EdensGateSepultureSavage extends GuidePageComponent {
             ]
           },
           {
-            type: "images",
-            images: [
+            type: "centered",
+            contents: [
               {
+                type: "image",
                 src: "/4.png",
                 width: 500
               }
@@ -3012,9 +3544,10 @@ class EdensGateSepultureSavage extends GuidePageComponent {
             ]
           },
           {
-            type: "images",
-            images: [
+            type: "centered",
+            contents: [
               {
+                type: "image",
                 src: "/5.png",
                 width: 500
               }
@@ -3035,15 +3568,6 @@ class EdensGateSepultureSavage extends GuidePageComponent {
             type: "divider"
           },
           {
-            type: "loopingVideos",
-            loopingVideos: [
-              {
-                height: 360,
-                src: "/6.mp4"
-              }
-            ]
-          },
-          {
             type: "typographies",
             typographies: [
               {
@@ -3059,16 +3583,17 @@ class EdensGateSepultureSavage extends GuidePageComponent {
             ]
           },
           {
-            type: "divider"
-          },
-          {
-            type: "loopingVideos",
-            loopingVideos: [
+            type: "centered",
+            contents: [
               {
-                height: 360,
-                src: "/7.mp4"
+                type: "loopingVideo",
+                src: "/6.mp4",
+                width: 750
               }
             ]
+          },
+          {
+            type: "divider"
           },
           {
             type: "typographies",
@@ -3105,16 +3630,17 @@ class EdensGateSepultureSavage extends GuidePageComponent {
             ]
           },
           {
-            type: "divider"
-          },
-          {
-            type: "loopingVideos",
-            loopingVideos: [
+            type: "centered",
+            contents: [
               {
-                height: 360,
-                src: "/8.mp4"
+                type: "loopingVideo",
+                src: "/7.mp4",
+                width: 750
               }
             ]
+          },
+          {
+            type: "divider"
           },
           {
             type: "typographies",
@@ -3128,6 +3654,16 @@ class EdensGateSepultureSavage extends GuidePageComponent {
                   "징을 받은 플레이어들은 다른 파티원들이 피격당하지 않도록 높은 곳 모서리로 산개해 징을 처리해줍니다."
                 ],
                 variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "centered",
+            contents: [
+              {
+                type: "loopingVideo",
+                src: "/8.mp4",
+                width: 750
               }
             ]
           },
@@ -3166,180 +3702,226 @@ class EdensGateSepultureSavage extends GuidePageComponent {
             ]
           }
         ]
+      ),
+      this.generateDialog(
+        "voiceOfTheLand",
+        pageData.videoBaseUrl + "/voice-of-the-land",
+        [
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "미니 타이탄이 사용하는 단발 광역기로 모든 파티원에게 약 5만 정도의 마법 피해를 줍니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "centered",
+            contents: [
+              {
+                type: "loopingVideo",
+                src: "/1.mp4",
+                width: 750
+              }
+            ]
+          }
+        ]
+      ),
+      this.generateDialog(
+        "weightOfTheLand",
+        pageData.videoBaseUrl + "/weight-of-the-land",
+        [
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "시전이 끝나면 무작위로 8칸의 바닥 위에 장판이 표시됩니다. 표시된 장판은 일정 시간이 지나면 폭발합니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "centered",
+            contents: [
+              {
+                type: "loopingVideo",
+                src: "/1.mp4",
+                width: 750
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "다른 기믹들과 섞여나오는 경우가 많으므로 기믹 처리 중 피격당하지 않도록 주의해주세요."
+                ],
+                variant: "body2"
+              }
+            ]
+          }
+        ]
+      ),
+      this.generateDialog(
+        "weightOfTheLandPulseOfTheLand",
+        pageData.videoBaseUrl + "/weight-of-the-land-pulse-of-the-land",
+        [
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "바닥에",
+                  {
+                    id: "weightOfTheLand",
+                    type: "chip"
+                  },
+                  "장판이 나타난 후 모든 파티원들의 머리 위에",
+                  {
+                    id: "pulseOfTheLand",
+                    type: "chip"
+                  },
+                  "징이 표시됩니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "기믹 발동 순서는",
+                  {
+                    id: "weightOfTheLand",
+                    type: "chip"
+                  },
+                  "→",
+                  {
+                    id: "pulseOfTheLand",
+                    type: "chip"
+                  },
+                  "순서이므로 일단 바닥 장판을 먼저 피하고 나서 산개 매크로 위치대로 이동해 징을 처리해줍니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "centered",
+            contents: [
+              {
+                type: "loopingVideo",
+                src: "/1.mp4",
+                width: 750
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: ["산개 위치는 아래와 같습니다."],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "centered",
+            contents: [
+              {
+                type: "image",
+                src: "/2.png",
+                width: 500
+              }
+            ]
+          }
+        ]
+      ),
+      this.generateDialog(
+        "weightOfTheWorld",
+        pageData.videoBaseUrl + "/weight-of-the-world",
+        [
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  {
+                    id: "weightOfTheWorld",
+                    type: "chip"
+                  },
+                  "대상자의 머리 위에는 파란색 세모 징이 표시됩니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "centered",
+            contents: [
+              {
+                type: "image",
+                src: "/1.png",
+                width: 360
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  '파란색 세모 징이 사라지는 시점에 해당 플레이어가 서 있는 바닥 칸과 그 주위 바닥칸이 폭발하며 약 6만 정도의 마법 피해를 입히고 "받는 마법 피해 증가" 디버프를 부여합니다.'
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "centered",
+            contents: [
+              {
+                type: "loopingVideo",
+                src: "/2.mp4",
+                width: 750
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  {
+                    id: "weightOfTheWorld",
+                    type: "chip"
+                  },
+                  "는 플레이어가 밟고 있는 바닥칸을 포함해 주위 1칸 범위 내의 모든 바닥칸을 폭발시키므로 보통 폭발 범위를 최소화하기 위해 대상자는 맵 모서리로 산개하게 됩니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "centered",
+            contents: [
+              {
+                type: "image",
+                src: "/3.png",
+                width: 500
+              }
+            ]
+          }
+        ]
       )
-      /*
-      {
-        id: "voiceOfTheLand",
-        children: (
-          <React.Fragment>
-            <CenteredBlock>
-              <LoopingVideoBlock
-                height={360}
-                src={pageData.videoBaseUrl + "/voice-of-the-land/1.mp4"}
-              />
-            </CenteredBlock>
-            <Grid item>
-              <Typography variant="body2">
-                미니 타이탄이 사용하는 단발 광역기로 모든 파티원에게 약 5만
-                정도의 마법 피해를 줍니다.
-              </Typography>
-            </Grid>
-          </React.Fragment>
-        )
-      },
-      {
-        id: "weightOfTheLand",
-        children: (
-          <React.Fragment>
-            <CenteredBlock>
-              <LoopingVideoBlock
-                height={360}
-                src={pageData.videoBaseUrl + "/weight-of-the-land/1.mp4"}
-              />
-            </CenteredBlock>
-            <Grid item>
-              <Typography variant="body2">
-                시전이 끝나면 무작위로 8칸의 바닥 위에 장판이 표시됩니다.
-              </Typography>
-            </Grid>
-            <Grid item>
-              <Typography variant="body2">
-                표시된 장판은 일정 시간이 지나면 폭발합니다.
-              </Typography>
-            </Grid>
-            <Grid item>
-              <Typography variant="body2">
-                다른 기믹들과 섞여나오는 경우가 많으므로 기믹 처리 중 피격당하지
-                않도록 주의해주세요.
-              </Typography>
-            </Grid>
-          </React.Fragment>
-        )
-      },
-      {
-        id: "weightOfTheLandPulseOfTheLand",
-        children: (
-          <React.Fragment>
-            <Grid item>
-              <Typography variant="body2">
-                바닥에{" "}
-                <InlineChip
-                  currentId="weightOfTheLandPulseOfTheLand"
-                  gimmickData={gimmickData}
-                  id="weightOfTheLand"
-                  openDialog={openDialog}
-                />{" "}
-                장판이 나타난 후 모든 파티원들의 머리 위에{" "}
-                <InlineChip
-                  currentId="weightOfTheLandPulseOfTheLand"
-                  gimmickData={gimmickData}
-                  id="pulseOfTheLand"
-                  openDialog={openDialog}
-                />{" "}
-                징이 표시됩니다.
-              </Typography>
-            </Grid>
-            <CenteredBlock>
-              <LoopingVideoBlock
-                height={360}
-                src={
-                  pageData.videoBaseUrl +
-                  "/weight-of-the-land-pulse-of-the-land/1.mp4"
-                }
-              />
-            </CenteredBlock>
-            <Grid item>
-              <Typography variant="body2">
-                기믹 발동 순서는{" "}
-                <InlineChip
-                  currentId="weightOfTheLandPulseOfTheLand"
-                  gimmickData={gimmickData}
-                  id="weightOfTheLand"
-                  openDialog={openDialog}
-                />{" "}
-                →{" "}
-                <InlineChip
-                  currentId="weightOfTheLandPulseOfTheLand"
-                  gimmickData={gimmickData}
-                  id="pulseOfTheLand"
-                  openDialog={openDialog}
-                />{" "}
-                순서이므로 일단 바닥 장판을 먼저 피하고 나서 산개 매크로
-                위치대로 이동해 징을 처리해줍니다. 산개 위치는 아래와 같습니다.
-              </Typography>
-            </Grid>
-            <CenteredBlock>
-              <ImageBlock
-                src={
-                  pageData.videoBaseUrl +
-                  "/weight-of-the-land-pulse-of-the-land/2.png"
-                }
-                width={500}
-              />
-            </CenteredBlock>
-          </React.Fragment>
-        )
-      },
-      {
-        id: "weightOfTheWorld",
-        children: (
-          <React.Fragment>
-            <CenteredBlock>
-              <ImageBlock
-                src={pageData.videoBaseUrl + "/weight-of-the-world/1.png"}
-                width={342}
-              />
-            </CenteredBlock>
-            <Grid item>
-              <Typography variant="body2">
-                <InlineChip
-                  currentId="weightOfTheWorld"
-                  gimmickData={gimmickData}
-                  id="weightOfTheWorld"
-                  openDialog={openDialog}
-                />{" "}
-                대상자의 머리 위에는 파란색 세모 징이 표시됩니다.
-              </Typography>
-            </Grid>
-            <CenteredBlock>
-              <LoopingVideoBlock
-                height={360}
-                src={pageData.videoBaseUrl + "/weight-of-the-world/2.mp4"}
-              />
-            </CenteredBlock>
-            <Grid item>
-              <Typography variant="body2">
-                파란색 세모 징이 사라지는 시점에 해당 플레이어가 서 있는 바닥
-                칸과 그 주위 바닥칸이 폭발하며 약 6만 정도의 마법 피해를 입히고
-                "받는 마법 피해 증가" 디버프를 부여합니다.
-              </Typography>
-            </Grid>
-            <CenteredBlock>
-              <ImageBlock
-                src={pageData.videoBaseUrl + "/weight-of-the-world/3.png"}
-                width={500}
-              />
-            </CenteredBlock>
-            <Grid item>
-              <Typography variant="body2">
-                <InlineChip
-                  currentId="weightOfTheWorld"
-                  gimmickData={gimmickData}
-                  id="weightOfTheWorld"
-                  openDialog={openDialog}
-                />{" "}
-                {this.generatePostposition(
-                  gimmickData.weightOfTheWorld.name,
-                  "는"
-                )}{" "}
-                플레이어가 밟고 있는 바닥칸을 포함해 주위 1칸 범위 내의 모든
-                바닥칸을 폭발시키므로 보통 폭발 범위를 최소화하기 위해 대상자는
-                맵 모서리로 산개하게 됩니다.
-              </Typography>
-            </Grid>
-          </React.Fragment>
-        )
-      }*/
     ];
 
     return (
@@ -3450,7 +4032,7 @@ class EdensGateSepultureSavage extends GuidePageComponent {
           ])}
           <Grid item>
             <ExpansionPanelsBlock
-              expandedPanel={0}
+              expandedPanel={1}
               panels={[
                 {
                   title: "1 페이즈 타임라인 - 미니 타이탄",
@@ -3462,7 +4044,7 @@ class EdensGateSepultureSavage extends GuidePageComponent {
                           typographies: [
                             {
                               contents: [
-                                "* 타임라인 내 기믹 이름을 클릭해 상세 공략을 볼 수 있습니다."
+                                "* 타임라인 내 기술 이름을 클릭해 상세 공략을 볼 수 있습니다."
                               ],
                               variant: "body2"
                             },
@@ -3470,7 +4052,7 @@ class EdensGateSepultureSavage extends GuidePageComponent {
                               contents: [
                                 "상세 공략 중",
                                 <LaunchIcon />,
-                                " 아이콘이 붙어있는 기믹 이름의 경우 클릭해 더 자세한 내용을 열람할 수 있습니다."
+                                " 아이콘이 붙어있는 기술 이름의 경우 클릭해 더 자세한 내용을 열람할 수 있습니다."
                               ],
                               style: {
                                 color: colorTypes.warning
@@ -3498,7 +4080,7 @@ class EdensGateSepultureSavage extends GuidePageComponent {
                           typographies: [
                             {
                               contents: [
-                                "* 타임라인 내 기믹 이름을 클릭해 상세 공략을 볼 수 있습니다."
+                                "* 타임라인 내 기술 이름을 클릭해 상세 공략을 볼 수 있습니다."
                               ],
                               variant: "body2"
                             },
@@ -3506,7 +4088,7 @@ class EdensGateSepultureSavage extends GuidePageComponent {
                               contents: [
                                 "상세 공략 중",
                                 <LaunchIcon />,
-                                " 아이콘이 붙어있는 기믹 이름의 경우 클릭해 더 자세한 내용을 열람할 수 있습니다."
+                                " 아이콘이 붙어있는 기술 이름의 경우 클릭해 더 자세한 내용을 열람할 수 있습니다."
                               ],
                               style: {
                                 color: colorTypes.warning
