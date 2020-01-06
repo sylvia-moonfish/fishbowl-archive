@@ -24,7 +24,7 @@ class EdensGateSepultureSavage extends GuidePageComponent {
   constructor(props) {
     super(props);
 
-    this.state.openedDialog = "rockThrowPlateFracture";
+    this.state.openedDialog = "earthenFistEvilEarth";
   }
 
   render() {
@@ -64,6 +64,9 @@ class EdensGateSepultureSavage extends GuidePageComponent {
         name: "Earthen Fist",
         description: "2연속 주먹질",
         color: colorTypes.everyone
+      },
+      earthenFistEvilEarth: {
+        ids: ['earthenFist', 'evilEarth']
       },
       earthenFistWeightOfTheLand: {
         ids: ["earthenFist", "weightOfTheLand"]
@@ -182,6 +185,11 @@ class EdensGateSepultureSavage extends GuidePageComponent {
           "forceOfTheLand",
           "weightOfTheWorld"
         ]
+      },
+      tumult: {
+        name: 'Tumult',
+        description: '거대 타이탄 5연속 광역기',
+        color: colorTypes.heal
       },
       voiceOfTheLand: {
         name: "Voice of the Land",
@@ -388,6 +396,26 @@ class EdensGateSepultureSavage extends GuidePageComponent {
         {
           id: "rockThrowPlateFracture",
           timestamp: "5:49"
+        },
+        {
+          id: 'earthenFury',
+          timestamp: '6:36'
+        },
+        {
+          id: 'tumult',
+          timestamp: '6:47'
+        },
+        {
+          id: 'dualEarthenFistsWeightOfTheWorld',
+          timestamp: '7:03'
+        },
+        {
+          id: 'earthenAnguish',
+          timestamp: '7:11'
+        },
+        {
+          id: 'earthenFistEvilEarth',
+          timestamp: '7:14'
         }
       ]
     ];
@@ -1391,6 +1419,162 @@ class EdensGateSepultureSavage extends GuidePageComponent {
           }
         ]
       ),
+        this.generateDialog('earthenFistEvilEarth', pageData.videoBaseUrl + '/earthen-fist-evil-earth', [
+          {
+            type: 'typographies',
+            typographies: [
+              {
+                contents: [
+                    '거대 타이탄이',
+                  {
+                    id: 'earthenFist',
+                    type: 'chip'
+                  },
+                  '와',
+                  {
+                    id: 'evilEarth',
+                    type: 'chip'
+                  },
+                    '를 동시에 사용합니다.',
+                  {
+                    id: 'evilEarth',
+                    type: 'chip'
+                  },
+                    '의 위치는 맵의 안쪽 바닥칸 4칸 중 무작위로 선택되며',
+                  {
+                    id: 'earthenFist',
+                    type: 'chip'
+                  },
+                  '역시 무작위이므로 익숙해지기 전까지는 피하기가 꽤 까다롭습니다.'
+                ],
+                variant: 'body2'
+              }
+            ]
+          },
+          {
+            type: 'typographies',
+            typographies: [
+              {
+                contents: [
+                    '피격 타이밍은',
+                  {
+                    id: 'earthenFist',
+                    type: 'chip'
+                  },
+                    '첫 주먹 →',
+                  {
+                    id: 'evilEarth',
+                    type: 'chip'
+                  },
+                    '첫 장판 →',
+                  {
+                    id: 'evilEarth',
+                    type: 'chip'
+                  },
+                    '두 번째 장판 →',
+                  {
+                    id: 'earthenFist',
+                    type: 'chip'
+                  },
+                    '두 번째 주먹 입니다.'
+                ],
+                variant: 'body2'
+              }
+            ]
+          },
+          {
+            type: 'divider'
+          },
+          {
+            type: 'typographies',
+            typographies: [
+              {
+                contents: [
+                    '회피 방법은 다음과 같습니다.'
+                ],
+                variant: 'body2'
+              }
+            ]
+          },
+          {
+            type: 'typographies',
+            typographies: [
+              {
+                contents: [
+                    '<만약',
+                  {
+                    id: 'evilEarth',
+                    type: 'chip'
+                  },
+                    '장판의 위치가',
+                  {
+                    id: 'earthenFist',
+                    type: 'chip'
+                  },
+                  '의 두 번째 공격 영역 안에 있다면>'
+                ],
+                variant: 'body2'
+              },
+              {
+                contents: [
+                    '　'
+                ],
+                variant: 'body2'
+              },
+              {
+                contents: [
+                  {
+                    id: 'evilEarth',
+                    type: 'chip'
+                  },
+                  '장판으로부터 2칸 떨어져 있다가 두 번째',
+                  {
+                    id: 'evilEarth',
+                    type: 'chip'
+                  },
+                  '폭발 후 해당 칸으로 이동해 나머지',
+                  {
+                    id: 'evilEarth',
+                    type: 'chip'
+                  },
+                    '와',
+                  {
+                    id: 'earthenFist',
+                    type: 'chip'
+                  },
+                    '를 동시에 피해줍니다.'
+                ],
+                variant: 'body2'
+              }
+            ]
+          },
+          {
+            type: 'typographies',
+            typographies: [
+              {
+                contents: [
+                    '만약',
+                  {
+                    id: 'evilEarth',
+                    type: 'chip'
+                  },
+                    '장판의 위치가',
+                  {
+                    id: 'earthenFist',
+                    type: 'chip'
+                  },
+                    '의 두 번째 공격 영역 밖에 있다면',
+                  {
+                    id: 'evilEarth',
+                    type: 'chip'
+                  },
+                    '장판 바로 옆에 붙어있으면 됩니다.'
+                ],
+                variant: 'body2'
+              }
+            ]
+          }
+        ]),
       this.generateDialog(
         "earthenFistWeightOfTheLand",
         pageData.videoBaseUrl + "/earthen-fist-weight-of-the-land",
@@ -2878,7 +3062,7 @@ class EdensGateSepultureSavage extends GuidePageComponent {
             typographies: [
               {
                 contents: [
-                  "맵의 어느 부분이 파괴될지는 거대 타이탄의 모션을 보고 파악해야합니다. 팔을 젖힌 쪽을 파괴하므로 팔을 젖히지 않은 쪽으로 피해주세요. 팔을 젖힌 쪽의 북쪽을 파괴할지 남쪽을 파괴할지는 무작위로 결정됩니다."
+                  "맵의 어느 부분이 파괴될지는 거대 타이탄의 모션을 보고 파악해야합니다. 왼팔을 젖혔다면 맵의 동쪽 중 절반 (북동쪽 혹은 남동쪽), 오른팔을 젖혔다면 맵의 서쪽 중 절반 (북서쪽 혹은 남서쪽)이 파괴되므로 팔을 젖히지 않은 쪽으로 피해주세요."
                 ],
                 variant: "body2"
               }
@@ -3164,6 +3348,9 @@ class EdensGateSepultureSavage extends GuidePageComponent {
             ]
           },
           {
+            type: 'divider'
+          },
+          {
             type: "typographies",
             typographies: [
               {
@@ -3180,6 +3367,141 @@ class EdensGateSepultureSavage extends GuidePageComponent {
                   "가 발동해 힐러 두 명이 돌감옥에 갇히게 됩니다."
                 ],
                 variant: "body2"
+              }
+            ]
+          },
+          {
+            type: 'typographies',
+            typographies: [
+              {
+                contents: [
+                    '동시에 거대 타이탄이 2번째',
+                  {
+                    id: 'plateFracture',
+                    type: 'chip'
+                  },
+                    '시전을 시작합니다. 두 번째',
+                  {
+                    id: 'plateFracture',
+                    type: 'chip'
+                  },
+                    '는 무조건 첫 번째',
+                  {
+                    id: 'plateFracture',
+                    type: 'chip'
+                  },
+                    '의 반대쪽을 타격합니다. 즉 첫 번째로 파괴한 부분이 북동쪽이었다면 북서쪽을, 첫 번째로 파괴한 부분이 남동쪽이었다면 남서쪽을 파괴하는 식입니다.'
+                ],
+                variant: 'body2'
+              }
+            ]
+          },
+          {
+            type: 'typographies',
+            typographies: [
+              {
+                contents: [
+                    '따라서 파티원들은 첫 번째',
+                  {
+                    id: 'plateFracture',
+                    type: 'chip'
+                  },
+                    '의 타격 위치를 잘 관찰한 후 다음으로 파괴될 구역을 재빨리 파악해 해당 구역에 있는 힐러의 돌감옥을 우선적으로 부숴주어야합니다.'
+                ],
+                variant: 'body2'
+              }
+            ]
+          },
+          {
+            type: 'centered',
+            contents: [
+              {
+                type: 'image',
+                src: '/2.png',
+                width: 500
+              }
+            ]
+          },
+          {
+            type: 'typographies',
+            typographies: [
+              {
+                contents: [
+                    '위 예시에서는 북동쪽 구역이 첫 번째로 파괴되었다고 가정하였습니다. 이 경우 두 번째로 파괴되는 구역은 북서쪽이므로 H1을 먼저 구출해야합니다.'
+                ],
+                variant: 'body2'
+              }
+            ]
+          },
+          {
+            type: 'divider'
+          },
+          {
+            type: 'typographies',
+            typographies: [
+              {
+                contents: [
+                    '이후 거대 타이탄이 세 번째이자 마지막',
+                  {
+                    id: 'plateFracture',
+                    type: 'chip'
+                  },
+                    '를 시전하는 동안 남은 힐러의 돌감옥을 부수고 힐러를 구출해줍니다.'
+                ],
+                variant: 'body2'
+              }
+            ]
+          },
+          {
+            type: 'typographies',
+            typographies: [
+              {
+                contents: [
+                    '세 번째',
+                  {
+                    id: 'plateFracture',
+                    type: 'chip'
+                  },
+                    '는 첫 번째 때와 마찬가지로 동쪽과 서쪽 중 한 곳을 무작위로 파괴하므로 거대 타이탄의 모션을 보고 위험 지역과 안전 지역을 파악해야 합니다.'
+                ],
+                variant: 'body2'
+              }
+            ]
+          },
+          {
+            type: 'typographies',
+            typographies: [
+              {
+                contents: [
+                    '모두 안전 지역에 모여서 이후 이어질',
+                  {
+                    id: 'earthenFury',
+                    type: 'chip'
+                  },
+                    '에 대비해 힐업해줍니다.'
+                ],
+                variant: 'body2'
+              }
+            ]
+          },
+          {
+            type: 'typographies',
+            typographies: [
+              {
+                contents: [
+                    '전체적인 흐름은 아래 영상을 참고해주세요.'
+                ],
+                variant: 'body2'
+              }
+            ]
+          },
+          {
+            type: 'centered',
+            contents: [
+              {
+                type: 'loopingVideo',
+                src: '/3.mp4',
+                width: 750
               }
             ]
           }
@@ -3703,6 +4025,29 @@ class EdensGateSepultureSavage extends GuidePageComponent {
           }
         ]
       ),
+        this.generateDialog('tumult', pageData.videoBaseUrl + '/tumult', [
+          {
+            type: 'typographies',
+            typographies: [
+              {
+                contents: [
+                    '거대 타이탄이 사용하는 5연속 광역기입니다. 약 2만 정도의 광역 마법 피해를 빠르게 5번 연속으로 입히므로 파티뎀감기와 힐업이 필요합니다.'
+                ],
+                variant: 'body2'
+              }
+            ]
+          },
+          {
+            type: 'centered',
+            contents: [
+              {
+                type: 'loopingVideo',
+                src: '/1.mp4',
+                width: 750
+              }
+            ]
+          }
+        ]),
       this.generateDialog(
         "voiceOfTheLand",
         pageData.videoBaseUrl + "/voice-of-the-land",

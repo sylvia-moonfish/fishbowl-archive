@@ -33,7 +33,7 @@ const pageData = {
                 SiteInfo.assetsUrl + "/raid-guide/edens-gate-sepulture.png",
               href: "/guide/raid-guide/5-0/edens-gate-sepulture"
             },
-            {
+            /*{
               name: "희망의 낙원 에덴 영웅: 각성편 4",
               level: 80,
               itemLevel: 450,
@@ -41,7 +41,7 @@ const pageData = {
                 SiteInfo.assetsUrl +
                 "/raid-guide/edens-gate-sepulture-savage.png",
               href: "/guide/raid-guide/5-0/edens-gate-sepulture-savage"
-            }
+            }*/
           ]
         }
       ]
