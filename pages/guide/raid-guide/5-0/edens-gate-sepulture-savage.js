@@ -24,7 +24,7 @@ class EdensGateSepultureSavage extends GuidePageComponent {
   constructor(props) {
     super(props);
 
-    this.state.openedDialog = "earthenFistEvilEarth";
+    this.state.openedDialog = "tectonicUplift2";
   }
 
   render() {
@@ -66,7 +66,7 @@ class EdensGateSepultureSavage extends GuidePageComponent {
         color: colorTypes.everyone
       },
       earthenFistEvilEarth: {
-        ids: ['earthenFist', 'evilEarth']
+        ids: ["earthenFist", "evilEarth"]
       },
       earthenFistWeightOfTheLand: {
         ids: ["earthenFist", "weightOfTheLand"]
@@ -75,6 +75,9 @@ class EdensGateSepultureSavage extends GuidePageComponent {
         name: "Earthen Fury",
         description: "거대 타이탄 광역기",
         color: colorTypes.heal
+      },
+      earthenFuryTumult: {
+        ids: ["earthenFury", "tumult"]
       },
       earthenGauntlets: {
         name: "Earthen Gauntlets",
@@ -186,9 +189,17 @@ class EdensGateSepultureSavage extends GuidePageComponent {
           "weightOfTheWorld"
         ]
       },
+      tectonicUplift2: {
+        ids: [
+          "tectonicUplift",
+          "pulseOfTheLand",
+          "forceOfTheLand",
+          "weightOfTheWorld"
+        ]
+      },
       tumult: {
-        name: 'Tumult',
-        description: '거대 타이탄 5연속 광역기',
+        name: "Tumult",
+        description: "거대 타이탄 5연속 광역기",
         color: colorTypes.heal
       },
       voiceOfTheLand: {
@@ -398,24 +409,24 @@ class EdensGateSepultureSavage extends GuidePageComponent {
           timestamp: "5:49"
         },
         {
-          id: 'earthenFury',
-          timestamp: '6:36'
+          id: "earthenFuryTumult",
+          timestamp: "6:36"
         },
         {
-          id: 'tumult',
-          timestamp: '6:47'
+          id: "dualEarthenFistsWeightOfTheWorld",
+          timestamp: "7:03"
         },
         {
-          id: 'dualEarthenFistsWeightOfTheWorld',
-          timestamp: '7:03'
+          id: "earthenAnguish",
+          timestamp: "7:11"
         },
         {
-          id: 'earthenAnguish',
-          timestamp: '7:11'
+          id: "earthenFistEvilEarth",
+          timestamp: "7:14"
         },
         {
-          id: 'earthenFistEvilEarth',
-          timestamp: '7:14'
+          id: "tectonicUplift2",
+          timestamp: "7:29"
         }
       ]
     ];
@@ -1419,162 +1430,190 @@ class EdensGateSepultureSavage extends GuidePageComponent {
           }
         ]
       ),
-        this.generateDialog('earthenFistEvilEarth', pageData.videoBaseUrl + '/earthen-fist-evil-earth', [
+      this.generateDialog(
+        "earthenFistEvilEarth",
+        pageData.videoBaseUrl + "/earthen-fist-evil-earth",
+        [
           {
-            type: 'typographies',
+            type: "typographies",
             typographies: [
               {
                 contents: [
-                    '거대 타이탄이',
+                  "거대 타이탄이",
                   {
-                    id: 'earthenFist',
-                    type: 'chip'
+                    id: "earthenFist",
+                    type: "chip"
                   },
-                  '와',
+                  "와",
                   {
-                    id: 'evilEarth',
-                    type: 'chip'
+                    id: "evilEarth",
+                    type: "chip"
                   },
-                    '를 동시에 사용합니다.',
+                  "를 동시에 사용합니다.",
                   {
-                    id: 'evilEarth',
-                    type: 'chip'
+                    id: "evilEarth",
+                    type: "chip"
                   },
-                    '의 위치는 맵의 안쪽 바닥칸 4칸 중 무작위로 선택되며',
+                  "의 위치는 맵의 안쪽 바닥칸 4칸 중 무작위로 선택되며",
                   {
-                    id: 'earthenFist',
-                    type: 'chip'
+                    id: "earthenFist",
+                    type: "chip"
                   },
-                  '역시 무작위이므로 익숙해지기 전까지는 피하기가 꽤 까다롭습니다.'
+                  "역시 무작위이므로 익숙해지기 전까지는 피하기가 꽤 까다롭습니다."
                 ],
-                variant: 'body2'
+                variant: "body2"
               }
             ]
           },
           {
-            type: 'typographies',
+            type: "typographies",
             typographies: [
               {
                 contents: [
-                    '피격 타이밍은',
+                  "피격 타이밍은",
                   {
-                    id: 'earthenFist',
-                    type: 'chip'
+                    id: "earthenFist",
+                    type: "chip"
                   },
-                    '첫 주먹 →',
+                  "첫 주먹 →",
                   {
-                    id: 'evilEarth',
-                    type: 'chip'
+                    id: "evilEarth",
+                    type: "chip"
                   },
-                    '첫 장판 →',
+                  "첫 장판 →",
                   {
-                    id: 'evilEarth',
-                    type: 'chip'
+                    id: "evilEarth",
+                    type: "chip"
                   },
-                    '두 번째 장판 →',
+                  "두 번째 장판 →",
                   {
-                    id: 'earthenFist',
-                    type: 'chip'
+                    id: "earthenFist",
+                    type: "chip"
                   },
-                    '두 번째 주먹 입니다.'
+                  "두 번째 주먹 입니다."
                 ],
-                variant: 'body2'
+                variant: "body2"
               }
             ]
           },
           {
-            type: 'divider'
+            type: "divider"
           },
           {
-            type: 'typographies',
+            type: "typographies",
             typographies: [
               {
-                contents: [
-                    '회피 방법은 다음과 같습니다.'
-                ],
-                variant: 'body2'
+                contents: ["회피 방법은 다음과 같습니다."],
+                variant: "body2"
               }
             ]
           },
           {
-            type: 'typographies',
+            type: "typographies",
             typographies: [
               {
                 contents: [
-                    '<만약',
+                  "<만약",
                   {
-                    id: 'evilEarth',
-                    type: 'chip'
+                    id: "evilEarth",
+                    type: "chip"
                   },
-                    '장판의 위치가',
+                  "장판의 위치와",
                   {
-                    id: 'earthenFist',
-                    type: 'chip'
+                    id: "earthenFist",
+                    type: "chip"
                   },
-                  '의 두 번째 공격 영역 안에 있다면>'
+                  "의 두 번째 공격 영역이 겹친다면>"
                 ],
-                variant: 'body2'
+                variant: "body2"
+              },
+              {
+                contents: ["　"],
+                variant: "body2"
               },
               {
                 contents: [
-                    '　'
+                  {
+                    id: "evilEarth",
+                    type: "chip"
+                  },
+                  "장판으로부터 2칸 떨어져 있다가 두 번째",
+                  {
+                    id: "evilEarth",
+                    type: "chip"
+                  },
+                  "폭발 후 해당 칸으로 이동해 나머지",
+                  {
+                    id: "evilEarth",
+                    type: "chip"
+                  },
+                  "와",
+                  {
+                    id: "earthenFist",
+                    type: "chip"
+                  },
+                  "를 피해줍니다."
                 ],
-                variant: 'body2'
-              },
-              {
-                contents: [
-                  {
-                    id: 'evilEarth',
-                    type: 'chip'
-                  },
-                  '장판으로부터 2칸 떨어져 있다가 두 번째',
-                  {
-                    id: 'evilEarth',
-                    type: 'chip'
-                  },
-                  '폭발 후 해당 칸으로 이동해 나머지',
-                  {
-                    id: 'evilEarth',
-                    type: 'chip'
-                  },
-                    '와',
-                  {
-                    id: 'earthenFist',
-                    type: 'chip'
-                  },
-                    '를 동시에 피해줍니다.'
-                ],
-                variant: 'body2'
+                variant: "body2"
               }
             ]
           },
           {
-            type: 'typographies',
+            type: "divider"
+          },
+          {
+            type: "typographies",
             typographies: [
               {
                 contents: [
-                    '만약',
+                  "<만약",
                   {
-                    id: 'evilEarth',
-                    type: 'chip'
+                    id: "evilEarth",
+                    type: "chip"
                   },
-                    '장판의 위치가',
+                  "장판의 위치가",
                   {
-                    id: 'earthenFist',
-                    type: 'chip'
+                    id: "earthenFist",
+                    type: "chip"
                   },
-                    '의 두 번째 공격 영역 밖에 있다면',
-                  {
-                    id: 'evilEarth',
-                    type: 'chip'
-                  },
-                    '장판 바로 옆에 붙어있으면 됩니다.'
+                  "의 두 번째 공격 영역과 겹치지 않는다면>"
                 ],
-                variant: 'body2'
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  {
+                    id: "evilEarth",
+                    type: "chip"
+                  },
+                  "장판 바로 옆에 있다가 첫",
+                  {
+                    id: "evilEarth",
+                    type: "chip"
+                  },
+                  "폭발 후 해당 칸으로 이동해 나머지",
+                  {
+                    id: "evilEarth",
+                    type: "chip"
+                  },
+                  "와",
+                  {
+                    id: "earthenFist",
+                    type: "chip"
+                  },
+                  "를 피해줍니다."
+                ],
+                variant: "body2"
               }
             ]
           }
-        ]),
+        ]
+      ),
       this.generateDialog(
         "earthenFistWeightOfTheLand",
         pageData.videoBaseUrl + "/earthen-fist-weight-of-the-land",
@@ -1673,6 +1712,41 @@ class EdensGateSepultureSavage extends GuidePageComponent {
                 type: "loopingVideo",
                 src: "/1.mp4",
                 width: 750
+              }
+            ]
+          }
+        ]
+      ),
+      this.generateDialog(
+        "earthenFuryTumult",
+        pageData.videoBaseUrl + "/earthen-fury-tumult",
+        [
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  {
+                    id: "earthenFury",
+                    type: "chip"
+                  },
+                  "를 사용한 후 곧바로",
+                  {
+                    id: "tumult",
+                    type: "chip"
+                  },
+                  "를 이어서 사용합니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: ["파티뎀감기를 적절히 분배해서 사용해줍시다."],
+                variant: "body2"
               }
             ]
           }
@@ -3348,7 +3422,7 @@ class EdensGateSepultureSavage extends GuidePageComponent {
             ]
           },
           {
-            type: 'divider'
+            type: "divider"
           },
           {
             type: "typographies",
@@ -3371,136 +3445,134 @@ class EdensGateSepultureSavage extends GuidePageComponent {
             ]
           },
           {
-            type: 'typographies',
+            type: "typographies",
             typographies: [
               {
                 contents: [
-                    '동시에 거대 타이탄이 2번째',
+                  "동시에 거대 타이탄이 2번째",
                   {
-                    id: 'plateFracture',
-                    type: 'chip'
+                    id: "plateFracture",
+                    type: "chip"
                   },
-                    '시전을 시작합니다. 두 번째',
+                  "시전을 시작합니다. 두 번째",
                   {
-                    id: 'plateFracture',
-                    type: 'chip'
+                    id: "plateFracture",
+                    type: "chip"
                   },
-                    '는 무조건 첫 번째',
+                  "는 무조건 첫 번째",
                   {
-                    id: 'plateFracture',
-                    type: 'chip'
+                    id: "plateFracture",
+                    type: "chip"
                   },
-                    '의 반대쪽을 타격합니다. 즉 첫 번째로 파괴한 부분이 북동쪽이었다면 북서쪽을, 첫 번째로 파괴한 부분이 남동쪽이었다면 남서쪽을 파괴하는 식입니다.'
+                  "의 반대쪽을 타격합니다. 즉 첫 번째로 파괴한 부분이 북동쪽이었다면 북서쪽을, 첫 번째로 파괴한 부분이 남동쪽이었다면 남서쪽을 파괴하는 식입니다."
                 ],
-                variant: 'body2'
+                variant: "body2"
               }
             ]
           },
           {
-            type: 'typographies',
+            type: "typographies",
             typographies: [
               {
                 contents: [
-                    '따라서 파티원들은 첫 번째',
+                  "따라서 파티원들은 첫 번째",
                   {
-                    id: 'plateFracture',
-                    type: 'chip'
+                    id: "plateFracture",
+                    type: "chip"
                   },
-                    '의 타격 위치를 잘 관찰한 후 다음으로 파괴될 구역을 재빨리 파악해 해당 구역에 있는 힐러의 돌감옥을 우선적으로 부숴주어야합니다.'
+                  "의 타격 위치를 잘 관찰한 후 다음으로 파괴될 구역을 재빨리 파악해 해당 구역에 있는 힐러의 돌감옥을 우선적으로 부숴주어야합니다."
                 ],
-                variant: 'body2'
+                variant: "body2"
               }
             ]
           },
           {
-            type: 'centered',
+            type: "centered",
             contents: [
               {
-                type: 'image',
-                src: '/2.png',
+                type: "image",
+                src: "/2.png",
                 width: 500
               }
             ]
           },
           {
-            type: 'typographies',
+            type: "typographies",
             typographies: [
               {
                 contents: [
-                    '위 예시에서는 북동쪽 구역이 첫 번째로 파괴되었다고 가정하였습니다. 이 경우 두 번째로 파괴되는 구역은 북서쪽이므로 H1을 먼저 구출해야합니다.'
+                  "위 예시에서는 북동쪽 구역이 첫 번째로 파괴되었다고 가정하였습니다. 이 경우 두 번째로 파괴되는 구역은 북서쪽이므로 H1을 먼저 구출해야합니다."
                 ],
-                variant: 'body2'
+                variant: "body2"
               }
             ]
           },
           {
-            type: 'divider'
+            type: "divider"
           },
           {
-            type: 'typographies',
+            type: "typographies",
             typographies: [
               {
                 contents: [
-                    '이후 거대 타이탄이 세 번째이자 마지막',
+                  "이후 거대 타이탄이 세 번째이자 마지막",
                   {
-                    id: 'plateFracture',
-                    type: 'chip'
+                    id: "plateFracture",
+                    type: "chip"
                   },
-                    '를 시전하는 동안 남은 힐러의 돌감옥을 부수고 힐러를 구출해줍니다.'
+                  "를 시전하는 동안 남은 힐러의 돌감옥을 부수고 힐러를 구출해줍니다."
                 ],
-                variant: 'body2'
+                variant: "body2"
               }
             ]
           },
           {
-            type: 'typographies',
+            type: "typographies",
             typographies: [
               {
                 contents: [
-                    '세 번째',
+                  "세 번째",
                   {
-                    id: 'plateFracture',
-                    type: 'chip'
+                    id: "plateFracture",
+                    type: "chip"
                   },
-                    '는 첫 번째 때와 마찬가지로 동쪽과 서쪽 중 한 곳을 무작위로 파괴하므로 거대 타이탄의 모션을 보고 위험 지역과 안전 지역을 파악해야 합니다.'
+                  "는 첫 번째 때와 마찬가지로 동쪽과 서쪽 중 한 곳을 무작위로 파괴하므로 거대 타이탄의 모션을 보고 위험 지역과 안전 지역을 파악해야 합니다."
                 ],
-                variant: 'body2'
+                variant: "body2"
               }
             ]
           },
           {
-            type: 'typographies',
+            type: "typographies",
             typographies: [
               {
                 contents: [
-                    '모두 안전 지역에 모여서 이후 이어질',
+                  "모두 안전 지역에 모여서 이후 이어질",
                   {
-                    id: 'earthenFury',
-                    type: 'chip'
+                    id: "earthenFury",
+                    type: "chip"
                   },
-                    '에 대비해 힐업해줍니다.'
+                  "에 대비해 힐업해줍니다."
                 ],
-                variant: 'body2'
+                variant: "body2"
               }
             ]
           },
           {
-            type: 'typographies',
+            type: "typographies",
             typographies: [
               {
-                contents: [
-                    '전체적인 흐름은 아래 영상을 참고해주세요.'
-                ],
-                variant: 'body2'
+                contents: ["전체적인 흐름은 아래 영상을 참고해주세요."],
+                variant: "body2"
               }
             ]
           },
           {
-            type: 'centered',
+            type: "centered",
             contents: [
               {
-                type: 'loopingVideo',
-                src: '/3.mp4',
+                type: "loopingVideo",
+                src: "/3.mp4",
                 width: 750
               }
             ]
@@ -4025,29 +4097,382 @@ class EdensGateSepultureSavage extends GuidePageComponent {
           }
         ]
       ),
-        this.generateDialog('tumult', pageData.videoBaseUrl + '/tumult', [
+      this.generateDialog(
+        "tectonicUplift2",
+        pageData.videoBaseUrl + "/tectonic-uplift-2",
+        [
           {
-            type: 'typographies',
+            type: "typographies",
             typographies: [
               {
                 contents: [
-                    '거대 타이탄이 사용하는 5연속 광역기입니다. 약 2만 정도의 광역 마법 피해를 빠르게 5번 연속으로 입히므로 파티뎀감기와 힐업이 필요합니다.'
+                  {
+                    id: "tectonicUplift",
+                    type: "chip"
+                  },
+                  "시전이 시작됩니다."
                 ],
-                variant: 'body2'
+                variant: "body2"
               }
             ]
           },
           {
-            type: 'centered',
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  {
+                    id: "forceOfTheLand",
+                    type: "chip"
+                  },
+                  "징이 탱커 1명, 힐러 1명, 딜러 2명에게 표시됩니다. 징이 표시되면",
+                  {
+                    id: "tectonicUplift",
+                    type: "chip"
+                  },
+                  "시전이 끝나기 전에 아래와 같이 징을 받은 파티원들은 북쪽으로, 징을 받지 않은 파티원들은 남쪽으로 산개합니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "centered",
             contents: [
               {
-                type: 'loopingVideo',
-                src: '/1.mp4',
+                type: "image",
+                src: "/1.png",
+                width: 500
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  {
+                    id: "tectonicUplift",
+                    type: "chip"
+                  },
+                  "맵 변화 도중",
+                  {
+                    id: "forceOfTheLand",
+                    type: "chip"
+                  },
+                  "가 자동으로 처리됩니다. 맵 변화가 끝나면 파티원들이 탱커 1명 힐러 1명 딜러 2명의 소규모 파티로 나뉘어 각각 맵의 북쪽과 남쪽 높은 곳에 위치하게 됩니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "centered",
+            contents: [
+              {
+                type: "loopingVideo",
+                src: "/2.mp4",
                 width: 750
               }
             ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "첫 번째",
+                  {
+                    id: "tectonicUplift",
+                    type: "chip"
+                  },
+                  "때와 마찬가지로 낮은 곳 바닥칸 일부를 덮는 장판이 생성됩니다. 한 곳에는 1개의 바닥 장판이, 다른 곳에는 2개의 바닥 장판이 생성됩니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "centered",
+            contents: [
+              {
+                type: "loopingVideo",
+                src: "/3.mp4",
+                width: 750
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "생성되는 장판의 위치는 무작위입니다. 높은 곳에 위치한 파티원들은 바닥칸 장판이 생성되고 난 후 어느 곳에 2개의 장판이 생겼고 어느 곳에 1개의 장판이 생겼는지 재빨리 확인해야 합니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "새로운",
+                  {
+                    id: "pulseOfTheLand",
+                    type: "chip"
+                  },
+                  ",",
+                  {
+                    id: "forceOfTheLand",
+                    type: "chip"
+                  },
+                  ", 그리고",
+                  {
+                    id: "weightOfTheWorld",
+                    type: "chip"
+                  },
+                  "징이 표시됩니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "centered",
+            contents: [
+              {
+                type: "image",
+                src: "/4.png",
+                width: 500
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "초반에",
+                  {
+                    id: "weightOfTheWorld",
+                    type: "chip"
+                  },
+                  "를 받았던 파티원들을 제외한 플레이어들 중 탱힐 3명이 각 징을 1개씩, 그리고 딜러 3명이 역시 각 징을 1개씩 나눠받게 됩니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  {
+                    id: "pulseOfTheLand",
+                    type: "chip"
+                  },
+                  "징을 받은 파티원들은 바닥 장판이 1칸인 곳으로,",
+                  {
+                    id: "forceOfTheLand",
+                    type: "chip"
+                  },
+                  "징을 받은 파티원들은 바닥 장판이 2칸인 곳으로,",
+                  {
+                    id: "weightOfTheWorld",
+                    type: "chip"
+                  },
+                  "징을 받은 파티원들은 낮은 곳으로 내려가지 않고 맵 모서리로 산개해야 합니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "centered",
+            contents: [
+              {
+                type: "image",
+                src: "/5.png",
+                width: 500
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "바닥 장판의 위치는 무작위입니다! 낮은 곳에 생성된 바닥 장판의 갯수와 위치를 꼭 다시 한 번 잘 확인한 후 산개해주세요. 위 그림은 산개 예제입니다. 장판의 생성 위치가 무작위이므로 생성된 장판의 위치를 잘 보고 판단해 이동해야 합니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "divider"
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  {
+                    id: "pulseOfTheLand",
+                    type: "chip"
+                  },
+                  "징을 받은 플레이어들은 바닥 장판이 1칸인 곳으로 내려가 다른 파티원들이 겹쳐맞지 않도록 산개해 징을 처리해줍니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "centered",
+            contents: [
+              {
+                type: "loopingVideo",
+                src: "/6.mp4",
+                width: 750
+              }
+            ]
+          },
+          {
+            type: "divider"
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  {
+                    id: "forceOfTheLand",
+                    type: "chip"
+                  },
+                  "징을 받은 플레이어들은 바닥 장판이 2칸인 곳으로 내려가 모여 서서 징을 처리해줍니다."
+                ],
+                variant: "body2"
+              },
+              {
+                contents: [
+                  "* 초반에",
+                  {
+                    id: "weightOfTheWorld",
+                    type: "chip"
+                  },
+                  '징을 받았던 플레이어의 경우 그 때 부여받은 "받는 마법 피해 증가" 디버프가 아직 남아있으므로 절대',
+                  {
+                    id: "forceOfTheLand",
+                    type: "chip"
+                  },
+                  "를 같이 맞으면 안 됩니다!"
+                ],
+                variant: "body2",
+                style: {
+                  color: colorTypes.warning
+                }
+              }
+            ]
+          },
+          {
+            type: "centered",
+            contents: [
+              {
+                type: "loopingVideo",
+                src: "/7.mp4",
+                width: 750
+              }
+            ]
+          },
+          {
+            type: "divider"
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  {
+                    id: "weightOfTheWorld",
+                    type: "chip"
+                  },
+                  "징을 받은 플레이어들은 다른 파티원들이 피격당하지 않도록 높은 곳 모서리로 산개해 징을 처리해줍니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "centered",
+            contents: [
+              {
+                type: "loopingVideo",
+                src: "/8.mp4",
+                width: 750
+              }
+            ]
+          },
+          {
+            type: "divider"
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  "이후 거대 타이탄이",
+                  {
+                    id: "earthenFury",
+                    type: "chip"
+                  },
+                  "를 사용하므로 중앙에 모여 힐업해줍니다."
+                ],
+                variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "typographies",
+            typographies: [
+              {
+                contents: [
+                  {
+                    id: "earthenFury",
+                    type: "chip"
+                  },
+                  "시전이 끝나면 맵이 원래대로 돌아갑니다."
+                ],
+                variant: "body2"
+              }
+            ]
           }
-        ]),
+        ]
+      ),
+      this.generateDialog("tumult", pageData.videoBaseUrl + "/tumult", [
+        {
+          type: "typographies",
+          typographies: [
+            {
+              contents: [
+                "거대 타이탄이 사용하는 5연속 광역기입니다. 약 2만 정도의 광역 마법 피해를 빠르게 5번 연속으로 입히므로 파티뎀감기와 힐업이 필요합니다."
+              ],
+              variant: "body2"
+            }
+          ]
+        },
+        {
+          type: "centered",
+          contents: [
+            {
+              type: "loopingVideo",
+              src: "/1.mp4",
+              width: 750
+            }
+          ]
+        }
+      ]),
       this.generateDialog(
         "voiceOfTheLand",
         pageData.videoBaseUrl + "/voice-of-the-land",
