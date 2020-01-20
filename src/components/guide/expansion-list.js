@@ -76,7 +76,14 @@ class ExpansionList extends React.Component {
                       disableRipple: true
                     }}
                   >
-                    <Typography>{item.name}</Typography>
+                    <Grid alignItems="center" container spacing={3}>
+                      <Grid item>
+                        {item.iconSrc && <Avatar src={item.iconSrc} />}
+                      </Grid>
+                      <Grid item>
+                        <Typography>{item.name}</Typography>
+                      </Grid>
+                    </Grid>
                   </ExpansionPanelSummary>
                   <ExpansionPanelDetails>
                     <Grid container spacing={3}>
