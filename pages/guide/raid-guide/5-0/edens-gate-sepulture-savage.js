@@ -24,7 +24,7 @@ class EdensGateSepultureSavage extends GuidePageComponent {
   constructor(props) {
     super(props);
 
-    this.state.openedDialog = "tectonicUplift2";
+    this.state.openedDialog = "earthenFistEvilEarth";
   }
 
   render() {
@@ -1459,9 +1459,25 @@ class EdensGateSepultureSavage extends GuidePageComponent {
                     id: "earthenFist",
                     type: "chip"
                   },
-                  "역시 무작위이므로 익숙해지기 전까지는 피하기가 꽤 까다롭습니다."
+                  "역시 무작위이므로 익숙해지기 전까지는 피하기가 꽤 까다롭습니다.",
+                  "출현 가능한",
+                  {
+                    id: "evilEarth",
+                    type: "chip"
+                  },
+                  "의 위치는 다음과 같습니다."
                 ],
                 variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "centered",
+            contents: [
+              {
+                type: "image",
+                src: "/1.png",
+                width: 500
               }
             ]
           },
@@ -1555,6 +1571,16 @@ class EdensGateSepultureSavage extends GuidePageComponent {
                   "를 피해줍니다."
                 ],
                 variant: "body2"
+              }
+            ]
+          },
+          {
+            type: "centered",
+            contents: [
+              {
+                type: "loopingVideo",
+                src: "/2.mp4",
+                width: 500
               }
             ]
           },
