@@ -61,8 +61,8 @@ const MainMenu = {
                     />
                   </ListItemAvatar>
                 );
-              }
-              //href: '/guide/job-guide'
+              },
+              href: "/guide/job-guide"
             },
             {
               title: "던전 가이드",

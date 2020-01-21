@@ -1,24 +1,44 @@
+import AppBar from "@material-ui/core/AppBar";
+import Chip from "@material-ui/core/Chip";
 import Container from "@material-ui/core/Container";
+import Dialog from "@material-ui/core/Dialog";
+import DialogContent from "@material-ui/core/DialogContent";
 import Grid from "@material-ui/core/Grid";
+import Grow from "@material-ui/core/Grow";
+import IconButton from "@material-ui/core/IconButton";
+import Table from "@material-ui/core/Table";
+import TableBody from "@material-ui/core/TableBody";
+import TableCell from "@material-ui/core/TableCell";
+import TableContainer from "@material-ui/core/TableContainer";
+import TableHead from "@material-ui/core/TableHead";
+import TableRow from "@material-ui/core/TableRow";
+import Toolbar from "@material-ui/core/Toolbar";
+import Typography from "@material-ui/core/Typography";
 
+import CloseIcon from "@material-ui/icons/Close";
 import LaunchIcon from "@material-ui/icons/Launch";
 
 import React from "react";
 
-import ExpansionTitles from "../../../../data/expansion-titles";
 import SiteInfo from "../../../../data/site-info";
-import ExpansionPanelsBlock from "../../../../src/components/blocks/expansion-panels-block";
-import RewardsBlock from "../../../../src/components/blocks/rewards-block";
-import GuidePageComponent from "../../../../src/components/guide-page-component";
+import PageComponent from "../../../../src/components/page-component";
+
+const transition = React.forwardRef((props, ref) => {
+  return <Grow {...props} ref={ref} />;
+});
 
 const pageData = {
   title: "나이트 가이드 - 5.1 BiS",
   description: "파이널 판타지 14 나이트 가이드 - 5.1 BiS"
 };
 
-class FiveOneBis extends GuidePageComponent {
+class FiveOneBis extends PageComponent {
   constructor(props) {
     super(props);
+
+    this.state = {
+      openedDialog: -1
+    };
   }
 
   render() {
@@ -32,397 +52,202 @@ class FiveOneBis extends GuidePageComponent {
           <Grid item>
             <Container maxWidth="md">
               <Grid container direction="column" spacing={5}>
-                {this.generateBlocks(
-                  [
-                    {
-                      type: "centered",
-                      contents: [
-                        {
-                          type: "typographies",
-                          typographies: [
-                            {
-                              contents: [pageData.title],
-                              variant: "h6"
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      type: "typographies",
-                      typographies: [
-                        {
-                          contents: [
-                            "패치 5.1 기준 나이트의 Best-In-Slot 장비 세트 목록입니다."
-                          ],
-                          variant: "body2"
-                        }
-                      ]
-                    },
-                    {
-                      type: "divider"
-                    },
-                    {
-                      type: "typographies",
-                      typographies: [
-                        {
-                          contents: ["스킬 로테이션"],
-                          variant: "h6"
-                        }
-                      ]
-                    },
-                    {
-                      type: "divider"
-                    },
-                    {
-                      type: "typographies",
-                      typographies: [
-                        {
-                          contents: ["BiS 장비 세트 목록"],
-                          variant: "h6"
-                        }
-                      ]
-                    },
-                    {
-                      type: "typographies",
-                      typographies: [
-                        {
-                          contents: [""],
-                          variant: "body2"
-                        }
-                      ]
-                    }
-                  ],
-                  SiteInfo.assetsUrl
-                )}
+                <Grid item>
+                  <Grid
+                    alignItems="center"
+                    container
+                    direction="row"
+                    justify="center"
+                    spacing={5}
+                  >
+                    <Grid item>
+                      <Typography variant="h5">{pageData.title}</Typography>
+                    </Grid>
+                  </Grid>
+                </Grid>
+                <Grid item>
+                  <Grid
+                    alignItems="center"
+                    container
+                    direction="row"
+                    justify="center"
+                    spacing={5}
+                  >
+                    <Grid item>
+                      <img
+                        src={SiteInfo.assetsUrl + "/job-guide/pld.png"}
+                        style={{
+                          maxWidth: 128,
+                          width: "100%"
+                        }}
+                      />
+                    </Grid>
+                  </Grid>
+                </Grid>
+                <Grid item>
+                  <Typography variant="body1">
+                    패치 5.1 기준 나이트의 Best-In-Slot 장비 세트 목록입니다.
+                    아래 표에서 열람하고자 하는 세트 목록을 클릭해주세요.
+                  </Typography>
+                  <br />
+                  <li>
+                    DPS 계산 자료 출처:{" "}
+                    <Chip
+                      color="secondary"
+                      component="span"
+                      icon={<LaunchIcon />}
+                      label="Allagan Studies"
+                      onClick={() => {
+                        window && window.open("https://discord.gg/rkDkxQW");
+                      }}
+                      size="small"
+                      variant="outlined"
+                    />
+                  </li>
+                </Grid>
               </Grid>
             </Container>
           </Grid>
-          {this.generateBlocks([
-            {
-              type: "divider"
-            },
-            {
-              type: "typographies",
-              typographies: [
-                {
-                  contents: ["스킬 로테이션"],
-                  variant: "h6"
-                }
-              ]
-            }
-          ])}
           <Grid item>
-            <ExpansionPanelsBlock
-              expandedPanel={0}
-              panels={[
-                {
-                  title: "기술 살펴보기",
-                  children: (
-                    <React.Fragment>
-                      {this.generateBlocks([
-                        {
-                          type: "typographies",
-                          typographies: [
-                            {
-                              contents: [
-                                "* 기술 이름을 클릭해 상세 공략을 볼 수 있습니다."
-                              ],
-                              variant: "body2"
-                            },
-                            {
-                              contents: [
-                                "상세 공략 중",
-                                <LaunchIcon />,
-                                " 아이콘이 붙어있는 기술 이름의 경우 클릭해 더 자세한 내용을 열람할 수 있습니다."
-                              ],
-                              variant: "body2"
-                            }
-                          ]
-                        }
-                      ])}
-                      {this.generateBlocks([
-                        {
-                          type: "typographies",
-                          typographies: [
-                            {
-                              contents: [
-                                "이후 체력이 0이 될때까지 기존에 사용했던 기술을 무작위로 반복해 사용합니다."
-                              ],
-                              variant: "body2"
-                            }
-                          ]
-                        }
-                      ])}
-                    </React.Fragment>
-                  )
-                },
-                {
-                  title: "시점 영상",
-                  children: (
-                    <React.Fragment>
-                      {this.generateBlocks([
-                        {
-                          type: "centered",
-                          contents: [
-                            {
-                              type: "youtubeFrame",
-                              height: 315,
-                              src: "https://www.youtube.com/embed/aWOmEvI5ng0",
-                              width: 560
-                            }
-                          ]
-                        }
-                      ])}
-                    </React.Fragment>
-                  )
-                },
-                {
-                  title: "전리품 살펴보기",
-                  children: (
-                    <React.Fragment>
-                      {this.generateBlocks([
-                        {
-                          type: "typographies",
-                          typographies: [
-                            {
-                              contents: [
-                                "* 전리품 항목을 가리키면 아이템 설명을 볼 수 있습니다."
-                              ],
-                              variant: "body2"
-                            }
-                          ]
-                        }
-                      ])}
-                    </React.Fragment>
-                  )
-                }
-              ]}
-            />
+            <TableContainer>
+              <Table>
+                <TableHead>
+                  <TableRow>
+                    <TableCell></TableCell>
+                    <TableCell>평균 DPS</TableCell>
+                    <TableCell>글로벌 쿨다운</TableCell>
+                    <TableCell>음식</TableCell>
+                    <TableCell>직격 확률</TableCell>
+                    <TableCell>극대 확률</TableCell>
+                    <TableCell>불굴 추가 방어력</TableCell>
+                  </TableRow>
+                </TableHead>
+                <TableBody>
+                  <TableRow
+                    hover
+                    onClick={() => {
+                      this.state.openedDialog = 0;
+                      this.setState(this.state);
+                    }}
+                    style={{
+                      cursor: "pointer"
+                    }}
+                  >
+                    <TableCell>
+                      평균 DPS가 가장 높지만 글쿨이 많이 느림. 사용 시 주의
+                      요망.
+                    </TableCell>
+                    <TableCell>9007.64</TableCell>
+                    <TableCell>2.45초</TableCell>
+                    <TableCell>Popoto Salad</TableCell>
+                    <TableCell>15%</TableCell>
+                    <TableCell>24.9%</TableCell>
+                    <TableCell>2.4%</TableCell>
+                  </TableRow>
+                  <TableRow
+                    hover
+                    onClick={() => {
+                      alert("test");
+                    }}
+                    style={{
+                      cursor: "pointer"
+                    }}
+                  >
+                    <TableCell>
+                      글쿨 2.42초로 최적화된 장비 세트. 나이트만 키울 경우 추천.
+                    </TableCell>
+                    <TableCell>8975.95</TableCell>
+                    <TableCell>2.42초</TableCell>
+                    <TableCell>Robe Lettuce Salad</TableCell>
+                    <TableCell>15%</TableCell>
+                    <TableCell>24.5%</TableCell>
+                    <TableCell>2.4%</TableCell>
+                  </TableRow>
+                  <TableRow
+                    hover
+                    onClick={() => {
+                      alert("test");
+                    }}
+                    style={{
+                      cursor: "pointer"
+                    }}
+                  >
+                    <TableCell>
+                      글쿨 2.40초로 최적화된 장비 세트. 4탱 공용 세트로 사용
+                      가능.
+                    </TableCell>
+                    <TableCell>8967.80</TableCell>
+                    <TableCell>2.40초</TableCell>
+                    <TableCell>Robe Lettuce Salad</TableCell>
+                    <TableCell>14%</TableCell>
+                    <TableCell>24.5%</TableCell>
+                    <TableCell>2%</TableCell>
+                  </TableRow>
+                  <TableRow
+                    hover
+                    onClick={() => {
+                      alert("test");
+                    }}
+                    style={{
+                      cursor: "pointer"
+                    }}
+                  >
+                    <TableCell>
+                      글쿨 2.40초 불굴 장비 세트. 절 알렉산더 진도 빼기 생존
+                      특화용.
+                    </TableCell>
+                    <TableCell>8907.50</TableCell>
+                    <TableCell>2.40초</TableCell>
+                    <TableCell>Robe Lettuce Salad</TableCell>
+                    <TableCell>1%</TableCell>
+                    <TableCell>24.5%</TableCell>
+                    <TableCell>3.4%</TableCell>
+                  </TableRow>
+                </TableBody>
+              </Table>
+            </TableContainer>
           </Grid>
-          {this.generateBlocks([
-            {
-              type: "divider"
-            },
-            {
-              type: "typographies",
-              typographies: [
-                {
-                  contents: ["BiS 장비 세트 목록"],
-                  variant: "h6"
-                }
-              ]
-            }
-          ])}
-          <Grid item>
-            <ExpansionPanelsBlock
-              expandedPanel={0}
-              panels={[
-                {
-                  title: "기술 살펴보기",
-                  children: (
-                    <React.Fragment>
-                      {this.generateBlocks([
-                        {
-                          type: "typographies",
-                          typographies: [
-                            {
-                              contents: [
-                                "* 기술 이름을 클릭해 상세 공략을 볼 수 있습니다."
-                              ],
-                              variant: "body2"
-                            },
-                            {
-                              contents: [
-                                "상세 공략 중",
-                                <LaunchIcon />,
-                                " 아이콘이 붙어있는 기술 이름의 경우 클릭해 더 자세한 내용을 열람할 수 있습니다."
-                              ],
-                              variant: "body2"
-                            }
-                          ]
-                        }
-                      ])}
-                      {this.generateBlocks([
-                        {
-                          type: "typographies",
-                          typographies: [
-                            {
-                              contents: [
-                                "이후 체력이 0이 될때까지 기존에 사용했던 기술을 무작위로 반복해 사용합니다."
-                              ],
-                              variant: "body2"
-                            }
-                          ]
-                        }
-                      ])}
-                    </React.Fragment>
-                  )
-                },
-                {
-                  title: "시점 영상",
-                  children: (
-                    <React.Fragment>
-                      {this.generateBlocks([
-                        {
-                          type: "centered",
-                          contents: [
-                            {
-                              type: "youtubeFrame",
-                              height: 315,
-                              src: "https://www.youtube.com/embed/aWOmEvI5ng0",
-                              width: 560
-                            }
-                          ]
-                        }
-                      ])}
-                    </React.Fragment>
-                  )
-                },
-                {
-                  title: "전리품 살펴보기",
-                  children: (
-                    <React.Fragment>
-                      {this.generateBlocks([
-                        {
-                          type: "typographies",
-                          typographies: [
-                            {
-                              contents: [
-                                "* 전리품 항목을 가리키면 아이템 설명을 볼 수 있습니다."
-                              ],
-                              variant: "body2"
-                            }
-                          ]
-                        }
-                      ])}
-                    </React.Fragment>
-                  )
-                }
-              ]}
-            />
-          </Grid>
-          {this.generateBlocks([
-            {
-              type: "divider"
-            },
-            {
-              type: "typographies",
-              typographies: [
-                {
-                  contents: [
-                    "* 아래 메뉴 중 열람하고자 하는 메뉴를 클릭하시면 내용을 펼치거나 접을 수 있습니다."
-                  ],
-                  variant: "body2"
-                }
-              ]
-            }
-          ])}
-          <Grid item>
-            <ExpansionPanelsBlock
-              expandedPanel={0}
-              panels={[
-                {
-                  title: "기술 살펴보기",
-                  children: (
-                    <React.Fragment>
-                      {this.generateBlocks([
-                        {
-                          type: "typographies",
-                          typographies: [
-                            {
-                              contents: [
-                                "* 기술 이름을 클릭해 상세 공략을 볼 수 있습니다."
-                              ],
-                              variant: "body2"
-                            },
-                            {
-                              contents: [
-                                "상세 공략 중",
-                                <LaunchIcon />,
-                                " 아이콘이 붙어있는 기술 이름의 경우 클릭해 더 자세한 내용을 열람할 수 있습니다."
-                              ],
-                              variant: "body2"
-                            }
-                          ]
-                        }
-                      ])}
-                      {this.generateBlocks([
-                        {
-                          type: "typographies",
-                          typographies: [
-                            {
-                              contents: [
-                                "이후 체력이 0이 될때까지 기존에 사용했던 기술을 무작위로 반복해 사용합니다."
-                              ],
-                              variant: "body2"
-                            }
-                          ]
-                        }
-                      ])}
-                    </React.Fragment>
-                  )
-                },
-                {
-                  title: "시점 영상",
-                  children: (
-                    <React.Fragment>
-                      {this.generateBlocks([
-                        {
-                          type: "centered",
-                          contents: [
-                            {
-                              type: "youtubeFrame",
-                              height: 315,
-                              src: "https://www.youtube.com/embed/aWOmEvI5ng0",
-                              width: 560
-                            }
-                          ]
-                        }
-                      ])}
-                    </React.Fragment>
-                  )
-                },
-                {
-                  title: "전리품 살펴보기",
-                  children: (
-                    <React.Fragment>
-                      {this.generateBlocks([
-                        {
-                          type: "typographies",
-                          typographies: [
-                            {
-                              contents: [
-                                "* 전리품 항목을 가리키면 아이템 설명을 볼 수 있습니다."
-                              ],
-                              variant: "body2"
-                            }
-                          ]
-                        }
-                      ])}
-                    </React.Fragment>
-                  )
-                }
-              ]}
-            />
-          </Grid>
-          {this.generateBlocks([
-            {
-              type: "divider"
-            },
-            {
-              type: "centered",
-              contents: [
-                {
-                  type: "youtubeFrame",
-                  height: 315,
-                  src: "https://www.youtube.com/embed/mO3ojInwvCk",
-                  width: 560
-                }
-              ]
-            }
-          ])}
         </Grid>
+        <Dialog
+          fullWidth={true}
+          maxWidth="md"
+          onClose={() => {
+            this.state.openedDialog = -1;
+            this.setState(this.state);
+          }}
+          open={this.state.openedDialog === 0}
+          scroll="paper"
+          TransitionComponent={transition}
+        >
+          <AppBar position="static">
+            <Toolbar variant="dense">
+              <div
+                style={{
+                  flexGrow: 1
+                }}
+              >
+                <Typography variant="body1">
+                  평균 DPS가 가장 높지만 글쿨이 많이 느림. 사용 시 주의 요망.
+                </Typography>
+              </div>
+              <IconButton
+                onClick={() => {
+                  this.state.openedDialog = -1;
+                  this.setState(this.state);
+                }}
+              >
+                <CloseIcon />
+              </IconButton>
+            </Toolbar>
+          </AppBar>
+          <DialogContent
+            style={{
+              minHeight: 24
+            }}
+          >
+            <Grid container direction="column" spacing={5}></Grid>
+          </DialogContent>
+        </Dialog>
       </React.Fragment>
     );
   }
