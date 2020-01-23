@@ -40,37 +40,269 @@ const gearSets = [
     description: "글쿨 2.45초 세트. 글쿨이 많이 느리니 사용 시 주의 요망.",
     dps: 9007.64,
     gcd: 2.45,
-    food: "popotoSalad",
+    foodId: "popotoSalad",
     dh: 15,
     ch: 24.9,
-    ten: 2.4
+    ten: 2.4,
+    dialog: {
+      intro:
+        '시뮬레이션 상 DPS는 가장 높지만 글로벌 쿨다운이 2.45초로 꽤 느린 편입니다. 따라서 인터넷 핑이 좋지 않거나 스킬 로테이션이 아직 최적화되지 않은 전투에서는 높은 DPS를 뽑아내기가 어려울 수도 있습니다. 극대가 높고 기시가 낮은 장비 세트이므로 음식은 "포포토 샐러드"를 섭취해줍니다.',
+      gears: [
+        {
+          itemId: "edengraceBastardSword",
+          materiaIds: ["ch", "dh"]
+        },
+        {
+          itemId: "edengraceShield",
+          materiaIds: []
+        },
+        {
+          itemId: "augmentedDeepshadowHelmOfFending",
+          materiaIds: ["dh", "dh"]
+        },
+        {
+          itemId: "augmentedDeepshadowCuirassOfFending",
+          materiaIds: ["ch", "ch"]
+        },
+        {
+          itemId: "edengraceGauntletsOfFending",
+          materiaIds: ["dh", "dh"]
+        },
+        {
+          itemId: "augmentedDeepshadowTassetsOfFending",
+          materiaIds: ["dh", "dh"]
+        },
+        {
+          itemId: "augmentedDeepshadowBreechesOfFending",
+          materiaIds: ["ch", "ch"]
+        },
+        {
+          itemId: "edengraceGreavesOfFending",
+          materiaIds: ["dh", "sks"]
+        },
+        {
+          itemId: "edengraceEarringOfFending",
+          materiaIds: ["dh", "dh"]
+        },
+        {
+          itemId: "augmentedDeepshadowNecklaceOfFending",
+          materiaIds: ["dh", "dh"]
+        },
+        {
+          itemId: "edengraceBraceletOfFending",
+          materiaIds: ["dh", "dh"]
+        },
+        {
+          itemId: "edengraceRingOfFending",
+          materiaIds: ["ch", "dh"]
+        },
+        {
+          itemId: "augmentedDeepshadowRingOfFending",
+          materiaIds: ["ch", "ch"]
+        }
+      ]
+    }
   },
   {
     description: "글쿨 2.42초 세트. 나이트만 키울 경우 추천.",
     dps: 8975.95,
     gcd: 2.42,
-    food: "robeLettuceSalad",
+    foodId: "robeLettuceSalad",
     dh: 15,
     ch: 24.5,
-    ten: 2.4
+    ten: 2.4,
+    dialog: {
+      intro:
+        '글로벌 쿨다운을 2.42초로 맞추고 나이트의 스킬 로테이션에 따라 DPS를 최적화한 장비 세트입니다. 나이트가 아닌 다른 방어 직업이 사용하기엔 조금 비효율적일 수 있습니다. 섭취 음식으로는 "포포토 샐러드"보다 "요술양배추 샐러드"의 효율이 더 좋습니다.',
+      gears: [
+        {
+          itemId: "edengraceBastardSword",
+          materiaIds: ["ch", "dh"]
+        },
+        {
+          itemId: "edengraceShield",
+          materiaIds: []
+        },
+        {
+          itemId: "augmentedDeepshadowHelmOfFending",
+          materiaIds: ["dh", "dh"]
+        },
+        {
+          itemId: "edengraceMailOfFending",
+          materiaIds: ["ch", "ch"]
+        },
+        {
+          itemId: "edengraceGauntletsOfFending",
+          materiaIds: ["dh", "dh"]
+        },
+        {
+          itemId: "augmentedDeepshadowTassetsOfFending",
+          materiaIds: ["dh", "dh"]
+        },
+        {
+          itemId: "augmentedDeepshadowBreechesOfFending",
+          materiaIds: ["ch", "ch"]
+        },
+        {
+          itemId: "edengraceGreavesOfFending",
+          materiaIds: ["dh", "dh"]
+        },
+        {
+          itemId: "edengraceEarringOfFending",
+          materiaIds: ["dh", "dh"]
+        },
+        {
+          itemId: "augmentedDeepshadowNecklaceOfFending",
+          materiaIds: ["dh", "dh"]
+        },
+        {
+          itemId: "edengraceBraceletOfFending",
+          materiaIds: ["dh", "dh"]
+        },
+        {
+          itemId: "edengraceRingOfFending",
+          materiaIds: ["ch", "det"]
+        },
+        {
+          itemId: "augmentedDeepshadowRingOfFending",
+          materiaIds: ["ch", "ch"]
+        }
+      ]
+    }
   },
   {
     description: "글쿨 2.4초 세트. 4탱 공용으로 사용 가능.",
     dps: 8967.8,
     gcd: 2.4,
-    food: "robeLettuceSalad",
+    foodId: "robeLettuceSalad",
     dh: 14,
     ch: 24.5,
-    ten: 2
+    ten: 2,
+    dialog: {
+      intro:
+        '글로벌 쿨다운을 2.4초로 맞춰 나이트가 아닌 다른 방어 직업으로도 사용하기 편하도록 최적화한 장비 세트입니다. "요술양배추 샐러드"를 섭취합니다.',
+      gears: [
+        {
+          itemId: "edengraceBastardSword",
+          materiaIds: ["ch", "dh"]
+        },
+        {
+          itemId: "edengraceShield",
+          materiaIds: []
+        },
+        {
+          itemId: "augmentedDeepshadowHelmOfFending",
+          materiaIds: ["dh", "dh"]
+        },
+        {
+          itemId: "edengraceMailOfFending",
+          materiaIds: ["ch", "ch"]
+        },
+        {
+          itemId: "edengraceGauntletsOfFending",
+          materiaIds: ["dh", "dh"]
+        },
+        {
+          itemId: "augmentedDeepshadowTassetsOfFending",
+          materiaIds: ["dh", "dh"]
+        },
+        {
+          itemId: "augmentedDeepshadowBreechesOfFending",
+          materiaIds: ["ch", "ch"]
+        },
+        {
+          itemId: "edengraceGreavesOfFending",
+          materiaIds: ["dh", "dh"]
+        },
+        {
+          itemId: "augmentedDeepshadowEarringOfFending",
+          materiaIds: ["ch", "dh"]
+        },
+        {
+          itemId: "augmentedDeepshadowNecklaceOfFending",
+          materiaIds: ["dh", "dh"]
+        },
+        {
+          itemId: "edengraceBraceletOfFending",
+          materiaIds: ["dh", "dh"]
+        },
+        {
+          itemId: "edengraceRingOfFending",
+          materiaIds: ["ch", "det"]
+        },
+        {
+          itemId: "augmentedDeepshadowRingOfFending",
+          materiaIds: ["ch", "ch"]
+        }
+      ]
+    }
   },
   {
     description: "글쿨 2.4초 불굴 세트. 절 알렉산더용.",
     dps: 8907.5,
     gcd: 2.4,
-    food: "robeLettuceSalad",
+    foodId: "robeLettuceSalad",
     dh: 1,
     ch: 24.5,
-    ten: 3.4
+    ten: 3.4,
+    dialog: {
+      intro:
+        '글로벌 쿨다운 2.4초 세트에서 직격을 빼고 불굴을 높여 절 난이도 트라이에 대비한 장비 세트입니다. "요술양배추 샐러드"를 섭취합니다.',
+      gears: [
+        {
+          itemId: "edengraceBastardSword",
+          materiaIds: ["ch", "dh"]
+        },
+        {
+          itemId: "edengraceShield",
+          materiaIds: []
+        },
+        {
+          itemId: "augmentedDeepshadowHelmOfFending",
+          materiaIds: ["det", "ten"]
+        },
+        {
+          itemId: "edengraceMailOfFending",
+          materiaIds: ["ch", "ch"]
+        },
+        {
+          itemId: "edengraceGauntletsOfFending",
+          materiaIds: ["det", "ten"]
+        },
+        {
+          itemId: "augmentedDeepshadowTassetsOfFending",
+          materiaIds: ["ten", "ten"]
+        },
+        {
+          itemId: "augmentedDeepshadowBreechesOfFending",
+          materiaIds: ["ch", "ch"]
+        },
+        {
+          itemId: "edengraceGreavesOfFending",
+          materiaIds: ["ten", "ten"]
+        },
+        {
+          itemId: "augmentedDeepshadowEarringOfFending",
+          materiaIds: ["ch", "det"]
+        },
+        {
+          itemId: "augmentedDeepshadowNecklaceOfFending",
+          materiaIds: ["det", "det"]
+        },
+        {
+          itemId: "edengraceBraceletOfFending",
+          materiaIds: ["ten", "ten"]
+        },
+        {
+          itemId: "edengraceRingOfFending",
+          materiaIds: ["ch", "det"]
+        },
+        {
+          itemId: "augmentedDeepshadowRingOfFending",
+          materiaIds: ["ch", "ch"]
+        }
+      ]
+    }
   }
 ];
 
@@ -185,7 +417,7 @@ class FiveOneBis extends PageComponent {
                         </Hidden>
                         <TableCell>{gearSet.dps}</TableCell>
                         <TableCell>{gearSet.gcd} 초</TableCell>
-                        <TableCell>{Items[gearSet.food].name}</TableCell>
+                        <TableCell>{Items[gearSet.foodId].name}</TableCell>
                         <TableCell>{gearSet.dh} %</TableCell>
                         <TableCell>{gearSet.ch} %</TableCell>
                         <TableCell>{gearSet.ten} %</TableCell>
@@ -197,1224 +429,129 @@ class FiveOneBis extends PageComponent {
             </TableContainer>
           </Grid>
         </Grid>
-        <Dialog
-          fullWidth={true}
-          maxWidth="md"
-          onClose={() => {
-            this.state.openedDialog = -1;
-            this.setState(this.state);
-          }}
-          open={this.state.openedDialog === 0}
-          scroll="paper"
-          TransitionComponent={transition}
-        >
-          <AppBar position="static">
-            <Toolbar variant="dense">
-              <div
-                style={{
-                  flexGrow: 1
-                }}
-              >
-                <Typography variant="body1">
-                  평균 DPS가 가장 높지만 글쿨이 많이 느림. 사용 시 주의 요망.
-                </Typography>
-              </div>
-              <IconButton
-                onClick={() => {
-                  this.state.openedDialog = -1;
-                  this.setState(this.state);
-                }}
-              >
-                <CloseIcon />
-              </IconButton>
-            </Toolbar>
-          </AppBar>
-          <DialogContent
-            style={{
-              minHeight: 24
-            }}
-          >
-            <Grid container direction="column" spacing={5}>
-              <Grid item />
-              <Grid item>
-                <li>
-                  시뮬레이션 상 DPS는 가장 높지만 글로벌 쿨다운이 2.45초로 꽤
-                  느린 편입니다. 따라서 인터넷 핑이 좋지 않거나 스킬 로테이션이
-                  아직 최적화되지 않은 전투에서는 높은 DPS를 뽑아내기가 더
-                  어려울 수도 있습니다. 극대가 높고 기시가 낮은 장비 세트이므로
-                  음식은 "포포토 샐러드"를 섭취해줍니다.
-                </li>
-              </Grid>
-              <Grid item>
-                <TableContainer>
-                  <Table size="small">
-                    <TableHead>
-                      <TableRow>
-                        <TableCell colSpan={2} />
-                        <TableCell align="center">종류</TableCell>
-                        <TableCell align="center">이름</TableCell>
-                        <TableCell align="center" colSpan={2}>
-                          마테리아
-                        </TableCell>
-                        <TableCell align="center">필요 재화</TableCell>
-                      </TableRow>
-                    </TableHead>
-                    <TableBody>
-                      <TableRow selected>
-                        <TableCell>무기</TableCell>
-                        <TableCell>
-                          <Avatar
-                            src={
-                              SiteInfo.assetsUrl +
-                              "/icons/items/edengrace-bastard-sword.png"
-                            }
-                          />
-                        </TableCell>
-                        <TableCell>영웅 레이드</TableCell>
-                        <TableCell>에덴의 은총 바스타드소드</TableCell>
-                        <TableCell>극대 (무략)</TableCell>
-                        <TableCell>직격 (심안)</TableCell>
-                        <TableCell>4층 낱장 x 5</TableCell>
-                      </TableRow>
-                      <TableRow selected>
-                        <TableCell>방패</TableCell>
-                        <TableCell>
-                          <Avatar
-                            src={
-                              SiteInfo.assetsUrl +
-                              "/icons/items/edengrace-shield.png"
-                            }
-                          />
-                        </TableCell>
-                        <TableCell>영웅 레이드</TableCell>
-                        <TableCell>에덴의 은총 방패</TableCell>
-                        <TableCell colSpan={2} />
-                        <TableCell>4층 낱장 x 3</TableCell>
-                      </TableRow>
-                      <TableRow>
-                        <TableCell>머리</TableCell>
-                        <TableCell>
-                          <Avatar
-                            src={
-                              SiteInfo.assetsUrl +
-                              "/icons/items/augmented-deepshadow-helm-of-fending.png"
-                            }
-                          />
-                        </TableCell>
-                        <TableCell>석판 보강</TableCell>
-                        <TableCell>보강된 암영 수호자 투구</TableCell>
-                        <TableCell>직격 (심안)</TableCell>
-                        <TableCell>직격 (심안)</TableCell>
-                        <TableCell>
-                          환상 석판 495개 +<br />
-                          암영 강화섬유
-                          <br />
-                          (3층 낱장 x 4)
-                        </TableCell>
-                      </TableRow>
-                      <TableRow>
-                        <TableCell>몸통</TableCell>
-                        <TableCell>
-                          <Avatar
-                            src={
-                              SiteInfo.assetsUrl +
-                              "/icons/items/augmented-deepshadow-cuirass-of-fending.png"
-                            }
-                          />
-                        </TableCell>
-                        <TableCell>석판 보강</TableCell>
-                        <TableCell>보강된 암영 수호자 전투흉갑</TableCell>
-                        <TableCell>극대 (무략)</TableCell>
-                        <TableCell>극대 (무략)</TableCell>
-                        <TableCell>
-                          환상 석판 825개 +<br />
-                          암영 강화섬유
-                          <br />
-                          (3층 낱장 x 4)
-                        </TableCell>
-                      </TableRow>
-                      <TableRow selected>
-                        <TableCell>손</TableCell>
-                        <TableCell>
-                          <Avatar
-                            src={
-                              SiteInfo.assetsUrl +
-                              "/icons/items/edengrace-gauntlets-of-fending.png"
-                            }
-                          />
-                        </TableCell>
-                        <TableCell>영웅 레이드</TableCell>
-                        <TableCell>에덴의 은총 수호자 건틀릿</TableCell>
-                        <TableCell>직격 (심안)</TableCell>
-                        <TableCell>직격 (심안)</TableCell>
-                        <TableCell>2층 낱장 x 6</TableCell>
-                      </TableRow>
-                      <TableRow>
-                        <TableCell>허리</TableCell>
-                        <TableCell>
-                          <Avatar
-                            src={
-                              SiteInfo.assetsUrl +
-                              "/icons/items/augmented-deepshadow-tassets-of-fending.png"
-                            }
-                          />
-                        </TableCell>
-                        <TableCell>석판 보강</TableCell>
-                        <TableCell>보강된 암영 수호자 허리갑옷</TableCell>
-                        <TableCell>직격 (심안)</TableCell>
-                        <TableCell>직격 (심안)</TableCell>
-                        <TableCell>
-                          환상 석판 375개 +<br />
-                          암영 경화약
-                          <br />
-                          (2층 낱장 x 4)
-                        </TableCell>
-                      </TableRow>
-                      <TableRow>
-                        <TableCell>다리</TableCell>
-                        <TableCell>
-                          <Avatar
-                            src={
-                              SiteInfo.assetsUrl +
-                              "/icons/items/augmented-deepshadow-breeches-of-fending.png"
-                            }
-                          />
-                        </TableCell>
-                        <TableCell>석판 보강</TableCell>
-                        <TableCell>보강된 암영 수호자 바지</TableCell>
-                        <TableCell>극대 (무략)</TableCell>
-                        <TableCell>극대 (무략)</TableCell>
-                        <TableCell>
-                          환상 석판 825개 +<br />
-                          암영 강화섬유
-                          <br />
-                          (3층 낱장 x 4)
-                        </TableCell>
-                      </TableRow>
-                      <TableRow selected>
-                        <TableCell>발</TableCell>
-                        <TableCell>
-                          <Avatar
-                            src={
-                              SiteInfo.assetsUrl +
-                              "/icons/items/edengrace-greaves-of-fending.png"
-                            }
-                          />
-                        </TableCell>
-                        <TableCell>영웅 레이드</TableCell>
-                        <TableCell>에덴의 은총 수호자 갑주장화</TableCell>
-                        <TableCell>직격 (심안)</TableCell>
-                        <TableCell>기시 (신속)</TableCell>
-                        <TableCell>2층 낱장 x 6</TableCell>
-                      </TableRow>
-                      <TableRow selected>
-                        <TableCell>귀걸이</TableCell>
-                        <TableCell>
-                          <Avatar
-                            src={
-                              SiteInfo.assetsUrl +
-                              "/icons/items/edengrace-earring-of-fending.png"
-                            }
-                          />
-                        </TableCell>
-                        <TableCell>영웅 레이드</TableCell>
-                        <TableCell>에덴의 은총 수호자 귀걸이</TableCell>
-                        <TableCell>직격 (심안)</TableCell>
-                        <TableCell>직격 (심안)</TableCell>
-                        <TableCell>1층 낱장 x 4</TableCell>
-                      </TableRow>
-                      <TableRow>
-                        <TableCell>목걸이</TableCell>
-                        <TableCell>
-                          <Avatar
-                            src={
-                              SiteInfo.assetsUrl +
-                              "/icons/items/augmented-deepshadow-necklace-of-fending.png"
-                            }
-                          />
-                        </TableCell>
-                        <TableCell>석판 보강</TableCell>
-                        <TableCell>보강된 암영 수호자 목걸이</TableCell>
-                        <TableCell>직격 (심안)</TableCell>
-                        <TableCell>직격 (심안)</TableCell>
-                        <TableCell>
-                          환상 석판 375개 +<br />
-                          암영 경화약
-                          <br />
-                          (2층 낱장 x 4)
-                        </TableCell>
-                      </TableRow>
-                      <TableRow selected>
-                        <TableCell>팔찌</TableCell>
-                        <TableCell>
-                          <Avatar
-                            src={
-                              SiteInfo.assetsUrl +
-                              "/icons/items/edengrace-bracelet-of-fending.png"
-                            }
-                          />
-                        </TableCell>
-                        <TableCell>영웅 레이드</TableCell>
-                        <TableCell>에덴의 은총 수호자 팔찌</TableCell>
-                        <TableCell>직격 (심안)</TableCell>
-                        <TableCell>직격 (심안)</TableCell>
-                        <TableCell>1층 낱장 x 4</TableCell>
-                      </TableRow>
-                      <TableRow selected>
-                        <TableCell>반지</TableCell>
-                        <TableCell>
-                          <Avatar
-                            src={
-                              SiteInfo.assetsUrl +
-                              "/icons/items/edengrace-ring-of-fending.png"
-                            }
-                          />
-                        </TableCell>
-                        <TableCell>영웅 레이드</TableCell>
-                        <TableCell>에덴의 은총 수호자 반지</TableCell>
-                        <TableCell>극대 (무략)</TableCell>
-                        <TableCell>직격 (심안)</TableCell>
-                        <TableCell>1층 낱장 x 4</TableCell>
-                      </TableRow>
-                      <TableRow>
-                        <TableCell>반지</TableCell>
-                        <TableCell>
-                          <Avatar
-                            src={
-                              SiteInfo.assetsUrl +
-                              "/icons/items/augmented-deepshadow-ring-of-fending.png"
-                            }
-                          />
-                        </TableCell>
-                        <TableCell>석판 보강</TableCell>
-                        <TableCell>보강된 암영 수호자 반지</TableCell>
-                        <TableCell>극대 (무략)</TableCell>
-                        <TableCell>극대 (무략)</TableCell>
-                        <TableCell>
-                          환상 석판 375개 +<br />
-                          암영 경화약
-                          <br />
-                          (2층 낱장 x 4)
-                        </TableCell>
-                      </TableRow>
-                    </TableBody>
-                  </Table>
-                </TableContainer>
-              </Grid>
-            </Grid>
-          </DialogContent>
-        </Dialog>
-        <Dialog
-          fullWidth={true}
-          maxWidth="md"
-          onClose={() => {
-            this.state.openedDialog = -1;
-            this.setState(this.state);
-          }}
-          open={this.state.openedDialog === 1}
-          scroll="paper"
-          TransitionComponent={transition}
-        >
-          <AppBar position="static">
-            <Toolbar variant="dense">
-              <div
-                style={{
-                  flexGrow: 1
-                }}
-              >
-                <Typography variant="body1">
-                  글쿨 2.42초로 최적화된 장비 세트. 나이트만 키울 경우 추천.
-                </Typography>
-              </div>
-              <IconButton
-                onClick={() => {
-                  this.state.openedDialog = -1;
-                  this.setState(this.state);
-                }}
-              >
-                <CloseIcon />
-              </IconButton>
-            </Toolbar>
-          </AppBar>
-          <DialogContent
-            style={{
-              minHeight: 24
-            }}
-          >
-            <Grid container direction="column" spacing={5}>
-              <Grid item />
-              <Grid item>
-                <li>
-                  글로벌 쿨다운을 2.42초로 맞추고 나이트의 스킬 로테이션에 따라
-                  DPS를 최적화한 장비 세트입니다. 나이트가 아닌 다른 방어 직업이
-                  사용하기엔 조금 비효율적일 수 있습니다. 섭취 음식으로는
-                  "포포토 샐러드"보다 "요술양배추 샐러드"의 효율이 더 좋습니다.
-                </li>
-              </Grid>
-              <Grid item>
-                <TableContainer>
-                  <Table size="small">
-                    <TableHead>
-                      <TableRow>
-                        <TableCell colSpan={2} />
-                        <TableCell align="center">종류</TableCell>
-                        <TableCell align="center">이름</TableCell>
-                        <TableCell align="center" colSpan={2}>
-                          마테리아
-                        </TableCell>
-                        <TableCell align="center">필요 재화</TableCell>
-                      </TableRow>
-                    </TableHead>
-                    <TableBody>
-                      <TableRow selected>
-                        <TableCell>무기</TableCell>
-                        <TableCell>
-                          <Avatar
-                            src={
-                              SiteInfo.assetsUrl +
-                              "/icons/items/edengrace-bastard-sword.png"
-                            }
-                          />
-                        </TableCell>
-                        <TableCell>영웅 레이드</TableCell>
-                        <TableCell>에덴의 은총 바스타드소드</TableCell>
-                        <TableCell>극대 (무략)</TableCell>
-                        <TableCell>직격 (심안)</TableCell>
-                        <TableCell>4층 낱장 x 5</TableCell>
-                      </TableRow>
-                      <TableRow selected>
-                        <TableCell>방패</TableCell>
-                        <TableCell>
-                          <Avatar
-                            src={
-                              SiteInfo.assetsUrl +
-                              "/icons/items/edengrace-shield.png"
-                            }
-                          />
-                        </TableCell>
-                        <TableCell>영웅 레이드</TableCell>
-                        <TableCell>에덴의 은총 방패</TableCell>
-                        <TableCell colSpan={2} />
-                        <TableCell>4층 낱장 x 3</TableCell>
-                      </TableRow>
-                      <TableRow>
-                        <TableCell>머리</TableCell>
-                        <TableCell>
-                          <Avatar
-                            src={
-                              SiteInfo.assetsUrl +
-                              "/icons/items/augmented-deepshadow-helm-of-fending.png"
-                            }
-                          />
-                        </TableCell>
-                        <TableCell>석판 보강</TableCell>
-                        <TableCell>보강된 암영 수호자 투구</TableCell>
-                        <TableCell>직격 (심안)</TableCell>
-                        <TableCell>직격 (심안)</TableCell>
-                        <TableCell>
-                          환상 석판 495개 +<br />
-                          암영 강화섬유
-                          <br />
-                          (3층 낱장 x 4)
-                        </TableCell>
-                      </TableRow>
-                      <TableRow selected>
-                        <TableCell>몸통</TableCell>
-                        <TableCell>
-                          <Avatar
-                            src={
-                              SiteInfo.assetsUrl +
-                              "/icons/items/edengrace-mail-of-fending.png"
-                            }
-                          />
-                        </TableCell>
-                        <TableCell>영웅 레이드</TableCell>
-                        <TableCell>에덴의 은총 수호자 갑옷</TableCell>
-                        <TableCell>극대 (무략)</TableCell>
-                        <TableCell>극대 (무략)</TableCell>
-                        <TableCell>4층 낱장 x 8</TableCell>
-                      </TableRow>
-                      <TableRow selected>
-                        <TableCell>손</TableCell>
-                        <TableCell>
-                          <Avatar
-                            src={
-                              SiteInfo.assetsUrl +
-                              "/icons/items/edengrace-gauntlets-of-fending.png"
-                            }
-                          />
-                        </TableCell>
-                        <TableCell>영웅 레이드</TableCell>
-                        <TableCell>에덴의 은총 수호자 건틀릿</TableCell>
-                        <TableCell>직격 (심안)</TableCell>
-                        <TableCell>직격 (심안)</TableCell>
-                        <TableCell>2층 낱장 x 6</TableCell>
-                      </TableRow>
-                      <TableRow>
-                        <TableCell>허리</TableCell>
-                        <TableCell>
-                          <Avatar
-                            src={
-                              SiteInfo.assetsUrl +
-                              "/icons/items/augmented-deepshadow-tassets-of-fending.png"
-                            }
-                          />
-                        </TableCell>
-                        <TableCell>석판 보강</TableCell>
-                        <TableCell>보강된 암영 수호자 허리갑옷</TableCell>
-                        <TableCell>직격 (심안)</TableCell>
-                        <TableCell>직격 (심안)</TableCell>
-                        <TableCell>
-                          환상 석판 375개 +<br />
-                          암영 경화약
-                          <br />
-                          (2층 낱장 x 4)
-                        </TableCell>
-                      </TableRow>
-                      <TableRow>
-                        <TableCell>다리</TableCell>
-                        <TableCell>
-                          <Avatar
-                            src={
-                              SiteInfo.assetsUrl +
-                              "/icons/items/augmented-deepshadow-breeches-of-fending.png"
-                            }
-                          />
-                        </TableCell>
-                        <TableCell>석판 보강</TableCell>
-                        <TableCell>보강된 암영 수호자 바지</TableCell>
-                        <TableCell>극대 (무략)</TableCell>
-                        <TableCell>극대 (무략)</TableCell>
-                        <TableCell>
-                          환상 석판 825개 +<br />
-                          암영 강화섬유
-                          <br />
-                          (3층 낱장 x 4)
-                        </TableCell>
-                      </TableRow>
-                      <TableRow selected>
-                        <TableCell>발</TableCell>
-                        <TableCell>
-                          <Avatar
-                            src={
-                              SiteInfo.assetsUrl +
-                              "/icons/items/edengrace-greaves-of-fending.png"
-                            }
-                          />
-                        </TableCell>
-                        <TableCell>영웅 레이드</TableCell>
-                        <TableCell>에덴의 은총 수호자 갑주장화</TableCell>
-                        <TableCell>직격 (심안)</TableCell>
-                        <TableCell>직격 (심안)</TableCell>
-                        <TableCell>2층 낱장 x 6</TableCell>
-                      </TableRow>
-                      <TableRow selected>
-                        <TableCell>귀걸이</TableCell>
-                        <TableCell>
-                          <Avatar
-                            src={
-                              SiteInfo.assetsUrl +
-                              "/icons/items/edengrace-earring-of-fending.png"
-                            }
-                          />
-                        </TableCell>
-                        <TableCell>영웅 레이드</TableCell>
-                        <TableCell>에덴의 은총 수호자 귀걸이</TableCell>
-                        <TableCell>직격 (심안)</TableCell>
-                        <TableCell>직격 (심안)</TableCell>
-                        <TableCell>1층 낱장 x 4</TableCell>
-                      </TableRow>
-                      <TableRow>
-                        <TableCell>목걸이</TableCell>
-                        <TableCell>
-                          <Avatar
-                            src={
-                              SiteInfo.assetsUrl +
-                              "/icons/items/augmented-deepshadow-necklace-of-fending.png"
-                            }
-                          />
-                        </TableCell>
-                        <TableCell>석판 보강</TableCell>
-                        <TableCell>보강된 암영 수호자 목걸이</TableCell>
-                        <TableCell>직격 (심안)</TableCell>
-                        <TableCell>직격 (심안)</TableCell>
-                        <TableCell>
-                          환상 석판 375개 +<br />
-                          암영 경화약
-                          <br />
-                          (2층 낱장 x 4)
-                        </TableCell>
-                      </TableRow>
-                      <TableRow selected>
-                        <TableCell>팔찌</TableCell>
-                        <TableCell>
-                          <Avatar
-                            src={
-                              SiteInfo.assetsUrl +
-                              "/icons/items/edengrace-bracelet-of-fending.png"
-                            }
-                          />
-                        </TableCell>
-                        <TableCell>영웅 레이드</TableCell>
-                        <TableCell>에덴의 은총 수호자 팔찌</TableCell>
-                        <TableCell>직격 (심안)</TableCell>
-                        <TableCell>직격 (심안)</TableCell>
-                        <TableCell>1층 낱장 x 4</TableCell>
-                      </TableRow>
-                      <TableRow selected>
-                        <TableCell>반지</TableCell>
-                        <TableCell>
-                          <Avatar
-                            src={
-                              SiteInfo.assetsUrl +
-                              "/icons/items/edengrace-ring-of-fending.png"
-                            }
-                          />
-                        </TableCell>
-                        <TableCell>영웅 레이드</TableCell>
-                        <TableCell>에덴의 은총 수호자 반지</TableCell>
-                        <TableCell>극대 (무략)</TableCell>
-                        <TableCell>의지 (야망)</TableCell>
-                        <TableCell>1층 낱장 x 4</TableCell>
-                      </TableRow>
-                      <TableRow>
-                        <TableCell>반지</TableCell>
-                        <TableCell>
-                          <Avatar
-                            src={
-                              SiteInfo.assetsUrl +
-                              "/icons/items/augmented-deepshadow-ring-of-fending.png"
-                            }
-                          />
-                        </TableCell>
-                        <TableCell>석판 보강</TableCell>
-                        <TableCell>보강된 암영 수호자 반지</TableCell>
-                        <TableCell>극대 (무략)</TableCell>
-                        <TableCell>극대 (무략)</TableCell>
-                        <TableCell>
-                          환상 석판 375개 +<br />
-                          암영 경화약
-                          <br />
-                          (2층 낱장 x 4)
-                        </TableCell>
-                      </TableRow>
-                    </TableBody>
-                  </Table>
-                </TableContainer>
-              </Grid>
-            </Grid>
-          </DialogContent>
-        </Dialog>
-        <Dialog
-          fullWidth={true}
-          maxWidth="md"
-          onClose={() => {
-            this.state.openedDialog = -1;
-            this.setState(this.state);
-          }}
-          open={this.state.openedDialog === 2}
-          scroll="paper"
-          TransitionComponent={transition}
-        >
-          <AppBar position="static">
-            <Toolbar variant="dense">
-              <div
-                style={{
-                  flexGrow: 1
-                }}
-              >
-                <Typography variant="body1">
-                  글쿨 2.40초로 최적화된 장비 세트. 4탱 공용 세트로 사용 가능.
-                </Typography>
-              </div>
-              <IconButton
-                onClick={() => {
-                  this.state.openedDialog = -1;
-                  this.setState(this.state);
-                }}
-              >
-                <CloseIcon />
-              </IconButton>
-            </Toolbar>
-          </AppBar>
-          <DialogContent
-            style={{
-              minHeight: 24
-            }}
-          >
-            <Grid container direction="column" spacing={5}>
-              <Grid item />
-              <Grid item>
-                <li>
-                  글로벌 쿨다운을 2.4초로 맞춰 나이트가 아닌 다른 방어
-                  직업으로도 사용하기 편하도록 최적화한 장비 세트입니다.
-                  "요술양배추 샐러드"를 섭취합니다.
-                </li>
-              </Grid>
-              <Grid item>
-                <TableContainer>
-                  <Table size="small">
-                    <TableHead>
-                      <TableRow>
-                        <TableCell colSpan={2} />
-                        <TableCell align="center">종류</TableCell>
-                        <TableCell align="center">이름</TableCell>
-                        <TableCell align="center" colSpan={2}>
-                          마테리아
-                        </TableCell>
-                        <TableCell align="center">필요 재화</TableCell>
-                      </TableRow>
-                    </TableHead>
-                    <TableBody>
-                      <TableRow selected>
-                        <TableCell>무기</TableCell>
-                        <TableCell>
-                          <Avatar
-                            src={
-                              SiteInfo.assetsUrl +
-                              "/icons/items/edengrace-bastard-sword.png"
-                            }
-                          />
-                        </TableCell>
-                        <TableCell>영웅 레이드</TableCell>
-                        <TableCell>에덴의 은총 바스타드소드</TableCell>
-                        <TableCell>극대 (무략)</TableCell>
-                        <TableCell>직격 (심안)</TableCell>
-                        <TableCell>4층 낱장 x 5</TableCell>
-                      </TableRow>
-                      <TableRow selected>
-                        <TableCell>방패</TableCell>
-                        <TableCell>
-                          <Avatar
-                            src={
-                              SiteInfo.assetsUrl +
-                              "/icons/items/edengrace-shield.png"
-                            }
-                          />
-                        </TableCell>
-                        <TableCell>영웅 레이드</TableCell>
-                        <TableCell>에덴의 은총 방패</TableCell>
-                        <TableCell colSpan={2} />
-                        <TableCell>4층 낱장 x 3</TableCell>
-                      </TableRow>
-                      <TableRow>
-                        <TableCell>머리</TableCell>
-                        <TableCell>
-                          <Avatar
-                            src={
-                              SiteInfo.assetsUrl +
-                              "/icons/items/augmented-deepshadow-helm-of-fending.png"
-                            }
-                          />
-                        </TableCell>
-                        <TableCell>석판 보강</TableCell>
-                        <TableCell>보강된 암영 수호자 투구</TableCell>
-                        <TableCell>직격 (심안)</TableCell>
-                        <TableCell>직격 (심안)</TableCell>
-                        <TableCell>
-                          환상 석판 495개 +<br />
-                          암영 강화섬유
-                          <br />
-                          (3층 낱장 x 4)
-                        </TableCell>
-                      </TableRow>
-                      <TableRow selected>
-                        <TableCell>몸통</TableCell>
-                        <TableCell>
-                          <Avatar
-                            src={
-                              SiteInfo.assetsUrl +
-                              "/icons/items/edengrace-mail-of-fending.png"
-                            }
-                          />
-                        </TableCell>
-                        <TableCell>영웅 레이드</TableCell>
-                        <TableCell>에덴의 은총 수호자 갑옷</TableCell>
-                        <TableCell>극대 (무략)</TableCell>
-                        <TableCell>극대 (무략)</TableCell>
-                        <TableCell>4층 낱장 x 8</TableCell>
-                      </TableRow>
-                      <TableRow selected>
-                        <TableCell>손</TableCell>
-                        <TableCell>
-                          <Avatar
-                            src={
-                              SiteInfo.assetsUrl +
-                              "/icons/items/edengrace-gauntlets-of-fending.png"
-                            }
-                          />
-                        </TableCell>
-                        <TableCell>영웅 레이드</TableCell>
-                        <TableCell>에덴의 은총 수호자 건틀릿</TableCell>
-                        <TableCell>직격 (심안)</TableCell>
-                        <TableCell>직격 (심안)</TableCell>
-                        <TableCell>2층 낱장 x 6</TableCell>
-                      </TableRow>
-                      <TableRow>
-                        <TableCell>허리</TableCell>
-                        <TableCell>
-                          <Avatar
-                            src={
-                              SiteInfo.assetsUrl +
-                              "/icons/items/augmented-deepshadow-tassets-of-fending.png"
-                            }
-                          />
-                        </TableCell>
-                        <TableCell>석판 보강</TableCell>
-                        <TableCell>보강된 암영 수호자 허리갑옷</TableCell>
-                        <TableCell>직격 (심안)</TableCell>
-                        <TableCell>직격 (심안)</TableCell>
-                        <TableCell>
-                          환상 석판 375개 +<br />
-                          암영 경화약
-                          <br />
-                          (2층 낱장 x 4)
-                        </TableCell>
-                      </TableRow>
-                      <TableRow>
-                        <TableCell>다리</TableCell>
-                        <TableCell>
-                          <Avatar
-                            src={
-                              SiteInfo.assetsUrl +
-                              "/icons/items/augmented-deepshadow-breeches-of-fending.png"
-                            }
-                          />
-                        </TableCell>
-                        <TableCell>석판 보강</TableCell>
-                        <TableCell>보강된 암영 수호자 바지</TableCell>
-                        <TableCell>극대 (무략)</TableCell>
-                        <TableCell>극대 (무략)</TableCell>
-                        <TableCell>
-                          환상 석판 825개 +<br />
-                          암영 강화섬유
-                          <br />
-                          (3층 낱장 x 4)
-                        </TableCell>
-                      </TableRow>
-                      <TableRow selected>
-                        <TableCell>발</TableCell>
-                        <TableCell>
-                          <Avatar
-                            src={
-                              SiteInfo.assetsUrl +
-                              "/icons/items/edengrace-greaves-of-fending.png"
-                            }
-                          />
-                        </TableCell>
-                        <TableCell>영웅 레이드</TableCell>
-                        <TableCell>에덴의 은총 수호자 갑주장화</TableCell>
-                        <TableCell>직격 (심안)</TableCell>
-                        <TableCell>직격 (심안)</TableCell>
-                        <TableCell>2층 낱장 x 6</TableCell>
-                      </TableRow>
-                      <TableRow>
-                        <TableCell>귀걸이</TableCell>
-                        <TableCell>
-                          <Avatar
-                            src={
-                              SiteInfo.assetsUrl +
-                              "/icons/items/augmented-deepshadow-earring-of-fending.png"
-                            }
-                          />
-                        </TableCell>
-                        <TableCell>석판 보강</TableCell>
-                        <TableCell>보강된 암영 수호자 귀걸이</TableCell>
-                        <TableCell>극대 (무략)</TableCell>
-                        <TableCell>직격 (심안)</TableCell>
-                        <TableCell>
-                          환상 석판 375개 +<br />
-                          암영 경화약
-                          <br />
-                          (2층 낱장 x 4)
-                        </TableCell>
-                      </TableRow>
-                      <TableRow>
-                        <TableCell>목걸이</TableCell>
-                        <TableCell>
-                          <Avatar
-                            src={
-                              SiteInfo.assetsUrl +
-                              "/icons/items/augmented-deepshadow-necklace-of-fending.png"
-                            }
-                          />
-                        </TableCell>
-                        <TableCell>석판 보강</TableCell>
-                        <TableCell>보강된 암영 수호자 목걸이</TableCell>
-                        <TableCell>직격 (심안)</TableCell>
-                        <TableCell>직격 (심안)</TableCell>
-                        <TableCell>
-                          환상 석판 375개 +<br />
-                          암영 경화약
-                          <br />
-                          (2층 낱장 x 4)
-                        </TableCell>
-                      </TableRow>
-                      <TableRow selected>
-                        <TableCell>팔찌</TableCell>
-                        <TableCell>
-                          <Avatar
-                            src={
-                              SiteInfo.assetsUrl +
-                              "/icons/items/edengrace-bracelet-of-fending.png"
-                            }
-                          />
-                        </TableCell>
-                        <TableCell>영웅 레이드</TableCell>
-                        <TableCell>에덴의 은총 수호자 팔찌</TableCell>
-                        <TableCell>직격 (심안)</TableCell>
-                        <TableCell>직격 (심안)</TableCell>
-                        <TableCell>1층 낱장 x 4</TableCell>
-                      </TableRow>
-                      <TableRow selected>
-                        <TableCell>반지</TableCell>
-                        <TableCell>
-                          <Avatar
-                            src={
-                              SiteInfo.assetsUrl +
-                              "/icons/items/edengrace-ring-of-fending.png"
-                            }
-                          />
-                        </TableCell>
-                        <TableCell>영웅 레이드</TableCell>
-                        <TableCell>에덴의 은총 수호자 반지</TableCell>
-                        <TableCell>극대 (무략)</TableCell>
-                        <TableCell>의지 (야망)</TableCell>
-                        <TableCell>1층 낱장 x 4</TableCell>
-                      </TableRow>
-                      <TableRow>
-                        <TableCell>반지</TableCell>
-                        <TableCell>
-                          <Avatar
-                            src={
-                              SiteInfo.assetsUrl +
-                              "/icons/items/augmented-deepshadow-ring-of-fending.png"
-                            }
-                          />
-                        </TableCell>
-                        <TableCell>석판 보강</TableCell>
-                        <TableCell>보강된 암영 수호자 반지</TableCell>
-                        <TableCell>극대 (무략)</TableCell>
-                        <TableCell>극대 (무략)</TableCell>
-                        <TableCell>
-                          환상 석판 375개 +<br />
-                          암영 경화약
-                          <br />
-                          (2층 낱장 x 4)
-                        </TableCell>
-                      </TableRow>
-                    </TableBody>
-                  </Table>
-                </TableContainer>
-              </Grid>
-            </Grid>
-          </DialogContent>
-        </Dialog>
-        <Dialog
-          fullWidth={true}
-          maxWidth="md"
-          onClose={() => {
-            this.state.openedDialog = -1;
-            this.setState(this.state);
-          }}
-          open={this.state.openedDialog === 3}
-          scroll="paper"
-          TransitionComponent={transition}
-        >
-          <AppBar position="static">
-            <Toolbar variant="dense">
-              <div
-                style={{
-                  flexGrow: 1
-                }}
-              >
-                <Typography variant="body1">
-                  글쿨 2.40초 불굴 장비 세트. 절 알렉산더 진도 빼기 생존 특화용.
-                </Typography>
-              </div>
-              <IconButton
-                onClick={() => {
-                  this.state.openedDialog = -1;
-                  this.setState(this.state);
-                }}
-              >
-                <CloseIcon />
-              </IconButton>
-            </Toolbar>
-          </AppBar>
-          <DialogContent
-            style={{
-              minHeight: 24
-            }}
-          >
-            <Grid container direction="column" spacing={5}>
-              <Grid item />
-              <Grid item>
-                <li>
-                  글로벌 쿨다운 2.4초 세트에서 직격을 빼고 불굴을 높여 절 난이도
-                  트라이에 대비한 장비 세트입니다. "요술양배추 샐러드"를
-                  섭취합니다.
-                </li>
-              </Grid>
-              <Grid item>
-                <TableContainer>
-                  <Table size="small">
-                    <TableHead>
-                      <TableRow>
-                        <TableCell colSpan={2} />
-                        <TableCell align="center">종류</TableCell>
-                        <TableCell align="center">이름</TableCell>
-                        <TableCell align="center" colSpan={2}>
-                          마테리아
-                        </TableCell>
-                        <TableCell align="center">필요 재화</TableCell>
-                      </TableRow>
-                    </TableHead>
-                    <TableBody>
-                      <TableRow selected>
-                        <TableCell>무기</TableCell>
-                        <TableCell>
-                          <Avatar
-                            src={
-                              SiteInfo.assetsUrl +
-                              "/icons/items/edengrace-bastard-sword.png"
-                            }
-                          />
-                        </TableCell>
-                        <TableCell>영웅 레이드</TableCell>
-                        <TableCell>에덴의 은총 바스타드소드</TableCell>
-                        <TableCell>극대 (무략)</TableCell>
-                        <TableCell>직격 (심안)</TableCell>
-                        <TableCell>4층 낱장 x 5</TableCell>
-                      </TableRow>
-                      <TableRow selected>
-                        <TableCell>방패</TableCell>
-                        <TableCell>
-                          <Avatar
-                            src={
-                              SiteInfo.assetsUrl +
-                              "/icons/items/edengrace-shield.png"
-                            }
-                          />
-                        </TableCell>
-                        <TableCell>영웅 레이드</TableCell>
-                        <TableCell>에덴의 은총 방패</TableCell>
-                        <TableCell colSpan={2} />
-                        <TableCell>4층 낱장 x 3</TableCell>
-                      </TableRow>
-                      <TableRow>
-                        <TableCell>머리</TableCell>
-                        <TableCell>
-                          <Avatar
-                            src={
-                              SiteInfo.assetsUrl +
-                              "/icons/items/augmented-deepshadow-helm-of-fending.png"
-                            }
-                          />
-                        </TableCell>
-                        <TableCell>석판 보강</TableCell>
-                        <TableCell>보강된 암영 수호자 투구</TableCell>
-                        <TableCell>의지 (야망)</TableCell>
-                        <TableCell>불굴 (강유)</TableCell>
-                        <TableCell>
-                          환상 석판 495개 +<br />
-                          암영 강화섬유
-                          <br />
-                          (3층 낱장 x 4)
-                        </TableCell>
-                      </TableRow>
-                      <TableRow selected>
-                        <TableCell>몸통</TableCell>
-                        <TableCell>
-                          <Avatar
-                            src={
-                              SiteInfo.assetsUrl +
-                              "/icons/items/edengrace-mail-of-fending.png"
-                            }
-                          />
-                        </TableCell>
-                        <TableCell>영웅 레이드</TableCell>
-                        <TableCell>에덴의 은총 수호자 갑옷</TableCell>
-                        <TableCell>극대 (무략)</TableCell>
-                        <TableCell>극대 (무략)</TableCell>
-                        <TableCell>4층 낱장 x 8</TableCell>
-                      </TableRow>
-                      <TableRow selected>
-                        <TableCell>손</TableCell>
-                        <TableCell>
-                          <Avatar
-                            src={
-                              SiteInfo.assetsUrl +
-                              "/icons/items/edengrace-gauntlets-of-fending.png"
-                            }
-                          />
-                        </TableCell>
-                        <TableCell>영웅 레이드</TableCell>
-                        <TableCell>에덴의 은총 수호자 건틀릿</TableCell>
-                        <TableCell>의지 (야망)</TableCell>
-                        <TableCell>불굴 (강유)</TableCell>
-                        <TableCell>2층 낱장 x 6</TableCell>
-                      </TableRow>
-                      <TableRow>
-                        <TableCell>허리</TableCell>
-                        <TableCell>
-                          <Avatar
-                            src={
-                              SiteInfo.assetsUrl +
-                              "/icons/items/augmented-deepshadow-tassets-of-fending.png"
-                            }
-                          />
-                        </TableCell>
-                        <TableCell>석판 보강</TableCell>
-                        <TableCell>보강된 암영 수호자 허리갑옷</TableCell>
-                        <TableCell>불굴 (강유)</TableCell>
-                        <TableCell>불굴 (강유)</TableCell>
-                        <TableCell>
-                          환상 석판 375개 +<br />
-                          암영 경화약
-                          <br />
-                          (2층 낱장 x 4)
-                        </TableCell>
-                      </TableRow>
-                      <TableRow>
-                        <TableCell>다리</TableCell>
-                        <TableCell>
-                          <Avatar
-                            src={
-                              SiteInfo.assetsUrl +
-                              "/icons/items/augmented-deepshadow-breeches-of-fending.png"
-                            }
-                          />
-                        </TableCell>
-                        <TableCell>석판 보강</TableCell>
-                        <TableCell>보강된 암영 수호자 바지</TableCell>
-                        <TableCell>극대 (무략)</TableCell>
-                        <TableCell>극대 (무략)</TableCell>
-                        <TableCell>
-                          환상 석판 825개 +<br />
-                          암영 강화섬유
-                          <br />
-                          (3층 낱장 x 4)
-                        </TableCell>
-                      </TableRow>
-                      <TableRow selected>
-                        <TableCell>발</TableCell>
-                        <TableCell>
-                          <Avatar
-                            src={
-                              SiteInfo.assetsUrl +
-                              "/icons/items/edengrace-greaves-of-fending.png"
-                            }
-                          />
-                        </TableCell>
-                        <TableCell>영웅 레이드</TableCell>
-                        <TableCell>에덴의 은총 수호자 갑주장화</TableCell>
-                        <TableCell>불굴 (강유)</TableCell>
-                        <TableCell>불굴 (강유)</TableCell>
-                        <TableCell>2층 낱장 x 6</TableCell>
-                      </TableRow>
-                      <TableRow>
-                        <TableCell>귀걸이</TableCell>
-                        <TableCell>
-                          <Avatar
-                            src={
-                              SiteInfo.assetsUrl +
-                              "/icons/items/augmented-deepshadow-earring-of-fending.png"
-                            }
-                          />
-                        </TableCell>
-                        <TableCell>석판 보강</TableCell>
-                        <TableCell>보강된 암영 수호자 귀걸이</TableCell>
-                        <TableCell>극대 (무략)</TableCell>
-                        <TableCell>의지 (야망)</TableCell>
-                        <TableCell>
-                          환상 석판 375개 +<br />
-                          암영 경화약
-                          <br />
-                          (2층 낱장 x 4)
-                        </TableCell>
-                      </TableRow>
-                      <TableRow>
-                        <TableCell>목걸이</TableCell>
-                        <TableCell>
-                          <Avatar
-                            src={
-                              SiteInfo.assetsUrl +
-                              "/icons/items/augmented-deepshadow-necklace-of-fending.png"
-                            }
-                          />
-                        </TableCell>
-                        <TableCell>석판 보강</TableCell>
-                        <TableCell>보강된 암영 수호자 목걸이</TableCell>
-                        <TableCell>의지 (야망)</TableCell>
-                        <TableCell>의지 (야망)</TableCell>
-                        <TableCell>
-                          환상 석판 375개 +<br />
-                          암영 경화약
-                          <br />
-                          (2층 낱장 x 4)
-                        </TableCell>
-                      </TableRow>
-                      <TableRow selected>
-                        <TableCell>팔찌</TableCell>
-                        <TableCell>
-                          <Avatar
-                            src={
-                              SiteInfo.assetsUrl +
-                              "/icons/items/edengrace-bracelet-of-fending.png"
-                            }
-                          />
-                        </TableCell>
-                        <TableCell>영웅 레이드</TableCell>
-                        <TableCell>에덴의 은총 수호자 팔찌</TableCell>
-                        <TableCell>불굴 (강유)</TableCell>
-                        <TableCell>불굴 (강유)</TableCell>
-                        <TableCell>1층 낱장 x 4</TableCell>
-                      </TableRow>
-                      <TableRow selected>
-                        <TableCell>반지</TableCell>
-                        <TableCell>
-                          <Avatar
-                            src={
-                              SiteInfo.assetsUrl +
-                              "/icons/items/edengrace-ring-of-fending.png"
-                            }
-                          />
-                        </TableCell>
-                        <TableCell>영웅 레이드</TableCell>
-                        <TableCell>에덴의 은총 수호자 반지</TableCell>
-                        <TableCell>극대 (무략)</TableCell>
-                        <TableCell>의지 (야망)</TableCell>
-                        <TableCell>1층 낱장 x 4</TableCell>
-                      </TableRow>
-                      <TableRow>
-                        <TableCell>반지</TableCell>
-                        <TableCell>
-                          <Avatar
-                            src={
-                              SiteInfo.assetsUrl +
-                              "/icons/items/augmented-deepshadow-ring-of-fending.png"
-                            }
-                          />
-                        </TableCell>
-                        <TableCell>석판 보강</TableCell>
-                        <TableCell>보강된 암영 수호자 반지</TableCell>
-                        <TableCell>극대 (무략)</TableCell>
-                        <TableCell>극대 (무략)</TableCell>
-                        <TableCell>
-                          환상 석판 375개 +<br />
-                          암영 경화약
-                          <br />
-                          (2층 낱장 x 4)
-                        </TableCell>
-                      </TableRow>
-                    </TableBody>
-                  </Table>
-                </TableContainer>
-              </Grid>
-            </Grid>
-          </DialogContent>
-        </Dialog>
+        {gearSets.map((gearSet, gearSetIndex) => {
+          return (
+            <Dialog
+              fullWidth={true}
+              key={gearSetIndex}
+              maxWidth="md"
+              onClose={() => {
+                this.state.openedDialog = -1;
+                this.setState(this.state);
+              }}
+              open={this.state.openedDialog === gearSetIndex}
+              scroll="paper"
+              TransitionComponent={transition}
+            >
+              <AppBar position="static">
+                <Toolbar variant="dense">
+                  <div
+                    style={{
+                      flexGrow: 1
+                    }}
+                  >
+                    <Typography variant="body1">
+                      {gearSet.description}
+                    </Typography>
+                  </div>
+                  <IconButton
+                    onClick={() => {
+                      this.state.openedDialog = -1;
+                      this.setState(this.state);
+                    }}
+                  >
+                    <CloseIcon />
+                  </IconButton>
+                </Toolbar>
+              </AppBar>
+              <DialogContent>
+                <Grid container direction="column" spacing={5}>
+                  <Grid item />
+                  <Grid item>
+                    <li>{gearSet.dialog.intro}</li>
+                  </Grid>
+                  <Grid item>
+                    <TableContainer>
+                      <Table size="small">
+                        <TableHead>
+                          <TableRow>
+                            <TableCell colSpan={2} />
+                            <TableCell align="center">종류</TableCell>
+                            <TableCell align="center">이름</TableCell>
+                            <TableCell align="center" colSpan={2}>
+                              마테리아
+                            </TableCell>
+                            <TableCell align="center">필요 재화</TableCell>
+                          </TableRow>
+                        </TableHead>
+                        <TableBody>
+                          {gearSet.dialog.gears.map((gear, gearId) => {
+                            const item = Items[gear.itemId];
+
+                            if (!item)
+                              return <div key={gearId}>{gear.itemId}</div>;
+
+                            return (
+                              <TableRow
+                                key={gearId}
+                                selected={item.from === "영웅 레이드"}
+                              >
+                                <TableCell>{item.type}</TableCell>
+                                <TableCell>
+                                  <Avatar
+                                    src={SiteInfo.assetsUrl + item.iconSrc}
+                                  />
+                                </TableCell>
+                                <TableCell>{item.from}</TableCell>
+                                <TableCell>{item.name}</TableCell>
+                                {gear.materiaIds.length === 2 ? (
+                                  gear.materiaIds.map(
+                                    (materiaId, materiaIdIndex) => {
+                                      if (!Items[materiaId])
+                                        return (
+                                          <div key={materiaIdIndex}>
+                                            {materiaId}
+                                          </div>
+                                        );
+
+                                      return (
+                                        <TableCell key={materiaIdIndex}>
+                                          {Items[materiaId].name}
+                                        </TableCell>
+                                      );
+                                    }
+                                  )
+                                ) : (
+                                  <TableCell colSpan={2} />
+                                )}
+                                <TableCell>
+                                  {item.required
+                                    .split("\n")
+                                    .map((str, strIndex) => {
+                                      return (
+                                        <p
+                                          key={strIndex}
+                                          style={{
+                                            margin: 0
+                                          }}
+                                        >
+                                          {str}
+                                        </p>
+                                      );
+                                    })}
+                                </TableCell>
+                              </TableRow>
+                            );
+                          })}
+                        </TableBody>
+                      </Table>
+                    </TableContainer>
+                  </Grid>
+                </Grid>
+              </DialogContent>
+            </Dialog>
+          );
+        })}
       </React.Fragment>
     );
   }

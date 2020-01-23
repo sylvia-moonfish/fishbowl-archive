@@ -4,5 +4,193 @@
   },
   "robeLettuceSalad": {
     "name": "요술양배추 샐러드"
+  },
+
+  "ch": {
+    "name": "극대 (무략)"
+  },
+  "dh": {
+    "name": "직격 (심안)"
+  },
+  "det": {
+    "name": "의지 (야망)"
+  },
+  "sks": {
+    "name": "기시 (신속)"
+  },
+  "ten": {
+    "name": "불굴 (강유)"
+  },
+
+  "edengraceBastardSword": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-bastard-sword.png",
+    "name": "에덴의 은총 바스타드소드",
+    "required": "4층 낱장 x 5",
+    "type": "무기"
+  },
+  "edengraceShield": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-shield.png",
+    "name": "에덴의 은총 방패",
+    "required": "4층 낱장 x 3",
+    "type": "방패"
+  },
+  "edengraceBattleaxe": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-battleaxe.png",
+    "name": "에덴의 은총 전투도끼",
+    "required": "4층 낱장 x 8",
+    "type": "무기"
+  },
+
+  "edengraceArmetOfFending": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-armet-of-fending.png",
+    "name": "에덴의 은총 수호자 철갑투구",
+    "required": "2층 낱장 x 6",
+    "type": "머리"
+  },
+  "augmentedDeepshadowHelmOfFending": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-helm-of-fending.png",
+    "name": "보강된 암영 수호자 투구",
+    "required": "환상 석판 495개\n암영 강화섬유\n(3층 낱장 x 4)",
+    "type": "머리"
+  },
+
+  "edengraceMailOfFending": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-mail-of-fending.png",
+    "name": "에덴의 은총 수호자 갑옷",
+    "required": "4층 낱장 x 8",
+    "type": "몸통"
+  },
+  "augmentedDeepshadowCuirassOfFending": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-cuirass-of-fending.png",
+    "name": "보강된 암영 수호자 전투흉갑",
+    "required": "환상 석판 825개\n암영 강화섬유\n(3층 낱장 x 4)",
+    "type": "몸통"
+  },
+
+  "edengraceGauntletsOfFending": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-gauntlets-of-fending.png",
+    "name": "에덴의 은총 수호자 건틀릿",
+    "required": "2층 낱장 x 6",
+    "type": "손"
+  },
+  "augmentedDeepshadowGauntletsOfFending": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-gauntlets-of-fending.png",
+    "name": "보강된 암영 수호자 건틀릿",
+    "required": "환상 석판 495개\n암영 강화섬유\n(3층 낱장 x 4)",
+    "type": "손"
+  },
+
+  "edengraceTassetsOfFending": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-tassets-of-fending.png",
+    "name": "에덴의 은총 수호자 허리갑옷",
+    "required": "1층 낱장 x 6",
+    "type": "허리"
+  },
+  "augmentedDeepshadowTassetsOfFending": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-tassets-of-fending.png",
+    "name": "보강된 암영 수호자 허리갑옷",
+    "required": "환상 석판 375개\n암영 경화약\n(2층 낱장 x 4)",
+    "type": "허리"
+  },
+
+  "edengraceTrousersOfFending": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-trousers-of-fending.png",
+    "name": "에덴의 은총 수호자 긴바지",
+    "required": "3층 낱장 x 8",
+    "type": "다리"
+  },
+  "augmentedDeepshadowBreechesOfFending": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-breeches-of-fending.png",
+    "name": "보강된 암영 수호자 바지",
+    "required": "환상 석판 825개\n암영 강화섬유\n(3층 낱장 x 4)",
+    "type": "다리"
+  },
+
+  "edengraceGreavesOfFending": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-greaves-of-fending.png",
+    "name": "에덴의 은총 수호자 갑주장화",
+    "required": "2층 낱장 x 6",
+    "type": "발"
+  },
+  "augmentedDeepshadowSolleretsOfFending": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-sollerets-of-fending.png",
+    "name": "보강된 암영 수호자 쇠구두",
+    "required": "환상 석판 495개\n암영 강화섬유\n(3층 낱장 x 4)",
+    "type": "발"
+  },
+
+  "edengraceEarringOfFending": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-earring-of-fending.png",
+    "name": "에덴의 은총 수호자 귀걸이",
+    "required": "1층 낱장 x 4",
+    "type": "귀걸이"
+  },
+  "augmentedDeepshadowEarringOfFending": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-earring-of-fending.png",
+    "name": "보강된 암영 수호자 귀걸이",
+    "required": "환상 석판 375개\n암영 경화약\n(2층 낱장 x 4)",
+    "type": "귀걸이"
+  },
+
+  "edengraceChokerOfFending": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-choker-of-fending.png",
+    "name": "에덴의 은총 수호자 목장식",
+    "required": "1층 낱장 x 4",
+    "type": "목걸이"
+  },
+  "augmentedDeepshadowNecklaceOfFending": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-necklace-of-fending.png",
+    "name": "보강된 암영 수호자 목걸이",
+    "required": "환상 석판 375개\n암영 경화약\n(2층 낱장 x 4)",
+    "type": "목걸이"
+  },
+
+  "edengraceBraceletOfFending": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-bracelet-of-fending.png",
+    "name": "에덴의 은총 수호자 팔찌",
+    "required": "1층 낱장 x 4",
+    "type": "팔찌"
+  },
+  "augmentedDeepshadowBraceletOfFending": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-bracelet-of-fending.png",
+    "name": "보강된 암영 수호자 팔찌",
+    "required": "환상 석판 375개\n암영 경화약\n(2층 낱장 x 4)",
+    "type": "팔찌"
+  },
+
+  "edengraceRingOfFending": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-ring-of-fending.png",
+    "name": "에덴의 은총 수호자 반지",
+    "required": "1층 낱장 x 4",
+    "type": "반지"
+  },
+  "augmentedDeepshadowRingOfFending": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-ring-of-fending.png",
+    "name": "보강된 암영 수호자 반지",
+    "required": "환상 석판 375개\n암영 경화약\n(2층 낱장 x 4)",
+    "type": "반지"
   }
 }
