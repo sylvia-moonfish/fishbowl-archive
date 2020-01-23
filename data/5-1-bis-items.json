@@ -43,6 +43,13 @@
     "required": "4층 낱장 x 8",
     "type": "무기"
   },
+  "edengraceGreatsword": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-greatsword.png",
+    "name": "에덴의 은총 그레이트소드",
+    "required": "4층 낱장 x 8",
+    "type": "무기"
+  },
 
   "edengraceArmetOfFending": {
     "from": "영웅 레이드",
