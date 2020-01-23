@@ -22,6 +22,7 @@ import LaunchIcon from "@material-ui/icons/Launch";
 
 import React from "react";
 
+import Items from "../../../../data/5-1-bis-items";
 import SiteInfo from "../../../../data/site-info";
 import PageComponent from "../../../../src/components/page-component";
 
@@ -33,6 +34,45 @@ const pageData = {
   title: "나이트 가이드 - 5.1 BiS",
   description: "파이널 판타지 14 나이트 가이드 - 5.1 BiS"
 };
+
+const gearSets = [
+  {
+    description: "글쿨 2.45초 세트. 글쿨이 많이 느리니 사용 시 주의 요망.",
+    dps: 9007.64,
+    gcd: 2.45,
+    food: "popotoSalad",
+    dh: 15,
+    ch: 24.9,
+    ten: 2.4
+  },
+  {
+    description: "글쿨 2.42초 세트. 나이트만 키울 경우 추천.",
+    dps: 8975.95,
+    gcd: 2.42,
+    food: "robeLettuceSalad",
+    dh: 15,
+    ch: 24.5,
+    ten: 2.4
+  },
+  {
+    description: "글쿨 2.4초 세트. 4탱 공용으로 사용 가능.",
+    dps: 8967.8,
+    gcd: 2.4,
+    food: "robeLettuceSalad",
+    dh: 14,
+    ch: 24.5,
+    ten: 2
+  },
+  {
+    description: "글쿨 2.4초 불굴 세트. 절 알렉산더용.",
+    dps: 8907.5,
+    gcd: 2.4,
+    food: "robeLettuceSalad",
+    dh: 1,
+    ch: 24.5,
+    ten: 3.4
+  }
+];
 
 class FiveOneBis extends PageComponent {
   constructor(props) {
@@ -127,98 +167,31 @@ class FiveOneBis extends PageComponent {
                   </TableRow>
                 </TableHead>
                 <TableBody>
-                  <TableRow
-                    hover
-                    onClick={() => {
-                      this.state.openedDialog = 0;
-                      this.setState(this.state);
-                    }}
-                    style={{
-                      cursor: "pointer"
-                    }}
-                  >
-                    <Hidden mdDown>
-                      <TableCell>
-                        평균 DPS가 가장 높지만 글쿨이 많이 느림. 사용 시 주의
-                        요망.
-                      </TableCell>
-                    </Hidden>
-                    <TableCell>9007.64</TableCell>
-                    <TableCell>2.45초</TableCell>
-                    <TableCell>포포토 샐러드</TableCell>
-                    <TableCell>15%</TableCell>
-                    <TableCell>24.9%</TableCell>
-                    <TableCell>2.4%</TableCell>
-                  </TableRow>
-                  <TableRow
-                    hover
-                    onClick={() => {
-                      this.state.openedDialog = 1;
-                      this.setState(this.state);
-                    }}
-                    style={{
-                      cursor: "pointer"
-                    }}
-                  >
-                    <Hidden mdDown>
-                      <TableCell>
-                        글쿨 2.42초로 최적화된 장비 세트. 나이트만 키울 경우
-                        추천.
-                      </TableCell>
-                    </Hidden>
-                    <TableCell>8975.95</TableCell>
-                    <TableCell>2.42초</TableCell>
-                    <TableCell>요술양배추 샐러드</TableCell>
-                    <TableCell>15%</TableCell>
-                    <TableCell>24.5%</TableCell>
-                    <TableCell>2.4%</TableCell>
-                  </TableRow>
-                  <TableRow
-                    hover
-                    onClick={() => {
-                      this.state.openedDialog = 2;
-                      this.setState(this.state);
-                    }}
-                    style={{
-                      cursor: "pointer"
-                    }}
-                  >
-                    <Hidden mdDown>
-                      <TableCell>
-                        글쿨 2.40초로 최적화된 장비 세트. 4탱 공용 세트로 사용
-                        가능.
-                      </TableCell>
-                    </Hidden>
-                    <TableCell>8967.80</TableCell>
-                    <TableCell>2.40초</TableCell>
-                    <TableCell>요술양배추 샐러드</TableCell>
-                    <TableCell>14%</TableCell>
-                    <TableCell>24.5%</TableCell>
-                    <TableCell>2%</TableCell>
-                  </TableRow>
-                  <TableRow
-                    hover
-                    onClick={() => {
-                      this.state.openedDialog = 3;
-                      this.setState(this.state);
-                    }}
-                    style={{
-                      cursor: "pointer"
-                    }}
-                  >
-                    <Hidden mdDown>
-                      <TableCell>
-                        글쿨 2.40초 불굴 장비 세트. 절 알렉산더 진도 빼기 생존
-                        특화용.
-                      </TableCell>
-                    </Hidden>
-                    <TableCell>8907.50</TableCell>
-                    <TableCell>2.40초</TableCell>
-                    <TableCell>요술양배추 샐러드</TableCell>
-                    <TableCell>1%</TableCell>
-                    <TableCell>24.5%</TableCell>
-                    <TableCell>3.4%</TableCell>
-                  </TableRow>
+                  {gearSets.map((gearSet, gearSetIndex) => {
+                    return (
+                      <TableRow
+                        hover
+                        key={gearSetIndex}
+                        onClick={() => {
+                          this.state.openedDialog = gearSetIndex;
+                          this.setState(this.state);
+                        }}
+                        style={{
+                          cursor: "pointer"
+                        }}
+                      >
+                        <Hidden mdDown>
+                          <TableCell>{gearSet.description}</TableCell>
+                        </Hidden>
+                        <TableCell>{gearSet.dps}</TableCell>
+                        <TableCell>{gearSet.gcd} 초</TableCell>
+                        <TableCell>{Items[gearSet.food].name}</TableCell>
+                        <TableCell>{gearSet.dh} %</TableCell>
+                        <TableCell>{gearSet.ch} %</TableCell>
+                        <TableCell>{gearSet.ten} %</TableCell>
+                      </TableRow>
+                    );
+                  })}
                 </TableBody>
               </Table>
             </TableContainer>
