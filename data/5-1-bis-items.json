@@ -53,6 +53,13 @@
     "required": "4층 낱장 x 8",
     "type": "무기"
   },
+  "edengraceManatrigger": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-manatrigger.png",
+    "name": "에덴의 은총 마나트리거",
+    "required": "4층 낱장 x 8",
+    "type": "무기"
+  },
 
   "edengraceArmetOfFending": {
     "from": "영웅 레이드",
