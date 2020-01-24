@@ -22,6 +22,7 @@ import LaunchIcon from "@material-ui/icons/Launch";
 
 import React from "react";
 
+import Calculations from "../../../../data/5-1-bis-calculations";
 import Items from "../../../../data/5-1-bis-items";
 import SiteInfo from "../../../../data/site-info";
 import PageComponent from "../../../../src/components/page-component";
@@ -112,6 +113,8 @@ class FiveOneBis extends PageComponent {
   }
 
   render() {
+    gearSets.forEach(gearSet => {});
+
     return (
       <React.Fragment>
         {this.generateHead(
