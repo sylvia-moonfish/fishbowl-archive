@@ -1,0 +1,86 @@
+{
+  "level": {
+    "main": 340,
+    "sub": 380,
+    "div": 3300
+  },
+  "clan": {
+    "mnd": 3
+  },
+
+  "whm": {
+    "mnd": 115
+  },
+
+  "edengraceCane": {
+    "magicDamage": 164,
+    "mnd": 544,
+    "det": 467,
+    "pie": 327
+  },
+
+  "edengraceTempleChainOfHealing": {
+    "mnd": 303,
+    "det": 264,
+    "sps": 185
+  },
+
+  "augmentedDeepshadowScaleMailOfHealing": {
+    "mnd": 492,
+    "ch": 300,
+    "det": 429
+  },
+
+  "edengraceArmletsOfHealing": {
+    "mnd": 303,
+    "det": 264,
+    "sps": 185
+  },
+
+  "edengraceTassetsOfHealing": {
+    "mnd": 227,
+    "ch": 198,
+    "det": 139
+  },
+
+  "edengracePantaloonsOfHealing": {
+    "mnd": 492,
+    "ch": 429,
+    "det": 300
+  },
+
+  "edengraceSandalsOfHealing": {
+    "mnd": 303,
+    "ch": 185,
+    "pie": 264
+  },
+
+  "augmentedDeepshadowEarringOfHealing": {
+    "mnd": 227,
+    "ch": 198,
+    "det": 139
+  },
+
+  "edengraceChokerOfHealing": {
+    "mnd": 227,
+    "det": 139,
+    "sps": 198
+  },
+
+  "augmentedDeepshadowBraceletOfHealing": {
+    "mnd": 227,
+    "det": 139,
+    "sps": 198
+  },
+
+  "augmentedDeepshadowRingOfHealing": {
+    "mnd": 227,
+    "ch": 198,
+    "sps": 139
+  },
+  "deepshadowRingOfHealing": {
+    "mnd": 215,
+    "ch": 192,
+    "sps": 134
+  }
+}
