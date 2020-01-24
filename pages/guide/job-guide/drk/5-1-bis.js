@@ -295,7 +295,7 @@ class FiveOneBis extends PageComponent {
     super(props);
 
     this.state = {
-      openedDialog: 3
+      openedDialog: -1
     };
   }
 
