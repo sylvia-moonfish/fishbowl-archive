@@ -46,7 +46,7 @@ const gearSets = [
     ten: 2,
     dialog: {
       intro:
-        '"피의 칼날" 효과가 적용되는 동안 총 5번의 무기 기술을 쓸 수 있는 최소 기시만을 맞춘 장비 세트입니다. 인터넷 핑이 좋지 않거나 기믹 처리 등의 이유로 "피의 칼날"/"피의 열광" 지속 시간 동안 5번의 무기 기술을 사용하지 못했을 경우 다른 장비 세트보다 낮은 DPS가 나올 수도 있으므로 유의해주세요. 조금이라도 글쿨이 밀리거나 업타임 로스가 발생하면 딜로스가 크게 생길 수 있으므로 자신이 없다면 글쿨 2.41초 세트 등의 좀 더 여유로운 장비 세트를 사용하실 것을 권장합니다. 음식은 "요술양배추 샐러드"를 섭취합니다.',
+        '"피의 칼날" 효과가 적용되는 동안 총 5번의 무기 기술을 쓸 수 있는 최소 기시만을 맞춘 장비 세트입니다. 인터넷 핑이 좋지 않아 논글쿨 사용 시 글쿨이 밀린다거나 기믹 처리 등의 이유로 "피의 칼날" 지속 시간 동안 5번의 무기 기술을 사용하지 못하는 상황이 자주 발생한다면 글쿨 2.41초 세트 등의 좀 더 여유로운 장비 세트를 사용하실 것을 권장합니다. 음식은 "요술양배추 샐러드"를 섭취합니다.',
       gears: [
         {
           itemId: "edengraceGreatsword",
@@ -101,23 +101,19 @@ const gearSets = [
   },
   {
     description: "글쿨 2.41초 세트. 무난하게 사용 가능한 추천 세트.",
-    dps: 0,
-    gcd: 0,
+    dps: 8965.71,
+    gcd: 2.41,
     foodId: "popotoSalad",
-    dh: 0,
-    ch: 0,
-    ten: 0,
+    dh: 18,
+    ch: 25,
+    ten: 2.4,
     dialog: {
       intro:
-        '글로벌 쿨다운을 2.41초로 맞춰 "피의 칼날"과 "피의 열망" 지속 시간 내에 ㄴ 나이트의 스킬 로테이션에 따라 DPS를 최적화한 장비 세트입니다. 나이트가 아닌 다른 방어 직업이 사용하기엔 조금 비효율적일 수 있습니다. 섭취 음식으로는 "포포토 샐러드"보다 "요술양배추 샐러드"의 효율이 더 좋습니다.',
+        '글로벌 쿨다운을 2.41초로 맞춰 "피의 칼날" 5글쿨을 좀 더 여유롭게 맞출 수 있도록 최적화한 장비 세트입니다. 기믹 처리 등을 좀 더 편하게 할 수 있으므로 개인적으로 이 장비 세트를 가장 추천합니다. 기시를 맞추기 위해 음식은 "포포토 샐러드"를 섭취합니다.',
       gears: [
         {
-          itemId: "edengraceBastardSword",
-          materiaIds: ["ch", "dh"]
-        },
-        {
-          itemId: "edengraceShield",
-          materiaIds: []
+          itemId: "edengraceGreatsword",
+          materiaIds: ["dh", "dh"]
         },
         {
           itemId: "augmentedDeepshadowHelmOfFending",
@@ -157,34 +153,30 @@ const gearSets = [
         },
         {
           itemId: "edengraceRingOfFending",
-          materiaIds: ["ch", "det"]
+          materiaIds: ["ch", "dh"]
         },
         {
           itemId: "augmentedDeepshadowRingOfFending",
-          materiaIds: ["ch", "ch"]
+          materiaIds: ["ch", "dh"]
         }
       ]
     }
   },
   {
-    description: "글쿨 2.4초 세트. 4탱 공용으로 사용 가능.",
-    dps: 8967.8,
-    gcd: 2.4,
-    foodId: "robeLettuceSalad",
+    description: "글쿨 2.38초 세트. 빠른 기시속을 선호할 경우 추천.",
+    dps: 8924.65,
+    gcd: 2.38,
+    foodId: "popotoSalad",
     dh: 14,
-    ch: 24.5,
+    ch: 25.3,
     ten: 2,
     dialog: {
       intro:
-        '글로벌 쿨다운을 2.4초로 맞춰 나이트가 아닌 다른 방어 직업으로도 사용하기 편하도록 최적화한 장비 세트입니다. "요술양배추 샐러드"를 섭취합니다.',
+        '글로벌 쿨다운을 2.38초로 맞춘 장비 세트입니다. 2.43초/2.41초 세트보다 DPS 효율은 살짝 떨어지지만 빠른 글쿨을 선호하시는 분들께 추천드립니다. 음식은 "포포토 샐러드"를 섭취합니다.',
       gears: [
         {
-          itemId: "edengraceBastardSword",
-          materiaIds: ["ch", "dh"]
-        },
-        {
-          itemId: "edengraceShield",
-          materiaIds: []
+          itemId: "edengraceGreatsword",
+          materiaIds: ["sks", "sks"]
         },
         {
           itemId: "augmentedDeepshadowHelmOfFending",
@@ -224,7 +216,7 @@ const gearSets = [
         },
         {
           itemId: "edengraceRingOfFending",
-          materiaIds: ["ch", "det"]
+          materiaIds: ["ch", "dh"]
         },
         {
           itemId: "augmentedDeepshadowRingOfFending",
@@ -235,67 +227,63 @@ const gearSets = [
   },
   {
     description: "글쿨 2.4초 불굴 세트. 절 알렉산더용.",
-    dps: 8907.5,
+    dps: 8709.64,
     gcd: 2.4,
-    foodId: "robeLettuceSalad",
-    dh: 1,
-    ch: 24.5,
-    ten: 3.4,
+    foodId: "rareRoastBeef",
+    dh: 10,
+    ch: 15.2,
+    ten: 8.3,
     dialog: {
       intro:
-        '글로벌 쿨다운 2.4초 세트에서 직격을 빼고 불굴을 높여 절 난이도 트라이에 대비한 장비 세트입니다. "요술양배추 샐러드"를 섭취합니다.',
+        '글로벌 쿨다운 2.4초 절 난이도 트라이에 대비한 불굴 장비 세트입니다. 비주류 의지 불굴 음식인 "고급 소고기 구이"를 섭취하므로 음식 조달이 어려울 수도 있겠네요.',
       gears: [
         {
-          itemId: "edengraceBastardSword",
-          materiaIds: ["ch", "dh"]
-        },
-        {
-          itemId: "edengraceShield",
-          materiaIds: []
+          itemId: "edengraceGreatsword",
+          materiaIds: ["ten", "ten"]
         },
         {
           itemId: "augmentedDeepshadowHelmOfFending",
-          materiaIds: ["det", "ten"]
+          materiaIds: ["dh", "ten"]
         },
         {
           itemId: "edengraceMailOfFending",
-          materiaIds: ["ch", "ch"]
-        },
-        {
-          itemId: "edengraceGauntletsOfFending",
-          materiaIds: ["det", "ten"]
-        },
-        {
-          itemId: "augmentedDeepshadowTassetsOfFending",
           materiaIds: ["ten", "ten"]
         },
         {
-          itemId: "augmentedDeepshadowBreechesOfFending",
+          itemId: "augmentedDeepshadowGauntletsOfFending",
+          materiaIds: ["dh", "ten"]
+        },
+        {
+          itemId: "edengraceTassetsOfFending",
           materiaIds: ["ch", "ch"]
         },
         {
-          itemId: "edengraceGreavesOfFending",
-          materiaIds: ["ten", "ten"]
+          itemId: "edengraceTrousersOfFending",
+          materiaIds: ["dh", "dh"]
         },
         {
-          itemId: "augmentedDeepshadowEarringOfFending",
-          materiaIds: ["ch", "det"]
+          itemId: "augmentedDeepshadowSolleretsOfFending",
+          materiaIds: ["dh", "dh"]
+        },
+        {
+          itemId: "edengraceEarringOfFending",
+          materiaIds: ["sks", "ten"]
         },
         {
           itemId: "augmentedDeepshadowNecklaceOfFending",
-          materiaIds: ["det", "det"]
+          materiaIds: ["sks", "ten"]
         },
         {
-          itemId: "edengraceBraceletOfFending",
-          materiaIds: ["ten", "ten"]
+          itemId: "augmentedDeepshadowBraceletOfFending",
+          materiaIds: ["dh", "dh"]
         },
         {
           itemId: "edengraceRingOfFending",
-          materiaIds: ["ch", "det"]
+          materiaIds: ["dh", "det"]
         },
         {
           itemId: "augmentedDeepshadowRingOfFending",
-          materiaIds: ["ch", "ch"]
+          materiaIds: ["dh", "ten"]
         }
       ]
     }
@@ -307,7 +295,7 @@ class FiveOneBis extends PageComponent {
     super(props);
 
     this.state = {
-      openedDialog: 0
+      openedDialog: 3
     };
   }
 

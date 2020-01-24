@@ -35,8 +35,8 @@ const pageData = {
               href: "/guide/job-guide/war/5-1-bis"
             }
           ]
-        }
-        /*{
+        },
+        {
           iconSrc: SiteInfo.assetsUrl + "/job-guide/drk.png",
           name: "암흑기사 가이드",
           patches: [
@@ -46,7 +46,7 @@ const pageData = {
               href: "/guide/job-guide/drk/5-1-bis"
             }
           ]
-        }*/
+        }
       ]
     }
   ]
