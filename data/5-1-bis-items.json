@@ -21,6 +21,9 @@
   "sks": {
     "name": "기시 (신속)"
   },
+  "sps": {
+    "name": "마시 (시전)"
+  },
   "ten": {
     "name": "불굴 (강유)"
   },
@@ -208,6 +211,101 @@
     "iconSrc": "/icons/items/augmented-deepshadow-ring-of-fending.png",
     "name": "보강된 암영 수호자 반지",
     "required": "환상 석판 375개\n암영 경화약\n(2층 낱장 x 4)",
+    "type": "반지"
+  },
+
+  "edengraceCane": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-cane.png",
+    "name": "에덴의 은총 환술봉",
+    "required": "4층 낱장 x 8",
+    "type": "무기"
+  },
+
+  "edengraceTempleChainOfHealing": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-temple-chain-of-healing.png",
+    "name": "에덴의 은총 치유사 머리사슬",
+    "required": "2층 낱장 x 6",
+    "type": "머리"
+  },
+
+  "augmentedDeepshadowScaleMailOfHealing": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-scale-mail-of-healing.png",
+    "name": "보강된 암영 치유사 미늘갑옷",
+    "required": "환상 석판 825개\n암영 강화섬유\n(3층 낱장 x 4)",
+    "type": "몸통"
+  },
+
+  "edengraceArmletsOfHealing": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-armlets-of-healing.png",
+    "name": "에덴의 은총 치유사 팔덮개",
+    "required": "2층 낱장 x 6",
+    "type": "손"
+  },
+
+  "edengraceTassetsOfHealing": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-tassets-of-healing.png",
+    "name": "에덴의 은총 치유사 허리갑옷",
+    "required": "1층 낱장 x 6",
+    "type": "허리"
+  },
+
+  "edengracePantaloonsOfHealing": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-pantaloons-of-healing.png",
+    "name": "에덴의 은총 치유사 나팔바지",
+    "required": "3층 낱장 x 8",
+    "type": "다리"
+  },
+
+  "edengraceSandalsOfHealing": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-sandals-of-healing.png",
+    "name": "에덴의 은총 치유사 샌들",
+    "required": "2층 낱장 x 6",
+    "type": "발"
+  },
+
+  "augmentedDeepshadowEarringOfHealing": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-earring-of-healing.png",
+    "name": "보강된 암영 치유사 귀걸이",
+    "required": "환상 석판 375개\n암영 경화약\n(2층 낱장 x 4)",
+    "type": "귀걸이"
+  },
+
+  "edengraceChokerOfHealing": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-choker-of-healing.png",
+    "name": "에덴의 은총 치유사 목장식",
+    "required": "1층 낱장 x 4",
+    "type": "목걸이"
+  },
+
+  "augmentedDeepshadowBraceletOfHealing": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-bracelet-of-healing.png",
+    "name": "보강된 암영 치유사 팔찌",
+    "required": "환상 석판 375개\n암영 경화약\n(2층 낱장 x 4)",
+    "type": "팔찌"
+  },
+
+  "augmentedDeepshadowRingOfHealing": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-ring-of-healing.png",
+    "name": "보강된 암영 치유사 반지",
+    "required": "환상 석판 375개\n암영 경화약\n(2층 낱장 x 4)",
+    "type": "반지"
+  },
+  "deepshadowRingOfHealing": {
+    "from": "석판",
+    "iconSrc": "/icons/items/deepshadow-ring-of-healing.png",
+    "name": "암영 치유사 반지",
+    "required": "환상 석판 375개",
     "type": "반지"
   }
 }

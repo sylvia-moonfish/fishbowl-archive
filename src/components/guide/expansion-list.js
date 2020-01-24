@@ -1,5 +1,6 @@
 import Avatar from "@material-ui/core/Avatar";
 import Chip from "@material-ui/core/Chip";
+import Divider from "@material-ui/core/Divider";
 import ExpansionPanel from "@material-ui/core/ExpansionPanel";
 import ExpansionPanelDetails from "@material-ui/core/ExpansionPanelDetails";
 import ExpansionPanelSummary from "@material-ui/core/ExpansionPanelSummary";
@@ -61,6 +62,15 @@ class ExpansionList extends React.Component {
         >
           {this.props.expansions[this.state.tabValue].items.map(
             (item, itemIndex) => {
+              if (item === "divider")
+                return (
+                  <Divider
+                    style={{
+                      margin: 25
+                    }}
+                  />
+                );
+
               return (
                 <ExpansionPanel
                   expanded={this.state.expandedPanel === itemIndex}
