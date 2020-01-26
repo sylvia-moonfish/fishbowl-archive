@@ -39,6 +39,15 @@ const pageData = {
 const gearSets = [
   {
     description: "글쿨 2.39초 신앙 931 DPS 최적화 세트.",
+    attributes: {
+      main: 0,
+      wd: 0,
+      ch: 0,
+      dh: 0,
+      det: 0,
+      sps: 0,
+      pie: 0
+    },
     dps: 0,
     hps: 0,
     mpRegen: 0,
@@ -113,7 +122,180 @@ class FiveOneBis extends PageComponent {
   }
 
   render() {
-    gearSets.forEach(gearSet => {});
+    gearSets.forEach(gearSet => {
+      gearSet.attributes.main = Math.floor(
+        Math.floor((Calculations.level.main * Calculations.whm.mnd) / 100) +
+          Calculations.clan.mnd +
+          Calculations.trait
+      );
+      gearSet.attributes.ch = Calculations.level.sub;
+      gearSet.attributes.dh = Calculations.level.sub;
+      gearSet.attributes.det = Calculations.level.main;
+      gearSet.attributes.sps = Calculations.level.sub;
+      gearSet.attributes.pie = Calculations.level.main;
+
+      gearSet.dialog.gears.forEach(gear => {
+        if (!Calculations[gear.itemId]) {
+          console.log(gear.itemId);
+          return;
+        }
+
+        if (Calculations[gear.itemId]["wd"]) {
+          gearSet.attributes.wd = Calculations[gear.itemId].wd;
+        }
+
+        const attributes = Object.keys(Calculations[gear.itemId])
+          .filter(key => {
+            return key !== "wd";
+          })
+          .map(key => {
+            return {
+              key: key,
+              value: Calculations[gear.itemId][key]
+            };
+          });
+
+        attributes.sort((a, b) => {
+          return b.value - a.value;
+        });
+
+        const subAttrMax = attributes[1].value;
+
+        const attributeObj = {};
+
+        attributes.forEach(attr => {
+          attributeObj[attr.key] = attr.value;
+        });
+
+        gear.materiaIds.forEach(materiaId => {
+          if (!Calculations[materiaId]) {
+            console.log(materiaId);
+            return;
+          }
+
+          if (!attributeObj[materiaId]) {
+            attributeObj[materiaId] = Calculations[materiaId];
+          } else {
+            attributeObj[materiaId] += Calculations[materiaId];
+
+            if (attributeObj[materiaId] > subAttrMax)
+              attributeObj[materiaId] = subAttrMax;
+          }
+        });
+
+        Object.keys(attributeObj).forEach(key => {
+          if (!gearSet.attributes[key]) {
+            gearSet.attributes[key] = attributeObj[key];
+          } else {
+            gearSet.attributes[key] += attributeObj[key];
+          }
+        });
+      });
+
+      if (!Calculations[gearSet.foodId]) {
+        console.log(gearSet.foodId);
+        return;
+      }
+
+      Object.keys(Calculations[gearSet.foodId]).forEach(key => {
+        if (!gearSet.attributes[key]) return;
+
+        let value = Math.floor(
+          (gearSet.attributes[key] * Calculations[gearSet.foodId][key].value) /
+            100
+        );
+        if (value > Calculations[gearSet.foodId][key].max)
+          value = Calculations[gearSet.foodId][key].max;
+
+        gearSet.attributes[key] += value;
+      });
+
+      gearSet.gcd =
+        Math.floor(
+          (Math.floor(
+            2000 -
+              Math.floor(
+                ((gearSet.attributes.sps - Calculations.level.sub) * 130) /
+                  Calculations.level.div +
+                  1000
+              )
+          ) *
+            2500) /
+            1000 /
+            10
+        ) / 100;
+      gearSet.ch =
+        Math.floor(
+          ((gearSet.attributes.ch - Calculations.level.sub) * 200) /
+            Calculations.level.div +
+            50
+        ) / 10;
+      gearSet.dh =
+        Math.floor(
+          ((gearSet.attributes.dh - Calculations.level.sub) * 550) /
+            Calculations.level.div
+        ) / 10;
+      gearSet.mpRegen =
+        Math.floor(
+          ((gearSet.attributes.pie - Calculations.level.main) * 150) /
+            Calculations.level.div
+        ) + 200;
+
+      const attackPotency = 300;
+      const trait = 30;
+      const fAttack =
+        Math.floor(((gearSet.attributes.main - 340) * 165) / 340) + 100;
+      const fDet = Math.floor(
+        ((gearSet.attributes.det - Calculations.level.main) * 130) /
+          Calculations.level.div +
+          1000
+      );
+      const fWd = Math.floor(
+        (Calculations.level.main * Calculations.whm.mnd) / 1000 +
+          gearSet.attributes.wd
+      );
+      const fCrit = Math.floor(
+        ((gearSet.attributes.ch - Calculations.level.sub) * 200) /
+          Calculations.level.div +
+          1400
+      );
+
+      const d1 = Math.floor(
+        Math.floor(Math.floor(attackPotency * fAttack * fDet) / 100) / 1000
+      );
+      const d2 = Math.floor(
+        Math.floor(Math.floor(Math.floor(d1 * fWd) / 100) * (trait + 100)) / 100
+      );
+      const d3chdh = Math.floor(
+        Math.floor(Math.floor(Math.floor(d2 * fCrit) / 1000) * 125) / 100
+      );
+      const d3ch = Math.floor(Math.floor(d2 * fCrit) / 1000);
+      const d3dh = Math.floor(Math.floor(d2 * 125) / 100);
+
+      const chdh = ((gearSet.ch / 100) * gearSet.dh) / 100;
+      const ch = gearSet.ch / 100 - chdh;
+      const dh = gearSet.dh / 100 - chdh;
+      const none = 1 - chdh - ch - dh;
+      const damage = d3chdh * chdh + d3ch * ch + d3dh * dh + d2 * none;
+
+      gearSet.dps = Math.floor((damage / gearSet.gcd) * 100) / 100;
+
+      const healingPotency = 700;
+      const fHmp =
+        Math.floor(((gearSet.attributes.main - 340) * 100) / 304) + 100;
+
+      const h1 = Math.floor(
+        Math.floor(Math.floor(healingPotency * fHmp * fDet) / 100) / 1000
+      );
+      const h2 = Math.floor(
+        Math.floor(Math.floor(Math.floor(h1 * fWd) / 100) * (trait + 100)) / 100
+      );
+      const h3ch = Math.floor(Math.floor(h2 * fCrit) / 1000);
+      const healing =
+        (h3ch * gearSet.ch) / 100 + (h2 * (100 - gearSet.ch)) / 100;
+
+      gearSet.hps = Math.floor((healing / gearSet.gcd) * 100) / 100;
+    });
 
     return (
       <React.Fragment>

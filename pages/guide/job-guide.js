@@ -57,8 +57,8 @@ const pageData = {
               href: "/guide/job-guide/gnb/5-1-bis"
             }
           ]
-        }
-        /*'divider',
+        },
+        "divider",
         {
           iconSrc: SiteInfo.assetsUrl + "/job-guide/whm.png",
           name: "백마도사 가이드",
@@ -69,7 +69,7 @@ const pageData = {
               href: "/guide/job-guide/whm/5-1-bis"
             }
           ]
-        }*/
+        }
       ]
     }
   ]
