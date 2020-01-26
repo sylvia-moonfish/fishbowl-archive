@@ -8,6 +8,9 @@
   "rareRoastBeef": {
     "name": "고급 소고기 구이"
   },
+  "kukuruRusk": {
+    "name": "쿠쿠루 러스크"
+  },
 
   "ch": {
     "name": "극대 (무략)"
@@ -221,12 +224,26 @@
     "required": "4층 낱장 x 8",
     "type": "무기"
   },
+  "augmentedDeepshadowSignum": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-signum.png",
+    "name": "보강된 암영 문장지팡이",
+    "required": "환상 석판 1000개\n초경량 석판\n암영 강화약\n(3층 낱장 x 4)",
+    "type": "무기"
+  },
 
   "edengraceTempleChainOfHealing": {
     "from": "영웅 레이드",
     "iconSrc": "/icons/items/edengrace-temple-chain-of-healing.png",
     "name": "에덴의 은총 치유사 머리사슬",
     "required": "2층 낱장 x 6",
+    "type": "머리"
+  },
+  "augmentedDeepshadowHoodOfHealing": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-hood-of-healing.png",
+    "name": "보강된 암영 치유사 두건",
+    "required": "환상 석판 495개\n암영 강화섬유\n(3층 낱장 x 4)",
     "type": "머리"
   },
 
@@ -243,6 +260,13 @@
     "iconSrc": "/icons/items/edengrace-armlets-of-healing.png",
     "name": "에덴의 은총 치유사 팔덮개",
     "required": "2층 낱장 x 6",
+    "type": "손"
+  },
+  "augmentedDeepshadowArmguardsOfHealing": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-armguards-of-healing.png",
+    "name": "보강된 암영 치유사 팔보호구",
+    "required": "환상 석판 495개\n암영 강화섬유\n(3층 낱장 x 4)",
     "type": "손"
   },
 
@@ -269,6 +293,13 @@
     "required": "2층 낱장 x 6",
     "type": "발"
   },
+  "augmentedDeepshadowGreavesOfHealing": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-greaves-of-healing.png",
+    "name": "보강된 암영 치유사 갑주장화",
+    "required": "환상 석판 495개\n암영 강화섬유\n(3층 낱장 x 4)",
+    "type": "발"
+  },
 
   "augmentedDeepshadowEarringOfHealing": {
     "from": "석판 보강",
@@ -285,7 +316,21 @@
     "required": "1층 낱장 x 4",
     "type": "목걸이"
   },
+  "augmentedDeepshadowNecklaceOfHealing": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-necklace-of-healing.png",
+    "name": "보강된 암영 치유사 목걸이",
+    "required": "환상 석판 375개\n암영 경화약\n(2층 낱장 x 4)",
+    "type": "목걸이"
+  },
 
+  "edengraceBraceletOfHealing": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-bracelet-of-healing.png",
+    "name": "에덴의 은총 치유사 팔찌",
+    "required": "1층 낱장 x 4",
+    "type": "팔찌"
+  },
   "augmentedDeepshadowBraceletOfHealing": {
     "from": "석판 보강",
     "iconSrc": "/icons/items/augmented-deepshadow-bracelet-of-healing.png",
@@ -294,6 +339,13 @@
     "type": "팔찌"
   },
 
+  "edengraceRingOfHealing": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-ring-of-healing.png",
+    "name": "에덴의 은총 치유사 반지",
+    "required": "1층 낱장 x 4",
+    "type": "반지"
+  },
   "augmentedDeepshadowRingOfHealing": {
     "from": "석판 보강",
     "iconSrc": "/icons/items/augmented-deepshadow-ring-of-healing.png",

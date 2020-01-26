@@ -38,6 +38,79 @@ const pageData = {
 
 const gearSets = [
   {
+    description: "글쿨 2.41초 신앙 743 극대 세트.",
+    attributes: {
+      main: 0,
+      wd: 0,
+      ch: 0,
+      dh: 0,
+      det: 0,
+      sps: 0,
+      pie: 0
+    },
+    dps: 0,
+    hps: 0,
+    mpRegen: 0,
+    gcd: 0,
+    foodId: "robeLettuceSalad",
+    dh: 0,
+    ch: 0,
+    dialog: {
+      intro:
+        '극대에 올인한 장비 세트입니다. 높은 DPS를 뽑아낼 수 있으나 글쿨이 느리고 신앙이 낮은 편이라 전투에 숙련된 힐러분들께 추천드립니다. 음식은 "요술양배추 샐러드"를 섭취합니다.',
+      gears: [
+        {
+          itemId: "augmentedDeepshadowSignum",
+          materiaIds: ["dh", "dh"]
+        },
+        {
+          itemId: "edengraceTempleChainOfHealing",
+          materiaIds: ["ch", "ch"]
+        },
+        {
+          itemId: "augmentedDeepshadowScaleMailOfHealing",
+          materiaIds: ["ch", "ch"]
+        },
+        {
+          itemId: "edengraceArmletsOfHealing",
+          materiaIds: ["ch", "ch"]
+        },
+        {
+          itemId: "edengraceTassetsOfHealing",
+          materiaIds: ["dh", "dh"]
+        },
+        {
+          itemId: "edengracePantaloonsOfHealing",
+          materiaIds: ["dh", "dh"]
+        },
+        {
+          itemId: "edengraceSandalsOfHealing",
+          materiaIds: ["ch", "dh"]
+        },
+        {
+          itemId: "augmentedDeepshadowEarringOfHealing",
+          materiaIds: ["dh", "dh"]
+        },
+        {
+          itemId: "edengraceChokerOfHealing",
+          materiaIds: ["ch", "ch"]
+        },
+        {
+          itemId: "edengraceBraceletOfHealing",
+          materiaIds: ["dh", "dh"]
+        },
+        {
+          itemId: "augmentedDeepshadowRingOfHealing",
+          materiaIds: ["dh", "dh"]
+        },
+        {
+          itemId: "deepshadowRingOfHealing",
+          materiaIds: ["dh", "det"]
+        }
+      ]
+    }
+  },
+  {
     description: "글쿨 2.39초 신앙 931 DPS 최적화 세트.",
     attributes: {
       main: 0,
@@ -57,7 +130,7 @@ const gearSets = [
     ch: 0,
     dialog: {
       intro:
-        '신앙을 낮추고 마시를 높여 DPS를 강화한 장비 세트입니다. 높은 DPS를 뽑아낼 수 있으나 MP 소모가 심하므로 숙련된 힐러분들께 추천드립니다. 음식은 "요술양배추 샐러드"를 섭취합니다.',
+        '신앙을 낮추고 마시를 높여 DPS를 강화한 장비 세트입니다. 높은 DPS를 뽑아낼 수 있으나 MP 소모가 심하고 신앙이 낮은 편이라 전투에 숙련된 힐러분들께 추천드립니다. 음식은 "요술양배추 샐러드"를 섭취합니다.',
       gears: [
         {
           itemId: "edengraceCane",
@@ -106,6 +179,225 @@ const gearSets = [
         {
           itemId: "deepshadowRingOfHealing",
           materiaIds: ["dh", "dh"]
+        }
+      ]
+    }
+  },
+  {
+    description: "글쿨 2.39초 신앙 1129 무난하게 사용 가능한 추천 세트.",
+    attributes: {
+      main: 0,
+      wd: 0,
+      ch: 0,
+      dh: 0,
+      det: 0,
+      sps: 0,
+      pie: 0
+    },
+    dps: 0,
+    hps: 0,
+    mpRegen: 0,
+    gcd: 0,
+    foodId: "kukuruRusk",
+    dh: 0,
+    ch: 0,
+    dialog: {
+      intro:
+        '응급 상황에도 편하게 대처할 수 있도록 신앙을 약간 높힌 장비 세트입니다. 어느 전투에서든 무난하게 사용 가능합니다. 마법 시전 속도를 맞추기 위해 음식은 "쿠쿠루 러스크"를 섭취합니다.',
+      gears: [
+        {
+          itemId: "edengraceCane",
+          materiaIds: ["ch", "ch"]
+        },
+        {
+          itemId: "edengraceTempleChainOfHealing",
+          materiaIds: ["ch", "ch"]
+        },
+        {
+          itemId: "augmentedDeepshadowScaleMailOfHealing",
+          materiaIds: ["ch", "ch"]
+        },
+        {
+          itemId: "edengraceArmletsOfHealing",
+          materiaIds: ["ch", "ch"]
+        },
+        {
+          itemId: "edengraceTassetsOfHealing",
+          materiaIds: ["dh", "dh"]
+        },
+        {
+          itemId: "edengracePantaloonsOfHealing",
+          materiaIds: ["dh", "dh"]
+        },
+        {
+          itemId: "edengraceSandalsOfHealing",
+          materiaIds: ["ch", "sps"]
+        },
+        {
+          itemId: "augmentedDeepshadowEarringOfHealing",
+          materiaIds: ["dh", "dh"]
+        },
+        {
+          itemId: "edengraceChokerOfHealing",
+          materiaIds: ["ch", "ch"]
+        },
+        {
+          itemId: "augmentedDeepshadowBraceletOfHealing",
+          materiaIds: ["ch", "ch"]
+        },
+        {
+          itemId: "edengraceRingOfHealing",
+          materiaIds: ["ch", "ch"]
+        },
+        {
+          itemId: "augmentedDeepshadowRingOfHealing",
+          materiaIds: ["dh", "dh"]
+        }
+      ]
+    }
+  },
+  {
+    description: "글쿨 2.34초 신앙 1129 빠른 마시 세트.",
+    attributes: {
+      main: 0,
+      wd: 0,
+      ch: 0,
+      dh: 0,
+      det: 0,
+      sps: 0,
+      pie: 0
+    },
+    dps: 0,
+    hps: 0,
+    mpRegen: 0,
+    gcd: 0,
+    foodId: "robeLettuceSalad",
+    dh: 0,
+    ch: 0,
+    dialog: {
+      intro:
+        '빠른 마법 시전 속도를 선호하시는 분들을 위한 장비 세트입니다. 음식은 "요술양배추 샐러드"를 섭취합니다.',
+      gears: [
+        {
+          itemId: "edengraceCane",
+          materiaIds: ["ch", "ch"]
+        },
+        {
+          itemId: "edengraceTempleChainOfHealing",
+          materiaIds: ["ch", "ch"]
+        },
+        {
+          itemId: "augmentedDeepshadowScaleMailOfHealing",
+          materiaIds: ["ch", "ch"]
+        },
+        {
+          itemId: "edengraceArmletsOfHealing",
+          materiaIds: ["ch", "ch"]
+        },
+        {
+          itemId: "edengraceTassetsOfHealing",
+          materiaIds: ["sps", "sps"]
+        },
+        {
+          itemId: "edengracePantaloonsOfHealing",
+          materiaIds: ["sps", "sps"]
+        },
+        {
+          itemId: "augmentedDeepshadowGreavesOfHealing",
+          materiaIds: ["ch", "sps"]
+        },
+        {
+          itemId: "augmentedDeepshadowEarringOfHealing",
+          materiaIds: ["sps", "sps"]
+        },
+        {
+          itemId: "edengraceChokerOfHealing",
+          materiaIds: ["ch", "ch"]
+        },
+        {
+          itemId: "augmentedDeepshadowBraceletOfHealing",
+          materiaIds: ["ch", "ch"]
+        },
+        {
+          itemId: "edengraceRingOfHealing",
+          materiaIds: ["ch", "ch"]
+        },
+        {
+          itemId: "augmentedDeepshadowRingOfHealing",
+          materiaIds: ["dh", "sps"]
+        }
+      ]
+    }
+  },
+  {
+    description: "글쿨 2.48초 신앙 1915 절 알렉산더 용.",
+    attributes: {
+      main: 0,
+      wd: 0,
+      ch: 0,
+      dh: 0,
+      det: 0,
+      sps: 0,
+      pie: 0
+    },
+    dps: 0,
+    hps: 0,
+    mpRegen: 0,
+    gcd: 0,
+    foodId: "robeLettuceSalad",
+    dh: 0,
+    ch: 0,
+    dialog: {
+      intro:
+        '글쿨을 낮추고 신앙을 최대한 높여 잦은 부활 및 힐 스킬 사용으로 인해 소모되는 MP를 최대한 커버하는 절 트라이용 장비 세트입니다. 전투에 익숙해지고 나면 2.39/1129 세트나 2.41/743 세트로 교체하시는 것을 추천드려요. 음식은 "요술양배추 샐러드"를 섭취합니다.',
+      gears: [
+        {
+          itemId: "edengraceCane",
+          materiaIds: ["ch", "ch"]
+        },
+        {
+          itemId: "augmentedDeepshadowHoodOfHealing",
+          materiaIds: ["ch", "det"]
+        },
+        {
+          itemId: "augmentedDeepshadowScaleMailOfHealing",
+          materiaIds: ["ch", "ch"]
+        },
+        {
+          itemId: "augmentedDeepshadowArmguardsOfHealing",
+          materiaIds: ["ch", "ch"]
+        },
+        {
+          itemId: "edengraceTassetsOfHealing",
+          materiaIds: ["dh", "det"]
+        },
+        {
+          itemId: "edengracePantaloonsOfHealing",
+          materiaIds: ["det", "det"]
+        },
+        {
+          itemId: "edengraceSandalsOfHealing",
+          materiaIds: ["det", "det"]
+        },
+        {
+          itemId: "augmentedDeepshadowEarringOfHealing",
+          materiaIds: ["dh", "det"]
+        },
+        {
+          itemId: "augmentedDeepshadowNecklaceOfHealing",
+          materiaIds: ["det", "det"]
+        },
+        {
+          itemId: "edengraceBraceletOfHealing",
+          materiaIds: ["det", "det"]
+        },
+        {
+          itemId: "edengraceRingOfHealing",
+          materiaIds: ["ch", "det"]
+        },
+        {
+          itemId: "augmentedDeepshadowRingOfHealing",
+          materiaIds: ["det", "det"]
         }
       ]
     }
@@ -452,6 +744,44 @@ class FiveOneBis extends PageComponent {
                   <Grid item />
                   <Grid item>
                     <li>{gearSet.dialog.intro}</li>
+                  </Grid>
+                  <Grid item>
+                    <TableContainer>
+                      <Table size="small">
+                        <TableHead>
+                          <TableRow>
+                            <TableCell align="center">정신력</TableCell>
+                            <TableCell align="center">극대</TableCell>
+                            <TableCell align="center">직격</TableCell>
+                            <TableCell align="center">의지</TableCell>
+                            <TableCell align="center">마시</TableCell>
+                            <TableCell align="center">신앙</TableCell>
+                          </TableRow>
+                        </TableHead>
+                        <TableBody>
+                          <TableRow>
+                            <TableCell align="center">
+                              {gearSet.attributes.main}
+                            </TableCell>
+                            <TableCell align="center">
+                              {gearSet.attributes.ch}
+                            </TableCell>
+                            <TableCell align="center">
+                              {gearSet.attributes.dh}
+                            </TableCell>
+                            <TableCell align="center">
+                              {gearSet.attributes.det}
+                            </TableCell>
+                            <TableCell align="center">
+                              {gearSet.attributes.sps}
+                            </TableCell>
+                            <TableCell align="center">
+                              {gearSet.attributes.pie}
+                            </TableCell>
+                          </TableRow>
+                        </TableBody>
+                      </Table>
+                    </TableContainer>
                   </Grid>
                   <Grid item>
                     <TableContainer>

@@ -11,6 +11,7 @@
 
   "ch": 60,
   "dh": 60,
+  "det": 60,
   "sps": 60,
 
   "whm": {
@@ -27,6 +28,16 @@
       "max": 155
     }
   },
+  "kukuruRusk": {
+    "ch": {
+      "value": 10,
+      "max": 155
+    },
+    "sps": {
+      "value": 10,
+      "max": 93
+    }
+  },
 
   "edengraceCane": {
     "wd": 164,
@@ -34,11 +45,22 @@
     "det": 467,
     "pie": 327
   },
+  "augmentedDeepshadowSignum": {
+    "wd": 163,
+    "main": 530,
+    "ch": 462,
+    "det": 323
+  },
 
   "edengraceTempleChainOfHealing": {
     "main": 303,
     "det": 264,
     "sps": 185
+  },
+  "augmentedDeepshadowHoodOfHealing": {
+    "main": 303,
+    "det": 185,
+    "pie": 264
   },
 
   "augmentedDeepshadowScaleMailOfHealing": {
@@ -51,6 +73,11 @@
     "main": 303,
     "det": 264,
     "sps": 185
+  },
+  "augmentedDeepshadowArmguardsOfHealing": {
+    "main": 303,
+    "det": 264,
+    "pie": 185
   },
 
   "edengraceTassetsOfHealing": {
@@ -70,6 +97,11 @@
     "ch": 185,
     "pie": 264
   },
+  "augmentedDeepshadowGreavesOfHealing": {
+    "main": 303,
+    "sps": 185,
+    "pie": 264
+  },
 
   "augmentedDeepshadowEarringOfHealing": {
     "main": 227,
@@ -82,13 +114,28 @@
     "det": 139,
     "sps": 198
   },
+  "augmentedDeepshadowNecklaceOfHealing": {
+    "main": 227,
+    "ch": 139,
+    "pie": 198
+  },
 
+  "edengraceBraceletOfHealing": {
+    "main": 227,
+    "ch": 198,
+    "pie": 139
+  },
   "augmentedDeepshadowBraceletOfHealing": {
     "main": 227,
     "det": 139,
     "sps": 198
   },
 
+  "edengraceRingOfHealing": {
+    "main": 227,
+    "det": 139,
+    "pie": 198
+  },
   "augmentedDeepshadowRingOfHealing": {
     "main": 227,
     "ch": 198,
