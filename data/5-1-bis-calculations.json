@@ -13,6 +13,7 @@
   "dh": 60,
   "det": 60,
   "sps": 60,
+  "pie": 60,
 
   "whm": {
     "mnd": 115
@@ -50,6 +51,12 @@
     "main": 530,
     "ch": 462,
     "det": 323
+  },
+  "wordOfGrace": {
+    "wd": 164,
+    "main": 544,
+    "ch": 467,
+    "pie": 327
   },
 
   "edengraceTempleChainOfHealing": {

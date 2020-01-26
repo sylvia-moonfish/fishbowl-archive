@@ -69,6 +69,17 @@ const pageData = {
               href: "/guide/job-guide/whm/5-1-bis"
             }
           ]
+        },
+        {
+          iconSrc: SiteInfo.assetsUrl + "/job-guide/sch.png",
+          name: "학자 가이드",
+          patches: [
+            {
+              name: "5.1 BiS",
+              thumbnailSrc: SiteInfo.assetsUrl + "/patch-banners/shb/5.1.png",
+              href: "/guide/job-guide/sch/5-1-bis"
+            }
+          ]
         }
       ]
     }

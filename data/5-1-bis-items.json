@@ -30,6 +30,9 @@
   "ten": {
     "name": "불굴 (강유)"
   },
+  "pie": {
+    "name": "신앙 (신앙)"
+  },
 
   "edengraceBastardSword": {
     "from": "영웅 레이드",
@@ -229,6 +232,13 @@
     "iconSrc": "/icons/items/augmented-deepshadow-signum.png",
     "name": "보강된 암영 문장지팡이",
     "required": "환상 석판 1000개\n초경량 석판\n암영 강화약\n(3층 낱장 x 4)",
+    "type": "무기"
+  },
+  "wordOfGrace": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/word-of-grace.png",
+    "name": "에덴의 은총 잠언",
+    "required": "4층 낱장 x 8",
     "type": "무기"
   },
 
