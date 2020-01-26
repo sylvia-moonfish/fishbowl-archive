@@ -11,6 +11,9 @@
   "kukuruRusk": {
     "name": "쿠쿠루 러스크"
   },
+  "pixieberryTea": {
+    "name": "픽시딸기 차"
+  },
 
   "ch": {
     "name": "극대 (무략)"
@@ -238,6 +241,13 @@
     "from": "영웅 레이드",
     "iconSrc": "/icons/items/word-of-grace.png",
     "name": "에덴의 은총 잠언",
+    "required": "4층 낱장 x 8",
+    "type": "무기"
+  },
+  "edengracePlainsphere": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-plainsphere.png",
+    "name": "에덴의 은총 천궁도",
     "required": "4층 낱장 x 8",
     "type": "무기"
   },

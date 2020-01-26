@@ -39,6 +39,16 @@
       "max": 93
     }
   },
+  "pixieberryTea": {
+    "det": {
+      "value": 10,
+      "max": 93
+    },
+    "pie": {
+      "value": 10,
+      "max": 155
+    }
+  },
 
   "edengraceCane": {
     "wd": 164,
@@ -57,6 +67,12 @@
     "main": 544,
     "ch": 467,
     "pie": 327
+  },
+  "edengracePlainsphere": {
+    "wd": 164,
+    "main": 544,
+    "det": 327,
+    "pie": 467
   },
 
   "edengraceTempleChainOfHealing": {
