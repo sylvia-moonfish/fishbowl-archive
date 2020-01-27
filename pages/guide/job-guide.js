@@ -92,6 +92,18 @@ const pageData = {
             }
           ]
         }
+        /*'divider',
+        {
+          iconSrc: SiteInfo.assetsUrl + "/job-guide/mnk.png",
+          name: "몽크 가이드",
+          patches: [
+            {
+              name: "5.1 BiS",
+              thumbnailSrc: SiteInfo.assetsUrl + "/patch-banners/shb/5.1.png",
+              href: "/guide/job-guide/mnk/5-1-bis"
+            }
+          ]
+        }*/
       ]
     }
   ]
