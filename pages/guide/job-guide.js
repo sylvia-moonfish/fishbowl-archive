@@ -91,8 +91,8 @@ const pageData = {
               href: "/guide/job-guide/ast/5-1-bis"
             }
           ]
-        }
-        /*'divider',
+        },
+        "divider",
         {
           iconSrc: SiteInfo.assetsUrl + "/job-guide/mnk.png",
           name: "몽크 가이드",
@@ -103,7 +103,7 @@ const pageData = {
               href: "/guide/job-guide/mnk/5-1-bis"
             }
           ]
-        }*/
+        }
       ]
     }
   ]
