@@ -115,6 +115,14 @@
     "type": "무기"
   },
 
+  "edengraceSpear": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-spear.png",
+    "name": "에덴의 은총 창",
+    "required": "4층 낱장 x 8",
+    "type": "무기"
+  },
+
   "================================================== Head: Tank ==================================================": {},
   "edengraceArmetOfFending": {
     "from": "영웅 레이드",
@@ -148,6 +156,13 @@
   },
 
   "================================================== Head: Melee ==================================================": {},
+  "augmentedDeepshadowHelmOfMaiming": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-helm-of-maiming.png",
+    "name": "보강된 암영 학살자 투구",
+    "required": "환상 석판 495개\n암영 강화섬유\n(3층 낱장 x 4)",
+    "type": "머리"
+  },
   "augmentedDeepshadowHalfmaskOfStriking": {
     "from": "석판 보강",
     "iconSrc": "/icons/items/augmented-deepshadow-halfmask-of-striking.png",
@@ -182,6 +197,14 @@
   },
 
   "================================================== Body: Melee ==================================================": {},
+  "edengraceMailOfMaiming": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-mail-of-maiming.png",
+    "name": "에덴의 은총 학살자 갑옷",
+    "required": "4층 낱장 x 8",
+    "type": "몸통"
+  },
+
   "edengraceRobeOfStriking": {
     "from": "영웅 레이드",
     "iconSrc": "/icons/items/edengrace-robe-of-striking.png",
@@ -230,6 +253,14 @@
   },
 
   "================================================== Hands: Melee ==================================================": {},
+  "edengraceGauntletsOfMaiming": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-gauntlets-of-maiming.png",
+    "name": "에덴의 은총 학살자 건틀릿",
+    "required": "2층 낱장 x 6",
+    "type": "손"
+  },
+
   "edengraceArmletsOfStriking": {
     "from": "영웅 레이드",
     "iconSrc": "/icons/items/edengrace-armlets-of-striking.png",
@@ -264,6 +295,14 @@
   },
 
   "================================================== Waist: Melee ==================================================": {},
+  "edengraceTassetsOfMaiming": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-tassets-of-maiming.png",
+    "name": "에덴의 은총 학살자 허리갑옷",
+    "required": "1층 낱장 x 6",
+    "type": "허리"
+  },
+
   "edengraceTassetsOfStriking": {
     "from": "영웅 레이드",
     "iconSrc": "/icons/items/edengrace-tassets-of-striking.png",
@@ -305,6 +344,14 @@
   },
 
   "================================================== Legs: Melee ==================================================": {},
+  "edengraceTrousersOfMaiming": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-trousers-of-maiming.png",
+    "name": "에덴의 은총 학살자 긴바지",
+    "required": "3층 낱장 x 8",
+    "type": "다리"
+  },
+
   "edengracePantaloonsOfStriking": {
     "from": "영웅 레이드",
     "iconSrc": "/icons/items/edengrace-pantaloons-of-striking.png",
@@ -346,6 +393,14 @@
   },
 
   "================================================== Feet: Melee ==================================================": {},
+  "augmentedDeepshadowSolleretsOfMaiming": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-sollerets-of-maiming.png",
+    "name": "보강된 암영 학살자 쇠구두",
+    "required": "환상 석판 495개\n암영 강화섬유\n(3층 낱장 x 4)",
+    "type": "발"
+  },
+
   "augmentedDeepshadowGreavesOfStriking": {
     "from": "석판 보강",
     "iconSrc": "/icons/items/augmented-deepshadow-greaves-of-striking.png",
