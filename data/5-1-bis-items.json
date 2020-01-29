@@ -54,6 +54,7 @@
     "required": "4층 낱장 x 3",
     "type": "방패"
   },
+
   "edengraceBattleaxe": {
     "from": "영웅 레이드",
     "iconSrc": "/icons/items/edengrace-battleaxe.png",
@@ -61,6 +62,7 @@
     "required": "4층 낱장 x 8",
     "type": "무기"
   },
+
   "edengraceGreatsword": {
     "from": "영웅 레이드",
     "iconSrc": "/icons/items/edengrace-greatsword.png",
@@ -68,6 +70,7 @@
     "required": "4층 낱장 x 8",
     "type": "무기"
   },
+
   "edengraceManatrigger": {
     "from": "영웅 레이드",
     "iconSrc": "/icons/items/edengrace-manatrigger.png",
@@ -91,6 +94,7 @@
     "required": "환상 석판 1000개\n초경량 석판\n암영 강화약\n(3층 낱장 x 4)",
     "type": "무기"
   },
+
   "wordOfGrace": {
     "from": "영웅 레이드",
     "iconSrc": "/icons/items/word-of-grace.png",
@@ -98,6 +102,7 @@
     "required": "4층 낱장 x 8",
     "type": "무기"
   },
+
   "edengracePlainsphere": {
     "from": "영웅 레이드",
     "iconSrc": "/icons/items/edengrace-plainsphere.png",
@@ -107,6 +112,14 @@
   },
 
   "================================================== Weapon: Melee ==================================================": {},
+  "edengraceSpear": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-spear.png",
+    "name": "에덴의 은총 창",
+    "required": "4층 낱장 x 8",
+    "type": "무기"
+  },
+
   "edengraceKnuckles": {
     "from": "영웅 레이드",
     "iconSrc": "/icons/items/edengrace-knuckles.png",
@@ -115,10 +128,10 @@
     "type": "무기"
   },
 
-  "edengraceSpear": {
+  "edengraceKnives": {
     "from": "영웅 레이드",
-    "iconSrc": "/icons/items/edengrace-spear.png",
-    "name": "에덴의 은총 창",
+    "iconSrc": "/icons/items/edengrace-knives.png",
+    "name": "에덴의 은총 단검",
     "required": "4층 낱장 x 8",
     "type": "무기"
   },
@@ -163,10 +176,19 @@
     "required": "환상 석판 495개\n암영 강화섬유\n(3층 낱장 x 4)",
     "type": "머리"
   },
+
   "augmentedDeepshadowHalfmaskOfStriking": {
     "from": "석판 보강",
     "iconSrc": "/icons/items/augmented-deepshadow-halfmask-of-striking.png",
     "name": "보강된 암영 타격대 반가면",
+    "required": "환상 석판 495개\n암영 강화섬유\n(3층 낱장 x 4)",
+    "type": "머리"
+  },
+
+  "augmentedDeepshadowMaskOfScouting": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-mask-of-scouting.png",
+    "name": "보강된 암영 정찰대 가면",
     "required": "환상 석판 495개\n암영 강화섬유\n(3층 낱장 x 4)",
     "type": "머리"
   },
@@ -227,6 +249,14 @@
     "type": "몸통"
   },
 
+  "augmentedDeepshadowScaleMailOfScouting": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-scale-mail-of-scouting.png",
+    "name": "보강된 암영 정찰대 미늘갑옷",
+    "required": "환상 석판 825개\n암영 강화섬유\n(3층 낱장 x 4)",
+    "type": "몸통"
+  },
+
   "================================================== Hands: Tank ==================================================": {},
   "edengraceGauntletsOfFending": {
     "from": "영웅 레이드",
@@ -283,6 +313,14 @@
     "type": "손"
   },
 
+  "augmentedDeepshadowGlovesOfScouting": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-gloves-of-scouting.png",
+    "name": "보강된 암영 정찰대 장갑",
+    "required": "환상 석판 495개\n암영 강화섬유\n(3층 낱장 x 4)",
+    "type": "손"
+  },
+
   "================================================== Waist: Tank ==================================================": {},
   "edengraceTassetsOfFending": {
     "from": "영웅 레이드",
@@ -332,6 +370,14 @@
     "type": "허리"
   },
 
+  "augmentedDeepshadowTassetsOfScouting": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-tassets-of-scouting.png",
+    "name": "보강된 암영 정찰대 허리갑옷",
+    "required": "환상 석판 375개\n암영 경화약\n(2층 낱장 x 4)",
+    "type": "허리"
+  },
+
   "================================================== Legs: Tank ==================================================": {},
   "edengraceTrousersOfFending": {
     "from": "영웅 레이드",
@@ -370,6 +416,14 @@
     "from": "영웅 레이드",
     "iconSrc": "/icons/items/edengrace-pantaloons-of-striking.png",
     "name": "에덴의 은총 타격대 나팔바지",
+    "required": "3층 낱장 x 8",
+    "type": "다리"
+  },
+
+  "edengraceBreechesOfScouting": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-breeches-of-scouting.png",
+    "name": "에덴의 은총 정찰대 바지",
     "required": "3층 낱장 x 8",
     "type": "다리"
   },
@@ -420,6 +474,14 @@
     "iconSrc": "/icons/items/augmented-deepshadow-greaves-of-striking.png",
     "name": "보강된 암영 타격대 갑주장화",
     "required": "환상 석판 495개\n암영 강화섬유\n(3층 낱장 x 4)",
+    "type": "발"
+  },
+
+  "edengraceThighbootsOfScouting": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-thighboots-of-scouting.png",
+    "name": "에덴의 은총 정찰대 허벅지장화",
+    "required": "2층 낱장 x 6",
     "type": "발"
   },
 
