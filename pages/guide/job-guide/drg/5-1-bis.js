@@ -176,25 +176,25 @@ const gearSets = [
         }
       ]
     }
-  }
-  /*{
+  },
+  {
     description: "글쿨 2.38초 세트. 빠른 기시속을 선호할 경우 추천.",
     attributes: {
       main: 4237,
       wd: 122,
-      ch: 3667,
-      dh: 2472,
-      det: 1814,
-      sks: 814
+      ch: 3520,
+      dh: 2106,
+      det: 1635,
+      sks: 1526
     },
-    dps: 14116.94,
+    dps: 14134.58,
     gcd: 0,
     foodId: "popotoSalad",
     dh: 0,
     ch: 0,
     dialog: {
       intro:
-          '',
+        '빠른 기시속을 선호하시는 분들께 추천드리는 글로벌 쿨다운 2.38초 장비 세트입니다. 기시속이 빨라서 시뮬레이션 DPS는 높은 편이지만 실제로 전투 최적화가 진행되면 2.49초나 2.45초 세트보다 엔드 DPS가 떨어질 수 있습니다. 음식은 "포포토 샐러드"를 섭취합니다.',
       gears: [
         {
           itemId: "edengraceSpear",
@@ -205,11 +205,11 @@ const gearSets = [
           materiaIds: ["dh", "dh"]
         },
         {
-          itemId: "augmented",
+          itemId: "augmentedDeepshadowCuirassOfMaiming",
           materiaIds: ["ch", "ch"]
         },
         {
-          itemId: "augmented",
+          itemId: "augmentedDeepshadowGauntletsOfMaiming",
           materiaIds: ["ch", "dh"]
         },
         {
@@ -225,7 +225,7 @@ const gearSets = [
           materiaIds: ["dh", "sks"]
         },
         {
-          itemId: "edengrace",
+          itemId: "edengraceEarringOfSlaying",
           materiaIds: ["ch", "ch"]
         },
         {
@@ -246,7 +246,7 @@ const gearSets = [
         }
       ]
     }
-  }*/
+  }
 ];
 
 class FiveOneBis extends PageComponent {

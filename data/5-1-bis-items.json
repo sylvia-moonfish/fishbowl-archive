@@ -204,6 +204,13 @@
     "required": "4층 낱장 x 8",
     "type": "몸통"
   },
+  "augmentedDeepshadowCuirassOfMaiming": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-cuirass-of-maiming.png",
+    "name": "보강된 암영 학살자 전투흉갑",
+    "required": "환상 석판 825개\n암영 강화섬유\n(3층 낱장 x 4)",
+    "type": "몸통"
+  },
 
   "edengraceRobeOfStriking": {
     "from": "영웅 레이드",
@@ -258,6 +265,13 @@
     "iconSrc": "/icons/items/edengrace-gauntlets-of-maiming.png",
     "name": "에덴의 은총 학살자 건틀릿",
     "required": "2층 낱장 x 6",
+    "type": "손"
+  },
+  "augmentedDeepshadowGauntletsOfMaiming": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-gauntlets-of-maiming.png",
+    "name": "보강된 암영 학살자 건틀릿",
+    "required": "환상 석판 495개\n암영 강화섬유\n(3층 낱장 x 4)",
     "type": "손"
   },
 
@@ -435,6 +449,13 @@
   },
 
   "================================================== Earrings: Melee ==================================================": {},
+  "edengraceEarringOfSlaying": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-earring-of-slaying.png",
+    "name": "에덴의 은총 공격대 귀걸이",
+    "required": "1층 낱장 x 4",
+    "type": "귀걸이"
+  },
   "augmentedDeepshadowEarringOfSlaying": {
     "from": "석판 보강",
     "iconSrc": "/icons/items/augmented-deepshadow-earring-of-slaying.png",
