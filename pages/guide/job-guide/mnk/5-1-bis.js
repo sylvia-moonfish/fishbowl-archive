@@ -38,77 +38,6 @@ const pageData = {
 
 const gearSets = [
   {
-    description: "질풍글쿨 1.94초 극대 추천 세트.",
-    attributes: {
-      main: 4220,
-      wd: 122,
-      ch: 3522,
-      dh: 2161,
-      det: 2082,
-      sks: 1021
-    },
-    dps: 15196.47,
-    gcd: 0,
-    glGcd: 1.94,
-    foodId: "popotoSalad",
-    dh: 0,
-    ch: 0,
-    dialog: {
-      intro:
-        '질풍번개 4중첩 시 글로벌 쿨다운을 1.94초에 맞추고 극대를 높인 장비 세트입니다. 음식은 "포포토 샐러드"를 섭취합니다.',
-      gears: [
-        {
-          itemId: "edengraceKnuckles",
-          materiaIds: ["dh", "dh"]
-        },
-        {
-          itemId: "augmentedDeepshadowHalfmaskOfStriking",
-          materiaIds: ["dh", "sks"]
-        },
-        {
-          itemId: "augmentedDeepshadowScaleMailOfStriking",
-          materiaIds: ["ch", "ch"]
-        },
-        {
-          itemId: "edengraceArmletsOfStriking",
-          materiaIds: ["dh", "dh"]
-        },
-        {
-          itemId: "augmentedDeepshadowTassetsOfStriking",
-          materiaIds: ["dh", "dh"]
-        },
-        {
-          itemId: "edengracePantaloonsOfStriking",
-          materiaIds: ["ch", "ch"]
-        },
-        {
-          itemId: "augmentedDeepshadowGreavesOfStriking",
-          materiaIds: ["dh", "dh"]
-        },
-        {
-          itemId: "augmentedDeepshadowEarringOfSlaying",
-          materiaIds: ["dh", "dh"]
-        },
-        {
-          itemId: "edengraceChokerOfSlaying",
-          materiaIds: ["dh", "sks"]
-        },
-        {
-          itemId: "augmentedDeepshadowBraceletOfSlaying",
-          materiaIds: ["dh", "dh"]
-        },
-        {
-          itemId: "edengraceRingOfSlaying",
-          materiaIds: ["dh", "dh"]
-        },
-        {
-          itemId: "augmentedDeepshadowRingOfSlaying",
-          materiaIds: ["ch", "det"]
-        }
-      ]
-    }
-  },
-  {
     description:
       "질풍글쿨 1.96초 직격 세트. 인터넷 환경이 좋지 않을 경우 추천.",
     attributes: {
@@ -172,6 +101,78 @@ const gearSets = [
         {
           itemId: "edengraceRingOfSlaying",
           materiaIds: ["dh", "det"]
+        },
+        {
+          itemId: "augmentedDeepshadowRingOfSlaying",
+          materiaIds: ["ch", "det"]
+        }
+      ]
+    }
+  },
+  {
+    description:
+      "질풍글쿨 1.94초 극대 위주 세트. 무난하게 사용 가능한 추천 세트.",
+    attributes: {
+      main: 4220,
+      wd: 122,
+      ch: 3522,
+      dh: 2161,
+      det: 2082,
+      sks: 1021
+    },
+    dps: 15196.47,
+    gcd: 0,
+    glGcd: 1.94,
+    foodId: "popotoSalad",
+    dh: 0,
+    ch: 0,
+    dialog: {
+      intro:
+        '질풍번개 4중첩 시 글로벌 쿨다운을 1.94초에 맞추고 극대를 높인 장비 세트입니다. 음식은 "포포토 샐러드"를 섭취합니다.',
+      gears: [
+        {
+          itemId: "edengraceKnuckles",
+          materiaIds: ["dh", "dh"]
+        },
+        {
+          itemId: "augmentedDeepshadowHalfmaskOfStriking",
+          materiaIds: ["dh", "sks"]
+        },
+        {
+          itemId: "augmentedDeepshadowScaleMailOfStriking",
+          materiaIds: ["ch", "ch"]
+        },
+        {
+          itemId: "edengraceArmletsOfStriking",
+          materiaIds: ["dh", "dh"]
+        },
+        {
+          itemId: "augmentedDeepshadowTassetsOfStriking",
+          materiaIds: ["dh", "dh"]
+        },
+        {
+          itemId: "edengracePantaloonsOfStriking",
+          materiaIds: ["ch", "ch"]
+        },
+        {
+          itemId: "augmentedDeepshadowGreavesOfStriking",
+          materiaIds: ["dh", "dh"]
+        },
+        {
+          itemId: "augmentedDeepshadowEarringOfSlaying",
+          materiaIds: ["dh", "dh"]
+        },
+        {
+          itemId: "edengraceChokerOfSlaying",
+          materiaIds: ["dh", "sks"]
+        },
+        {
+          itemId: "augmentedDeepshadowBraceletOfSlaying",
+          materiaIds: ["dh", "dh"]
+        },
+        {
+          itemId: "edengraceRingOfSlaying",
+          materiaIds: ["dh", "dh"]
         },
         {
           itemId: "augmentedDeepshadowRingOfSlaying",

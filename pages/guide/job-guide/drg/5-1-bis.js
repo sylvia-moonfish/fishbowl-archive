@@ -38,9 +38,9 @@ const pageData = {
 
 const gearSets = [
   {
-    description: "글쿨 2.49초 극대 세트.",
+    description: "글쿨 2.49초 극대 위주 느린 글쿨 세트.",
     attributes: {
-      main: 4240,
+      main: 4237,
       wd: 122,
       ch: 3605,
       dh: 2772,
@@ -106,7 +106,147 @@ const gearSets = [
         }
       ]
     }
+  },
+  {
+    description: "글쿨 2.45초 무난하게 사용 가능한 추천 세트.",
+    attributes: {
+      main: 4237,
+      wd: 122,
+      ch: 3667,
+      dh: 2472,
+      det: 1814,
+      sks: 814
+    },
+    dps: 14116.94,
+    gcd: 0,
+    foodId: "popotoSalad",
+    dh: 0,
+    ch: 0,
+    dialog: {
+      intro:
+        '2.49초 세트에서 몇몇 장비의 마테리아를 기시 마테로 바꾸어 글로벌 쿨다운을 2.45초로 맞추고 기믹 처리를 좀 더 여유롭게 할 수 있도록 최적화한 장비 세트입니다. 음식은 "포포토 샐러드"를 섭취합니다.',
+      gears: [
+        {
+          itemId: "edengraceSpear",
+          materiaIds: ["ch", "ch"]
+        },
+        {
+          itemId: "augmentedDeepshadowHelmOfMaiming",
+          materiaIds: ["dh", "dh"]
+        },
+        {
+          itemId: "edengraceMailOfMaiming",
+          materiaIds: ["dh", "det"]
+        },
+        {
+          itemId: "edengraceGauntletsOfMaiming",
+          materiaIds: ["ch", "ch"]
+        },
+        {
+          itemId: "edengraceTassetsOfMaiming",
+          materiaIds: ["dh", "sks"]
+        },
+        {
+          itemId: "edengraceTrousersOfMaiming",
+          materiaIds: ["ch", "ch"]
+        },
+        {
+          itemId: "augmentedDeepshadowSolleretsOfMaiming",
+          materiaIds: ["dh", "sks"]
+        },
+        {
+          itemId: "augmentedDeepshadowEarringOfSlaying",
+          materiaIds: ["det", "sks"]
+        },
+        {
+          itemId: "edengraceChokerOfSlaying",
+          materiaIds: ["dh", "sks"]
+        },
+        {
+          itemId: "augmentedDeepshadowBraceletOfSlaying",
+          materiaIds: ["dh", "sks"]
+        },
+        {
+          itemId: "edengraceRingOfSlaying",
+          materiaIds: ["dh", "dh"]
+        },
+        {
+          itemId: "augmentedDeepshadowRingOfSlaying",
+          materiaIds: ["ch", "sks"]
+        }
+      ]
+    }
   }
+  /*{
+    description: "글쿨 2.38초 세트. 빠른 기시속을 선호할 경우 추천.",
+    attributes: {
+      main: 4237,
+      wd: 122,
+      ch: 3667,
+      dh: 2472,
+      det: 1814,
+      sks: 814
+    },
+    dps: 14116.94,
+    gcd: 0,
+    foodId: "popotoSalad",
+    dh: 0,
+    ch: 0,
+    dialog: {
+      intro:
+          '',
+      gears: [
+        {
+          itemId: "edengraceSpear",
+          materiaIds: ["ch", "ch"]
+        },
+        {
+          itemId: "augmentedDeepshadowHelmOfMaiming",
+          materiaIds: ["dh", "dh"]
+        },
+        {
+          itemId: "augmented",
+          materiaIds: ["ch", "ch"]
+        },
+        {
+          itemId: "augmented",
+          materiaIds: ["ch", "dh"]
+        },
+        {
+          itemId: "edengraceTassetsOfMaiming",
+          materiaIds: ["dh", "sks"]
+        },
+        {
+          itemId: "edengraceTrousersOfMaiming",
+          materiaIds: ["ch", "ch"]
+        },
+        {
+          itemId: "augmentedDeepshadowSolleretsOfMaiming",
+          materiaIds: ["dh", "sks"]
+        },
+        {
+          itemId: "edengrace",
+          materiaIds: ["ch", "ch"]
+        },
+        {
+          itemId: "edengraceChokerOfSlaying",
+          materiaIds: ["dh", "sks"]
+        },
+        {
+          itemId: "augmentedDeepshadowBraceletOfSlaying",
+          materiaIds: ["dh", "sks"]
+        },
+        {
+          itemId: "edengraceRingOfSlaying",
+          materiaIds: ["dh", "dh"]
+        },
+        {
+          itemId: "augmentedDeepshadowRingOfSlaying",
+          materiaIds: ["ch", "sks"]
+        }
+      ]
+    }
+  }*/
 ];
 
 class FiveOneBis extends PageComponent {
