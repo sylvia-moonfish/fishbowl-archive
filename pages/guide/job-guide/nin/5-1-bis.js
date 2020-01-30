@@ -32,13 +32,13 @@ const transition = React.forwardRef((props, ref) => {
 });
 
 const pageData = {
-  title: "닌자 가이드 - 5.1 BiS",
-  description: "파이널 판타지 14 닌자 가이드 - 5.1 BiS"
+  title: "닌자 가이드 - 5.08 BiS",
+  description: "파이널 판타지 14 닌자 가이드 - 5.08 BiS"
 };
 
 const gearSets = [
   {
-    description: "풍둔 글쿨 2.1초 세트.",
+    description: "풍둔 글쿨 2.1초 직격 위주 추천 세트.",
     attributes: {
       main: 4223,
       wd: 122,
@@ -54,7 +54,8 @@ const gearSets = [
     dh: 0,
     ch: 0,
     dialog: {
-      intro: "ㅁㄴㅇㄹ",
+      intro:
+        '일반 글로벌 쿨다운 2.48초, 풍둔 글로벌 쿨다운 2.1초에 맞추고 직격에 중점을 둔 장비 세트입니다. 무난하게 사용 가능한 추천 세트입니다. 음식은 "요술양배추 샐러드"를 섭취합니다.',
       gears: [
         {
           itemId: "edengraceKnives",
@@ -89,19 +90,90 @@ const gearSets = [
           materiaIds: ["ch", "ch"]
         },
         {
-          itemId: "augmented",
+          itemId: "augmentedDeepshadowNecklaceOfAiming",
           materiaIds: ["ch", "ch"]
         },
         {
-          itemId: "edengrace",
+          itemId: "edengraceBraceletOfAiming",
           materiaIds: ["ch", "ch"]
         },
         {
-          itemId: "edengrace",
+          itemId: "edengraceRingOfAiming",
           materiaIds: ["ch", "det"]
         },
         {
-          itemId: "augmented",
+          itemId: "augmentedDeepshadowRingOfAiming",
+          materiaIds: ["ch", "ch"]
+        }
+      ]
+    }
+  },
+  {
+    description: "풍둔 글쿨 2.02초 세트. 빠른 기시속을 선호할 경우 추천.",
+    attributes: {
+      main: 4223,
+      wd: 122,
+      ch: 3256,
+      dh: 2268,
+      det: 1664,
+      sks: 1598
+    },
+    dps: 13323.45,
+    gcd: 0,
+    futonGcd: 0,
+    foodId: "robeLettuceSalad",
+    dh: 0,
+    ch: 0,
+    dialog: {
+      intro:
+        '풍둔 글로벌 쿨다운이 2.02초 극대 위주 빠른 기시속을 선호하시는 분들께 추천하는 장비 세트입니다. 음식은 "요술양배추 샐러드"를 섭취합니다.',
+      gears: [
+        {
+          itemId: "edengraceKnives",
+          materiaIds: ["ch", "ch"]
+        },
+        {
+          itemId: "augmentedDeepshadowMaskOfScouting",
+          materiaIds: ["ch", "det"]
+        },
+        {
+          itemId: "edengraceJacketOfScouting",
+          materiaIds: ["det", "det"]
+        },
+        {
+          itemId: "augmentedDeepshadowGlovesOfScouting",
+          materiaIds: ["dh", "dh"]
+        },
+        {
+          itemId: "augmentedDeepshadowTassetsOfScouting",
+          materiaIds: ["ch", "ch"]
+        },
+        {
+          itemId: "edengraceBreechesOfScouting",
+          materiaIds: ["dh", "dh"]
+        },
+        {
+          itemId: "augmentedDeepshadowGreavesOfScouting",
+          materiaIds: ["dh", "dh"]
+        },
+        {
+          itemId: "augmentedDeepshadowEarringOfAiming",
+          materiaIds: ["ch", "dh"]
+        },
+        {
+          itemId: "edengraceChokerOfAiming",
+          materiaIds: ["ch", "dh"]
+        },
+        {
+          itemId: "augmentedDeepshadowBraceletOfAiming",
+          materiaIds: ["dh", "dh"]
+        },
+        {
+          itemId: "edengraceRingOfAiming",
+          materiaIds: ["ch", "dh"]
+        },
+        {
+          itemId: "augmentedDeepshadowRingOfAiming",
           materiaIds: ["ch", "ch"]
         }
       ]
@@ -192,8 +264,8 @@ class FiveOneBis extends PageComponent {
                 </Grid>
                 <Grid item>
                   <Typography variant="body1">
-                    패치 5.1 기준 닌자의 Best-In-Slot 장비 세트 목록입니다. 아래
-                    표에서 열람하고자 하는 세트 목록을 클릭해주세요.
+                    패치 5.08 기준 닌자의 Best-In-Slot 장비 세트 목록입니다.
+                    아래 표에서 열람하고자 하는 세트 목록을 클릭해주세요.
                   </Typography>
                   <br />
                   <li>

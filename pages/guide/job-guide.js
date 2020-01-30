@@ -114,18 +114,18 @@ const pageData = {
               href: "/guide/job-guide/drg/5-1-bis"
             }
           ]
-        }
-        /*{
+        },
+        {
           iconSrc: SiteInfo.assetsUrl + "/job-guide/nin.png",
           name: "닌자 가이드",
           patches: [
             {
-              name: "5.1 BiS",
-              thumbnailSrc: SiteInfo.assetsUrl + "/patch-banners/shb/5.1.png",
+              name: "5.08 BiS",
+              thumbnailSrc: SiteInfo.assetsUrl + "/patch-banners/shb/5.0.png",
               href: "/guide/job-guide/nin/5-1-bis"
             }
           ]
-        }*/
+        }
       ]
     }
   ]

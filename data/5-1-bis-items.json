@@ -249,6 +249,13 @@
     "type": "몸통"
   },
 
+  "edengraceJacketOfScouting": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-jacket-of-scouting.png",
+    "name": "에덴의 은총 정찰대 재킷",
+    "required": "4층 낱장 x 8",
+    "type": "몸통"
+  },
   "augmentedDeepshadowScaleMailOfScouting": {
     "from": "석판 보강",
     "iconSrc": "/icons/items/augmented-deepshadow-scale-mail-of-scouting.png",
@@ -484,6 +491,13 @@
     "required": "2층 낱장 x 6",
     "type": "발"
   },
+  "augmentedDeepshadowGreavesOfScouting": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-greaves-of-scouting.png",
+    "name": "보강된 암영 정찰대 갑주장화",
+    "required": "환상 석판 495개\n암영 강화섬유\n(3층 낱장 x 4)",
+    "type": "발"
+  },
 
   "================================================== Earrings: Tank ==================================================": {},
   "edengraceEarringOfFending": {
@@ -534,6 +548,13 @@
     "required": "1층 낱장 x 4",
     "type": "귀걸이"
   },
+  "augmentedDeepshadowEarringOfAiming": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-earring-of-aiming.png",
+    "name": "보강된 암영 유격대 귀걸이",
+    "required": "환상 석판 375개\n암영 경화약\n(2층 낱장 x 4)",
+    "type": "귀걸이"
+  },
 
   "================================================== Necklace: Tank ==================================================": {},
   "edengraceChokerOfFending": {
@@ -567,12 +588,28 @@
     "type": "목걸이"
   },
 
-  "================================================== Necklace: Melee ==================================================": {},
+  "================================================== Necklace: Strength ==================================================": {},
   "edengraceChokerOfSlaying": {
     "from": "영웅 레이드",
     "iconSrc": "/icons/items/edengrace-choker-of-slaying.png",
     "name": "에덴의 은총 공격대 목장식",
     "required": "1층 낱장 x 4",
+    "type": "목걸이"
+  },
+
+  "================================================== Necklace: Dexterity ==================================================": {},
+  "edengraceChokerOfAiming": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-choker-of-aiming.png",
+    "name": "에덴의 은총 유격대 목장식",
+    "required": "1층 낱장 x 4",
+    "type": "목걸이"
+  },
+  "augmentedDeepshadowNecklaceOfAiming": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-necklace-of-aiming.png",
+    "name": "보강된 암영 유격대 목걸이",
+    "required": "환상 석판 375개\n암영 경화약\n(2층 낱장 x 4)",
     "type": "목걸이"
   },
 
@@ -608,11 +645,27 @@
     "type": "팔찌"
   },
 
-  "================================================== Bracelets: Melee ==================================================": {},
+  "================================================== Bracelets: Strength ==================================================": {},
   "augmentedDeepshadowBraceletOfSlaying": {
     "from": "석판 보강",
     "iconSrc": "/icons/items/augmented-deepshadow-bracelet-of-slaying.png",
     "name": "보강된 암영 공격대 팔찌",
+    "required": "환상 석판 375개\n암영 경화약\n(2층 낱장 x 4)",
+    "type": "팔찌"
+  },
+
+  "================================================== Bracelets: Dexterity ==================================================": {},
+  "edengraceBraceletOfAiming": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-bracelet-of-aiming.png",
+    "name": "에덴의 은총 유격대 팔찌",
+    "required": "1층 낱장 x 4",
+    "type": "팔찌"
+  },
+  "augmentedDeepshadowBraceletOfAiming": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-bracelet-of-aiming.png",
+    "name": "보강된 암영 유격대 팔찌",
     "required": "환상 석판 375개\n암영 경화약\n(2층 낱장 x 4)",
     "type": "팔찌"
   },
@@ -656,7 +709,7 @@
     "type": "반지"
   },
 
-  "================================================== Ring: Melee ==================================================": {},
+  "================================================== Ring: Strength ==================================================": {},
   "edengraceRingOfSlaying": {
     "from": "영웅 레이드",
     "iconSrc": "/icons/items/edengrace-ring-of-slaying.png",
@@ -668,6 +721,22 @@
     "from": "석판 보강",
     "iconSrc": "/icons/items/augmented-deepshadow-ring-of-slaying.png",
     "name": "보강된 암영 공격대 반지",
+    "required": "환상 석판 375개\n암영 경화약\n(2층 낱장 x 4)",
+    "type": "반지"
+  },
+
+  "================================================== Ring: Dexterity ==================================================": {},
+  "edengraceRingOfAiming": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-ring-of-aiming.png",
+    "name": "에덴의 은총 유격대 반지",
+    "required": "1층 낱장 x 4",
+    "type": "반지"
+  },
+  "augmentedDeepshadowRingOfAiming": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-ring-of-aiming.png",
+    "name": "보강된 암영 유격대 반지",
     "required": "환상 석판 375개\n암영 경화약\n(2층 낱장 x 4)",
     "type": "반지"
   }
