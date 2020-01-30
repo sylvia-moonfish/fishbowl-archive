@@ -510,7 +510,7 @@
     "type": "귀걸이"
   },
 
-  "================================================== Earrings: Melee ==================================================": {},
+  "================================================== Earrings: Strength ==================================================": {},
   "edengraceEarringOfSlaying": {
     "from": "영웅 레이드",
     "iconSrc": "/icons/items/edengrace-earring-of-slaying.png",
@@ -523,6 +523,15 @@
     "iconSrc": "/icons/items/augmented-deepshadow-earring-of-slaying.png",
     "name": "보강된 암영 공격대 귀걸이",
     "required": "환상 석판 375개\n암영 경화약\n(2층 낱장 x 4)",
+    "type": "귀걸이"
+  },
+
+  "================================================== Earrings: Dexterity ==================================================": {},
+  "edengraceEarringOfAiming": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-earring-of-aiming.png",
+    "name": "에덴의 은총 유격대 귀걸이",
+    "required": "1층 낱장 x 4",
     "type": "귀걸이"
   },
 

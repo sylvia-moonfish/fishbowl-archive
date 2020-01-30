@@ -85,7 +85,7 @@ const gearSets = [
           materiaIds: ["ch", "dh"]
         },
         {
-          itemId: "edengrace",
+          itemId: "edengraceEarringOfAiming",
           materiaIds: ["ch", "ch"]
         },
         {
