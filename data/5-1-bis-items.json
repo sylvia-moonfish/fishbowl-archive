@@ -128,6 +128,14 @@
     "type": "무기"
   },
 
+  "edengraceBlade": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-blade.png",
+    "name": "에덴의 은총 외날검",
+    "required": "4층 낱장 x 8",
+    "type": "무기"
+  },
+
   "edengraceKnives": {
     "from": "영웅 레이드",
     "iconSrc": "/icons/items/edengrace-knives.png",
@@ -319,6 +327,13 @@
     "required": "2층 낱장 x 6",
     "type": "손"
   },
+  "augmentedDeepshadowGlovesOfStriking": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-gloves-of-striking.png",
+    "name": "보강된 암영 타격대 장갑",
+    "required": "환상 석판 495개\n암영 강화섬유\n(3층 낱장 x 4)",
+    "type": "손"
+  },
 
   "augmentedDeepshadowGlovesOfScouting": {
     "from": "석판 보강",
@@ -426,6 +441,13 @@
     "required": "3층 낱장 x 8",
     "type": "다리"
   },
+  "augmentedDeepshadowBottomsOfStriking": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-bottoms-of-striking.png",
+    "name": "보강된 암영 타격대 하의",
+    "required": "환상 석판 825개\n암영 강화섬유\n(3층 낱장 x 4)",
+    "type": "다리"
+  },
 
   "edengraceBreechesOfScouting": {
     "from": "영웅 레이드",
@@ -476,6 +498,13 @@
     "type": "발"
   },
 
+  "edengraceSandalsOfStriking": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-sandals-of-striking.png",
+    "name": "에덴의 은총 타격대 샌들",
+    "required": "2층 낱장 x 6",
+    "type": "발"
+  },
   "augmentedDeepshadowGreavesOfStriking": {
     "from": "석판 보강",
     "iconSrc": "/icons/items/augmented-deepshadow-greaves-of-striking.png",
