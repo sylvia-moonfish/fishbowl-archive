@@ -144,6 +144,15 @@
     "type": "무기"
   },
 
+  "================================================== Weapon: Physical Ranged ==================================================": {},
+  "edengraceHarpBow": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-harp-bow.png",
+    "name": "에덴의 은총 현악궁",
+    "required": "4층 낱장 x 8",
+    "type": "무기"
+  },
+
   "================================================== Head: Tank ==================================================": {},
   "edengraceArmetOfFending": {
     "from": "영웅 레이드",
@@ -197,6 +206,22 @@
     "from": "석판 보강",
     "iconSrc": "/icons/items/augmented-deepshadow-mask-of-scouting.png",
     "name": "보강된 암영 정찰대 가면",
+    "required": "환상 석판 495개\n암영 강화섬유\n(3층 낱장 x 4)",
+    "type": "머리"
+  },
+
+  "================================================== Head: Physical Ranged ==================================================": {},
+  "edengraceHelmOfAiming": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-helm-of-aiming.png",
+    "name": "에덴의 은총 유격대 투구",
+    "required": "2층 낱장 x 6",
+    "type": "머리"
+  },
+  "augmentedDeepshadowChapeauOfAiming": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-chapeau-of-aiming.png",
+    "name": "보강된 암영 유격대 깃모자",
     "required": "환상 석판 495개\n암영 강화섬유\n(3층 낱장 x 4)",
     "type": "머리"
   },
@@ -272,6 +297,15 @@
     "type": "몸통"
   },
 
+  "================================================== Body: Physical Ranged ==================================================": {},
+  "edengraceMailOfAiming": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-mail-of-aiming.png",
+    "name": "에덴의 은총 유격대 갑옷",
+    "required": "4층 낱장 x 8",
+    "type": "몸통"
+  },
+
   "================================================== Hands: Tank ==================================================": {},
   "edengraceGauntletsOfFending": {
     "from": "영웅 레이드",
@@ -343,6 +377,15 @@
     "type": "손"
   },
 
+  "================================================== Hands: Physical Ranged ==================================================": {},
+  "augmentedDeepshadowGlovesOfAiming": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-gloves-of-aiming.png",
+    "name": "보강된 암영 유격대 장갑",
+    "required": "환상 석판 495개\n암영 강화섬유\n(3층 낱장 x 4)",
+    "type": "손"
+  },
+
   "================================================== Waist: Tank ==================================================": {},
   "edengraceTassetsOfFending": {
     "from": "영웅 레이드",
@@ -396,6 +439,15 @@
     "from": "석판 보강",
     "iconSrc": "/icons/items/augmented-deepshadow-tassets-of-scouting.png",
     "name": "보강된 암영 정찰대 허리갑옷",
+    "required": "환상 석판 375개\n암영 경화약\n(2층 낱장 x 4)",
+    "type": "허리"
+  },
+
+  "================================================== Waist: Physical Ranged ==================================================": {},
+  "augmentedDeepshadowTassetsOfAiming": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-tassets-of-aiming.png",
+    "name": "보강된 암영 유격대 허리갑옷",
     "required": "환상 석판 375개\n암영 경화약\n(2층 낱장 x 4)",
     "type": "허리"
   },
@@ -454,6 +506,15 @@
     "iconSrc": "/icons/items/edengrace-breeches-of-scouting.png",
     "name": "에덴의 은총 정찰대 바지",
     "required": "3층 낱장 x 8",
+    "type": "다리"
+  },
+
+  "================================================== Legs: Physical Ranged ==================================================": {},
+  "augmentedDeepshadowBreechesOfAiming": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-breeches-of-aiming.png",
+    "name": "보강된 암영 유격대 바지",
+    "required": "환상 석판 825개\n암영 강화섬유\n(3층 낱장 x 4)",
     "type": "다리"
   },
 
@@ -525,6 +586,15 @@
     "iconSrc": "/icons/items/augmented-deepshadow-greaves-of-scouting.png",
     "name": "보강된 암영 정찰대 갑주장화",
     "required": "환상 석판 495개\n암영 강화섬유\n(3층 낱장 x 4)",
+    "type": "발"
+  },
+
+  "================================================== Feet: Physical Ranged ==================================================": {},
+  "edengraceGreavesOfAiming": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-greaves-of-aiming.png",
+    "name": "에덴의 은총 유격대 갑주장화",
+    "required": "2층 낱장 x 6",
     "type": "발"
   },
 

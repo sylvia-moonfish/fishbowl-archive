@@ -136,6 +136,18 @@ const pageData = {
               href: "/guide/job-guide/sam/5-1-bis"
             }
           ]
+        },
+        "divider",
+        {
+          iconSrc: SiteInfo.assetsUrl + "/job-guide/brd.png",
+          name: "음유시인 가이드",
+          patches: [
+            {
+              name: "5.1 BiS",
+              thumbnailSrc: SiteInfo.assetsUrl + "/patch-banners/shb/5.1.png",
+              href: "/guide/job-guide/brd/5-1-bis"
+            }
+          ]
         }
       ]
     }
