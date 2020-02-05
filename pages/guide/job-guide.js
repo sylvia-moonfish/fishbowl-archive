@@ -159,6 +159,17 @@ const pageData = {
               href: "/guide/job-guide/mch/5-1-bis"
             }
           ]
+        },
+        {
+          iconSrc: SiteInfo.assetsUrl + "/job-guide/dnc.png",
+          name: "무도가 가이드",
+          patches: [
+            {
+              name: "5.1 BiS",
+              thumbnailSrc: SiteInfo.assetsUrl + "/patch-banners/shb/5.1.png",
+              href: "/guide/job-guide/dnc/5-1-bis"
+            }
+          ]
         }
       ]
     }

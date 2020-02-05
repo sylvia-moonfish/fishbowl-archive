@@ -32,13 +32,13 @@ const transition = React.forwardRef((props, ref) => {
 });
 
 const pageData = {
-  title: "기공사 가이드 - 5.1 BiS",
-  description: "파이널 판타지 14 기공사 가이드 - 5.1 BiS"
+  title: "무도가 가이드 - 5.1 BiS",
+  description: "파이널 판타지 14 무도가 가이드 - 5.1 BiS"
 };
 
 const gearSets = [
   {
-    description: "글쿨 2.48초 추천 세트.",
+    description: "글쿨 2.5초 석판 반지 세트. 음유/기공과 공유 가능.",
     attributes: {
       main: 0,
       wd: 0,
@@ -47,17 +47,17 @@ const gearSets = [
       det: 0,
       sks: 0
     },
-    dps: 13960.11,
+    dps: 11772.03,
     gcd: 0,
     foodId: "robeLettuceSalad",
     dh: 0,
     ch: 0,
     dialog: {
       intro:
-        '기시를 최소로 낮추고 극대와 직격을 끌어올린 장비 세트입니다. 기본 기공 로테이션인 8글쿨 루프에 적합합니다. 다만 글쿨에 0.2초의 여유밖에 없으므로 인터넷 환경이 좋지 않거나 전투에 익숙하지 않으면 사용하기 힘들 수도 있습니다. 음식은 "요술양배추 샐러드"를 섭취합니다.',
+        '석판 반지를 착용해 기시를 버리고 직격을 챙긴 장비 세트입니다. 반지와 무기만 바꾸면 음유시인이나 기공사와도 공유가 가능합니다. 기본 글로벌 쿨다운 2.5초 세트이기 때문에 로테이션이 약간 빡빡할 수 있습니다. "기교 무도"가 글로벌 쿨다운과 정확히 맞물리지 않으므로 1글쿨을 버리지 않으면 "기교 무도"가 다른 시너지 버프들과 어긋나게 될 수 있으니 유의해주세요. 음식은 "요술양배추 샐러드"를 섭취합니다.',
       gears: [
         {
-          itemId: "edengraceRevolver",
+          itemId: "edengraceTathlums",
           materiaIds: ["ch", "ch"]
         },
         {
@@ -66,7 +66,7 @@ const gearSets = [
         },
         {
           itemId: "edengraceMailOfAiming",
-          materiaIds: ["det", "det"]
+          materiaIds: ["dh", "dh"]
         },
         {
           itemId: "augmentedDeepshadowGlovesOfAiming",
@@ -97,18 +97,18 @@ const gearSets = [
           materiaIds: ["ch", "ch"]
         },
         {
-          itemId: "edengraceRingOfAiming",
-          materiaIds: ["ch", "det"]
+          itemId: "augmentedDeepshadowRingOfAiming",
+          materiaIds: ["ch", "ch"]
         },
         {
-          itemId: "augmentedDeepshadowRingOfAiming",
+          itemId: "deepshadowRingOfAiming",
           materiaIds: ["ch", "ch"]
         }
       ]
     }
   },
   {
-    description: "글쿨 2.44초 초보자용 추천 세트.",
+    description: "글쿨 2.44초 2분 시너지 세트.",
     attributes: {
       main: 0,
       wd: 0,
@@ -117,17 +117,17 @@ const gearSets = [
       det: 0,
       sks: 0
     },
-    dps: 13949.43,
+    dps: 11715.6,
     gcd: 0,
     foodId: "robeLettuceSalad",
     dh: 0,
     ch: 0,
     dialog: {
       intro:
-        '글로벌 쿨다운에 조금 더 여유를 주어 2.48초보다 다루기 쉬운 장비 세트입니다. 인터넷 환경이 좋지 않을 경우에도 이 세트를 추천합니다. 기존 8글쿨 루프와 비교하면 약 3번의 과충전마다 1글쿨씩을 더 넣을 수 있습니다. 음식은 "요술양배추 샐러드"를 섭취합니다.',
+        '기시속을 약간 높여 좀 더 편안하게 로테이션을 돌릴 수 있도록 글로벌 쿨다운을 2.44초로 맞춘 장비 세트입니다. "기교 무도"가 다른 2분 시너지들과 글쿨 로스 없이 정확히 맞아들어가므로 다른 시너지 버프 직업들이 파티에 있다면 2.5초 장비 세트보다 좀 더 효율적입니다. 템렙에 따른 활력 때문에 절렉산더에서도 유용합니다. 음식은 "요술양배추 샐러드"를 섭취합니다.',
       gears: [
         {
-          itemId: "edengraceRevolver",
+          itemId: "edengraceTathlums",
           materiaIds: ["ch", "ch"]
         },
         {
@@ -176,76 +176,6 @@ const gearSets = [
         }
       ]
     }
-  },
-  {
-    description: "글쿨 2.38초 빠른 기시속 세트.",
-    attributes: {
-      main: 0,
-      wd: 0,
-      ch: 0,
-      dh: 0,
-      det: 0,
-      sks: 0
-    },
-    dps: 13921.34,
-    gcd: 0,
-    foodId: "robeLettuceSalad",
-    dh: 0,
-    ch: 0,
-    dialog: {
-      intro:
-        '빠른 기시속을 선호하시는 분들을 위한 장비 세트입니다. 기존 8글쿨 루프와 비교하면 약 3번의 과충전마다 2글쿨씩을 더 넣을 수 있습니다. 음식은 "요술양배추 샐러드"를 섭취합니다.',
-      gears: [
-        {
-          itemId: "edengraceRevolver",
-          materiaIds: ["ch", "ch"]
-        },
-        {
-          itemId: "augmentedDeepshadowChapeauOfAiming",
-          materiaIds: ["det", "sks"]
-        },
-        {
-          itemId: "edengraceMailOfAiming",
-          materiaIds: ["det", "det"]
-        },
-        {
-          itemId: "augmentedDeepshadowGlovesOfAiming",
-          materiaIds: ["det", "sks"]
-        },
-        {
-          itemId: "augmentedDeepshadowTassetsOfAiming",
-          materiaIds: ["det", "det"]
-        },
-        {
-          itemId: "augmentedDeepshadowBreechesOfAiming",
-          materiaIds: ["ch", "ch"]
-        },
-        {
-          itemId: "edengraceGreavesOfAiming",
-          materiaIds: ["ch", "sks"]
-        },
-        {
-          itemId: "augmentedDeepshadowEarringOfAiming",
-          materiaIds: ["ch", "det"]
-        },
-        {
-          itemId: "edengraceChokerOfAiming",
-          materiaIds: ["ch", "dh"]
-        },
-        {
-          itemId: "augmentedDeepshadowBraceletOfAiming",
-          materiaIds: ["det", "sks"]
-        },
-        {
-          itemId: "edengraceRingOfAiming",
-          materiaIds: ["ch", "det"]
-        },
-        {
-          itemId: "augmentedDeepshadowRingOfAiming",
-          materiaIds: ["ch", "ch"]
-        }
-      ]
-    }
   }
 ];
 
@@ -261,7 +191,7 @@ class FiveOneBis extends PageComponent {
   render() {
     gearSets.forEach(gearSet => {
       gearSet.attributes.main = Math.floor(
-        Math.floor((Calculations.level.main * Calculations.mch.dex) / 100) +
+        Math.floor((Calculations.level.main * Calculations.dnc.dex) / 100) +
           Calculations.clan.dex +
           Calculations.trait
       );
@@ -373,44 +303,44 @@ class FiveOneBis extends PageComponent {
             Calculations.level.div
         ) / 10;
       /*
-      const attackPotency = 800;
-      const trait = 0;
-      const fAttack =
-        Math.floor(((gearSet.attributes.main - 340) * 165) / 340) + 100;
-      const fDet = Math.floor(
-        ((gearSet.attributes.det - Calculations.level.main) * 130) /
-          Calculations.level.div +
-          1000
-      );
-      const fWd = Math.floor(
-        (Calculations.level.main * Calculations.whm.mnd) / 1000 +
-          gearSet.attributes.wd
-      );
-      const fCrit = Math.floor(
-        ((gearSet.attributes.ch - Calculations.level.sub) * 200) /
-          Calculations.level.div +
-          1400
-      );
+            const attackPotency = 800;
+            const trait = 0;
+            const fAttack =
+              Math.floor(((gearSet.attributes.main - 340) * 165) / 340) + 100;
+            const fDet = Math.floor(
+              ((gearSet.attributes.det - Calculations.level.main) * 130) /
+                Calculations.level.div +
+                1000
+            );
+            const fWd = Math.floor(
+              (Calculations.level.main * Calculations.whm.mnd) / 1000 +
+                gearSet.attributes.wd
+            );
+            const fCrit = Math.floor(
+              ((gearSet.attributes.ch - Calculations.level.sub) * 200) /
+                Calculations.level.div +
+                1400
+            );
 
-      const d1 = Math.floor(
-        Math.floor(Math.floor(attackPotency * fAttack * fDet) / 100) / 1000
-      );
-      const d2 = Math.floor(
-        Math.floor(Math.floor(Math.floor(d1 * fWd) / 100) * (trait + 100)) / 100
-      );
-      const d3chdh = Math.floor(
-        Math.floor(Math.floor(Math.floor(d2 * fCrit) / 1000) * 125) / 100
-      );
-      const d3ch = Math.floor(Math.floor(d2 * fCrit) / 1000);
-      const d3dh = Math.floor(Math.floor(d2 * 125) / 100);
+            const d1 = Math.floor(
+              Math.floor(Math.floor(attackPotency * fAttack * fDet) / 100) / 1000
+            );
+            const d2 = Math.floor(
+              Math.floor(Math.floor(Math.floor(d1 * fWd) / 100) * (trait + 100)) / 100
+            );
+            const d3chdh = Math.floor(
+              Math.floor(Math.floor(Math.floor(d2 * fCrit) / 1000) * 125) / 100
+            );
+            const d3ch = Math.floor(Math.floor(d2 * fCrit) / 1000);
+            const d3dh = Math.floor(Math.floor(d2 * 125) / 100);
 
-      const chdh = ((gearSet.ch / 100) * gearSet.dh) / 100;
-      const ch = gearSet.ch / 100 - chdh;
-      const dh = gearSet.dh / 100 - chdh;
-      const none = 1 - chdh - ch - dh;
-      const damage = d3chdh * chdh + d3ch * ch + d3dh * dh + d2 * none;
+            const chdh = ((gearSet.ch / 100) * gearSet.dh) / 100;
+            const ch = gearSet.ch / 100 - chdh;
+            const dh = gearSet.dh / 100 - chdh;
+            const none = 1 - chdh - ch - dh;
+            const damage = d3chdh * chdh + d3ch * ch + d3dh * dh + d2 * none;
 
-      gearSet.dps = Math.floor((damage / gearSet.gcd) * 100) / 100;*/
+            gearSet.dps = Math.floor((damage / gearSet.gcd) * 100) / 100;*/
     });
 
     return (
@@ -446,7 +376,7 @@ class FiveOneBis extends PageComponent {
                   >
                     <Grid item>
                       <img
-                        src={SiteInfo.assetsUrl + "/job-guide/mch.png"}
+                        src={SiteInfo.assetsUrl + "/job-guide/dnc.png"}
                         style={{
                           maxWidth: 128,
                           width: "100%"
@@ -457,7 +387,7 @@ class FiveOneBis extends PageComponent {
                 </Grid>
                 <Grid item>
                   <Typography variant="body1">
-                    패치 5.1 기준 기공사의 Best-In-Slot 장비 세트 목록입니다.
+                    패치 5.1 기준 무도가의 Best-In-Slot 장비 세트 목록입니다.
                     아래 표에서 열람하고자 하는 세트 목록을 클릭해주세요.
                   </Typography>
                   <br />

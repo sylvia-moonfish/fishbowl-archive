@@ -25,10 +25,14 @@
   "whm": {
     "mnd": 115
   },
+
   "brd": {
     "dex": 115
   },
   "mch": {
+    "dex": 115
+  },
+  "dnc": {
     "dex": 115
   },
 
@@ -101,6 +105,13 @@
   },
 
   "edengraceRevolver": {
+    "wd": 122,
+    "main": 544,
+    "ch": 327,
+    "dh": 467
+  },
+
+  "edengraceTathlums": {
     "wd": 122,
     "main": 544,
     "ch": 327,
@@ -310,5 +321,10 @@
     "main": 227,
     "det": 198,
     "dh": 139
+  },
+  "deepshadowRingOfAiming": {
+    "main": 215,
+    "det": 192,
+    "dh": 134
   }
 }
