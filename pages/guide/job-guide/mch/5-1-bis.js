@@ -38,76 +38,216 @@ const pageData = {
 };
 
 const gearSets = [
-  /*{
-        description: "기본 글쿨 2.48초 추천 세트.",
-        attributes: {
-            main: 0,
-            wd: 0,
-            ch: 0,
-            dh: 0,
-            det: 0,
-            sks: 0
+  {
+    description: "글쿨 2.48초 추천 세트.",
+    attributes: {
+      main: 0,
+      wd: 0,
+      ch: 0,
+      dh: 0,
+      det: 0,
+      sks: 0
+    },
+    dps: 13960.11,
+    gcd: 0,
+    foodId: "robeLettuceSalad",
+    dh: 0,
+    ch: 0,
+    dialog: {
+      intro:
+        '기시를 최소로 낮추고 극대와 직격을 끌어올린 장비 세트입니다. 기본 기공 로테이션인 8글쿨 루프에 적합합니다. 다만 글쿨에 0.2초의 여유밖에 없으므로 인터넷 환경이 좋지 않거나 전투에 익숙하지 않으면 사용하기 힘들 수도 있습니다. 음식은 "요술양배추 샐러드"를 섭취합니다.',
+      gears: [
+        {
+          itemId: "edengraceRevolver",
+          materiaIds: ["ch", "ch"]
         },
-        dps: 0,
-        gcd: 0,
-        foodId: "robeLettuceSalad",
-        dh: 0,
-        ch: 0,
-        dialog: {
-            intro:
-                '기시를 빼고 직격을 높인 장비 세트입니다. "용맹한 사격"을 "여행신의 무곡" 초반부에 사용하는 로테이션에 알맞습니다. 범용성이 넓고 모든 전투에서 무난하게 사용 가능합니다. 음식은 "요술양배추 샐러드"를 섭취합니다.',
-            gears: [
-                {
-                    itemId: "edengraceHarpBow",
-                    materiaIds: ["ch", "ch"]
-                },
-                {
-                    itemId: "edengraceHelmOfAiming",
-                    materiaIds: ["ch", "ch"]
-                },
-                {
-                    itemId: "edengraceMailOfAiming",
-                    materiaIds: ["dh", "dh"]
-                },
-                {
-                    itemId: "augmentedDeepshadowGlovesOfAiming",
-                    materiaIds: ["dh", "dh"]
-                },
-                {
-                    itemId: "augmentedDeepshadowTassetsOfAiming",
-                    materiaIds: ["dh", "det"]
-                },
-                {
-                    itemId: "augmentedDeepshadowBreechesOfAiming",
-                    materiaIds: ["ch", "ch"]
-                },
-                {
-                    itemId: "edengraceGreavesOfAiming",
-                    materiaIds: ["ch", "dh"]
-                },
-                {
-                    itemId: "edengraceEarringOfAiming",
-                    materiaIds: ["ch", "ch"]
-                },
-                {
-                    itemId: "augmentedDeepshadowNecklaceOfAiming",
-                    materiaIds: ["ch", "ch"]
-                },
-                {
-                    itemId: "edengraceBraceletOfAiming",
-                    materiaIds: ["ch", "ch"]
-                },
-                {
-                    itemId: "edengraceRingOfAiming",
-                    materiaIds: ["dh", "dh"]
-                },
-                {
-                    itemId: "augmentedDeepshadowRingOfAiming",
-                    materiaIds: ["ch", "ch"]
-                }
-            ]
+        {
+          itemId: "edengraceHelmOfAiming",
+          materiaIds: ["ch", "ch"]
+        },
+        {
+          itemId: "edengraceMailOfAiming",
+          materiaIds: ["det", "det"]
+        },
+        {
+          itemId: "augmentedDeepshadowGlovesOfAiming",
+          materiaIds: ["dh", "dh"]
+        },
+        {
+          itemId: "augmentedDeepshadowTassetsOfAiming",
+          materiaIds: ["det", "det"]
+        },
+        {
+          itemId: "augmentedDeepshadowBreechesOfAiming",
+          materiaIds: ["ch", "ch"]
+        },
+        {
+          itemId: "edengraceGreavesOfAiming",
+          materiaIds: ["ch", "dh"]
+        },
+        {
+          itemId: "edengraceEarringOfAiming",
+          materiaIds: ["ch", "ch"]
+        },
+        {
+          itemId: "augmentedDeepshadowNecklaceOfAiming",
+          materiaIds: ["ch", "ch"]
+        },
+        {
+          itemId: "edengraceBraceletOfAiming",
+          materiaIds: ["ch", "ch"]
+        },
+        {
+          itemId: "edengraceRingOfAiming",
+          materiaIds: ["ch", "det"]
+        },
+        {
+          itemId: "augmentedDeepshadowRingOfAiming",
+          materiaIds: ["ch", "ch"]
         }
-    }*/
+      ]
+    }
+  },
+  {
+    description: "글쿨 2.44초 초보자용 추천 세트.",
+    attributes: {
+      main: 0,
+      wd: 0,
+      ch: 0,
+      dh: 0,
+      det: 0,
+      sks: 0
+    },
+    dps: 13949.43,
+    gcd: 0,
+    foodId: "robeLettuceSalad",
+    dh: 0,
+    ch: 0,
+    dialog: {
+      intro:
+        '글로벌 쿨다운에 조금 더 여유를 주어 2.48초보다 다루기 쉬운 장비 세트입니다. 인터넷 환경이 좋지 않을 경우에도 이 세트를 추천합니다. 기존 8글쿨 루프와 비교하면 약 3번의 과충전마다 1글쿨씩을 더 넣을 수 있습니다. 음식은 "요술양배추 샐러드"를 섭취합니다.',
+      gears: [
+        {
+          itemId: "edengraceRevolver",
+          materiaIds: ["ch", "ch"]
+        },
+        {
+          itemId: "edengraceHelmOfAiming",
+          materiaIds: ["ch", "ch"]
+        },
+        {
+          itemId: "edengraceMailOfAiming",
+          materiaIds: ["det", "det"]
+        },
+        {
+          itemId: "edengraceGauntletsOfAiming",
+          materiaIds: ["det", "det"]
+        },
+        {
+          itemId: "augmentedDeepshadowTassetsOfAiming",
+          materiaIds: ["det", "det"]
+        },
+        {
+          itemId: "augmentedDeepshadowBreechesOfAiming",
+          materiaIds: ["ch", "ch"]
+        },
+        {
+          itemId: "edengraceGreavesOfAiming",
+          materiaIds: ["ch", "dh"]
+        },
+        {
+          itemId: "edengraceEarringOfAiming",
+          materiaIds: ["ch", "ch"]
+        },
+        {
+          itemId: "edengraceChokerOfAiming",
+          materiaIds: ["ch", "det"]
+        },
+        {
+          itemId: "augmentedDeepshadowBraceletOfAiming",
+          materiaIds: ["det", "det"]
+        },
+        {
+          itemId: "edengraceRingOfAiming",
+          materiaIds: ["ch", "det"]
+        },
+        {
+          itemId: "augmentedDeepshadowRingOfAiming",
+          materiaIds: ["ch", "ch"]
+        }
+      ]
+    }
+  },
+  {
+    description: "글쿨 2.38초 빠른 기시속 세트.",
+    attributes: {
+      main: 0,
+      wd: 0,
+      ch: 0,
+      dh: 0,
+      det: 0,
+      sks: 0
+    },
+    dps: 13921.34,
+    gcd: 0,
+    foodId: "robeLettuceSalad",
+    dh: 0,
+    ch: 0,
+    dialog: {
+      intro:
+        '빠른 기시속을 선호하시는 분들을 위한 장비 세트입니다. 기존 8글쿨 루프와 비교하면 약 3번의 과충전마다 2글쿨씩을 더 넣을 수 있습니다. 음식은 "요술양배추 샐러드"를 섭취합니다.',
+      gears: [
+        {
+          itemId: "edengraceRevolver",
+          materiaIds: ["ch", "ch"]
+        },
+        {
+          itemId: "augmentedDeepshadowChapeauOfAiming",
+          materiaIds: ["det", "sks"]
+        },
+        {
+          itemId: "edengraceMailOfAiming",
+          materiaIds: ["det", "det"]
+        },
+        {
+          itemId: "augmentedDeepshadowGlovesOfAiming",
+          materiaIds: ["det", "sks"]
+        },
+        {
+          itemId: "augmentedDeepshadowTassetsOfAiming",
+          materiaIds: ["det", "det"]
+        },
+        {
+          itemId: "augmentedDeepshadowBreechesOfAiming",
+          materiaIds: ["ch", "ch"]
+        },
+        {
+          itemId: "edengraceGreavesOfAiming",
+          materiaIds: ["ch", "sks"]
+        },
+        {
+          itemId: "augmentedDeepshadowEarringOfAiming",
+          materiaIds: ["ch", "det"]
+        },
+        {
+          itemId: "edengraceChokerOfAiming",
+          materiaIds: ["ch", "dh"]
+        },
+        {
+          itemId: "augmentedDeepshadowBraceletOfAiming",
+          materiaIds: ["det", "sks"]
+        },
+        {
+          itemId: "edengraceRingOfAiming",
+          materiaIds: ["ch", "det"]
+        },
+        {
+          itemId: "augmentedDeepshadowRingOfAiming",
+          materiaIds: ["ch", "ch"]
+        }
+      ]
+    }
+  }
 ];
 
 class FiveOneBis extends PageComponent {
@@ -120,11 +260,9 @@ class FiveOneBis extends PageComponent {
   }
 
   render() {
-    const warning = this.props.currentTheme === "light" ? red[800] : red[200];
-
     gearSets.forEach(gearSet => {
       gearSet.attributes.main = Math.floor(
-        Math.floor((Calculations.level.main * Calculations.brd.dex) / 100) +
+        Math.floor((Calculations.level.main * Calculations.mch.dex) / 100) +
           Calculations.clan.dex +
           Calculations.trait
       );
@@ -235,7 +373,7 @@ class FiveOneBis extends PageComponent {
           ((gearSet.attributes.dh - Calculations.level.sub) * 550) /
             Calculations.level.div
         ) / 10;
-
+      /*
       const attackPotency = 800;
       const trait = 0;
       const fAttack =
@@ -273,7 +411,7 @@ class FiveOneBis extends PageComponent {
       const none = 1 - chdh - ch - dh;
       const damage = d3chdh * chdh + d3ch * ch + d3dh * dh + d2 * none;
 
-      gearSet.dps = Math.floor((damage / gearSet.gcd) * 100) / 100;
+      gearSet.dps = Math.floor((damage / gearSet.gcd) * 100) / 100;*/
     });
 
     return (

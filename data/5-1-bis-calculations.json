@@ -17,6 +17,7 @@
   "ch": 60,
   "dh": 60,
   "det": 60,
+  "sks": 60,
   "sps": 60,
   "pie": 60,
 
@@ -25,6 +26,9 @@
     "mnd": 115
   },
   "brd": {
+    "dex": 115
+  },
+  "mch": {
     "dex": 115
   },
 
@@ -73,12 +77,14 @@
     "ch": 462,
     "det": 323
   },
+
   "wordOfGrace": {
     "wd": 164,
     "main": 544,
     "ch": 467,
     "pie": 327
   },
+
   "edengracePlainsphere": {
     "wd": 164,
     "main": 544,
@@ -91,6 +97,13 @@
     "wd": 122,
     "main": 544,
     "det": 327,
+    "dh": 467
+  },
+
+  "edengraceRevolver": {
+    "wd": 122,
+    "main": 544,
+    "ch": 327,
     "dh": 467
   },
 
@@ -145,6 +158,11 @@
   },
 
   "================================================== Hands: Physical Ranged ==================================================": {},
+  "edengraceGauntletsOfAiming": {
+    "main": 303,
+    "ch": 185,
+    "dh": 264
+  },
   "augmentedDeepshadowGlovesOfAiming": {
     "main": 303,
     "ch": 264,
@@ -210,6 +228,11 @@
     "main": 227,
     "det": 139,
     "dh": 198
+  },
+  "augmentedDeepshadowEarringOfAiming": {
+    "main": 227,
+    "ch": 139,
+    "sks": 198
   },
 
   "================================================== Necklace: Healer ==================================================": {},
