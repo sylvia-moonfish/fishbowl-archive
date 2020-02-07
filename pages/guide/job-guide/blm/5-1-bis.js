@@ -32,217 +32,217 @@ const transition = React.forwardRef((props, ref) => {
 });
 
 const pageData = {
-  title: "기공사 가이드 - 5.1 BiS",
-  description: "파이널 판타지 14 기공사 가이드 - 5.1 BiS"
+  title: "흑마도사 가이드 - 5.1 BiS",
+  description: "파이널 판타지 14 흑마도사 가이드 - 5.1 BiS"
 };
 
 const gearSets = [
   {
-    description: "글쿨 2.48초 추천 세트.",
+    description: "글쿨 2.23초 직격 세트. 흑마만 키울 경우 추천.",
     attributes: {
       main: 0,
       wd: 0,
       ch: 0,
       dh: 0,
       det: 0,
-      sks: 0
+      sps: 0
     },
-    dps: 13960.11,
+    dps: 16161.52,
     gcd: 0,
-    foodId: "robeLettuceSalad",
+    foodId: "lemonCurdSachertorte",
     dh: 0,
     ch: 0,
     dialog: {
       intro:
-        '기시를 최소로 낮추고 극대와 직격을 끌어올린 장비 세트입니다. 기본 기공 로테이션인 8글쿨 루프에 적합합니다. 다만 글쿨에 0.2초의 여유밖에 없으므로 인터넷 환경이 좋지 않거나 전투에 익숙하지 않으면 사용하기 힘들 수도 있습니다. 음식은 "요술양배추 샐러드"를 섭취합니다.',
+        '글로벌 쿨다운을 2.23초로 맞추고 직격을 끌어올린 장비 세트입니다. 파티 조합을 크게 따지지 않으며 마시도 넉넉하고 DPS도 높아 어느 전투에서든 무난하게 사용할 수 있습니다. 캐스터 직업 3개를 전부 키울 경우 똑같은 장비에 마테리아만 바꿔서 글쿨 2.27초 세트로 사용할 수도 있습니다. 음식은 "레몬 커드 자허토르테"를 섭취합니다.',
       gears: [
         {
-          itemId: "edengraceRevolver",
-          materiaIds: ["ch", "ch"]
-        },
-        {
-          itemId: "edengraceHelmOfAiming",
-          materiaIds: ["ch", "ch"]
-        },
-        {
-          itemId: "edengraceMailOfAiming",
-          materiaIds: ["det", "det"]
-        },
-        {
-          itemId: "augmentedDeepshadowGlovesOfAiming",
+          itemId: "edengraceRod",
           materiaIds: ["dh", "dh"]
         },
         {
-          itemId: "augmentedDeepshadowTassetsOfAiming",
-          materiaIds: ["det", "det"]
+          itemId: "augmentedDeepshadowHoodOfCasting",
+          materiaIds: ["dh", "sps"]
         },
         {
-          itemId: "augmentedDeepshadowBreechesOfAiming",
-          materiaIds: ["ch", "ch"]
+          itemId: "edengraceJacketOfCasting",
+          materiaIds: ["sps", "sps"]
         },
         {
-          itemId: "edengraceGreavesOfAiming",
-          materiaIds: ["ch", "dh"]
+          itemId: "augmentedDeepshadowArmguardsOfCasting",
+          materiaIds: ["dh", "det"]
         },
         {
-          itemId: "edengraceEarringOfAiming",
-          materiaIds: ["ch", "ch"]
+          itemId: "augmentedDeepshadowTassetsOfCasting",
+          materiaIds: ["sps", "sps"]
         },
         {
-          itemId: "augmentedDeepshadowNecklaceOfAiming",
-          materiaIds: ["ch", "ch"]
+          itemId: "augmentedDeepshadowBreechesOfCasting",
+          materiaIds: ["dh", "dh"]
         },
         {
-          itemId: "edengraceBraceletOfAiming",
-          materiaIds: ["ch", "ch"]
+          itemId: "edengraceThighbootsOfCasting",
+          materiaIds: ["dh", "dh"]
         },
         {
-          itemId: "edengraceRingOfAiming",
-          materiaIds: ["ch", "det"]
+          itemId: "edengraceEarringOfCasting",
+          materiaIds: ["dh", "sps"]
         },
         {
-          itemId: "augmentedDeepshadowRingOfAiming",
-          materiaIds: ["ch", "ch"]
+          itemId: "edengraceChokerOfCasting",
+          materiaIds: ["dh", "dh"]
+        },
+        {
+          itemId: "augmentedDeepshadowBraceletOfCasting",
+          materiaIds: ["dh", "sps"]
+        },
+        {
+          itemId: "edengraceRingOfCasting",
+          materiaIds: ["sps", "sps"]
+        },
+        {
+          itemId: "augmentedDeepshadowRingOfCasting",
+          materiaIds: ["dh", "sps"]
         }
       ]
     }
   },
   {
-    description: "글쿨 2.44초 초보자용 추천 세트.",
+    description: "글쿨 2.27초 소환사/적마 공유 세트. 캐스터 공용 장비로 추천.",
     attributes: {
       main: 0,
       wd: 0,
       ch: 0,
       dh: 0,
       det: 0,
-      sks: 0
+      sps: 0
     },
-    dps: 13949.43,
+    dps: 16083.08,
     gcd: 0,
-    foodId: "robeLettuceSalad",
+    foodId: "creamySalmonPasta",
     dh: 0,
     ch: 0,
     dialog: {
       intro:
-        '글로벌 쿨다운에 조금 더 여유를 주어 2.48초보다 다루기 쉬운 장비 세트입니다. 인터넷 환경이 좋지 않을 경우에도 이 세트를 추천합니다. 기존 8글쿨 루프와 비교하면 약 3번의 과충전마다 1글쿨씩을 더 넣을 수 있습니다. 음식은 "요술양배추 샐러드"를 섭취합니다.',
+        '소환사/적마도사용 글쿨 2.48초 세트와 장비를 공유할 수 있는 3 캐스터 공용 장비 세트입니다. 2.23초 세트와 마테리아만 다를뿐 장비는 같습니다. 음식은 "연어 크림 파스타"를 섭취합니다.',
       gears: [
         {
-          itemId: "edengraceRevolver",
+          itemId: "edengraceRod",
+          materiaIds: ["dh", "dh"]
+        },
+        {
+          itemId: "augmentedDeepshadowHoodOfCasting",
+          materiaIds: ["sps", "sps"]
+        },
+        {
+          itemId: "edengraceJacketOfCasting",
+          materiaIds: ["sps", "sps"]
+        },
+        {
+          itemId: "augmentedDeepshadowArmguardsOfCasting",
+          materiaIds: ["dh", "det"]
+        },
+        {
+          itemId: "augmentedDeepshadowTassetsOfCasting",
+          materiaIds: ["sps", "sps"]
+        },
+        {
+          itemId: "augmentedDeepshadowBreechesOfCasting",
+          materiaIds: ["dh", "dh"]
+        },
+        {
+          itemId: "edengraceThighbootsOfCasting",
+          materiaIds: ["dh", "dh"]
+        },
+        {
+          itemId: "edengraceEarringOfCasting",
           materiaIds: ["ch", "ch"]
         },
         {
-          itemId: "edengraceHelmOfAiming",
+          itemId: "edengraceChokerOfCasting",
+          materiaIds: ["dh", "dh"]
+        },
+        {
+          itemId: "augmentedDeepshadowBraceletOfCasting",
           materiaIds: ["ch", "ch"]
         },
         {
-          itemId: "edengraceMailOfAiming",
-          materiaIds: ["det", "det"]
-        },
-        {
-          itemId: "edengraceGauntletsOfAiming",
-          materiaIds: ["det", "det"]
-        },
-        {
-          itemId: "augmentedDeepshadowTassetsOfAiming",
-          materiaIds: ["det", "det"]
-        },
-        {
-          itemId: "augmentedDeepshadowBreechesOfAiming",
+          itemId: "edengraceRingOfCasting",
           materiaIds: ["ch", "ch"]
         },
         {
-          itemId: "edengraceGreavesOfAiming",
-          materiaIds: ["ch", "dh"]
-        },
-        {
-          itemId: "edengraceEarringOfAiming",
-          materiaIds: ["ch", "ch"]
-        },
-        {
-          itemId: "edengraceChokerOfAiming",
-          materiaIds: ["ch", "det"]
-        },
-        {
-          itemId: "augmentedDeepshadowBraceletOfAiming",
-          materiaIds: ["det", "det"]
-        },
-        {
-          itemId: "edengraceRingOfAiming",
-          materiaIds: ["ch", "det"]
-        },
-        {
-          itemId: "augmentedDeepshadowRingOfAiming",
-          materiaIds: ["ch", "ch"]
+          itemId: "augmentedDeepshadowRingOfCasting",
+          materiaIds: ["dh", "det"]
         }
       ]
     }
   },
   {
-    description: "글쿨 2.38초 빠른 기시속 세트.",
+    description: "글쿨 2.19초 마시 세트. 빠른 마시를 선호하는 경우 추천.",
     attributes: {
       main: 0,
       wd: 0,
       ch: 0,
       dh: 0,
       det: 0,
-      sks: 0
+      sps: 0
     },
-    dps: 13921.34,
+    dps: 16131.4,
     gcd: 0,
-    foodId: "robeLettuceSalad",
+    foodId: "lemonCurdSachertorte",
     dh: 0,
     ch: 0,
     dialog: {
       intro:
-        '빠른 기시속을 선호하시는 분들을 위한 장비 세트입니다. 기존 8글쿨 루프와 비교하면 약 3번의 과충전마다 2글쿨씩을 더 넣을 수 있습니다. 음식은 "요술양배추 샐러드"를 섭취합니다.',
+        '글로벌 쿨다운 2.19초 빠른 마시 장비 세트입니다. 음식은 "레몬 커드 자허토르테"를 섭취합니다.',
       gears: [
         {
-          itemId: "edengraceRevolver",
-          materiaIds: ["ch", "ch"]
+          itemId: "edengraceRod",
+          materiaIds: ["dh", "dh"]
         },
         {
-          itemId: "augmentedDeepshadowChapeauOfAiming",
-          materiaIds: ["det", "sks"]
+          itemId: "edengraceCircletOfCasting",
+          materiaIds: ["dh", "sps"]
         },
         {
-          itemId: "edengraceMailOfAiming",
-          materiaIds: ["det", "det"]
+          itemId: "edengraceJacketOfCasting",
+          materiaIds: ["sps", "sps"]
         },
         {
-          itemId: "augmentedDeepshadowGlovesOfAiming",
-          materiaIds: ["det", "sks"]
+          itemId: "augmentedDeepshadowArmguardsOfCasting",
+          materiaIds: ["dh", "det"]
         },
         {
-          itemId: "augmentedDeepshadowTassetsOfAiming",
-          materiaIds: ["det", "det"]
+          itemId: "augmentedDeepshadowTassetsOfCasting",
+          materiaIds: ["sps", "sps"]
         },
         {
-          itemId: "augmentedDeepshadowBreechesOfAiming",
-          materiaIds: ["ch", "ch"]
+          itemId: "augmentedDeepshadowBreechesOfCasting",
+          materiaIds: ["dh", "dh"]
         },
         {
-          itemId: "edengraceGreavesOfAiming",
-          materiaIds: ["ch", "sks"]
+          itemId: "edengraceThighbootsOfCasting",
+          materiaIds: ["dh", "dh"]
         },
         {
-          itemId: "augmentedDeepshadowEarringOfAiming",
-          materiaIds: ["ch", "det"]
+          itemId: "augmentedDeepshadowEarringOfCasting",
+          materiaIds: ["dh", "sps"]
         },
         {
-          itemId: "edengraceChokerOfAiming",
-          materiaIds: ["ch", "dh"]
+          itemId: "edengraceChokerOfCasting",
+          materiaIds: ["dh", "dh"]
         },
         {
-          itemId: "augmentedDeepshadowBraceletOfAiming",
-          materiaIds: ["det", "sks"]
+          itemId: "augmentedDeepshadowBraceletOfCasting",
+          materiaIds: ["sps", "sps"]
         },
         {
-          itemId: "edengraceRingOfAiming",
-          materiaIds: ["ch", "det"]
+          itemId: "edengraceRingOfCasting",
+          materiaIds: ["sps", "sps"]
         },
         {
-          itemId: "augmentedDeepshadowRingOfAiming",
-          materiaIds: ["ch", "ch"]
+          itemId: "augmentedDeepshadowRingOfCasting",
+          materiaIds: ["sps", "sps"]
         }
       ]
     }
@@ -261,14 +261,14 @@ class FiveOneBis extends PageComponent {
   render() {
     gearSets.forEach(gearSet => {
       gearSet.attributes.main = Math.floor(
-        Math.floor((Calculations.level.main * Calculations.mch.dex) / 100) +
-          Calculations.clan.dex +
+        Math.floor((Calculations.level.main * Calculations.blm.int) / 100) +
+          Calculations.clan.int +
           Calculations.trait
       );
       gearSet.attributes.ch = Calculations.level.sub;
       gearSet.attributes.dh = Calculations.level.sub;
       gearSet.attributes.det = Calculations.level.main;
-      gearSet.attributes.sks = Calculations.level.sub;
+      gearSet.attributes.sps = Calculations.level.sub;
 
       gearSet.dialog.gears.forEach(gear => {
         if (!Calculations[gear.itemId]) {
@@ -351,7 +351,7 @@ class FiveOneBis extends PageComponent {
           (Math.floor(
             2000 -
               Math.floor(
-                ((gearSet.attributes.sks - Calculations.level.sub) * 130) /
+                ((gearSet.attributes.sps - Calculations.level.sub) * 130) /
                   Calculations.level.div +
                   1000
               )
@@ -372,44 +372,44 @@ class FiveOneBis extends PageComponent {
             Calculations.level.div
         ) / 10;
       /*
-      const attackPotency = 800;
-      const trait = 0;
-      const fAttack =
-        Math.floor(((gearSet.attributes.main - 340) * 165) / 340) + 100;
-      const fDet = Math.floor(
-        ((gearSet.attributes.det - Calculations.level.main) * 130) /
-          Calculations.level.div +
-          1000
-      );
-      const fWd = Math.floor(
-        (Calculations.level.main * Calculations.whm.mnd) / 1000 +
-          gearSet.attributes.wd
-      );
-      const fCrit = Math.floor(
-        ((gearSet.attributes.ch - Calculations.level.sub) * 200) /
-          Calculations.level.div +
-          1400
-      );
+                  const attackPotency = 800;
+                  const trait = 0;
+                  const fAttack =
+                    Math.floor(((gearSet.attributes.main - 340) * 165) / 340) + 100;
+                  const fDet = Math.floor(
+                    ((gearSet.attributes.det - Calculations.level.main) * 130) /
+                      Calculations.level.div +
+                      1000
+                  );
+                  const fWd = Math.floor(
+                    (Calculations.level.main * Calculations.whm.mnd) / 1000 +
+                      gearSet.attributes.wd
+                  );
+                  const fCrit = Math.floor(
+                    ((gearSet.attributes.ch - Calculations.level.sub) * 200) /
+                      Calculations.level.div +
+                      1400
+                  );
 
-      const d1 = Math.floor(
-        Math.floor(Math.floor(attackPotency * fAttack * fDet) / 100) / 1000
-      );
-      const d2 = Math.floor(
-        Math.floor(Math.floor(Math.floor(d1 * fWd) / 100) * (trait + 100)) / 100
-      );
-      const d3chdh = Math.floor(
-        Math.floor(Math.floor(Math.floor(d2 * fCrit) / 1000) * 125) / 100
-      );
-      const d3ch = Math.floor(Math.floor(d2 * fCrit) / 1000);
-      const d3dh = Math.floor(Math.floor(d2 * 125) / 100);
+                  const d1 = Math.floor(
+                    Math.floor(Math.floor(attackPotency * fAttack * fDet) / 100) / 1000
+                  );
+                  const d2 = Math.floor(
+                    Math.floor(Math.floor(Math.floor(d1 * fWd) / 100) * (trait + 100)) / 100
+                  );
+                  const d3chdh = Math.floor(
+                    Math.floor(Math.floor(Math.floor(d2 * fCrit) / 1000) * 125) / 100
+                  );
+                  const d3ch = Math.floor(Math.floor(d2 * fCrit) / 1000);
+                  const d3dh = Math.floor(Math.floor(d2 * 125) / 100);
 
-      const chdh = ((gearSet.ch / 100) * gearSet.dh) / 100;
-      const ch = gearSet.ch / 100 - chdh;
-      const dh = gearSet.dh / 100 - chdh;
-      const none = 1 - chdh - ch - dh;
-      const damage = d3chdh * chdh + d3ch * ch + d3dh * dh + d2 * none;
+                  const chdh = ((gearSet.ch / 100) * gearSet.dh) / 100;
+                  const ch = gearSet.ch / 100 - chdh;
+                  const dh = gearSet.dh / 100 - chdh;
+                  const none = 1 - chdh - ch - dh;
+                  const damage = d3chdh * chdh + d3ch * ch + d3dh * dh + d2 * none;
 
-      gearSet.dps = Math.floor((damage / gearSet.gcd) * 100) / 100;*/
+                  gearSet.dps = Math.floor((damage / gearSet.gcd) * 100) / 100;*/
     });
 
     return (
@@ -445,7 +445,7 @@ class FiveOneBis extends PageComponent {
                   >
                     <Grid item>
                       <img
-                        src={SiteInfo.assetsUrl + "/job-guide/mch.png"}
+                        src={SiteInfo.assetsUrl + "/job-guide/blm.png"}
                         style={{
                           maxWidth: 128,
                           width: "100%"
@@ -456,7 +456,7 @@ class FiveOneBis extends PageComponent {
                 </Grid>
                 <Grid item>
                   <Typography variant="body1">
-                    패치 5.1 기준 기공사의 Best-In-Slot 장비 세트 목록입니다.
+                    패치 5.1 기준 흑마도사의 Best-In-Slot 장비 세트 목록입니다.
                     아래 표에서 열람하고자 하는 세트 목록을 클릭해주세요.
                   </Typography>
                   <br />
@@ -569,11 +569,11 @@ class FiveOneBis extends PageComponent {
                       <Table size="small">
                         <TableHead>
                           <TableRow>
-                            <TableCell align="center">민첩성</TableCell>
+                            <TableCell align="center">지능</TableCell>
                             <TableCell align="center">극대</TableCell>
                             <TableCell align="center">직격</TableCell>
                             <TableCell align="center">의지</TableCell>
-                            <TableCell align="center">기시</TableCell>
+                            <TableCell align="center">마시</TableCell>
                           </TableRow>
                         </TableHead>
                         <TableBody>
@@ -591,7 +591,7 @@ class FiveOneBis extends PageComponent {
                               {gearSet.attributes.det}
                             </TableCell>
                             <TableCell align="center">
-                              {gearSet.attributes.sks}
+                              {gearSet.attributes.sps}
                             </TableCell>
                           </TableRow>
                         </TableBody>

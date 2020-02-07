@@ -170,7 +170,41 @@ const pageData = {
               href: "/guide/job-guide/dnc/5-1-bis"
             }
           ]
-        }
+        },
+        "divider",
+        {
+          iconSrc: SiteInfo.assetsUrl + "/job-guide/blm.png",
+          name: "흑마도사 가이드",
+          patches: [
+            {
+              name: "5.1 BiS",
+              thumbnailSrc: SiteInfo.assetsUrl + "/patch-banners/shb/5.1.png",
+              href: "/guide/job-guide/blm/5-1-bis"
+            }
+          ]
+        },
+        /*{
+          iconSrc: SiteInfo.assetsUrl + "/job-guide/smn.png",
+          name: "소환사 가이드",
+          patches: [
+            {
+              name: "5.1 BiS",
+              thumbnailSrc: SiteInfo.assetsUrl + "/patch-banners/shb/5.1.png",
+              href: "/guide/job-guide/smn/5-1-bis"
+            }
+          ]
+        },
+        {
+          iconSrc: SiteInfo.assetsUrl + "/job-guide/rdm.png",
+          name: "적마도사 가이드",
+          patches: [
+            {
+              name: "5.1 BiS",
+              thumbnailSrc: SiteInfo.assetsUrl + "/patch-banners/shb/5.1.png",
+              href: "/guide/job-guide/rdm/5-1-bis"
+            }
+          ]
+        }*/
       ]
     }
   ]

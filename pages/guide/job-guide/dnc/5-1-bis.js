@@ -199,7 +199,6 @@ class FiveOneBis extends PageComponent {
       gearSet.attributes.dh = Calculations.level.sub;
       gearSet.attributes.det = Calculations.level.main;
       gearSet.attributes.sks = Calculations.level.sub;
-      gearSet.attributes.pie = Calculations.level.main;
 
       gearSet.dialog.gears.forEach(gear => {
         if (!Calculations[gear.itemId]) {
