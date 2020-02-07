@@ -184,6 +184,14 @@
     "type": "무기"
   },
 
+  "bookOfGrace": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-rod.png",
+    "name": "에덴의 은총 주술봉",
+    "required": "4층 낱장 x 8",
+    "type": "무기"
+  },
+
   "================================================== Head: Tank ==================================================": {},
   "edengraceArmetOfFending": {
     "from": "영웅 레이드",

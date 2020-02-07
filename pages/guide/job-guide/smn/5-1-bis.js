@@ -32,13 +32,13 @@ const transition = React.forwardRef((props, ref) => {
 });
 
 const pageData = {
-  title: "흑마도사 가이드 - 5.1 BiS",
-  description: "파이널 판타지 14 흑마도사 가이드 - 5.1 BiS"
+  title: "소환사 가이드 - 5.1 BiS",
+  description: "파이널 판타지 14 소환사 가이드 - 5.1 BiS"
 };
 
 const gearSets = [
   {
-    description: "글쿨 2.5초 석판 반지 세트. 음유/기공과 공유 가능.",
+    description: "ㅁㄴㅇㄹ",
     attributes: {
       main: 0,
       wd: 0,
@@ -47,62 +47,62 @@ const gearSets = [
       det: 0,
       sps: 0
     },
-    dps: 11772.03,
+    dps: 0,
     gcd: 0,
     foodId: "robeLettuceSalad",
     dh: 0,
     ch: 0,
     dialog: {
       intro:
-        '석판 반지를 착용해 기시를 버리고 직격을 챙긴 장비 세트입니다. 반지와 무기만 바꾸면 음유시인이나 기공사와도 공유가 가능합니다. 기본 글로벌 쿨다운 2.5초 세트이기 때문에 로테이션이 약간 빡빡할 수 있습니다. "기교 무도"가 글로벌 쿨다운과 정확히 맞물리지 않으므로 1글쿨을 버리지 않으면 "기교 무도"가 다른 시너지 버프들과 어긋나게 될 수 있으니 유의해주세요. 음식은 "요술양배추 샐러드"를 섭취합니다.',
+          '음식은 "요술양배추 샐러드"를 섭취합니다.',
       gears: [
         {
-          itemId: "edengraceTathlums",
-          materiaIds: ["ch", "ch"]
-        },
-        {
-          itemId: "edengraceHelmOfAiming",
-          materiaIds: ["ch", "ch"]
-        },
-        {
-          itemId: "edengraceMailOfAiming",
+          itemId: "bookOfGrace",
           materiaIds: ["dh", "dh"]
         },
         {
-          itemId: "augmentedDeepshadowGlovesOfAiming",
+          itemId: "augmentedDeepshadowHoodOfCasting",
+          materiaIds: ["ch", "ch"]
+        },
+        {
+          itemId: "augmentedDeepshadowScaleMailOfCasting",
           materiaIds: ["dh", "dh"]
         },
         {
-          itemId: "augmentedDeepshadowTassetsOfAiming",
-          materiaIds: ["det", "det"]
+          itemId: "edengraceHalfglovesOfCasting",
+          materiaIds: ["dh", "det"]
         },
         {
-          itemId: "augmentedDeepshadowBreechesOfAiming",
+          itemId: "edengraceTassetsOfCasting",
+          materiaIds: ["dh", "dh"]
+        },
+        {
+          itemId: "edengraceBreechesOfCasting",
           materiaIds: ["ch", "ch"]
         },
         {
-          itemId: "edengraceGreavesOfAiming",
-          materiaIds: ["ch", "dh"]
+          itemId: "augmentedDeepshadowGreavesOfCasting",
+          materiaIds: ["ch", "det"]
         },
         {
-          itemId: "edengraceEarringOfAiming",
+          itemId: "edengraceEarringOfCasting",
           materiaIds: ["ch", "ch"]
         },
         {
-          itemId: "augmentedDeepshadowNecklaceOfAiming",
+          itemId: "augmentedDeepshadowNecklaceOfCasting",
+          materiaIds: ["dh", "det"]
+        },
+        {
+          itemId: "augmentedDeepshadowBraceletOfCasting",
           materiaIds: ["ch", "ch"]
         },
         {
-          itemId: "edengraceBraceletOfAiming",
+          itemId: "edengraceRingOfCasting",
           materiaIds: ["ch", "ch"]
         },
         {
-          itemId: "augmentedDeepshadowRingOfAiming",
-          materiaIds: ["ch", "ch"]
-        },
-        {
-          itemId: "deepshadowRingOfAiming",
-          materiaIds: ["ch", "ch"]
+          itemId: "augmentedDeepshadowRingOfCasting",
+          materiaIds: ["dh", "det"]
         }
       ]
     }
@@ -121,7 +121,7 @@ class FiveOneBis extends PageComponent {
   render() {
     gearSets.forEach(gearSet => {
       gearSet.attributes.main = Math.floor(
-        Math.floor((Calculations.level.main * Calculations.blm.int) / 100) +
+          Math.floor((Calculations.level.main * Calculations.smn.int) / 100) +
           Calculations.clan.int +
           Calculations.trait
       );
@@ -141,15 +141,15 @@ class FiveOneBis extends PageComponent {
         }
 
         const attributes = Object.keys(Calculations[gear.itemId])
-          .filter(key => {
-            return key !== "wd";
-          })
-          .map(key => {
-            return {
-              key: key,
-              value: Calculations[gear.itemId][key]
-            };
-          });
+            .filter(key => {
+              return key !== "wd";
+            })
+            .map(key => {
+              return {
+                key: key,
+                value: Calculations[gear.itemId][key]
+              };
+            });
 
         attributes.sort((a, b) => {
           return b.value - a.value;
@@ -197,7 +197,7 @@ class FiveOneBis extends PageComponent {
         if (!gearSet.attributes[key]) return;
 
         let value = Math.floor(
-          (gearSet.attributes[key] * Calculations[gearSet.foodId][key].value) /
+            (gearSet.attributes[key] * Calculations[gearSet.foodId][key].value) /
             100
         );
         if (value > Calculations[gearSet.foodId][key].max)
@@ -207,30 +207,30 @@ class FiveOneBis extends PageComponent {
       });
 
       gearSet.gcd =
-        Math.floor(
-          (Math.floor(
-            2000 -
-              Math.floor(
-                ((gearSet.attributes.sps - Calculations.level.sub) * 130) /
-                  Calculations.level.div +
-                  1000
-              )
-          ) *
-            2500) /
-            1000 /
-            10
-        ) / 100;
+          Math.floor(
+              (Math.floor(
+                  2000 -
+                  Math.floor(
+                      ((gearSet.attributes.sps - Calculations.level.sub) * 130) /
+                      Calculations.level.div +
+                      1000
+                  )
+                  ) *
+                  2500) /
+              1000 /
+              10
+          ) / 100;
       gearSet.ch =
-        Math.floor(
-          ((gearSet.attributes.ch - Calculations.level.sub) * 200) /
-            Calculations.level.div +
-            50
-        ) / 10;
+          Math.floor(
+              ((gearSet.attributes.ch - Calculations.level.sub) * 200) /
+              Calculations.level.div +
+              50
+          ) / 10;
       gearSet.dh =
-        Math.floor(
-          ((gearSet.attributes.dh - Calculations.level.sub) * 550) /
-            Calculations.level.div
-        ) / 10;
+          Math.floor(
+              ((gearSet.attributes.dh - Calculations.level.sub) * 550) /
+              Calculations.level.div
+          ) / 10;
       /*
                   const attackPotency = 800;
                   const trait = 0;
@@ -273,274 +273,274 @@ class FiveOneBis extends PageComponent {
     });
 
     return (
-      <React.Fragment>
-        {this.generateHead(
-          pageData.title + " | " + SiteInfo.siteTitle,
-          pageData.description
-        )}
-        <Grid container direction="column" spacing={5}>
-          <Grid item>
-            <Container maxWidth="md">
-              <Grid container direction="column" spacing={5}>
-                <Grid item>
-                  <Grid
-                    alignItems="center"
-                    container
-                    direction="row"
-                    justify="center"
-                    spacing={5}
-                  >
-                    <Grid item>
-                      <Typography variant="h5">{pageData.title}</Typography>
+        <React.Fragment>
+          {this.generateHead(
+              pageData.title + " | " + SiteInfo.siteTitle,
+              pageData.description
+          )}
+          <Grid container direction="column" spacing={5}>
+            <Grid item>
+              <Container maxWidth="md">
+                <Grid container direction="column" spacing={5}>
+                  <Grid item>
+                    <Grid
+                        alignItems="center"
+                        container
+                        direction="row"
+                        justify="center"
+                        spacing={5}
+                    >
+                      <Grid item>
+                        <Typography variant="h5">{pageData.title}</Typography>
+                      </Grid>
                     </Grid>
                   </Grid>
-                </Grid>
-                <Grid item>
-                  <Grid
-                    alignItems="center"
-                    container
-                    direction="row"
-                    justify="center"
-                    spacing={5}
-                  >
-                    <Grid item>
-                      <img
-                        src={SiteInfo.assetsUrl + "/job-guide/blm.png"}
-                        style={{
-                          maxWidth: 128,
-                          width: "100%"
-                        }}
-                      />
+                  <Grid item>
+                    <Grid
+                        alignItems="center"
+                        container
+                        direction="row"
+                        justify="center"
+                        spacing={5}
+                    >
+                      <Grid item>
+                        <img
+                            src={SiteInfo.assetsUrl + "/job-guide/smn.png"}
+                            style={{
+                              maxWidth: 128,
+                              width: "100%"
+                            }}
+                        />
+                      </Grid>
                     </Grid>
                   </Grid>
-                </Grid>
-                <Grid item>
-                  <Typography variant="body1">
-                    패치 5.1 기준 흑마도사의 Best-In-Slot 장비 세트 목록입니다.
-                    아래 표에서 열람하고자 하는 세트 목록을 클릭해주세요.
-                  </Typography>
-                  <br />
-                  <li>
-                    DPS 계산 자료 출처:{" "}
-                    <Chip
-                      color="secondary"
-                      component="span"
-                      icon={<LaunchIcon />}
-                      label="Allagan Studies"
-                      onClick={() => {
-                        window && window.open("https://discord.gg/rkDkxQW");
-                      }}
-                      size="small"
-                      variant="outlined"
-                    />
-                  </li>
-                </Grid>
-              </Grid>
-            </Container>
-          </Grid>
-          <Grid item>
-            <TableContainer>
-              <Table>
-                <TableHead>
-                  <TableRow>
-                    <Hidden mdDown>
-                      <TableCell />
-                    </Hidden>
-                    <TableCell>평균 DPS</TableCell>
-                    <TableCell>글로벌 쿨다운</TableCell>
-                    <TableCell>음식</TableCell>
-                    <TableCell>직격 확률</TableCell>
-                    <TableCell>극대 확률</TableCell>
-                  </TableRow>
-                </TableHead>
-                <TableBody>
-                  {gearSets.map((gearSet, gearSetIndex) => {
-                    return (
-                      <TableRow
-                        hover
-                        key={gearSetIndex}
-                        onClick={() => {
-                          this.state.openedDialog = gearSetIndex;
-                          this.setState(this.state);
-                        }}
-                        style={{
-                          cursor: "pointer"
-                        }}
-                      >
-                        <Hidden mdDown>
-                          <TableCell>{gearSet.description}</TableCell>
-                        </Hidden>
-                        <TableCell>{gearSet.dps}</TableCell>
-                        <TableCell>{gearSet.gcd} 초</TableCell>
-                        <TableCell>{Items[gearSet.foodId].name}</TableCell>
-                        <TableCell>{gearSet.dh} %</TableCell>
-                        <TableCell>{gearSet.ch} %</TableCell>
-                      </TableRow>
-                    );
-                  })}
-                </TableBody>
-              </Table>
-            </TableContainer>
-          </Grid>
-        </Grid>
-        {gearSets.map((gearSet, gearSetIndex) => {
-          return (
-            <Dialog
-              fullWidth={true}
-              key={gearSetIndex}
-              maxWidth="md"
-              onClose={() => {
-                this.state.openedDialog = -1;
-                this.setState(this.state);
-              }}
-              open={this.state.openedDialog === gearSetIndex}
-              scroll="paper"
-              TransitionComponent={transition}
-            >
-              <AppBar position="static">
-                <Toolbar variant="dense">
-                  <div
-                    style={{
-                      flexGrow: 1
-                    }}
-                  >
+                  <Grid item>
                     <Typography variant="body1">
-                      {gearSet.description}
+                      패치 5.1 기준 소환사의 Best-In-Slot 장비 세트 목록입니다.
+                      아래 표에서 열람하고자 하는 세트 목록을 클릭해주세요.
                     </Typography>
-                  </div>
-                  <IconButton
-                    onClick={() => {
+                    <br />
+                    <li>
+                      DPS 계산 자료 출처:{" "}
+                      <Chip
+                          color="secondary"
+                          component="span"
+                          icon={<LaunchIcon />}
+                          label="Allagan Studies"
+                          onClick={() => {
+                            window && window.open("https://discord.gg/rkDkxQW");
+                          }}
+                          size="small"
+                          variant="outlined"
+                      />
+                    </li>
+                  </Grid>
+                </Grid>
+              </Container>
+            </Grid>
+            <Grid item>
+              <TableContainer>
+                <Table>
+                  <TableHead>
+                    <TableRow>
+                      <Hidden mdDown>
+                        <TableCell />
+                      </Hidden>
+                      <TableCell>평균 DPS</TableCell>
+                      <TableCell>글로벌 쿨다운</TableCell>
+                      <TableCell>음식</TableCell>
+                      <TableCell>직격 확률</TableCell>
+                      <TableCell>극대 확률</TableCell>
+                    </TableRow>
+                  </TableHead>
+                  <TableBody>
+                    {gearSets.map((gearSet, gearSetIndex) => {
+                      return (
+                          <TableRow
+                              hover
+                              key={gearSetIndex}
+                              onClick={() => {
+                                this.state.openedDialog = gearSetIndex;
+                                this.setState(this.state);
+                              }}
+                              style={{
+                                cursor: "pointer"
+                              }}
+                          >
+                            <Hidden mdDown>
+                              <TableCell>{gearSet.description}</TableCell>
+                            </Hidden>
+                            <TableCell>{gearSet.dps}</TableCell>
+                            <TableCell>{gearSet.gcd} 초</TableCell>
+                            <TableCell>{Items[gearSet.foodId].name}</TableCell>
+                            <TableCell>{gearSet.dh} %</TableCell>
+                            <TableCell>{gearSet.ch} %</TableCell>
+                          </TableRow>
+                      );
+                    })}
+                  </TableBody>
+                </Table>
+              </TableContainer>
+            </Grid>
+          </Grid>
+          {gearSets.map((gearSet, gearSetIndex) => {
+            return (
+                <Dialog
+                    fullWidth={true}
+                    key={gearSetIndex}
+                    maxWidth="md"
+                    onClose={() => {
                       this.state.openedDialog = -1;
                       this.setState(this.state);
                     }}
-                  >
-                    <CloseIcon />
-                  </IconButton>
-                </Toolbar>
-              </AppBar>
-              <DialogContent>
-                <Grid container direction="column" spacing={5}>
-                  <Grid item />
-                  <Grid item>
-                    <li>{gearSet.dialog.intro}</li>
-                  </Grid>
-                  <Grid item>
-                    <TableContainer>
-                      <Table size="small">
-                        <TableHead>
-                          <TableRow>
-                            <TableCell align="center">지능</TableCell>
-                            <TableCell align="center">극대</TableCell>
-                            <TableCell align="center">직격</TableCell>
-                            <TableCell align="center">의지</TableCell>
-                            <TableCell align="center">마시</TableCell>
-                          </TableRow>
-                        </TableHead>
-                        <TableBody>
-                          <TableRow>
-                            <TableCell align="center">
-                              {gearSet.attributes.main}
-                            </TableCell>
-                            <TableCell align="center">
-                              {gearSet.attributes.ch}
-                            </TableCell>
-                            <TableCell align="center">
-                              {gearSet.attributes.dh}
-                            </TableCell>
-                            <TableCell align="center">
-                              {gearSet.attributes.det}
-                            </TableCell>
-                            <TableCell align="center">
-                              {gearSet.attributes.sps}
-                            </TableCell>
-                          </TableRow>
-                        </TableBody>
-                      </Table>
-                    </TableContainer>
-                  </Grid>
-                  <Grid item>
-                    <TableContainer>
-                      <Table size="small">
-                        <TableHead>
-                          <TableRow>
-                            <TableCell colSpan={2} />
-                            <TableCell align="center">종류</TableCell>
-                            <TableCell align="center">이름</TableCell>
-                            <TableCell align="center" colSpan={2}>
-                              마테리아
-                            </TableCell>
-                            <TableCell align="center">필요 재화</TableCell>
-                          </TableRow>
-                        </TableHead>
-                        <TableBody>
-                          {gearSet.dialog.gears.map((gear, gearId) => {
-                            const item = Items[gear.itemId];
-
-                            if (!item)
-                              return <div key={gearId}>{gear.itemId}</div>;
-
-                            return (
-                              <TableRow
-                                key={gearId}
-                                selected={item.from === "영웅 레이드"}
-                              >
-                                <TableCell>{item.type}</TableCell>
-                                <TableCell>
-                                  <Avatar
-                                    src={SiteInfo.assetsUrl + item.iconSrc}
-                                  />
+                    open={this.state.openedDialog === gearSetIndex}
+                    scroll="paper"
+                    TransitionComponent={transition}
+                >
+                  <AppBar position="static">
+                    <Toolbar variant="dense">
+                      <div
+                          style={{
+                            flexGrow: 1
+                          }}
+                      >
+                        <Typography variant="body1">
+                          {gearSet.description}
+                        </Typography>
+                      </div>
+                      <IconButton
+                          onClick={() => {
+                            this.state.openedDialog = -1;
+                            this.setState(this.state);
+                          }}
+                      >
+                        <CloseIcon />
+                      </IconButton>
+                    </Toolbar>
+                  </AppBar>
+                  <DialogContent>
+                    <Grid container direction="column" spacing={5}>
+                      <Grid item />
+                      <Grid item>
+                        <li>{gearSet.dialog.intro}</li>
+                      </Grid>
+                      <Grid item>
+                        <TableContainer>
+                          <Table size="small">
+                            <TableHead>
+                              <TableRow>
+                                <TableCell align="center">지능</TableCell>
+                                <TableCell align="center">극대</TableCell>
+                                <TableCell align="center">직격</TableCell>
+                                <TableCell align="center">의지</TableCell>
+                                <TableCell align="center">마시</TableCell>
+                              </TableRow>
+                            </TableHead>
+                            <TableBody>
+                              <TableRow>
+                                <TableCell align="center">
+                                  {gearSet.attributes.main}
                                 </TableCell>
-                                <TableCell>{item.from}</TableCell>
-                                <TableCell>{item.name}</TableCell>
-                                {gear.materiaIds.length === 2 ? (
-                                  gear.materiaIds.map(
-                                    (materiaId, materiaIdIndex) => {
-                                      if (!Items[materiaId])
-                                        return (
-                                          <div key={materiaIdIndex}>
-                                            {materiaId}
-                                          </div>
-                                        );
-
-                                      return (
-                                        <TableCell key={materiaIdIndex}>
-                                          {Items[materiaId].name}
-                                        </TableCell>
-                                      );
-                                    }
-                                  )
-                                ) : (
-                                  <TableCell colSpan={2} />
-                                )}
-                                <TableCell>
-                                  {item.required
-                                    .split("\n")
-                                    .map((str, strIndex) => {
-                                      return (
-                                        <p
-                                          key={strIndex}
-                                          style={{
-                                            margin: 0
-                                          }}
-                                        >
-                                          {str}
-                                        </p>
-                                      );
-                                    })}
+                                <TableCell align="center">
+                                  {gearSet.attributes.ch}
+                                </TableCell>
+                                <TableCell align="center">
+                                  {gearSet.attributes.dh}
+                                </TableCell>
+                                <TableCell align="center">
+                                  {gearSet.attributes.det}
+                                </TableCell>
+                                <TableCell align="center">
+                                  {gearSet.attributes.sps}
                                 </TableCell>
                               </TableRow>
-                            );
-                          })}
-                        </TableBody>
-                      </Table>
-                    </TableContainer>
-                  </Grid>
-                </Grid>
-              </DialogContent>
-            </Dialog>
-          );
-        })}
-      </React.Fragment>
+                            </TableBody>
+                          </Table>
+                        </TableContainer>
+                      </Grid>
+                      <Grid item>
+                        <TableContainer>
+                          <Table size="small">
+                            <TableHead>
+                              <TableRow>
+                                <TableCell colSpan={2} />
+                                <TableCell align="center">종류</TableCell>
+                                <TableCell align="center">이름</TableCell>
+                                <TableCell align="center" colSpan={2}>
+                                  마테리아
+                                </TableCell>
+                                <TableCell align="center">필요 재화</TableCell>
+                              </TableRow>
+                            </TableHead>
+                            <TableBody>
+                              {gearSet.dialog.gears.map((gear, gearId) => {
+                                const item = Items[gear.itemId];
+
+                                if (!item)
+                                  return <div key={gearId}>{gear.itemId}</div>;
+
+                                return (
+                                    <TableRow
+                                        key={gearId}
+                                        selected={item.from === "영웅 레이드"}
+                                    >
+                                      <TableCell>{item.type}</TableCell>
+                                      <TableCell>
+                                        <Avatar
+                                            src={SiteInfo.assetsUrl + item.iconSrc}
+                                        />
+                                      </TableCell>
+                                      <TableCell>{item.from}</TableCell>
+                                      <TableCell>{item.name}</TableCell>
+                                      {gear.materiaIds.length === 2 ? (
+                                          gear.materiaIds.map(
+                                              (materiaId, materiaIdIndex) => {
+                                                if (!Items[materiaId])
+                                                  return (
+                                                      <div key={materiaIdIndex}>
+                                                        {materiaId}
+                                                      </div>
+                                                  );
+
+                                                return (
+                                                    <TableCell key={materiaIdIndex}>
+                                                      {Items[materiaId].name}
+                                                    </TableCell>
+                                                );
+                                              }
+                                          )
+                                      ) : (
+                                          <TableCell colSpan={2} />
+                                      )}
+                                      <TableCell>
+                                        {item.required
+                                            .split("\n")
+                                            .map((str, strIndex) => {
+                                              return (
+                                                  <p
+                                                      key={strIndex}
+                                                      style={{
+                                                        margin: 0
+                                                      }}
+                                                  >
+                                                    {str}
+                                                  </p>
+                                              );
+                                            })}
+                                      </TableCell>
+                                    </TableRow>
+                                );
+                              })}
+                            </TableBody>
+                          </Table>
+                        </TableContainer>
+                      </Grid>
+                    </Grid>
+                  </DialogContent>
+                </Dialog>
+            );
+          })}
+        </React.Fragment>
     );
   }
 }

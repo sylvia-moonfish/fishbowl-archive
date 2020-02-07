@@ -183,7 +183,7 @@ const pageData = {
             }
           ]
         },
-        /*{
+        {
           iconSrc: SiteInfo.assetsUrl + "/job-guide/smn.png",
           name: "소환사 가이드",
           patches: [
@@ -204,7 +204,7 @@ const pageData = {
               href: "/guide/job-guide/rdm/5-1-bis"
             }
           ]
-        }*/
+        }
       ]
     }
   ]
