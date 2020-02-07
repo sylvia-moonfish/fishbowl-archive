@@ -194,7 +194,7 @@ const pageData = {
             }
           ]
         },
-        {
+        /*{
           iconSrc: SiteInfo.assetsUrl + "/job-guide/rdm.png",
           name: "적마도사 가이드",
           patches: [
@@ -204,7 +204,7 @@ const pageData = {
               href: "/guide/job-guide/rdm/5-1-bis"
             }
           ]
-        }
+        }*/
       ]
     }
   ]

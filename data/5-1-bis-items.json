@@ -186,8 +186,8 @@
 
   "bookOfGrace": {
     "from": "영웅 레이드",
-    "iconSrc": "/icons/items/edengrace-rod.png",
-    "name": "에덴의 은총 주술봉",
+    "iconSrc": "/icons/items/book-of-grace.png",
+    "name": "에덴의 은총 책",
     "required": "4층 낱장 x 8",
     "type": "무기"
   },
@@ -369,6 +369,13 @@
     "required": "4층 낱장 x 8",
     "type": "몸통"
   },
+  "augmentedDeepshadowScaleMailOfCasting": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-scale-mail-of-casting.png",
+    "name": "보강된 암영 마술사 미늘갑옷",
+    "required": "환상 석판 825개\n암영 강화섬유\n(3층 낱장 x 4)",
+    "type": "몸통"
+  },
 
   "================================================== Hands: Tank ==================================================": {},
   "edengraceGauntletsOfFending": {
@@ -458,6 +465,13 @@
   },
 
   "================================================== Hands: Magic Ranged ==================================================": {},
+  "edengraceHalfglovesOfCasting": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-halfgloves-of-casting.png",
+    "name": "에덴의 은총 마술사 손등장갑",
+    "required": "2층 낱장 x 6",
+    "type": "손"
+  },
   "augmentedDeepshadowArmguardsOfCasting": {
     "from": "석판 보강",
     "iconSrc": "/icons/items/augmented-deepshadow-armguards-of-casting.png",
@@ -533,6 +547,13 @@
   },
 
   "================================================== Waist: Magic Ranged ==================================================": {},
+  "edengraceTassetsOfCasting": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-tassets-of-casting.png",
+    "name": "에덴의 은총 마술사 허리갑옷",
+    "required": "1층 낱장 x 6",
+    "type": "허리"
+  },
   "augmentedDeepshadowTassetsOfCasting": {
     "from": "석판 보강",
     "iconSrc": "/icons/items/augmented-deepshadow-tassets-of-casting.png",
@@ -608,6 +629,13 @@
   },
 
   "================================================== Legs: Magic Ranged ==================================================": {},
+  "edengraceBreechesOfCasting": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-breeches-of-casting.png",
+    "name": "에덴의 은총 마술사 바지",
+    "required": "3층 낱장 x 8",
+    "type": "다리"
+  },
   "augmentedDeepshadowBreechesOfCasting": {
     "from": "석판 보강",
     "iconSrc": "/icons/items/augmented-deepshadow-breeches-of-casting.png",
@@ -702,6 +730,13 @@
     "iconSrc": "/icons/items/edengrace-thighboots-of-casting.png",
     "name": "에덴의 은총 마술사 허벅지장화",
     "required": "2층 낱장 x 6",
+    "type": "발"
+  },
+  "augmentedDeepshadowGreavesOfCasting": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-greaves-of-casting.png",
+    "name": "보강된 암영 마술사 갑주장화",
+    "required": "환상 석판 495개\n암영 강화섬유\n(3층 낱장 x 4)",
     "type": "발"
   },
 
@@ -843,6 +878,13 @@
     "required": "1층 낱장 x 4",
     "type": "목걸이"
   },
+  "augmentedDeepshadowNecklaceOfCasting": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-necklace-of-casting.png",
+    "name": "보강된 암영 마술사 목걸이",
+    "required": "환상 석판 375개\n암영 경화약\n(2층 낱장 x 4)",
+    "type": "목걸이"
+  },
 
   "================================================== Bracelets: Tank ==================================================": {},
   "edengraceBraceletOfFending": {
@@ -902,6 +944,13 @@
   },
 
   "================================================== Bracelets: Intelligence ==================================================": {},
+  "edengraceBraceletOfCasting": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-bracelet-of-casting.png",
+    "name": "에덴의 은총 마술사 팔찌",
+    "required": "1층 낱장 x 4",
+    "type": "팔찌"
+  },
   "augmentedDeepshadowBraceletOfCasting": {
     "from": "석판 보강",
     "iconSrc": "/icons/items/augmented-deepshadow-bracelet-of-casting.png",
