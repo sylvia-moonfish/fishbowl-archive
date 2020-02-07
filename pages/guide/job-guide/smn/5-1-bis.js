@@ -38,7 +38,7 @@ const pageData = {
 
 const gearSets = [
   {
-    description: "글쿨 2.5초 느린 마시 세트.",
+    description: "글쿨 2.5초 적마 호환 세트.",
     attributes: {
       main: 0,
       wd: 0,
@@ -54,7 +54,7 @@ const gearSets = [
     ch: 0,
     dialog: {
       intro:
-        '마시를 배제한 무난한 장비 세트로 소환사만 육성 중일 경우 추천합니다. 음식은 "요술양배추 샐러드"를 섭취합니다.',
+        '마시를 배제한 무난한 세트로 적마도사의 2.5초 세트와 호환되는 장비 세트입니다. 음식은 "요술양배추 샐러드"를 섭취합니다.',
       gears: [
         {
           itemId: "bookOfGrace",

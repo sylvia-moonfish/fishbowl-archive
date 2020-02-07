@@ -32,13 +32,13 @@ const transition = React.forwardRef((props, ref) => {
 });
 
 const pageData = {
-  title: "흑마도사 가이드 - 5.1 BiS",
-  description: "파이널 판타지 14 흑마도사 가이드 - 5.1 BiS"
+  title: "적마도사 가이드 - 5.1 BiS",
+  description: "파이널 판타지 14 적마도사 가이드 - 5.1 BiS"
 };
 
 const gearSets = [
   {
-    description: "글쿨 2.5초 석판 반지 세트. 음유/기공과 공유 가능.",
+    description: "글쿨 2.5초 소환사 호환 세트.",
     attributes: {
       main: 0,
       wd: 0,
@@ -47,62 +47,132 @@ const gearSets = [
       det: 0,
       sps: 0
     },
-    dps: 11772.03,
+    dps: 13707.59,
     gcd: 0,
     foodId: "robeLettuceSalad",
     dh: 0,
     ch: 0,
     dialog: {
       intro:
-        '석판 반지를 착용해 기시를 버리고 직격을 챙긴 장비 세트입니다. 반지와 무기만 바꾸면 음유시인이나 기공사와도 공유가 가능합니다. 기본 글로벌 쿨다운 2.5초 세트이기 때문에 로테이션이 약간 빡빡할 수 있습니다. "기교 무도"가 글로벌 쿨다운과 정확히 맞물리지 않으므로 1글쿨을 버리지 않으면 "기교 무도"가 다른 시너지 버프들과 어긋나게 될 수 있으니 유의해주세요. 음식은 "요술양배추 샐러드"를 섭취합니다.',
+        '마시를 배제한 무난한 세트로 소환사의 2.5초 세트와 호환되는 장비 세트입니다. 음식은 "요술양배추 샐러드"를 섭취합니다.',
       gears: [
         {
-          itemId: "edengraceTathlums",
+          itemId: "edengraceRapier",
           materiaIds: ["ch", "ch"]
         },
         {
-          itemId: "edengraceHelmOfAiming",
+          itemId: "augmentedDeepshadowHoodOfCasting",
           materiaIds: ["ch", "ch"]
         },
         {
-          itemId: "edengraceMailOfAiming",
+          itemId: "augmentedDeepshadowScaleMailOfCasting",
           materiaIds: ["dh", "dh"]
         },
         {
-          itemId: "augmentedDeepshadowGlovesOfAiming",
+          itemId: "edengraceHalfglovesOfCasting",
+          materiaIds: ["dh", "det"]
+        },
+        {
+          itemId: "edengraceTassetsOfCasting",
           materiaIds: ["dh", "dh"]
         },
         {
-          itemId: "augmentedDeepshadowTassetsOfAiming",
-          materiaIds: ["det", "det"]
-        },
-        {
-          itemId: "augmentedDeepshadowBreechesOfAiming",
+          itemId: "edengraceBreechesOfCasting",
           materiaIds: ["ch", "ch"]
         },
         {
-          itemId: "edengraceGreavesOfAiming",
-          materiaIds: ["ch", "dh"]
+          itemId: "augmentedDeepshadowGreavesOfCasting",
+          materiaIds: ["ch", "det"]
         },
         {
-          itemId: "edengraceEarringOfAiming",
+          itemId: "edengraceEarringOfCasting",
           materiaIds: ["ch", "ch"]
         },
         {
-          itemId: "augmentedDeepshadowNecklaceOfAiming",
+          itemId: "augmentedDeepshadowNecklaceOfCasting",
+          materiaIds: ["dh", "det"]
+        },
+        {
+          itemId: "augmentedDeepshadowBraceletOfCasting",
           materiaIds: ["ch", "ch"]
         },
         {
-          itemId: "edengraceBraceletOfAiming",
+          itemId: "edengraceRingOfCasting",
           materiaIds: ["ch", "ch"]
         },
         {
-          itemId: "augmentedDeepshadowRingOfAiming",
+          itemId: "augmentedDeepshadowRingOfCasting",
+          materiaIds: ["dh", "det"]
+        }
+      ]
+    }
+  },
+  {
+    description: "글쿨 2.48초 흑마/소환사 호환 세트.",
+    attributes: {
+      main: 0,
+      wd: 0,
+      ch: 0,
+      dh: 0,
+      det: 0,
+      sps: 0
+    },
+    dps: 13680.93,
+    gcd: 0,
+    foodId: "robeLettuceSalad",
+    dh: 0,
+    ch: 0,
+    dialog: {
+      intro:
+        '머리 장비를 영식 장비로 바꿔 흑마도사의 2.27초 세트와 마테리아가 호환되도록 한 장비 세트입니다. 음식은 "요술양배추 샐러드"를 섭취합니다.',
+      gears: [
+        {
+          itemId: "edengraceRapier",
           materiaIds: ["ch", "ch"]
         },
         {
-          itemId: "deepshadowRingOfAiming",
+          itemId: "edengraceCircletOfCasting",
+          materiaIds: ["dh", "det"]
+        },
+        {
+          itemId: "augmentedDeepshadowScaleMailOfCasting",
+          materiaIds: ["dh", "dh"]
+        },
+        {
+          itemId: "edengraceHalfglovesOfCasting",
+          materiaIds: ["dh", "det"]
+        },
+        {
+          itemId: "edengraceTassetsOfCasting",
+          materiaIds: ["dh", "dh"]
+        },
+        {
+          itemId: "edengraceBreechesOfCasting",
           materiaIds: ["ch", "ch"]
+        },
+        {
+          itemId: "augmentedDeepshadowGreavesOfCasting",
+          materiaIds: ["ch", "det"]
+        },
+        {
+          itemId: "edengraceEarringOfCasting",
+          materiaIds: ["ch", "ch"]
+        },
+        {
+          itemId: "augmentedDeepshadowNecklaceOfCasting",
+          materiaIds: ["dh", "det"]
+        },
+        {
+          itemId: "augmentedDeepshadowBraceletOfCasting",
+          materiaIds: ["ch", "ch"]
+        },
+        {
+          itemId: "edengraceRingOfCasting",
+          materiaIds: ["ch", "ch"]
+        },
+        {
+          itemId: "augmentedDeepshadowRingOfCasting",
+          materiaIds: ["dh", "det"]
         }
       ]
     }
@@ -121,7 +191,7 @@ class FiveOneBis extends PageComponent {
   render() {
     gearSets.forEach(gearSet => {
       gearSet.attributes.main = Math.floor(
-        Math.floor((Calculations.level.main * Calculations.blm.int) / 100) +
+        Math.floor((Calculations.level.main * Calculations.rdm.int) / 100) +
           Calculations.clan.int +
           Calculations.trait
       );
@@ -305,7 +375,7 @@ class FiveOneBis extends PageComponent {
                   >
                     <Grid item>
                       <img
-                        src={SiteInfo.assetsUrl + "/job-guide/blm.png"}
+                        src={SiteInfo.assetsUrl + "/job-guide/rdm.png"}
                         style={{
                           maxWidth: 128,
                           width: "100%"
@@ -316,7 +386,7 @@ class FiveOneBis extends PageComponent {
                 </Grid>
                 <Grid item>
                   <Typography variant="body1">
-                    패치 5.1 기준 흑마도사의 Best-In-Slot 장비 세트 목록입니다.
+                    패치 5.1 기준 적마도사의 Best-In-Slot 장비 세트 목록입니다.
                     아래 표에서 열람하고자 하는 세트 목록을 클릭해주세요.
                   </Typography>
                   <br />

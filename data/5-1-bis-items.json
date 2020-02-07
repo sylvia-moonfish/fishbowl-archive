@@ -192,6 +192,14 @@
     "type": "무기"
   },
 
+  "edengraceRapier": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-rapier.png",
+    "name": "에덴의 은총 레이피어",
+    "required": "4층 낱장 x 8",
+    "type": "무기"
+  },
+
   "================================================== Head: Tank ==================================================": {},
   "edengraceArmetOfFending": {
     "from": "영웅 레이드",
