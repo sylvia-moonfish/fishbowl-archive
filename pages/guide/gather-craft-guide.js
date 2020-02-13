@@ -15,12 +15,17 @@ const pageData = {
       name: ExpansionTitles.shb,
       items: [
         {
-          name: "제작직 가이드 (70~80)",
+          name: "제작직 가이드",
           patches: [
             {
               name: "5.0",
               thumbnailSrc: SiteInfo.assetsUrl + "/patch-banners/shb/5.0.png",
               href: "/guide/gather-craft-guide/5-0/craft-from-70"
+            },
+            {
+              name: "5.1",
+              thumbnailSrc: SiteInfo.assetsUrl + "/patch-banners/shb/5.1.png",
+              href: "/guide/gather-craft-guide/5-1/craft-guide"
             }
           ]
         }
