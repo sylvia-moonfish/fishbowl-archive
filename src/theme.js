@@ -4,7 +4,7 @@ import { createMuiTheme } from "@material-ui/core/styles";
 export const DarkTheme = createMuiTheme({
   typography: {
     fontFamily: [
-      "Sunflower",
+      "Noto Sans KR",
       "Roboto",
       "Helvetica",
       "Arial",
@@ -24,7 +24,7 @@ export const DarkTheme = createMuiTheme({
 export const LightTheme = createMuiTheme({
   typography: {
     fontFamily: [
-      "Sunflower",
+      "Noto Sans KR",
       "Roboto",
       "Helvetica",
       "Arial",

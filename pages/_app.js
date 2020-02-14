@@ -66,7 +66,7 @@ class FishbowlApp extends App {
           <meta content="summary" name="twitter:card" />
           <meta content={SiteInfo.author} name="twitter:creator" />
           <link
-            href="https://fonts.googleapis.com/css?family=Sunflower:300&display=swap"
+            href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap"
             rel="stylesheet"
           />
           <link href={SiteInfo.profilePicLink} rel="icon" type="image/png" />
