@@ -11,8 +11,8 @@ import { fetchIcon } from "../../utils/icon-parser";
 const LeftAlignedButton = withStyles(() => ({
   label: {
     alignItems: "center",
-    justifyContent: "flex-start"
-  }
+    justifyContent: "flex-start",
+  },
 }))(Button);
 
 class GuideDialogButtonBlock extends TranslatedComponent {
@@ -20,7 +20,7 @@ class GuideDialogButtonBlock extends TranslatedComponent {
     super(props);
 
     this.state = {
-      isOpen: false
+      isOpen: false,
     };
   }
 
@@ -43,10 +43,10 @@ class GuideDialogButtonBlock extends TranslatedComponent {
         {getBlockComponent(this.props.dialogBlock[0], this.props.language, {
           commonBlocks: this.props.commonBlocks,
           isOpen: this.state.isOpen,
-          setIsOpen: v => {
+          setIsOpen: (v) => {
             this.state.isOpen = v;
             this.setState(this.state);
-          }
+          },
         })}
       </Grid>
     );

@@ -11,7 +11,7 @@ class TimelineBlock extends React.Component {
     super(props);
 
     this.state = {
-      lastItem: false
+      lastItem: false,
     };
   }
 
@@ -26,7 +26,7 @@ class TimelineBlock extends React.Component {
                   <ListItemText
                     primary={item.instruction}
                     style={{
-                      color: item.color
+                      color: item.color,
                     }}
                   />
                 </ListItem>
@@ -63,7 +63,7 @@ class TimelineBlock extends React.Component {
                                       <span
                                         style={{
                                           color: this.props.gimmickData[id]
-                                            .color
+                                            .color,
                                         }}
                                       >
                                         {this.props.gimmickData[id].name}
@@ -75,7 +75,7 @@ class TimelineBlock extends React.Component {
                             </React.Fragment>
                           }
                           secondary={this.props.gimmickData[item.id].ids
-                            .map(id => {
+                            .map((id) => {
                               return this.props.gimmickData[id].description;
                             })
                             .join(" + ")}
@@ -87,7 +87,7 @@ class TimelineBlock extends React.Component {
                             this.props.gimmickData[item.id].description
                           }
                           style={{
-                            color: this.props.gimmickData[item.id].color
+                            color: this.props.gimmickData[item.id].color,
                           }}
                         />
                       )}

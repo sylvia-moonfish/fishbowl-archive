@@ -33,7 +33,7 @@ const transition = React.forwardRef((props, ref) => {
 
 const pageData = {
   title: "닌자 가이드 - 5.08 BiS",
-  description: "파이널 판타지 14 닌자 가이드 - 5.08 BiS"
+  description: "파이널 판타지 14 닌자 가이드 - 5.08 BiS",
 };
 
 const gearSets = [
@@ -45,7 +45,7 @@ const gearSets = [
       ch: 2694,
       dh: 2684,
       det: 2832,
-      sks: 578
+      sks: 578,
     },
     dps: 13510.97,
     gcd: 0,
@@ -59,54 +59,54 @@ const gearSets = [
       gears: [
         {
           itemId: "edengraceKnives",
-          materiaIds: ["ch", "ch"]
+          materiaIds: ["ch", "ch"],
         },
         {
           itemId: "augmentedDeepshadowMaskOfScouting",
-          materiaIds: ["ch", "det"]
+          materiaIds: ["ch", "det"],
         },
         {
           itemId: "augmentedDeepshadowScaleMailOfScouting",
-          materiaIds: ["ch", "ch"]
+          materiaIds: ["ch", "ch"],
         },
         {
           itemId: "augmentedDeepshadowGlovesOfScouting",
-          materiaIds: ["dh", "dh"]
+          materiaIds: ["dh", "dh"],
         },
         {
           itemId: "augmentedDeepshadowTassetsOfScouting",
-          materiaIds: ["ch", "ch"]
+          materiaIds: ["ch", "ch"],
         },
         {
           itemId: "edengraceBreechesOfScouting",
-          materiaIds: ["dh", "dh"]
+          materiaIds: ["dh", "dh"],
         },
         {
           itemId: "edengraceThighbootsOfScouting",
-          materiaIds: ["ch", "dh"]
+          materiaIds: ["ch", "dh"],
         },
         {
           itemId: "edengraceEarringOfAiming",
-          materiaIds: ["ch", "ch"]
+          materiaIds: ["ch", "ch"],
         },
         {
           itemId: "augmentedDeepshadowNecklaceOfAiming",
-          materiaIds: ["ch", "ch"]
+          materiaIds: ["ch", "ch"],
         },
         {
           itemId: "edengraceBraceletOfAiming",
-          materiaIds: ["ch", "ch"]
+          materiaIds: ["ch", "ch"],
         },
         {
           itemId: "edengraceRingOfAiming",
-          materiaIds: ["ch", "det"]
+          materiaIds: ["ch", "det"],
         },
         {
           itemId: "augmentedDeepshadowRingOfAiming",
-          materiaIds: ["ch", "ch"]
-        }
-      ]
-    }
+          materiaIds: ["ch", "ch"],
+        },
+      ],
+    },
   },
   {
     description: "풍둔 글쿨 2.02초 세트. 빠른 기시속을 선호할 경우 추천.",
@@ -116,7 +116,7 @@ const gearSets = [
       ch: 3256,
       dh: 2268,
       det: 1664,
-      sks: 1598
+      sks: 1598,
     },
     dps: 13323.45,
     gcd: 0,
@@ -130,55 +130,55 @@ const gearSets = [
       gears: [
         {
           itemId: "edengraceKnives",
-          materiaIds: ["ch", "ch"]
+          materiaIds: ["ch", "ch"],
         },
         {
           itemId: "augmentedDeepshadowMaskOfScouting",
-          materiaIds: ["ch", "det"]
+          materiaIds: ["ch", "det"],
         },
         {
           itemId: "edengraceJacketOfScouting",
-          materiaIds: ["det", "det"]
+          materiaIds: ["det", "det"],
         },
         {
           itemId: "augmentedDeepshadowGlovesOfScouting",
-          materiaIds: ["dh", "dh"]
+          materiaIds: ["dh", "dh"],
         },
         {
           itemId: "augmentedDeepshadowTassetsOfScouting",
-          materiaIds: ["ch", "ch"]
+          materiaIds: ["ch", "ch"],
         },
         {
           itemId: "edengraceBreechesOfScouting",
-          materiaIds: ["dh", "dh"]
+          materiaIds: ["dh", "dh"],
         },
         {
           itemId: "augmentedDeepshadowGreavesOfScouting",
-          materiaIds: ["dh", "dh"]
+          materiaIds: ["dh", "dh"],
         },
         {
           itemId: "augmentedDeepshadowEarringOfAiming",
-          materiaIds: ["ch", "dh"]
+          materiaIds: ["ch", "dh"],
         },
         {
           itemId: "edengraceChokerOfAiming",
-          materiaIds: ["ch", "dh"]
+          materiaIds: ["ch", "dh"],
         },
         {
           itemId: "augmentedDeepshadowBraceletOfAiming",
-          materiaIds: ["dh", "dh"]
+          materiaIds: ["dh", "dh"],
         },
         {
           itemId: "edengraceRingOfAiming",
-          materiaIds: ["ch", "dh"]
+          materiaIds: ["ch", "dh"],
         },
         {
           itemId: "augmentedDeepshadowRingOfAiming",
-          materiaIds: ["ch", "ch"]
-        }
-      ]
-    }
-  }
+          materiaIds: ["ch", "ch"],
+        },
+      ],
+    },
+  },
 ];
 
 class FiveOneBis extends PageComponent {
@@ -186,12 +186,12 @@ class FiveOneBis extends PageComponent {
     super(props);
 
     this.state = {
-      openedDialog: -1
+      openedDialog: -1,
     };
   }
 
   render() {
-    gearSets.forEach(gearSet => {
+    gearSets.forEach((gearSet) => {
       const gcd1 = Math.floor(
         ((2000 -
           Math.floor(
@@ -256,7 +256,7 @@ class FiveOneBis extends PageComponent {
                         src={SiteInfo.assetsUrl + "/job-guide/nin.png"}
                         style={{
                           maxWidth: 128,
-                          width: "100%"
+                          width: "100%",
                         }}
                       />
                     </Grid>
@@ -313,7 +313,7 @@ class FiveOneBis extends PageComponent {
                           this.setState(this.state);
                         }}
                         style={{
-                          cursor: "pointer"
+                          cursor: "pointer",
                         }}
                       >
                         <Hidden mdDown>
@@ -351,7 +351,7 @@ class FiveOneBis extends PageComponent {
                 <Toolbar variant="dense">
                   <div
                     style={{
-                      flexGrow: 1
+                      flexGrow: 1,
                     }}
                   >
                     <Typography variant="body1">
@@ -470,7 +470,7 @@ class FiveOneBis extends PageComponent {
                                         <p
                                           key={strIndex}
                                           style={{
-                                            margin: 0
+                                            margin: 0,
                                           }}
                                         >
                                           {str}

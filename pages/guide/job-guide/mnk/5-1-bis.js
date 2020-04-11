@@ -33,7 +33,7 @@ const transition = React.forwardRef((props, ref) => {
 
 const pageData = {
   title: "몽크 가이드 - 5.1 BiS",
-  description: "파이널 판타지 14 몽크 가이드 - 5.1 BiS"
+  description: "파이널 판타지 14 몽크 가이드 - 5.1 BiS",
 };
 
 const gearSets = [
@@ -46,7 +46,7 @@ const gearSets = [
       ch: 3393,
       dh: 2401,
       det: 2200,
-      sks: 767
+      sks: 767,
     },
     dps: 15190.44,
     gcd: 0,
@@ -60,54 +60,54 @@ const gearSets = [
       gears: [
         {
           itemId: "edengraceKnuckles",
-          materiaIds: ["dh", "dh"]
+          materiaIds: ["dh", "dh"],
         },
         {
           itemId: "augmentedDeepshadowHalfmaskOfStriking",
-          materiaIds: ["dh", "sks"]
+          materiaIds: ["dh", "sks"],
         },
         {
           itemId: "edengraceRobeOfStriking",
-          materiaIds: ["dh", "dh"]
+          materiaIds: ["dh", "dh"],
         },
         {
           itemId: "edengraceArmletsOfStriking",
-          materiaIds: ["dh", "dh"]
+          materiaIds: ["dh", "dh"],
         },
         {
           itemId: "edengraceTassetsOfStriking",
-          materiaIds: ["ch", "sks"]
+          materiaIds: ["ch", "sks"],
         },
         {
           itemId: "edengracePantaloonsOfStriking",
-          materiaIds: ["ch", "ch"]
+          materiaIds: ["ch", "ch"],
         },
         {
           itemId: "augmentedDeepshadowGreavesOfStriking",
-          materiaIds: ["dh", "dh"]
+          materiaIds: ["dh", "dh"],
         },
         {
           itemId: "augmentedDeepshadowEarringOfSlaying",
-          materiaIds: ["dh", "dh"]
+          materiaIds: ["dh", "dh"],
         },
         {
           itemId: "edengraceChokerOfSlaying",
-          materiaIds: ["dh", "sks"]
+          materiaIds: ["dh", "sks"],
         },
         {
           itemId: "augmentedDeepshadowBraceletOfSlaying",
-          materiaIds: ["dh", "dh"]
+          materiaIds: ["dh", "dh"],
         },
         {
           itemId: "edengraceRingOfSlaying",
-          materiaIds: ["dh", "det"]
+          materiaIds: ["dh", "det"],
         },
         {
           itemId: "augmentedDeepshadowRingOfSlaying",
-          materiaIds: ["ch", "det"]
-        }
-      ]
-    }
+          materiaIds: ["ch", "det"],
+        },
+      ],
+    },
   },
   {
     description:
@@ -118,7 +118,7 @@ const gearSets = [
       ch: 3522,
       dh: 2161,
       det: 2082,
-      sks: 1021
+      sks: 1021,
     },
     dps: 15196.47,
     gcd: 0,
@@ -132,55 +132,55 @@ const gearSets = [
       gears: [
         {
           itemId: "edengraceKnuckles",
-          materiaIds: ["dh", "dh"]
+          materiaIds: ["dh", "dh"],
         },
         {
           itemId: "augmentedDeepshadowHalfmaskOfStriking",
-          materiaIds: ["dh", "sks"]
+          materiaIds: ["dh", "sks"],
         },
         {
           itemId: "augmentedDeepshadowScaleMailOfStriking",
-          materiaIds: ["ch", "ch"]
+          materiaIds: ["ch", "ch"],
         },
         {
           itemId: "edengraceArmletsOfStriking",
-          materiaIds: ["dh", "dh"]
+          materiaIds: ["dh", "dh"],
         },
         {
           itemId: "augmentedDeepshadowTassetsOfStriking",
-          materiaIds: ["dh", "dh"]
+          materiaIds: ["dh", "dh"],
         },
         {
           itemId: "edengracePantaloonsOfStriking",
-          materiaIds: ["ch", "ch"]
+          materiaIds: ["ch", "ch"],
         },
         {
           itemId: "augmentedDeepshadowGreavesOfStriking",
-          materiaIds: ["dh", "dh"]
+          materiaIds: ["dh", "dh"],
         },
         {
           itemId: "augmentedDeepshadowEarringOfSlaying",
-          materiaIds: ["dh", "dh"]
+          materiaIds: ["dh", "dh"],
         },
         {
           itemId: "edengraceChokerOfSlaying",
-          materiaIds: ["dh", "sks"]
+          materiaIds: ["dh", "sks"],
         },
         {
           itemId: "augmentedDeepshadowBraceletOfSlaying",
-          materiaIds: ["dh", "dh"]
+          materiaIds: ["dh", "dh"],
         },
         {
           itemId: "edengraceRingOfSlaying",
-          materiaIds: ["dh", "dh"]
+          materiaIds: ["dh", "dh"],
         },
         {
           itemId: "augmentedDeepshadowRingOfSlaying",
-          materiaIds: ["ch", "det"]
-        }
-      ]
-    }
-  }
+          materiaIds: ["ch", "det"],
+        },
+      ],
+    },
+  },
 ];
 
 class FiveOneBis extends PageComponent {
@@ -188,12 +188,12 @@ class FiveOneBis extends PageComponent {
     super(props);
 
     this.state = {
-      openedDialog: -1
+      openedDialog: -1,
     };
   }
 
   render() {
-    gearSets.forEach(gearSet => {
+    gearSets.forEach((gearSet) => {
       gearSet.gcd =
         Math.floor(
           (Math.floor(
@@ -257,7 +257,7 @@ class FiveOneBis extends PageComponent {
                         src={SiteInfo.assetsUrl + "/job-guide/mnk.png"}
                         style={{
                           maxWidth: 128,
-                          width: "100%"
+                          width: "100%",
                         }}
                       />
                     </Grid>
@@ -314,7 +314,7 @@ class FiveOneBis extends PageComponent {
                           this.setState(this.state);
                         }}
                         style={{
-                          cursor: "pointer"
+                          cursor: "pointer",
                         }}
                       >
                         <Hidden mdDown>
@@ -352,7 +352,7 @@ class FiveOneBis extends PageComponent {
                 <Toolbar variant="dense">
                   <div
                     style={{
-                      flexGrow: 1
+                      flexGrow: 1,
                     }}
                   >
                     <Typography variant="body1">
@@ -471,7 +471,7 @@ class FiveOneBis extends PageComponent {
                                         <p
                                           key={strIndex}
                                           style={{
-                                            margin: 0
+                                            margin: 0,
                                           }}
                                         >
                                           {str}

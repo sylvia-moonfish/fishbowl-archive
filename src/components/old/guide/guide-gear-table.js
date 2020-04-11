@@ -15,8 +15,8 @@ import Typography from "@material-ui/core/Typography";
 import gears from "../../../../data/old/gears";
 import materias from "../../../../data/old/materias";
 
-const GuideGearTable = props => {
-  const gearsUrl = url => {
+const GuideGearTable = (props) => {
+  const gearsUrl = (url) => {
     return (
       "https://sylvia-moonfish.github.io/fishbowl-assets/icons/gears/" + url
     );
@@ -24,8 +24,8 @@ const GuideGearTable = props => {
 
   const classes = makeStyles(() => ({
     avatar: {
-      margin: "auto"
-    }
+      margin: "auto",
+    },
   }))();
 
   return (

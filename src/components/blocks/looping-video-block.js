@@ -13,7 +13,7 @@ class LoopingVideoBlock extends React.Component {
         item
         style={{
           maxWidth: this.props.width,
-          width: "100%"
+          width: "100%",
         }}
       >
         <video
@@ -23,7 +23,7 @@ class LoopingVideoBlock extends React.Component {
           preload="auto"
           style={{
             maxWidth: this.props.width,
-            width: "100%"
+            width: "100%",
           }}
           src={this.props.src}
         />

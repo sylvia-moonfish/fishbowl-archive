@@ -1,4 +1,3 @@
-import { blue, red } from "@material-ui/core/colors";
 import Container from "@material-ui/core/Container";
 import Divider from "@material-ui/core/Divider";
 import Grid from "@material-ui/core/Grid";
@@ -6,30 +5,86 @@ import Typography from "@material-ui/core/Typography";
 
 import React from "react";
 
+import Items from "../../../../data/5-1-craft-items";
 import SiteInfo from "../../../../data/site-info";
-import ExpansionPanelsBlock from "../../../../src/components/blocks/expansion-panels-block";
+import CraftGearDisplayTable from "../../../../src/components/guide/craft-gear-display-table";
+import CraftGearStatsTable from "../../../../src/components/guide/craft-gear-stats-table";
 import PageComponent from "../../../../src/components/page-component";
 
 const pageData = {
   title: "5.1 제작 가이드",
-  description: "파이널 판타지 14 패치 5.1 제작 가이드."
+  description: "파이널 판타지 14 패치 5.1 제작 가이드.",
 };
+
+const gearSets = [
+  {
+    gears: [
+      {
+        itemId: "dwarvenMythrilSaw",
+        materiaIds: [],
+      },
+      {
+        itemId: "dwarvenCottonBeret",
+        materiaIds: ["cp3", "cp3"],
+      },
+      {
+        itemId: "dwarvenMythrilClawHammer",
+        materiaIds: [],
+      },
+      {
+        itemId: "dwarvenCottonJacket",
+        materiaIds: [],
+      },
+      {
+        itemId: "zelkovaEarrings",
+        materiaIds: [],
+      },
+      {
+        itemId: "swallowskinFingerlessGloves",
+        materiaIds: [],
+      },
+      {
+        itemId: "zelkovaNecklace",
+        materiaIds: [],
+      },
+      {
+        itemId: "swallowskinToolBelt",
+        materiaIds: [],
+      },
+      {
+        itemId: "zelkovaBracelets",
+        materiaIds: [],
+      },
+      {
+        itemId: "dwarvenCottonTrousers",
+        materiaIds: [],
+      },
+      {
+        itemId: "zelkovaRing",
+        materiaIds: [],
+      },
+      {
+        itemId: "swallowskinShoes",
+        materiaIds: [],
+      },
+      {
+        itemId: "zelkovaRing",
+        materiaIds: [],
+      },
+    ],
+  },
+];
 
 class CraftGuide extends PageComponent {
   constructor(props) {
     super(props);
 
     this.state = {
-      snackbar: false
+      snackbar: false,
     };
   }
 
   render() {
-    const colors = {
-      blue: this.props.currentTheme === "light" ? blue[800] : blue[200],
-      red: this.props.currentTheme === "light" ? red[800] : red[200]
-    };
-
     return (
       <React.Fragment>
         {this.generateHead(
@@ -66,7 +121,7 @@ class CraftGuide extends PageComponent {
                         src={SiteInfo.assetsUrl + "/patch-banners/shb/5.1.png"}
                         style={{
                           maxWidth: 880,
-                          width: "100%"
+                          width: "100%",
                         }}
                       />
                     </Grid>
@@ -87,9 +142,12 @@ class CraftGuide extends PageComponent {
                 </Grid>
                 <Grid item>
                   <Typography variant="body2">
-                    본 가이드는 패치 5.11에서 추가되는 이슈가르드 재건을 이용한
-                    구간별 레벨링 장비 및 매크로와 80 레벨 달성 이후 스펙 업을
-                    위한 단계별 장비/금단 및 매크로로 구성되어 있습니다.
+                    본 가이드는 제작직 80 레벨을 갓 달성하신 모험가분들의 스펙
+                    업을 위한 단계별 장비/금단 및 매크로로 구성되어 있습니다.
+                    패치 5.1 이전에 이미 제작직 80 레벨을 달성하고 일정 수준
+                    이상의 스펙 업을 마치신 모험가분들께서는 각 단계별로 기재된
+                    필요 스펙을 체크하시고 자신의 스펙에 알맞는 단계에서부터
+                    시작하시면 됩니다.
                   </Typography>
                 </Grid>
                 <Grid item>
@@ -108,63 +166,10 @@ class CraftGuide extends PageComponent {
                   <Divider />
                 </Grid>
                 <Grid item>
-                  <Typography variant="h6">
-                    레벨링 구간별 장비 및 매크로
-                  </Typography>
+                  <Typography variant="h6">80 레벨</Typography>
                 </Grid>
-                <Grid item>
-                  <Typography variant="body2">
-                    * 아래 메뉴 중 열람하고자 하는 메뉴를 클릭하시면 내용을
-                    펼치거나 접을 수 있습니다.
-                  </Typography>
-                </Grid>
-                <Grid item>
-                  <ExpansionPanelsBlock
-                    expandedPanel={0}
-                    panels={[
-                      {
-                        title: "레벨 1~20",
-                        children: (
-                          <React.Fragment>
-                            <Grid item>
-                              <Typography variant="body2">
-                                (이 구간은 새로운 기술을 빠르게 습득하며 비교적
-                                레벨업이 빠른 구간이므로 따로 매크로를 기재하지
-                                않는 점 양해바랍니다.)
-                              </Typography>
-                            </Grid>
-                          </React.Fragment>
-                        )
-                      },
-                      {
-                        title: "레벨 20~40",
-                        children: <React.Fragment></React.Fragment>
-                      },
-                      {
-                        title: "레벨 40~50",
-                        children: <React.Fragment></React.Fragment>
-                      },
-                      {
-                        title: "레벨 50~60",
-                        children: <React.Fragment></React.Fragment>
-                      },
-                      {
-                        title: "레벨 60~70",
-                        children: <React.Fragment></React.Fragment>
-                      },
-                      {
-                        title: "레벨 70~80",
-                        children: <React.Fragment></React.Fragment>
-                      }
-                    ]}
-                  />
-                </Grid>
-                <Grid item>
-                  <Divider />
-                </Grid>
-                <Grid item>
-                  <Typography variant="h6">80 레벨 이후</Typography>
-                </Grid>
+                <CraftGearStatsTable gearSet={gearSets[0]} Items={Items} />
+                <CraftGearDisplayTable gearSet={gearSets[0]} Items={Items} />
               </Grid>
             </Container>
           </Grid>

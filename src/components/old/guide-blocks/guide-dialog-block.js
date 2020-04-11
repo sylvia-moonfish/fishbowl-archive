@@ -18,16 +18,16 @@ const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide {...props} direction="up" ref={ref} />;
 });
 
-const styles = theme => ({
+const styles = (theme) => ({
   closeButton: {
     position: "absolute",
     right: theme.spacing(1),
-    top: theme.spacing(1)
+    top: theme.spacing(1),
   },
   title: {
     backgroundColor: theme.palette.primary.dark,
-    color: theme.palette.primary.contrastText
-  }
+    color: theme.palette.primary.contrastText,
+  },
 });
 
 class GuideDialogBlock extends TranslatedComponent {
@@ -67,7 +67,7 @@ class GuideDialogBlock extends TranslatedComponent {
               return (
                 <React.Fragment key={blockIndex}>
                   {getBlockComponent(block, this.props.language, {
-                    commonBlocks: this.props.commonBlocks
+                    commonBlocks: this.props.commonBlocks,
                   })}
                 </React.Fragment>
               );

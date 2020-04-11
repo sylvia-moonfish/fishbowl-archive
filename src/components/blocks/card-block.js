@@ -17,7 +17,7 @@ class CardBlock extends React.Component {
       <Grid item>
         <Card
           style={{
-            width: this.props.card.width
+            width: this.props.card.width,
           }}
         >
           <CardActionArea
@@ -45,7 +45,7 @@ class CardBlock extends React.Component {
                             {
                               <span
                                 style={{
-                                  color: this.props.gimmickData[id].color
+                                  color: this.props.gimmickData[id].color,
                                 }}
                               >
                                 {this.props.gimmickData[id].name}
@@ -59,7 +59,7 @@ class CardBlock extends React.Component {
                 ) : (
                   <span
                     style={{
-                      color: this.props.gimmickData[this.props.card.id].color
+                      color: this.props.gimmickData[this.props.card.id].color,
                     }}
                   >
                     {this.props.gimmickData[this.props.card.id].name}
@@ -70,7 +70,7 @@ class CardBlock extends React.Component {
                 {this.props.gimmickData[this.props.card.id].ids ? (
                   <React.Fragment>
                     {this.props.gimmickData[this.props.card.id].ids
-                      .map(id => {
+                      .map((id) => {
                         return this.props.gimmickData[id].description;
                       })
                       .join(" + ")}

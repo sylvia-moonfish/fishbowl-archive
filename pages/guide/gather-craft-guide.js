@@ -20,18 +20,18 @@ const pageData = {
             {
               name: "5.0",
               thumbnailSrc: SiteInfo.assetsUrl + "/patch-banners/shb/5.0.png",
-              href: "/guide/gather-craft-guide/5-0/craft-from-70"
+              href: "/guide/gather-craft-guide/5-0/craft-from-70",
             },
-            {
+            /*{
               name: "5.1",
               thumbnailSrc: SiteInfo.assetsUrl + "/patch-banners/shb/5.1.png",
-              href: "/guide/gather-craft-guide/5-1/craft-guide"
-            }
-          ]
-        }
-      ]
-    }
-  ]
+              href: "/guide/gather-craft-guide/5-1/craft-guide",
+            },*/
+          ],
+        },
+      ],
+    },
+  ],
 };
 
 class GatherCraftGuide extends PageComponent {

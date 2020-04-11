@@ -13,7 +13,7 @@ class GuideYoutubeBlock extends React.Component {
         item
         style={{
           maxWidth: this.props.width + "px",
-          width: "100%"
+          width: "100%",
         }}
       >
         <iframe
@@ -23,7 +23,7 @@ class GuideYoutubeBlock extends React.Component {
           src={this.props.src}
           style={{
             maxWidth: this.props.width + "px",
-            width: "100%"
+            width: "100%",
           }}
           title={this.props.title}
           width={this.props.width}

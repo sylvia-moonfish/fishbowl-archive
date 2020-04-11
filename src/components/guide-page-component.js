@@ -37,7 +37,7 @@ class GuidePageComponent extends PageComponent {
 
     this.state = {
       openedDialog: false,
-      dialogHistory: []
+      dialogHistory: [],
     };
   }
 
@@ -199,7 +199,7 @@ class GuidePageComponent extends PageComponent {
         <React.Fragment>
           {this.generateBlocks(contents, mediaBaseUrl, id)}
         </React.Fragment>
-      )
+      ),
     };
   }
 

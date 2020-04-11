@@ -8,8 +8,8 @@ import { getBlockComponent } from "../../utils/block-parser";
 
 const styles = () => ({
   fill: {
-    width: "100%"
-  }
+    width: "100%",
+  },
 });
 
 class GuideCardsBlock extends TranslatedComponent {
@@ -29,7 +29,7 @@ class GuideCardsBlock extends TranslatedComponent {
                   nextRow:
                     rowIndex + 1 < this.props.rows.length
                       ? this.props.rows[rowIndex + 1]
-                      : null
+                      : null,
                 })}
               </React.Fragment>
             );

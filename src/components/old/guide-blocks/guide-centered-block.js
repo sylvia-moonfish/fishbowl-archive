@@ -7,8 +7,8 @@ import { getBlockComponent } from "../../utils/block-parser";
 
 const styles = () => ({
   fill: {
-    width: "100%"
-  }
+    width: "100%",
+  },
 });
 
 class GuideCenteredBlock extends React.Component {
@@ -29,7 +29,7 @@ class GuideCenteredBlock extends React.Component {
             return (
               <React.Fragment key={blockIndex}>
                 {getBlockComponent(block, this.props.language, {
-                  commonBlocks: this.props.commonBlocks
+                  commonBlocks: this.props.commonBlocks,
                 })}
               </React.Fragment>
             );

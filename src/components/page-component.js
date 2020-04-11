@@ -11,9 +11,9 @@ class PageComponent extends React.Component {
   }
 
   componentDidMount() {
-    Router.onRouteChangeComplete = url => {
+    Router.onRouteChangeComplete = (url) => {
       window.gtag("config", SiteInfo.gtmId, {
-        page_location: url
+        page_location: url,
       });
     };
   }

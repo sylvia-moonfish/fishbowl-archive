@@ -12,18 +12,18 @@ import AppBarImpl from "../src/components/layout/app-bar-impl";
 import DrawerImpl from "../src/components/layout/drawer-impl";
 import { DarkTheme, LightTheme } from "../src/theme";
 
-const styles = theme => ({
+const styles = (theme) => ({
   content: {
     flexGrow: 1,
     padding: theme.spacing(3),
-    width: "100%"
+    width: "100%",
   },
   root: {
-    display: "flex"
+    display: "flex",
   },
   toolbar: {
-    minHeight: 48
-  }
+    minHeight: 48,
+  },
 });
 
 class FishbowlApp extends App {
@@ -43,7 +43,7 @@ class FishbowlApp extends App {
         this.state.currentTheme =
           this.state.currentTheme === "dark" ? "light" : "dark";
         this.setState(this.state);
-      }
+      },
     };
   }
 
@@ -81,7 +81,7 @@ class FishbowlApp extends App {
               __html:
                 "window.dataLayer = window.dataLayer || []; function gtag() {dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', '" +
                 SiteInfo.gtmId +
-                "');"
+                "');",
             }}
           />
         </Head>

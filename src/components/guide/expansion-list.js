@@ -19,12 +19,12 @@ import React from "react";
 const styles = () => ({
   image: {
     width: 188,
-    height: 60
+    height: 60,
   },
   link: {
     color: "inherit",
-    textDecoration: "none"
-  }
+    textDecoration: "none",
+  },
 });
 
 class ExpansionList extends React.Component {
@@ -33,7 +33,7 @@ class ExpansionList extends React.Component {
 
     this.state = {
       expandedPanel: false,
-      tabValue: 0
+      tabValue: 0,
     };
   }
 
@@ -57,7 +57,7 @@ class ExpansionList extends React.Component {
         </Tabs>
         <div
           style={{
-            marginTop: this.props.theme.spacing(1)
+            marginTop: this.props.theme.spacing(1),
           }}
         >
           {this.props.expansions[this.state.tabValue].items.map(
@@ -66,7 +66,7 @@ class ExpansionList extends React.Component {
                 return (
                   <Divider
                     style={{
-                      margin: 25
+                      margin: 25,
                     }}
                   />
                 );
@@ -83,7 +83,7 @@ class ExpansionList extends React.Component {
                   <ExpansionPanelSummary
                     expandIcon={<ExpandMoreIcon />}
                     IconButtonProps={{
-                      disableRipple: true
+                      disableRipple: true,
                     }}
                   >
                     <Grid alignItems="center" container spacing={3}>

@@ -13,8 +13,8 @@ import { getBlockComponent } from "../../utils/block-parser";
 
 const styles = () => ({
   fill: {
-    width: "100%"
-  }
+    width: "100%",
+  },
 });
 
 class GuideCardsRowBlock extends TranslatedComponent {
@@ -22,7 +22,7 @@ class GuideCardsRowBlock extends TranslatedComponent {
     super(props);
 
     this.state = {
-      cards: props.cards
+      cards: props.cards,
     };
   }
 
@@ -103,10 +103,10 @@ class GuideCardsRowBlock extends TranslatedComponent {
                   {getBlockComponent(dialogBlock, this.props.language, {
                     commonBlocks: this.props.commonBlocks,
                     isOpen: this.state.cards[cardIndex].isOpen,
-                    setIsOpen: v => {
+                    setIsOpen: (v) => {
                       this.state.cards[cardIndex].isOpen = v;
                       this.setState(this.state);
-                    }
+                    },
                   })}
                 </Grid>
               );

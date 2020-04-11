@@ -32,7 +32,7 @@ const transition = React.forwardRef((props, ref) => {
 
 const pageData = {
   title: "전사 가이드 - 5.1 BiS",
-  description: "파이널 판타지 14 전사 가이드 - 5.1 BiS"
+  description: "파이널 판타지 14 전사 가이드 - 5.1 BiS",
 };
 
 const gearSets = [
@@ -50,54 +50,54 @@ const gearSets = [
       gears: [
         {
           itemId: "edengraceBattleaxe",
-          materiaIds: ["sks", "sks"]
+          materiaIds: ["sks", "sks"],
         },
         {
           itemId: "augmentedDeepshadowHelmOfFending",
-          materiaIds: ["det", "det"]
+          materiaIds: ["det", "det"],
         },
         {
           itemId: "augmentedDeepshadowCuirassOfFending",
-          materiaIds: ["ch", "ch"]
+          materiaIds: ["ch", "ch"],
         },
         {
           itemId: "edengraceGauntletsOfFending",
-          materiaIds: ["det", "sks"]
+          materiaIds: ["det", "sks"],
         },
         {
           itemId: "augmentedDeepshadowTassetsOfFending",
-          materiaIds: ["det", "det"]
+          materiaIds: ["det", "det"],
         },
         {
           itemId: "augmentedDeepshadowBreechesOfFending",
-          materiaIds: ["ch", "ch"]
+          materiaIds: ["ch", "ch"],
         },
         {
           itemId: "edengraceGreavesOfFending",
-          materiaIds: ["det", "det"]
+          materiaIds: ["det", "det"],
         },
         {
           itemId: "augmentedDeepshadowEarringOfFending",
-          materiaIds: ["ch", "det"]
+          materiaIds: ["ch", "det"],
         },
         {
           itemId: "augmentedDeepshadowNecklaceOfFending",
-          materiaIds: ["det", "det"]
+          materiaIds: ["det", "det"],
         },
         {
           itemId: "edengraceBraceletOfFending",
-          materiaIds: ["sks", "sks"]
+          materiaIds: ["sks", "sks"],
         },
         {
           itemId: "edengraceRingOfFending",
-          materiaIds: ["ch", "det"]
+          materiaIds: ["ch", "det"],
         },
         {
           itemId: "augmentedDeepshadowRingOfFending",
-          materiaIds: ["ch", "ch"]
-        }
-      ]
-    }
+          materiaIds: ["ch", "ch"],
+        },
+      ],
+    },
   },
   {
     description: "글쿨 2.37초 세트. 널널해서 기믹 처리하기 편함.",
@@ -113,54 +113,54 @@ const gearSets = [
       gears: [
         {
           itemId: "edengraceBattleaxe",
-          materiaIds: ["det", "det"]
+          materiaIds: ["det", "det"],
         },
         {
           itemId: "augmentedDeepshadowHelmOfFending",
-          materiaIds: ["det", "det"]
+          materiaIds: ["det", "det"],
         },
         {
           itemId: "augmentedDeepshadowCuirassOfFending",
-          materiaIds: ["ch", "ch"]
+          materiaIds: ["ch", "ch"],
         },
         {
           itemId: "edengraceGauntletsOfFending",
-          materiaIds: ["det", "sks"]
+          materiaIds: ["det", "sks"],
         },
         {
           itemId: "augmentedDeepshadowTassetsOfFending",
-          materiaIds: ["det", "det"]
+          materiaIds: ["det", "det"],
         },
         {
           itemId: "augmentedDeepshadowBreechesOfFending",
-          materiaIds: ["ch", "ch"]
+          materiaIds: ["ch", "ch"],
         },
         {
           itemId: "edengraceGreavesOfFending",
-          materiaIds: ["det", "det"]
+          materiaIds: ["det", "det"],
         },
         {
           itemId: "augmentedDeepshadowEarringOfFending",
-          materiaIds: ["ch", "det"]
+          materiaIds: ["ch", "det"],
         },
         {
           itemId: "edengraceChokerOfFending",
-          materiaIds: ["ch", "ch"]
+          materiaIds: ["ch", "ch"],
         },
         {
           itemId: "edengraceBraceletOfFending",
-          materiaIds: ["det", "sks"]
+          materiaIds: ["det", "sks"],
         },
         {
           itemId: "edengraceRingOfFending",
-          materiaIds: ["ch", "det"]
+          materiaIds: ["ch", "det"],
         },
         {
           itemId: "augmentedDeepshadowRingOfFending",
-          materiaIds: ["ch", "ch"]
-        }
-      ]
-    }
+          materiaIds: ["ch", "ch"],
+        },
+      ],
+    },
   },
   {
     description:
@@ -177,54 +177,54 @@ const gearSets = [
       gears: [
         {
           itemId: "edengraceBattleaxe",
-          materiaIds: ["det", "det"]
+          materiaIds: ["det", "det"],
         },
         {
           itemId: "edengraceArmetOfFending",
-          materiaIds: ["ch", "ch"]
+          materiaIds: ["ch", "ch"],
         },
         {
           itemId: "augmentedDeepshadowCuirassOfFending",
-          materiaIds: ["ch", "ch"]
+          materiaIds: ["ch", "ch"],
         },
         {
           itemId: "edengraceGauntletsOfFending",
-          materiaIds: ["sks", "sks"]
+          materiaIds: ["sks", "sks"],
         },
         {
           itemId: "augmentedDeepshadowTassetsOfFending",
-          materiaIds: ["det", "det"]
+          materiaIds: ["det", "det"],
         },
         {
           itemId: "augmentedDeepshadowBreechesOfFending",
-          materiaIds: ["ch", "ch"]
+          materiaIds: ["ch", "ch"],
         },
         {
           itemId: "edengraceGreavesOfFending",
-          materiaIds: ["det", "det"]
+          materiaIds: ["det", "det"],
         },
         {
           itemId: "augmentedDeepshadowEarringOfFending",
-          materiaIds: ["ch", "det"]
+          materiaIds: ["ch", "det"],
         },
         {
           itemId: "augmentedDeepshadowNecklaceOfFending",
-          materiaIds: ["det", "det"]
+          materiaIds: ["det", "det"],
         },
         {
           itemId: "edengraceBraceletOfFending",
-          materiaIds: ["sks", "sks"]
+          materiaIds: ["sks", "sks"],
         },
         {
           itemId: "edengraceRingOfFending",
-          materiaIds: ["ch", "det"]
+          materiaIds: ["ch", "det"],
         },
         {
           itemId: "augmentedDeepshadowRingOfFending",
-          materiaIds: ["ch", "ch"]
-        }
-      ]
-    }
+          materiaIds: ["ch", "ch"],
+        },
+      ],
+    },
   },
   {
     description: "글쿨 2.36초 불굴 세트. 절 알렉산더용.",
@@ -240,55 +240,55 @@ const gearSets = [
       gears: [
         {
           itemId: "edengraceBattleaxe",
-          materiaIds: ["ten", "ten"]
+          materiaIds: ["ten", "ten"],
         },
         {
           itemId: "augmentedDeepshadowHelmOfFending",
-          materiaIds: ["sks", "ten"]
+          materiaIds: ["sks", "ten"],
         },
         {
           itemId: "edengraceMailOfFending",
-          materiaIds: ["ten", "ten"]
+          materiaIds: ["ten", "ten"],
         },
         {
           itemId: "augmentedDeepshadowGauntletsOfFending",
-          materiaIds: ["ch", "ten"]
+          materiaIds: ["ch", "ten"],
         },
         {
           itemId: "edengraceTassetsOfFending",
-          materiaIds: ["ch", "ch"]
+          materiaIds: ["ch", "ch"],
         },
         {
           itemId: "edengraceTrousersOfFending",
-          materiaIds: ["ch", "ch"]
+          materiaIds: ["ch", "ch"],
         },
         {
           itemId: "augmentedDeepshadowSolleretsOfFending",
-          materiaIds: ["ch", "ch"]
+          materiaIds: ["ch", "ch"],
         },
         {
           itemId: "edengraceEarringOfFending",
-          materiaIds: ["sks", "ten"]
+          materiaIds: ["sks", "ten"],
         },
         {
           itemId: "augmentedDeepshadowNecklaceOfFending",
-          materiaIds: ["sks", "ten"]
+          materiaIds: ["sks", "ten"],
         },
         {
           itemId: "augmentedDeepshadowBraceletOfFending",
-          materiaIds: ["ch", "ch"]
+          materiaIds: ["ch", "ch"],
         },
         {
           itemId: "edengraceRingOfFending",
-          materiaIds: ["ch", "sks"]
+          materiaIds: ["ch", "sks"],
         },
         {
           itemId: "augmentedDeepshadowRingOfFending",
-          materiaIds: ["ch", "ch"]
-        }
-      ]
-    }
-  }
+          materiaIds: ["ch", "ch"],
+        },
+      ],
+    },
+  },
 ];
 
 class FiveOneBis extends PageComponent {
@@ -296,7 +296,7 @@ class FiveOneBis extends PageComponent {
     super(props);
 
     this.state = {
-      openedDialog: -1
+      openedDialog: -1,
     };
   }
 
@@ -337,7 +337,7 @@ class FiveOneBis extends PageComponent {
                         src={SiteInfo.assetsUrl + "/job-guide/war.png"}
                         style={{
                           maxWidth: 128,
-                          width: "100%"
+                          width: "100%",
                         }}
                       />
                     </Grid>
@@ -394,7 +394,7 @@ class FiveOneBis extends PageComponent {
                           this.setState(this.state);
                         }}
                         style={{
-                          cursor: "pointer"
+                          cursor: "pointer",
                         }}
                       >
                         <Hidden mdDown>
@@ -432,7 +432,7 @@ class FiveOneBis extends PageComponent {
                 <Toolbar variant="dense">
                   <div
                     style={{
-                      flexGrow: 1
+                      flexGrow: 1,
                     }}
                   >
                     <Typography variant="body1">
@@ -517,7 +517,7 @@ class FiveOneBis extends PageComponent {
                                         <p
                                           key={strIndex}
                                           style={{
-                                            margin: 0
+                                            margin: 0,
                                           }}
                                         >
                                           {str}

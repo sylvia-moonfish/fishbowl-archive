@@ -13,7 +13,7 @@ class YoutubeFrameBlock extends React.Component {
         item
         style={{
           maxWidth: this.props.width,
-          width: "100%"
+          width: "100%",
         }}
       >
         <iframe
@@ -23,7 +23,7 @@ class YoutubeFrameBlock extends React.Component {
           height={this.props.height}
           style={{
             maxWidth: this.props.width,
-            width: "100%"
+            width: "100%",
           }}
           src={this.props.src}
           width={this.props.width}

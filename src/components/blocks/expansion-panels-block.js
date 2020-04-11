@@ -14,7 +14,7 @@ class ExpansionPanelsBlock extends React.Component {
     super(props);
 
     this.state = {
-      expandedPanel: props.expandedPanel
+      expandedPanel: props.expandedPanel,
     };
   }
 
@@ -34,16 +34,16 @@ class ExpansionPanelsBlock extends React.Component {
                 backgroundColor: "transparent",
                 borderColor: this.props.theme.palette.secondary.main,
                 borderStyle: "solid",
-                borderWidth: "1px"
+                borderWidth: "1px",
               }}
             >
               <ExpansionPanelSummary
                 expandIcon={<ExpandMoreIcon />}
                 IconButtonProps={{
-                  disableRipple: true
+                  disableRipple: true,
                 }}
                 style={{
-                  color: this.props.theme.palette.secondary.main
+                  color: this.props.theme.palette.secondary.main,
                 }}
               >
                 <Typography variant="body1">{panel.title}</Typography>

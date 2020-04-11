@@ -19,14 +19,14 @@ import React from "react";
 import MainMenu from "../../../data/main-menu";
 import SiteInfo from "../../../data/site-info";
 
-const styles = theme => ({
+const styles = (theme) => ({
   avatar: {
     height: 25,
-    width: 25
+    width: 25,
   },
   nested: {
-    paddingLeft: theme.spacing(3)
-  }
+    paddingLeft: theme.spacing(3),
+  },
 });
 
 class DrawerList extends React.Component {
@@ -34,7 +34,7 @@ class DrawerList extends React.Component {
     super(props);
 
     this.state = {
-      mainMenu: MainMenu
+      mainMenu: MainMenu,
     };
   }
 

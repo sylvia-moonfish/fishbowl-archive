@@ -11,7 +11,7 @@ class FishbowlDocument extends Document {
 
     ctx.renderPage = () =>
       originalRenderPage({
-        enhanceApp: App => props => sheets.collect(<App {...props} />)
+        enhanceApp: (App) => (props) => sheets.collect(<App {...props} />),
       });
 
     const initialProps = await Document.getInitialProps(ctx);
@@ -22,8 +22,8 @@ class FishbowlDocument extends Document {
         <React.Fragment key="styles">
           {initialProps.styles}
           {sheets.getStyleElement()}
-        </React.Fragment>
-      ]
+        </React.Fragment>,
+      ],
     };
   }
 

@@ -23,7 +23,7 @@ class InlineChip extends React.Component {
             }}
             size="small"
             style={{
-              color: this.props.gimmickData[this.props.id].color
+              color: this.props.gimmickData[this.props.id].color,
             }}
             variant="outlined"
           />
@@ -33,7 +33,7 @@ class InlineChip extends React.Component {
             label={this.props.gimmickData[this.props.id].name}
             size="small"
             style={{
-              color: this.props.gimmickData[this.props.id].color
+              color: this.props.gimmickData[this.props.id].color,
             }}
             variant="outlined"
           />

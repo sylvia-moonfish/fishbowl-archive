@@ -17,7 +17,7 @@ class GuideExpansionPanelsBlock extends TranslatedComponent {
     super(props);
 
     this.state = {
-      expandedPanel: false
+      expandedPanel: false,
     };
   }
 
@@ -37,16 +37,16 @@ class GuideExpansionPanelsBlock extends TranslatedComponent {
                 backgroundColor: "transparent",
                 borderColor: this.props.theme.palette.secondary.main,
                 borderStyle: "solid",
-                borderWidth: "1px"
+                borderWidth: "1px",
               }}
             >
               <ExpansionPanelSummary
                 expandIcon={<ExpandMoreIcon />}
                 IconButtonProps={{
-                  disableRipple: true
+                  disableRipple: true,
                 }}
                 style={{
-                  color: this.props.theme.palette.secondary.main
+                  color: this.props.theme.palette.secondary.main,
                 }}
               >
                 <Typography>{this.t(panel.title)}</Typography>
@@ -57,7 +57,7 @@ class GuideExpansionPanelsBlock extends TranslatedComponent {
                     return (
                       <React.Fragment key={blockIndex}>
                         {getBlockComponent(block, this.props.language, {
-                          commonBlocks: this.props.commonBlocks
+                          commonBlocks: this.props.commonBlocks,
                         })}
                       </React.Fragment>
                     );

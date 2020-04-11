@@ -4,7 +4,7 @@ import Grid from "@material-ui/core/Grid";
 import Tab from "@material-ui/core/Tab";
 import Tabs from "@material-ui/core/Tabs";
 
-const GuideTab = props => {
+const GuideTab = (props) => {
   const [tab, setTab] = React.useState(0);
 
   return (

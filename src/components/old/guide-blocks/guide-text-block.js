@@ -8,8 +8,8 @@ import TranslatedComponent from "../translated-component";
 
 const styles = () => ({
   link: {
-    color: "inherit"
-  }
+    color: "inherit",
+  },
 });
 
 class GuideTextBlock extends TranslatedComponent {

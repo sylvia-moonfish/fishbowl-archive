@@ -2,8 +2,8 @@ import React from "react";
 
 import TextField from "@material-ui/core/TextField";
 
-const GuideMacro = props => {
-  const onClick = e => {
+const GuideMacro = (props) => {
+  const onClick = (e) => {
     e.target.select(e.target);
     document.execCommand("copy");
     props.onClick();

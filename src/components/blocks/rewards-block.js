@@ -39,7 +39,7 @@ class RewardsBlock extends React.Component {
                                 <Avatar
                                   src={Tomestones[tomestone.type].imageSrc}
                                   style={{
-                                    margin: "auto"
+                                    margin: "auto",
                                   }}
                                 />
                               </TableCell>
@@ -139,7 +139,7 @@ class RewardsBlock extends React.Component {
                               </Grid>
                             </Grid>
                           </React.Fragment>
-                        )
+                        ),
                       };
                     }
                   )}

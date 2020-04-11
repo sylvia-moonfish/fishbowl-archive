@@ -13,26 +13,26 @@ import React from "react";
 
 import SiteInfo from "../../../data/site-info";
 
-const styles = theme => ({
+const styles = (theme) => ({
   appBar: {
-    zIndex: theme.zIndex.drawer + 1
+    zIndex: theme.zIndex.drawer + 1,
   },
   icon: {
-    marginRight: theme.spacing(1)
+    marginRight: theme.spacing(1),
   },
   grow: {
-    flexGrow: 1
+    flexGrow: 1,
   },
   link: {
     color: "inherit",
-    textDecoration: "none"
+    textDecoration: "none",
   },
   menuButton: {
     marginRight: theme.spacing(2),
     [theme.breakpoints.up("lg")]: {
-      display: "none"
-    }
-  }
+      display: "none",
+    },
+  },
 });
 
 class AppBarImpl extends React.Component {

@@ -3,11 +3,11 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 
-const GuideCaption = props => {
+const GuideCaption = (props) => {
   const classes = makeStyles(() => ({
     gray: {
-      color: "rgba(200, 200, 200, 1)"
-    }
+      color: "rgba(200, 200, 200, 1)",
+    },
   }))();
 
   return (

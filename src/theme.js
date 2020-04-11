@@ -8,18 +8,18 @@ export const DarkTheme = createMuiTheme({
       "Roboto",
       "Helvetica",
       "Arial",
-      "sans-serif"
-    ].join(",")
+      "sans-serif",
+    ].join(","),
   },
   palette: {
     type: "dark",
     primary: {
-      main: purple[900]
+      main: purple[900],
     },
     secondary: {
-      main: purple[100]
-    }
-  }
+      main: purple[100],
+    },
+  },
 });
 export const LightTheme = createMuiTheme({
   typography: {
@@ -28,16 +28,16 @@ export const LightTheme = createMuiTheme({
       "Roboto",
       "Helvetica",
       "Arial",
-      "sans-serif"
-    ].join(",")
+      "sans-serif",
+    ].join(","),
   },
   palette: {
     type: "light",
     primary: {
-      main: purple[100]
+      main: purple[100],
     },
     secondary: {
-      main: purple[900]
-    }
-  }
+      main: purple[900],
+    },
+  },
 });

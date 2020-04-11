@@ -10,11 +10,11 @@ import React from "react";
 
 import TranslatedComponent from "../translated-component";
 
-const StyledTableCell = withStyles(theme => ({
+const StyledTableCell = withStyles((theme) => ({
   head: {
     backgroundColor: theme.palette.secondary.dark,
-    color: theme.palette.secondary.contrastText
-  }
+    color: theme.palette.secondary.contrastText,
+  },
 }))(TableCell);
 
 class GuideTableBlock extends TranslatedComponent {

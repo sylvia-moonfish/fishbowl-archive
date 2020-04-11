@@ -35,7 +35,7 @@ class GimmickChipsBlock extends React.Component {
                       this.props.openDialog(gimmick);
                     }}
                     style={{
-                      color: this.props.gimmickData[gimmick].color
+                      color: this.props.gimmickData[gimmick].color,
                     }}
                     variant="outlined"
                   />

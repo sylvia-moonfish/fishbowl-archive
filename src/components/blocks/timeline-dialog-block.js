@@ -40,13 +40,13 @@ class TimelineDialogBlock extends React.Component {
             )}
             <div
               style={{
-                flexGrow: 1
+                flexGrow: 1,
               }}
             >
               <Typography variant="h6">
                 {this.props.gimmickData[this.props.id].ids
                   ? this.props.gimmickData[this.props.id].ids
-                      .map(id => {
+                      .map((id) => {
                         return this.props.gimmickData[id].name;
                       })
                       .join(" + ")
@@ -60,12 +60,12 @@ class TimelineDialogBlock extends React.Component {
         </AppBar>
         <DialogContent
           style={{
-            padding: this.props.theme.spacing(3)
+            padding: this.props.theme.spacing(3),
           }}
         >
           <div
             style={{
-              minHeight: 24
+              minHeight: 24,
             }}
           />
           <Grid container direction="column" spacing={5}>

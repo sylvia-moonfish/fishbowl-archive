@@ -15,7 +15,7 @@ class GimmickSelectiveListBlock extends React.Component {
     super(props);
 
     this.state = {
-      currentMode: "cards"
+      currentMode: "cards",
     };
   }
 

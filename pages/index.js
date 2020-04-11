@@ -12,20 +12,20 @@ import React from "react";
 import SiteInfo from "../data/site-info";
 import PageComponent from "../src/components/page-component";
 
-const styles = theme => ({
+const styles = (theme) => ({
   media: {
     height: 200,
     [theme.breakpoints.up("lg")]: {
-      height: 300
-    }
-  }
+      height: 300,
+    },
+  },
 });
 
 const pageData = {
   intro: "파이널 판타지 14 가이드 및 글로벌 뉴스 번역 등을 게재하고 있습니다.",
   name: 'Sylvia "The Platy" Moonfish',
   globalChar: "Sylvia Moonfish@Midgardsormr/Aether",
-  koreanChar: "플래티@톤베리"
+  koreanChar: "플래티@톤베리",
 };
 
 class Index extends PageComponent {

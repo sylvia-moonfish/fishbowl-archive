@@ -14,12 +14,12 @@ import React from "react";
 const styles = () => ({
   image: {
     width: 188,
-    height: 60
+    height: 60,
   },
   link: {
     color: "inherit",
-    textDecoration: "none"
-  }
+    textDecoration: "none",
+  },
 });
 
 class DutyList extends React.Component {
@@ -27,7 +27,7 @@ class DutyList extends React.Component {
     super(props);
 
     this.state = {
-      tabValue: 0
+      tabValue: 0,
     };
   }
 

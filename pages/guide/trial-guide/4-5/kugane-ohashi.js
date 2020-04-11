@@ -21,20 +21,20 @@ import ko from "../../../../src/translations/pages/guide/trial-guide/kugane-ohas
 
 import SiteInfo from "../../../../data/site-info";
 
-const KuganeOhashi = props => {
+const KuganeOhashi = (props) => {
   useEffect(() => {
-    Router.onRouteChangeComplete = url => {
+    Router.onRouteChangeComplete = (url) => {
       window.gtag("config", SiteInfo.gtmId, {
-        page_location: url
+        page_location: url,
       });
     };
   });
 
-  const assetUrl = url => {
+  const assetUrl = (url) => {
     return "https://sylvia-moonfish.github.io/fishbowl-assets/" + url;
   };
 
-  const videoUrl = url => {
+  const videoUrl = (url) => {
     return (
       "https://sylvia-moonfish.github.io/fishbowl-video-1/guide/trial-guide/kugane-ohashi/" +
       url
@@ -44,15 +44,15 @@ const KuganeOhashi = props => {
   const classes = makeStyles(() => ({
     fill: {
       width: "100%",
-      maxWidth: 376
-    }
+      maxWidth: 376,
+    },
   }))();
 
   const messages = {
     en: en,
-    ko: ko
+    ko: ko,
   };
-  const translate = id => {
+  const translate = (id) => {
     return messages["ko"][id];
   };
   const pageTitle = translate("page-title");

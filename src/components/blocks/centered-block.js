@@ -5,8 +5,8 @@ import React from "react";
 
 const styles = () => ({
   fill: {
-    width: "100%"
-  }
+    width: "100%",
+  },
 });
 
 class CenteredBlock extends React.Component {

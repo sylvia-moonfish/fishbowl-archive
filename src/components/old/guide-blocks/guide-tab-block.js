@@ -12,7 +12,7 @@ class GuideTabBlock extends TranslatedComponent {
     super(props);
 
     this.state = {
-      tabValue: 0
+      tabValue: 0,
     };
   }
 
@@ -35,7 +35,7 @@ class GuideTabBlock extends TranslatedComponent {
           this.props.tabBlocks[this.state.tabValue],
           this.props.language,
           {
-            commonBlocks: this.props.commonBlocks
+            commonBlocks: this.props.commonBlocks,
           }
         )}
       </Grid>

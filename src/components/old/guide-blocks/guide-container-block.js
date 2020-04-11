@@ -16,7 +16,7 @@ class GuideContainerBlock extends React.Component {
           return (
             <React.Fragment key={blockIndex}>
               {getBlockComponent(block, this.props.language, {
-                commonBlocks: this.props.commonBlocks
+                commonBlocks: this.props.commonBlocks,
               })}
             </React.Fragment>
           );

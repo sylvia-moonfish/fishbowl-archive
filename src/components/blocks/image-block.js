@@ -13,14 +13,14 @@ class ImageBlock extends React.Component {
         item
         style={{
           maxWidth: this.props.width,
-          width: "100%"
+          width: "100%",
         }}
       >
         <img
           src={this.props.src}
           style={{
             maxWidth: this.props.width,
-            width: "100%"
+            width: "100%",
           }}
         />
       </Grid>

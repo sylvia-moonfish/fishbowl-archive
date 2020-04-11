@@ -5,8 +5,8 @@ import React from "react";
 
 const styles = () => ({
   fill: {
-    width: "100%"
-  }
+    width: "100%",
+  },
 });
 
 class GuideImageBlock extends React.Component {
@@ -19,7 +19,7 @@ class GuideImageBlock extends React.Component {
       <Grid
         className={this.props.classes.fill}
         style={{
-          maxWidth: this.props.maxWidth + "px"
+          maxWidth: this.props.maxWidth + "px",
         }}
         item
       >

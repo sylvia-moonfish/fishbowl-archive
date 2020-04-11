@@ -16,32 +16,32 @@ import TwitterIcon from "../icons/twitter-icon";
 import YoutubeIcon from "../icons/youtube-icon";
 import DrawerList from "./drawer-list";
 
-const styles = theme => ({
+const styles = (theme) => ({
   caption: {
-    color: "grey"
+    color: "grey",
   },
   direction: {
-    flexDirection: "column"
+    flexDirection: "column",
   },
   drawer: {
     [theme.breakpoints.up("lg")]: {
       width: 320,
-      flexShrink: 0
-    }
+      flexShrink: 0,
+    },
   },
   drawerPaper: {
-    width: 320
+    width: 320,
   },
   grow: {
-    flexGrow: 1
+    flexGrow: 1,
   },
   link: {
     color: "inherit",
-    textDecoration: "none"
+    textDecoration: "none",
   },
   toolbar: {
-    minHeight: 48
-  }
+    minHeight: 48,
+  },
 });
 
 class DrawerImpl extends React.Component {
@@ -111,11 +111,11 @@ class DrawerImpl extends React.Component {
         <Hidden lgUp implementation="css">
           <Drawer
             classes={{
-              paper: this.props.classes.drawerPaper
+              paper: this.props.classes.drawerPaper,
             }}
             className={this.props.classes.direction}
             ModalProps={{
-              keepMounted: true
+              keepMounted: true,
             }}
             onClose={this.props.toggleMobileOpen}
             open={this.props.isMobileOpen}
@@ -128,7 +128,7 @@ class DrawerImpl extends React.Component {
         <Hidden mdDown implementation="css">
           <Drawer
             classes={{
-              paper: this.props.classes.drawerPaper
+              paper: this.props.classes.drawerPaper,
             }}
             className={this.props.classes.direction}
             open

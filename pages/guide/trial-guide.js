@@ -23,13 +23,13 @@ const pageData = {
               itemLevel: 365,
               thumbnailSrc:
                 SiteInfo.assetsUrl + "/trial-guide/kugane-ohashi.png",
-              href: "/guide/trial-guide/4-5/kugane-ohashi"
-            }
-          ]
-        }
-      ]
-    }
-  ]
+              href: "/guide/trial-guide/4-5/kugane-ohashi",
+            },
+          ],
+        },
+      ],
+    },
+  ],
 };
 
 class TrialGuide extends PageComponent {

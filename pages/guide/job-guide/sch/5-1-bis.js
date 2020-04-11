@@ -33,7 +33,7 @@ const transition = React.forwardRef((props, ref) => {
 
 const pageData = {
   title: "학자 가이드 - 5.1 BiS",
-  description: "파이널 판타지 14 학자 가이드 - 5.1 BiS"
+  description: "파이널 판타지 14 학자 가이드 - 5.1 BiS",
 };
 
 const gearSets = [
@@ -46,7 +46,7 @@ const gearSets = [
       dh: 0,
       det: 0,
       sps: 0,
-      pie: 0
+      pie: 0,
     },
     dps: 0,
     hps: 0,
@@ -61,54 +61,54 @@ const gearSets = [
       gears: [
         {
           itemId: "wordOfGrace",
-          materiaIds: ["dh", "dh"]
+          materiaIds: ["dh", "dh"],
         },
         {
           itemId: "edengraceTempleChainOfHealing",
-          materiaIds: ["ch", "ch"]
+          materiaIds: ["ch", "ch"],
         },
         {
           itemId: "augmentedDeepshadowScaleMailOfHealing",
-          materiaIds: ["ch", "ch"]
+          materiaIds: ["ch", "ch"],
         },
         {
           itemId: "edengraceArmletsOfHealing",
-          materiaIds: ["ch", "ch"]
+          materiaIds: ["ch", "ch"],
         },
         {
           itemId: "edengraceTassetsOfHealing",
-          materiaIds: ["dh", "dh"]
+          materiaIds: ["dh", "dh"],
         },
         {
           itemId: "edengracePantaloonsOfHealing",
-          materiaIds: ["dh", "dh"]
+          materiaIds: ["dh", "dh"],
         },
         {
           itemId: "edengraceSandalsOfHealing",
-          materiaIds: ["ch", "dh"]
+          materiaIds: ["ch", "dh"],
         },
         {
           itemId: "augmentedDeepshadowEarringOfHealing",
-          materiaIds: ["dh", "dh"]
+          materiaIds: ["dh", "dh"],
         },
         {
           itemId: "edengraceChokerOfHealing",
-          materiaIds: ["ch", "ch"]
+          materiaIds: ["ch", "ch"],
         },
         {
           itemId: "edengraceBraceletOfHealing",
-          materiaIds: ["dh", "dh"]
+          materiaIds: ["dh", "dh"],
         },
         {
           itemId: "augmentedDeepshadowRingOfHealing",
-          materiaIds: ["dh", "dh"]
+          materiaIds: ["dh", "dh"],
         },
         {
           itemId: "deepshadowRingOfHealing",
-          materiaIds: ["dh", "dh"]
-        }
-      ]
-    }
+          materiaIds: ["dh", "dh"],
+        },
+      ],
+    },
   },
   {
     description: "글쿨 2.39초 신앙 1129 백마 공용 세트.",
@@ -119,7 +119,7 @@ const gearSets = [
       dh: 0,
       det: 0,
       sps: 0,
-      pie: 0
+      pie: 0,
     },
     dps: 0,
     hps: 0,
@@ -134,54 +134,54 @@ const gearSets = [
       gears: [
         {
           itemId: "wordOfGrace",
-          materiaIds: ["dh", "dh"]
+          materiaIds: ["dh", "dh"],
         },
         {
           itemId: "edengraceTempleChainOfHealing",
-          materiaIds: ["ch", "ch"]
+          materiaIds: ["ch", "ch"],
         },
         {
           itemId: "augmentedDeepshadowScaleMailOfHealing",
-          materiaIds: ["ch", "ch"]
+          materiaIds: ["ch", "ch"],
         },
         {
           itemId: "edengraceArmletsOfHealing",
-          materiaIds: ["ch", "ch"]
+          materiaIds: ["ch", "ch"],
         },
         {
           itemId: "edengraceTassetsOfHealing",
-          materiaIds: ["dh", "dh"]
+          materiaIds: ["dh", "dh"],
         },
         {
           itemId: "edengracePantaloonsOfHealing",
-          materiaIds: ["dh", "dh"]
+          materiaIds: ["dh", "dh"],
         },
         {
           itemId: "edengraceSandalsOfHealing",
-          materiaIds: ["ch", "sps"]
+          materiaIds: ["ch", "sps"],
         },
         {
           itemId: "augmentedDeepshadowEarringOfHealing",
-          materiaIds: ["dh", "dh"]
+          materiaIds: ["dh", "dh"],
         },
         {
           itemId: "edengraceChokerOfHealing",
-          materiaIds: ["ch", "ch"]
+          materiaIds: ["ch", "ch"],
         },
         {
           itemId: "augmentedDeepshadowBraceletOfHealing",
-          materiaIds: ["ch", "ch"]
+          materiaIds: ["ch", "ch"],
         },
         {
           itemId: "edengraceRingOfHealing",
-          materiaIds: ["ch", "ch"]
+          materiaIds: ["ch", "ch"],
         },
         {
           itemId: "augmentedDeepshadowRingOfHealing",
-          materiaIds: ["dh", "dh"]
-        }
-      ]
-    }
+          materiaIds: ["dh", "dh"],
+        },
+      ],
+    },
   },
   {
     description: "글쿨 2.42초 신앙 1975 절 알렉산더 용.",
@@ -192,7 +192,7 @@ const gearSets = [
       dh: 0,
       det: 0,
       sps: 0,
-      pie: 0
+      pie: 0,
     },
     dps: 0,
     hps: 0,
@@ -207,55 +207,55 @@ const gearSets = [
       gears: [
         {
           itemId: "wordOfGrace",
-          materiaIds: ["sps", "sps"]
+          materiaIds: ["sps", "sps"],
         },
         {
           itemId: "augmentedDeepshadowHoodOfHealing",
-          materiaIds: ["ch", "ch"]
+          materiaIds: ["ch", "ch"],
         },
         {
           itemId: "augmentedDeepshadowScaleMailOfHealing",
-          materiaIds: ["ch", "ch"]
+          materiaIds: ["ch", "ch"],
         },
         {
           itemId: "augmentedDeepshadowArmguardsOfHealing",
-          materiaIds: ["ch", "ch"]
+          materiaIds: ["ch", "ch"],
         },
         {
           itemId: "edengraceTassetsOfHealing",
-          materiaIds: ["sps", "sps"]
+          materiaIds: ["sps", "sps"],
         },
         {
           itemId: "edengracePantaloonsOfHealing",
-          materiaIds: ["det", "pie"]
+          materiaIds: ["det", "pie"],
         },
         {
           itemId: "edengraceSandalsOfHealing",
-          materiaIds: ["ch", "sps"]
+          materiaIds: ["ch", "sps"],
         },
         {
           itemId: "augmentedDeepshadowEarringOfHealing",
-          materiaIds: ["sps", "sps"]
+          materiaIds: ["sps", "sps"],
         },
         {
           itemId: "augmentedDeepshadowNecklaceOfHealing",
-          materiaIds: ["ch", "sps"]
+          materiaIds: ["ch", "sps"],
         },
         {
           itemId: "edengraceBraceletOfHealing",
-          materiaIds: ["sps", "sps"]
+          materiaIds: ["sps", "sps"],
         },
         {
           itemId: "edengraceRingOfHealing",
-          materiaIds: ["ch", "ch"]
+          materiaIds: ["ch", "ch"],
         },
         {
           itemId: "augmentedDeepshadowRingOfHealing",
-          materiaIds: ["det", "det"]
-        }
-      ]
-    }
-  }
+          materiaIds: ["det", "det"],
+        },
+      ],
+    },
+  },
 ];
 
 class FiveOneBis extends PageComponent {
@@ -263,12 +263,12 @@ class FiveOneBis extends PageComponent {
     super(props);
 
     this.state = {
-      openedDialog: -1
+      openedDialog: -1,
     };
   }
 
   render() {
-    gearSets.forEach(gearSet => {
+    gearSets.forEach((gearSet) => {
       gearSet.attributes.main = Math.floor(
         Math.floor((Calculations.level.main * Calculations.whm.mnd) / 100) +
           Calculations.clan.mnd +
@@ -280,7 +280,7 @@ class FiveOneBis extends PageComponent {
       gearSet.attributes.sps = Calculations.level.sub;
       gearSet.attributes.pie = Calculations.level.main;
 
-      gearSet.dialog.gears.forEach(gear => {
+      gearSet.dialog.gears.forEach((gear) => {
         if (!Calculations[gear.itemId]) {
           console.log(gear.itemId);
           return;
@@ -291,13 +291,13 @@ class FiveOneBis extends PageComponent {
         }
 
         const attributes = Object.keys(Calculations[gear.itemId])
-          .filter(key => {
+          .filter((key) => {
             return key !== "wd";
           })
-          .map(key => {
+          .map((key) => {
             return {
               key: key,
-              value: Calculations[gear.itemId][key]
+              value: Calculations[gear.itemId][key],
             };
           });
 
@@ -309,11 +309,11 @@ class FiveOneBis extends PageComponent {
 
         const attributeObj = {};
 
-        attributes.forEach(attr => {
+        attributes.forEach((attr) => {
           attributeObj[attr.key] = attr.value;
         });
 
-        gear.materiaIds.forEach(materiaId => {
+        gear.materiaIds.forEach((materiaId) => {
           if (!Calculations[materiaId]) {
             console.log(materiaId);
             return;
@@ -329,7 +329,7 @@ class FiveOneBis extends PageComponent {
           }
         });
 
-        Object.keys(attributeObj).forEach(key => {
+        Object.keys(attributeObj).forEach((key) => {
           if (!gearSet.attributes[key]) {
             gearSet.attributes[key] = attributeObj[key];
           } else {
@@ -343,7 +343,7 @@ class FiveOneBis extends PageComponent {
         return;
       }
 
-      Object.keys(Calculations[gearSet.foodId]).forEach(key => {
+      Object.keys(Calculations[gearSet.foodId]).forEach((key) => {
         if (!gearSet.attributes[key]) return;
 
         let value = Math.floor(
@@ -479,7 +479,7 @@ class FiveOneBis extends PageComponent {
                         src={SiteInfo.assetsUrl + "/job-guide/sch.png"}
                         style={{
                           maxWidth: 128,
-                          width: "100%"
+                          width: "100%",
                         }}
                       />
                     </Grid>
@@ -537,7 +537,7 @@ class FiveOneBis extends PageComponent {
                           this.setState(this.state);
                         }}
                         style={{
-                          cursor: "pointer"
+                          cursor: "pointer",
                         }}
                       >
                         <Hidden mdDown>
@@ -576,7 +576,7 @@ class FiveOneBis extends PageComponent {
                 <Toolbar variant="dense">
                   <div
                     style={{
-                      flexGrow: 1
+                      flexGrow: 1,
                     }}
                   >
                     <Typography variant="body1">
@@ -699,7 +699,7 @@ class FiveOneBis extends PageComponent {
                                         <p
                                           key={strIndex}
                                           style={{
-                                            margin: 0
+                                            margin: 0,
                                           }}
                                         >
                                           {str}

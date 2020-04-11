@@ -18,7 +18,7 @@ class GuideVideoBlock extends TranslatedComponent {
           muted
           preload="auto"
           style={{
-            height: this.props.height + "px"
+            height: this.props.height + "px",
           }}
           src={this.props.videoSrc}
         />

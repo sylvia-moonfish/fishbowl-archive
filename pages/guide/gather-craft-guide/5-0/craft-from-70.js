@@ -37,27 +37,27 @@ import macroTime from "../../../../data/old/macro-time";
 
 import SiteInfo from "../../../../data/site-info";
 
-const FiveZeroCraftGuide = props => {
+const FiveZeroCraftGuide = (props) => {
   useEffect(() => {
-    Router.onRouteChangeComplete = url => {
+    Router.onRouteChangeComplete = (url) => {
       window.gtag("config", SiteInfo.gtmId, {
-        page_location: url
+        page_location: url,
       });
     };
   });
 
-  const assetsUrl = url => {
+  const assetsUrl = (url) => {
     return "https://sylvia-moonfish.github.io/fishbowl-assets/" + url;
   };
 
   const classes = makeStyles(() => ({
     fill: {
       width: "100%",
-      maxWidth: 880
+      maxWidth: 880,
     },
     link: {
-      color: "inherit"
-    }
+      color: "inherit",
+    },
   }))();
 
   const [snackbar, setSnackbar] = React.useState(false);
@@ -65,10 +65,10 @@ const FiveZeroCraftGuide = props => {
   const messages = {
     en: en,
     ja: ja,
-    ko: ko
+    ko: ko,
   };
 
-  const translate = id => {
+  const translate = (id) => {
     return messages["ko"][id];
   };
   const pageTitle = translate("page-title");
@@ -76,16 +76,16 @@ const FiveZeroCraftGuide = props => {
 
   const attributes = {
     en: attributesEn,
-    ko: attributesKo
+    ko: attributesKo,
   };
-  const attributesTranslate = id => {
+  const attributesTranslate = (id) => {
     return attributes["ko"][id];
   };
 
   const actions = {
     en: actionsEn,
     ja: actionsJa,
-    ko: actionsKo
+    ko: actionsKo,
   };
   const concatActions = (arr, lang, keyword, wait) => {
     return arr
@@ -103,7 +103,7 @@ const FiveZeroCraftGuide = props => {
       .join("");
   };
   const seventyMacros = [];
-  ["en", "ja", "ko"].forEach(l => {
+  ["en", "ja", "ko"].forEach((l) => {
     seventyMacros[l] = [];
 
     seventyMacros[l].push({
@@ -118,7 +118,7 @@ const FiveZeroCraftGuide = props => {
         ) +
         "/echo " +
         messages[l]["cross-class-setup-finish"] +
-        " <se.1>"
+        " <se.1>",
     });
 
     seventyMacros[l].push({
@@ -139,7 +139,7 @@ const FiveZeroCraftGuide = props => {
             "piece-by-piece",
             "observe",
             "focused-touch",
-            "comfort-zone"
+            "comfort-zone",
           ],
           l,
           "/ac",
@@ -147,7 +147,7 @@ const FiveZeroCraftGuide = props => {
         ) +
         "/echo " +
         messages[l]["macro-1-finish"] +
-        " <se.1>"
+        " <se.1>",
     });
 
     seventyMacros[l].push({
@@ -162,7 +162,7 @@ const FiveZeroCraftGuide = props => {
             "observe",
             "focused-touch",
             "steady-hand",
-            "ingenuity-2"
+            "ingenuity-2",
           ],
           l,
           "/ac",
@@ -170,7 +170,7 @@ const FiveZeroCraftGuide = props => {
         ) +
         "/echo " +
         messages[l]["check-condition"] +
-        " <se.1>"
+        " <se.1>",
     });
 
     seventyMacros[l].push({
@@ -182,7 +182,7 @@ const FiveZeroCraftGuide = props => {
             "byregot's-blessing",
             "careful-synthesis-3",
             "careful-synthesis-3",
-            "careful-synthesis-3"
+            "careful-synthesis-3",
           ],
           l,
           "/ac",
@@ -190,7 +190,7 @@ const FiveZeroCraftGuide = props => {
         ) +
         "/echo " +
         messages[l]["craft-finish"] +
-        " <se.1>"
+        " <se.1>",
     });
 
     seventyMacros[l].push({
@@ -201,7 +201,7 @@ const FiveZeroCraftGuide = props => {
             "byregot's-blessing",
             "careful-synthesis-3",
             "careful-synthesis-3",
-            "careful-synthesis-3"
+            "careful-synthesis-3",
           ],
           l,
           "/ac",
@@ -209,11 +209,11 @@ const FiveZeroCraftGuide = props => {
         ) +
         "/echo " +
         messages[l]["craft-finish"] +
-        " <se.1>"
+        " <se.1>",
     });
   });
   const seventyOneMacros = [];
-  ["en", "ja", "ko"].forEach(l => {
+  ["en", "ja", "ko"].forEach((l) => {
     seventyOneMacros[l] = [];
 
     seventyOneMacros[l].push({
@@ -228,7 +228,7 @@ const FiveZeroCraftGuide = props => {
         ) +
         "/echo " +
         messages[l]["cross-class-setup-finish"] +
-        " <se.1>"
+        " <se.1>",
     });
 
     seventyOneMacros[l].push({
@@ -247,7 +247,7 @@ const FiveZeroCraftGuide = props => {
             "preparatory-touch",
             "piece-by-piece",
             "steady-hand",
-            "ingenuity-2"
+            "ingenuity-2",
           ],
           l,
           "/ac",
@@ -255,7 +255,7 @@ const FiveZeroCraftGuide = props => {
         ) +
         "/echo " +
         messages[l]["check-condition"] +
-        " <se.1>"
+        " <se.1>",
     });
 
     seventyOneMacros[l].push({
@@ -267,7 +267,7 @@ const FiveZeroCraftGuide = props => {
             "byregot's-blessing",
             "name-of-the-elements",
             "brand-of-the-elements",
-            "careful-synthesis-3"
+            "careful-synthesis-3",
           ],
           l,
           "/ac",
@@ -275,7 +275,7 @@ const FiveZeroCraftGuide = props => {
         ) +
         "/echo " +
         messages[l]["craft-finish"] +
-        " <se.1>"
+        " <se.1>",
     });
 
     seventyOneMacros[l].push({
@@ -286,7 +286,7 @@ const FiveZeroCraftGuide = props => {
             "byregot's-blessing",
             "name-of-the-elements",
             "brand-of-the-elements",
-            "careful-synthesis-3"
+            "careful-synthesis-3",
           ],
           l,
           "/ac",
@@ -294,11 +294,11 @@ const FiveZeroCraftGuide = props => {
         ) +
         "/echo " +
         messages[l]["craft-finish"] +
-        " <se.1>"
+        " <se.1>",
     });
   });
   const seventySixMacros = [];
-  ["en", "ja", "ko"].forEach(l => {
+  ["en", "ja", "ko"].forEach((l) => {
     seventySixMacros[l] = [];
 
     seventySixMacros[l].push({
@@ -313,7 +313,7 @@ const FiveZeroCraftGuide = props => {
         ) +
         "/echo " +
         messages[l]["cross-class-setup-finish"] +
-        " <se.1>"
+        " <se.1>",
     });
 
     seventySixMacros[l].push({
@@ -334,7 +334,7 @@ const FiveZeroCraftGuide = props => {
             "steady-hand-2",
             "ingenuity-2",
             "preparatory-touch",
-            "preparatory-touch"
+            "preparatory-touch",
           ],
           l,
           "/ac",
@@ -342,7 +342,7 @@ const FiveZeroCraftGuide = props => {
         ) +
         "/echo " +
         messages[l]["check-condition"] +
-        " <se.1>"
+        " <se.1>",
     });
 
     seventySixMacros[l].push({
@@ -356,7 +356,7 @@ const FiveZeroCraftGuide = props => {
         ) +
         "/echo " +
         messages[l]["craft-finish"] +
-        " <se.1>"
+        " <se.1>",
     });
 
     seventySixMacros[l].push({
@@ -370,11 +370,11 @@ const FiveZeroCraftGuide = props => {
         ) +
         "/echo " +
         messages[l]["craft-finish"] +
-        " <se.1>"
+        " <se.1>",
     });
   });
   const eightyMacros = [];
-  ["en", "ja", "ko"].forEach(l => {
+  ["en", "ja", "ko"].forEach((l) => {
     eightyMacros[l] = [];
 
     eightyMacros[l].push({
@@ -389,7 +389,7 @@ const FiveZeroCraftGuide = props => {
         ) +
         "/echo " +
         messages[l]["cross-class-setup-finish"] +
-        " <se.1>"
+        " <se.1>",
     });
 
     eightyMacros[l].push({
@@ -410,7 +410,7 @@ const FiveZeroCraftGuide = props => {
             "focused-touch",
             "steady-hand-2",
             "ingenuity-2",
-            "preparatory-touch"
+            "preparatory-touch",
           ],
           l,
           "/ac",
@@ -418,7 +418,7 @@ const FiveZeroCraftGuide = props => {
         ) +
         "/echo " +
         messages[l]["macro-1-finish"] +
-        " <se.1>"
+        " <se.1>",
     });
 
     eightyMacros[l].push({
@@ -427,7 +427,7 @@ const FiveZeroCraftGuide = props => {
         concatActions(["preparatory-touch"], l, "/ac", true) +
         "/echo " +
         messages[l]["check-condition"] +
-        " <se.1>"
+        " <se.1>",
     });
 
     eightyMacros[l].push({
@@ -438,7 +438,7 @@ const FiveZeroCraftGuide = props => {
             "great-strides",
             "byregot's-blessing",
             "careful-synthesis-2",
-            "careful-synthesis-2"
+            "careful-synthesis-2",
           ],
           l,
           "/ac",
@@ -446,7 +446,7 @@ const FiveZeroCraftGuide = props => {
         ) +
         "/echo " +
         messages[l]["craft-finish"] +
-        " <se.1>"
+        " <se.1>",
     });
 
     eightyMacros[l].push({
@@ -460,12 +460,12 @@ const FiveZeroCraftGuide = props => {
         ) +
         "/echo " +
         messages[l]["craft-finish"] +
-        " <se.1>"
+        " <se.1>",
     });
   });
 
   const eightyTwoStarMacros = [];
-  ["en", "ja", "ko"].forEach(l => {
+  ["en", "ja", "ko"].forEach((l) => {
     eightyTwoStarMacros[l] = [];
 
     eightyTwoStarMacros[l].push({
@@ -480,7 +480,7 @@ const FiveZeroCraftGuide = props => {
         ) +
         "/echo " +
         messages[l]["cross-class-setup-finish"] +
-        " <se.1>"
+        " <se.1>",
     });
 
     eightyTwoStarMacros[l].push({
@@ -501,7 +501,7 @@ const FiveZeroCraftGuide = props => {
             "delicate-synthesis",
             "delicate-synthesis",
             "delicate-synthesis",
-            "delicate-synthesis"
+            "delicate-synthesis",
           ],
           l,
           "/ac",
@@ -509,7 +509,7 @@ const FiveZeroCraftGuide = props => {
         ) +
         "/echo " +
         messages[l]["macro-1-finish"] +
-        " <se.1>"
+        " <se.1>",
     });
 
     eightyTwoStarMacros[l].push({
@@ -521,7 +521,7 @@ const FiveZeroCraftGuide = props => {
             "steady-hand-2",
             "ingenuity",
             "preparatory-touch",
-            "prudent-touch"
+            "prudent-touch",
           ],
           l,
           "/ac",
@@ -529,7 +529,7 @@ const FiveZeroCraftGuide = props => {
         ) +
         "/echo " +
         messages[l]["check-condition"] +
-        " <se.1>"
+        " <se.1>",
     });
 
     eightyTwoStarMacros[l].push({
@@ -543,7 +543,7 @@ const FiveZeroCraftGuide = props => {
         ) +
         "/echo " +
         messages[l]["craft-finish"] +
-        " <se.1>"
+        " <se.1>",
     });
 
     eightyTwoStarMacros[l].push({
@@ -557,7 +557,7 @@ const FiveZeroCraftGuide = props => {
         ) +
         "/echo " +
         messages[l]["craft-finish"] +
-        " <se.1>"
+        " <se.1>",
     });
   });
 
@@ -589,7 +589,7 @@ const FiveZeroCraftGuide = props => {
             }}
           >
             <CloseIcon />
-          </IconButton>
+          </IconButton>,
         ]}
         anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
         autoHideDuration={2000}
@@ -670,7 +670,7 @@ const FiveZeroCraftGuide = props => {
                         gearId: -1,
                         materiaIds: []
                       }]]} />*/}
-              </Grid>
+              </Grid>,
             ]}
           />
           <Grid item>
@@ -707,7 +707,7 @@ const FiveZeroCraftGuide = props => {
               "byregots-blessing",
               "careful-synthesis-3",
               "careful-synthesis-3",
-              "careful-synthesis-3"
+              "careful-synthesis-3",
             ]}
           />
           <Grid item>
@@ -757,8 +757,8 @@ const FiveZeroCraftGuide = props => {
                     {
                       label: "TeamCraft Import",
                       value:
-                        '["muscleMemory","comfortZone","innerQuiet","manipulation2","ingenuity2","steadyHand2","prudentTouch","prudentTouch","prudentTouch","prudentTouch","pieceByPiece","observe","focusedTouch","comfortZone","observe","focusedTouch","observe","focusedTouch","observe","focusedTouch","steadyHand","ingenuity2","greatStrides","byregotsBlessing","carefulSynthesis3","carefulSynthesis3","carefulSynthesis3"]'
-                    }
+                        '["muscleMemory","comfortZone","innerQuiet","manipulation2","ingenuity2","steadyHand2","prudentTouch","prudentTouch","prudentTouch","prudentTouch","pieceByPiece","observe","focusedTouch","comfortZone","observe","focusedTouch","observe","focusedTouch","observe","focusedTouch","steadyHand","ingenuity2","greatStrides","byregotsBlessing","carefulSynthesis3","carefulSynthesis3","carefulSynthesis3"]',
+                    },
                   ]}
                 />
               )}
@@ -787,7 +787,7 @@ const FiveZeroCraftGuide = props => {
               "byregots-blessing",
               "name-of-the-elements",
               "brand-of-the-elements",
-              "careful-synthesis-3"
+              "careful-synthesis-3",
             ]}
           />
           <Grid item>
@@ -897,8 +897,8 @@ const FiveZeroCraftGuide = props => {
                     {
                       label: "TeamCraft Import",
                       value:
-                        '["muscleMemory","innerQuiet","wasteNot2","ingenuity2","steadyHand2","preparatoryTouch","preparatoryTouch","preparatoryTouch","preparatoryTouch","pieceByPiece","steadyHand","ingenuity2","greatStrides","byregotsBlessing","nameOfEarth","brandOfEarth","carefulSynthesis3"]'
-                    }
+                        '["muscleMemory","innerQuiet","wasteNot2","ingenuity2","steadyHand2","preparatoryTouch","preparatoryTouch","preparatoryTouch","preparatoryTouch","pieceByPiece","steadyHand","ingenuity2","greatStrides","byregotsBlessing","nameOfEarth","brandOfEarth","carefulSynthesis3"]',
+                    },
                   ]}
                 />
               )}
@@ -927,7 +927,7 @@ const FiveZeroCraftGuide = props => {
               "preparatory-touch",
               "great-strides",
               "byregots-blessing",
-              "careful-synthesis-2"
+              "careful-synthesis-2",
             ]}
           />
           <Grid item>
@@ -989,8 +989,8 @@ const FiveZeroCraftGuide = props => {
                     {
                       label: "TeamCraft Import",
                       value:
-                        '["muscleMemory","innerQuiet","manipulation2","ingenuity2","delicateSynthesis","delicateSynthesis","delicateSynthesis","delicateSynthesis","observe","focusedTouch","steadyHand2","ingenuity2","preparatoryTouch","preparatoryTouch","greatStrides","byregotsBlessing","carefulSynthesis2"]'
-                    }
+                        '["muscleMemory","innerQuiet","manipulation2","ingenuity2","delicateSynthesis","delicateSynthesis","delicateSynthesis","delicateSynthesis","observe","focusedTouch","steadyHand2","ingenuity2","preparatoryTouch","preparatoryTouch","greatStrides","byregotsBlessing","carefulSynthesis2"]',
+                    },
                   ]}
                 />
               )}
@@ -1021,7 +1021,7 @@ const FiveZeroCraftGuide = props => {
               "great-strides",
               "byregots-blessing",
               "careful-synthesis-2",
-              "careful-synthesis-2"
+              "careful-synthesis-2",
             ]}
           />
           <GuideNormalText>
@@ -1074,8 +1074,8 @@ const FiveZeroCraftGuide = props => {
                     {
                       label: "TeamCraft Import",
                       value:
-                        '["muscleMemory","innerQuiet","manipulation2","ingenuity2","wasteNot","delicateSynthesis","delicateSynthesis","delicateSynthesis","delicateSynthesis","observe","focusedTouch","steadyHand2","ingenuity2","preparatoryTouch","preparatoryTouch","greatStrides","byregotsBlessing","carefulSynthesis2","carefulSynthesis2"]'
-                    }
+                        '["muscleMemory","innerQuiet","manipulation2","ingenuity2","wasteNot","delicateSynthesis","delicateSynthesis","delicateSynthesis","delicateSynthesis","observe","focusedTouch","steadyHand2","ingenuity2","preparatoryTouch","preparatoryTouch","greatStrides","byregotsBlessing","carefulSynthesis2","carefulSynthesis2"]',
+                    },
                   ]}
                 />
               )}
@@ -1138,12 +1138,12 @@ const FiveZeroCraftGuide = props => {
                       {
                         // 주도구
                         gearId: 27140,
-                        materiaIds: ["cp+6", "", "", "", ""]
+                        materiaIds: ["cp+6", "", "", "", ""],
                       },
                       {
                         gearId: -1,
-                        materiaIds: []
-                      }
+                        materiaIds: [],
+                      },
                     ],
                     [
                       {
@@ -1154,14 +1154,14 @@ const FiveZeroCraftGuide = props => {
                           "craftsmanship+16",
                           "control+4",
                           "control+4",
-                          "cp+2"
-                        ]
+                          "cp+2",
+                        ],
                       },
                       {
                         // 부도구
                         gearId: 27151,
-                        materiaIds: ["cp+6", "", "", "", ""]
-                      }
+                        materiaIds: ["cp+6", "", "", "", ""],
+                      },
                     ],
                     [
                       {
@@ -1172,14 +1172,14 @@ const FiveZeroCraftGuide = props => {
                           "control+10",
                           "control+4",
                           "control+4",
-                          "cp+1"
-                        ]
+                          "cp+1",
+                        ],
                       },
                       {
                         // 귀걸이
                         gearId: 27222,
-                        materiaIds: ["cp+8", "cp+4", "craftsmanship+6", "", ""]
-                      }
+                        materiaIds: ["cp+8", "cp+4", "craftsmanship+6", "", ""],
+                      },
                     ],
                     [
                       {
@@ -1190,14 +1190,14 @@ const FiveZeroCraftGuide = props => {
                           "craftsmanship+16",
                           "control+4",
                           "control+4",
-                          "cp+2"
-                        ]
+                          "cp+2",
+                        ],
                       },
                       {
                         // 목걸이
                         gearId: 27223,
-                        materiaIds: ["cp+8", "cp+4", "craftsmanship+6", "", ""]
-                      }
+                        materiaIds: ["cp+8", "cp+4", "craftsmanship+6", "", ""],
+                      },
                     ],
                     [
                       {
@@ -1208,14 +1208,14 @@ const FiveZeroCraftGuide = props => {
                           "cp+4",
                           "control+4",
                           "cp+3",
-                          "cp+2"
-                        ]
+                          "cp+2",
+                        ],
                       },
                       {
                         // 팔찌
                         gearId: 27224,
-                        materiaIds: ["cp+8", "cp+4", "craftsmanship+6", "", ""]
-                      }
+                        materiaIds: ["cp+8", "cp+4", "craftsmanship+6", "", ""],
+                      },
                     ],
                     [
                       {
@@ -1226,8 +1226,8 @@ const FiveZeroCraftGuide = props => {
                           "control+10",
                           "cp+4",
                           "cp+3",
-                          "cp+2"
-                        ]
+                          "cp+2",
+                        ],
                       },
                       {
                         // 반지
@@ -1237,9 +1237,9 @@ const FiveZeroCraftGuide = props => {
                           "craftsmanship+6",
                           "craftsmanship+4",
                           "craftsmanship+4",
-                          ""
-                        ]
-                      }
+                          "",
+                        ],
+                      },
                     ],
                     [
                       {
@@ -1250,8 +1250,8 @@ const FiveZeroCraftGuide = props => {
                           "control+10",
                           "cp+4",
                           "cp+3",
-                          "cp+2"
-                        ]
+                          "cp+2",
+                        ],
                       },
                       {
                         // 반지
@@ -1261,14 +1261,14 @@ const FiveZeroCraftGuide = props => {
                           "craftsmanship+6",
                           "craftsmanship+4",
                           "craftsmanship+4",
-                          ""
-                        ]
-                      }
-                    ]
+                          "",
+                        ],
+                      },
+                    ],
                   ]}
                 />
                 <GuideNormalText>{translate("guide-text-12")}</GuideNormalText>
-              </Grid>
+              </Grid>,
             ]}
           />
           <Grid item>
@@ -1302,7 +1302,7 @@ const FiveZeroCraftGuide = props => {
               "prudent-touch",
               "great-strides",
               "byregots-blessing",
-              "careful-synthesis-2"
+              "careful-synthesis-2",
             ]}
           />
           <GuideNormalText>
@@ -1359,8 +1359,8 @@ const FiveZeroCraftGuide = props => {
                     {
                       label: "TeamCraft Import",
                       value:
-                        '["comfortZone","innerQuiet","ingenuity","innovation","delicateSynthesis","delicateSynthesis","delicateSynthesis","manipulation2","ingenuity","innovation","delicateSynthesis","delicateSynthesis","delicateSynthesis","delicateSynthesis","greatStrides","steadyHand2","ingenuity","preparatoryTouch","prudentTouch","greatStrides","byregotsBlessing","carefulSynthesis2"]'
-                    }
+                        '["comfortZone","innerQuiet","ingenuity","innovation","delicateSynthesis","delicateSynthesis","delicateSynthesis","manipulation2","ingenuity","innovation","delicateSynthesis","delicateSynthesis","delicateSynthesis","delicateSynthesis","greatStrides","steadyHand2","ingenuity","preparatoryTouch","prudentTouch","greatStrides","byregotsBlessing","carefulSynthesis2"]',
+                    },
                   ]}
                 />
               )}
@@ -1390,30 +1390,30 @@ const FiveZeroCraftGuide = props => {
                 {
                   // 주도구
                   gearId: 27140,
-                  materiaIds: ["", "", "", "", ""]
+                  materiaIds: ["", "", "", "", ""],
                 },
                 {
                   gearId: -1,
-                  materiaIds: []
-                }
+                  materiaIds: [],
+                },
               ],
               [
                 {
                   // 머리
                   gearId: 27191,
-                  materiaIds: ["", "", "", "", ""]
+                  materiaIds: ["", "", "", "", ""],
                 },
                 {
                   // 부도구
                   gearId: 27151,
-                  materiaIds: ["", "", "", "", ""]
-                }
+                  materiaIds: ["", "", "", "", ""],
+                },
               ],
               [
                 {
                   // 몸
                   gearId: 27192,
-                  materiaIds: ["", "", "", "", ""]
+                  materiaIds: ["", "", "", "", ""],
                 },
                 {
                   // 귀걸이
@@ -1423,15 +1423,15 @@ const FiveZeroCraftGuide = props => {
                     "cp+8",
                     "control+9",
                     "control+9",
-                    "cp+4"
-                  ]
-                }
+                    "cp+4",
+                  ],
+                },
               ],
               [
                 {
                   // 손
                   gearId: 27193,
-                  materiaIds: ["", "", "", "", ""]
+                  materiaIds: ["", "", "", "", ""],
                 },
                 {
                   // 목걸이
@@ -1441,9 +1441,9 @@ const FiveZeroCraftGuide = props => {
                     "cp+8",
                     "control+9",
                     "control+9",
-                    "cp+4"
-                  ]
-                }
+                    "cp+4",
+                  ],
+                },
               ],
               [
                 {
@@ -1454,8 +1454,8 @@ const FiveZeroCraftGuide = props => {
                     "craftsmanship+14",
                     "control+9",
                     "control+9",
-                    "control+9"
-                  ]
+                    "control+9",
+                  ],
                 },
                 {
                   // 팔찌
@@ -1465,15 +1465,15 @@ const FiveZeroCraftGuide = props => {
                     "cp+8",
                     "control+9",
                     "control+9",
-                    "cp+4"
-                  ]
-                }
+                    "cp+4",
+                  ],
+                },
               ],
               [
                 {
                   // 다리
                   gearId: 27194,
-                  materiaIds: ["", "", "", "", ""]
+                  materiaIds: ["", "", "", "", ""],
                 },
                 {
                   // 반지
@@ -1483,15 +1483,15 @@ const FiveZeroCraftGuide = props => {
                     "craftsmanship+14",
                     "craftsmanship+14",
                     "control+9",
-                    "cp+6"
-                  ]
-                }
+                    "cp+6",
+                  ],
+                },
               ],
               [
                 {
                   // 발
                   gearId: 27195,
-                  materiaIds: ["", "", "", "", ""]
+                  materiaIds: ["", "", "", "", ""],
                 },
                 {
                   // 반지
@@ -1501,10 +1501,10 @@ const FiveZeroCraftGuide = props => {
                     "craftsmanship+14",
                     "control+9",
                     "cp+6",
-                    "control+4"
-                  ]
-                }
-              ]
+                    "control+4",
+                  ],
+                },
+              ],
             ]}
           />
           <GuideNormalText>

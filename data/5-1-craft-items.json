@@ -1,0 +1,240 @@
+{
+  "defaultCp": 180,
+
+  "================================================== Materias ==================================================": {},
+  "cra1": {
+    "name": "",
+    "cra": 3
+  },
+  "cra2": {
+    "name": "",
+    "cra": 4
+  },
+  "cra3": {
+    "name": "",
+    "cra": 5
+  },
+  "cra4": {
+    "name": "",
+    "cra": 6
+  },
+  "cra5": {
+    "name": "",
+    "cra": 11
+  },
+  "cra6": {
+    "name": "",
+    "cra": 16
+  },
+  "cra7": {
+    "name": "",
+    "cra": 14
+  },
+  "cra8": {
+    "name": "",
+    "cra": 21
+  },
+
+  "con1": {
+    "name": "",
+    "con": 1
+  },
+  "con2": {
+    "name": "",
+    "con": 2
+  },
+  "con3": {
+    "name": "",
+    "con": 3
+  },
+  "con4": {
+    "name": "",
+    "con": 4
+  },
+  "con5": {
+    "name": "",
+    "con": 7
+  },
+  "con6": {
+    "name": "",
+    "con": 10
+  },
+  "con7": {
+    "name": "",
+    "con": 9
+  },
+  "con8": {
+    "name": "",
+    "con": 13
+  },
+
+  "cp1": {
+    "name": "",
+    "cp": 1
+  },
+  "cp2": {
+    "name": "",
+    "cp": 2
+  },
+  "cp3": {
+    "name": "",
+    "cp": 3
+  },
+  "cp4": {
+    "name": "",
+    "cp": 4
+  },
+  "cp5": {
+    "name": "",
+    "cp": 6
+  },
+  "cp6": {
+    "name": "",
+    "cp": 8
+  },
+  "cp7": {
+    "name": "",
+    "cp": 7
+  },
+  "cp8": {
+    "name": "",
+    "cp": 9
+  },
+
+  "================================================== 290 Gears ==================================================": {},
+  "================================================== 290 Earrings ==================================================": {},
+  "zelkovaEarrings": {
+    "name": "",
+    "iconSrc": "/icons/items/zelkova-earrings.png",
+    "cra": 6,
+    "cp": 41
+  },
+  "================================================== 290 Necklace ==================================================": {},
+  "zelkovaNecklace": {
+    "name": "",
+    "iconSrc": "/icons/items/zelkova-necklace.png",
+    "cra": 6,
+    "cp": 41
+  },
+  "================================================== 290 Bracelets ==================================================": {},
+  "zelkovaBracelets": {
+    "name": "",
+    "iconSrc": "/icons/items/zelkova-bracelets.png",
+    "cra": 6,
+    "cp": 41
+  },
+  "================================================== 290 Rings ==================================================": {},
+  "zelkovaRing": {
+    "name": "",
+    "iconSrc": "/icons/items/zelkova-ring.png",
+    "con": 12,
+    "cp": 21
+  },
+
+  "================================================== 430 Gears ==================================================": {},
+  "================================================== 430 Primary ==================================================": {},
+  "dwarvenMythrilSaw": {
+    "name": "",
+    "iconSrc": "/icons/items/dwarven-mythril-saw.png",
+    "cra": 580,
+    "con": 314
+  },
+  "dwarvenMythrilSawHq": {
+    "name": "",
+    "iconSrc": "/icons/items/dwarven-mythril-saw-hq.png",
+    "cra": 657,
+    "con": 356
+  },
+  "================================================== 430 Secondary ==================================================": {},
+  "dwarvenMythrilClawHammer": {
+    "name": "",
+    "iconSrc": "/icons/items/dwarven-mythril-claw-hammer.png",
+    "cra": 580,
+    "con": 314
+  },
+  "dwarvenMythrilClawHammerHq": {
+    "name": "",
+    "iconSrc": "/icons/items/dwarven-mythril-claw-hammer-hq.png",
+    "cra": 657,
+    "con": 356
+  },
+  "================================================== 430 Head ==================================================": {},
+  "dwarvenCottonBeret": {
+    "name": "",
+    "iconSrc": "/icons/items/dwarven-cotton-beret.png",
+    "con": 157,
+    "cp": 7
+  },
+  "dwarvenCottonBeretHq": {
+    "name": "",
+    "iconSrc": "/icons/items/dwarven-cotton-beret-hq.png",
+    "con": 178,
+    "cp": 7
+  },
+  "================================================== 430 Body ==================================================": {},
+  "dwarvenCottonJacket": {
+    "name": "",
+    "iconSrc": "/icons/items/dwarven-cotton-jacket.png",
+    "cra": 497,
+    "con": 157,
+    "cp": 4
+  },
+  "dwarvenCottonJacketHq": {
+    "name": "",
+    "iconSrc": "/icons/items/dwarven-cotton-jacket-hq.png",
+    "cra": 563,
+    "con": 178,
+    "cp": 5
+  },
+  "================================================== 430 Hands ==================================================": {},
+  "swallowskinFingerlessGloves": {
+    "name": "",
+    "iconSrc": "/icons/items/swallowskin-fingerless-gloves.png",
+    "con": 157,
+    "cp": 7
+  },
+  "swallowskinFingerlessGlovesHq": {
+    "name": "",
+    "iconSrc": "/icons/items/swallowskin-fingerless-gloves-hq.png",
+    "con": 178,
+    "cp": 7
+  },
+  "================================================== 430 Waist ==================================================": {},
+  "swallowskinToolBelt": {
+    "name": "",
+    "iconSrc": "/icons/items/swallowskin-tool-belt.png",
+    "con": 157
+  },
+  "swallowskinToolBeltHq": {
+    "name": "",
+    "iconSrc": "/icons/items/swallowskin-tool-belt-hq.png",
+    "con": 178
+  },
+  "================================================== 430 Legs ==================================================": {},
+  "dwarvenCottonTrousers": {
+    "name": "",
+    "iconSrc": "/icons/items/dwarven-cotton-trousers.png",
+    "cra": 33,
+    "con": 157
+  },
+  "dwarvenCottonTrousersHq": {
+    "name": "",
+    "iconSrc": "/icons/items/dwarven-cotton-trousers-hq.png",
+    "cra": 38,
+    "con": 178
+  },
+  "================================================== 430 Feet ==================================================": {},
+  "swallowskinShoes": {
+    "name": "",
+    "iconSrc": "/icons/items/swallowskin-shoes.png",
+    "cra": 33,
+    "con": 157
+  },
+  "swallowskinShoesHq": {
+    "name": "",
+    "iconSrc": "/icons/items/swallowskin-shoes-hq.png",
+    "cra": 38,
+    "con": 178
+  },
+  "================================================== 430 Earrings ==================================================": {}
+}

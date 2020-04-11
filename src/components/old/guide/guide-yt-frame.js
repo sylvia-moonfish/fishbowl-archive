@@ -5,12 +5,12 @@ import { makeStyles } from "@material-ui/core/styles";
 
 import GuideCaption from "./guide-caption";
 
-const GuideYtFrame = props => {
+const GuideYtFrame = (props) => {
   const classes = makeStyles(() => ({
     video: {
       maxWidth: 576,
-      width: "100%"
-    }
+      width: "100%",
+    },
   }))();
 
   return (

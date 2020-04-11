@@ -6,7 +6,7 @@ import {
   purple,
   red,
   teal,
-  yellow
+  yellow,
 } from "@material-ui/core/colors";
 
 const gimmickColorType = {
@@ -19,7 +19,7 @@ const gimmickColorType = {
     everyoneSpecial: teal[800],
     noOne: brown[800],
     instruction: blueGrey[800],
-    warning: red[800]
+    warning: red[800],
   },
   dark: {
     tank: blue[200],
@@ -30,8 +30,8 @@ const gimmickColorType = {
     everyoneSpecial: teal[200],
     noOne: brown[200],
     instruction: blueGrey[200],
-    warning: red[200]
-  }
+    warning: red[200],
+  },
 };
 
 export default gimmickColorType;

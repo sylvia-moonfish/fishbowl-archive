@@ -43,7 +43,7 @@ const MainMenu = {
                     />
                   </ListItemAvatar>
                 );
-              }
+              },
             },
             {
               title: "직업별 가이드",
@@ -62,11 +62,11 @@ const MainMenu = {
                   </ListItemAvatar>
                 );
               },
-              href: "/guide/job-guide"
+              href: "/guide/job-guide",
             },
             {
               title: "던전 가이드",
-              icon: avatarClassName => {
+              icon: (avatarClassName) => {
                 return (
                   <ListItemAvatar>
                     <Avatar
@@ -75,11 +75,11 @@ const MainMenu = {
                     />
                   </ListItemAvatar>
                 );
-              }
+              },
             },
             {
               title: "토벌전 가이드",
-              icon: avatarClassName => {
+              icon: (avatarClassName) => {
                 return (
                   <ListItemAvatar>
                     <Avatar
@@ -89,11 +89,11 @@ const MainMenu = {
                   </ListItemAvatar>
                 );
               },
-              href: "/guide/trial-guide"
+              href: "/guide/trial-guide",
             },
             {
               title: "레이드 가이드",
-              icon: avatarClassName => {
+              icon: (avatarClassName) => {
                 return (
                   <ListItemAvatar>
                     <Avatar
@@ -103,11 +103,11 @@ const MainMenu = {
                   </ListItemAvatar>
                 );
               },
-              href: "/guide/raid-guide"
+              href: "/guide/raid-guide",
             },
             {
               title: "채집/제작 가이드",
-              icon: avatarClassName => {
+              icon: (avatarClassName) => {
                 return (
                   <ListItemAvatar>
                     <Avatar
@@ -117,9 +117,9 @@ const MainMenu = {
                   </ListItemAvatar>
                 );
               },
-              href: "/guide/gather-craft-guide"
-            }
-          ]
+              href: "/guide/gather-craft-guide",
+            },
+          ],
         },
         {
           title: "정보/뉴스",
@@ -139,7 +139,7 @@ const MainMenu = {
                     <MicIcon />
                   </ListItemIcon>
                 );
-              }
+              },
             },
             {
               title: "레터 라이브",
@@ -149,7 +149,7 @@ const MainMenu = {
                     <TheatersIcon />
                   </ListItemIcon>
                 );
-              }
+              },
             },
             {
               title: "기타",
@@ -159,13 +159,13 @@ const MainMenu = {
                     <ViewListIcon />
                   </ListItemIcon>
                 );
-              }
-            }
-          ]
-        }
-      ]
-    }
-  ]
+              },
+            },
+          ],
+        },
+      ],
+    },
+  ],
 };
 
 export default MainMenu;
