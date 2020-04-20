@@ -65,6 +65,7 @@ class ExpansionList extends React.Component {
               if (item === "divider")
                 return (
                   <Divider
+                    key={itemIndex}
                     style={{
                       margin: 25,
                     }}

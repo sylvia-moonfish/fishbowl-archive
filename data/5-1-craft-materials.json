@@ -1,0 +1,39 @@
+{
+  "fire-crystal": {
+    "name": "불 크리스탈",
+    "iconSrc": "/icons/items/fire-crystal.png"
+  },
+  "wind-crystal": {
+    "name": "바람 크리스탈",
+    "iconSrc": "/icons/items/wind-crystal.png"
+  },
+  "lightning-crystal": {
+    "name": "번개 크리스탈",
+    "iconSrc": "/icons/items/lightning-crystal.png"
+  },
+
+  "dimythrite-sand": {
+    "name": "디미스라이트 모래",
+    "iconSrc": "/icons/items/dimythrite-sand.png"
+  },
+  "dwarven-cotton-boll": {
+    "name": "드워프 목화",
+    "iconSrc": "/icons/items/dwarven-cotton-boll.png"
+  },
+  "dwarven-cotton-thread": {
+    "name": "드워프 무명실",
+    "iconSrc": "/icons/items/dwarven-cotton-thread.png"
+  },
+  "effervescent-water": {
+    "name": "탄산수",
+    "iconSrc": "/icons/items/effervescent-water.png"
+  },
+  "iridescent-cocoon": {
+    "name": "무지개 고치",
+    "iconSrc": "/icons/items/iridescent-cocoon.png"
+  },
+  "mythrite-sand": {
+    "name": "미스라이트 모래",
+    "iconSrc": "/icons/items/mythrite-sand.png"
+  }
+}

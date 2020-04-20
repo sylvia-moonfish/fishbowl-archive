@@ -7,7 +7,7 @@ import TableRow from "@material-ui/core/TableRow";
 
 import React from "react";
 
-class CraftGearStatsTable extends React.Component {
+class CraftGearStats extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -58,4 +58,4 @@ class CraftGearStatsTable extends React.Component {
   }
 }
 
-export default CraftGearStatsTable;
+export default CraftGearStats;

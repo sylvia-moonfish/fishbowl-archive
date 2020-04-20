@@ -57,6 +57,7 @@ class DrawerImpl extends React.Component {
           currentTheme={this.props.currentTheme}
           drawerList={this.props.drawerList}
           language={this.props.language}
+          setMobileOpen={this.props.setMobileOpen}
           siteInfo={this.props.siteInfo}
         />
       </div>

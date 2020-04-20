@@ -1,0 +1,11 @@
+{
+  "careful-synthesis": {
+    "iconSrc": "/icons/actions/careful-synthesis.png",
+    "macroName": {
+      "ko": "\"모범 작업\"",
+      "en": "\"Careful Synthesis\"",
+      "ja": "模範作業"
+    },
+    "waitTime": 3
+  }
+}

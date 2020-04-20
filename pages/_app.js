@@ -35,6 +35,10 @@ class FishbowlApp extends App {
       darkTheme: DarkTheme,
       isMobileOpen: false,
       lightTheme: LightTheme,
+      setMobileOpen: (value) => {
+        this.state.isMobileOpen = value;
+        this.setState(this.state);
+      },
       toggleMobileOpen: () => {
         this.state.isMobileOpen = !this.state.isMobileOpen;
         this.setState(this.state);
@@ -102,6 +106,7 @@ class FishbowlApp extends App {
             <DrawerImpl
               currentTheme={this.state.currentTheme}
               isMobileOpen={this.state.isMobileOpen}
+              setMobileOpen={this.state.setMobileOpen}
               toggleMobileOpen={this.state.toggleMobileOpen}
             />
             <div className={this.props.classes.content}>

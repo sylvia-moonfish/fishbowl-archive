@@ -4,7 +4,6 @@ import Divider from "@material-ui/core/Divider";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemAvatar from "@material-ui/core/ListItemAvatar";
-import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 import ListSubheader from "@material-ui/core/ListSubheader";
 import { withStyles } from "@material-ui/core/styles";
@@ -13,6 +12,7 @@ import ExpandLessIcon from "@material-ui/icons/ExpandLess";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
 import Link from "next/link";
+import Router from "next/router";
 
 import React from "react";
 
@@ -106,19 +106,22 @@ class DrawerList extends React.Component {
                               );
                             } else {
                               return (
-                                <Link href={subMenu.href} key={subMenuIndex}>
-                                  <ListItem
-                                    button
-                                    className={this.props.classes.nested}
-                                    dense
-                                  >
-                                    {subMenu.icon(
-                                      this.props.classes.avatar,
-                                      this.props.currentTheme
-                                    )}
-                                    <ListItemText primary={subMenu.title} />
-                                  </ListItem>
-                                </Link>
+                                <ListItem
+                                  button
+                                  className={this.props.classes.nested}
+                                  dense
+                                  key={subMenuIndex}
+                                  onClick={() => {
+                                    this.props.setMobileOpen(false);
+                                    return Router.push(subMenu.href);
+                                  }}
+                                >
+                                  {subMenu.icon(
+                                    this.props.classes.avatar,
+                                    this.props.currentTheme
+                                  )}
+                                  <ListItemText primary={subMenu.title} />
+                                </ListItem>
                               );
                             }
                           })}

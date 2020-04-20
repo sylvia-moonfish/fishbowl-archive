@@ -3,130 +3,161 @@
 
   "================================================== Materias ==================================================": {},
   "cra1": {
-    "name": "",
+    "name": "장인의 마테리아",
+    "shortName": "장인아",
+    "iconSrc": "/icons/items/craftsmans-competence-materia-i.png",
     "cra": 3
   },
   "cra2": {
-    "name": "",
+    "name": "장인의 마테리라",
+    "shortName": "장인라",
     "cra": 4
   },
   "cra3": {
-    "name": "",
+    "name": "장인의 마테리다",
+    "shortName": "장인다",
     "cra": 5
   },
   "cra4": {
-    "name": "",
+    "name": "장인의 마테리가",
+    "shortName": "장인가",
     "cra": 6
   },
   "cra5": {
-    "name": "",
+    "name": "장인의 마테리쟈",
+    "shortName": "장인쟈",
     "cra": 11
   },
   "cra6": {
-    "name": "",
+    "name": "장인의 하이마테리쟈",
+    "shortName": "장인하이쟈",
     "cra": 16
   },
   "cra7": {
-    "name": "",
+    "name": "장인의 메가마테리쟈",
+    "shortName": "장인메가쟈",
     "cra": 14
   },
   "cra8": {
-    "name": "",
+    "name": "장인의 엑스마테리쟈",
+    "shortName": "장인엑스쟈",
     "cra": 21
   },
 
   "con1": {
-    "name": "",
+    "name": "거장의 마테리아",
+    "shortName": "거장아",
     "con": 1
   },
   "con2": {
-    "name": "",
+    "name": "거장의 마테리라",
+    "shortName": "거장라",
     "con": 2
   },
   "con3": {
-    "name": "",
+    "name": "거장의 마테리다",
+    "shortName": "거장다",
     "con": 3
   },
   "con4": {
-    "name": "",
+    "name": "거장의 마테리가",
+    "shortName": "거장가",
     "con": 4
   },
   "con5": {
-    "name": "",
+    "name": "거장의 마테리쟈",
+    "shortName": "거장쟈",
     "con": 7
   },
   "con6": {
-    "name": "",
+    "name": "거장의 하이마테리쟈",
+    "shortName": "거장하이쟈",
     "con": 10
   },
   "con7": {
-    "name": "",
+    "name": "거장의 메가마테리쟈",
+    "shortName": "거장메가쟈",
     "con": 9
   },
   "con8": {
-    "name": "",
+    "name": "거장의 엑스마테리쟈",
+    "shortName": "거장엑스쟈",
     "con": 13
   },
 
   "cp1": {
-    "name": "",
+    "name": "명인의 마테리아",
+    "shortName": "명인아",
     "cp": 1
   },
   "cp2": {
-    "name": "",
+    "name": "명인의 마테리라",
+    "shortName": "명인라",
     "cp": 2
   },
   "cp3": {
-    "name": "",
+    "name": "명인의 마테리다",
+    "shortName": "명인다",
+    "description": "CP+3",
+    "iconSrc": "/icons/items/craftsmans-cunning-materia-iii.png",
     "cp": 3
   },
   "cp4": {
-    "name": "",
+    "name": "명인의 마테리가",
+    "shortName": "명인가",
     "cp": 4
   },
   "cp5": {
-    "name": "",
+    "name": "명인의 마테리쟈",
+    "shortName": "명인쟈",
     "cp": 6
   },
   "cp6": {
-    "name": "",
+    "name": "명인의 하이마테리쟈",
+    "shortName": "명인하이쟈",
     "cp": 8
   },
   "cp7": {
-    "name": "",
+    "name": "명인의 메가마테리쟈",
+    "shortName": "명인메가쟈",
     "cp": 7
   },
   "cp8": {
-    "name": "",
+    "name": "명인의 엑스마테리쟈",
+    "shortName": "명인엑스쟈",
     "cp": 9
   },
 
   "================================================== 290 Gears ==================================================": {},
   "================================================== 290 Earrings ==================================================": {},
   "zelkovaEarrings": {
-    "name": "",
+    "name": "느티나무 귀걸이",
     "iconSrc": "/icons/items/zelkova-earrings.png",
+    "itemLevel": 290,
     "cra": 6,
     "cp": 41
   },
   "================================================== 290 Necklace ==================================================": {},
   "zelkovaNecklace": {
-    "name": "",
+    "name": "느티나무 목걸이",
     "iconSrc": "/icons/items/zelkova-necklace.png",
+    "itemLevel": 290,
     "cra": 6,
     "cp": 41
   },
   "================================================== 290 Bracelets ==================================================": {},
   "zelkovaBracelets": {
-    "name": "",
+    "name": "느티나무 팔찌",
     "iconSrc": "/icons/items/zelkova-bracelets.png",
+    "itemLevel": 290,
     "cra": 6,
     "cp": 41
   },
   "================================================== 290 Rings ==================================================": {},
   "zelkovaRing": {
-    "name": "",
+    "name": "느티나무 반지",
     "iconSrc": "/icons/items/zelkova-ring.png",
+    "itemLevel": 290,
     "con": 12,
     "cp": 21
   },
@@ -134,105 +165,121 @@
   "================================================== 430 Gears ==================================================": {},
   "================================================== 430 Primary ==================================================": {},
   "dwarvenMythrilSaw": {
-    "name": "",
+    "name": "디미스라이트 톱",
     "iconSrc": "/icons/items/dwarven-mythril-saw.png",
+    "itemLevel": 430,
     "cra": 580,
     "con": 314
   },
   "dwarvenMythrilSawHq": {
-    "name": "",
+    "name": "디미스라이트 톱 HQ",
     "iconSrc": "/icons/items/dwarven-mythril-saw-hq.png",
+    "itemLevel": 430,
     "cra": 657,
     "con": 356
   },
   "================================================== 430 Secondary ==================================================": {},
   "dwarvenMythrilClawHammer": {
-    "name": "",
+    "name": "디미스라이트 장도리",
     "iconSrc": "/icons/items/dwarven-mythril-claw-hammer.png",
+    "itemLevel": 430,
     "cra": 580,
     "con": 314
   },
   "dwarvenMythrilClawHammerHq": {
-    "name": "",
+    "name": "디미스라이트 장도리 HQ",
     "iconSrc": "/icons/items/dwarven-mythril-claw-hammer-hq.png",
+    "itemLevel": 430,
     "cra": 657,
     "con": 356
   },
   "================================================== 430 Head ==================================================": {},
   "dwarvenCottonBeret": {
-    "name": "",
+    "name": "드워프 무명 베레모",
     "iconSrc": "/icons/items/dwarven-cotton-beret.png",
+    "itemLevel": 430,
     "con": 157,
     "cp": 7
   },
   "dwarvenCottonBeretHq": {
-    "name": "",
+    "name": "드워프 무명 베레모 HQ",
     "iconSrc": "/icons/items/dwarven-cotton-beret-hq.png",
+    "itemLevel": 430,
     "con": 178,
     "cp": 7
   },
   "================================================== 430 Body ==================================================": {},
   "dwarvenCottonJacket": {
-    "name": "",
+    "name": "드워프 무명 재킷",
     "iconSrc": "/icons/items/dwarven-cotton-jacket.png",
+    "itemLevel": 430,
     "cra": 497,
     "con": 157,
     "cp": 4
   },
   "dwarvenCottonJacketHq": {
-    "name": "",
+    "name": "드워프 무명 재킷 HQ",
     "iconSrc": "/icons/items/dwarven-cotton-jacket-hq.png",
+    "itemLevel": 430,
     "cra": 563,
     "con": 178,
     "cp": 5
   },
   "================================================== 430 Hands ==================================================": {},
   "swallowskinFingerlessGloves": {
-    "name": "",
+    "name": "바다제비 반장갑",
     "iconSrc": "/icons/items/swallowskin-fingerless-gloves.png",
+    "itemLevel": 430,
     "con": 157,
     "cp": 7
   },
   "swallowskinFingerlessGlovesHq": {
-    "name": "",
+    "name": "바다제비 반장갑 HQ",
     "iconSrc": "/icons/items/swallowskin-fingerless-gloves-hq.png",
+    "itemLevel": 430,
     "con": 178,
     "cp": 7
   },
   "================================================== 430 Waist ==================================================": {},
   "swallowskinToolBelt": {
-    "name": "",
+    "name": "바다제비 공구 허리띠",
     "iconSrc": "/icons/items/swallowskin-tool-belt.png",
+    "itemLevel": 430,
     "con": 157
   },
   "swallowskinToolBeltHq": {
-    "name": "",
+    "name": "바다제비 공구 허리띠 HQ",
     "iconSrc": "/icons/items/swallowskin-tool-belt-hq.png",
+    "itemLevel": 430,
     "con": 178
   },
   "================================================== 430 Legs ==================================================": {},
   "dwarvenCottonTrousers": {
-    "name": "",
+    "name": "드워프 무명 긴바지",
     "iconSrc": "/icons/items/dwarven-cotton-trousers.png",
+    "itemLevel": 430,
     "cra": 33,
     "con": 157
   },
   "dwarvenCottonTrousersHq": {
-    "name": "",
+    "name": "드워프 무명 긴바지 HQ",
     "iconSrc": "/icons/items/dwarven-cotton-trousers-hq.png",
+    "itemLevel": 430,
     "cra": 38,
     "con": 178
   },
   "================================================== 430 Feet ==================================================": {},
   "swallowskinShoes": {
-    "name": "",
+    "name": "바다제비 신발",
     "iconSrc": "/icons/items/swallowskin-shoes.png",
+    "itemLevel": 430,
     "cra": 33,
     "con": 157
   },
   "swallowskinShoesHq": {
-    "name": "",
+    "name": "바다제비 신발 HQ",
     "iconSrc": "/icons/items/swallowskin-shoes-hq.png",
+    "itemLevel": 430,
     "cra": 38,
     "con": 178
   },
