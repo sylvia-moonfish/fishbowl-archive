@@ -39,11 +39,19 @@ class CraftMaterialDisplay extends React.Component {
                           <Chip
                             avatar={
                               <Avatar
-                                src={SiteInfo.assetsUrl + materialInfo.iconSrc}
+                                src={
+                                  SiteInfo.assetsUrl +
+                                  (material.hq
+                                    ? materialInfo.hqIconSrc
+                                    : materialInfo.iconSrc)
+                                }
                               />
                             }
                             label={
-                              materialInfo.name + " " + material.amount + "개"
+                              materialInfo.name +
+                              (material.hq ? " HQ " : " ") +
+                              material.amount +
+                              "개"
                             }
                             variant="outlined"
                           />

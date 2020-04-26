@@ -5,19 +5,14 @@ import TextField from "@material-ui/core/TextField";
 
 import React from "react";
 
+import CraftActionMacroTexts from "./craft-action-macro-texts";
+
 class CraftActionMacroTabs extends React.Component {
   constructor(props) {
     super(props);
 
-    const macros = ["ko", "en", "ja"].map((l) => {
-      return this.props.craftActions.map((craftAction) => {
-        return this.props.Actions[craftAction].macroName[l];
-      });
-    });
-
     this.state = {
-      additionalWaitTime: 0,
-      macros: macros,
+      waitTime: 0,
       tab: 0,
     };
   }
@@ -32,7 +27,7 @@ class CraftActionMacroTabs extends React.Component {
               defaultValue={0}
               label="매크로 추가 딜레이"
               onChange={(e) => {
-                this.state.additionalWaitTime = e.target.valueAsNumber;
+                this.state.waitTime = e.target.valueAsNumber;
                 this.setState(this.state);
               }}
               type="number"
@@ -52,7 +47,12 @@ class CraftActionMacroTabs extends React.Component {
             <Tab label="EN" />
             <Tab label="JA" />
           </Tabs>
-          {JSON.stringify(this.state.macros[this.state.tab])}
+          <CraftActionMacroTexts
+            actionMacro={this.props.actionMacro}
+            Actions={this.props.Actions}
+            language={["ko", "en", "ja"][this.state.tab]}
+            waitTime={this.state.waitTime}
+          />
         </Grid>
       </React.Fragment>
     );

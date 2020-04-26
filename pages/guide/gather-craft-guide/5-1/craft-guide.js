@@ -1,12 +1,11 @@
-import Avatar from "@material-ui/core/Avatar";
-import Chip from "@material-ui/core/Chip";
+/* TODO */
+/*
+ * 1. Make actionMacro a 2-level hierarchy object instead of flat array. Put label and lines in object and let texts component populate details.
+ * 2. Enforce minimum value of 0 to macro delay numeric field. */
+
 import Container from "@material-ui/core/Container";
 import Divider from "@material-ui/core/Divider";
 import Grid from "@material-ui/core/Grid";
-import Table from "@material-ui/core/Table";
-import TableBody from "@material-ui/core/TableBody";
-import TableCell from "@material-ui/core/TableCell";
-import TableRow from "@material-ui/core/TableRow";
 import Typography from "@material-ui/core/Typography";
 
 import React from "react";
@@ -95,6 +94,11 @@ class CraftGuide extends PageComponent {
   }
 
   render() {
+    const soundEffects = {
+      endOfCrafting: 1,
+      checkCondition: 1,
+    };
+
     return (
       <React.Fragment>
         {this.generateHead(
@@ -305,10 +309,155 @@ class CraftGuide extends PageComponent {
                   Materials={Materials}
                 />
                 <CraftActionDisplay
-                  craftActions={[
+                  actionCard={[
                     "careful-synthesis",
                     "careful-synthesis",
                     "careful-synthesis",
+                  ]}
+                  actionMacro={[
+                    {
+                      type: "label",
+                      value: "macroLabel",
+                      index: 1,
+                    },
+                    {
+                      type: "action",
+                      value: "careful-synthesis",
+                    },
+                    {
+                      type: "action",
+                      value: "careful-synthesis",
+                    },
+                    {
+                      type: "action",
+                      value: "careful-synthesis",
+                    },
+                    {
+                      type: "prompt",
+                      value: "endOfCrafting",
+                      soundEffect: soundEffects.endOfCrafting,
+                    },
+                  ]}
+                  Actions={Actions}
+                />
+                <Grid item>
+                  <Divider />
+                </Grid>
+                <CraftMaterialDisplay
+                  craftMaterials={[
+                    {
+                      label: "제작할 물품",
+                      materials: [
+                        {
+                          id: "iridescent-silk-thread",
+                          amount: 4,
+                          hq: true,
+                        },
+                      ],
+                    },
+                  ]}
+                  Materials={Materials}
+                />
+                <CraftActionDisplay
+                  actionCard={[
+                    "reflect",
+                    "manipulation",
+                    "innovation",
+                    "delicate-synthesis",
+                    "delicate-synthesis",
+                    "basic-touch",
+                    "innovation",
+                    "prudent-touch",
+                    "basic-touch",
+                    "great-strides",
+                    "byregots-blessing",
+                    "basic-synthesis",
+                  ]}
+                  actionMacro={[
+                    {
+                      type: "label",
+                      value: "macroLabel",
+                      index: 1,
+                    },
+                    {
+                      type: "action",
+                      value: "reflect",
+                    },
+                    {
+                      type: "action",
+                      value: "manipulation",
+                    },
+                    {
+                      type: "action",
+                      value: "innovation",
+                    },
+                    {
+                      type: "action",
+                      value: "delicate-synthesis",
+                    },
+                    {
+                      type: "action",
+                      value: "delicate-synthesis",
+                    },
+                    {
+                      type: "action",
+                      value: "basic-touch",
+                    },
+                    {
+                      type: "action",
+                      value: "innovation",
+                    },
+                    {
+                      type: "action",
+                      value: "prudent-touch",
+                    },
+                    {
+                      type: "action",
+                      value: "basic-touch",
+                    },
+                    {
+                      type: "prompt",
+                      value: "checkCondition",
+                      soundEffect: soundEffects.checkCondition,
+                    },
+                    {
+                      type: "label",
+                      value: "conditionNotExcellentLabel",
+                    },
+                    {
+                      type: "action",
+                      value: "great-strides",
+                    },
+                    {
+                      type: "action",
+                      value: "byregots-blessing",
+                    },
+                    {
+                      type: "action",
+                      value: "basic-synthesis",
+                    },
+                    {
+                      type: "prompt",
+                      value: "endOfCrafting",
+                      soundEffect: soundEffects.endOfCrafting,
+                    },
+                    {
+                      type: "label",
+                      value: "conditionExcellentLabel",
+                    },
+                    {
+                      type: "action",
+                      value: "byregots-blessing",
+                    },
+                    {
+                      type: "action",
+                      value: "basic-synthesis",
+                    },
+                    {
+                      type: "prompt",
+                      value: "endOfCrafting",
+                      soundEffect: soundEffects.endOfCrafting,
+                    },
                   ]}
                   Actions={Actions}
                 />

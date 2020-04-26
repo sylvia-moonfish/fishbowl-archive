@@ -18,13 +18,16 @@ class CraftActionCard extends React.Component {
         <Card>
           <CardContent>
             <Grid container direction="row" spacing={1}>
-              {this.props.craftActions.map((craftAction, craftActionIndex) => {
-                const action = this.props.Actions[craftAction];
+              {this.props.actionCard.map((actionId, actionIdIndex) => {
+                const action = this.props.Actions[actionId];
 
                 return (
-                  <Grid item key={craftActionIndex}>
+                  <Grid item key={actionIdIndex}>
                     <div
                       style={{
+                        border: "1px solid black",
+                        borderRadius: 5,
+                        height: 42,
                         position: "relative",
                       }}
                     >

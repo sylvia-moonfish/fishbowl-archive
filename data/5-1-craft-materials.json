@@ -32,6 +32,11 @@
     "name": "무지개 고치",
     "iconSrc": "/icons/items/iridescent-cocoon.png"
   },
+  "iridescent-silk-thread": {
+    "name": "무지개 누에실",
+    "iconSrc": "/icons/items/iridescent-silk-thread.png",
+    "hqIconSrc": "/icons/items/hq/iridescent-silk-thread.png"
+  },
   "mythrite-sand": {
     "name": "미스라이트 모래",
     "iconSrc": "/icons/items/mythrite-sand.png"

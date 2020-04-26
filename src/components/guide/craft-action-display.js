@@ -12,11 +12,11 @@ class CraftActionDisplay extends React.Component {
     return (
       <React.Fragment>
         <CraftActionCard
-          craftActions={this.props.craftActions}
+          actionCard={this.props.actionCard}
           Actions={this.props.Actions}
         />
         <CraftActionMacroTabs
-          craftActions={this.props.craftActions}
+          actionMacro={this.props.actionMacro}
           Actions={this.props.Actions}
         />
       </React.Fragment>
