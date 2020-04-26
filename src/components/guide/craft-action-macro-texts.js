@@ -44,54 +44,34 @@ class CraftActionMacroTexts extends React.Component {
       },
     };
 
-    const macroFields = [];
-
-    this.props.actionMacro.forEach((action) => {
-      switch (action.type) {
-        case "action":
-          const actionData = this.props.Actions[action.value];
-          macroFields[macroFields.length - 1].lines.push(
-            "/ac " +
-              actionData.macroName[this.props.language] +
-              " <wait." +
-              (actionData.waitTime + this.props.waitTime).toString() +
-              ">"
-          );
-          break;
-
-        case "label":
-          switch (action.value) {
-            case "macroLabel":
-              macroFields.push({
-                label:
-                  dictionary[action.value][this.props.language] + action.index,
-                lines: [],
-              });
-              break;
-            case "conditionExcellentLabel":
-            case "conditionNotExcellentLabel":
-              macroFields.push({
-                label: dictionary[action.value][this.props.language],
-                lines: [],
-              });
-              break;
-          }
-          break;
-        case "prompt":
-          switch (action.value) {
-            case "checkCondition":
-            case "endOfCrafting":
-              macroFields[macroFields.length - 1].lines.push(
-                "/echo " +
-                  dictionary[action.value][this.props.language] +
-                  " <se." +
-                  action.soundEffect +
-                  ">"
+    const macroFields = this.props.actionMacro.map((actionMacro) => {
+      return {
+        label:
+          dictionary[actionMacro.label.type][this.props.language] +
+          (actionMacro.label.value ? actionMacro.label.value : ""),
+        lines: actionMacro.lines.map((line) => {
+          switch (line.type) {
+            case "action":
+              const actionData = this.props.Actions[line.value];
+              return (
+                "/ac " +
+                actionData.macroName[this.props.language] +
+                " <wait." +
+                (actionData.waitTime + this.props.waitTime) +
+                ">"
               );
-              break;
+
+            case "prompt":
+              return (
+                "/echo " +
+                dictionary[line.value][this.props.language] +
+                " <se." +
+                line.soundEffect +
+                ">"
+              );
           }
-          break;
-      }
+        }),
+      };
     });
 
     return (
@@ -126,6 +106,7 @@ class CraftActionMacroTexts extends React.Component {
         {macroFields.map((macroField, macroFieldIndex) => {
           return (
             <TextField
+              color="secondary"
               fullWidth={true}
               InputProps={{
                 readOnly: true,
@@ -133,6 +114,7 @@ class CraftActionMacroTexts extends React.Component {
                   if (!document) return;
                   if (!e) return;
                   if (!e.target) return;
+                  if (!e.target.select) return;
 
                   e.target.select(e.target);
                   document.execCommand("copy");

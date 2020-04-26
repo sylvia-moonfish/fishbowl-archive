@@ -16,6 +16,11 @@
     "name": "디미스라이트 모래",
     "iconSrc": "/icons/items/dimythrite-sand.png"
   },
+  "dwarven-cotton": {
+    "name": "드워프 무명천",
+    "iconSrc": "/icons/items/dwarven-cotton.png",
+    "hqIconSrc": "/icons/items/hq/dwarven-cotton.png"
+  },
   "dwarven-cotton-boll": {
     "name": "드워프 목화",
     "iconSrc": "/icons/items/dwarven-cotton-boll.png"
@@ -23,6 +28,31 @@
   "dwarven-cotton-thread": {
     "name": "드워프 무명실",
     "iconSrc": "/icons/items/dwarven-cotton-thread.png"
+  },
+  "dwarven-mythril-bracelets": {
+    "name": "디미스라이트 팔찌",
+    "iconSrc": "/icons/items/dwarven-mythril-bracelets.png",
+    "hqIconSrc": "/icons/items/hq/dwarven-mythril-bracelets.png"
+  },
+  "dwarven-mythril-choker": {
+    "name": "디미스라이트 목장식",
+    "iconSrc": "/icons/items/dwarven-mythril-choker.png",
+    "hqIconSrc": "/icons/items/hq/dwarven-mythril-choker.png"
+  },
+  "dwarven-mythril-ear-cuffs": {
+    "name": "디미스라이트 귀찌",
+    "iconSrc": "/icons/items/dwarven-mythril-ear-cuffs.png",
+    "hqIconSrc": "/icons/items/hq/dwarven-mythril-ear-cuffs.png"
+  },
+  "dwarven-mythril-nugget": {
+    "name": "디미스라이트 덩어리",
+    "iconSrc": "/icons/items/dwarven-mythril-nugget.png",
+    "hqIconSrc": "/icons/items/hq/dwarven-mythril-nugget.png"
+  },
+  "dwarven-mythril-ring": {
+    "name": "디미스라이트 반지",
+    "iconSrc": "/icons/items/dwarven-mythril-ring.png",
+    "hqIconSrc": "/icons/items/hq/dwarven-mythril-ring.png"
   },
   "effervescent-water": {
     "name": "탄산수",

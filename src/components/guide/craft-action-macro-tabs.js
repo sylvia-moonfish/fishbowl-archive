@@ -25,6 +25,9 @@ class CraftActionMacroTabs extends React.Component {
             <TextField
               color="secondary"
               defaultValue={0}
+              inputProps={{
+                min: 0,
+              }}
               label="매크로 추가 딜레이"
               onChange={(e) => {
                 this.state.waitTime = e.target.valueAsNumber;
