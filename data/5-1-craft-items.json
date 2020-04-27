@@ -171,13 +171,6 @@
     "cra": 580,
     "con": 314
   },
-  "dwarvenMythrilSawHq": {
-    "name": "디미스라이트 톱 HQ",
-    "iconSrc": "/icons/items/dwarven-mythril-saw-hq.png",
-    "itemLevel": 430,
-    "cra": 657,
-    "con": 356
-  },
   "================================================== 430 Secondary ==================================================": {},
   "dwarvenMythrilClawHammer": {
     "name": "디미스라이트 장도리",
@@ -186,26 +179,12 @@
     "cra": 580,
     "con": 314
   },
-  "dwarvenMythrilClawHammerHq": {
-    "name": "디미스라이트 장도리 HQ",
-    "iconSrc": "/icons/items/dwarven-mythril-claw-hammer-hq.png",
-    "itemLevel": 430,
-    "cra": 657,
-    "con": 356
-  },
   "================================================== 430 Head ==================================================": {},
   "dwarvenCottonBeret": {
     "name": "드워프 무명 베레모",
     "iconSrc": "/icons/items/dwarven-cotton-beret.png",
     "itemLevel": 430,
     "con": 157,
-    "cp": 7
-  },
-  "dwarvenCottonBeretHq": {
-    "name": "드워프 무명 베레모 HQ",
-    "iconSrc": "/icons/items/dwarven-cotton-beret-hq.png",
-    "itemLevel": 430,
-    "con": 178,
     "cp": 7
   },
   "================================================== 430 Body ==================================================": {},
@@ -217,27 +196,12 @@
     "con": 157,
     "cp": 4
   },
-  "dwarvenCottonJacketHq": {
-    "name": "드워프 무명 재킷 HQ",
-    "iconSrc": "/icons/items/dwarven-cotton-jacket-hq.png",
-    "itemLevel": 430,
-    "cra": 563,
-    "con": 178,
-    "cp": 5
-  },
   "================================================== 430 Hands ==================================================": {},
   "swallowskinFingerlessGloves": {
     "name": "바다제비 반장갑",
     "iconSrc": "/icons/items/swallowskin-fingerless-gloves.png",
     "itemLevel": 430,
     "con": 157,
-    "cp": 7
-  },
-  "swallowskinFingerlessGlovesHq": {
-    "name": "바다제비 반장갑 HQ",
-    "iconSrc": "/icons/items/swallowskin-fingerless-gloves-hq.png",
-    "itemLevel": 430,
-    "con": 178,
     "cp": 7
   },
   "================================================== 430 Waist ==================================================": {},
@@ -247,12 +211,6 @@
     "itemLevel": 430,
     "con": 157
   },
-  "swallowskinToolBeltHq": {
-    "name": "바다제비 공구 허리띠 HQ",
-    "iconSrc": "/icons/items/swallowskin-tool-belt-hq.png",
-    "itemLevel": 430,
-    "con": 178
-  },
   "================================================== 430 Legs ==================================================": {},
   "dwarvenCottonTrousers": {
     "name": "드워프 무명 긴바지",
@@ -260,13 +218,6 @@
     "itemLevel": 430,
     "cra": 33,
     "con": 157
-  },
-  "dwarvenCottonTrousersHq": {
-    "name": "드워프 무명 긴바지 HQ",
-    "iconSrc": "/icons/items/dwarven-cotton-trousers-hq.png",
-    "itemLevel": 430,
-    "cra": 38,
-    "con": 178
   },
   "================================================== 430 Feet ==================================================": {},
   "swallowskinShoes": {
@@ -276,12 +227,56 @@
     "cra": 33,
     "con": 157
   },
-  "swallowskinShoesHq": {
-    "name": "바다제비 신발 HQ",
-    "iconSrc": "/icons/items/swallowskin-shoes-hq.png",
+  "================================================== 430 Earrings ==================================================": {},
+  "dwarvenMythrilEarCuffs": {
+    "name": "디미스라이트 귀찌",
+    "iconSrc": "/icons/items/dwarven-mythril-ear-cuffs.png",
     "itemLevel": 430,
-    "cra": 38,
-    "con": 178
+    "cra": 33,
+    "cp": 55,
+    "hq": {
+      "iconSrc": "/icons/items/hq/dwarven-mythril-ear-cuffs.png",
+      "cra": 38,
+      "cp": 62
+    }
   },
-  "================================================== 430 Earrings ==================================================": {}
+  "================================================== 430 Necklace ==================================================": {},
+  "dwarvenMythrilChoker": {
+    "name": "디미스라이트 목장식",
+    "iconSrc": "/icons/items/dwarven-mythril-choker.png",
+    "itemLevel": 430,
+    "cra": 33,
+    "cp": 55,
+    "hq": {
+      "iconSrc": "/icons/items/hq/dwarven-mythril-choker.png",
+      "cra": 38,
+      "cp": 62
+    }
+  },
+  "================================================== 430 Bracelets ==================================================": {},
+  "dwarvenMythrilBracelets": {
+    "name": "디미스라이트 팔찌",
+    "iconSrc": "/icons/items/dwarven-mythril-bracelets.png",
+    "itemLevel": 430,
+    "cra": 33,
+    "cp": 55,
+    "hq": {
+      "iconSrc": "/icons/items/hq/dwarven-mythril-bracelets.png",
+      "cra": 38,
+      "cp": 62
+    }
+  },
+  "================================================== 430 Ring ==================================================": {},
+  "dwarvenMythrilRing": {
+    "name": "디미스라이트 반지",
+    "iconSrc": "/icons/items/dwarven-mythril-ring.png",
+    "itemLevel": 430,
+    "con": 63,
+    "cp": 29,
+    "hq": {
+      "iconSrc": "/icons/items/hq/dwarven-mythril-ring.png",
+      "con": 71,
+      "cp": 32
+    }
+  }
 }

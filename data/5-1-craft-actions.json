@@ -44,6 +44,15 @@
     },
     "waitTime": 3
   },
+  "focused-synthesis": {
+    "iconSrc": "/icons/actions/focused-synthesis.png",
+    "macroName": {
+      "ko": "\"주시 작업\"",
+      "en": "\"Focused Synthesis\"",
+      "ja": "注視作業"
+    },
+    "waitTime": 3
+  },
   "great-strides": {
     "iconSrc": "/icons/actions/great-strides.png",
     "macroName": {
@@ -70,6 +79,15 @@
       "ja": "マニピュレーション"
     },
     "waitTime": 2
+  },
+  "observe": {
+    "iconSrc": "/icons/actions/observe.png",
+    "macroName": {
+      "ko": "\"경과 관찰\"",
+      "en": "\"Observe\"",
+      "ja": "経過観察"
+    },
+    "waitTime": 3
   },
   "prudent-touch": {
     "iconSrc": "/icons/actions/prudent-touch.png",

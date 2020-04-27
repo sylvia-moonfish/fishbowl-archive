@@ -20,7 +20,14 @@ class CraftGearStats extends React.Component {
     };
 
     this.props.gearSet.gears.forEach((gear) => {
-      const item = this.props.Items[gear.itemId];
+      let item = this.props.Items[gear.itemId];
+      if (!item) {
+        console.log(gear.itemId);
+        return;
+      }
+      if (gear.hq) {
+        item = item.hq;
+      }
 
       if (item.cra) spec.cra += item.cra;
       if (item.con) spec.con += item.con;

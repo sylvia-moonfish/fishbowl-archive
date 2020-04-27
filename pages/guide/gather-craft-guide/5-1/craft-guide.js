@@ -79,6 +79,67 @@ const gearSets = [
       },
     ],
   },
+  {
+    gears: [
+      {
+        itemId: "dwarvenMythrilSaw",
+        materiaIds: [],
+      },
+      {
+        itemId: "dwarvenCottonBeret",
+        materiaIds: ["cp3", "cp3"],
+      },
+      {
+        itemId: "dwarvenMythrilClawHammer",
+        materiaIds: [],
+      },
+      {
+        itemId: "dwarvenCottonJacket",
+        materiaIds: [],
+      },
+      {
+        itemId: "dwarvenMythrilEarCuffs",
+        materiaIds: [],
+        hq: true,
+      },
+      {
+        itemId: "swallowskinFingerlessGloves",
+        materiaIds: [],
+      },
+      {
+        itemId: "dwarvenMythrilChoker",
+        materiaIds: [],
+        hq: true,
+      },
+      {
+        itemId: "swallowskinToolBelt",
+        materiaIds: [],
+      },
+      {
+        itemId: "dwarvenMythrilBracelets",
+        materiaIds: [],
+        hq: true,
+      },
+      {
+        itemId: "dwarvenCottonTrousers",
+        materiaIds: [],
+      },
+      {
+        itemId: "dwarvenMythrilRing",
+        materiaIds: [],
+        hq: true,
+      },
+      {
+        itemId: "swallowskinShoes",
+        materiaIds: [],
+      },
+      {
+        itemId: "dwarvenMythrilRing",
+        materiaIds: [],
+        hq: true,
+      },
+    ],
+  },
 ];
 
 class CraftGuide extends PageComponent {
@@ -92,8 +153,9 @@ class CraftGuide extends PageComponent {
 
   render() {
     const soundEffects = {
-      endOfCrafting: 1,
+      endOfMacro: 1,
       checkCondition: 1,
+      endOfCrafting: 1,
     };
 
     return (
@@ -179,7 +241,7 @@ class CraftGuide extends PageComponent {
                 <ExpansionPanels
                   panels={[
                     {
-                      title: "첫 장비 구입 (1741/1594/369)",
+                      title: "첫 장비 구입 (0/0/0)",
                       children: (
                         <React.Fragment>
                           <Grid item>
@@ -244,7 +306,7 @@ class CraftGuide extends PageComponent {
                       ),
                     },
                     {
-                      title: "430제 악세서리 제작 ()",
+                      title: "430제 악세서리 제작 (1741/1594/369)",
                       children: (
                         <React.Fragment>
                           <Grid item>
@@ -650,8 +712,9 @@ class CraftGuide extends PageComponent {
                           <Grid item>
                             <Typography variant="body2">
                               준비한 HQ 초품 재료들을 사용해 악세서리를
-                              제작합니다. 개별 악세서리를 제작 완료 후 바로
-                              착용하면 스펙의 변화로 인해 남은 악세서리 제작
+                              제작합니다. 꼭 모든 재료를 전부 HQ 재료로
+                              채워넣어주세요! 개별 악세서리 제작을 완료 후 바로
+                              착용해버리면 스펙의 변화로 인해 남은 악세서리 제작
                               도중 제작이 조기에 완료 되어 버릴 수 있으므로 모든
                               악세서리 제작이 완료될 때까지 장비를 바꾸지
                               말아주세요.
@@ -688,122 +751,173 @@ class CraftGuide extends PageComponent {
                             ]}
                             Materials={Materials}
                           />
-                          {/*<CraftActionDisplay
-                              actionCard={[
-                                "reflect",
-                                "manipulation",
-                                "innovation",
-                                "delicate-synthesis",
-                                "delicate-synthesis",
-                                "delicate-synthesis",
-                                "basic-touch",
-                                "innovation",
-                                "prudent-touch",
-                                "basic-touch",
-                                "great-strides",
-                                "byregots-blessing",
-                                "basic-synthesis",
-                              ]}
-                              actionMacro={[
-                                {
-                                  label: {
-                                    type: "macroLabel",
-                                    value: 1,
-                                  },
-                                  lines: [
-                                    {
-                                      type: "action",
-                                      value: "reflect",
-                                    },
-                                    {
-                                      type: "action",
-                                      value: "manipulation",
-                                    },
-                                    {
-                                      type: "action",
-                                      value: "innovation",
-                                    },
-                                    {
-                                      type: "action",
-                                      value: "delicate-synthesis",
-                                    },
-                                    {
-                                      type: "action",
-                                      value: "delicate-synthesis",
-                                    },
-                                    {
-                                      type: "action",
-                                      value: "delicate-synthesis",
-                                    },
-                                    {
-                                      type: "action",
-                                      value: "basic-touch",
-                                    },
-                                    {
-                                      type: "action",
-                                      value: "innovation",
-                                    },
-                                    {
-                                      type: "action",
-                                      value: "prudent-touch",
-                                    },
-                                    {
-                                      type: "action",
-                                      value: "basic-touch",
-                                    },
-                                    {
-                                      type: "prompt",
-                                      value: "checkCondition",
-                                      soundEffect: soundEffects.checkCondition,
-                                    }]
+                          <CraftActionDisplay
+                            actionCard={[
+                              "reflect",
+                              "delicate-synthesis",
+                              "delicate-synthesis",
+                              "delicate-synthesis",
+                              "delicate-synthesis",
+                              "manipulation",
+                              "observe",
+                              "focused-synthesis",
+                              "observe",
+                              "focused-synthesis",
+                              "observe",
+                              "focused-synthesis",
+                              "observe",
+                              "focused-synthesis",
+                              "great-strides",
+                              "byregots-blessing",
+                              "careful-synthesis",
+                              "basic-synthesis",
+                            ]}
+                            actionMacro={[
+                              {
+                                label: {
+                                  type: "macroLabel",
+                                  value: 1,
                                 },
-                                {
-                                  label: {
-                                    type: "conditionNotExcellentLabel"
+                                lines: [
+                                  {
+                                    type: "action",
+                                    value: "reflect",
                                   },
-                                  lines: [
-                                    {
-                                      type: "action",
-                                      value: "great-strides",
-                                    },
-                                    {
-                                      type: "action",
-                                      value: "byregots-blessing",
-                                    },
-                                    {
-                                      type: "action",
-                                      value: "basic-synthesis",
-                                    },
-                                    {
-                                      type: "prompt",
-                                      value: "endOfCrafting",
-                                      soundEffect: soundEffects.endOfCrafting,
-                                    }
-                                  ]
+                                  {
+                                    type: "action",
+                                    value: "delicate-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "delicate-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "delicate-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "delicate-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "manipulation",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "observe",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "focused-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "observe",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "focused-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "observe",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "focused-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "observe",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "focused-synthesis",
+                                  },
+                                  {
+                                    type: "prompt",
+                                    value: "checkCondition",
+                                    soundEffect: soundEffects.checkCondition,
+                                  },
+                                ],
+                              },
+                              {
+                                label: {
+                                  type: "conditionNotExcellentLabel",
                                 },
-                                {
-                                  label: {
-                                    type: "conditionExcellentLabel"
+                                lines: [
+                                  {
+                                    type: "action",
+                                    value: "great-strides",
                                   },
-                                  lines: [
-                                    {
-                                      type: "action",
-                                      value: "byregots-blessing",
-                                    },
-                                    {
-                                      type: "action",
-                                      value: "basic-synthesis",
-                                    },
-                                    {
-                                      type: "prompt",
-                                      value: "endOfCrafting",
-                                      soundEffect: soundEffects.endOfCrafting,
-                                    }
-                                  ]
-                                }
-                              ]}
-                              Actions={Actions}
-                          />*/}
+                                  {
+                                    type: "action",
+                                    value: "byregots-blessing",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "careful-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "basic-synthesis",
+                                  },
+                                  {
+                                    type: "prompt",
+                                    value: "endOfCrafting",
+                                    soundEffect: soundEffects.endOfCrafting,
+                                  },
+                                ],
+                              },
+                              {
+                                label: {
+                                  type: "conditionExcellentLabel",
+                                },
+                                lines: [
+                                  {
+                                    type: "action",
+                                    value: "byregots-blessing",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "careful-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "basic-synthesis",
+                                  },
+                                  {
+                                    type: "prompt",
+                                    value: "endOfCrafting",
+                                    soundEffect: soundEffects.endOfCrafting,
+                                  },
+                                ],
+                              },
+                            ]}
+                            Actions={Actions}
+                          />
+                          <PanelDivider />
+                          <Grid item>
+                            <Typography variant="h6">악세서리 착용</Typography>
+                          </Grid>
+                          <Grid item>
+                            <Typography variant="body2">
+                              제작한 아이템 레벨 430 악세서리들을 전부
+                              착용합니다.
+                            </Typography>
+                          </Grid>
+                          <CraftGearDisplay
+                            gearSet={gearSets[1]}
+                            Items={Items}
+                          />
+                          <Grid item>
+                            <Typography variant="body2">
+                              위 장비를 전부 갖추었을 시 달성 가능한 스펙은
+                              다음과 같습니다.
+                            </Typography>
+                          </Grid>
+                          <CraftGearStats gearSet={gearSets[1]} Items={Items} />
                         </React.Fragment>
                       ),
                     },

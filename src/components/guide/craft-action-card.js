@@ -21,6 +21,11 @@ class CraftActionCard extends React.Component {
               {this.props.actionCard.map((actionId, actionIdIndex) => {
                 const action = this.props.Actions[actionId];
 
+                if (!action) {
+                  console.log(actionId);
+                  return <div />;
+                }
+
                 return (
                   <Grid item key={actionIdIndex}>
                     <div

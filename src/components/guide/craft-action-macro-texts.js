@@ -32,6 +32,11 @@ class CraftActionMacroTexts extends React.Component {
         en: "If condition is not 'Excellent'",
         ja: "状態が「最高品質」以外",
       },
+      endOfMacro: {
+        ko: "",
+        en: "",
+        ja: "",
+      },
       endOfCrafting: {
         ko: "제작 완료",
         en: "Craft finished.",

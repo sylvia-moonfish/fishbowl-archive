@@ -23,6 +23,11 @@ class CraftGearDisplay extends React.Component {
         <Grid container spacing={2}>
           {this.props.gearSet.gears.map((gear, gearIndex) => {
             const item = this.props.Items[gear.itemId];
+            if (!item) {
+              console.log(gear.itemId);
+              return <div />;
+            }
+            const hqItem = item.hq;
 
             const gearCard = (
               <Grid item xs={6}>
@@ -30,7 +35,10 @@ class CraftGearDisplay extends React.Component {
                   <CardHeader
                     avatar={
                       <Avatar
-                        src={SiteInfo.assetsUrl + item.iconSrc}
+                        src={
+                          SiteInfo.assetsUrl +
+                          (gear.hq ? hqItem.iconSrc : item.iconSrc)
+                        }
                         variant="rounded"
                       />
                     }
