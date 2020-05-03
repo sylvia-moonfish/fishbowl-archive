@@ -1,4 +1,8 @@
 {
+  "water-shard": {
+    "name": "물 샤드",
+    "iconSrc": "/icons/items/water-shard.png"
+  },
   "fire-crystal": {
     "name": "불 크리스탈",
     "iconSrc": "/icons/items/fire-crystal.png"
@@ -6,6 +10,10 @@
   "wind-crystal": {
     "name": "바람 크리스탈",
     "iconSrc": "/icons/items/wind-crystal.png"
+  },
+  "earth-crystal": {
+    "name": "땅 크리스탈",
+    "iconSrc": "/icons/items/earth-crystal.png"
   },
   "lightning-crystal": {
     "name": "번개 크리스탈",
@@ -57,6 +65,10 @@
   "effervescent-water": {
     "name": "탄산수",
     "iconSrc": "/icons/items/effervescent-water.png"
+  },
+  "gold-ore": {
+    "name": "금 광석",
+    "iconSrc": "/icons/items/gold-ore.png"
   },
   "iridescent-cocoon": {
     "name": "무지개 고치",

@@ -62,6 +62,15 @@
     },
     "waitTime": 2
   },
+  "ingenuity": {
+    "iconSrc": "/icons/actions/ingenuity.png",
+    "macroName": {
+      "ko": "\"독창적 발상\"",
+      "en": "\"Ingenuity\"",
+      "ja": "工面算段"
+    },
+    "waitTime": 2
+  },
   "innovation": {
     "iconSrc": "/icons/actions/innovation.png",
     "macroName": {
@@ -89,6 +98,15 @@
     },
     "waitTime": 3
   },
+  "preparatory-touch": {
+    "iconSrc": "/icons/actions/preparatory-touch.png",
+    "macroName": {
+      "ko": "\"밑가공\"",
+      "en": "\"Preparatory Touch\"",
+      "ja": "下地加工"
+    },
+    "waitTime": 3
+  },
   "prudent-touch": {
     "iconSrc": "/icons/actions/prudent-touch.png",
     "macroName": {
@@ -106,5 +124,23 @@
       "ja": "真価"
     },
     "waitTime": 3
+  },
+  "trained-eye": {
+    "iconSrc": "/icons/actions/trained-eye.png",
+    "macroName": {
+      "ko": "\"장인의 날랜손\"",
+      "en": "\"Trained Eye\"",
+      "ja": "匠の早業"
+    },
+    "waitTime": 3
+  },
+  "waste-not": {
+    "iconSrc": "/icons/actions/waste-not.png",
+    "macroName": {
+      "ko": "\"근검절약\"",
+      "en": "\"Waste Not\"",
+      "ja": "倹約"
+    },
+    "waitTime": 2
   }
 }

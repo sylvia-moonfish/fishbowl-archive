@@ -49,6 +49,10 @@ class CraftGearDisplay extends React.Component {
                     <TableBody>
                       {gear.materiaIds.map((materiaId, materiaIdIndex) => {
                         const materia = this.props.Items[materiaId];
+                        if (!materia) {
+                          console.log(materiaId);
+                          return <div />;
+                        }
 
                         return (
                           <TableRow key={materiaIdIndex}>

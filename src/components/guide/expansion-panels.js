@@ -15,7 +15,7 @@ class ExpansionPanels extends React.Component {
 
     this.state = {
       //expandedPanel: false
-      expandedPanel: 1,
+      expandedPanel: 4,
     };
   }
 

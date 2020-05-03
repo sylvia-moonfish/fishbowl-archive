@@ -31,16 +31,22 @@
   "cra6": {
     "name": "장인의 하이마테리쟈",
     "shortName": "장인하이쟈",
+    "description": "작업 숙련도 +16",
+    "iconSrc": "/icons/items/craftsmans-competence-materia-vi.png",
     "cra": 16
   },
   "cra7": {
     "name": "장인의 메가마테리쟈",
     "shortName": "장인메가쟈",
+    "description": "작업 숙련도 +14",
+    "iconSrc": "/icons/items/craftsmans-competence-materia-vii.png",
     "cra": 14
   },
   "cra8": {
     "name": "장인의 엑스마테리쟈",
     "shortName": "장인엑스쟈",
+    "description": "작업 숙련도 +21",
+    "iconSrc": "/icons/items/craftsmans-competence-materia-viii.png",
     "cra": 21
   },
 
@@ -62,6 +68,8 @@
   "con4": {
     "name": "거장의 마테리가",
     "shortName": "거장가",
+    "description": "가공 숙련도 +4",
+    "iconSrc": "/icons/items/craftsmans-command-materia-iv.png",
     "con": 4
   },
   "con5": {
@@ -72,49 +80,65 @@
   "con6": {
     "name": "거장의 하이마테리쟈",
     "shortName": "거장하이쟈",
+    "description": "가공 숙련도 +10",
+    "iconSrc": "/icons/items/craftsmans-command-materia-vi.png",
     "con": 10
   },
   "con7": {
     "name": "거장의 메가마테리쟈",
     "shortName": "거장메가쟈",
+    "description": "가공 숙련도 +9",
+    "iconSrc": "/icons/items/craftsmans-command-materia-vii.png",
     "con": 9
   },
   "con8": {
     "name": "거장의 엑스마테리쟈",
     "shortName": "거장엑스쟈",
+    "description": "가공 숙련도 +13",
+    "iconSrc": "/icons/items/craftsmans-command-materia-viii.png",
     "con": 13
   },
 
   "cp1": {
     "name": "명인의 마테리아",
     "shortName": "명인아",
+    "description": "CP +1",
+    "iconSrc": "/icons/items/craftsmans-cunning-materia-i.png",
     "cp": 1
   },
   "cp2": {
     "name": "명인의 마테리라",
     "shortName": "명인라",
+    "description": "CP +2",
+    "iconSrc": "/icons/items/craftsmans-cunning-materia-ii.png",
     "cp": 2
   },
   "cp3": {
     "name": "명인의 마테리다",
     "shortName": "명인다",
-    "description": "CP+3",
+    "description": "CP +3",
     "iconSrc": "/icons/items/craftsmans-cunning-materia-iii.png",
     "cp": 3
   },
   "cp4": {
     "name": "명인의 마테리가",
     "shortName": "명인가",
+    "description": "CP +4",
+    "iconSrc": "/icons/items/craftsmans-cunning-materia-iv.png",
     "cp": 4
   },
   "cp5": {
     "name": "명인의 마테리쟈",
     "shortName": "명인쟈",
+    "description": "CP +6",
+    "iconSrc": "/icons/items/craftsmans-cunning-materia-v.png",
     "cp": 6
   },
   "cp6": {
     "name": "명인의 하이마테리쟈",
     "shortName": "명인하이쟈",
+    "description": "CP +8",
+    "iconSrc": "/icons/items/craftsmans-cunning-materia-vi.png",
     "cp": 8
   },
   "cp7": {
@@ -169,7 +193,12 @@
     "iconSrc": "/icons/items/dwarven-mythril-saw.png",
     "itemLevel": 430,
     "cra": 580,
-    "con": 314
+    "con": 314,
+    "hq": {
+      "iconSrc": "/icons/items/hq/dwarven-mythril-saw.png",
+      "cra": 657,
+      "con": 356
+    }
   },
   "================================================== 430 Secondary ==================================================": {},
   "dwarvenMythrilClawHammer": {
@@ -177,7 +206,12 @@
     "iconSrc": "/icons/items/dwarven-mythril-claw-hammer.png",
     "itemLevel": 430,
     "cra": 580,
-    "con": 314
+    "con": 314,
+    "hq": {
+      "iconSrc": "/icons/items/hq/dwarven-mythril-claw-hammer.png",
+      "cra": 657,
+      "con": 356
+    }
   },
   "================================================== 430 Head ==================================================": {},
   "dwarvenCottonBeret": {
@@ -185,7 +219,12 @@
     "iconSrc": "/icons/items/dwarven-cotton-beret.png",
     "itemLevel": 430,
     "con": 157,
-    "cp": 7
+    "cp": 7,
+    "hq": {
+      "iconSrc": "/icons/items/hq/dwarven-cotton-beret.png",
+      "con": 178,
+      "cp": 7
+    }
   },
   "================================================== 430 Body ==================================================": {},
   "dwarvenCottonJacket": {
@@ -194,7 +233,13 @@
     "itemLevel": 430,
     "cra": 497,
     "con": 157,
-    "cp": 4
+    "cp": 4,
+    "hq": {
+      "iconSrc": "/icons/items/hq/dwarven-cotton-jacket.png",
+      "cra": 563,
+      "con": 178,
+      "cp": 5
+    }
   },
   "================================================== 430 Hands ==================================================": {},
   "swallowskinFingerlessGloves": {
@@ -202,14 +247,23 @@
     "iconSrc": "/icons/items/swallowskin-fingerless-gloves.png",
     "itemLevel": 430,
     "con": 157,
-    "cp": 7
+    "cp": 7,
+    "hq": {
+      "iconSrc": "/icons/items/hq/swallowskin-fingerless-gloves.png",
+      "con": 178,
+      "cp": 7
+    }
   },
   "================================================== 430 Waist ==================================================": {},
   "swallowskinToolBelt": {
     "name": "바다제비 공구 허리띠",
     "iconSrc": "/icons/items/swallowskin-tool-belt.png",
     "itemLevel": 430,
-    "con": 157
+    "con": 157,
+    "hq": {
+      "iconSrc": "/icons/items/hq/swallowskin-tool-belt.png",
+      "con": 178
+    }
   },
   "================================================== 430 Legs ==================================================": {},
   "dwarvenCottonTrousers": {
@@ -217,7 +271,12 @@
     "iconSrc": "/icons/items/dwarven-cotton-trousers.png",
     "itemLevel": 430,
     "cra": 33,
-    "con": 157
+    "con": 157,
+    "hq": {
+      "iconSrc": "/icons/items/hq/dwarven-cotton-trousers.png",
+      "cra": 38,
+      "con": 178
+    }
   },
   "================================================== 430 Feet ==================================================": {},
   "swallowskinShoes": {
@@ -225,7 +284,12 @@
     "iconSrc": "/icons/items/swallowskin-shoes.png",
     "itemLevel": 430,
     "cra": 33,
-    "con": 157
+    "con": 157,
+    "hq": {
+      "iconSrc": "/icons/items/hq/swallowskin-shoes.png",
+      "cra": 38,
+      "con": 178
+    }
   },
   "================================================== 430 Earrings ==================================================": {},
   "dwarvenMythrilEarCuffs": {
