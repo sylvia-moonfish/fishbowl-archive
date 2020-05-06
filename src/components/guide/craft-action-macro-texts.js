@@ -33,19 +33,19 @@ class CraftActionMacroTexts extends React.Component {
         ja: "状態が「最高品質」以外",
       },
       endOfMacro: {
-        ko: "",
-        en: "",
-        ja: "",
+        ko: "매크로 완료",
+        en: "Macro finished",
+        ja: "マクロ完了",
       },
       endOfCrafting: {
         ko: "제작 완료",
-        en: "Craft finished.",
+        en: "Craft finished",
         ja: "完了",
       },
       macroLabel: {
-        ko: "매크로 #",
-        en: "Macro #",
-        ja: "マクロ#",
+        ko: "매크로",
+        en: "Macro",
+        ja: "マクロ",
       },
     };
 
@@ -53,7 +53,10 @@ class CraftActionMacroTexts extends React.Component {
       return {
         label:
           dictionary[actionMacro.label.type][this.props.language] +
-          (actionMacro.label.value ? actionMacro.label.value : ""),
+          (actionMacro.label.value
+            ? (this.props.language === "ja" ? "#" : " #") +
+              actionMacro.label.value
+            : ""),
         lines: actionMacro.lines.map((line) => {
           switch (line.type) {
             case "action":
@@ -70,6 +73,9 @@ class CraftActionMacroTexts extends React.Component {
               return (
                 "/echo " +
                 dictionary[line.value][this.props.language] +
+                (line.marker
+                  ? (this.props.language === "ja" ? "#" : " #") + line.marker
+                  : "") +
                 " <se." +
                 line.soundEffect +
                 ">"
@@ -109,6 +115,11 @@ class CraftActionMacroTexts extends React.Component {
           open={this.state.snackbar}
         />
         {macroFields.map((macroField, macroFieldIndex) => {
+          if (macroField.lines.length > 15) {
+            console.log(macroField);
+            return <div />;
+          }
+
           return (
             <TextField
               color="secondary"

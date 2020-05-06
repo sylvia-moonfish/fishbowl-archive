@@ -1,3 +1,6 @@
+import Grid from "@material-ui/core/Grid";
+import Typography from "@material-ui/core/Typography";
+
 import Head from "next/head";
 import Router from "next/router";
 
@@ -36,6 +39,25 @@ class PageComponent extends React.Component {
           name="twitter:description"
         />
       </Head>
+    );
+  }
+
+  generateFooter() {
+    return (
+      <Grid container justify="center">
+        <Typography
+          align="center"
+          paragraph
+          style={{
+            color: "grey",
+          }}
+          variant="caption"
+        >
+          {SiteInfo.siteTitle} ⓒ {SiteInfo.copyrightYear} {SiteInfo.author}
+          <br />
+          All Rights Reserved.
+        </Typography>
+      </Grid>
     );
   }
 }

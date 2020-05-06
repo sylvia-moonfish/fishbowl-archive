@@ -309,7 +309,7 @@ const gearSets = [
       },
       {
         itemId: "swallowskinToolBelt",
-        materiaIds: ["con6", "cp4", "con4", "cp3", "cp2"],
+        materiaIds: ["cp8", "cra7", "con7", "con7", "con7"],
         hq: true,
       },
       {
@@ -330,6 +330,144 @@ const gearSets = [
       {
         itemId: "swallowskinShoes",
         materiaIds: ["con6", "con6", "cp4", "cp3", "cp2"],
+        hq: true,
+      },
+      {
+        itemId: "dwarvenMythrilRing",
+        materiaIds: ["cra8", "cra7", "con7", "cp5", "con4"],
+        hq: true,
+      },
+    ],
+  },
+  {
+    gears: [
+      {
+        itemId: "dwarvenMythrilSaw",
+        materiaIds: ["cp5"],
+        hq: true,
+      },
+      {
+        itemId: "facetHatOfCrafting",
+        materiaIds: ["con8", "con8", "cra7", "con7", "cp1"],
+        hq: true,
+      },
+      {
+        itemId: "dwarvenMythrilClawHammer",
+        materiaIds: ["cp5"],
+        hq: true,
+      },
+      {
+        itemId: "dwarvenCottonJacket",
+        materiaIds: ["con6", "con6", "con4", "con4", "cp1"],
+        hq: true,
+      },
+      {
+        itemId: "dwarvenMythrilEarCuffs",
+        materiaIds: ["con8", "cp6", "con7", "con7", "cp4"],
+        hq: true,
+      },
+      {
+        itemId: "facetGlovesOfCrafting",
+        materiaIds: ["con8", "con8", "cra7", "con7", "cp1"],
+        hq: true,
+      },
+      {
+        itemId: "dwarvenMythrilChoker",
+        materiaIds: ["con8", "cp6", "con7", "con7", "cp4"],
+        hq: true,
+      },
+      {
+        itemId: "swallowskinToolBelt",
+        materiaIds: ["cp8", "cra7", "con7", "con7", "con7"],
+        hq: true,
+      },
+      {
+        itemId: "dwarvenMythrilBracelets",
+        materiaIds: ["con8", "cp6", "con7", "con7", "cp4"],
+        hq: true,
+      },
+      {
+        itemId: "dwarvenCottonTrousers",
+        materiaIds: ["con6", "con6", "cp4", "cp3", "cp2"],
+        hq: true,
+      },
+      {
+        itemId: "dwarvenMythrilRing",
+        materiaIds: ["cra8", "cra7", "cra7", "con7", "cp5"],
+        hq: true,
+      },
+      {
+        itemId: "facetBootsOfCrafting",
+        materiaIds: ["con8", "con8", "cp8", "con7", "cra4"],
+        hq: true,
+      },
+      {
+        itemId: "dwarvenMythrilRing",
+        materiaIds: ["cra8", "cra7", "con7", "cp5", "con4"],
+        hq: true,
+      },
+    ],
+  },
+  {
+    gears: [
+      {
+        itemId: "facetSaw",
+        materiaIds: ["cp5"],
+        hq: true,
+      },
+      {
+        itemId: "facetHatOfCrafting",
+        materiaIds: ["con8", "con8", "cra7", "con7", "cp1"],
+        hq: true,
+      },
+      {
+        itemId: "facetClawHammer",
+        materiaIds: ["cp5"],
+        hq: true,
+      },
+      {
+        itemId: "facetCoatOfCrafting",
+        materiaIds: ["con8", "con8", "cra7", "con7", "cp1"],
+        hq: true,
+      },
+      {
+        itemId: "dwarvenMythrilEarCuffs",
+        materiaIds: ["con8", "cp6", "con7", "con7", "cp4"],
+        hq: true,
+      },
+      {
+        itemId: "facetGlovesOfCrafting",
+        materiaIds: ["con8", "con8", "cra7", "con7", "cp1"],
+        hq: true,
+      },
+      {
+        itemId: "dwarvenMythrilChoker",
+        materiaIds: ["con8", "cp6", "con7", "con7", "cp4"],
+        hq: true,
+      },
+      {
+        itemId: "swallowskinToolBelt",
+        materiaIds: ["cp8", "cra7", "con7", "con7", "con7"],
+        hq: true,
+      },
+      {
+        itemId: "dwarvenMythrilBracelets",
+        materiaIds: ["con8", "cp6", "con7", "con7", "cp4"],
+        hq: true,
+      },
+      {
+        itemId: "facetTrousersOfCrafting",
+        materiaIds: ["con8", "con8", "cp8", "con7", "cra4"],
+        hq: true,
+      },
+      {
+        itemId: "dwarvenMythrilRing",
+        materiaIds: ["cra8", "cra7", "cra7", "con7", "cp5"],
+        hq: true,
+      },
+      {
+        itemId: "facetBootsOfCrafting",
+        materiaIds: ["con8", "con8", "cp8", "con7", "cra4"],
         hq: true,
       },
       {
@@ -376,7 +514,7 @@ class CraftGuide extends PageComponent {
                     spacing={5}
                   >
                     <Grid item>
-                      <Typography variant="h6">{pageData.title}</Typography>
+                      <Typography variant="h5">{pageData.title}</Typography>
                     </Grid>
                   </Grid>
                 </Grid>
@@ -437,10 +575,27 @@ class CraftGuide extends PageComponent {
                 <Grid item>
                   <Divider />
                 </Grid>
+                <Grid item>
+                  <Typography variant="h6">단계별 가이드</Typography>
+                </Grid>
+                <Grid item>
+                  <Typography variant="body2">
+                    아래 메뉴 중 열람하고자 하는 단계를 클릭해 펼쳐볼 수
+                    있습니다.
+                  </Typography>
+                </Grid>
+                <Grid item>
+                  <Typography variant="body2">
+                    단계별 제목 옆에 기재된 숫자는 해당 단계의 매크로를
+                    사용하는데 필요한 최소 스펙과 해당 단계 완료 시 도달 가능한
+                    최종 스펙을 뜻하며 (작업 숙련도/가공 숙련도/CP) 순으로
+                    기재되어 있습니다.
+                  </Typography>
+                </Grid>
                 <ExpansionPanels
                   panels={[
                     {
-                      title: "첫 장비 구입 (0/0/0)",
+                      title: "첫 장비 구입 (0/0/0)→(1741/1594/369)",
                       children: (
                         <React.Fragment>
                           <Grid item>
@@ -505,7 +660,8 @@ class CraftGuide extends PageComponent {
                       ),
                     },
                     {
-                      title: "430제 악세서리 제작 (1741/1594/369)",
+                      title:
+                        "430제 악세서리 제작 (1741/1594/369)→(1837/1712/454)",
                       children: (
                         <React.Fragment>
                           <Grid item>
@@ -525,6 +681,7 @@ class CraftGuide extends PageComponent {
                             스펙이 부족할 경우 전 단계인 "첫 장비 구입" 단계를
                             참고해주세요.
                           </Grid>
+                          <PanelDivider />
                           <Grid item>
                             <Typography variant="h6">
                               악세서리 재료 채집
@@ -729,13 +886,9 @@ class CraftGuide extends PageComponent {
                               },
                               {
                                 label: {
-                                  type: "conditionNotExcellentLabel",
+                                  type: "conditionExcellentLabel",
                                 },
                                 lines: [
-                                  {
-                                    type: "action",
-                                    value: "great-strides",
-                                  },
                                   {
                                     type: "action",
                                     value: "byregots-blessing",
@@ -753,9 +906,13 @@ class CraftGuide extends PageComponent {
                               },
                               {
                                 label: {
-                                  type: "conditionExcellentLabel",
+                                  type: "conditionNotExcellentLabel",
                                 },
                                 lines: [
+                                  {
+                                    type: "action",
+                                    value: "great-strides",
+                                  },
                                   {
                                     type: "action",
                                     value: "byregots-blessing",
@@ -867,13 +1024,9 @@ class CraftGuide extends PageComponent {
                               },
                               {
                                 label: {
-                                  type: "conditionNotExcellentLabel",
+                                  type: "conditionExcellentLabel",
                                 },
                                 lines: [
-                                  {
-                                    type: "action",
-                                    value: "great-strides",
-                                  },
                                   {
                                     type: "action",
                                     value: "byregots-blessing",
@@ -891,9 +1044,13 @@ class CraftGuide extends PageComponent {
                               },
                               {
                                 label: {
-                                  type: "conditionExcellentLabel",
+                                  type: "conditionNotExcellentLabel",
                                 },
                                 lines: [
+                                  {
+                                    type: "action",
+                                    value: "great-strides",
+                                  },
                                   {
                                     type: "action",
                                     value: "byregots-blessing",
@@ -1047,13 +1204,9 @@ class CraftGuide extends PageComponent {
                               },
                               {
                                 label: {
-                                  type: "conditionNotExcellentLabel",
+                                  type: "conditionExcellentLabel",
                                 },
                                 lines: [
-                                  {
-                                    type: "action",
-                                    value: "great-strides",
-                                  },
                                   {
                                     type: "action",
                                     value: "byregots-blessing",
@@ -1075,9 +1228,13 @@ class CraftGuide extends PageComponent {
                               },
                               {
                                 label: {
-                                  type: "conditionExcellentLabel",
+                                  type: "conditionNotExcellentLabel",
                                 },
                                 lines: [
+                                  {
+                                    type: "action",
+                                    value: "great-strides",
+                                  },
                                   {
                                     type: "action",
                                     value: "byregots-blessing",
@@ -1125,7 +1282,8 @@ class CraftGuide extends PageComponent {
                       ),
                     },
                     {
-                      title: "430제 악세서리 금단 (1837/1712/454)",
+                      title:
+                        "430제 악세서리 금단 (1837/1712/454)→(1921/1827/502)",
                       children: (
                         <React.Fragment>
                           <Grid item>
@@ -1194,105 +1352,14 @@ class CraftGuide extends PageComponent {
                           </Grid>
                           <PanelDivider />
                           <Grid item>
-                            <Typography variant="h6">단골손님</Typography>
+                            <Typography variant="h6">
+                              카이시르 제외 나머지 단골손님 매크로
+                            </Typography>
                           </Grid>
                           <Grid item>
                             <Typography variant="body2">
-                              단골손님 컨텐츠를 통해 황화와 백화를 획득할 수
-                              있습니다. 백화는 제작 재료 및 마테리아 교환에,
-                              황화는 비전서 교환에 사용할 수 있습니다.
-                            </Typography>
-                          </Grid>
-                          <Grid item />
-                          <Grid item>
-                            <Typography variant="h6">
-                              카이시르 전용 매크로
-                            </Typography>
-                          </Grid>
-                          <CraftActionDisplay
-                            actionCard={[
-                              "reflect",
-                              "manipulation",
-                              "waste-not",
-                              "innovation",
-                              "preparatory-touch",
-                              "preparatory-touch",
-                              "preparatory-touch",
-                              "byregots-blessing",
-                              "careful-synthesis",
-                              "careful-synthesis",
-                              "careful-synthesis",
-                              "careful-synthesis",
-                            ]}
-                            actionMacro={[
-                              {
-                                label: {
-                                  type: "macroLabel",
-                                  value: 1,
-                                },
-                                lines: [
-                                  {
-                                    type: "action",
-                                    value: "reflect",
-                                  },
-                                  {
-                                    type: "action",
-                                    value: "manipulation",
-                                  },
-                                  {
-                                    type: "action",
-                                    value: "waste-not",
-                                  },
-                                  {
-                                    type: "action",
-                                    value: "innovation",
-                                  },
-                                  {
-                                    type: "action",
-                                    value: "preparatory-touch",
-                                  },
-                                  {
-                                    type: "action",
-                                    value: "preparatory-touch",
-                                  },
-                                  {
-                                    type: "action",
-                                    value: "preparatory-touch",
-                                  },
-                                  {
-                                    type: "action",
-                                    value: "byregots-blessing",
-                                  },
-                                  {
-                                    type: "action",
-                                    value: "careful-synthesis",
-                                  },
-                                  {
-                                    type: "action",
-                                    value: "careful-synthesis",
-                                  },
-                                  {
-                                    type: "action",
-                                    value: "careful-synthesis",
-                                  },
-                                  {
-                                    type: "action",
-                                    value: "careful-synthesis",
-                                  },
-                                  {
-                                    type: "prompt",
-                                    value: "endOfCrafting",
-                                    soundEffect: soundEffects.endOfCrafting,
-                                  },
-                                ],
-                              },
-                            ]}
-                            Actions={Actions}
-                          />
-                          <Grid item />
-                          <Grid item>
-                            <Typography variant="h6">
-                              카이시르 제외 나머지 단골손님 매크로
+                              카이시르를 제외한 나머지 단골손님 납품에 사용할 수
+                              있는 매크로입니다.
                             </Typography>
                           </Grid>
                           <CraftActionDisplay
@@ -1335,42 +1402,37 @@ class CraftGuide extends PageComponent {
                             ]}
                             Actions={Actions}
                           />
-                          <PanelDivider />
+                          <Grid item />
                           <Grid item>
                             <Typography variant="h6">
-                              로웨나 상회 납품
+                              카이시르 & 황화 납품용 매크로
                             </Typography>
                           </Grid>
                           <Grid item>
                             <Typography variant="body2">
-                              로웨나 상회 납품은 단골손님과는 달리 주제한이
-                              없으므로 부족한 백화와 황화를 획득하기 좋은
-                              수단입니다. 매일 납품 목록이 바뀌므로 모든
-                              제작직의 목록을 체크하고 가장 재료를 조달하기 쉬운
-                              물품을 골라 납품하도록 합시다.
-                            </Typography>
-                          </Grid>
-                          <Grid item />
-                          <Grid item>
-                            <Typography variant="h6">
-                              황화 납품용 매크로
+                              카이시르 단골손님 납품 품목과 로웨나 상회 황화
+                              획득용 납품 품목 제작에 사용할 수 있는
+                              매크로입니다. 로웨나 상회 납품의 경우 매일 납품
+                              목록이 바뀌므로 모든 제작직의 목록을 체크하고 가장
+                              재료를 조달하기 쉬운 물품을 골라 납품하도록
+                              합시다.
                             </Typography>
                           </Grid>
                           <CraftActionDisplay
                             actionCard={[
                               "reflect",
-                              "ingenuity",
-                              "innovation",
-                              "delicate-synthesis",
-                              "delicate-synthesis",
-                              "delicate-synthesis",
-                              "delicate-synthesis",
                               "manipulation",
                               "ingenuity",
-                              "innovation",
-                              "prudent-touch",
-                              "great-strides",
+                              "waste-not",
+                              "preparatory-touch",
+                              "preparatory-touch",
+                              "preparatory-touch",
+                              "preparatory-touch",
                               "byregots-blessing",
+                              "careful-synthesis",
+                              "careful-synthesis",
+                              "careful-synthesis",
+                              "careful-synthesis",
                               "careful-synthesis",
                             ]}
                             actionMacro={[
@@ -1386,30 +1448,6 @@ class CraftGuide extends PageComponent {
                                   },
                                   {
                                     type: "action",
-                                    value: "ingenuity",
-                                  },
-                                  {
-                                    type: "action",
-                                    value: "innovation",
-                                  },
-                                  {
-                                    type: "action",
-                                    value: "delicate-synthesis",
-                                  },
-                                  {
-                                    type: "action",
-                                    value: "delicate-synthesis",
-                                  },
-                                  {
-                                    type: "action",
-                                    value: "delicate-synthesis",
-                                  },
-                                  {
-                                    type: "action",
-                                    value: "delicate-synthesis",
-                                  },
-                                  {
-                                    type: "action",
                                     value: "manipulation",
                                   },
                                   {
@@ -1418,27 +1456,23 @@ class CraftGuide extends PageComponent {
                                   },
                                   {
                                     type: "action",
-                                    value: "innovation",
+                                    value: "waste-not",
                                   },
                                   {
                                     type: "action",
-                                    value: "prudent-touch",
+                                    value: "preparatory-touch",
                                   },
-                                  {
-                                    type: "prompt",
-                                    value: "checkCondition",
-                                    soundEffect: soundEffects.checkCondition,
-                                  },
-                                ],
-                              },
-                              {
-                                label: {
-                                  type: "conditionNotExcellentLabel",
-                                },
-                                lines: [
                                   {
                                     type: "action",
-                                    value: "great-strides",
+                                    value: "preparatory-touch",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "preparatory-touch",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "preparatory-touch",
                                   },
                                   {
                                     type: "action",
@@ -1449,20 +1483,16 @@ class CraftGuide extends PageComponent {
                                     value: "careful-synthesis",
                                   },
                                   {
-                                    type: "prompt",
-                                    value: "endOfCrafting",
-                                    soundEffect: soundEffects.endOfCrafting,
+                                    type: "action",
+                                    value: "careful-synthesis",
                                   },
-                                ],
-                              },
-                              {
-                                label: {
-                                  type: "conditionExcellentLabel",
-                                },
-                                lines: [
                                   {
                                     type: "action",
-                                    value: "byregots-blessing",
+                                    value: "careful-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "careful-synthesis",
                                   },
                                   {
                                     type: "action",
@@ -1481,7 +1511,13 @@ class CraftGuide extends PageComponent {
                           <Grid item />
                           <Grid item>
                             <Typography variant="h6">
-                              백화 납품용 매크로
+                              이슈가르드 부흥 & 백화 납품용 매크로
+                            </Typography>
+                          </Grid>
+                          <Grid item>
+                            <Typography variant="body2">
+                              이슈가르드 부흥 납품의 경우 현재 스펙으로는 소장품
+                              가치를 최고 보상까지 맞출 수 없는 점 유의해주세요.
                             </Typography>
                           </Grid>
                           <CraftActionDisplay
@@ -1568,6 +1604,34 @@ class CraftGuide extends PageComponent {
                               },
                               {
                                 label: {
+                                  type: "conditionExcellentLabel",
+                                },
+                                lines: [
+                                  {
+                                    type: "action",
+                                    value: "byregots-blessing",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "careful-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "careful-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "basic-synthesis",
+                                  },
+                                  {
+                                    type: "prompt",
+                                    value: "endOfCrafting",
+                                    soundEffect: soundEffects.endOfCrafting,
+                                  },
+                                ],
+                              },
+                              {
+                                label: {
                                   type: "conditionNotExcellentLabel",
                                 },
                                 lines: [
@@ -1591,55 +1655,16 @@ class CraftGuide extends PageComponent {
                                     type: "action",
                                     value: "basic-synthesis",
                                   },
-                                ],
-                              },
-                              {
-                                label: {
-                                  type: "conditionExcellentLabel",
-                                },
-                                lines: [
                                   {
-                                    type: "action",
-                                    value: "byregots-blessing",
-                                  },
-                                  {
-                                    type: "action",
-                                    value: "careful-synthesis",
-                                  },
-                                  {
-                                    type: "action",
-                                    value: "careful-synthesis",
-                                  },
-                                  {
-                                    type: "action",
-                                    value: "basic-synthesis",
+                                    type: "prompt",
+                                    value: "endOfCrafting",
+                                    soundEffect: soundEffects.endOfCrafting,
                                   },
                                 ],
                               },
                             ]}
                             Actions={Actions}
                           />
-                          <PanelDivider />
-                          <Grid item>
-                            <Typography variant="h6">
-                              이슈가르드 부흥
-                            </Typography>
-                          </Grid>
-                          <Grid item>
-                            <Typography variant="body2">
-                              이슈가르드 부흥 납품을 통해 특수 화폐를 얻을 수
-                              있습니다. 이 화폐는 고유 탈것, 꼬마친구, 제작/채집
-                              마테리아 등과 교환할 수 있습니다.
-                            </Typography>
-                          </Grid>
-                          <Grid item>
-                            <Typography variant="body2">
-                              이슈가르드 부흥 납품용 80레벨 제작법의 경우 위에
-                              기재된 백화 납품용 매크로를 사용해 제작하면
-                              됩니다. 현재 스펙으로는 소장품 가치를 최고
-                              보상까지 맞출 수 없는 점 유의해주세요.
-                            </Typography>
-                          </Grid>
                           <PanelDivider />
                           <Grid item>
                             <Typography variant="h6">
@@ -1669,7 +1694,7 @@ class CraftGuide extends PageComponent {
                       ),
                     },
                     {
-                      title: "430제 장비 제작 (1921/1827/502)",
+                      title: "430제 장비 제작 (1921/1827/502)→(2151/2037/497)",
                       children: (
                         <React.Fragment>
                           <Grid item>
@@ -1789,13 +1814,9 @@ class CraftGuide extends PageComponent {
                               },
                               {
                                 label: {
-                                  type: "conditionNotExcellentLabel",
+                                  type: "conditionExcellentLabel",
                                 },
                                 lines: [
-                                  {
-                                    type: "action",
-                                    value: "great-strides",
-                                  },
                                   {
                                     type: "action",
                                     value: "byregots-blessing",
@@ -1821,9 +1842,13 @@ class CraftGuide extends PageComponent {
                               },
                               {
                                 label: {
-                                  type: "conditionExcellentLabel",
+                                  type: "conditionNotExcellentLabel",
                                 },
                                 lines: [
+                                  {
+                                    type: "action",
+                                    value: "great-strides",
+                                  },
                                   {
                                     type: "action",
                                     value: "byregots-blessing",
@@ -1874,7 +1899,7 @@ class CraftGuide extends PageComponent {
                       ),
                     },
                     {
-                      title: "430제 장비 금단 (2151/2037/497)",
+                      title: "430제 장비 금단 (2151/2037/497)→(2229/2148/541)",
                       children: (
                         <React.Fragment>
                           <Grid item>
@@ -1891,11 +1916,408 @@ class CraftGuide extends PageComponent {
                           </Grid>
                           <Grid item>
                             <Typography variant="body2">
-                              단골손님, 황화, 백화 및 이슈가르드 부흥 납품은
-                              "430제 악세서리 금단" 단계에 수록된 매크로들을
-                              사용해주세요.
+                              이 단계에 수록된 매크로들을 사용하기 위한 최소
+                              스펙은 다음과 같습니다.
                             </Typography>
                           </Grid>
+                          <CraftGearStats gearSet={gearSets[3]} Items={Items} />
+                          <Grid item>
+                            스펙이 부족할 경우 전 단계인 "430제 장비 제작"
+                            단계를 참고해주세요.
+                          </Grid>
+                          <PanelDivider />
+                          <Grid item>
+                            <Typography variant="h6">
+                              카이시르 제외 나머지 단골손님 매크로
+                            </Typography>
+                          </Grid>
+                          <Grid item>
+                            <Typography variant="body2">
+                              카이시르를 제외한 나머지 단골손님 납품에 사용할 수
+                              있는 매크로입니다.
+                            </Typography>
+                          </Grid>
+                          <CraftActionDisplay
+                            actionCard={[
+                              "trained-eye",
+                              "careful-synthesis",
+                              "careful-synthesis",
+                              "careful-synthesis",
+                            ]}
+                            actionMacro={[
+                              {
+                                label: {
+                                  type: "macroLabel",
+                                  value: 1,
+                                },
+                                lines: [
+                                  {
+                                    type: "action",
+                                    value: "trained-eye",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "careful-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "careful-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "careful-synthesis",
+                                  },
+                                  {
+                                    type: "prompt",
+                                    value: "endOfCrafting",
+                                    soundEffect: soundEffects.endOfCrafting,
+                                  },
+                                ],
+                              },
+                            ]}
+                            Actions={Actions}
+                          />
+                          <Grid item />
+                          <Grid item>
+                            <Typography variant="h6">
+                              카이시르 & 황화 & 백화 납품용 매크로
+                            </Typography>
+                          </Grid>
+                          <Grid item>
+                            <Typography variant="body2">
+                              카이시르 단골손님 납품 품목과 로웨나 상회 황화 및
+                              백화 획득용 납품 품목 제작에 사용할 수 있는
+                              매크로입니다. 로웨나 상회 납품의 경우 매일 납품
+                              목록이 바뀌므로 모든 제작직의 목록을 체크하고 가장
+                              재료를 조달하기 쉬운 물품을 골라 납품하도록
+                              합시다.
+                            </Typography>
+                          </Grid>
+                          <CraftActionDisplay
+                            actionCard={[
+                              "reflect",
+                              "manipulation",
+                              "ingenuity",
+                              "waste-not",
+                              "preparatory-touch",
+                              "preparatory-touch",
+                              "preparatory-touch",
+                              "preparatory-touch",
+                              "ingenuity",
+                              "innovation",
+                              "byregots-blessing",
+                              "careful-synthesis",
+                              "careful-synthesis",
+                              "careful-synthesis",
+                              "careful-synthesis",
+                            ]}
+                            actionMacro={[
+                              {
+                                label: {
+                                  type: "macroLabel",
+                                  value: 1,
+                                },
+                                lines: [
+                                  {
+                                    type: "action",
+                                    value: "reflect",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "manipulation",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "ingenuity",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "waste-not",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "preparatory-touch",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "preparatory-touch",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "preparatory-touch",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "preparatory-touch",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "ingenuity",
+                                  },
+                                  {
+                                    type: "prompt",
+                                    value: "checkCondition",
+                                    soundEffect: soundEffects.checkCondition,
+                                  },
+                                ],
+                              },
+                              {
+                                label: {
+                                  type: "conditionExcellentLabel",
+                                },
+                                lines: [
+                                  {
+                                    type: "action",
+                                    value: "byregots-blessing",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "innovation",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "careful-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "careful-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "careful-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "careful-synthesis",
+                                  },
+                                  {
+                                    type: "prompt",
+                                    value: "endOfCrafting",
+                                    soundEffect: soundEffects.endOfCrafting,
+                                  },
+                                ],
+                              },
+                              {
+                                label: {
+                                  type: "conditionNotExcellentLabel",
+                                },
+                                lines: [
+                                  {
+                                    type: "action",
+                                    value: "innovation",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "byregots-blessing",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "careful-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "careful-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "careful-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "careful-synthesis",
+                                  },
+                                  {
+                                    type: "prompt",
+                                    value: "endOfCrafting",
+                                    soundEffect: soundEffects.endOfCrafting,
+                                  },
+                                ],
+                              },
+                            ]}
+                            Actions={Actions}
+                          />
+                          <Grid item />
+                          <Grid item>
+                            <Typography variant="h6">
+                              이슈가르드 부흥 매크로
+                            </Typography>
+                          </Grid>
+                          <Grid item>
+                            <Typography variant="body2">
+                              이슈가르드 부흥 납품의 경우 현재 스펙으로는 소장품
+                              가치를 최고 보상까지 맞출 수 없는 점 유의해주세요.
+                            </Typography>
+                          </Grid>
+                          <CraftActionDisplay
+                            actionCard={[
+                              "reflect",
+                              "manipulation",
+                              "ingenuity",
+                              "innovation",
+                              "delicate-synthesis",
+                              "delicate-synthesis",
+                              "delicate-synthesis",
+                              "delicate-synthesis",
+                              "prudent-touch",
+                              "great-strides",
+                              "ingenuity",
+                              "innovation",
+                              "preparatory-touch",
+                              "great-strides",
+                              "byregots-blessing",
+                              "careful-synthesis",
+                            ]}
+                            actionMacro={[
+                              {
+                                label: {
+                                  type: "macroLabel",
+                                  value: 1,
+                                },
+                                lines: [
+                                  {
+                                    type: "action",
+                                    value: "reflect",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "manipulation",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "ingenuity",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "innovation",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "delicate-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "delicate-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "delicate-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "delicate-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "prudent-touch",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "great-strides",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "ingenuity",
+                                  },
+                                  {
+                                    type: "prompt",
+                                    value: "checkCondition",
+                                    soundEffect: soundEffects.checkCondition,
+                                    marker: 1,
+                                  },
+                                ],
+                              },
+                              {
+                                label: {
+                                  type: "conditionExcellentLabel",
+                                  value: 1,
+                                },
+                                lines: [
+                                  {
+                                    type: "action",
+                                    value: "preparatory-touch",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "careful-synthesis",
+                                  },
+                                  {
+                                    type: "prompt",
+                                    value: "endOfCrafting",
+                                    soundEffect: soundEffects.endOfCrafting,
+                                  },
+                                ],
+                              },
+                              {
+                                label: {
+                                  type: "conditionNotExcellentLabel",
+                                  value: 1,
+                                },
+                                lines: [
+                                  {
+                                    type: "action",
+                                    value: "innovation",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "preparatory-touch",
+                                  },
+                                  {
+                                    type: "prompt",
+                                    value: "checkCondition",
+                                    soundEffect: soundEffects.checkCondition,
+                                    marker: 2,
+                                  },
+                                ],
+                              },
+                              {
+                                label: {
+                                  type: "conditionExcellentLabel",
+                                  value: 2,
+                                },
+                                lines: [
+                                  {
+                                    type: "action",
+                                    value: "byregots-blessing",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "careful-synthesis",
+                                  },
+                                  {
+                                    type: "prompt",
+                                    value: "endOfCrafting",
+                                    soundEffect: soundEffects.endOfCrafting,
+                                  },
+                                ],
+                              },
+                              {
+                                label: {
+                                  type: "conditionNotExcellentLabel",
+                                  value: 2,
+                                },
+                                lines: [
+                                  {
+                                    type: "action",
+                                    value: "great-strides",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "byregots-blessing",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "careful-synthesis",
+                                  },
+                                  {
+                                    type: "prompt",
+                                    value: "endOfCrafting",
+                                    soundEffect: soundEffects.endOfCrafting,
+                                  },
+                                ],
+                              },
+                            ]}
+                            Actions={Actions}
+                          />
                           <PanelDivider />
                           <Grid item>
                             <Typography variant="h6">430 장비 금단</Typography>
@@ -1922,11 +2344,2980 @@ class CraftGuide extends PageComponent {
                         </React.Fragment>
                       ),
                     },
+                    {
+                      title:
+                        "460제 머리/손/발 제작&금단 (2229/2148/541)→(2203/2283/541)",
+                      children: (
+                        <React.Fragment>
+                          <Grid item>
+                            <Typography variant="body2">
+                              이 단계의 최종 목표는 460제 장비를 제작하고
+                              금단하는 것입니다.
+                            </Typography>
+                          </Grid>
+                          <Grid item>
+                            <Typography variant="body2">
+                              현재 스펙이 살짝 부족해 460제 제작에 HQ 초품
+                              재료가 필요한 관계로 일단 제작이 수월한
+                              머리/손/발을 먼저 제작 후 금단을 마쳐 몸/다리와
+                              주/부 도구 제작을 수월하게 할 수 있도록 합니다.
+                            </Typography>
+                          </Grid>
+                          <Grid item>
+                            <Typography variant="body2">
+                              460제 머리/손/발의 금단이 전부 완료되기 전까지는
+                              장비를 교체하지 말아주세요.
+                            </Typography>
+                          </Grid>
+                          <Grid item>
+                            <Typography variant="body2">
+                              이 단계에 수록된 매크로들을 사용하기 위한 최소
+                              스펙은 다음과 같습니다.
+                            </Typography>
+                          </Grid>
+                          <CraftGearStats gearSet={gearSets[4]} Items={Items} />
+                          <Grid item>
+                            <Typography variant="body2">
+                              스펙이 부족할 경우 전 단계인 "430제 장비 금단"
+                              단계를 참고해주세요.
+                            </Typography>
+                          </Grid>
+                          <PanelDivider />
+                          <Grid item>
+                            <Typography variant="h6">제작 음식 준비</Typography>
+                          </Grid>
+                          <Grid item>
+                            <Typography variant="body2">
+                              아래 매크로를 사용해 HQ 해물 피수프를 미리
+                              제작해둡니다.
+                            </Typography>
+                          </Grid>
+                          <Grid item />
+                          <CraftMaterialDisplay
+                            craftMaterials={[
+                              {
+                                label: "제작할 물품",
+                                materials: [
+                                  {
+                                    id: "blood-bouillabaisse",
+                                    amount: 1,
+                                    hq: true,
+                                  },
+                                ],
+                              },
+                            ]}
+                            Materials={Materials}
+                          />
+                          <CraftActionDisplay
+                            actionCard={[
+                              "reflect",
+                              "ingenuity",
+                              "innovation",
+                              "delicate-synthesis",
+                              "delicate-synthesis",
+                              "delicate-synthesis",
+                              "delicate-synthesis",
+                              "ingenuity",
+                              "innovation",
+                              "great-strides",
+                              "byregots-blessing",
+                              "careful-synthesis",
+                            ]}
+                            actionMacro={[
+                              {
+                                label: {
+                                  type: "macroLabel",
+                                  value: 1,
+                                },
+                                lines: [
+                                  {
+                                    type: "action",
+                                    value: "reflect",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "ingenuity",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "innovation",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "delicate-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "delicate-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "delicate-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "delicate-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "ingenuity",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "innovation",
+                                  },
+                                  {
+                                    type: "prompt",
+                                    value: "checkCondition",
+                                    soundEffect: soundEffects.checkCondition,
+                                  },
+                                ],
+                              },
+                              {
+                                label: {
+                                  type: "conditionExcellentLabel",
+                                },
+                                lines: [
+                                  {
+                                    type: "action",
+                                    value: "byregots-blessing",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "careful-synthesis",
+                                  },
+                                  {
+                                    type: "prompt",
+                                    value: "endOfCrafting",
+                                    soundEffect: soundEffects.endOfCrafting,
+                                  },
+                                ],
+                              },
+                              {
+                                label: {
+                                  type: "conditionNotExcellentLabel",
+                                },
+                                lines: [
+                                  {
+                                    type: "action",
+                                    value: "great-strides",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "byregots-blessing",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "careful-synthesis",
+                                  },
+                                  {
+                                    type: "prompt",
+                                    value: "endOfCrafting",
+                                    soundEffect: soundEffects.endOfCrafting,
+                                  },
+                                ],
+                              },
+                            ]}
+                            Actions={Actions}
+                          />
+                          <PanelDivider />
+                          <Grid item>
+                            <Typography variant="h6">초품 제작</Typography>
+                          </Grid>
+                          <Grid item>
+                            <Typography variant="body2">
+                              460제 장비 제작에 사용될 초품 재료들을 제작해야
+                              합니다. 아래 매크로를 사용해 지정된 물품들을
+                              제작해주세요.
+                            </Typography>
+                          </Grid>
+                          <Grid item />
+                          <CraftMaterialDisplay
+                            craftMaterials={[
+                              {
+                                label: "제작할 물품",
+                                materials: [
+                                  {
+                                    id: "sea-swallow-leather",
+                                    amount: 1,
+                                    hq: true,
+                                  },
+                                  {
+                                    id: "dwarven-cotton",
+                                    amount: 2,
+                                    hq: true,
+                                  },
+                                ],
+                              },
+                            ]}
+                            Materials={Materials}
+                          />
+                          <CraftActionDisplay
+                            actionCard={[
+                              "reflect",
+                              "manipulation",
+                              "ingenuity",
+                              "innovation",
+                              "delicate-synthesis",
+                              "delicate-synthesis",
+                              "basic-touch",
+                              "basic-touch",
+                              "ingenuity",
+                              "innovation",
+                              "great-strides",
+                              "byregots-blessing",
+                              "careful-synthesis",
+                            ]}
+                            actionMacro={[
+                              {
+                                label: {
+                                  type: "macroLabel",
+                                  value: 1,
+                                },
+                                lines: [
+                                  {
+                                    type: "action",
+                                    value: "reflect",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "manipulation",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "ingenuity",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "innovation",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "delicate-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "delicate-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "basic-touch",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "basic-touch",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "ingenuity",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "innovation",
+                                  },
+                                  {
+                                    type: "prompt",
+                                    value: "checkCondition",
+                                    soundEffect: soundEffects.checkCondition,
+                                  },
+                                ],
+                              },
+                              {
+                                label: {
+                                  type: "conditionExcellentLabel",
+                                },
+                                lines: [
+                                  {
+                                    type: "action",
+                                    value: "byregots-blessing",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "careful-synthesis",
+                                  },
+                                  {
+                                    type: "prompt",
+                                    value: "endOfCrafting",
+                                    soundEffect: soundEffects.endOfCrafting,
+                                  },
+                                ],
+                              },
+                              {
+                                label: {
+                                  type: "conditionNotExcellentLabel",
+                                },
+                                lines: [
+                                  {
+                                    type: "action",
+                                    value: "great-strides",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "byregots-blessing",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "careful-synthesis",
+                                  },
+                                  {
+                                    type: "prompt",
+                                    value: "endOfCrafting",
+                                    soundEffect: soundEffects.endOfCrafting,
+                                  },
+                                ],
+                              },
+                            ]}
+                            Actions={Actions}
+                          />
+                          <PanelDivider />
+                          <Grid item>
+                            <Typography variant="h6">
+                              460제 머리/손/발 제작
+                            </Typography>
+                          </Grid>
+                          <Grid item>
+                            <Typography variant="body2">
+                              각 부위마다 1개의 HQ 초품이 필요합니다. 머리
+                              파츠를 제작할 때는 바다제비 가죽 HQ 1개를, 손과
+                              발을 제작할 때는 각각 드워프 무명천 HQ 1개씩을 꼭
+                              넣어서 제작해주세요.
+                            </Typography>
+                          </Grid>
+                          <Grid item>
+                            <Typography variant="body2">
+                              아래 매크로를 사용하려면 제작 음식을 꼭 섭취하셔야
+                              합니다. 제작 전에 해물 피수프 HQ를 드셨는지 꼭
+                              확인해주세요.
+                            </Typography>
+                          </Grid>
+                          <Grid item />
+                          <CraftMaterialDisplay
+                            craftMaterials={[
+                              {
+                                label: "제작할 물품",
+                                materials: [
+                                  {
+                                    id: "facet-hat-of-crafting",
+                                    amount: 1,
+                                    hq: true,
+                                  },
+                                  {
+                                    id: "facet-gloves-of-crafting",
+                                    amount: 1,
+                                    hq: true,
+                                  },
+                                  {
+                                    id: "facet-boots-of-crafting",
+                                    amount: 1,
+                                    hq: true,
+                                  },
+                                ],
+                              },
+                              {
+                                label: "제작 시 필요 음식",
+                                materials: [
+                                  {
+                                    id: "blood-bouillabaisse",
+                                    amount: 1,
+                                    hq: true,
+                                  },
+                                ],
+                              },
+                            ]}
+                            Materials={Materials}
+                          />
+                          <Grid item>
+                            <Typography variant="body2">
+                              * 최고품질에 따른 분기점이 많은 매크로입니다. 품질
+                              확인 시 각별히 유의해주세요!
+                            </Typography>
+                          </Grid>
+                          <CraftActionDisplay
+                            actionCard={[
+                              "reflect",
+                              "ingenuity",
+                              "innovation",
+                              "delicate-synthesis",
+                              "delicate-synthesis",
+                              "delicate-synthesis",
+                              "delicate-synthesis",
+                              "manipulation",
+                              "great-strides",
+                              "ingenuity",
+                              "waste-not",
+                              "preparatory-touch",
+                              "basic-synthesis",
+                              "basic-synthesis",
+                              "basic-synthesis",
+                              "great-strides",
+                              "ingenuity",
+                              "innovation",
+                              "preparatory-touch",
+                              "great-strides",
+                              "byregots-blessing",
+                              "basic-synthesis",
+                            ]}
+                            actionMacro={[
+                              {
+                                label: {
+                                  type: "macroLabel",
+                                  value: 1,
+                                },
+                                lines: [
+                                  {
+                                    type: "action",
+                                    value: "reflect",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "ingenuity",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "innovation",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "delicate-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "delicate-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "delicate-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "delicate-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "manipulation",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "great-strides",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "ingenuity",
+                                  },
+                                  {
+                                    type: "prompt",
+                                    value: "checkCondition",
+                                    soundEffect: soundEffects.checkCondition,
+                                    marker: 1,
+                                  },
+                                ],
+                              },
+                              {
+                                label: {
+                                  type: "conditionExcellentLabel",
+                                  value: 1,
+                                },
+                                lines: [
+                                  {
+                                    type: "action",
+                                    value: "preparatory-touch",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "waste-not",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "basic-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "basic-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "basic-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "basic-synthesis",
+                                  },
+                                  {
+                                    type: "prompt",
+                                    value: "endOfCrafting",
+                                    soundEffect: soundEffects.endOfCrafting,
+                                  },
+                                ],
+                              },
+                              {
+                                label: {
+                                  type: "conditionNotExcellentLabel",
+                                  value: 1,
+                                },
+                                lines: [
+                                  {
+                                    type: "action",
+                                    value: "waste-not",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "preparatory-touch",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "basic-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "basic-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "basic-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "great-strides",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "ingenuity",
+                                  },
+                                  {
+                                    type: "prompt",
+                                    value: "checkCondition",
+                                    soundEffect: soundEffects.checkCondition,
+                                    marker: 2,
+                                  },
+                                ],
+                              },
+                              {
+                                label: {
+                                  type: "conditionExcellentLabel",
+                                  value: 2,
+                                },
+                                lines: [
+                                  {
+                                    type: "action",
+                                    value: "preparatory-touch",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "basic-synthesis",
+                                  },
+                                  {
+                                    type: "prompt",
+                                    value: "endOfCrafting",
+                                    soundEffect: soundEffects.endOfCrafting,
+                                  },
+                                ],
+                              },
+                              {
+                                label: {
+                                  type: "conditionNotExcellentLabel",
+                                  value: 2,
+                                },
+                                lines: [
+                                  {
+                                    type: "action",
+                                    value: "innovation",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "preparatory-touch",
+                                  },
+                                  {
+                                    type: "prompt",
+                                    value: "checkCondition",
+                                    soundEffect: soundEffects.checkCondition,
+                                    marker: 3,
+                                  },
+                                ],
+                              },
+                              {
+                                label: {
+                                  type: "conditionExcellentLabel",
+                                  value: 3,
+                                },
+                                lines: [
+                                  {
+                                    type: "action",
+                                    value: "byregots-blessing",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "basic-synthesis",
+                                  },
+                                  {
+                                    type: "prompt",
+                                    value: "endOfCrafting",
+                                    soundEffect: soundEffects.endOfCrafting,
+                                  },
+                                ],
+                              },
+                              {
+                                label: {
+                                  type: "conditionNotExcellentLabel",
+                                  value: 3,
+                                },
+                                lines: [
+                                  {
+                                    type: "action",
+                                    value: "great-strides",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "byregots-blessing",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "basic-synthesis",
+                                  },
+                                  {
+                                    type: "prompt",
+                                    value: "endOfCrafting",
+                                    soundEffect: soundEffects.endOfCrafting,
+                                  },
+                                ],
+                              },
+                            ]}
+                            Actions={Actions}
+                          />
+                          <PanelDivider />
+                          <Grid item>
+                            <Typography variant="h6">
+                              460제 머리/손/발 금단
+                            </Typography>
+                          </Grid>
+                          <Grid item>
+                            <Typography variant="body2">
+                              제작한 460제 머리/손/발 방어구 금단 작업을
+                              시작합니다. 금단이 전부 완료되기 전까지는 460제
+                              방어구를 착용하지 말아주세요!
+                            </Typography>
+                          </Grid>
+                          <Grid item />
+                          <Grid item>
+                            <Typography variant="h6">
+                              카이시르 제외 나머지 단골손님 매크로
+                            </Typography>
+                          </Grid>
+                          <Grid item>
+                            <Typography variant="body2">
+                              카이시르를 제외한 나머지 단골손님 납품에 사용할 수
+                              있는 매크로입니다.
+                            </Typography>
+                          </Grid>
+                          <CraftActionDisplay
+                            actionCard={[
+                              "trained-eye",
+                              "careful-synthesis",
+                              "careful-synthesis",
+                              "careful-synthesis",
+                            ]}
+                            actionMacro={[
+                              {
+                                label: {
+                                  type: "macroLabel",
+                                  value: 1,
+                                },
+                                lines: [
+                                  {
+                                    type: "action",
+                                    value: "trained-eye",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "careful-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "careful-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "careful-synthesis",
+                                  },
+                                  {
+                                    type: "prompt",
+                                    value: "endOfCrafting",
+                                    soundEffect: soundEffects.endOfCrafting,
+                                  },
+                                ],
+                              },
+                            ]}
+                            Actions={Actions}
+                          />
+                          <Grid item />
+                          <Grid item>
+                            <Typography variant="h6">
+                              카이시르 & 황화 & 백화 납품용 매크로
+                            </Typography>
+                          </Grid>
+                          <Grid item>
+                            <Typography variant="body2">
+                              카이시르 단골손님 납품 품목과 로웨나 상회 황화 및
+                              백화 획득용 납품 품목 제작에 사용할 수 있는
+                              매크로입니다. 로웨나 상회 납품의 경우 매일 납품
+                              목록이 바뀌므로 모든 제작직의 목록을 체크하고 가장
+                              재료를 조달하기 쉬운 물품을 골라 납품하도록
+                              합시다.
+                            </Typography>
+                          </Grid>
+                          <CraftActionDisplay
+                            actionCard={[
+                              "reflect",
+                              "manipulation",
+                              "ingenuity",
+                              "waste-not",
+                              "preparatory-touch",
+                              "preparatory-touch",
+                              "preparatory-touch",
+                              "preparatory-touch",
+                              "ingenuity",
+                              "innovation",
+                              "byregots-blessing",
+                              "careful-synthesis",
+                              "careful-synthesis",
+                              "careful-synthesis",
+                              "careful-synthesis",
+                            ]}
+                            actionMacro={[
+                              {
+                                label: {
+                                  type: "macroLabel",
+                                  value: 1,
+                                },
+                                lines: [
+                                  {
+                                    type: "action",
+                                    value: "reflect",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "manipulation",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "ingenuity",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "waste-not",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "preparatory-touch",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "preparatory-touch",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "preparatory-touch",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "preparatory-touch",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "ingenuity",
+                                  },
+                                  {
+                                    type: "prompt",
+                                    value: "checkCondition",
+                                    soundEffect: soundEffects.checkCondition,
+                                  },
+                                ],
+                              },
+                              {
+                                label: {
+                                  type: "conditionExcellentLabel",
+                                },
+                                lines: [
+                                  {
+                                    type: "action",
+                                    value: "byregots-blessing",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "careful-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "careful-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "careful-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "careful-synthesis",
+                                  },
+                                  {
+                                    type: "prompt",
+                                    value: "endOfCrafting",
+                                    soundEffect: soundEffects.endOfCrafting,
+                                  },
+                                ],
+                              },
+                              {
+                                label: {
+                                  type: "conditionNotExcellentLabel",
+                                },
+                                lines: [
+                                  {
+                                    type: "action",
+                                    value: "innovation",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "byregots-blessing",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "careful-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "careful-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "careful-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "careful-synthesis",
+                                  },
+                                  {
+                                    type: "prompt",
+                                    value: "endOfCrafting",
+                                    soundEffect: soundEffects.endOfCrafting,
+                                  },
+                                ],
+                              },
+                            ]}
+                            Actions={Actions}
+                          />
+                          <Grid item />
+                          <Grid item>
+                            <Typography variant="h6">
+                              이슈가르드 부흥 매크로
+                            </Typography>
+                          </Grid>
+                          <CraftActionDisplay
+                            actionCard={[
+                              "reflect",
+                              "manipulation",
+                              "ingenuity",
+                              "innovation",
+                              "delicate-synthesis",
+                              "delicate-synthesis",
+                              "delicate-synthesis",
+                              "delicate-synthesis",
+                              "prudent-touch",
+                              "prudent-touch",
+                              "great-strides",
+                              "ingenuity",
+                              "innovation",
+                              "preparatory-touch",
+                              "great-strides",
+                              "byregots-blessing",
+                              "careful-synthesis",
+                            ]}
+                            actionMacro={[
+                              {
+                                label: {
+                                  type: "macroLabel",
+                                  value: 1,
+                                },
+                                lines: [
+                                  {
+                                    type: "action",
+                                    value: "reflect",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "manipulation",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "ingenuity",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "innovation",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "delicate-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "delicate-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "delicate-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "delicate-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "prudent-touch",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "prudent-touch",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "great-strides",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "ingenuity",
+                                  },
+                                  {
+                                    type: "prompt",
+                                    value: "checkCondition",
+                                    soundEffect: soundEffects.checkCondition,
+                                    marker: 1,
+                                  },
+                                ],
+                              },
+                              {
+                                label: {
+                                  type: "conditionExcellentLabel",
+                                  value: 1,
+                                },
+                                lines: [
+                                  {
+                                    type: "action",
+                                    value: "preparatory-touch",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "careful-synthesis",
+                                  },
+                                  {
+                                    type: "prompt",
+                                    value: "endOfCrafting",
+                                    soundEffect: soundEffects.endOfCrafting,
+                                  },
+                                ],
+                              },
+                              {
+                                label: {
+                                  type: "conditionNotExcellentLabel",
+                                  value: 1,
+                                },
+                                lines: [
+                                  {
+                                    type: "action",
+                                    value: "innovation",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "preparatory-touch",
+                                  },
+                                  {
+                                    type: "prompt",
+                                    value: "checkCondition",
+                                    soundEffect: soundEffects.checkCondition,
+                                    marker: 2,
+                                  },
+                                ],
+                              },
+                              {
+                                label: {
+                                  type: "conditionExcellentLabel",
+                                  value: 2,
+                                },
+                                lines: [
+                                  {
+                                    type: "action",
+                                    value: "byregots-blessing",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "careful-synthesis",
+                                  },
+                                  {
+                                    type: "prompt",
+                                    value: "endOfCrafting",
+                                    soundEffect: soundEffects.endOfCrafting,
+                                  },
+                                ],
+                              },
+                              {
+                                label: {
+                                  type: "conditionNotExcellentLabel",
+                                  value: 2,
+                                },
+                                lines: [
+                                  {
+                                    type: "action",
+                                    value: "great-strides",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "byregots-blessing",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "careful-synthesis",
+                                  },
+                                  {
+                                    type: "prompt",
+                                    value: "endOfCrafting",
+                                    soundEffect: soundEffects.endOfCrafting,
+                                  },
+                                ],
+                              },
+                            ]}
+                            Actions={Actions}
+                          />
+                          <Grid />
+                          <Grid item>
+                            <Typography variant="body2">
+                              목표 금단은 다음과 같습니다.
+                            </Typography>
+                          </Grid>
+                          <CraftGearDisplay
+                            gearSet={gearSets[5]}
+                            Items={Items}
+                          />
+                          <CraftGearStats gearSet={gearSets[5]} Items={Items} />
+                        </React.Fragment>
+                      ),
+                    },
+                    {
+                      title:
+                        "460제 장비 제작&금단 (2203/2283/541)→(2450/2437/541)",
+                      children: (
+                        <React.Fragment>
+                          <Grid item>
+                            <Typography variant="body2">
+                              이 단계의 최종 목표는 나머지 460제 장비를 제작하고
+                              금단해 패치 5.1 엔드스펙에 도달하는 것입니다.
+                            </Typography>
+                          </Grid>
+                          <Grid item>
+                            <Typography variant="body2">
+                              각 피스의 금단이 전부 완료되기 전까지는 장비를
+                              교체하지 말아주세요.
+                            </Typography>
+                          </Grid>
+                          <Grid item>
+                            <Typography variant="body2">
+                              이 단계에 수록된 매크로들을 사용하기 위한 최소
+                              스펙은 다음과 같습니다.
+                            </Typography>
+                          </Grid>
+                          <CraftGearStats gearSet={gearSets[5]} Items={Items} />
+                          <Grid item>
+                            <Typography variant="body2">
+                              스펙이 부족할 경우 전 단계인 "460제 머리/손/발
+                              제작&금단" 단계를 참고해주세요.
+                            </Typography>
+                          </Grid>
+                          <PanelDivider />
+                          <Grid item>
+                            <Typography variant="h6">제작 음식 준비</Typography>
+                          </Grid>
+                          <Grid item>
+                            <Typography variant="body2">
+                              아래 매크로를 사용해 HQ 해물 피수프를 미리
+                              제작해둡니다.
+                            </Typography>
+                          </Grid>
+                          <Grid item />
+                          <CraftMaterialDisplay
+                            craftMaterials={[
+                              {
+                                label: "제작할 물품",
+                                materials: [
+                                  {
+                                    id: "blood-bouillabaisse",
+                                    amount: 1,
+                                    hq: true,
+                                  },
+                                ],
+                              },
+                            ]}
+                            Materials={Materials}
+                          />
+                          <CraftActionDisplay
+                            actionCard={[
+                              "reflect",
+                              "ingenuity",
+                              "innovation",
+                              "delicate-synthesis",
+                              "delicate-synthesis",
+                              "delicate-synthesis",
+                              "delicate-synthesis",
+                              "ingenuity",
+                              "innovation",
+                              "great-strides",
+                              "byregots-blessing",
+                              "careful-synthesis",
+                            ]}
+                            actionMacro={[
+                              {
+                                label: {
+                                  type: "macroLabel",
+                                  value: 1,
+                                },
+                                lines: [
+                                  {
+                                    type: "action",
+                                    value: "reflect",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "ingenuity",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "innovation",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "delicate-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "delicate-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "delicate-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "delicate-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "ingenuity",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "innovation",
+                                  },
+                                  {
+                                    type: "prompt",
+                                    value: "checkCondition",
+                                    soundEffect: soundEffects.checkCondition,
+                                  },
+                                ],
+                              },
+                              {
+                                label: {
+                                  type: "conditionExcellentLabel",
+                                },
+                                lines: [
+                                  {
+                                    type: "action",
+                                    value: "byregots-blessing",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "careful-synthesis",
+                                  },
+                                  {
+                                    type: "prompt",
+                                    value: "endOfCrafting",
+                                    soundEffect: soundEffects.endOfCrafting,
+                                  },
+                                ],
+                              },
+                              {
+                                label: {
+                                  type: "conditionNotExcellentLabel",
+                                },
+                                lines: [
+                                  {
+                                    type: "action",
+                                    value: "great-strides",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "byregots-blessing",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "careful-synthesis",
+                                  },
+                                  {
+                                    type: "prompt",
+                                    value: "endOfCrafting",
+                                    soundEffect: soundEffects.endOfCrafting,
+                                  },
+                                ],
+                              },
+                            ]}
+                            Actions={Actions}
+                          />
+                          <PanelDivider />
+                          <Grid item>
+                            <Typography variant="h6">
+                              460제 장비 제작
+                            </Typography>
+                          </Grid>
+                          <Grid item>
+                            <Typography variant="body2">
+                              아래 매크로를 사용해 460제 몸, 다리 방어구와 모든
+                              제작직 주/부 도구를 제작합니다. 제작 전에 해물
+                              피수프 HQ를 드셨는지 꼭 확인해주세요.
+                            </Typography>
+                          </Grid>
+                          <Grid item />
+                          <CraftMaterialDisplay
+                            craftMaterials={[
+                              {
+                                label: "제작 시 필요 음식",
+                                materials: [
+                                  {
+                                    id: "blood-bouillabaisse",
+                                    amount: 1,
+                                    hq: true,
+                                  },
+                                ],
+                              },
+                            ]}
+                            Materials={Materials}
+                          />
+                          <Grid item>
+                            <Typography variant="body2">
+                              * 최고품질에 따른 분기점이 많은 매크로입니다. 품질
+                              확인 시 각별히 유의해주세요!
+                            </Typography>
+                          </Grid>
+                          <CraftActionDisplay
+                            actionCard={[
+                              "reflect",
+                              "ingenuity",
+                              "innovation",
+                              "delicate-synthesis",
+                              "delicate-synthesis",
+                              "delicate-synthesis",
+                              "delicate-synthesis",
+                              "manipulation",
+                              "great-strides",
+                              "ingenuity",
+                              "waste-not",
+                              "preparatory-touch",
+                              "basic-synthesis",
+                              "basic-synthesis",
+                              "basic-synthesis",
+                              "great-strides",
+                              "ingenuity",
+                              "innovation",
+                              "preparatory-touch",
+                              "great-strides",
+                              "byregots-blessing",
+                              "basic-synthesis",
+                            ]}
+                            actionMacro={[
+                              {
+                                label: {
+                                  type: "macroLabel",
+                                  value: 1,
+                                },
+                                lines: [
+                                  {
+                                    type: "action",
+                                    value: "reflect",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "ingenuity",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "innovation",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "delicate-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "delicate-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "delicate-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "delicate-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "manipulation",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "great-strides",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "ingenuity",
+                                  },
+                                  {
+                                    type: "prompt",
+                                    value: "checkCondition",
+                                    soundEffect: soundEffects.checkCondition,
+                                    marker: 1,
+                                  },
+                                ],
+                              },
+                              {
+                                label: {
+                                  type: "conditionExcellentLabel",
+                                  value: 1,
+                                },
+                                lines: [
+                                  {
+                                    type: "action",
+                                    value: "preparatory-touch",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "waste-not",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "basic-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "basic-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "basic-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "basic-synthesis",
+                                  },
+                                  {
+                                    type: "prompt",
+                                    value: "endOfCrafting",
+                                    soundEffect: soundEffects.endOfCrafting,
+                                  },
+                                ],
+                              },
+                              {
+                                label: {
+                                  type: "conditionNotExcellentLabel",
+                                  value: 1,
+                                },
+                                lines: [
+                                  {
+                                    type: "action",
+                                    value: "waste-not",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "preparatory-touch",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "basic-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "basic-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "basic-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "great-strides",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "ingenuity",
+                                  },
+                                  {
+                                    type: "prompt",
+                                    value: "checkCondition",
+                                    soundEffect: soundEffects.checkCondition,
+                                    marker: 2,
+                                  },
+                                ],
+                              },
+                              {
+                                label: {
+                                  type: "conditionExcellentLabel",
+                                  value: 2,
+                                },
+                                lines: [
+                                  {
+                                    type: "action",
+                                    value: "preparatory-touch",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "basic-synthesis",
+                                  },
+                                  {
+                                    type: "prompt",
+                                    value: "endOfCrafting",
+                                    soundEffect: soundEffects.endOfCrafting,
+                                  },
+                                ],
+                              },
+                              {
+                                label: {
+                                  type: "conditionNotExcellentLabel",
+                                  value: 2,
+                                },
+                                lines: [
+                                  {
+                                    type: "action",
+                                    value: "innovation",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "preparatory-touch",
+                                  },
+                                  {
+                                    type: "prompt",
+                                    value: "checkCondition",
+                                    soundEffect: soundEffects.checkCondition,
+                                    marker: 3,
+                                  },
+                                ],
+                              },
+                              {
+                                label: {
+                                  type: "conditionExcellentLabel",
+                                  value: 3,
+                                },
+                                lines: [
+                                  {
+                                    type: "action",
+                                    value: "byregots-blessing",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "basic-synthesis",
+                                  },
+                                  {
+                                    type: "prompt",
+                                    value: "endOfCrafting",
+                                    soundEffect: soundEffects.endOfCrafting,
+                                  },
+                                ],
+                              },
+                              {
+                                label: {
+                                  type: "conditionNotExcellentLabel",
+                                  value: 3,
+                                },
+                                lines: [
+                                  {
+                                    type: "action",
+                                    value: "great-strides",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "byregots-blessing",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "basic-synthesis",
+                                  },
+                                  {
+                                    type: "prompt",
+                                    value: "endOfCrafting",
+                                    soundEffect: soundEffects.endOfCrafting,
+                                  },
+                                ],
+                              },
+                            ]}
+                            Actions={Actions}
+                          />
+                          <PanelDivider />
+                          <Grid item>
+                            <Typography variant="h6">
+                              460제 장비 금단
+                            </Typography>
+                          </Grid>
+                          <Grid item>
+                            <Typography variant="body2">
+                              제작한 460제 방어구와 도구 금단 작업을 시작합니다.
+                              금단이 전부 완료되기 전까지는 장비를 교체하지
+                              말아주세요!
+                            </Typography>
+                          </Grid>
+                          <Grid item />
+                          <Grid item>
+                            <Typography variant="h6">
+                              카이시르 제외 나머지 단골손님 매크로
+                            </Typography>
+                          </Grid>
+                          <Grid item>
+                            <Typography variant="body2">
+                              카이시르를 제외한 나머지 단골손님 납품에 사용할 수
+                              있는 매크로입니다.
+                            </Typography>
+                          </Grid>
+                          <CraftActionDisplay
+                            actionCard={[
+                              "trained-eye",
+                              "careful-synthesis",
+                              "careful-synthesis",
+                              "careful-synthesis",
+                            ]}
+                            actionMacro={[
+                              {
+                                label: {
+                                  type: "macroLabel",
+                                  value: 1,
+                                },
+                                lines: [
+                                  {
+                                    type: "action",
+                                    value: "trained-eye",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "careful-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "careful-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "careful-synthesis",
+                                  },
+                                  {
+                                    type: "prompt",
+                                    value: "endOfCrafting",
+                                    soundEffect: soundEffects.endOfCrafting,
+                                  },
+                                ],
+                              },
+                            ]}
+                            Actions={Actions}
+                          />
+                          <Grid item />
+                          <Grid item>
+                            <Typography variant="h6">
+                              카이시르 & 황화 & 백화 납품용 매크로
+                            </Typography>
+                          </Grid>
+                          <Grid item>
+                            <Typography variant="body2">
+                              카이시르 단골손님 납품 품목과 로웨나 상회 황화 및
+                              백화 획득용 납품 품목 제작에 사용할 수 있는
+                              매크로입니다. 로웨나 상회 납품의 경우 매일 납품
+                              목록이 바뀌므로 모든 제작직의 목록을 체크하고 가장
+                              재료를 조달하기 쉬운 물품을 골라 납품하도록
+                              합시다.
+                            </Typography>
+                          </Grid>
+                          <CraftActionDisplay
+                            actionCard={[
+                              "reflect",
+                              "manipulation",
+                              "ingenuity",
+                              "waste-not",
+                              "preparatory-touch",
+                              "preparatory-touch",
+                              "preparatory-touch",
+                              "preparatory-touch",
+                              "ingenuity",
+                              "innovation",
+                              "byregots-blessing",
+                              "careful-synthesis",
+                              "careful-synthesis",
+                              "careful-synthesis",
+                              "careful-synthesis",
+                            ]}
+                            actionMacro={[
+                              {
+                                label: {
+                                  type: "macroLabel",
+                                  value: 1,
+                                },
+                                lines: [
+                                  {
+                                    type: "action",
+                                    value: "reflect",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "manipulation",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "ingenuity",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "waste-not",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "preparatory-touch",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "preparatory-touch",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "preparatory-touch",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "preparatory-touch",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "ingenuity",
+                                  },
+                                  {
+                                    type: "prompt",
+                                    value: "checkCondition",
+                                    soundEffect: soundEffects.checkCondition,
+                                  },
+                                ],
+                              },
+                              {
+                                label: {
+                                  type: "conditionExcellentLabel",
+                                },
+                                lines: [
+                                  {
+                                    type: "action",
+                                    value: "byregots-blessing",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "careful-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "careful-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "careful-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "careful-synthesis",
+                                  },
+                                  {
+                                    type: "prompt",
+                                    value: "endOfCrafting",
+                                    soundEffect: soundEffects.endOfCrafting,
+                                  },
+                                ],
+                              },
+                              {
+                                label: {
+                                  type: "conditionNotExcellentLabel",
+                                },
+                                lines: [
+                                  {
+                                    type: "action",
+                                    value: "innovation",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "byregots-blessing",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "careful-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "careful-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "careful-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "careful-synthesis",
+                                  },
+                                  {
+                                    type: "prompt",
+                                    value: "endOfCrafting",
+                                    soundEffect: soundEffects.endOfCrafting,
+                                  },
+                                ],
+                              },
+                            ]}
+                            Actions={Actions}
+                          />
+                          <Grid item />
+                          <Grid item>
+                            <Typography variant="h6">
+                              이슈가르드 부흥 매크로
+                            </Typography>
+                          </Grid>
+                          <CraftActionDisplay
+                            actionCard={[
+                              "reflect",
+                              "manipulation",
+                              "ingenuity",
+                              "innovation",
+                              "delicate-synthesis",
+                              "delicate-synthesis",
+                              "delicate-synthesis",
+                              "delicate-synthesis",
+                              "prudent-touch",
+                              "prudent-touch",
+                              "great-strides",
+                              "ingenuity",
+                              "innovation",
+                              "preparatory-touch",
+                              "great-strides",
+                              "byregots-blessing",
+                              "careful-synthesis",
+                            ]}
+                            actionMacro={[
+                              {
+                                label: {
+                                  type: "macroLabel",
+                                  value: 1,
+                                },
+                                lines: [
+                                  {
+                                    type: "action",
+                                    value: "reflect",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "manipulation",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "ingenuity",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "innovation",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "delicate-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "delicate-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "delicate-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "delicate-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "prudent-touch",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "prudent-touch",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "great-strides",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "ingenuity",
+                                  },
+                                  {
+                                    type: "prompt",
+                                    value: "checkCondition",
+                                    soundEffect: soundEffects.checkCondition,
+                                    marker: 1,
+                                  },
+                                ],
+                              },
+                              {
+                                label: {
+                                  type: "conditionExcellentLabel",
+                                  value: 1,
+                                },
+                                lines: [
+                                  {
+                                    type: "action",
+                                    value: "preparatory-touch",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "careful-synthesis",
+                                  },
+                                  {
+                                    type: "prompt",
+                                    value: "endOfCrafting",
+                                    soundEffect: soundEffects.endOfCrafting,
+                                  },
+                                ],
+                              },
+                              {
+                                label: {
+                                  type: "conditionNotExcellentLabel",
+                                  value: 1,
+                                },
+                                lines: [
+                                  {
+                                    type: "action",
+                                    value: "innovation",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "preparatory-touch",
+                                  },
+                                  {
+                                    type: "prompt",
+                                    value: "checkCondition",
+                                    soundEffect: soundEffects.checkCondition,
+                                    marker: 2,
+                                  },
+                                ],
+                              },
+                              {
+                                label: {
+                                  type: "conditionExcellentLabel",
+                                  value: 2,
+                                },
+                                lines: [
+                                  {
+                                    type: "action",
+                                    value: "byregots-blessing",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "careful-synthesis",
+                                  },
+                                  {
+                                    type: "prompt",
+                                    value: "endOfCrafting",
+                                    soundEffect: soundEffects.endOfCrafting,
+                                  },
+                                ],
+                              },
+                              {
+                                label: {
+                                  type: "conditionNotExcellentLabel",
+                                  value: 2,
+                                },
+                                lines: [
+                                  {
+                                    type: "action",
+                                    value: "great-strides",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "byregots-blessing",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "careful-synthesis",
+                                  },
+                                  {
+                                    type: "prompt",
+                                    value: "endOfCrafting",
+                                    soundEffect: soundEffects.endOfCrafting,
+                                  },
+                                ],
+                              },
+                            ]}
+                            Actions={Actions}
+                          />
+                          <Grid />
+                          <Grid item>
+                            <Typography variant="body2">
+                              목표 금단은 다음과 같습니다.
+                            </Typography>
+                          </Grid>
+                          <CraftGearDisplay
+                            gearSet={gearSets[6]}
+                            Items={Items}
+                          />
+                          <CraftGearStats gearSet={gearSets[6]} Items={Items} />
+                          <Grid item>
+                            <Typography variant="body2">
+                              수고하셨습니다! 패치 5.2까지 사용 가능한 추천
+                              엔드스펙에 도달하셨습니다. 해당 스펙으로 사용
+                              가능한 패치 5.1용 제작 매크로는 아래 "패치 5.1
+                              추천 금단 및 매크로" 항목을 참조해주세요!
+                            </Typography>
+                          </Grid>
+                        </React.Fragment>
+                      ),
+                    },
+                  ]}
+                />
+                <Grid item>
+                  <Divider />
+                </Grid>
+                <Grid item>
+                  <Typography variant="h6">
+                    패치 5.1 추천 금단 및 매크로
+                  </Typography>
+                </Grid>
+                <Grid item>
+                  <Typography variant="body2">
+                    패치 5.1 엔드 스펙으로 추천드리는 금단 스펙은 다음과
+                    같습니다. 460제 신규 장비 제작이나 금단에 필요한 마테리아
+                    획득용 납품 매크로는 위 "단계별 가이드"를 참조해주세요.
+                  </Typography>
+                </Grid>
+                <CraftGearDisplay gearSet={gearSets[6]} Items={Items} />
+                <CraftGearStats gearSet={gearSets[6]} Items={Items} />
+                <Grid item>
+                  <Typography variant="body2">
+                    위 스펙 달성 후 사용 가능한 매크로들은 다음과 같습니다.
+                  </Typography>
+                </Grid>
+                <ExpansionPanels
+                  panels={[
+                    {
+                      title: "단골손님",
+                      children: (
+                        <React.Fragment>
+                          <Grid item>
+                            <Typography variant="h6">
+                              카이시르 제외 나머지 단골손님 매크로
+                            </Typography>
+                          </Grid>
+                          <CraftActionDisplay
+                            actionCard={[
+                              "trained-eye",
+                              "careful-synthesis",
+                              "careful-synthesis",
+                              "careful-synthesis",
+                            ]}
+                            actionMacro={[
+                              {
+                                label: {
+                                  type: "macroLabel",
+                                  value: 1,
+                                },
+                                lines: [
+                                  {
+                                    type: "action",
+                                    value: "trained-eye",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "careful-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "careful-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "careful-synthesis",
+                                  },
+                                  {
+                                    type: "prompt",
+                                    value: "endOfCrafting",
+                                    soundEffect: soundEffects.endOfCrafting,
+                                  },
+                                ],
+                              },
+                            ]}
+                            Actions={Actions}
+                          />
+                          <Grid item />
+                          <Grid item>
+                            <Typography variant="h6">
+                              카이시르 매크로
+                            </Typography>
+                          </Grid>
+                          <CraftActionDisplay
+                            actionCard={[
+                              "reflect",
+                              "ingenuity",
+                              "innovation",
+                              "delicate-synthesis",
+                              "delicate-synthesis",
+                              "delicate-synthesis",
+                              "prudent-touch",
+                              "byregots-blessing",
+                              "careful-synthesis",
+                            ]}
+                            actionMacro={[
+                              {
+                                label: {
+                                  type: "macroLabel",
+                                  value: 1,
+                                },
+                                lines: [
+                                  {
+                                    type: "action",
+                                    value: "reflect",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "ingenuity",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "innovation",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "delicate-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "delicate-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "delicate-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "prudent-touch",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "byregots-blessing",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "careful-synthesis",
+                                  },
+                                  {
+                                    type: "prompt",
+                                    value: "endOfCrafting",
+                                    soundEffect: soundEffects.endOfCrafting,
+                                  },
+                                ],
+                              },
+                            ]}
+                            Actions={Actions}
+                          />
+                        </React.Fragment>
+                      ),
+                    },
+                    {
+                      title: "로웨나 납품",
+                      children: (
+                        <React.Fragment>
+                          <Grid item>
+                            <Typography variant="h6">
+                              황화 납품용 매크로
+                            </Typography>
+                          </Grid>
+                          <CraftActionDisplay
+                            actionCard={[
+                              "reflect",
+                              "ingenuity",
+                              "innovation",
+                              "delicate-synthesis",
+                              "delicate-synthesis",
+                              "delicate-synthesis",
+                              "preparatory-touch",
+                              "byregots-blessing",
+                              "careful-synthesis",
+                            ]}
+                            actionMacro={[
+                              {
+                                label: {
+                                  type: "macroLabel",
+                                  value: 1,
+                                },
+                                lines: [
+                                  {
+                                    type: "action",
+                                    value: "reflect",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "ingenuity",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "innovation",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "delicate-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "delicate-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "delicate-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "preparatory-touch",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "byregots-blessing",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "careful-synthesis",
+                                  },
+                                  {
+                                    type: "prompt",
+                                    value: "endOfCrafting",
+                                    soundEffect: soundEffects.endOfCrafting,
+                                  },
+                                ],
+                              },
+                            ]}
+                            Actions={Actions}
+                          />
+                          <Grid item />
+                          <Grid item>
+                            <Typography variant="h6">
+                              백화 납품용 매크로
+                            </Typography>
+                          </Grid>
+                          <CraftActionDisplay
+                            actionCard={[
+                              "reflect",
+                              "ingenuity",
+                              "innovation",
+                              "delicate-synthesis",
+                              "delicate-synthesis",
+                              "delicate-synthesis",
+                              "delicate-synthesis",
+                              "ingenuity",
+                              "innovation",
+                              "prudent-touch",
+                              "prudent-touch",
+                              "byregots-blessing",
+                              "careful-synthesis",
+                            ]}
+                            actionMacro={[
+                              {
+                                label: {
+                                  type: "macroLabel",
+                                  value: 1,
+                                },
+                                lines: [
+                                  {
+                                    type: "action",
+                                    value: "reflect",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "ingenuity",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "innovation",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "delicate-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "delicate-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "delicate-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "delicate-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "ingenuity",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "innovation",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "prudent-touch",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "prudent-touch",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "byregots-blessing",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "careful-synthesis",
+                                  },
+                                  {
+                                    type: "prompt",
+                                    value: "endOfCrafting",
+                                    soundEffect: soundEffects.endOfCrafting,
+                                  },
+                                ],
+                              },
+                            ]}
+                            Actions={Actions}
+                          />
+                        </React.Fragment>
+                      ),
+                    },
+                    {
+                      title: "이슈가르드 부흥",
+                      children: (
+                        <React.Fragment>
+                          <CraftActionDisplay
+                            actionCard={[
+                              "reflect",
+                              "manipulation",
+                              "ingenuity",
+                              "innovation",
+                              "delicate-synthesis",
+                              "delicate-synthesis",
+                              "delicate-synthesis",
+                              "preparatory-touch",
+                              "ingenuity",
+                              "innovation",
+                              "prudent-touch",
+                              "preparatory-touch",
+                              "great-strides",
+                              "byregots-blessing",
+                              "ingenuity",
+                              "careful-synthesis",
+                            ]}
+                            actionMacro={[
+                              {
+                                label: {
+                                  type: "macroLabel",
+                                  value: 1,
+                                },
+                                lines: [
+                                  {
+                                    type: "action",
+                                    value: "reflect",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "manipulation",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "ingenuity",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "innovation",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "delicate-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "delicate-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "delicate-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "preparatory-touch",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "ingenuity",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "innovation",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "prudent-touch",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "preparatory-touch",
+                                  },
+                                  {
+                                    type: "prompt",
+                                    value: "checkCondition",
+                                    soundEffect: soundEffects.checkCondition,
+                                  },
+                                ],
+                              },
+                              {
+                                label: {
+                                  type: "conditionExcellentLabel",
+                                },
+                                lines: [
+                                  {
+                                    type: "action",
+                                    value: "byregots-blessing",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "ingenuity",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "careful-synthesis",
+                                  },
+                                  {
+                                    type: "prompt",
+                                    value: "endOfCrafting",
+                                    soundEffect: soundEffects.endOfCrafting,
+                                  },
+                                ],
+                              },
+                              {
+                                label: {
+                                  type: "conditionNotExcellentLabel",
+                                },
+                                lines: [
+                                  {
+                                    type: "action",
+                                    value: "great-strides",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "byregots-blessing",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "ingenuity",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "careful-synthesis",
+                                  },
+                                  {
+                                    type: "prompt",
+                                    value: "endOfCrafting",
+                                    soundEffect: soundEffects.endOfCrafting,
+                                  },
+                                ],
+                              },
+                            ]}
+                            Actions={Actions}
+                          />
+                        </React.Fragment>
+                      ),
+                    },
+                    {
+                      title: "80★★",
+                      children: (
+                        <React.Fragment>
+                          <Grid item>
+                            <Typography variant="h6">제작 음식 준비</Typography>
+                          </Grid>
+                          <Grid item>
+                            <Typography variant="body2">
+                              아래 매크로를 사용해 HQ 해물 피수프를 미리
+                              제작해둡니다.
+                            </Typography>
+                          </Grid>
+                          <Grid item />
+                          <CraftMaterialDisplay
+                            craftMaterials={[
+                              {
+                                label: "제작할 물품",
+                                materials: [
+                                  {
+                                    id: "blood-bouillabaisse",
+                                    amount: 1,
+                                    hq: true,
+                                  },
+                                ],
+                              },
+                            ]}
+                            Materials={Materials}
+                          />
+                          <CraftActionDisplay
+                            actionCard={[
+                              "reflect",
+                              "ingenuity",
+                              "innovation",
+                              "delicate-synthesis",
+                              "delicate-synthesis",
+                              "delicate-synthesis",
+                              "prudent-touch",
+                              "preparatory-touch",
+                              "byregots-blessing",
+                              "careful-synthesis",
+                            ]}
+                            actionMacro={[
+                              {
+                                label: {
+                                  type: "macroLabel",
+                                  value: 1,
+                                },
+                                lines: [
+                                  {
+                                    type: "action",
+                                    value: "reflect",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "ingenuity",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "innovation",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "delicate-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "delicate-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "delicate-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "prudent-touch",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "preparatory-touch",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "byregots-blessing",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "careful-synthesis",
+                                  },
+                                  {
+                                    type: "prompt",
+                                    value: "endOfCrafting",
+                                    soundEffect: soundEffects.endOfCrafting,
+                                  },
+                                ],
+                              },
+                            ]}
+                            Actions={Actions}
+                          />
+                          <PanelDivider />
+                          <Grid item>
+                            <Typography variant="h6">
+                              80★★ 레이드 음식/환혹약 및 전투직 장비 제작 매크로
+                            </Typography>
+                          </Grid>
+                          <Grid item>
+                            <Typography variant="body2">
+                              제작 전에 해물 피수프 HQ를 드셨는지 꼭
+                              확인해주세요.
+                            </Typography>
+                          </Grid>
+                          <Grid item />
+                          <CraftMaterialDisplay
+                            craftMaterials={[
+                              {
+                                label: "제작 시 필요 음식",
+                                materials: [
+                                  {
+                                    id: "blood-bouillabaisse",
+                                    amount: 1,
+                                    hq: true,
+                                  },
+                                ],
+                              },
+                            ]}
+                            Materials={Materials}
+                          />
+                          <CraftActionDisplay
+                            actionCard={[
+                              "reflect",
+                              "manipulation",
+                              "ingenuity",
+                              "innovation",
+                              "delicate-synthesis",
+                              "delicate-synthesis",
+                              "delicate-synthesis",
+                              "delicate-synthesis",
+                              "ingenuity",
+                              "innovation",
+                              "delicate-synthesis",
+                              "prudent-touch",
+                              "basic-touch",
+                              "preparatory-touch",
+                              "ingenuity",
+                              "innovation",
+                              "great-strides",
+                              "byregots-blessing",
+                              "reuse",
+                              "careful-synthesis",
+                            ]}
+                            actionMacro={[
+                              {
+                                label: {
+                                  type: "macroLabel",
+                                  value: 1,
+                                },
+                                lines: [
+                                  {
+                                    type: "action",
+                                    value: "reflect",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "manipulation",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "ingenuity",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "innovation",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "delicate-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "delicate-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "delicate-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "delicate-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "ingenuity",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "innovation",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "delicate-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "prudent-touch",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "basic-touch",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "preparatory-touch",
+                                  },
+                                  {
+                                    type: "prompt",
+                                    value: "endOfMacro",
+                                    soundEffect: soundEffects.endOfMacro,
+                                    marker: 1,
+                                  },
+                                ],
+                              },
+                              {
+                                label: {
+                                  type: "macroLabel",
+                                  value: 2,
+                                },
+                                lines: [
+                                  {
+                                    type: "action",
+                                    value: "ingenuity",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "innovation",
+                                  },
+                                  {
+                                    type: "prompt",
+                                    value: "checkCondition",
+                                    soundEffect: soundEffects.checkCondition,
+                                  },
+                                ],
+                              },
+                              {
+                                label: {
+                                  type: "conditionExcellentLabel",
+                                },
+                                lines: [
+                                  {
+                                    type: "action",
+                                    value: "byregots-blessing",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "reuse",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "careful-synthesis",
+                                  },
+                                  {
+                                    type: "prompt",
+                                    value: "endOfCrafting",
+                                    soundEffect: soundEffects.endOfCrafting,
+                                  },
+                                ],
+                              },
+                              {
+                                label: {
+                                  type: "conditionNotExcellentLabel",
+                                },
+                                lines: [
+                                  {
+                                    type: "action",
+                                    value: "great-strides",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "byregots-blessing",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "reuse",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "careful-synthesis",
+                                  },
+                                  {
+                                    type: "prompt",
+                                    value: "endOfCrafting",
+                                    soundEffect: soundEffects.endOfCrafting,
+                                  },
+                                ],
+                              },
+                            ]}
+                            Actions={Actions}
+                          />
+                          <PanelDivider />
+                          <Grid item>
+                            <Typography variant="h6">
+                              80★★ 채집/제작직 장비 제작 매크로
+                            </Typography>
+                          </Grid>
+                          <Grid item>
+                            <Typography variant="body2">
+                              제작 전에 해물 피수프 HQ를 드셨는지 꼭
+                              확인해주세요.
+                            </Typography>
+                          </Grid>
+                          <Grid item />
+                          <CraftMaterialDisplay
+                            craftMaterials={[
+                              {
+                                label: "제작 시 필요 음식",
+                                materials: [
+                                  {
+                                    id: "blood-bouillabaisse",
+                                    amount: 1,
+                                    hq: true,
+                                  },
+                                ],
+                              },
+                            ]}
+                            Materials={Materials}
+                          />
+                          <Grid item>
+                            <Typography variant="body2">
+                              * 최고품질에 따른 분기점이 많은 매크로입니다. 품질
+                              확인 시 각별히 유의해주세요!
+                            </Typography>
+                          </Grid>
+                          <CraftActionDisplay
+                            actionCard={[
+                              "reflect",
+                              "ingenuity",
+                              "innovation",
+                              "delicate-synthesis",
+                              "delicate-synthesis",
+                              "delicate-synthesis",
+                              "delicate-synthesis",
+                              "manipulation",
+                              "great-strides",
+                              "ingenuity",
+                              "waste-not",
+                              "preparatory-touch",
+                              "basic-synthesis",
+                              "basic-synthesis",
+                              "great-strides",
+                              "ingenuity",
+                              "innovation",
+                              "preparatory-touch",
+                              "great-strides",
+                              "byregots-blessing",
+                              "basic-synthesis",
+                            ]}
+                            actionMacro={[
+                              {
+                                label: {
+                                  type: "macroLabel",
+                                  value: 1,
+                                },
+                                lines: [
+                                  {
+                                    type: "action",
+                                    value: "reflect",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "ingenuity",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "innovation",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "delicate-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "delicate-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "delicate-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "delicate-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "manipulation",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "great-strides",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "ingenuity",
+                                  },
+                                  {
+                                    type: "prompt",
+                                    value: "checkCondition",
+                                    soundEffect: soundEffects.checkCondition,
+                                    marker: 1,
+                                  },
+                                ],
+                              },
+                              {
+                                label: {
+                                  type: "conditionExcellentLabel",
+                                  value: 1,
+                                },
+                                lines: [
+                                  {
+                                    type: "action",
+                                    value: "preparatory-touch",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "waste-not",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "basic-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "basic-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "basic-synthesis",
+                                  },
+                                  {
+                                    type: "prompt",
+                                    value: "endOfCrafting",
+                                    soundEffect: soundEffects.endOfCrafting,
+                                  },
+                                ],
+                              },
+                              {
+                                label: {
+                                  type: "conditionNotExcellentLabel",
+                                  value: 1,
+                                },
+                                lines: [
+                                  {
+                                    type: "action",
+                                    value: "waste-not",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "preparatory-touch",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "basic-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "basic-synthesis",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "great-strides",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "ingenuity",
+                                  },
+                                  {
+                                    type: "prompt",
+                                    value: "checkCondition",
+                                    soundEffect: soundEffects.checkCondition,
+                                    marker: 2,
+                                  },
+                                ],
+                              },
+                              {
+                                label: {
+                                  type: "conditionExcellentLabel",
+                                  value: 2,
+                                },
+                                lines: [
+                                  {
+                                    type: "action",
+                                    value: "preparatory-touch",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "basic-synthesis",
+                                  },
+                                  {
+                                    type: "prompt",
+                                    value: "endOfCrafting",
+                                    soundEffect: soundEffects.endOfCrafting,
+                                  },
+                                ],
+                              },
+                              {
+                                label: {
+                                  type: "conditionNotExcellentLabel",
+                                  value: 2,
+                                },
+                                lines: [
+                                  {
+                                    type: "action",
+                                    value: "innovation",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "preparatory-touch",
+                                  },
+                                  {
+                                    type: "prompt",
+                                    value: "checkCondition",
+                                    soundEffect: soundEffects.checkCondition,
+                                    marker: 3,
+                                  },
+                                ],
+                              },
+                              {
+                                label: {
+                                  type: "conditionExcellentLabel",
+                                  value: 3,
+                                },
+                                lines: [
+                                  {
+                                    type: "action",
+                                    value: "byregots-blessing",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "basic-synthesis",
+                                  },
+                                  {
+                                    type: "prompt",
+                                    value: "endOfCrafting",
+                                    soundEffect: soundEffects.endOfCrafting,
+                                  },
+                                ],
+                              },
+                              {
+                                label: {
+                                  type: "conditionNotExcellentLabel",
+                                  value: 3,
+                                },
+                                lines: [
+                                  {
+                                    type: "action",
+                                    value: "great-strides",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "byregots-blessing",
+                                  },
+                                  {
+                                    type: "action",
+                                    value: "basic-synthesis",
+                                  },
+                                  {
+                                    type: "prompt",
+                                    value: "endOfCrafting",
+                                    soundEffect: soundEffects.endOfCrafting,
+                                  },
+                                ],
+                              },
+                            ]}
+                            Actions={Actions}
+                          />
+                        </React.Fragment>
+                      ),
+                    },
                   ]}
                 />
               </Grid>
             </Container>
           </Grid>
+          <Grid item />
+          <Grid item>{this.generateFooter()}</Grid>
         </Grid>
       </React.Fragment>
     );

@@ -21,6 +21,8 @@
   "cra4": {
     "name": "장인의 마테리가",
     "shortName": "장인가",
+    "description": "작업 숙련도 +6",
+    "iconSrc": "/icons/items/craftsmans-competence-materia-iv.png",
     "cra": 6
   },
   "cra5": {
@@ -149,6 +151,8 @@
   "cp8": {
     "name": "명인의 엑스마테리쟈",
     "shortName": "명인엑스쟈",
+    "description": "CP +9",
+    "iconSrc": "/icons/items/craftsmans-cunning-materia-viii.png",
     "cp": 9
   },
 
@@ -341,6 +345,101 @@
       "iconSrc": "/icons/items/hq/dwarven-mythril-ring.png",
       "con": 71,
       "cp": 32
+    }
+  },
+
+  "================================================== 460 Gears ==================================================": {},
+  "================================================== 460 Primary ==================================================": {},
+  "facetSaw": {
+    "name": "중용의 톱",
+    "iconSrc": "/icons/items/facet-saw.png",
+    "itemLevel": 460,
+    "cra": 648,
+    "con": 353,
+    "hq": {
+      "iconSrc": "/icons/items/hq/facet-saw.png",
+      "cra": 735,
+      "con": 400
+    }
+  },
+  "================================================== 460 Secondary ==================================================": {},
+  "facetClawHammer": {
+    "name": "중용의 장도리",
+    "iconSrc": "/icons/items/facet-claw-hammer.png",
+    "itemLevel": 460,
+    "cra": 648,
+    "con": 353,
+    "hq": {
+      "iconSrc": "/icons/items/hq/facet-claw-hammer.png",
+      "cra": 735,
+      "con": 400
+    }
+  },
+  "================================================== 460 Head ==================================================": {},
+  "facetHatOfCrafting": {
+    "name": "중용의 제작자 모자",
+    "iconSrc": "/icons/items/facet-hat-of-crafting.png",
+    "itemLevel": 460,
+    "con": 177,
+    "cp": 7,
+    "hq": {
+      "iconSrc": "/icons/items/hq/facet-hat-of-crafting.png",
+      "con": 200,
+      "cp": 8
+    }
+  },
+  "================================================== 460 Body ==================================================": {},
+  "facetCoatOfCrafting": {
+    "name": "중용의 제작자 외투",
+    "iconSrc": "/icons/items/facet-coat-of-crafting.png",
+    "itemLevel": 460,
+    "cra": 556,
+    "con": 177,
+    "cp": 5,
+    "hq": {
+      "iconSrc": "/icons/items/hq/facet-coat-of-crafting.png",
+      "cra": 630,
+      "con": 200,
+      "cp": 5
+    }
+  },
+  "================================================== 460 Hands ==================================================": {},
+  "facetGlovesOfCrafting": {
+    "name": "중용의 제작자 장갑",
+    "iconSrc": "/icons/items/facet-gloves-of-crafting.png",
+    "itemLevel": 460,
+    "con": 177,
+    "cp": 7,
+    "hq": {
+      "iconSrc": "/icons/items/hq/facet-gloves-of-crafting.png",
+      "con": 200,
+      "cp": 8
+    }
+  },
+  "================================================== 460 Legs ==================================================": {},
+  "facetTrousersOfCrafting": {
+    "name": "중용의 제작자 바지",
+    "iconSrc": "/icons/items/facet-trousers-of-crafting.png",
+    "itemLevel": 460,
+    "cra": 37,
+    "con": 177,
+    "hq": {
+      "iconSrc": "/icons/items/hq/facet-trousers-of-crafting.png",
+      "cra": 42,
+      "con": 200
+    }
+  },
+  "================================================== 460 Feet ==================================================": {},
+  "facetBootsOfCrafting": {
+    "name": "중용의 제작자 신발",
+    "iconSrc": "/icons/items/facet-boots-of-crafting.png",
+    "itemLevel": 460,
+    "cra": 37,
+    "con": 177,
+    "hq": {
+      "iconSrc": "/icons/items/hq/facet-boots-of-crafting.png",
+      "cra": 42,
+      "con": 200
     }
   }
 }

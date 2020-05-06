@@ -20,6 +20,11 @@
     "iconSrc": "/icons/items/lightning-crystal.png"
   },
 
+  "blood-bouillabaisse": {
+    "name": "해물 피수프",
+    "iconSrc": "/icons/items/blood-bouillabaisse.png",
+    "hqIconSrc": "/icons/items/hq/blood-bouillabaisse.png"
+  },
   "dimythrite-sand": {
     "name": "디미스라이트 모래",
     "iconSrc": "/icons/items/dimythrite-sand.png"
@@ -66,6 +71,31 @@
     "name": "탄산수",
     "iconSrc": "/icons/items/effervescent-water.png"
   },
+  "facet-boots-of-crafting": {
+    "name": "중용의 제작자 신발",
+    "iconSrc": "/icons/items/facet-boots-of-crafting.png",
+    "hqIconSrc": "/icons/items/hq/facet-boots-of-crafting.png"
+  },
+  "facet-coat-of-crafting": {
+    "name": "중용의 제작자 외투",
+    "iconSrc": "/icons/items/facet-coat-of-crafting.png",
+    "hqIconSrc": "/icons/items/hq/facet-coat-of-crafting.png"
+  },
+  "facet-gloves-of-crafting": {
+    "name": "중용의 제작자 장갑",
+    "iconSrc": "/icons/items/facet-gloves-of-crafting.png",
+    "hqIconSrc": "/icons/items/hq/facet-gloves-of-crafting.png"
+  },
+  "facet-hat-of-crafting": {
+    "name": "중용의 제작자 모자",
+    "iconSrc": "/icons/items/facet-hat-of-crafting.png",
+    "hqIconSrc": "/icons/items/hq/facet-hat-of-crafting.png"
+  },
+  "facet-trousers-of-crafting": {
+    "name": "중용의 제작자 바지",
+    "iconSrc": "/icons/items/facet-trousers-of-crafting.png",
+    "hqIconSrc": "/icons/items/hq/facet-trousers-of-crafting.png"
+  },
   "gold-ore": {
     "name": "금 광석",
     "iconSrc": "/icons/items/gold-ore.png"
@@ -82,5 +112,10 @@
   "mythrite-sand": {
     "name": "미스라이트 모래",
     "iconSrc": "/icons/items/mythrite-sand.png"
+  },
+  "sea-swallow-leather": {
+    "name": "바다제비 가죽",
+    "iconSrc": "/icons/items/sea-swallow-leather.png",
+    "hqIconSrc": "/icons/items/hq/sea-swallow-leather.png"
   }
 }

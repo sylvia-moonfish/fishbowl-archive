@@ -125,6 +125,15 @@
     },
     "waitTime": 3
   },
+  "reuse": {
+    "iconSrc": "/icons/actions/reuse.png",
+    "macroName": {
+      "ko": "\"재사용\"",
+      "en": "\"Reuse\"",
+      "ja": "リユース"
+    },
+    "waitTime": 2
+  },
   "trained-eye": {
     "iconSrc": "/icons/actions/trained-eye.png",
     "macroName": {
