@@ -21,7 +21,7 @@ class RedirectComponent extends React.Component {
     return (
       <React.Fragment>
         <LinearProgress color="secondary" />
-        <div>Page not found.</div>
+        <div>이동중...</div>
       </React.Fragment>
     );
   }

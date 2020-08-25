@@ -3,6 +3,7 @@ import Grid from "@material-ui/core/Grid";
 import Hidden from "@material-ui/core/Hidden";
 import IconButton from "@material-ui/core/IconButton";
 import { withStyles } from "@material-ui/core/styles";
+import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 
 import HomeIcon from "@material-ui/icons/Home";
@@ -12,25 +13,26 @@ import Link from "next/link";
 import React from "react";
 
 import SiteInfo from "../../../data/site-info";
+import TwitchIcon from "../icons/twitch-icon";
 import TwitterIcon from "../icons/twitter-icon";
 import YoutubeIcon from "../icons/youtube-icon";
 import DrawerList from "./drawer-list";
 
 const styles = (theme) => ({
   caption: {
-    color: "grey",
+    color: "rgba(255, 255, 255, 0.7)",
   },
   direction: {
     flexDirection: "column",
   },
   drawer: {
     [theme.breakpoints.up("lg")]: {
-      width: 320,
+      width: 250,
       flexShrink: 0,
     },
   },
   drawerPaper: {
-    width: 320,
+    width: 250,
   },
   grow: {
     flexGrow: 1,
@@ -40,7 +42,7 @@ const styles = (theme) => ({
     textDecoration: "none",
   },
   toolbar: {
-    minHeight: 48,
+    minHeight: 45,
   },
 });
 
@@ -54,11 +56,9 @@ class DrawerImpl extends React.Component {
       <div className={this.props.classes.grow}>
         <DrawerList
           className={this.props.classes.grow}
+          currentMenu={this.props.currentMenu}
           currentTheme={this.props.currentTheme}
-          drawerList={this.props.drawerList}
-          language={this.props.language}
           setMobileOpen={this.props.setMobileOpen}
-          siteInfo={this.props.siteInfo}
         />
       </div>
     );
@@ -67,17 +67,27 @@ class DrawerImpl extends React.Component {
       <React.Fragment>
         <Grid container justify="center">
           <Link href="/">
-            <IconButton>
+            <IconButton aria-label="Home">
               <HomeIcon />
             </IconButton>
           </Link>
+          <a
+            className={this.props.classes.link}
+            href={SiteInfo.twitchLink}
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <IconButton aria-label="Twitch">
+              <TwitchIcon />
+            </IconButton>
+          </a>
           <a
             className={this.props.classes.link}
             href={SiteInfo.twitterLink}
             rel="noopener noreferrer"
             target="_blank"
           >
-            <IconButton>
+            <IconButton aria-label="Twitter">
               <TwitterIcon />
             </IconButton>
           </a>
@@ -87,7 +97,7 @@ class DrawerImpl extends React.Component {
             rel="noopener noreferrer"
             target="_blank"
           >
-            <IconButton>
+            <IconButton aria-label="Youtube">
               <YoutubeIcon />
             </IconButton>
           </a>

@@ -1,0 +1,24 @@
+{
+  "short_name": "Platy's Fishbowl",
+  "name": "Platy's Fishbowl",
+  "description": "Platy's Fishbowl for FFXIV",
+  "icons": [
+    {
+      "src": "/192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#484848",
+  "display": "fullscreen",
+  "scope": "/",
+  "theme_color": "#4a148c"
+}

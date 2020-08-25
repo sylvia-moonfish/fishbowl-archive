@@ -1,31 +1,35 @@
 import Avatar from "@material-ui/core/Avatar";
-import Collapse from "@material-ui/core/Collapse";
+import Button from "@material-ui/core/Button";
+import Dialog from "@material-ui/core/Dialog";
+import DialogActions from "@material-ui/core/DialogActions";
+import DialogContent from "@material-ui/core/DialogContent";
+import DialogContentText from "@material-ui/core/DialogContentText";
+import DialogTitle from "@material-ui/core/DialogTitle";
 import Divider from "@material-ui/core/Divider";
+import FormControl from "@material-ui/core/FormControl";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemAvatar from "@material-ui/core/ListItemAvatar";
 import ListItemText from "@material-ui/core/ListItemText";
 import ListSubheader from "@material-ui/core/ListSubheader";
+import MenuItem from "@material-ui/core/MenuItem";
+import Select from "@material-ui/core/Select";
 import { withStyles } from "@material-ui/core/styles";
 
-import ExpandLessIcon from "@material-ui/icons/ExpandLess";
-import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-
-import Link from "next/link";
-import Router from "next/router";
+import { withRouter } from "next/router";
 
 import React from "react";
 
 import MainMenu from "../../../data/main-menu";
-import SiteInfo from "../../../data/site-info";
 
 const styles = (theme) => ({
   avatar: {
     height: 25,
     width: 25,
   },
-  nested: {
-    paddingLeft: theme.spacing(3),
+  formControl: {
+    margin: "auto",
+    minWidth: 300,
   },
 });
 
@@ -34,33 +38,51 @@ class DrawerList extends React.Component {
     super(props);
 
     this.state = {
-      mainMenu: MainMenu,
+      selectedMenuItem: {},
+      isVersionSelectorOpen: false,
+      versionValue: "5.1",
     };
   }
 
   render() {
     return (
-      <List>
-        <Link href="/">
-          <ListItem alignItems="flex-start" button>
+      <React.Fragment>
+        <List component="nav">
+          <ListItem
+            alignItems="flex-start"
+            button
+            onClick={() => {
+              this.props.setMobileOpen(false);
+              this.props.router.push("/");
+            }}
+          >
             <ListItemAvatar>
-              <Avatar src={SiteInfo.profilePicLink} />
+              <Avatar alt="" src="/192.png" />
             </ListItemAvatar>
             <ListItemText
               primary={MainMenu.name}
               secondary={MainMenu.description}
             />
           </ListItem>
-        </Link>
-        <Divider />
-        {this.state.mainMenu.menuGroups.map((menuGroup, menuGroupIndex) => {
-          return (
-            <React.Fragment key={menuGroupIndex}>
-              <ListSubheader component="div">{menuGroup.title}</ListSubheader>
-              {menuGroup.menus.map((menu, menuIndex) => {
-                if (menu.subMenus.length === 0) {
+          <Divider />
+          {MainMenu.menuGroups.map((menuGroup, menuGroupIndex) => {
+            return (
+              <React.Fragment key={menuGroupIndex}>
+                <ListSubheader component="div">{menuGroup.title}</ListSubheader>
+                {menuGroup.menus.map((menu, menuIndex) => {
                   return (
-                    <ListItem button disabled key={menuIndex}>
+                    <ListItem
+                      button
+                      key={menuIndex}
+                      onClick={() => {
+                        this.setState({
+                          ...this.state,
+                          selectedMenuItem: menu,
+                          isVersionSelectorOpen: true,
+                        });
+                      }}
+                      selected={this.props.currentMenu === menu.href}
+                    >
                       {menu.icon(
                         this.props.classes.avatar,
                         this.props.currentTheme
@@ -68,75 +90,73 @@ class DrawerList extends React.Component {
                       <ListItemText primary={menu.title} />
                     </ListItem>
                   );
-                } else {
-                  return (
-                    <React.Fragment key={menuIndex}>
-                      <ListItem
-                        button
-                        onClick={() => {
-                          menu.isOpen = !menu.isOpen;
-                          this.setState(this.state);
-                        }}
-                      >
-                        {menu.icon(
-                          this.props.classes.avatar,
-                          this.props.currentTheme
-                        )}
-                        <ListItemText primary={menu.title} />
-                        {menu.isOpen ? <ExpandLessIcon /> : <ExpandMoreIcon />}
-                      </ListItem>
-                      <Collapse in={menu.isOpen} timeout="auto" unmountOnExit>
-                        <List component="div" disablePadding>
-                          {menu.subMenus.map((subMenu, subMenuIndex) => {
-                            if (!subMenu.href) {
-                              return (
-                                <ListItem
-                                  button
-                                  className={this.props.classes.nested}
-                                  disabled={true}
-                                  dense
-                                  key={subMenuIndex}
-                                >
-                                  {subMenu.icon(
-                                    this.props.classes.avatar,
-                                    this.props.currentTheme
-                                  )}
-                                  <ListItemText primary={subMenu.title} />
-                                </ListItem>
-                              );
-                            } else {
-                              return (
-                                <ListItem
-                                  button
-                                  className={this.props.classes.nested}
-                                  dense
-                                  key={subMenuIndex}
-                                  onClick={() => {
-                                    this.props.setMobileOpen(false);
-                                    return Router.push(subMenu.href);
-                                  }}
-                                >
-                                  {subMenu.icon(
-                                    this.props.classes.avatar,
-                                    this.props.currentTheme
-                                  )}
-                                  <ListItemText primary={subMenu.title} />
-                                </ListItem>
-                              );
-                            }
-                          })}
-                        </List>
-                      </Collapse>
-                    </React.Fragment>
-                  );
-                }
-              })}
-            </React.Fragment>
-          );
-        })}
-      </List>
+                })}
+              </React.Fragment>
+            );
+          })}
+        </List>
+        <Dialog
+          maxWidth="sm"
+          onClose={() => {
+            this.setState({
+              ...this.state,
+              isVersionSelectorOpen: false,
+            });
+          }}
+          open={this.state.isVersionSelectorOpen}
+        >
+          <DialogTitle>
+            {this.state.selectedMenuItem.title} 버전 선택
+          </DialogTitle>
+          <DialogContent>
+            <DialogContentText>
+              열람하고자 하는 버전을 선택해주세요.
+            </DialogContentText>
+            <form>
+              <FormControl
+                className={this.props.classes.formControl}
+                variant="outlined"
+              >
+                <Select
+                  onChange={(e) => {
+                    this.setState({
+                      ...this.state,
+                      versionValue: e.target.value
+                        ? e.target.value
+                        : this.state.versionValue,
+                    });
+                  }}
+                  value={this.state.versionValue}
+                >
+                  <MenuItem value={5.1}>5.1 (한국 서버)</MenuItem>
+                  <MenuItem value={5.3}>5.3 (글로벌 서버)</MenuItem>
+                  <Divider />
+                  <MenuItem value={5.2}>5.2</MenuItem>
+                  <Divider />
+                </Select>
+              </FormControl>
+            </form>
+          </DialogContent>
+          <DialogActions>
+            <Button
+              onClick={() => {
+                this.setState({
+                  ...this.state,
+                  isVersionSelectorOpen: false,
+                });
+                this.props.setMobileOpen(false);
+                this.props.router.push(
+                  `/${this.state.versionValue}${this.state.selectedMenuItem.href}`
+                );
+              }}
+            >
+              OK
+            </Button>
+          </DialogActions>
+        </Dialog>
+      </React.Fragment>
     );
   }
 }
 
-export default withStyles(styles)(DrawerList);
+export default withStyles(styles)(withRouter(DrawerList));

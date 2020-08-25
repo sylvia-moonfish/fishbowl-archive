@@ -1,0 +1,1457 @@
+{
+  "================================================== Food ==================================================": {},
+  "popotoSalad": {
+    "name": "포포토 샐러드",
+    "iconSrc": "/icons/items/popoto-salad.png"
+  },
+  "robeLettuceSalad": {
+    "name": "요술양배추 샐러드",
+    "iconSrc": "/icons/items/robe-lettuce-salad.png",
+    "stats": {
+      "ch": {
+        "value": 10,
+        "max": 93
+      },
+      "det": {
+        "value": 10,
+        "max": 155
+      }
+    }
+  },
+  "rareRoastBeef": {
+    "name": "고급 소고기 구이",
+    "iconSrc": "/icons/items/rare-roast-beef.png"
+  },
+  "kukuruRusk": {
+    "name": "쿠쿠루 러스크",
+    "iconSrc": "/icons/items/kukuru-rusk.png",
+    "stats": {
+      "ch": {
+        "value": 10,
+        "max": 155
+      },
+      "sps": {
+        "value": 10,
+        "max": 93
+      }
+    }
+  },
+  "pixieberryTea": {
+    "name": "픽시딸기 차",
+    "iconSrc": "/icons/items/pixieberry-tea.png",
+    "stats": {
+      "det": {
+        "value": 10,
+        "max": 93
+      },
+      "pie": {
+        "value": 10,
+        "max": 155
+      }
+    }
+  },
+  "lemonCurdSachertorte": {
+    "name": "레몬 커드 자허토르테",
+    "iconSrc": "/icons/items/lemon-curd-sachertorte.png",
+    "stats": {
+      "sps": {
+        "value": 10,
+        "max": 155
+      },
+      "dh": {
+        "value": 10,
+        "max": 93
+      }
+    }
+  },
+  "creamySalmonPasta": {
+    "name": "연어 크림 파스타",
+    "iconSrc": "/icons/items/creamy-salmon-pasta.png",
+    "stats": {
+      "dh": {
+        "value": 10,
+        "max": 155
+      },
+      "det": {
+        "value": 10,
+        "max": 93
+      }
+    }
+  },
+
+  "================================================== Materia ==================================================": {},
+  "ch": {
+    "name": "극대 (무략)",
+    "value": 60
+  },
+  "dh": {
+    "name": "직격 (심안)",
+    "value": 60
+  },
+  "det": {
+    "name": "의지 (야망)",
+    "value": 60
+  },
+  "sks": {
+    "name": "기시 (신속)",
+    "value": 60
+  },
+  "sps": {
+    "name": "마시 (시전)",
+    "value": 60
+  },
+  "ten": {
+    "name": "불굴 (강유)",
+    "value": 60
+  },
+  "pie": {
+    "name": "신앙 (신앙)",
+    "value": 60
+  },
+
+  "================================================== Weapon: Tank ==================================================": {},
+  "edengraceBastardSword": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-bastard-sword.png",
+    "name": "에덴의 은총 바스타드소드",
+    "required": "4층 낱장 x 5",
+    "type": "무기"
+  },
+  "edengraceShield": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-shield.png",
+    "name": "에덴의 은총 방패",
+    "required": "4층 낱장 x 3",
+    "type": "방패"
+  },
+
+  "edengraceBattleaxe": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-battleaxe.png",
+    "name": "에덴의 은총 전투도끼",
+    "required": "4층 낱장 x 8",
+    "type": "무기"
+  },
+
+  "edengraceGreatsword": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-greatsword.png",
+    "name": "에덴의 은총 그레이트소드",
+    "required": "4층 낱장 x 8",
+    "type": "무기"
+  },
+
+  "edengraceManatrigger": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-manatrigger.png",
+    "name": "에덴의 은총 마나트리거",
+    "required": "4층 낱장 x 8",
+    "type": "무기"
+  },
+
+  "================================================== Weapon: Healer ==================================================": {},
+  "edengraceCane": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-cane.png",
+    "name": "에덴의 은총 환술봉",
+    "required": "4층 낱장 x 8",
+    "type": "무기",
+    "stats": {
+      "wd": 164,
+      "main": 544,
+      "det": 467,
+      "pie": 327
+    }
+  },
+  "augmentedDeepshadowSignum": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-signum.png",
+    "name": "보강된 암영 문장지팡이",
+    "required": "환상 석판 1000개\n초경량 석판\n암영 강화약\n(3층 낱장 x 4)",
+    "type": "무기",
+    "stats": {
+      "wd": 163,
+      "main": 530,
+      "ch": 462,
+      "det": 323
+    }
+  },
+
+  "wordOfGrace": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/word-of-grace.png",
+    "name": "에덴의 은총 잠언",
+    "required": "4층 낱장 x 8",
+    "type": "무기",
+    "stats": {
+      "wd": 164,
+      "main": 544,
+      "ch": 467,
+      "pie": 327
+    }
+  },
+
+  "edengracePlainsphere": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-plainsphere.png",
+    "name": "에덴의 은총 천궁도",
+    "required": "4층 낱장 x 8",
+    "type": "무기",
+    "stats": {
+      "wd": 164,
+      "main": 544,
+      "det": 327,
+      "pie": 467
+    }
+  },
+
+  "================================================== Weapon: Melee ==================================================": {},
+  "edengraceSpear": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-spear.png",
+    "name": "에덴의 은총 창",
+    "required": "4층 낱장 x 8",
+    "type": "무기"
+  },
+
+  "edengraceKnuckles": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-knuckles.png",
+    "name": "에덴의 은총 너클",
+    "required": "4층 낱장 x 8",
+    "type": "무기"
+  },
+
+  "edengraceBlade": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-blade.png",
+    "name": "에덴의 은총 외날검",
+    "required": "4층 낱장 x 8",
+    "type": "무기"
+  },
+
+  "edengraceKnives": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-knives.png",
+    "name": "에덴의 은총 단검",
+    "required": "4층 낱장 x 8",
+    "type": "무기"
+  },
+
+  "================================================== Weapon: Physical Ranged ==================================================": {},
+  "edengraceHarpBow": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-harp-bow.png",
+    "name": "에덴의 은총 현악궁",
+    "required": "4층 낱장 x 8",
+    "type": "무기",
+    "stats": {
+      "wd": 122,
+      "main": 544,
+      "det": 327,
+      "dh": 467
+    }
+  },
+
+  "edengraceRevolver": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-revolver.png",
+    "name": "에덴의 은총 연발권총",
+    "required": "4층 낱장 x 8",
+    "type": "무기",
+    "stats": {
+      "wd": 122,
+      "main": 544,
+      "ch": 327,
+      "dh": 467
+    }
+  },
+
+  "edengraceTathlums": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-tathlums.png",
+    "name": "에덴의 은총 타흘룸",
+    "required": "4층 낱장 x 8",
+    "type": "무기",
+    "stats": {
+      "wd": 122,
+      "main": 544,
+      "ch": 327,
+      "dh": 467
+    }
+  },
+
+  "================================================== Weapon: Magic Ranged ==================================================": {},
+  "edengraceRod": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-rod.png",
+    "name": "에덴의 은총 주술봉",
+    "required": "4층 낱장 x 8",
+    "type": "무기",
+    "stats": {
+      "wd": 164,
+      "main": 544,
+      "sps": 467,
+      "dh": 327
+    }
+  },
+
+  "bookOfGrace": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/book-of-grace.png",
+    "name": "에덴의 은총 책",
+    "required": "4층 낱장 x 8",
+    "type": "무기",
+    "stats": {
+      "wd": 164,
+      "main": 544,
+      "ch": 467,
+      "dh": 327
+    }
+  },
+
+  "edengraceRapier": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-rapier.png",
+    "name": "에덴의 은총 레이피어",
+    "required": "4층 낱장 x 8",
+    "type": "무기",
+    "stats": {
+      "wd": 164,
+      "main": 544,
+      "ch": 327,
+      "dh": 467
+    }
+  },
+
+  "================================================== Head: Tank ==================================================": {},
+  "edengraceArmetOfFending": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-armet-of-fending.png",
+    "name": "에덴의 은총 수호자 철갑투구",
+    "required": "2층 낱장 x 6",
+    "type": "머리"
+  },
+  "augmentedDeepshadowHelmOfFending": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-helm-of-fending.png",
+    "name": "보강된 암영 수호자 투구",
+    "required": "환상 석판 495개\n암영 강화섬유\n(3층 낱장 x 4)",
+    "type": "머리"
+  },
+
+  "================================================== Head: Healer ==================================================": {},
+  "edengraceTempleChainOfHealing": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-temple-chain-of-healing.png",
+    "name": "에덴의 은총 치유사 머리사슬",
+    "required": "2층 낱장 x 6",
+    "type": "머리",
+    "stats": {
+      "main": 303,
+      "det": 264,
+      "sps": 185
+    }
+  },
+  "augmentedDeepshadowHoodOfHealing": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-hood-of-healing.png",
+    "name": "보강된 암영 치유사 두건",
+    "required": "환상 석판 495개\n암영 강화섬유\n(3층 낱장 x 4)",
+    "type": "머리",
+    "stats": {
+      "main": 303,
+      "det": 185,
+      "pie": 264
+    }
+  },
+
+  "================================================== Head: Melee ==================================================": {},
+  "augmentedDeepshadowHelmOfMaiming": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-helm-of-maiming.png",
+    "name": "보강된 암영 학살자 투구",
+    "required": "환상 석판 495개\n암영 강화섬유\n(3층 낱장 x 4)",
+    "type": "머리"
+  },
+
+  "augmentedDeepshadowHalfmaskOfStriking": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-halfmask-of-striking.png",
+    "name": "보강된 암영 타격대 반가면",
+    "required": "환상 석판 495개\n암영 강화섬유\n(3층 낱장 x 4)",
+    "type": "머리"
+  },
+
+  "augmentedDeepshadowMaskOfScouting": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-mask-of-scouting.png",
+    "name": "보강된 암영 정찰대 가면",
+    "required": "환상 석판 495개\n암영 강화섬유\n(3층 낱장 x 4)",
+    "type": "머리"
+  },
+
+  "================================================== Head: Physical Ranged ==================================================": {},
+  "edengraceHelmOfAiming": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-helm-of-aiming.png",
+    "name": "에덴의 은총 유격대 투구",
+    "required": "2층 낱장 x 6",
+    "type": "머리",
+    "stats": {
+      "main": 303,
+      "det": 264,
+      "dh": 185
+    }
+  },
+  "augmentedDeepshadowChapeauOfAiming": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-chapeau-of-aiming.png",
+    "name": "보강된 암영 유격대 깃모자",
+    "required": "환상 석판 495개\n암영 강화섬유\n(3층 낱장 x 4)",
+    "type": "머리",
+    "stats": {
+      "main": 303,
+      "ch": 264,
+      "sks": 185
+    }
+  },
+
+  "================================================== Head: Magic Ranged ==================================================": {},
+  "edengraceCircletOfCasting": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-circlet-of-casting.png",
+    "name": "에덴의 은총 마술사 머리장식",
+    "required": "2층 낱장 x 6",
+    "type": "머리",
+    "stats": {
+      "main": 303,
+      "ch": 264,
+      "sps": 185
+    }
+  },
+  "augmentedDeepshadowHoodOfCasting": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-hood-of-casting.png",
+    "name": "보강된 암영 마술사 두건",
+    "required": "환상 석판 495개\n암영 강화섬유\n(3층 낱장 x 4)",
+    "type": "머리",
+    "stats": {
+      "main": 303,
+      "det": 264,
+      "dh": 185
+    }
+  },
+
+  "================================================== Body: Tank ==================================================": {},
+  "edengraceMailOfFending": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-mail-of-fending.png",
+    "name": "에덴의 은총 수호자 갑옷",
+    "required": "4층 낱장 x 8",
+    "type": "몸통"
+  },
+  "augmentedDeepshadowCuirassOfFending": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-cuirass-of-fending.png",
+    "name": "보강된 암영 수호자 전투흉갑",
+    "required": "환상 석판 825개\n암영 강화섬유\n(3층 낱장 x 4)",
+    "type": "몸통"
+  },
+
+  "================================================== Body: Healer ==================================================": {},
+  "augmentedDeepshadowScaleMailOfHealing": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-scale-mail-of-healing.png",
+    "name": "보강된 암영 치유사 미늘갑옷",
+    "required": "환상 석판 825개\n암영 강화섬유\n(3층 낱장 x 4)",
+    "type": "몸통",
+    "stats": {
+      "main": 492,
+      "ch": 300,
+      "det": 429
+    }
+  },
+
+  "================================================== Body: Melee ==================================================": {},
+  "edengraceMailOfMaiming": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-mail-of-maiming.png",
+    "name": "에덴의 은총 학살자 갑옷",
+    "required": "4층 낱장 x 8",
+    "type": "몸통"
+  },
+  "augmentedDeepshadowCuirassOfMaiming": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-cuirass-of-maiming.png",
+    "name": "보강된 암영 학살자 전투흉갑",
+    "required": "환상 석판 825개\n암영 강화섬유\n(3층 낱장 x 4)",
+    "type": "몸통"
+  },
+
+  "edengraceRobeOfStriking": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-robe-of-striking.png",
+    "name": "에덴의 은총 타격대 로브",
+    "required": "4층 낱장 x 8",
+    "type": "몸통"
+  },
+  "augmentedDeepshadowScaleMailOfStriking": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-scale-mail-of-striking.png",
+    "name": "보강된 암영 타격대 미늘갑옷",
+    "required": "환상 석판 825개\n암영 강화섬유\n(3층 낱장 x 4)",
+    "type": "몸통"
+  },
+
+  "edengraceJacketOfScouting": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-jacket-of-scouting.png",
+    "name": "에덴의 은총 정찰대 재킷",
+    "required": "4층 낱장 x 8",
+    "type": "몸통"
+  },
+  "augmentedDeepshadowScaleMailOfScouting": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-scale-mail-of-scouting.png",
+    "name": "보강된 암영 정찰대 미늘갑옷",
+    "required": "환상 석판 825개\n암영 강화섬유\n(3층 낱장 x 4)",
+    "type": "몸통"
+  },
+
+  "================================================== Body: Physical Ranged ==================================================": {},
+  "edengraceMailOfAiming": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-mail-of-aiming.png",
+    "name": "에덴의 은총 유격대 갑옷",
+    "required": "4층 낱장 x 8",
+    "type": "몸통",
+    "stats": {
+      "main": 492,
+      "ch": 429,
+      "det": 300
+    }
+  },
+
+  "================================================== Body: Magic Ranged ==================================================": {},
+  "edengraceJacketOfCasting": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-jacket-of-casting.png",
+    "name": "에덴의 은총 마술사 재킷",
+    "required": "4층 낱장 x 8",
+    "type": "몸통",
+    "stats": {
+      "main": 492,
+      "sps": 300,
+      "dh": 429
+    }
+  },
+  "augmentedDeepshadowScaleMailOfCasting": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-scale-mail-of-casting.png",
+    "name": "보강된 암영 마술사 미늘갑옷",
+    "required": "환상 석판 825개\n암영 강화섬유\n(3층 낱장 x 4)",
+    "type": "몸통",
+    "stats": {
+      "main": 492,
+      "ch": 429,
+      "det": 300
+    }
+  },
+
+  "================================================== Hands: Tank ==================================================": {},
+  "edengraceGauntletsOfFending": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-gauntlets-of-fending.png",
+    "name": "에덴의 은총 수호자 건틀릿",
+    "required": "2층 낱장 x 6",
+    "type": "손"
+  },
+  "augmentedDeepshadowGauntletsOfFending": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-gauntlets-of-fending.png",
+    "name": "보강된 암영 수호자 건틀릿",
+    "required": "환상 석판 495개\n암영 강화섬유\n(3층 낱장 x 4)",
+    "type": "손"
+  },
+
+  "================================================== Hands: Healer ==================================================": {},
+  "edengraceArmletsOfHealing": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-armlets-of-healing.png",
+    "name": "에덴의 은총 치유사 팔덮개",
+    "required": "2층 낱장 x 6",
+    "type": "손",
+    "stats": {
+      "main": 303,
+      "det": 264,
+      "sps": 185
+    }
+  },
+  "augmentedDeepshadowArmguardsOfHealing": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-armguards-of-healing.png",
+    "name": "보강된 암영 치유사 팔보호구",
+    "required": "환상 석판 495개\n암영 강화섬유\n(3층 낱장 x 4)",
+    "type": "손",
+    "stats": {
+      "main": 303,
+      "det": 264,
+      "pie": 185
+    }
+  },
+
+  "================================================== Hands: Melee ==================================================": {},
+  "edengraceGauntletsOfMaiming": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-gauntlets-of-maiming.png",
+    "name": "에덴의 은총 학살자 건틀릿",
+    "required": "2층 낱장 x 6",
+    "type": "손"
+  },
+  "augmentedDeepshadowGauntletsOfMaiming": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-gauntlets-of-maiming.png",
+    "name": "보강된 암영 학살자 건틀릿",
+    "required": "환상 석판 495개\n암영 강화섬유\n(3층 낱장 x 4)",
+    "type": "손"
+  },
+
+  "edengraceArmletsOfStriking": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-armlets-of-striking.png",
+    "name": "에덴의 은총 타격대 팔덮개",
+    "required": "2층 낱장 x 6",
+    "type": "손"
+  },
+  "augmentedDeepshadowGlovesOfStriking": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-gloves-of-striking.png",
+    "name": "보강된 암영 타격대 장갑",
+    "required": "환상 석판 495개\n암영 강화섬유\n(3층 낱장 x 4)",
+    "type": "손"
+  },
+
+  "augmentedDeepshadowGlovesOfScouting": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-gloves-of-scouting.png",
+    "name": "보강된 암영 정찰대 장갑",
+    "required": "환상 석판 495개\n암영 강화섬유\n(3층 낱장 x 4)",
+    "type": "손"
+  },
+
+  "================================================== Hands: Physical Ranged ==================================================": {},
+  "edengraceGauntletsOfAiming": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-armlets-of-striking.png",
+    "name": "에덴의 은총 유격대 건틀릿",
+    "required": "2층 낱장 x 6",
+    "type": "손",
+    "stats": {
+      "main": 303,
+      "ch": 185,
+      "dh": 264
+    }
+  },
+  "augmentedDeepshadowGlovesOfAiming": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-gloves-of-aiming.png",
+    "name": "보강된 암영 유격대 장갑",
+    "required": "환상 석판 495개\n암영 강화섬유\n(3층 낱장 x 4)",
+    "type": "손",
+    "stats": {
+      "main": 303,
+      "ch": 264,
+      "det": 185
+    }
+  },
+
+  "================================================== Hands: Magic Ranged ==================================================": {},
+  "edengraceHalfglovesOfCasting": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-halfgloves-of-casting.png",
+    "name": "에덴의 은총 마술사 손등장갑",
+    "required": "2층 낱장 x 6",
+    "type": "손",
+    "stats": {
+      "main": 303,
+      "ch": 264,
+      "det": 185
+    }
+  },
+  "augmentedDeepshadowArmguardsOfCasting": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-armguards-of-casting.png",
+    "name": "보강된 암영 마술사 팔보호구",
+    "required": "환상 석판 495개\n암영 강화섬유\n(3층 낱장 x 4)",
+    "type": "손",
+    "stats": {
+      "main": 303,
+      "sps": 264,
+      "dh": 185
+    }
+  },
+
+  "================================================== Waist: Tank ==================================================": {},
+  "edengraceTassetsOfFending": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-tassets-of-fending.png",
+    "name": "에덴의 은총 수호자 허리갑옷",
+    "required": "1층 낱장 x 6",
+    "type": "허리"
+  },
+  "augmentedDeepshadowTassetsOfFending": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-tassets-of-fending.png",
+    "name": "보강된 암영 수호자 허리갑옷",
+    "required": "환상 석판 375개\n암영 경화약\n(2층 낱장 x 4)",
+    "type": "허리"
+  },
+
+  "================================================== Waist: Healer ==================================================": {},
+  "edengraceTassetsOfHealing": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-tassets-of-healing.png",
+    "name": "에덴의 은총 치유사 허리갑옷",
+    "required": "1층 낱장 x 6",
+    "type": "허리",
+    "stats": {
+      "main": 227,
+      "ch": 198,
+      "det": 139
+    }
+  },
+
+  "================================================== Waist: Melee ==================================================": {},
+  "edengraceTassetsOfMaiming": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-tassets-of-maiming.png",
+    "name": "에덴의 은총 학살자 허리갑옷",
+    "required": "1층 낱장 x 6",
+    "type": "허리"
+  },
+
+  "edengraceTassetsOfStriking": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-tassets-of-striking.png",
+    "name": "에덴의 은총 타격대 허리갑옷",
+    "required": "1층 낱장 x 6",
+    "type": "허리"
+  },
+  "augmentedDeepshadowTassetsOfStriking": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-tassets-of-striking.png",
+    "name": "보강된 암영 타격대 허리갑옷",
+    "required": "환상 석판 375개\n암영 경화약\n(2층 낱장 x 4)",
+    "type": "허리"
+  },
+
+  "augmentedDeepshadowTassetsOfScouting": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-tassets-of-scouting.png",
+    "name": "보강된 암영 정찰대 허리갑옷",
+    "required": "환상 석판 375개\n암영 경화약\n(2층 낱장 x 4)",
+    "type": "허리"
+  },
+
+  "================================================== Waist: Physical Ranged ==================================================": {},
+  "augmentedDeepshadowTassetsOfAiming": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-tassets-of-aiming.png",
+    "name": "보강된 암영 유격대 허리갑옷",
+    "required": "환상 석판 375개\n암영 경화약\n(2층 낱장 x 4)",
+    "type": "허리",
+    "stats": {
+      "main": 227,
+      "ch": 198,
+      "dh": 139
+    }
+  },
+
+  "================================================== Waist: Magic Ranged ==================================================": {},
+  "edengraceTassetsOfCasting": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-tassets-of-casting.png",
+    "name": "에덴의 은총 마술사 허리갑옷",
+    "required": "1층 낱장 x 6",
+    "type": "허리",
+    "stats": {
+      "main": 227,
+      "ch": 198,
+      "det": 139
+    }
+  },
+  "augmentedDeepshadowTassetsOfCasting": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-tassets-of-casting.png",
+    "name": "보강된 암영 마술사 허리갑옷",
+    "required": "환상 석판 375개\n암영 경화약\n(2층 낱장 x 4)",
+    "type": "허리",
+    "stats": {
+      "main": 227,
+      "det": 198,
+      "dh": 139
+    }
+  },
+
+  "================================================== Legs: Tank ==================================================": {},
+  "edengraceTrousersOfFending": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-trousers-of-fending.png",
+    "name": "에덴의 은총 수호자 긴바지",
+    "required": "3층 낱장 x 8",
+    "type": "다리"
+  },
+  "augmentedDeepshadowBreechesOfFending": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-breeches-of-fending.png",
+    "name": "보강된 암영 수호자 바지",
+    "required": "환상 석판 825개\n암영 강화섬유\n(3층 낱장 x 4)",
+    "type": "다리"
+  },
+
+  "================================================== Legs: Healer ==================================================": {},
+  "edengracePantaloonsOfHealing": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-pantaloons-of-healing.png",
+    "name": "에덴의 은총 치유사 나팔바지",
+    "required": "3층 낱장 x 8",
+    "type": "다리",
+    "stats": {
+      "main": 492,
+      "ch": 429,
+      "det": 300
+    }
+  },
+
+  "================================================== Legs: Melee ==================================================": {},
+  "edengraceTrousersOfMaiming": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-trousers-of-maiming.png",
+    "name": "에덴의 은총 학살자 긴바지",
+    "required": "3층 낱장 x 8",
+    "type": "다리"
+  },
+
+  "edengracePantaloonsOfStriking": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-pantaloons-of-striking.png",
+    "name": "에덴의 은총 타격대 나팔바지",
+    "required": "3층 낱장 x 8",
+    "type": "다리"
+  },
+  "augmentedDeepshadowBottomsOfStriking": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-bottoms-of-striking.png",
+    "name": "보강된 암영 타격대 하의",
+    "required": "환상 석판 825개\n암영 강화섬유\n(3층 낱장 x 4)",
+    "type": "다리"
+  },
+
+  "edengraceBreechesOfScouting": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-breeches-of-scouting.png",
+    "name": "에덴의 은총 정찰대 바지",
+    "required": "3층 낱장 x 8",
+    "type": "다리"
+  },
+
+  "================================================== Legs: Physical Ranged ==================================================": {},
+  "augmentedDeepshadowBreechesOfAiming": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-breeches-of-aiming.png",
+    "name": "보강된 암영 유격대 바지",
+    "required": "환상 석판 825개\n암영 강화섬유\n(3층 낱장 x 4)",
+    "type": "다리",
+    "stats": {
+      "main": 492,
+      "ch": 300,
+      "dh": 429
+    }
+  },
+
+  "================================================== Legs: Magic Ranged ==================================================": {},
+  "edengraceBreechesOfCasting": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-breeches-of-casting.png",
+    "name": "에덴의 은총 마술사 바지",
+    "required": "3층 낱장 x 8",
+    "type": "다리",
+    "stats": {
+      "main": 492,
+      "ch": 300,
+      "dh": 429
+    }
+  },
+  "augmentedDeepshadowBreechesOfCasting": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-breeches-of-casting.png",
+    "name": "보강된 암영 마술사 바지",
+    "required": "환상 석판 825개\n암영 강화섬유\n(3층 낱장 x 4)",
+    "type": "다리",
+    "stats": {
+      "main": 492,
+      "det": 300,
+      "sps": 429
+    }
+  },
+
+  "================================================== Feet: Tank ==================================================": {},
+  "edengraceGreavesOfFending": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-greaves-of-fending.png",
+    "name": "에덴의 은총 수호자 갑주장화",
+    "required": "2층 낱장 x 6",
+    "type": "발"
+  },
+  "augmentedDeepshadowSolleretsOfFending": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-sollerets-of-fending.png",
+    "name": "보강된 암영 수호자 쇠구두",
+    "required": "환상 석판 495개\n암영 강화섬유\n(3층 낱장 x 4)",
+    "type": "발"
+  },
+
+  "================================================== Feet: Healer ==================================================": {},
+  "edengraceSandalsOfHealing": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-sandals-of-healing.png",
+    "name": "에덴의 은총 치유사 샌들",
+    "required": "2층 낱장 x 6",
+    "type": "발",
+    "stats": {
+      "main": 303,
+      "ch": 185,
+      "pie": 264
+    }
+  },
+  "augmentedDeepshadowGreavesOfHealing": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-greaves-of-healing.png",
+    "name": "보강된 암영 치유사 갑주장화",
+    "required": "환상 석판 495개\n암영 강화섬유\n(3층 낱장 x 4)",
+    "type": "발",
+    "stats": {
+      "main": 303,
+      "sps": 185,
+      "pie": 264
+    }
+  },
+
+  "================================================== Feet: Melee ==================================================": {},
+  "augmentedDeepshadowSolleretsOfMaiming": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-sollerets-of-maiming.png",
+    "name": "보강된 암영 학살자 쇠구두",
+    "required": "환상 석판 495개\n암영 강화섬유\n(3층 낱장 x 4)",
+    "type": "발"
+  },
+
+  "edengraceSandalsOfStriking": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-sandals-of-striking.png",
+    "name": "에덴의 은총 타격대 샌들",
+    "required": "2층 낱장 x 6",
+    "type": "발"
+  },
+  "augmentedDeepshadowGreavesOfStriking": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-greaves-of-striking.png",
+    "name": "보강된 암영 타격대 갑주장화",
+    "required": "환상 석판 495개\n암영 강화섬유\n(3층 낱장 x 4)",
+    "type": "발"
+  },
+
+  "edengraceThighbootsOfScouting": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-thighboots-of-scouting.png",
+    "name": "에덴의 은총 정찰대 허벅지장화",
+    "required": "2층 낱장 x 6",
+    "type": "발"
+  },
+  "augmentedDeepshadowGreavesOfScouting": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-greaves-of-scouting.png",
+    "name": "보강된 암영 정찰대 갑주장화",
+    "required": "환상 석판 495개\n암영 강화섬유\n(3층 낱장 x 4)",
+    "type": "발"
+  },
+
+  "================================================== Feet: Physical Ranged ==================================================": {},
+  "edengraceGreavesOfAiming": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-greaves-of-aiming.png",
+    "name": "에덴의 은총 유격대 갑주장화",
+    "required": "2층 낱장 x 6",
+    "type": "발",
+    "stats": {
+      "main": 303,
+      "ch": 185,
+      "det": 264
+    }
+  },
+
+  "================================================== Feet: Magic Ranged ==================================================": {},
+  "edengraceThighbootsOfCasting": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-thighboots-of-casting.png",
+    "name": "에덴의 은총 마술사 허벅지장화",
+    "required": "2층 낱장 x 6",
+    "type": "발",
+    "stats": {
+      "main": 303,
+      "det": 185,
+      "sps": 264
+    }
+  },
+  "augmentedDeepshadowGreavesOfCasting": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-greaves-of-casting.png",
+    "name": "보강된 암영 마술사 갑주장화",
+    "required": "환상 석판 495개\n암영 강화섬유\n(3층 낱장 x 4)",
+    "type": "발",
+    "stats": {
+      "main": 303,
+      "ch": 185,
+      "dh": 264
+    }
+  },
+
+  "================================================== Earrings: Tank ==================================================": {},
+  "edengraceEarringOfFending": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-earring-of-fending.png",
+    "name": "에덴의 은총 수호자 귀걸이",
+    "required": "1층 낱장 x 4",
+    "type": "귀걸이"
+  },
+  "augmentedDeepshadowEarringOfFending": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-earring-of-fending.png",
+    "name": "보강된 암영 수호자 귀걸이",
+    "required": "환상 석판 375개\n암영 경화약\n(2층 낱장 x 4)",
+    "type": "귀걸이"
+  },
+
+  "================================================== Earrings: Healer ==================================================": {},
+  "augmentedDeepshadowEarringOfHealing": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-earring-of-healing.png",
+    "name": "보강된 암영 치유사 귀걸이",
+    "required": "환상 석판 375개\n암영 경화약\n(2층 낱장 x 4)",
+    "type": "귀걸이",
+    "stats": {
+      "main": 227,
+      "ch": 198,
+      "det": 139
+    }
+  },
+
+  "================================================== Earrings: Strength ==================================================": {},
+  "edengraceEarringOfSlaying": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-earring-of-slaying.png",
+    "name": "에덴의 은총 공격대 귀걸이",
+    "required": "1층 낱장 x 4",
+    "type": "귀걸이"
+  },
+  "augmentedDeepshadowEarringOfSlaying": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-earring-of-slaying.png",
+    "name": "보강된 암영 공격대 귀걸이",
+    "required": "환상 석판 375개\n암영 경화약\n(2층 낱장 x 4)",
+    "type": "귀걸이"
+  },
+
+  "================================================== Earrings: Dexterity ==================================================": {},
+  "edengraceEarringOfAiming": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-earring-of-aiming.png",
+    "name": "에덴의 은총 유격대 귀걸이",
+    "required": "1층 낱장 x 4",
+    "type": "귀걸이",
+    "stats": {
+      "main": 227,
+      "det": 139,
+      "dh": 198
+    }
+  },
+  "augmentedDeepshadowEarringOfAiming": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-earring-of-aiming.png",
+    "name": "보강된 암영 유격대 귀걸이",
+    "required": "환상 석판 375개\n암영 경화약\n(2층 낱장 x 4)",
+    "type": "귀걸이",
+    "stats": {
+      "main": 227,
+      "ch": 139,
+      "sks": 198
+    }
+  },
+
+  "================================================== Earrings: Intelligence ==================================================": {},
+  "edengraceEarringOfCasting": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-earring-of-casting.png",
+    "name": "에덴의 은총 마술사 귀걸이",
+    "required": "1층 낱장 x 4",
+    "type": "귀걸이",
+    "stats": {
+      "main": 227,
+      "det": 198,
+      "dh": 139
+    }
+  },
+  "augmentedDeepshadowEarringOfCasting": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-earring-of-casting.png",
+    "name": "보강된 암영 마술사 귀걸이",
+    "required": "환상 석판 375개\n암영 경화약\n(2층 낱장 x 4)",
+    "type": "귀걸이",
+    "stats": {
+      "main": 227,
+      "ch": 198,
+      "sps": 139
+    }
+  },
+
+  "================================================== Necklace: Tank ==================================================": {},
+  "edengraceChokerOfFending": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-choker-of-fending.png",
+    "name": "에덴의 은총 수호자 목장식",
+    "required": "1층 낱장 x 4",
+    "type": "목걸이"
+  },
+  "augmentedDeepshadowNecklaceOfFending": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-necklace-of-fending.png",
+    "name": "보강된 암영 수호자 목걸이",
+    "required": "환상 석판 375개\n암영 경화약\n(2층 낱장 x 4)",
+    "type": "목걸이"
+  },
+
+  "================================================== Necklace: Healer ==================================================": {},
+  "edengraceChokerOfHealing": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-choker-of-healing.png",
+    "name": "에덴의 은총 치유사 목장식",
+    "required": "1층 낱장 x 4",
+    "type": "목걸이",
+    "stats": {
+      "main": 227,
+      "det": 139,
+      "sps": 198
+    }
+  },
+  "augmentedDeepshadowNecklaceOfHealing": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-necklace-of-healing.png",
+    "name": "보강된 암영 치유사 목걸이",
+    "required": "환상 석판 375개\n암영 경화약\n(2층 낱장 x 4)",
+    "type": "목걸이",
+    "stats": {
+      "main": 227,
+      "ch": 139,
+      "pie": 198
+    }
+  },
+
+  "================================================== Necklace: Strength ==================================================": {},
+  "edengraceChokerOfSlaying": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-choker-of-slaying.png",
+    "name": "에덴의 은총 공격대 목장식",
+    "required": "1층 낱장 x 4",
+    "type": "목걸이"
+  },
+
+  "================================================== Necklace: Dexterity ==================================================": {},
+  "edengraceChokerOfAiming": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-choker-of-aiming.png",
+    "name": "에덴의 은총 유격대 목장식",
+    "required": "1층 낱장 x 4",
+    "type": "목걸이",
+    "stats": {
+      "main": 227,
+      "ch": 139,
+      "sks": 198
+    }
+  },
+  "augmentedDeepshadowNecklaceOfAiming": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-necklace-of-aiming.png",
+    "name": "보강된 암영 유격대 목걸이",
+    "required": "환상 석판 375개\n암영 경화약\n(2층 낱장 x 4)",
+    "type": "목걸이",
+    "stats": {
+      "main": 227,
+      "det": 198,
+      "dh": 139
+    }
+  },
+
+  "================================================== Necklace: Intelligence ==================================================": {},
+  "edengraceChokerOfCasting": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-choker-of-casting.png",
+    "name": "에덴의 은총 마술사 목장식",
+    "required": "1층 낱장 x 4",
+    "type": "목걸이",
+    "stats": {
+      "main": 227,
+      "det": 139,
+      "sps": 198
+    }
+  },
+  "augmentedDeepshadowNecklaceOfCasting": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-necklace-of-casting.png",
+    "name": "보강된 암영 마술사 목걸이",
+    "required": "환상 석판 375개\n암영 경화약\n(2층 낱장 x 4)",
+    "type": "목걸이",
+    "stats": {
+      "main": 227,
+      "ch": 198,
+      "dh": 139
+    }
+  },
+
+  "================================================== Bracelets: Tank ==================================================": {},
+  "edengraceBraceletOfFending": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-bracelet-of-fending.png",
+    "name": "에덴의 은총 수호자 팔찌",
+    "required": "1층 낱장 x 4",
+    "type": "팔찌"
+  },
+  "augmentedDeepshadowBraceletOfFending": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-bracelet-of-fending.png",
+    "name": "보강된 암영 수호자 팔찌",
+    "required": "환상 석판 375개\n암영 경화약\n(2층 낱장 x 4)",
+    "type": "팔찌"
+  },
+
+  "================================================== Bracelets: Healer ==================================================": {},
+  "edengraceBraceletOfHealing": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-bracelet-of-healing.png",
+    "name": "에덴의 은총 치유사 팔찌",
+    "required": "1층 낱장 x 4",
+    "type": "팔찌",
+    "stats": {
+      "main": 227,
+      "ch": 198,
+      "pie": 139
+    }
+  },
+  "augmentedDeepshadowBraceletOfHealing": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-bracelet-of-healing.png",
+    "name": "보강된 암영 치유사 팔찌",
+    "required": "환상 석판 375개\n암영 경화약\n(2층 낱장 x 4)",
+    "type": "팔찌",
+    "stats": {
+      "main": 227,
+      "det": 139,
+      "sps": 198
+    }
+  },
+
+  "================================================== Bracelets: Strength ==================================================": {},
+  "augmentedDeepshadowBraceletOfSlaying": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-bracelet-of-slaying.png",
+    "name": "보강된 암영 공격대 팔찌",
+    "required": "환상 석판 375개\n암영 경화약\n(2층 낱장 x 4)",
+    "type": "팔찌"
+  },
+
+  "================================================== Bracelets: Dexterity ==================================================": {},
+  "edengraceBraceletOfAiming": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-bracelet-of-aiming.png",
+    "name": "에덴의 은총 유격대 팔찌",
+    "required": "1층 낱장 x 4",
+    "type": "팔찌",
+    "stats": {
+      "main": 227,
+      "det": 198,
+      "dh": 139
+    }
+  },
+  "augmentedDeepshadowBraceletOfAiming": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-bracelet-of-aiming.png",
+    "name": "보강된 암영 유격대 팔찌",
+    "required": "환상 석판 375개\n암영 경화약\n(2층 낱장 x 4)",
+    "type": "팔찌",
+    "stats": {
+      "main": 227,
+      "ch": 198,
+      "sks": 139
+    }
+  },
+
+  "================================================== Bracelets: Intelligence ==================================================": {},
+  "edengraceBraceletOfCasting": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-bracelet-of-casting.png",
+    "name": "에덴의 은총 마술사 팔찌",
+    "required": "1층 낱장 x 4",
+    "type": "팔찌",
+    "stats": {
+      "main": 227,
+      "ch": 198,
+      "sps": 139
+    }
+  },
+  "augmentedDeepshadowBraceletOfCasting": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-bracelet-of-casting.png",
+    "name": "보강된 암영 마술사 팔찌",
+    "required": "환상 석판 375개\n암영 경화약\n(2층 낱장 x 4)",
+    "type": "팔찌",
+    "stats": {
+      "main": 227,
+      "det": 198,
+      "dh": 139
+    }
+  },
+
+  "================================================== Ring: Tank ==================================================": {},
+  "edengraceRingOfFending": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-ring-of-fending.png",
+    "name": "에덴의 은총 수호자 반지",
+    "required": "1층 낱장 x 4",
+    "type": "반지"
+  },
+  "augmentedDeepshadowRingOfFending": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-ring-of-fending.png",
+    "name": "보강된 암영 수호자 반지",
+    "required": "환상 석판 375개\n암영 경화약\n(2층 낱장 x 4)",
+    "type": "반지"
+  },
+
+  "================================================== Ring: Healer ==================================================": {},
+  "edengraceRingOfHealing": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-ring-of-healing.png",
+    "name": "에덴의 은총 치유사 반지",
+    "required": "1층 낱장 x 4",
+    "type": "반지",
+    "stats": {
+      "main": 227,
+      "det": 139,
+      "pie": 198
+    }
+  },
+  "augmentedDeepshadowRingOfHealing": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-ring-of-healing.png",
+    "name": "보강된 암영 치유사 반지",
+    "required": "환상 석판 375개\n암영 경화약\n(2층 낱장 x 4)",
+    "type": "반지",
+    "stats": {
+      "main": 227,
+      "ch": 198,
+      "sps": 139
+    }
+  },
+  "deepshadowRingOfHealing": {
+    "from": "석판",
+    "iconSrc": "/icons/items/deepshadow-ring-of-healing.png",
+    "name": "암영 치유사 반지",
+    "required": "환상 석판 375개",
+    "type": "반지",
+    "stats": {
+      "main": 215,
+      "ch": 192,
+      "sps": 134
+    }
+  },
+
+  "================================================== Ring: Strength ==================================================": {},
+  "edengraceRingOfSlaying": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-ring-of-slaying.png",
+    "name": "에덴의 은총 공격대 반지",
+    "required": "1층 낱장 x 4",
+    "type": "반지"
+  },
+  "augmentedDeepshadowRingOfSlaying": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-ring-of-slaying.png",
+    "name": "보강된 암영 공격대 반지",
+    "required": "환상 석판 375개\n암영 경화약\n(2층 낱장 x 4)",
+    "type": "반지"
+  },
+
+  "================================================== Ring: Dexterity ==================================================": {},
+  "edengraceRingOfAiming": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-ring-of-aiming.png",
+    "name": "에덴의 은총 유격대 반지",
+    "required": "1층 낱장 x 4",
+    "type": "반지",
+    "stats": {
+      "main": 227,
+      "ch": 139,
+      "sks": 198
+    }
+  },
+  "augmentedDeepshadowRingOfAiming": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-ring-of-aiming.png",
+    "name": "보강된 암영 유격대 반지",
+    "required": "환상 석판 375개\n암영 경화약\n(2층 낱장 x 4)",
+    "type": "반지",
+    "stats": {
+      "main": 227,
+      "det": 198,
+      "dh": 139
+    }
+  },
+  "deepshadowRingOfAiming": {
+    "from": "석판",
+    "iconSrc": "/icons/items/deepshadow-ring-of-aiming.png",
+    "name": "암영 유격대 반지",
+    "required": "환상 석판 375개",
+    "type": "반지",
+    "stats": {
+      "main": 215,
+      "det": 192,
+      "dh": 134
+    }
+  },
+
+  "================================================== Ring: Intelligence ==================================================": {},
+  "edengraceRingOfCasting": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-ring-of-casting.png",
+    "name": "에덴의 은총 마술사 반지",
+    "required": "1층 낱장 x 4",
+    "type": "반지",
+    "stats": {
+      "main": 227,
+      "det": 139,
+      "dh": 198
+    }
+  },
+  "augmentedDeepshadowRingOfCasting": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-ring-of-casting.png",
+    "name": "보강된 암영 마술사 반지",
+    "required": "환상 석판 375개\n암영 경화약\n(2층 낱장 x 4)",
+    "type": "반지",
+    "stats": {
+      "main": 227,
+      "ch": 198,
+      "dh": 139
+    }
+  }
+}

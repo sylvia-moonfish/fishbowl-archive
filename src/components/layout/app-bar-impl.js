@@ -45,6 +45,7 @@ class AppBarImpl extends React.Component {
       <AppBar className={this.props.classes.appBar} position="fixed">
         <Toolbar variant="dense">
           <IconButton
+            aria-label="Open Menu"
             className={this.props.classes.menuButton}
             color="inherit"
             edge="start"
@@ -60,6 +61,7 @@ class AppBarImpl extends React.Component {
             </Link>
           </div>
           <IconButton
+            aria-label="Toggle Theme"
             className={this.props.classes.icon}
             onClick={this.props.toggleTheme}
           >

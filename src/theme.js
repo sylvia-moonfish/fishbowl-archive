@@ -1,15 +1,9 @@
-import { purple } from "@material-ui/core/colors";
+import purple from "@material-ui/core/colors/purple";
 import { createMuiTheme } from "@material-ui/core/styles";
 
 export const DarkTheme = createMuiTheme({
   typography: {
-    fontFamily: [
-      "Noto Sans KR",
-      "Roboto",
-      "Helvetica",
-      "Arial",
-      "sans-serif",
-    ].join(","),
+    fontFamily: "Noto Sans KR",
   },
   palette: {
     type: "dark",
@@ -21,15 +15,10 @@ export const DarkTheme = createMuiTheme({
     },
   },
 });
+
 export const LightTheme = createMuiTheme({
   typography: {
-    fontFamily: [
-      "Noto Sans KR",
-      "Roboto",
-      "Helvetica",
-      "Arial",
-      "sans-serif",
-    ].join(","),
+    fontFamily: "Noto Sans KR",
   },
   palette: {
     type: "light",

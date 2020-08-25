@@ -1,4 +1,4 @@
-import { ServerStyleSheets } from "@material-ui/styles";
+import { ServerStyleSheets } from "@material-ui/core/styles";
 
 import Document, { Head, Html, Main, NextScript } from "next/document";
 
@@ -19,18 +19,16 @@ class FishbowlDocument extends Document {
     return {
       ...initialProps,
       styles: [
-        <React.Fragment key="styles">
-          {initialProps.styles}
-          {sheets.getStyleElement()}
-        </React.Fragment>,
+        ...React.Children.toArray(initialProps.styles),
+        sheets.getStyleElement(),
       ],
     };
   }
 
   render() {
     return (
-      <Html>
-        <Head></Head>
+      <Html lang="ko">
+        <Head />
         <body>
           <Main />
           <NextScript />
