@@ -9,7 +9,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>0b0803ba-a28e-45a5-ad36-5b5d3f697f8f</ProjectGuid>
+    <ProjectGuid>1d43dee4-c5d4-494b-bec7-a7d04af632c3</ProjectGuid>
     <ProjectHome>.</ProjectHome>
     <StartupFile>
     </StartupFile>
@@ -29,115 +29,46 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include=".prettierignore">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="data\5.1\bis-calculations.json">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="data\5.1\bis-items.json">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="data\5.1\craft-actions.json">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="data\5.1\craft-items.json">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="data\5.2\bis-calculations.json">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="data\5.2\bis-items.json">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="data\main-menu.js">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="data\site-info.json">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="next.config.js">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="now.json">
-      <SubType>Code</SubType>
-    </Content>
+    <Content Include=".prettierignore" />
+    <Content Include="data\5.1\bis-calculations.json" />
+    <Content Include="data\5.1\bis-items.json" />
+    <Content Include="data\5.1\craft-actions.json" />
+    <Content Include="data\5.1\craft-items.json" />
+    <Content Include="data\5.2\bis-calculations.json" />
+    <Content Include="data\5.2\bis-items.json" />
+    <Content Include="data\main-menu.js" />
+    <Content Include="data\site-info.json" />
+    <Content Include="next.config.js" />
+    <Content Include="now.json" />
     <Content Include="package.json" />
-    <Content Include="pages\5.1\guide\bis-guide.js">
+    <Content Include="pages\5.1\guide\bis-guide.js" />
+    <Content Include="pages\5.1\guide\bis-guide\ast.js" />
+    <Content Include="pages\5.1\guide\bis-guide\blm.js" />
+    <Content Include="pages\5.1\guide\bis-guide\brd.js" />
+    <Content Include="pages\5.1\guide\bis-guide\dnc.js" />
+    <Content Include="pages\5.1\guide\bis-guide\drg.js" />
+    <Content Include="pages\5.1\guide\bis-guide\drk.js" />
+    <Content Include="pages\5.1\guide\bis-guide\gnb.js" />
+    <Content Include="pages\5.1\guide\bis-guide\mch.js" />
+    <Content Include="pages\5.1\guide\bis-guide\mnk.js" />
+    <Content Include="pages\5.1\guide\bis-guide\nin.js" />
+    <Content Include="pages\5.1\guide\bis-guide\pld.js" />
+    <Content Include="pages\5.1\guide\bis-guide\rdm.js" />
+    <Content Include="pages\5.1\guide\bis-guide\sam.js" />
+    <Content Include="pages\5.1\guide\bis-guide\sch.js" />
+    <Content Include="pages\5.1\guide\bis-guide\smn.js" />
+    <Content Include="pages\5.1\guide\bis-guide\war.js" />
+    <Content Include="pages\5.1\guide\bis-guide\whm.js" />
+    <Content Include="pages\5.1\guide\craft-guide.js" />
+    <Content Include="pages\5.2\guide\bis-guide.js" />
+    <Content Include="pages\5.2\guide\bis-guide\pld.js" />
+    <Content Include="pages\5.2\guide\bis-guide\war.js">
       <SubType>Code</SubType>
     </Content>
-    <Content Include="pages\5.1\guide\bis-guide\ast.js">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="pages\5.1\guide\bis-guide\blm.js">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="pages\5.1\guide\bis-guide\brd.js">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="pages\5.1\guide\bis-guide\dnc.js">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="pages\5.1\guide\bis-guide\drg.js">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="pages\5.1\guide\bis-guide\drk.js">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="pages\5.1\guide\bis-guide\gnb.js">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="pages\5.1\guide\bis-guide\mch.js">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="pages\5.1\guide\bis-guide\mnk.js">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="pages\5.1\guide\bis-guide\nin.js">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="pages\5.1\guide\bis-guide\pld.js">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="pages\5.1\guide\bis-guide\rdm.js">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="pages\5.1\guide\bis-guide\sam.js">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="pages\5.1\guide\bis-guide\sch.js">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="pages\5.1\guide\bis-guide\smn.js">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="pages\5.1\guide\bis-guide\war.js">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="pages\5.1\guide\bis-guide\whm.js">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="pages\5.1\guide\craft-guide.js">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="pages\5.2\guide\bis-guide.js">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="pages\5.2\guide\bis-guide\pld.js">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="pages\5.2\guide\craft-guide.js">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="pages\5.3\guide\bis-guide.js">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="pages\5.3\guide\craft-guide.js">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="pages\guide\job-guide.js">
-      <SubType>Code</SubType>
-    </Content>
+    <Content Include="pages\5.2\guide\craft-guide.js" />
+    <Content Include="pages\5.3\guide\bis-guide.js" />
+    <Content Include="pages\5.3\guide\craft-guide.js" />
+    <Content Include="pages\guide\job-guide.js" />
     <Content Include="pages\guide\job-guide\ast\5-1-bis.js" />
     <Content Include="pages\guide\job-guide\blm\5-1-bis.js" />
     <Content Include="pages\guide\job-guide\brd\5-1-bis.js" />
@@ -155,15 +86,9 @@
     <Content Include="pages\guide\job-guide\smn\5-1-bis.js" />
     <Content Include="pages\guide\job-guide\war\5-1-bis.js" />
     <Content Include="pages\guide\job-guide\whm\5-1-bis.js" />
-    <Content Include="pages\index.js">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="pages\_app.js">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="pages\_document.js">
-      <SubType>Code</SubType>
-    </Content>
+    <Content Include="pages\index.js" />
+    <Content Include="pages\_app.js" />
+    <Content Include="pages\_document.js" />
     <Content Include="public\192.png" />
     <Content Include="public\512.png" />
     <Content Include="public\header.png" />
@@ -292,6 +217,7 @@
     <Content Include="public\icons\items\eden-minor.png" />
     <Content Include="public\icons\items\edencall-mail-of-fending.png" />
     <Content Include="public\icons\items\edenchoir-bastard-sword.png" />
+    <Content Include="public\icons\items\edenchoir-battleaxe.png" />
     <Content Include="public\icons\items\edenchoir-choker-of-fending.png" />
     <Content Include="public\icons\items\edenchoir-cuisses-of-fending.png" />
     <Content Include="public\icons\items\edenchoir-gauntlets-of-fending.png" />
@@ -412,6 +338,7 @@
     <Content Include="public\icons\items\hq\neo-ishgardian-wristbands-of-fending.png" />
     <Content Include="public\icons\items\hq\sausage-and-sauerkraut.png" />
     <Content Include="public\icons\items\hq\sea-swallow-leather.png" />
+    <Content Include="public\icons\items\hq\stuffed-highland-cabbage.png" />
     <Content Include="public\icons\items\hq\swallowskin-fingerless-gloves.png" />
     <Content Include="public\icons\items\hq\swallowskin-shoes.png" />
     <Content Include="public\icons\items\hq\swallowskin-tool-belt.png" />
@@ -446,6 +373,7 @@
     <Content Include="public\icons\items\ruby-scutum.png" />
     <Content Include="public\icons\items\sausage-and-sauerkraut.png" />
     <Content Include="public\icons\items\sea-swallow-leather.png" />
+    <Content Include="public\icons\items\stuffed-highland-cabbage.png" />
     <Content Include="public\icons\items\swallowskin-fingerless-gloves.png" />
     <Content Include="public\icons\items\swallowskin-shoes.png" />
     <Content Include="public\icons\items\swallowskin-tool-belt.png" />
@@ -518,73 +446,38 @@
     <Content Include="public\patch-banners\shb\5.2.png" />
     <Content Include="public\patch-banners\shb\5.3.png" />
     <Content Include="README.md" />
-    <Content Include="src\components\common\expansion-panels.js">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="src\components\common\panel-divider.js">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="src\components\craft-guide\craft-action-card.js">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="src\components\craft-guide\craft-action-display.js">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="src\components\craft-guide\craft-action-macro-tabs.js">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="src\components\craft-guide\craft-action-macro-texts.js">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="src\components\craft-guide\craft-gear-display.js">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="src\components\craft-guide\craft-gear-stats.js">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="src\components\craft-guide\craft-material-display.js">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="src\components\icons\twitch-icon.js">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="src\components\icons\twitter-icon.js">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="src\components\icons\youtube-icon.js">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="src\components\layout\app-bar-impl.js">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="src\components\layout\drawer-impl.js">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="src\components\layout\drawer-list.js">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="src\components\page-component.js">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="src\components\redirect-component.js">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="src\theme.js">
-      <SubType>Code</SubType>
-    </Content>
+    <Content Include="src\components\common\expansion-panels.js" />
+    <Content Include="src\components\common\panel-divider.js" />
+    <Content Include="src\components\craft-guide\craft-action-card.js" />
+    <Content Include="src\components\craft-guide\craft-action-display.js" />
+    <Content Include="src\components\craft-guide\craft-action-macro-tabs.js" />
+    <Content Include="src\components\craft-guide\craft-action-macro-texts.js" />
+    <Content Include="src\components\craft-guide\craft-gear-display.js" />
+    <Content Include="src\components\craft-guide\craft-gear-stats.js" />
+    <Content Include="src\components\craft-guide\craft-material-display.js" />
+    <Content Include="src\components\icons\twitch-icon.js" />
+    <Content Include="src\components\icons\twitter-icon.js" />
+    <Content Include="src\components\icons\youtube-icon.js" />
+    <Content Include="src\components\layout\app-bar-impl.js" />
+    <Content Include="src\components\layout\drawer-impl.js" />
+    <Content Include="src\components\layout\drawer-list.js" />
+    <Content Include="src\components\page-component.js" />
+    <Content Include="src\components\redirect-component.js" />
+    <Content Include="src\theme.js" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="data\" />
     <Folder Include="data\5.1\" />
     <Folder Include="data\5.2\" />
+    <Folder Include="pages\" />
+    <Folder Include="pages\5.1\" />
     <Folder Include="pages\5.1\guide\" />
     <Folder Include="pages\5.1\guide\bis-guide\" />
+    <Folder Include="pages\5.2\" />
     <Folder Include="pages\5.2\guide\" />
     <Folder Include="pages\5.2\guide\bis-guide\" />
     <Folder Include="pages\5.3\" />
     <Folder Include="pages\5.3\guide\" />
-    <Folder Include="pages\5.2\" />
-    <Folder Include="pages\5.1\" />
     <Folder Include="pages\guide\" />
     <Folder Include="pages\guide\job-guide\" />
     <Folder Include="pages\guide\job-guide\ast\" />
@@ -615,12 +508,11 @@
     <Folder Include="public\patch-banners\" />
     <Folder Include="public\patch-banners\shb\" />
     <Folder Include="src\" />
-    <Folder Include="pages\" />
     <Folder Include="src\components\" />
-    <Folder Include="src\components\layout\" />
-    <Folder Include="src\components\icons\" />
-    <Folder Include="src\components\craft-guide\" />
     <Folder Include="src\components\common\" />
+    <Folder Include="src\components\craft-guide\" />
+    <Folder Include="src\components\icons\" />
+    <Folder Include="src\components\layout\" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
 </Project>

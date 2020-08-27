@@ -1,31 +1,24 @@
 {
   "name": "fishbowl",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "fishbowl",
   "private": true,
+  "author": {
+    "name": "sylvia-moonfish"
+  },
   "scripts": {
     "format": "prettier --write .",
     "develop": "next",
     "build": "next build",
     "start": "next start"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sylvia-moonfish/fishbowl.git"
-  },
-  "author": "sylvia-moonfish",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/sylvia-moonfish/fishbowl/issues"
-  },
-  "homepage": "https://platy.now.sh/",
   "devDependencies": {
-    "prettier": "^2.0.5"
+    "prettier": "^2.1.1"
   },
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
-    "next": "^9.5.1",
+    "next": "^9.5.2",
     "next-offline": "^5.0.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"

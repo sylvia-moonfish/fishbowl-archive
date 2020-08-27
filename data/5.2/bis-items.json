@@ -14,6 +14,20 @@
       }
     }
   },
+  "stuffedHighlandCabbage": {
+    "name": "Stuffed Highland Cabbage",
+    "iconSrc": "/icons/items/hq/stuffed-highland-cabbage.png",
+    "stats": {
+      "det": {
+        "value": 10,
+        "max": 168
+      },
+      "ch": {
+        "value": 10,
+        "max": 101
+      }
+    }
+  },
 
   "================================================== Materias ==================================================": {},
   "ch7": {
@@ -53,6 +67,15 @@
       "dh": 60
     }
   },
+  "det8": {
+    "name": "야망의 엑스마테리쟈",
+    "shortName": "의지+60",
+    "iconSrc": "/icons/items/red-viii.png",
+    "materiaNumber": 8,
+    "stats": {
+      "det": 60
+    }
+  },
   "sks8": {
     "name": "신속의 엑스마테리쟈",
     "shortName": "기시+60",
@@ -65,6 +88,21 @@
 
   "================================================== Weapon: Tank ==================================================": {},
   "================================================== Weapon: PLD ==================================================": {},
+  "edengraceBastardSword": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-bastard-sword.png",
+    "name": "에덴의 은총 바스타드소드",
+    "required": "4층 낱장 x 5",
+    "type": "무기",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "wd": 122,
+      "main": 389,
+      "ch": 234,
+      "det": 334
+    }
+  },
   "neoIshgardianSword": {
     "from": "제작",
     "iconSrc": "/icons/items/hq/neo-ishgardian-sword.png",
@@ -153,7 +191,51 @@
     }
   },
 
+  "================================================== Weapon: WAR ==================================================": {},
+  "edengraceBattleaxe": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-battleaxe.png",
+    "name": "에덴의 은총 전투도끼",
+    "required": "4층 낱장 x 8",
+    "type": "무기",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "main": 544,
+      "ch": 467,
+      "sks": 327
+    }
+  },
+  "edenchoirBattleaxe": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edenchoir-battleaxe.png",
+    "name": "Edenchoir Battleaxe",
+    "required": "4층 낱장 x 8",
+    "type": "무기",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "main": 634,
+      "ch": 498,
+      "det": 349
+    }
+  },
+
   "================================================== Head: Tank ==================================================": {},
+  "augmentedDeepshadowHelmOfFending": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-helm-of-fending.png",
+    "name": "보강된 암영 수호자 투구",
+    "required": "석판 495개\n강화섬유\n(3층 낱장 x 4)",
+    "type": "머리",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "main": 303,
+      "ch": 264,
+      "ten": 185
+    }
+  },
   "neoIshgardianCapOfFending": {
     "from": "제작",
     "iconSrc": "/icons/items/hq/neo-ishgardian-cap-of-fending.png",
@@ -212,6 +294,34 @@
   },
 
   "================================================== Body: Tank ==================================================": {},
+  "edengraceMailOfFending": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-mail-of-fending.png",
+    "name": "에덴의 은총 수호자 갑옷",
+    "required": "4층 낱장 x 8",
+    "type": "몸통",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "main": 492,
+      "ch": 300,
+      "sks": 429
+    }
+  },
+  "augmentedDeepshadowCuirassOfFending": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-cuirass-of-fending.png",
+    "name": "보강된 암영 수호자 전투흉갑",
+    "required": "석판 825개\n강화섬유\n(3층 낱장 x 4)",
+    "type": "몸통",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "main": 492,
+      "ch": 300,
+      "det": 429
+    }
+  },
   "neoIshgardianTopOfFending": {
     "from": "제작",
     "iconSrc": "/icons/items/hq/neo-ishgardian-top-of-fending.png",
@@ -256,6 +366,20 @@
   },
 
   "================================================== Hands: Tank ==================================================": {},
+  "edengraceGauntletsOfFending": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-gauntlets-of-fending.png",
+    "name": "에덴의 은총 수호자 건틀릿",
+    "required": "2층 낱장 x 6",
+    "type": "손",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "main": 303,
+      "ch": 264,
+      "det": 185
+    }
+  },
   "neoIshgardianGauntletsOfFending": {
     "from": "제작",
     "iconSrc": "/icons/items/hq/neo-ishgardian-gauntlets-of-fending.png",
@@ -286,6 +410,20 @@
   },
 
   "================================================== Waist: Tank ==================================================": {},
+  "augmentedDeepshadowTassetsOfFending": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-tassets-of-fending.png",
+    "name": "보강된 암영 수호자 허리갑옷",
+    "required": "석판 375개\n경화약\n(2층 낱장 x 4)",
+    "type": "허리",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "main": 227,
+      "ch": 198,
+      "sks": 139
+    }
+  },
   "neoIshgardianPlateBeltOfFending": {
     "from": "제작",
     "iconSrc": "/icons/items/hq/neo-ishgardian-plate-belt-of-fending.png",
@@ -316,6 +454,20 @@
   },
 
   "================================================== Legs: Tank ==================================================": {},
+  "augmentedDeepshadowBreechesOfFending": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-breeches-of-fending.png",
+    "name": "보강된 암영 수호자 바지",
+    "required": "석판 825개\n강화섬유\n(3층 낱장 x 4)",
+    "type": "다리",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "main": 492,
+      "ch": 300,
+      "det": 429
+    }
+  },
   "neoIshgardianBottomsOfFending": {
     "from": "제작",
     "iconSrc": "/icons/items/hq/neo-ishgardian-bottoms-of-fending.png",
@@ -346,6 +498,20 @@
   },
 
   "================================================== Feet: Tank ==================================================": {},
+  "edengraceGreavesOfFending": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-greaves-of-fending.png",
+    "name": "에덴의 은총 수호자 갑주장화",
+    "required": "2층 낱장 x 6",
+    "type": "발",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "main": 303,
+      "ch": 264,
+      "sks": 185
+    }
+  },
   "neoIshgardianSolleretsOfFending": {
     "from": "제작",
     "iconSrc": "/icons/items/hq/neo-ishgardian-sollerets-of-fending.png",
@@ -376,6 +542,34 @@
   },
 
   "================================================== Earrings: Tank ==================================================": {},
+  "edengraceEarringOfFending": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-earring-of-fending.png",
+    "name": "에덴의 은총 수호자 귀걸이",
+    "required": "1층 낱장 x 4",
+    "type": "귀걸이",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "main": 227,
+      "ch": 198,
+      "ten": 139
+    }
+  },
+  "augmentedDeepshadowEarringOfFending": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-earring-of-fending.png",
+    "name": "보강된 암영 수호자 귀걸이",
+    "required": "석판 375개\n경화약\n(2층 낱장 x 4)",
+    "type": "귀걸이",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "main": 227,
+      "ch": 139,
+      "sks": 198
+    }
+  },
   "neoIshgardianEarringOfFending": {
     "from": "제작",
     "iconSrc": "/icons/items/hq/neo-ishgardian-earring-of-fending.png",
@@ -406,6 +600,20 @@
   },
 
   "================================================== Necklace: Tank ==================================================": {},
+  "augmentedDeepshadowNecklaceOfFending": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-necklace-of-fending.png",
+    "name": "보강된 암영 수호자 목걸이",
+    "required": "석판 375개\n경화약\n(2층 낱장 x 4)",
+    "type": "목걸이",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "main": 227,
+      "ch": 198,
+      "ten": 139
+    }
+  },
   "neoIshgardianChokerOfFending": {
     "from": "제작",
     "iconSrc": "/icons/items/hq/neo-ishgardian-choker-of-fending.png",
@@ -436,6 +644,20 @@
   },
 
   "================================================== Bracelets: Tank ==================================================": {},
+  "edengraceBraceletOfFending": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-bracelet-of-fending.png",
+    "name": "에덴의 은총 수호자 팔찌",
+    "required": "1층 낱장 x 4",
+    "type": "팔찌",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "main": 227,
+      "ch": 198,
+      "det": 139
+    }
+  },
   "neoIshgardianWristbandsOfFending": {
     "from": "제작",
     "iconSrc": "/icons/items/hq/neo-ishgardian-wristbands-of-fending.png",
@@ -466,6 +688,34 @@
   },
 
   "================================================== Ring: Tank ==================================================": {},
+  "edengraceRingOfFending": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-ring-of-fending.png",
+    "name": "에덴의 은총 수호자 반지",
+    "required": "1층 낱장 x 4",
+    "type": "반지",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "main": 227,
+      "ch": 139,
+      "ten": 198
+    }
+  },
+  "augmentedDeepshadowRingOfFending": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-ring-of-fending.png",
+    "name": "보강된 암영 수호자 반지",
+    "required": "석판 375개\n경화약\n(2층 낱장 x 4)",
+    "type": "반지",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "main": 227,
+      "det": 198,
+      "ten": 139
+    }
+  },
   "neoIshgardianRingOfFending": {
     "from": "제작",
     "iconSrc": "/icons/items/hq/neo-ishgardian-ring-of-fending.png",

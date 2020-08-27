@@ -40,7 +40,6 @@ const jobs = {
     {
       name: "전사",
       initial: "war",
-      disabled: true,
     },
     {
       name: "암흑기사",
