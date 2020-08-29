@@ -29,7 +29,8 @@ import { withRouter } from "next/router";
 import React from "react";
 
 import BisCalculations from "../../../../data/5.2/bis-calculations";
-import BisItems from "../../../../data/5.2/bis-items";
+import BisItemsCommon from "../../../../data/5.2/bis-items-common";
+import BisItemsTank from "../../../../data/5.2/bis-items-tank";
 import SiteInfo from "../../../../data/site-info";
 import PageComponent from "../../../../src/components/page-component";
 
@@ -576,6 +577,11 @@ class Drk extends PageComponent {
   }
 
   render() {
+    const BisItems = {
+      ...BisItemsCommon,
+      ...BisItemsTank,
+    };
+
     gearSets.forEach((gearSet, gearSetIndex) => {
       gearSet.index = gearSetIndex;
       gearSet.attributes.main = Math.floor(

@@ -30,7 +30,7 @@ import React from "react";
 
 import BisCalculations from "../../../../data/5.2/bis-calculations";
 import BisItemsCommon from "../../../../data/5.2/bis-items-common";
-import BisItemsTank from "../../../../data/5.2/bis-items-tank";
+import BisItemsHealer from "../../../../data/5.2/bis-items-healer";
 import SiteInfo from "../../../../data/site-info";
 import PageComponent from "../../../../src/components/page-component";
 
@@ -57,309 +57,153 @@ const styles = (theme) => ({
 });
 
 const pageData = {
-  title: "5.2 나이트 BiS 가이드",
-  description: "파이널 판타지 14 패치 5.2 나이트 BiS 가이드.",
+  title: "5.2 백마도사 BiS 가이드",
+  description: "파이널 판타지 14 패치 5.2 백마도사 BiS 가이드.",
 };
 
 const gearSets = [
   {
-    type: "firstWeek",
-    description: "노금단 제작 세트.",
+    type: "5.2bis",
+    description: "신앙 838 추천 세트.",
     attributes: {
       main: 0,
       wd: 0,
       ch: 0,
       dh: 0,
       det: 0,
-      sks: 0,
-      ten: 0,
+      sps: 0,
+      pie: 0,
     },
-    dps: 9146.1,
+    dps: 11899.14,
+    hps: 0,
     gcd: 0,
-    foodId: "sausageAndSauerkraut",
+    foodId: "herringPie",
     dh: 0,
     ch: 0,
+    mpRegen: 0,
     dialog: {
       intro:
-        "1주차 풀금단을 하기 부담스러우신 분들을 위한 노금단 제작 세트. 1~2층 트라이에 적합.",
+        "무난하게 사용 가능한 추천 장비 세트. 조금 더 높은 신앙을 선호하시는 분들은 신앙 1049 장비 세트 참조.",
       gears: [
         {
-          itemId: "neoIshgardianSword",
-          materiaIds: ["dh8", "dh8"],
-        },
-        {
-          itemId: "neoIshgardianShield",
-          materiaIds: [],
-        },
-        {
-          itemId: "neoIshgardianCapOfFending",
-          materiaIds: ["dh8", "dh8"],
-        },
-        {
-          itemId: "neoIshgardianTopOfFending",
+          itemId: "edenchoirCane",
           materiaIds: ["ch8", "ch8"],
         },
         {
-          itemId: "neoIshgardianGauntletsOfFending",
+          itemId: "edenchoirWingsOfHealing",
           materiaIds: ["dh8", "dh8"],
         },
         {
-          itemId: "neoIshgardianPlateBeltOfFending",
-          materiaIds: ["ch8"],
-        },
-        {
-          itemId: "neoIshgardianBottomsOfFending",
+          itemId: "augmentedCrystariumRobeOfHealing",
           materiaIds: ["ch8", "ch8"],
         },
         {
-          itemId: "neoIshgardianSolleretsOfFending",
+          itemId: "edenchoirArmletsOfHealing",
+          materiaIds: ["dh8", "dh8"],
+        },
+        {
+          itemId: "augmentedCrystariumBeltOfHealing",
+          materiaIds: ["dh8", "dh8"],
+        },
+        {
+          itemId: "edenchoirBreechesOfHealing",
           materiaIds: ["ch8", "ch8"],
         },
         {
-          itemId: "neoIshgardianEarringOfFending",
-          materiaIds: ["ch8"],
-        },
-        {
-          itemId: "neoIshgardianChokerOfFending",
-          materiaIds: ["ch8"],
-        },
-        {
-          itemId: "neoIshgardianWristbandsOfFending",
-          materiaIds: ["ch8"],
-        },
-        {
-          itemId: "neoIshgardianRingOfFending",
-          materiaIds: ["dh8"],
-        },
-        {
-          itemId: "neoIshgardianRingOfFending",
-          materiaIds: ["dh8"],
-        },
-      ],
-    },
-  },
-  {
-    type: "firstWeek",
-    description: "노금단 + 극만신 + 일반 레이드 세트.",
-    attributes: {
-      main: 0,
-      wd: 0,
-      ch: 0,
-      dh: 0,
-      det: 0,
-      sks: 0,
-      ten: 0,
-    },
-    dps: 9373.1,
-    gcd: 0,
-    foodId: "sausageAndSauerkraut",
-    dh: 0,
-    ch: 0,
-    dialog: {
-      intro:
-        "1주차 풀금단을 하기 부담스러우신 분들을 위한 노금단 세트에 첫 주에 획득 가능한 극만신 무기와 일반 레이드 상의, 그리고 석판 반지를 조합한 세트. 1~3층 트라이에 적합. 실력에 자신이 있다면 4층도 도전 가능.",
-      gears: [
-        {
-          itemId: "rubyBroadsword",
+          itemId: "augmentedCrystariumShoesOfHealing",
           materiaIds: ["dh8", "dh8"],
         },
         {
-          itemId: "rubyScutum",
-          materiaIds: [],
-        },
-        {
-          itemId: "neoIshgardianCapOfFending",
+          itemId: "edenchoirEarringsOfHealing",
           materiaIds: ["dh8", "dh8"],
         },
         {
-          itemId: "edencallMailOfFending",
-          materiaIds: ["dh8", "dh8"],
-        },
-        {
-          itemId: "neoIshgardianGauntletsOfFending",
-          materiaIds: ["dh8", "dh8"],
-        },
-        {
-          itemId: "neoIshgardianPlateBeltOfFending",
-          materiaIds: ["dh8"],
-        },
-        {
-          itemId: "neoIshgardianBottomsOfFending",
-          materiaIds: ["ch8", "ch8"],
-        },
-        {
-          itemId: "neoIshgardianSolleretsOfFending",
-          materiaIds: ["ch8", "ch8"],
-        },
-        {
-          itemId: "neoIshgardianEarringOfFending",
-          materiaIds: ["ch8"],
-        },
-        {
-          itemId: "neoIshgardianChokerOfFending",
-          materiaIds: ["ch8"],
-        },
-        {
-          itemId: "neoIshgardianWristbandsOfFending",
-          materiaIds: ["ch8"],
-        },
-        {
-          itemId: "crystariumRingOfFending",
+          itemId: "augmentedCrystariumChokerOfHealing",
           materiaIds: ["ch8", "dh8"],
         },
         {
-          itemId: "neoIshgardianRingOfFending",
-          materiaIds: ["dh8"],
+          itemId: "edenchoirWristbandOfHealing",
+          materiaIds: ["dh8", "dh8"],
+        },
+        {
+          itemId: "edenchoirRingOfHealing",
+          materiaIds: ["dh8", "dh8"],
+        },
+        {
+          itemId: "augmentedCrystariumRingOfHealing",
+          materiaIds: ["ch8", "sps8"],
         },
       ],
     },
   },
   {
-    type: "firstWeek",
-    description: "풀금단 제작 세트.",
+    type: "5.2bis",
+    description: "신앙 838 빠른 마시 세트.",
     attributes: {
       main: 0,
       wd: 0,
       ch: 0,
       dh: 0,
       det: 0,
-      sks: 0,
-      ten: 0,
+      sps: 0,
+      pie: 0,
     },
-    dps: 9653.4,
+    dps: 11897.59,
+    hps: 0,
     gcd: 0,
-    foodId: "sausageAndSauerkraut",
+    foodId: "herringPie",
     dh: 0,
     ch: 0,
+    mpRegen: 0,
     dialog: {
-      intro: "1주차 풀금단 제작 세트. 1~4층 트라이에 적합.",
+      intro: "빠른 마시를 선호하시는 분들을 위한 장비 세트.",
       gears: [
         {
-          itemId: "neoIshgardianSword",
-          materiaIds: ["dh8", "dh8", "dh8", "dh7", "dh7"],
+          itemId: "edenchoirCane",
+          materiaIds: ["ch8", "ch8"],
         },
         {
-          itemId: "neoIshgardianShield",
-          materiaIds: [],
-        },
-        {
-          itemId: "neoIshgardianCapOfFending",
-          materiaIds: ["dh8", "dh8", "dh8", "dh7", "dh7"],
-        },
-        {
-          itemId: "neoIshgardianTopOfFending",
-          materiaIds: ["ch8", "ch8", "ch8", "ch7", "dh7"],
-        },
-        {
-          itemId: "neoIshgardianGauntletsOfFending",
-          materiaIds: ["dh8", "dh8", "dh8", "dh7", "dh7"],
-        },
-        {
-          itemId: "neoIshgardianPlateBeltOfFending",
-          materiaIds: ["ch8", "dh8", "dh7", "dh7", "dh7"],
-        },
-        {
-          itemId: "neoIshgardianBottomsOfFending",
-          materiaIds: ["ch8", "ch8", "dh8", "dh7", "dh7"],
-        },
-        {
-          itemId: "neoIshgardianSolleretsOfFending",
-          materiaIds: ["ch8", "ch8", "ch8", "ch7", "ch7"],
-        },
-        {
-          itemId: "neoIshgardianEarringOfFending",
-          materiaIds: ["ch8", "ch8", "ch7", "ch7", "ch7"],
-        },
-        {
-          itemId: "neoIshgardianChokerOfFending",
-          materiaIds: ["ch8", "dh8", "dh7", "dh7", "dh7"],
-        },
-        {
-          itemId: "neoIshgardianWristbandsOfFending",
-          materiaIds: ["ch8", "ch8", "ch7", "ch7", "ch7"],
-        },
-        {
-          itemId: "neoIshgardianRingOfFending",
-          materiaIds: ["dh8", "dh8", "dh7", "dh7", "dh7"],
-        },
-        {
-          itemId: "neoIshgardianRingOfFending",
-          materiaIds: ["dh8", "dh8", "dh7", "dh7", "dh7"],
-        },
-      ],
-    },
-  },
-  {
-    type: "firstWeek",
-    description: "풀금단 + 극만신 + 일반 레이드 세트.",
-    attributes: {
-      main: 0,
-      wd: 0,
-      ch: 0,
-      dh: 0,
-      det: 0,
-      sks: 0,
-      ten: 0,
-    },
-    dps: 9771.9,
-    gcd: 0,
-    foodId: "sausageAndSauerkraut",
-    dh: 0,
-    ch: 0,
-    dialog: {
-      intro:
-        "1주차 풀금단 제작 세트에 첫 주에 획득 가능한 극만신 무기와 일반 레이드 상의, 그리고 석판 반지를 조합한 세트. 1~4층 트라이에 적합.",
-      gears: [
-        {
-          itemId: "rubyBroadsword",
+          itemId: "edenchoirWingsOfHealing",
           materiaIds: ["dh8", "dh8"],
         },
         {
-          itemId: "rubyScutum",
-          materiaIds: [],
+          itemId: "augmentedCrystariumRobeOfHealing",
+          materiaIds: ["ch8", "ch8"],
         },
         {
-          itemId: "neoIshgardianCapOfFending",
-          materiaIds: ["dh8", "dh8", "dh8", "dh7", "dh7"],
+          itemId: "edenchoirArmletsOfHealing",
+          materiaIds: ["sps8", "sps8"],
         },
         {
-          itemId: "edencallMailOfFending",
+          itemId: "augmentedCrystariumBeltOfHealing",
+          materiaIds: ["sps8", "sps8"],
+        },
+        {
+          itemId: "edenchoirBreechesOfHealing",
+          materiaIds: ["ch8", "ch8"],
+        },
+        {
+          itemId: "augmentedCrystariumShoesOfHealing",
           materiaIds: ["dh8", "dh8"],
         },
         {
-          itemId: "neoIshgardianGauntletsOfFending",
-          materiaIds: ["dh8", "dh8", "dh8", "dh7", "dh7"],
+          itemId: "edenchoirEarringsOfHealing",
+          materiaIds: ["dh8", "dh8"],
         },
         {
-          itemId: "neoIshgardianPlateBeltOfFending",
-          materiaIds: ["ch8", "dh8", "dh7", "dh7", "dh7"],
+          itemId: "augmentedCrystariumChokerOfHealing",
+          materiaIds: ["ch8", "dh8"],
         },
         {
-          itemId: "neoIshgardianBottomsOfFending",
-          materiaIds: ["ch8", "ch8", "dh8", "dh7", "dh7"],
+          itemId: "edenchoirWristbandOfHealing",
+          materiaIds: ["dh8", "dh8"],
         },
         {
-          itemId: "neoIshgardianSolleretsOfFending",
-          materiaIds: ["ch8", "ch8", "ch8", "ch7", "ch7"],
+          itemId: "edenchoirRingOfHealing",
+          materiaIds: ["dh8", "dh8"],
         },
         {
-          itemId: "neoIshgardianEarringOfFending",
-          materiaIds: ["ch8", "ch8", "ch7", "ch7", "ch7"],
-        },
-        {
-          itemId: "neoIshgardianChokerOfFending",
-          materiaIds: ["ch8", "dh8", "dh7", "dh7", "dh7"],
-        },
-        {
-          itemId: "neoIshgardianWristbandsOfFending",
-          materiaIds: ["ch8", "ch8", "ch7", "ch7", "ch7"],
-        },
-        {
-          itemId: "neoIshgardianRingOfFending",
-          materiaIds: ["dh8", "dh8", "dh7", "dh7", "dh7"],
-        },
-        {
-          itemId: "crystariumRingOfFending",
+          itemId: "augmentedCrystariumRingOfHealing",
           materiaIds: ["ch8", "dh8"],
         },
       ],
@@ -367,311 +211,154 @@ const gearSets = [
   },
   {
     type: "5.2bis",
-    description: "글쿨 2.42초 암기/건브 호환 세트.",
+    description: "신앙 1049 장비 세트.",
     attributes: {
       main: 0,
       wd: 0,
       ch: 0,
       dh: 0,
       det: 0,
-      sks: 0,
-      ten: 0,
+      sps: 0,
+      pie: 0,
     },
-    dps: 10821.3,
+    dps: 11805.16,
+    hps: 0,
     gcd: 0,
-    foodId: "sausageAndSauerkraut",
+    foodId: "herringPie",
     dh: 0,
     ch: 0,
+    mpRegen: 0,
     dialog: {
       intro:
-        "글로벌 쿨다운을 2.42초로 맞추고 나이트의 스킬 로테이션에 따라 DPS를 최적화한 장비 세트. 암흑기사 2.43초 장비 세트와 건브레이커 2.42초 장비 세트와도 호환되어 전사를 제외한 3탱 공용으로 사용하기 좋음.",
+        "신앙에 더 투자한 장비 세트. 조금 더 높은 신앙을 선호하시는 분들께 추천.",
       gears: [
         {
-          itemId: "edenchoirBastardSword",
-          materiaIds: ["sks8", "sks8"],
+          itemId: "edenchoirCane",
+          materiaIds: ["ch8", "ch8"],
         },
         {
-          itemId: "edenchoirScutum",
-          materiaIds: [],
+          itemId: "edenchoirWingsOfHealing",
+          materiaIds: ["dh8", "dh8"],
         },
         {
-          itemId: "augmentedCrystariumCircletOfFending",
+          itemId: "augmentedCrystariumRobeOfHealing",
+          materiaIds: ["ch8", "ch8"],
+        },
+        {
+          itemId: "edenchoirArmletsOfHealing",
+          materiaIds: ["dh8", "dh8"],
+        },
+        {
+          itemId: "augmentedCrystariumBeltOfHealing",
+          materiaIds: ["dh8", "dh8"],
+        },
+        {
+          itemId: "edenchoirBreechesOfHealing",
+          materiaIds: ["ch8", "ch8"],
+        },
+        {
+          itemId: "augmentedCrystariumShoesOfHealing",
+          materiaIds: ["dh8", "dh8"],
+        },
+        {
+          itemId: "edenchoirEarringsOfHealing",
+          materiaIds: ["dh8", "dh8"],
+        },
+        {
+          itemId: "augmentedCrystariumChokerOfHealing",
           materiaIds: ["ch8", "dh8"],
         },
         {
-          itemId: "augmentedCrystariumTabardOfFending",
-          materiaIds: ["dh8", "dh8"],
-        },
-        {
-          itemId: "edenchoirGauntletsOfFending",
+          itemId: "augmentedCrystariumWristbandOfHealing",
           materiaIds: ["ch8", "dh8"],
         },
         {
-          itemId: "edenchoirTassetsOfFending",
+          itemId: "edenchoirRingOfHealing",
           materiaIds: ["dh8", "dh8"],
         },
         {
-          itemId: "edenchoirCuissesOfFending",
-          materiaIds: ["dh8", "dh8"],
-        },
-        {
-          itemId: "augmentedCrystariumThighbootsOfFending",
-          materiaIds: ["dh8", "dh8"],
-        },
-        {
-          itemId: "augmentedCrystariumEarringsOfFending",
-          materiaIds: ["dh8", "dh8"],
-        },
-        {
-          itemId: "edenchoirChokerOfFending",
-          materiaIds: ["dh8", "dh8"],
-        },
-        {
-          itemId: "augmentedCrystariumWristbandOfFending",
-          materiaIds: ["dh8", "dh8"],
-        },
-        {
-          itemId: "edenchoirRingOfFending",
-          materiaIds: ["dh8", "dh8"],
-        },
-        {
-          itemId: "augmentedCrystariumRingOfFending",
-          materiaIds: ["ch8", "dh8"],
+          itemId: "augmentedCrystariumRingOfHealing",
+          materiaIds: ["ch8", "sps8"],
         },
       ],
     },
   },
   {
     type: "5.2bis",
-    description: "글쿨 2.39초 빠른 기시 세트.",
+    description: "신앙 743 절 알렉산더 세트.",
     attributes: {
       main: 0,
       wd: 0,
       ch: 0,
       dh: 0,
       det: 0,
-      sks: 0,
-      ten: 0,
+      sps: 0,
+      pie: 0,
     },
-    dps: 10818.1,
+    dps: 9697.76,
+    hps: 0,
+    mpRegen: 0,
     gcd: 0,
-    foodId: "sausageAndSauerkraut",
+    foodId: "herringPie",
     dh: 0,
     ch: 0,
     dialog: {
-      intro:
-        "글로벌 쿨다운을 2.39초로 맞춘 장비 세트. 빠른 기시를 선호하거나 핑이 안 좋으신 분, 혹은 특정 전투를 위해 로테이션을 조절 중이신 분들께 추천.",
+      intro: "절 알렉산더용 장비 세트.",
       gears: [
         {
-          itemId: "edenchoirBastardSword",
-          materiaIds: ["sks8", "sks8"],
+          itemId: "augmentedDeepshadowSignum",
+          materiaIds: ["dh8", "dh8"],
         },
         {
-          itemId: "edenchoirScutum",
-          materiaIds: [],
-        },
-        {
-          itemId: "edenchoirHelmOfFending",
+          itemId: "edengraceTempleChainOfHealing",
           materiaIds: ["ch8", "ch8"],
         },
         {
-          itemId: "augmentedCrystariumTabardOfFending",
-          materiaIds: ["dh8", "dh8"],
-        },
-        {
-          itemId: "edenchoirGauntletsOfFending",
-          materiaIds: ["ch8", "dh8"],
-        },
-        {
-          itemId: "edenchoirTassetsOfFending",
-          materiaIds: ["dh8", "dh8"],
-        },
-        {
-          itemId: "edenchoirCuissesOfFending",
-          materiaIds: ["dh8", "dh8"],
-        },
-        {
-          itemId: "augmentedCrystariumThighbootsOfFending",
-          materiaIds: ["dh8", "dh8"],
-        },
-        {
-          itemId: "augmentedCrystariumEarringsOfFending",
-          materiaIds: ["dh8", "dh8"],
-        },
-        {
-          itemId: "edenchoirChokerOfFending",
-          materiaIds: ["dh8", "sks8"],
-        },
-        {
-          itemId: "augmentedCrystariumWristbandOfFending",
-          materiaIds: ["dh8", "sks8"],
-        },
-        {
-          itemId: "edenchoirRingOfFending",
-          materiaIds: ["dh8", "dh8"],
-        },
-        {
-          itemId: "augmentedCrystariumRingOfFending",
-          materiaIds: ["ch8", "dh8"],
-        },
-      ],
-    },
-  },
-  {
-    type: "5.2bis",
-    description: "글쿨 2.41초 절 알렉산더 세트.",
-    attributes: {
-      main: 0,
-      wd: 0,
-      ch: 0,
-      dh: 0,
-      det: 0,
-      sks: 0,
-      ten: 0,
-    },
-    dps: 8893.4,
-    gcd: 0,
-    foodId: "sausageAndSauerkraut",
-    dh: 0,
-    ch: 0,
-    dialog: {
-      intro:
-        "절 알렉산더용 장비 세트. 클리어 후에는 무기를 절 알렉산더 무기로 바꿀 것. (방패는 그대로 유지)",
-      gears: [
-        {
-          itemId: "edengraceBastardSword",
-          materiaIds: ["ch8", "dh8"],
-        },
-        {
-          itemId: "edenchoirScutum",
-          materiaIds: [],
-        },
-        {
-          itemId: "augmentedDeepshadowHelmOfFending",
-          materiaIds: ["dh8", "sks8"],
-        },
-        {
-          itemId: "edengraceMailOfFending",
+          itemId: "augmentedDeepshadowScaleMailOfHealing",
           materiaIds: ["ch8", "ch8"],
         },
         {
-          itemId: "edengraceGauntletsOfFending",
-          materiaIds: ["dh8", "dh8"],
-        },
-        {
-          itemId: "augmentedDeepshadowTassetsOfFending",
-          materiaIds: ["dh8", "dh8"],
-        },
-        {
-          itemId: "augmentedDeepshadowBreechesOfFending",
+          itemId: "edengraceArmletsOfHealing",
           materiaIds: ["ch8", "ch8"],
         },
         {
-          itemId: "edengraceGreavesOfFending",
+          itemId: "edengraceTassetsOfHealing",
           materiaIds: ["dh8", "dh8"],
         },
         {
-          itemId: "edengraceEarringOfFending",
+          itemId: "edengracePantaloonsOfHealing",
           materiaIds: ["dh8", "dh8"],
         },
         {
-          itemId: "augmentedDeepshadowNecklaceOfFending",
-          materiaIds: ["dh8", "dh8"],
-        },
-        {
-          itemId: "edengraceBraceletOfFending",
-          materiaIds: ["dh8", "dh8"],
-        },
-        {
-          itemId: "edengraceRingOfFending",
+          itemId: "edengraceSandalsOfHealing",
           materiaIds: ["ch8", "dh8"],
         },
         {
-          itemId: "augmentedDeepshadowRingOfFending",
+          itemId: "augmentedDeepshadowEarringOfHealing",
+          materiaIds: ["dh8", "dh8"],
+        },
+        {
+          itemId: "edengraceChokerOfHealing",
           materiaIds: ["ch8", "ch8"],
         },
-      ],
-    },
-  },
-  {
-    type: "5.25bis",
-    description: "글쿨 2.42초 암기/건브 호환 세트.",
-    attributes: {
-      main: 0,
-      wd: 0,
-      ch: 0,
-      dh: 0,
-      det: 0,
-      sks: 0,
-      ten: 0,
-    },
-    dps: 10831.7,
-    gcd: 0,
-    foodId: "sausageAndSauerkraut",
-    dh: 0,
-    ch: 0,
-    dialog: {
-      intro:
-        "패치 5.2 글쿨 2.42초 장비 세트에서 머리 장비와 무기 마테를 바꾼 장비 세트. 약간의 DPS 향상을 기대할 수 있으나 직격 확률에 크게 의존하므로 운이 좋지 않으면 전보다 더 낮은 DPS가 나올 수도 있음.",
-      gears: [
         {
-          itemId: "edenchoirBastardSword",
+          itemId: "edengraceBraceletOfHealing",
           materiaIds: ["dh8", "dh8"],
         },
         {
-          itemId: "edenchoirScutum",
-          materiaIds: [],
-        },
-        {
-          itemId: "idealizedChevaliersTempleChain",
-          materiaIds: ["dh8", "dh8", "dh8", "sks8", "sks8"],
-        },
-        {
-          itemId: "augmentedCrystariumTabardOfFending",
+          itemId: "augmentedDeepshadowRingOfHealing",
           materiaIds: ["dh8", "dh8"],
         },
         {
-          itemId: "edenchoirGauntletsOfFending",
-          materiaIds: ["ch8", "dh8"],
-        },
-        {
-          itemId: "edenchoirTassetsOfFending",
-          materiaIds: ["dh8", "dh8"],
-        },
-        {
-          itemId: "edenchoirCuissesOfFending",
-          materiaIds: ["dh8", "dh8"],
-        },
-        {
-          itemId: "augmentedCrystariumThighbootsOfFending",
-          materiaIds: ["dh8", "dh8"],
-        },
-        {
-          itemId: "augmentedCrystariumEarringsOfFending",
-          materiaIds: ["dh8", "dh8"],
-        },
-        {
-          itemId: "edenchoirChokerOfFending",
-          materiaIds: ["dh8", "dh8"],
-        },
-        {
-          itemId: "augmentedCrystariumWristbandOfFending",
-          materiaIds: ["dh8", "dh8"],
-        },
-        {
-          itemId: "edenchoirRingOfFending",
-          materiaIds: ["dh8", "dh8"],
-        },
-        {
-          itemId: "augmentedCrystariumRingOfFending",
-          materiaIds: ["ch8", "dh8"],
+          itemId: "deepshadowRingOfHealing",
+          materiaIds: ["dh8", "det8"],
         },
       ],
     },
   },
 ];
 
-class Pld extends PageComponent {
+class Whm extends PageComponent {
   constructor(props) {
     super(props);
 
@@ -683,21 +370,23 @@ class Pld extends PageComponent {
   render() {
     const BisItems = {
       ...BisItemsCommon,
-      ...BisItemsTank,
+      ...BisItemsHealer,
     };
 
     gearSets.forEach((gearSet, gearSetIndex) => {
       gearSet.index = gearSetIndex;
       gearSet.attributes.main = Math.floor(
         Math.floor(
-          (BisCalculations.level.main * BisCalculations.pld.str) / 100
-        ) + BisCalculations.clan.str
+          (BisCalculations.level.main * BisCalculations.whm.mnd) / 100
+        ) +
+          BisCalculations.clan.mnd +
+          BisCalculations.trait
       );
       gearSet.attributes.ch = BisCalculations.level.sub;
       gearSet.attributes.dh = BisCalculations.level.sub;
       gearSet.attributes.det = BisCalculations.level.main;
-      gearSet.attributes.sks = BisCalculations.level.sub;
-      gearSet.attributes.ten = BisCalculations.level.sub;
+      gearSet.attributes.sps = BisCalculations.level.sub;
+      gearSet.attributes.pie = BisCalculations.level.main;
 
       gearSet.dialog.gears.forEach((gear) => {
         if (!BisItems[gear.itemId]) {
@@ -784,7 +473,7 @@ class Pld extends PageComponent {
           (Math.floor(
             2000 -
               Math.floor(
-                ((gearSet.attributes.sks - BisCalculations.level.sub) * 130) /
+                ((gearSet.attributes.sps - BisCalculations.level.sub) * 130) /
                   BisCalculations.level.div +
                   1000
               )
@@ -804,11 +493,44 @@ class Pld extends PageComponent {
           ((gearSet.attributes.dh - BisCalculations.level.sub) * 550) /
             BisCalculations.level.div
         ) / 10;
-      gearSet.ten =
+      gearSet.mpRegen =
         Math.floor(
-          ((gearSet.attributes.ten - BisCalculations.level.sub) * 100) /
+          ((gearSet.attributes.pie - BisCalculations.level.main) * 150) /
             BisCalculations.level.div
-        ) / 10;
+        ) + 200;
+
+      const healingPotency = 700;
+      const trait = 30;
+
+      const fDet = Math.floor(
+        ((gearSet.attributes.det - BisCalculations.level.main) * 130) /
+          BisCalculations.level.div +
+          1000
+      );
+      const fWd = Math.floor(
+        (BisCalculations.level.main * BisCalculations.whm.mnd) / 1000 +
+          gearSet.attributes.wd
+      );
+      const fCrit = Math.floor(
+        ((gearSet.attributes.ch - BisCalculations.level.sub) * 200) /
+          BisCalculations.level.div +
+          1400
+      );
+
+      const fHmp =
+        Math.floor(((gearSet.attributes.main - 340) * 100) / 304) + 100;
+
+      const h1 = Math.floor(
+        Math.floor(Math.floor(healingPotency * fHmp * fDet) / 100) / 1000
+      );
+      const h2 = Math.floor(
+        Math.floor(Math.floor(Math.floor(h1 * fWd) / 100) * (trait + 100)) / 100
+      );
+      const h3ch = Math.floor(Math.floor(h2 * fCrit) / 1000);
+      const healing =
+        (h3ch * gearSet.ch) / 100 + (h2 * (100 - gearSet.ch)) / 100;
+
+      gearSet.hps = Math.floor((healing / gearSet.gcd) * 100) / 100;
     });
 
     return (
@@ -858,14 +580,14 @@ class Pld extends PageComponent {
                       <img
                         alt=""
                         className={this.props.classes.banner}
-                        src="/icons/job-crystals/pld.png"
+                        src="/icons/job-crystals/whm.png"
                       />
                     </Grid>
                   </Grid>
                 </Grid>
                 <Grid item>
                   <Typography variant="body1">
-                    패치 5.2 기준 나이트의 Best-in-Slot 장비 세트 목록입니다.
+                    패치 5.2 기준 백마도사의 Best-in-Slot 장비 세트 목록입니다.
                     아래 표에서 열람하고자 하는 세트 목록을 클릭해주세요.
                   </Typography>
                   <br />
@@ -895,13 +617,12 @@ class Pld extends PageComponent {
           </Grid>
           <Grid item>
             <Toolbar>
-              <Typography variant="h6">1주차 출발 BiS</Typography>
+              <Typography variant="h6">5.2 BiS</Typography>
             </Toolbar>
             <Typography variant="body2">
-              패치 5.2 1주차 영식 공략을 위한 스타팅 BiS 리스트입니다. 꼭
-              풀금단을 하지 않아도 영식 1~2층까지는 도전해볼만 하지만, 3층
-              이상부터는 극만신 무기와 일반 레이드 방어구를 꼭 지참하거나 풀금단
-              제작 장비를 착용하실 것을 권장드립니다.
+              백마도사의 BiS는 신앙 스탯에 따라 갈립니다. 본인이 자주 사망하는
+              편이거나 파티원들이 자주 사망해 부활로 인한 MP 소모가 클 경우 높은
+              신앙을 가진 장비 세트를 선택하는 것이 나을 수 있습니다.
             </Typography>
             <TableContainer>
               <Table>
@@ -911,66 +632,12 @@ class Pld extends PageComponent {
                       <TableCell />
                     </Hidden>
                     <TableCell>평균 DPS</TableCell>
+                    <TableCell>평균 HPS</TableCell>
+                    <TableCell>틱당 MP회복</TableCell>
                     <TableCell>글로벌 쿨다운</TableCell>
                     <TableCell>음식</TableCell>
                     <TableCell>직격 확률</TableCell>
                     <TableCell>극대 확률</TableCell>
-                    <TableCell>불굴 추가 방어력</TableCell>
-                  </TableRow>
-                </TableHead>
-                <TableBody>
-                  {gearSets
-                    .filter((gearSet) => gearSet.type === "firstWeek")
-                    .map((gearSet, gearSetIndex) => {
-                      return (
-                        <TableRow
-                          className={this.props.classes.link}
-                          hover
-                          key={gearSetIndex}
-                          onClick={() => {
-                            this.setState({
-                              ...this.state,
-                              openedDialog: gearSet.index,
-                            });
-                          }}
-                        >
-                          <Hidden mdDown>
-                            <TableCell>{gearSet.description}</TableCell>
-                          </Hidden>
-                          <TableCell>{gearSet.dps}</TableCell>
-                          <TableCell>{gearSet.gcd} 초</TableCell>
-                          <TableCell>
-                            {BisItems[gearSet.foodId]
-                              ? BisItems[gearSet.foodId].name
-                              : gearSet.foodId}
-                          </TableCell>
-                          <TableCell>{gearSet.dh} %</TableCell>
-                          <TableCell>{gearSet.ch} %</TableCell>
-                          <TableCell>{gearSet.ten} %</TableCell>
-                        </TableRow>
-                      );
-                    })}
-                </TableBody>
-              </Table>
-            </TableContainer>
-          </Grid>
-          <Grid item>
-            <Toolbar>
-              <Typography variant="h6">5.2 BiS</Typography>
-            </Toolbar>
-            <TableContainer>
-              <Table>
-                <TableHead>
-                  <TableRow>
-                    <Hidden mdDown>
-                      <TableCell />
-                    </Hidden>
-                    <TableCell>평균 DPS</TableCell>
-                    <TableCell>글로벌 쿨다운</TableCell>
-                    <TableCell>음식</TableCell>
-                    <TableCell>직격 확률</TableCell>
-                    <TableCell>극대 확률</TableCell>
-                    <TableCell>불굴 추가 방어력</TableCell>
                   </TableRow>
                 </TableHead>
                 <TableBody>
@@ -993,6 +660,8 @@ class Pld extends PageComponent {
                             <TableCell>{gearSet.description}</TableCell>
                           </Hidden>
                           <TableCell>{gearSet.dps}</TableCell>
+                          <TableCell>{gearSet.hps}</TableCell>
+                          <TableCell>{gearSet.mpRegen}</TableCell>
                           <TableCell>{gearSet.gcd} 초</TableCell>
                           <TableCell>
                             {BisItems[gearSet.foodId]
@@ -1001,66 +670,6 @@ class Pld extends PageComponent {
                           </TableCell>
                           <TableCell>{gearSet.dh} %</TableCell>
                           <TableCell>{gearSet.ch} %</TableCell>
-                          <TableCell>{gearSet.ten} %</TableCell>
-                        </TableRow>
-                      );
-                    })}
-                </TableBody>
-              </Table>
-            </TableContainer>
-          </Grid>
-          <Grid item>
-            <Toolbar>
-              <Typography variant="h6">5.25 BiS</Typography>
-            </Toolbar>
-            <Typography variant="body2">
-              패치 5.25에 추가되는 신규 극만신에서 얻을 수 있는 Relic 장비를
-              포함한 BiS 리스트입니다.
-            </Typography>
-            <TableContainer>
-              <Table>
-                <TableHead>
-                  <TableRow>
-                    <Hidden mdDown>
-                      <TableCell />
-                    </Hidden>
-                    <TableCell>평균 DPS</TableCell>
-                    <TableCell>글로벌 쿨다운</TableCell>
-                    <TableCell>음식</TableCell>
-                    <TableCell>직격 확률</TableCell>
-                    <TableCell>극대 확률</TableCell>
-                    <TableCell>불굴 추가 방어력</TableCell>
-                  </TableRow>
-                </TableHead>
-                <TableBody>
-                  {gearSets
-                    .filter((gearSet) => gearSet.type === "5.25bis")
-                    .map((gearSet, gearSetIndex) => {
-                      return (
-                        <TableRow
-                          className={this.props.classes.link}
-                          hover
-                          key={gearSetIndex}
-                          onClick={() => {
-                            this.setState({
-                              ...this.state,
-                              openedDialog: gearSet.index,
-                            });
-                          }}
-                        >
-                          <Hidden mdDown>
-                            <TableCell>{gearSet.description}</TableCell>
-                          </Hidden>
-                          <TableCell>{gearSet.dps}</TableCell>
-                          <TableCell>{gearSet.gcd} 초</TableCell>
-                          <TableCell>
-                            {BisItems[gearSet.foodId]
-                              ? BisItems[gearSet.foodId].name
-                              : gearSet.foodId}
-                          </TableCell>
-                          <TableCell>{gearSet.dh} %</TableCell>
-                          <TableCell>{gearSet.ch} %</TableCell>
-                          <TableCell>{gearSet.ten} %</TableCell>
                         </TableRow>
                       );
                     })}
@@ -1116,12 +725,12 @@ class Pld extends PageComponent {
                       <Table size="small">
                         <TableHead>
                           <TableRow>
-                            <TableCell align="center">힘</TableCell>
+                            <TableCell align="center">정신력</TableCell>
                             <TableCell align="center">극대</TableCell>
                             <TableCell align="center">직격</TableCell>
                             <TableCell align="center">의지</TableCell>
-                            <TableCell align="center">기시</TableCell>
-                            <TableCell align="center">불굴</TableCell>
+                            <TableCell align="center">마시</TableCell>
+                            <TableCell align="center">신앙</TableCell>
                           </TableRow>
                         </TableHead>
                         <TableBody>
@@ -1139,10 +748,10 @@ class Pld extends PageComponent {
                               {gearSet.attributes.det}
                             </TableCell>
                             <TableCell align="center">
-                              {gearSet.attributes.sks}
+                              {gearSet.attributes.sps}
                             </TableCell>
                             <TableCell align="center">
-                              {gearSet.attributes.ten}
+                              {gearSet.attributes.pie}
                             </TableCell>
                           </TableRow>
                         </TableBody>
@@ -1303,4 +912,4 @@ class Pld extends PageComponent {
   }
 }
 
-export default withStyles(styles)(withRouter(Pld));
+export default withStyles(styles)(withRouter(Whm));

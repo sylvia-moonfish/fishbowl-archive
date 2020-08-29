@@ -54,7 +54,6 @@ const jobs = {
     {
       name: "백마도사",
       initial: "whm",
-      disabled: true,
     },
     {
       name: "학자",
