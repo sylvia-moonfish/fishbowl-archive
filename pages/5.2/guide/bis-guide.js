@@ -44,7 +44,6 @@ const jobs = {
     {
       name: "암흑기사",
       initial: "drk",
-      disabled: true,
     },
     {
       name: "건브레이커",

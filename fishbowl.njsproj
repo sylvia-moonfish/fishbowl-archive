@@ -61,6 +61,9 @@
     <Content Include="pages\5.1\guide\bis-guide\whm.js" />
     <Content Include="pages\5.1\guide\craft-guide.js" />
     <Content Include="pages\5.2\guide\bis-guide.js" />
+    <Content Include="pages\5.2\guide\bis-guide\drk.js">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="pages\5.2\guide\bis-guide\pld.js" />
     <Content Include="pages\5.2\guide\bis-guide\war.js">
       <SubType>Code</SubType>
@@ -221,6 +224,7 @@
     <Content Include="public\icons\items\edenchoir-choker-of-fending.png" />
     <Content Include="public\icons\items\edenchoir-cuisses-of-fending.png" />
     <Content Include="public\icons\items\edenchoir-gauntlets-of-fending.png" />
+    <Content Include="public\icons\items\edenchoir-greatsword.png" />
     <Content Include="public\icons\items\edenchoir-helm-of-fending.png" />
     <Content Include="public\icons\items\edenchoir-ring-of-fending.png" />
     <Content Include="public\icons\items\edenchoir-scutum.png" />
@@ -342,6 +346,7 @@
     <Content Include="public\icons\items\hq\swallowskin-fingerless-gloves.png" />
     <Content Include="public\icons\items\hq\swallowskin-shoes.png" />
     <Content Include="public\icons\items\hq\swallowskin-tool-belt.png" />
+    <Content Include="public\icons\items\idealized-bale-burgeonet.png" />
     <Content Include="public\icons\items\idealized-chevaliers-temple-chain.png" />
     <Content Include="public\icons\items\iridescent-cocoon.png" />
     <Content Include="public\icons\items\iridescent-silk-thread.png" />

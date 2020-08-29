@@ -201,6 +201,7 @@
     "materiaSlots": 2,
     "overmeldSlots": 0,
     "stats": {
+      "wd": 122,
       "main": 544,
       "ch": 467,
       "sks": 327
@@ -215,6 +216,39 @@
     "materiaSlots": 2,
     "overmeldSlots": 0,
     "stats": {
+      "wd": 128,
+      "main": 634,
+      "ch": 498,
+      "det": 349
+    }
+  },
+
+  "================================================== Weapon: DRK ==================================================": {},
+  "edengraceGreatsword": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-greatsword.png",
+    "name": "에덴의 은총 그레이트소드",
+    "required": "4층 낱장 x 8",
+    "type": "무기",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "wd": 122,
+      "main": 544,
+      "ch": 467,
+      "det": 327
+    }
+  },
+  "edenchoirGreatsword": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edenchoir-greatsword.png",
+    "name": "Edenchoir Greatsword",
+    "required": "4층 낱장 x 8",
+    "type": "무기",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "wd": 128,
       "main": 634,
       "ch": 498,
       "det": 349
@@ -290,6 +324,20 @@
       "main": 319,
       "ch": 270,
       "det": 189
+    }
+  },
+  "idealizedBaleBurgeonet": {
+    "from": "극만신",
+    "iconSrc": "/icons/items/idealized-bale-burgeonet.png",
+    "name": "Idealized Bale Burgeonet",
+    "required": "우상 x 3",
+    "type": "머리",
+    "materiaSlots": 5,
+    "overmeldSlots": 0,
+    "stats": {
+      "main": 319,
+      "ch": 189,
+      "sks": 270
     }
   },
 
