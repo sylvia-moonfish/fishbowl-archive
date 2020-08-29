@@ -56,317 +56,14 @@ const styles = (theme) => ({
 });
 
 const pageData = {
-  title: "5.2 나이트 BiS 가이드",
-  description: "파이널 판타지 14 패치 5.2 나이트 BiS 가이드.",
+  title: "5.2 건브레이커 BiS 가이드",
+  description: "파이널 판타지 14 패치 5.2 건브레이커 BiS 가이드.",
 };
 
 const gearSets = [
   {
-    type: "firstWeek",
-    description: "노금단 제작 세트.",
-    attributes: {
-      main: 0,
-      wd: 0,
-      ch: 0,
-      dh: 0,
-      det: 0,
-      sks: 0,
-      ten: 0,
-    },
-    dps: 9146.1,
-    gcd: 0,
-    foodId: "sausageAndSauerkraut",
-    dh: 0,
-    ch: 0,
-    dialog: {
-      intro:
-        "1주차 풀금단을 하기 부담스러우신 분들을 위한 노금단 제작 세트. 1~2층 트라이에 적합.",
-      gears: [
-        {
-          itemId: "neoIshgardianSword",
-          materiaIds: ["dh8", "dh8"],
-        },
-        {
-          itemId: "neoIshgardianShield",
-          materiaIds: [],
-        },
-        {
-          itemId: "neoIshgardianCapOfFending",
-          materiaIds: ["dh8", "dh8"],
-        },
-        {
-          itemId: "neoIshgardianTopOfFending",
-          materiaIds: ["ch8", "ch8"],
-        },
-        {
-          itemId: "neoIshgardianGauntletsOfFending",
-          materiaIds: ["dh8", "dh8"],
-        },
-        {
-          itemId: "neoIshgardianPlateBeltOfFending",
-          materiaIds: ["ch8"],
-        },
-        {
-          itemId: "neoIshgardianBottomsOfFending",
-          materiaIds: ["ch8", "ch8"],
-        },
-        {
-          itemId: "neoIshgardianSolleretsOfFending",
-          materiaIds: ["ch8", "ch8"],
-        },
-        {
-          itemId: "neoIshgardianEarringOfFending",
-          materiaIds: ["ch8"],
-        },
-        {
-          itemId: "neoIshgardianChokerOfFending",
-          materiaIds: ["ch8"],
-        },
-        {
-          itemId: "neoIshgardianWristbandsOfFending",
-          materiaIds: ["ch8"],
-        },
-        {
-          itemId: "neoIshgardianRingOfFending",
-          materiaIds: ["dh8"],
-        },
-        {
-          itemId: "neoIshgardianRingOfFending",
-          materiaIds: ["dh8"],
-        },
-      ],
-    },
-  },
-  {
-    type: "firstWeek",
-    description: "노금단 + 극만신 + 일반 레이드 세트.",
-    attributes: {
-      main: 0,
-      wd: 0,
-      ch: 0,
-      dh: 0,
-      det: 0,
-      sks: 0,
-      ten: 0,
-    },
-    dps: 9373.1,
-    gcd: 0,
-    foodId: "sausageAndSauerkraut",
-    dh: 0,
-    ch: 0,
-    dialog: {
-      intro:
-        "1주차 풀금단을 하기 부담스러우신 분들을 위한 노금단 세트에 첫 주에 획득 가능한 극만신 무기와 일반 레이드 상의, 그리고 석판 반지를 조합한 세트. 1~3층 트라이에 적합. 실력에 자신이 있다면 4층도 도전 가능.",
-      gears: [
-        {
-          itemId: "rubyBroadsword",
-          materiaIds: ["dh8", "dh8"],
-        },
-        {
-          itemId: "rubyScutum",
-          materiaIds: [],
-        },
-        {
-          itemId: "neoIshgardianCapOfFending",
-          materiaIds: ["dh8", "dh8"],
-        },
-        {
-          itemId: "edencallMailOfFending",
-          materiaIds: ["dh8", "dh8"],
-        },
-        {
-          itemId: "neoIshgardianGauntletsOfFending",
-          materiaIds: ["dh8", "dh8"],
-        },
-        {
-          itemId: "neoIshgardianPlateBeltOfFending",
-          materiaIds: ["dh8"],
-        },
-        {
-          itemId: "neoIshgardianBottomsOfFending",
-          materiaIds: ["ch8", "ch8"],
-        },
-        {
-          itemId: "neoIshgardianSolleretsOfFending",
-          materiaIds: ["ch8", "ch8"],
-        },
-        {
-          itemId: "neoIshgardianEarringOfFending",
-          materiaIds: ["ch8"],
-        },
-        {
-          itemId: "neoIshgardianChokerOfFending",
-          materiaIds: ["ch8"],
-        },
-        {
-          itemId: "neoIshgardianWristbandsOfFending",
-          materiaIds: ["ch8"],
-        },
-        {
-          itemId: "crystariumRingOfFending",
-          materiaIds: ["ch8", "dh8"],
-        },
-        {
-          itemId: "neoIshgardianRingOfFending",
-          materiaIds: ["dh8"],
-        },
-      ],
-    },
-  },
-  {
-    type: "firstWeek",
-    description: "풀금단 제작 세트.",
-    attributes: {
-      main: 0,
-      wd: 0,
-      ch: 0,
-      dh: 0,
-      det: 0,
-      sks: 0,
-      ten: 0,
-    },
-    dps: 9653.4,
-    gcd: 0,
-    foodId: "sausageAndSauerkraut",
-    dh: 0,
-    ch: 0,
-    dialog: {
-      intro: "1주차 풀금단 제작 세트. 1~4층 트라이에 적합.",
-      gears: [
-        {
-          itemId: "neoIshgardianSword",
-          materiaIds: ["dh8", "dh8", "dh8", "dh7", "dh7"],
-        },
-        {
-          itemId: "neoIshgardianShield",
-          materiaIds: [],
-        },
-        {
-          itemId: "neoIshgardianCapOfFending",
-          materiaIds: ["dh8", "dh8", "dh8", "dh7", "dh7"],
-        },
-        {
-          itemId: "neoIshgardianTopOfFending",
-          materiaIds: ["ch8", "ch8", "ch8", "ch7", "dh7"],
-        },
-        {
-          itemId: "neoIshgardianGauntletsOfFending",
-          materiaIds: ["dh8", "dh8", "dh8", "dh7", "dh7"],
-        },
-        {
-          itemId: "neoIshgardianPlateBeltOfFending",
-          materiaIds: ["ch8", "dh8", "dh7", "dh7", "dh7"],
-        },
-        {
-          itemId: "neoIshgardianBottomsOfFending",
-          materiaIds: ["ch8", "ch8", "dh8", "dh7", "dh7"],
-        },
-        {
-          itemId: "neoIshgardianSolleretsOfFending",
-          materiaIds: ["ch8", "ch8", "ch8", "ch7", "ch7"],
-        },
-        {
-          itemId: "neoIshgardianEarringOfFending",
-          materiaIds: ["ch8", "ch8", "ch7", "ch7", "ch7"],
-        },
-        {
-          itemId: "neoIshgardianChokerOfFending",
-          materiaIds: ["ch8", "dh8", "dh7", "dh7", "dh7"],
-        },
-        {
-          itemId: "neoIshgardianWristbandsOfFending",
-          materiaIds: ["ch8", "ch8", "ch7", "ch7", "ch7"],
-        },
-        {
-          itemId: "neoIshgardianRingOfFending",
-          materiaIds: ["dh8", "dh8", "dh7", "dh7", "dh7"],
-        },
-        {
-          itemId: "neoIshgardianRingOfFending",
-          materiaIds: ["dh8", "dh8", "dh7", "dh7", "dh7"],
-        },
-      ],
-    },
-  },
-  {
-    type: "firstWeek",
-    description: "풀금단 + 극만신 + 일반 레이드 세트.",
-    attributes: {
-      main: 0,
-      wd: 0,
-      ch: 0,
-      dh: 0,
-      det: 0,
-      sks: 0,
-      ten: 0,
-    },
-    dps: 9771.9,
-    gcd: 0,
-    foodId: "sausageAndSauerkraut",
-    dh: 0,
-    ch: 0,
-    dialog: {
-      intro:
-        "1주차 풀금단 제작 세트에 첫 주에 획득 가능한 극만신 무기와 일반 레이드 상의, 그리고 석판 반지를 조합한 세트. 1~4층 트라이에 적합.",
-      gears: [
-        {
-          itemId: "rubyBroadsword",
-          materiaIds: ["dh8", "dh8"],
-        },
-        {
-          itemId: "rubyScutum",
-          materiaIds: [],
-        },
-        {
-          itemId: "neoIshgardianCapOfFending",
-          materiaIds: ["dh8", "dh8", "dh8", "dh7", "dh7"],
-        },
-        {
-          itemId: "edencallMailOfFending",
-          materiaIds: ["dh8", "dh8"],
-        },
-        {
-          itemId: "neoIshgardianGauntletsOfFending",
-          materiaIds: ["dh8", "dh8", "dh8", "dh7", "dh7"],
-        },
-        {
-          itemId: "neoIshgardianPlateBeltOfFending",
-          materiaIds: ["ch8", "dh8", "dh7", "dh7", "dh7"],
-        },
-        {
-          itemId: "neoIshgardianBottomsOfFending",
-          materiaIds: ["ch8", "ch8", "dh8", "dh7", "dh7"],
-        },
-        {
-          itemId: "neoIshgardianSolleretsOfFending",
-          materiaIds: ["ch8", "ch8", "ch8", "ch7", "ch7"],
-        },
-        {
-          itemId: "neoIshgardianEarringOfFending",
-          materiaIds: ["ch8", "ch8", "ch7", "ch7", "ch7"],
-        },
-        {
-          itemId: "neoIshgardianChokerOfFending",
-          materiaIds: ["ch8", "dh8", "dh7", "dh7", "dh7"],
-        },
-        {
-          itemId: "neoIshgardianWristbandsOfFending",
-          materiaIds: ["ch8", "ch8", "ch7", "ch7", "ch7"],
-        },
-        {
-          itemId: "neoIshgardianRingOfFending",
-          materiaIds: ["dh8", "dh8", "dh7", "dh7", "dh7"],
-        },
-        {
-          itemId: "crystariumRingOfFending",
-          materiaIds: ["ch8", "dh8"],
-        },
-      ],
-    },
-  },
-  {
     type: "5.2bis",
-    description: "글쿨 2.42초 암기/건브 호환 세트.",
+    description: "글쿨 2.42초 나이트/암기 호환 세트.",
     attributes: {
       main: 0,
       wd: 0,
@@ -376,22 +73,18 @@ const gearSets = [
       sks: 0,
       ten: 0,
     },
-    dps: 10821.3,
+    dps: 10777.1,
     gcd: 0,
     foodId: "sausageAndSauerkraut",
     dh: 0,
     ch: 0,
     dialog: {
       intro:
-        "글로벌 쿨다운을 2.42초로 맞추고 나이트의 스킬 로테이션에 따라 DPS를 최적화한 장비 세트. 암흑기사 2.43초 장비 세트와 건브레이커 2.42초 장비 세트와도 호환되어 전사를 제외한 3탱 공용으로 사용하기 좋음.",
+        "적정 글로벌 쿨다운 2.42초 장비 세트. 어느 전투에서든 사용하기 무난한 추천 세트. 나이트 2.42초, 암흑기사 2.43초 장비 세트와 호환.",
       gears: [
         {
-          itemId: "edenchoirBastardSword",
+          itemId: "edenchoirGunblade",
           materiaIds: ["sks8", "sks8"],
-        },
-        {
-          itemId: "edenchoirScutum",
-          materiaIds: [],
         },
         {
           itemId: "augmentedCrystariumCircletOfFending",
@@ -442,7 +135,7 @@ const gearSets = [
   },
   {
     type: "5.2bis",
-    description: "글쿨 2.39초 빠른 기시 세트.",
+    description: "글쿨 2.40초 암기 호환 빠른 기시 세트.",
     attributes: {
       main: 0,
       wd: 0,
@@ -452,26 +145,165 @@ const gearSets = [
       sks: 0,
       ten: 0,
     },
-    dps: 10818.1,
+    dps: 10772.7,
     gcd: 0,
     foodId: "sausageAndSauerkraut",
     dh: 0,
     ch: 0,
     dialog: {
       intro:
-        "글로벌 쿨다운을 2.39초로 맞춘 장비 세트. 빠른 기시를 선호하거나 핑이 안 좋으신 분, 혹은 특정 전투를 위해 로테이션을 조절 중이신 분들께 추천.",
+        "글로벌 쿨다운 2.40초 장비 세트. 조금 더 빠른 기시를 선호하시는 분들께 추천. 암흑기사 2.38초 장비 세트와 호환.",
       gears: [
         {
-          itemId: "edenchoirBastardSword",
+          itemId: "edenchoirGunblade",
           materiaIds: ["sks8", "sks8"],
         },
         {
-          itemId: "edenchoirScutum",
-          materiaIds: [],
+          itemId: "augmentedCrystariumCircletOfFending",
+          materiaIds: ["ch8", "dh8"],
         },
         {
-          itemId: "edenchoirHelmOfFending",
+          itemId: "augmentedCrystariumTabardOfFending",
+          materiaIds: ["dh8", "dh8"],
+        },
+        {
+          itemId: "edenchoirGauntletsOfFending",
+          materiaIds: ["ch8", "dh8"],
+        },
+        {
+          itemId: "edenchoirTassetsOfFending",
+          materiaIds: ["dh8", "sks8"],
+        },
+        {
+          itemId: "edenchoirCuissesOfFending",
+          materiaIds: ["dh8", "dh8"],
+        },
+        {
+          itemId: "augmentedCrystariumThighbootsOfFending",
+          materiaIds: ["dh8", "dh8"],
+        },
+        {
+          itemId: "augmentedCrystariumEarringsOfFending",
+          materiaIds: ["dh8", "sks8"],
+        },
+        {
+          itemId: "edenchoirChokerOfFending",
+          materiaIds: ["dh8", "sks8"],
+        },
+        {
+          itemId: "augmentedCrystariumWristbandOfFending",
+          materiaIds: ["dh8", "sks8"],
+        },
+        {
+          itemId: "edenchoirRingOfFending",
+          materiaIds: ["dh8", "dh8"],
+        },
+        {
+          itemId: "augmentedCrystariumRingOfFending",
+          materiaIds: ["ch8", "dh8"],
+        },
+      ],
+    },
+  },
+  {
+    type: "5.2bis",
+    description: "글쿨 2.40초 절 알렉산더 세트.",
+    attributes: {
+      main: 0,
+      wd: 0,
+      ch: 0,
+      dh: 0,
+      det: 0,
+      sks: 0,
+      ten: 0,
+    },
+    dps: 8829.2,
+    gcd: 0,
+    foodId: "stuffedHighlandCabbage",
+    dh: 0,
+    ch: 0,
+    dialog: {
+      intro: "글로벌 쿨다운 2.40초 절 알렉산더용 장비 세트.",
+      gears: [
+        {
+          itemId: "edengraceManatrigger",
           materiaIds: ["ch8", "ch8"],
+        },
+        {
+          itemId: "augmentedDeepshadowHelmOfFending",
+          materiaIds: ["dh8", "dh8"],
+        },
+        {
+          itemId: "edengraceMailOfFending",
+          materiaIds: ["ch8", "ch8"],
+        },
+        {
+          itemId: "edengraceGauntletsOfFending",
+          materiaIds: ["dh8", "dh8"],
+        },
+        {
+          itemId: "augmentedDeepshadowTassetsOfFending",
+          materiaIds: ["dh8", "dh8"],
+        },
+        {
+          itemId: "augmentedDeepshadowBreechesOfFending",
+          materiaIds: ["ch8", "ch8"],
+        },
+        {
+          itemId: "edengraceGreavesOfFending",
+          materiaIds: ["dh8", "dh8"],
+        },
+        {
+          itemId: "augmentedDeepshadowEarringOfFending",
+          materiaIds: ["ch8", "dh8"],
+        },
+        {
+          itemId: "augmentedDeepshadowNecklaceOfFending",
+          materiaIds: ["dh8", "dh8"],
+        },
+        {
+          itemId: "edengraceBraceletOfFending",
+          materiaIds: ["dh8", "dh8"],
+        },
+        {
+          itemId: "edengraceRingOfFending",
+          materiaIds: ["ch8", "dh8"],
+        },
+        {
+          itemId: "augmentedDeepshadowRingOfFending",
+          materiaIds: ["ch8", "ch8"],
+        },
+      ],
+    },
+  },
+  {
+    type: "5.25bis",
+    description: "글쿨 2.40초 보강 추천 세트.",
+    attributes: {
+      main: 0,
+      wd: 0,
+      ch: 0,
+      dh: 0,
+      det: 0,
+      sks: 0,
+      ten: 0,
+    },
+    dps: 10805.6,
+    gcd: 0,
+    foodId: "sausageAndSauerkraut",
+    dh: 0,
+    ch: 0,
+    dialog: {
+      intro:
+        "글로벌 쿨다운 2.40초 장비 세트. 글로벌 쿨다운도 여유 있으며 높은 직격 확률로 시뮬레이션 DPS도 가장 높음. 다만 실전에서는 실제 직격 확률에 따라 DPS 편차가 클 수 있으므로 주의.",
+      gears: [
+        {
+          itemId: "edenchoirGunblade",
+          materiaIds: ["dh8", "dh8"],
+        },
+        {
+          itemId: "idealizedBodyguardsBlinder",
+          materiaIds: ["ch8", "dh8", "dh8", "dh8", "dh8"],
         },
         {
           itemId: "augmentedCrystariumTabardOfFending",
@@ -499,7 +331,7 @@ const gearSets = [
         },
         {
           itemId: "edenchoirChokerOfFending",
-          materiaIds: ["dh8", "sks8"],
+          materiaIds: ["dh8", "dh8"],
         },
         {
           itemId: "augmentedCrystariumWristbandOfFending",
@@ -517,84 +349,8 @@ const gearSets = [
     },
   },
   {
-    type: "5.2bis",
-    description: "글쿨 2.41초 절 알렉산더 세트.",
-    attributes: {
-      main: 0,
-      wd: 0,
-      ch: 0,
-      dh: 0,
-      det: 0,
-      sks: 0,
-      ten: 0,
-    },
-    dps: 8893.4,
-    gcd: 0,
-    foodId: "sausageAndSauerkraut",
-    dh: 0,
-    ch: 0,
-    dialog: {
-      intro:
-        "절 알렉산더용 장비 세트. 클리어 후에는 무기를 절 알렉산더 무기로 바꿀 것. (방패는 그대로 유지)",
-      gears: [
-        {
-          itemId: "edengraceBastardSword",
-          materiaIds: ["ch8", "dh8"],
-        },
-        {
-          itemId: "edenchoirScutum",
-          materiaIds: [],
-        },
-        {
-          itemId: "augmentedDeepshadowHelmOfFending",
-          materiaIds: ["dh8", "sks8"],
-        },
-        {
-          itemId: "edengraceMailOfFending",
-          materiaIds: ["ch8", "ch8"],
-        },
-        {
-          itemId: "edengraceGauntletsOfFending",
-          materiaIds: ["dh8", "dh8"],
-        },
-        {
-          itemId: "augmentedDeepshadowTassetsOfFending",
-          materiaIds: ["dh8", "dh8"],
-        },
-        {
-          itemId: "augmentedDeepshadowBreechesOfFending",
-          materiaIds: ["ch8", "ch8"],
-        },
-        {
-          itemId: "edengraceGreavesOfFending",
-          materiaIds: ["dh8", "dh8"],
-        },
-        {
-          itemId: "edengraceEarringOfFending",
-          materiaIds: ["dh8", "dh8"],
-        },
-        {
-          itemId: "augmentedDeepshadowNecklaceOfFending",
-          materiaIds: ["dh8", "dh8"],
-        },
-        {
-          itemId: "edengraceBraceletOfFending",
-          materiaIds: ["dh8", "dh8"],
-        },
-        {
-          itemId: "edengraceRingOfFending",
-          materiaIds: ["ch8", "dh8"],
-        },
-        {
-          itemId: "augmentedDeepshadowRingOfFending",
-          materiaIds: ["ch8", "ch8"],
-        },
-      ],
-    },
-  },
-  {
     type: "5.25bis",
-    description: "글쿨 2.42초 암기/건브 호환 세트.",
+    description: "글쿨 2.41초 나이트/암기 호환 세트.",
     attributes: {
       main: 0,
       wd: 0,
@@ -604,26 +360,22 @@ const gearSets = [
       sks: 0,
       ten: 0,
     },
-    dps: 10831.7,
+    dps: 10784.8,
     gcd: 0,
     foodId: "sausageAndSauerkraut",
     dh: 0,
     ch: 0,
     dialog: {
       intro:
-        "패치 5.2 글쿨 2.42초 장비 세트에서 머리 장비와 무기 마테를 바꾼 장비 세트. 약간의 DPS 향상을 기대할 수 있으나 직격 확률에 크게 의존하므로 운이 좋지 않으면 전보다 더 낮은 DPS가 나올 수도 있음.",
+        "글로벌 쿨다운 2.41초 장비 세트. 나이트 2.42초, 암흑기사 2.43초 장비 세트와 호환.",
       gears: [
         {
-          itemId: "edenchoirBastardSword",
+          itemId: "edenchoirGunblade",
           materiaIds: ["dh8", "dh8"],
         },
         {
-          itemId: "edenchoirScutum",
-          materiaIds: [],
-        },
-        {
-          itemId: "idealizedChevaliersTempleChain",
-          materiaIds: ["dh8", "dh8", "dh8", "sks8", "sks8"],
+          itemId: "idealizedBodyguardsBlinder",
+          materiaIds: ["ch8", "dh8", "dh8", "dh8", "dh8"],
         },
         {
           itemId: "augmentedCrystariumTabardOfFending",
@@ -670,7 +422,7 @@ const gearSets = [
   },
 ];
 
-class Pld extends PageComponent {
+class Gnb extends PageComponent {
   constructor(props) {
     super(props);
 
@@ -684,7 +436,7 @@ class Pld extends PageComponent {
       gearSet.index = gearSetIndex;
       gearSet.attributes.main = Math.floor(
         Math.floor(
-          (BisCalculations.level.main * BisCalculations.pld.str) / 100
+          (BisCalculations.level.main * BisCalculations.gnb.str) / 100
         ) + BisCalculations.clan.str
       );
       gearSet.attributes.ch = BisCalculations.level.sub;
@@ -852,15 +604,16 @@ class Pld extends PageComponent {
                       <img
                         alt=""
                         className={this.props.classes.banner}
-                        src="/icons/job-crystals/pld.png"
+                        src="/icons/job-crystals/gnb.png"
                       />
                     </Grid>
                   </Grid>
                 </Grid>
                 <Grid item>
                   <Typography variant="body1">
-                    패치 5.2 기준 나이트의 Best-in-Slot 장비 세트 목록입니다.
-                    아래 표에서 열람하고자 하는 세트 목록을 클릭해주세요.
+                    패치 5.2 기준 건브레이커의 Best-in-Slot 장비 세트
+                    목록입니다. 아래 표에서 열람하고자 하는 세트 목록을
+                    클릭해주세요.
                   </Typography>
                   <br />
                   <ul>
@@ -889,69 +642,14 @@ class Pld extends PageComponent {
           </Grid>
           <Grid item>
             <Toolbar>
-              <Typography variant="h6">1주차 출발 BiS</Typography>
-            </Toolbar>
-            <Typography variant="body2">
-              패치 5.2 1주차 영식 공략을 위한 스타팅 BiS 리스트입니다. 꼭
-              풀금단을 하지 않아도 영식 1~2층까지는 도전해볼만 하지만, 3층
-              이상부터는 극만신 무기와 일반 레이드 방어구를 꼭 지참하거나 풀금단
-              제작 장비를 착용하실 것을 권장드립니다.
-            </Typography>
-            <TableContainer>
-              <Table>
-                <TableHead>
-                  <TableRow>
-                    <Hidden mdDown>
-                      <TableCell />
-                    </Hidden>
-                    <TableCell>평균 DPS</TableCell>
-                    <TableCell>글로벌 쿨다운</TableCell>
-                    <TableCell>음식</TableCell>
-                    <TableCell>직격 확률</TableCell>
-                    <TableCell>극대 확률</TableCell>
-                    <TableCell>불굴 추가 방어력</TableCell>
-                  </TableRow>
-                </TableHead>
-                <TableBody>
-                  {gearSets
-                    .filter((gearSet) => gearSet.type === "firstWeek")
-                    .map((gearSet, gearSetIndex) => {
-                      return (
-                        <TableRow
-                          className={this.props.classes.link}
-                          hover
-                          key={gearSetIndex}
-                          onClick={() => {
-                            this.setState({
-                              ...this.state,
-                              openedDialog: gearSet.index,
-                            });
-                          }}
-                        >
-                          <Hidden mdDown>
-                            <TableCell>{gearSet.description}</TableCell>
-                          </Hidden>
-                          <TableCell>{gearSet.dps}</TableCell>
-                          <TableCell>{gearSet.gcd} 초</TableCell>
-                          <TableCell>
-                            {BisItems[gearSet.foodId]
-                              ? BisItems[gearSet.foodId].name
-                              : gearSet.foodId}
-                          </TableCell>
-                          <TableCell>{gearSet.dh} %</TableCell>
-                          <TableCell>{gearSet.ch} %</TableCell>
-                          <TableCell>{gearSet.ten} %</TableCell>
-                        </TableRow>
-                      );
-                    })}
-                </TableBody>
-              </Table>
-            </TableContainer>
-          </Grid>
-          <Grid item>
-            <Toolbar>
               <Typography variant="h6">5.2 BiS</Typography>
             </Toolbar>
+            <Typography variant="body2">
+              건브레이커 스킬 로테이션을 위한 적정 글로벌 쿨다운은 2.42초입니다.
+              다만 건브레이커의 경우는 적정 글로벌 쿨다운을 맞추지 못하더라도
+              DPS 차가 크지 않기 때문에 장비를 맞춰가는 도중에는 글쿨에 크게
+              신경쓰지 않아도 괜찮습니다.
+            </Typography>
             <TableContainer>
               <Table>
                 <TableHead>
@@ -1297,4 +995,4 @@ class Pld extends PageComponent {
   }
 }
 
-export default withStyles(styles)(withRouter(Pld));
+export default withStyles(styles)(withRouter(Gnb));

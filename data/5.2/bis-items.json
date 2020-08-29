@@ -255,6 +255,38 @@
     }
   },
 
+  "================================================== Weapon: GNB ==================================================": {},
+  "edengraceManatrigger": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-manatrigger.png",
+    "name": "에덴의 은총 마나트리거",
+    "required": "4층 낱장 x 8",
+    "type": "무기",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "wd": 122,
+      "main": 544,
+      "ch": 327,
+      "det": 467
+    }
+  },
+  "edenchoirGunblade": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edenchoir-gunblade.png",
+    "name": "Edenchoir Gunblade",
+    "required": "4층 낱장 x 8",
+    "type": "무기",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "wd": 128,
+      "main": 634,
+      "ch": 498,
+      "det": 349
+    }
+  },
+
   "================================================== Head: Tank ==================================================": {},
   "augmentedDeepshadowHelmOfFending": {
     "from": "석판 보강",
@@ -330,6 +362,20 @@
     "from": "극만신",
     "iconSrc": "/icons/items/idealized-bale-burgeonet.png",
     "name": "Idealized Bale Burgeonet",
+    "required": "우상 x 3",
+    "type": "머리",
+    "materiaSlots": 5,
+    "overmeldSlots": 0,
+    "stats": {
+      "main": 319,
+      "ch": 189,
+      "sks": 270
+    }
+  },
+  "idealizedBodyguardsBlinder": {
+    "from": "극만신",
+    "iconSrc": "/icons/items/idealized-bodyguards-blinder.png",
+    "name": "Idealized Bodyguard's Blinder",
     "required": "우상 x 3",
     "type": "머리",
     "materiaSlots": 5,

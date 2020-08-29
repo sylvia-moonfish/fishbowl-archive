@@ -84,7 +84,7 @@ const gearSets = [
       gears: [
         {
           itemId: "edenchoirGreatsword",
-          materiaIds: ["dh8", "dh8"],
+          materiaIds: ["sks8", "sks8"],
         },
         {
           itemId: "augmentedCrystariumCircletOfFending",
@@ -116,11 +116,11 @@ const gearSets = [
         },
         {
           itemId: "edenchoirChokerOfFending",
-          materiaIds: ["dh8", "sks8"],
+          materiaIds: ["dh8", "dh8"],
         },
         {
           itemId: "augmentedCrystariumWristbandOfFending",
-          materiaIds: ["dh8", "sks8"],
+          materiaIds: ["dh8", "dh8"],
         },
         {
           itemId: "edenchoirRingOfFending",
@@ -135,7 +135,7 @@ const gearSets = [
   },
   {
     type: "5.2bis",
-    description: "글쿨 2.41초 나이트/건브 호환 세트.",
+    description: "글쿨 2.41초 세트.",
     attributes: {
       main: 0,
       wd: 0,
@@ -151,8 +151,7 @@ const gearSets = [
     dh: 0,
     ch: 0,
     dialog: {
-      intro:
-        "글로벌 쿨다운을 2.41초로 맞춰 조금 더 여유를 둔 장비 세트. 나이트 2.42초, 건브레이커 2.42초 장비 세트와 호환.",
+      intro: "글로벌 쿨다운을 2.41초로 맞춰 조금 더 여유를 둔 장비 세트.",
       gears: [
         {
           itemId: "edenchoirGreatsword",
@@ -207,7 +206,7 @@ const gearSets = [
   },
   {
     type: "5.2bis",
-    description: "글쿨 2.38초 빠른 기시 세트.",
+    description: "글쿨 2.38초 건브 호환 빠른 기시 세트.",
     attributes: {
       main: 0,
       wd: 0,
@@ -224,7 +223,7 @@ const gearSets = [
     ch: 0,
     dialog: {
       intro:
-        "글로벌 쿨다운 2.38초 빠른 기시 세트. 특정 전투 업타임을 위해 스킬 로테이션을 조절 중이거나 빠른 기시속을 선호하시는 분들께 추천.",
+        "글로벌 쿨다운 2.38초 빠른 기시 세트. 특정 전투 업타임을 위해 스킬 로테이션을 조절 중이거나 빠른 기시속을 선호하시는 분들께 추천. 건브레이커 2.40초 장비 세트와 호환.",
       gears: [
         {
           itemId: "edenchoirGreatsword",
@@ -423,7 +422,7 @@ const gearSets = [
   },
   {
     type: "5.25bis",
-    description: "글쿨 2.41초 세트.",
+    description: "글쿨 2.41초 나이트/건브 호환 세트.",
     attributes: {
       main: 0,
       wd: 0,
@@ -440,7 +439,7 @@ const gearSets = [
     ch: 0,
     dialog: {
       intro:
-        "글로벌 쿨다운 2.41초 세트에 극만신 머리 장비를 더해 DPS 상향을 꾀한 세트. 다만 더 이상 나이트/건브레이커 세트와 호환이 되지 않으므로 3탱 유저는 주의할 것.",
+        "글로벌 쿨다운 2.41초 세트에 극만신 머리 장비를 더해 DPS 상향을 꾀한 세트. 나이트 2.42초, 건브레이커 2.42초 장비 세트와 호환.",
       gears: [
         {
           itemId: "edenchoirGreatsword",

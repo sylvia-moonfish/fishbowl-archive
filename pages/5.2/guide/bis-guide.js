@@ -48,7 +48,6 @@ const jobs = {
     {
       name: "건브레이커",
       initial: "gnb",
-      disabled: true,
     },
   ],
   healers: [
