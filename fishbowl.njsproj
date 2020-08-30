@@ -74,6 +74,9 @@
       <SubType>Code</SubType>
     </Content>
     <Content Include="pages\5.2\guide\bis-guide\pld.js" />
+    <Content Include="pages\5.2\guide\bis-guide\sch.js">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="pages\5.2\guide\bis-guide\war.js">
       <SubType>Code</SubType>
     </Content>
@@ -130,6 +133,7 @@
     <Content Include="public\icons\items\augmented-crystarium-belt-of-healing.png" />
     <Content Include="public\icons\items\augmented-crystarium-choker-of-healing.png" />
     <Content Include="public\icons\items\augmented-crystarium-circlet-of-fending.png" />
+    <Content Include="public\icons\items\augmented-crystarium-codex.png" />
     <Content Include="public\icons\items\augmented-crystarium-earrings-of-fending.png" />
     <Content Include="public\icons\items\augmented-crystarium-pantaloons-of-healing.png" />
     <Content Include="public\icons\items\augmented-crystarium-ring-of-fending.png" />
@@ -138,6 +142,7 @@
     <Content Include="public\icons\items\augmented-crystarium-shoes-of-healing.png" />
     <Content Include="public\icons\items\augmented-crystarium-tabard-of-fending.png" />
     <Content Include="public\icons\items\augmented-crystarium-thighboots-of-fending.png" />
+    <Content Include="public\icons\items\augmented-crystarium-turban-of-healing.png" />
     <Content Include="public\icons\items\augmented-crystarium-wristband-of-fending.png" />
     <Content Include="public\icons\items\augmented-crystarium-wristband-of-healing.png" />
     <Content Include="public\icons\items\augmented-deepshadow-armguards-of-casting.png" />
@@ -244,6 +249,7 @@
     <Content Include="public\icons\items\edenchoir-breeches-of-healing.png" />
     <Content Include="public\icons\items\edenchoir-cane.png" />
     <Content Include="public\icons\items\edenchoir-choker-of-fending.png" />
+    <Content Include="public\icons\items\edenchoir-codex.png" />
     <Content Include="public\icons\items\edenchoir-cuisses-of-fending.png" />
     <Content Include="public\icons\items\edenchoir-earrings-of-healing.png" />
     <Content Include="public\icons\items\edenchoir-gauntlets-of-fending.png" />

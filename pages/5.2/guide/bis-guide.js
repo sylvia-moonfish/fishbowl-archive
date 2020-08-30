@@ -58,7 +58,6 @@ const jobs = {
     {
       name: "학자",
       initial: "sch",
-      disabled: true,
     },
     {
       name: "점성술사",

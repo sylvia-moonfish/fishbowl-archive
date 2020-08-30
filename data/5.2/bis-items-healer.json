@@ -31,6 +31,53 @@
     }
   },
 
+  "================================================== Weapon: SCH ==================================================": {},
+  "wordOfGrace": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/word-of-grace.png",
+    "name": "에덴의 은총 잠언",
+    "required": "4층 낱장 x 8",
+    "type": "무기",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "wd": 164,
+      "main": 544,
+      "ch": 467,
+      "pie": 327
+    }
+  },
+  "edenchoirCodex": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edenchoir-codex.png",
+    "name": "Edenchoir Codex",
+    "required": "4층 낱장 x 8",
+    "type": "무기",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "wd": 172,
+      "main": 634,
+      "det": 349,
+      "pie": 498
+    }
+  },
+  "augmentedCrystariumCodex": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-crystarium-codex.png",
+    "name": "Augmented Crystarium Codex",
+    "required": "석판 1000개\n무기 석판\n강화약\n(3층 낱장 x 4)",
+    "type": "무기",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "wd": 171,
+      "main": 617,
+      "ch": 492,
+      "pie": 344
+    }
+  },
+
   "================================================== Head: Healer ==================================================": {},
   "edengraceTempleChainOfHealing": {
     "from": "영웅 레이드",
@@ -58,6 +105,20 @@
       "main": 353,
       "ch": 281,
       "det": 197
+    }
+  },
+  "augmentedCrystariumTurbanOfHealing": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-crystarium-turban-of-healing.png",
+    "name": "Augmented Crystarium Turban of Healing",
+    "required": "석판 495개\n강화섬유\n(3층 낱장 x 4)",
+    "type": "머리",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "main": 353,
+      "ch": 197,
+      "pie": 281
     }
   },
 
