@@ -107,5 +107,14 @@
     "stats": {
       "sps": 60
     }
+  },
+  "pie8": {
+    "name": "신앙의 엑스마테리쟈",
+    "shortName": "신앙+60",
+    "iconSrc": "/icons/items/yellow-viii.png",
+    "materiaNumber": 8,
+    "stats": {
+      "pie": 60
+    }
   }
 }

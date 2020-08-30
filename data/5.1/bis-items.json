@@ -191,9 +191,9 @@
     }
   },
 
-  "edengracePlainsphere": {
+  "edengracePlanisphere": {
     "from": "영웅 레이드",
-    "iconSrc": "/icons/items/edengrace-plainsphere.png",
+    "iconSrc": "/icons/items/edengrace-planisphere.png",
     "name": "에덴의 은총 천궁도",
     "required": "4층 낱장 x 8",
     "type": "무기",

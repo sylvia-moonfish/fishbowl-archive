@@ -62,7 +62,6 @@ const jobs = {
     {
       name: "점성술사",
       initial: "ast",
-      disabled: true,
     },
   ],
   melees: [

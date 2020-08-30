@@ -67,6 +67,9 @@
     <Content Include="pages\5.1\guide\bis-guide\whm.js" />
     <Content Include="pages\5.1\guide\craft-guide.js" />
     <Content Include="pages\5.2\guide\bis-guide.js" />
+    <Content Include="pages\5.2\guide\bis-guide\ast.js">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="pages\5.2\guide\bis-guide\drk.js">
       <SubType>Code</SubType>
     </Content>
@@ -246,6 +249,7 @@
     <Content Include="public\icons\items\edenchoir-armlets-of-healing.png" />
     <Content Include="public\icons\items\edenchoir-bastard-sword.png" />
     <Content Include="public\icons\items\edenchoir-battleaxe.png" />
+    <Content Include="public\icons\items\edenchoir-boots-of-healing.png" />
     <Content Include="public\icons\items\edenchoir-breeches-of-healing.png" />
     <Content Include="public\icons\items\edenchoir-cane.png" />
     <Content Include="public\icons\items\edenchoir-choker-of-fending.png" />
@@ -260,6 +264,7 @@
     <Content Include="public\icons\items\edenchoir-ring-of-healing.png" />
     <Content Include="public\icons\items\edenchoir-scutum.png" />
     <Content Include="public\icons\items\edenchoir-tassets-of-fending.png" />
+    <Content Include="public\icons\items\edenchoir-torquetum.png" />
     <Content Include="public\icons\items\edenchoir-wings-of-healing.png" />
     <Content Include="public\icons\items\edenchoir-wristband-of-healing.png" />
     <Content Include="public\icons\items\edengrace-armet-of-fending.png" />
@@ -304,7 +309,7 @@
     <Content Include="public\icons\items\edengrace-manatrigger.png" />
     <Content Include="public\icons\items\edengrace-pantaloons-of-healing.png" />
     <Content Include="public\icons\items\edengrace-pantaloons-of-striking.png" />
-    <Content Include="public\icons\items\edengrace-plainsphere.png" />
+    <Content Include="public\icons\items\edengrace-planisphere.png" />
     <Content Include="public\icons\items\edengrace-rapier.png" />
     <Content Include="public\icons\items\edengrace-revolver.png" />
     <Content Include="public\icons\items\edengrace-ring-of-aiming.png" />
@@ -421,6 +426,7 @@
     <Content Include="public\icons\items\water-shard.png" />
     <Content Include="public\icons\items\wind-crystal.png" />
     <Content Include="public\icons\items\word-of-grace.png" />
+    <Content Include="public\icons\items\yellow-viii.png" />
     <Content Include="public\icons\items\zelkova-bracelets.png" />
     <Content Include="public\icons\items\zelkova-earrings.png" />
     <Content Include="public\icons\items\zelkova-necklace.png" />

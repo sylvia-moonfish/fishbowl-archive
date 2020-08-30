@@ -18,6 +18,7 @@ import TableContainer from "@material-ui/core/TableContainer";
 import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
 import Toolbar from "@material-ui/core/Toolbar";
+import Tooltip from "@material-ui/core/Tooltip";
 import Typography from "@material-ui/core/Typography";
 
 import CloseIcon from "@material-ui/icons/Close";
@@ -27,8 +28,9 @@ import { withRouter } from "next/router";
 
 import React from "react";
 
-import BisCalculations from "../../../../data/5.1/bis-calculations";
-import BisItems from "../../../../data/5.1/bis-items";
+import BisCalculations from "../../../../data/5.2/bis-calculations";
+import BisItemsCommon from "../../../../data/5.2/bis-items-common";
+import BisItemsHealer from "../../../../data/5.2/bis-items-healer";
 import SiteInfo from "../../../../data/site-info";
 import PageComponent from "../../../../src/components/page-component";
 
@@ -55,13 +57,14 @@ const styles = (theme) => ({
 });
 
 const pageData = {
-  title: "5.1 점성술사 BiS 가이드",
-  description: "파이널 판타지 14 패치 5.1 점성술사 BiS 가이드.",
+  title: "5.2 점성술사 BiS 가이드",
+  description: "파이널 판타지 14 패치 5.2 점성술사 BiS 가이드.",
 };
 
 const gearSets = [
   {
-    description: "글쿨 2.43초 신앙 1408 직격 세트.",
+    type: "5.2bis",
+    description: "글쿨 2.39초 DPS 특화 세트.",
     attributes: {
       main: 0,
       wd: 0,
@@ -71,70 +74,292 @@ const gearSets = [
       sps: 0,
       pie: 0,
     },
-    dps: 0,
+    dps: 9570.79,
+    hps: 0,
+    gcd: 0,
+    foodId: "stuffedHighlandCabbage",
+    dh: 0,
+    ch: 0,
+    mpRegen: 0,
+    dialog: {
+      intro:
+        'DPS 특화 고화력 장비 세트. MP 관리를 위해 "광속 시전" 지속 시간 중 무조건 글로벌 쿨다운 7개 분의 소비 MP 50% 감소 효과를 부여받을 수 있어야 함. 인터넷 환경이 좋지 않을 경우 2.38초 세트를 사용할 것을 추천.',
+      gears: [
+        {
+          itemId: "edenchoirTorquetum",
+          materiaIds: ["ch8", "ch8"],
+        },
+        {
+          itemId: "edenchoirWingsOfHealing",
+          materiaIds: ["dh8", "dh8"],
+        },
+        {
+          itemId: "augmentedCrystariumRobeOfHealing",
+          materiaIds: ["ch8", "ch8"],
+        },
+        {
+          itemId: "edenchoirArmletsOfHealing",
+          materiaIds: ["dh8", "dh8"],
+        },
+        {
+          itemId: "augmentedCrystariumBeltOfHealing",
+          materiaIds: ["dh8", "dh8"],
+        },
+        {
+          itemId: "edenchoirBreechesOfHealing",
+          materiaIds: ["ch8", "ch8"],
+        },
+        {
+          itemId: "augmentedCrystariumShoesOfHealing",
+          materiaIds: ["dh8", "dh8"],
+        },
+        {
+          itemId: "edenchoirEarringsOfHealing",
+          materiaIds: ["dh8", "dh8"],
+        },
+        {
+          itemId: "augmentedCrystariumChokerOfHealing",
+          materiaIds: ["ch8", "sps8"],
+        },
+        {
+          itemId: "augmentedCrystariumWristbandOfHealing",
+          materiaIds: ["ch8", "sps8"],
+        },
+        {
+          itemId: "edenchoirRingOfHealing",
+          materiaIds: ["dh8", "sps8"],
+        },
+        {
+          itemId: "augmentedCrystariumRingOfHealing",
+          materiaIds: ["ch8", "sps8"],
+        },
+      ],
+    },
+  },
+  {
+    type: "5.2bis",
+    description: "글쿨 2.38초 DPS 특화 세트.",
+    attributes: {
+      main: 0,
+      wd: 0,
+      ch: 0,
+      dh: 0,
+      det: 0,
+      sps: 0,
+      pie: 0,
+    },
+    dps: 9469.35,
+    hps: 0,
+    gcd: 0,
+    foodId: "herringPie",
+    dh: 0,
+    ch: 0,
+    mpRegen: 0,
+    dialog: {
+      intro:
+        'DPS 특화 고화력 장비 세트. "광속 시전" 지속 시간 중 글로벌 쿨다운 기술 7개를 사용할 수 있도록 하기 위해 마시를 올림. MP 관리가 너무 어렵다면 높은 신앙 세트를 사용할 것을 추천.',
+      gears: [
+        {
+          itemId: "edenchoirTorquetum",
+          materiaIds: ["ch8", "ch8"],
+        },
+        {
+          itemId: "augmentedCrystariumTurbanOfHealing",
+          materiaIds: ["ch8", "dh8"],
+        },
+        {
+          itemId: "augmentedCrystariumRobeOfHealing",
+          materiaIds: ["ch8", "ch8"],
+        },
+        {
+          itemId: "edenchoirArmletsOfHealing",
+          materiaIds: ["dh8", "dh8"],
+        },
+        {
+          itemId: "augmentedCrystariumBeltOfHealing",
+          materiaIds: ["dh8", "dh8"],
+        },
+        {
+          itemId: "edenchoirBreechesOfHealing",
+          materiaIds: ["ch8", "ch8"],
+        },
+        {
+          itemId: "augmentedCrystariumShoesOfHealing",
+          materiaIds: ["dh8", "dh8"],
+        },
+        {
+          itemId: "edenchoirEarringsOfHealing",
+          materiaIds: ["dh8", "dh8"],
+        },
+        {
+          itemId: "augmentedCrystariumChokerOfHealing",
+          materiaIds: ["ch8", "sps8"],
+        },
+        {
+          itemId: "augmentedCrystariumWristbandOfHealing",
+          materiaIds: ["ch8", "sps8"],
+        },
+        {
+          itemId: "edenchoirRingOfHealing",
+          materiaIds: ["dh8", "sps8"],
+        },
+        {
+          itemId: "augmentedCrystariumRingOfHealing",
+          materiaIds: ["ch8", "sps8"],
+        },
+      ],
+    },
+  },
+  {
+    type: "5.2bis",
+    description: "글쿨 2.48초 높은 신앙 세트.",
+    attributes: {
+      main: 0,
+      wd: 0,
+      ch: 0,
+      dh: 0,
+      det: 0,
+      sps: 0,
+      pie: 0,
+    },
+    dps: 9326.75,
+    hps: 0,
+    gcd: 0,
+    foodId: "stuffedHighlandCabbage",
+    dh: 0,
+    ch: 0,
+    mpRegen: 0,
+    dialog: {
+      intro:
+        "MP 관리용 높은 신앙 장비 세트. 높은 신앙을 선호하거나 MP 관리가 어려우신 분들께 추천.",
+      gears: [
+        {
+          itemId: "edenchoirTorquetum",
+          materiaIds: ["ch8", "ch8"],
+        },
+        {
+          itemId: "edenchoirWingsOfHealing",
+          materiaIds: ["dh8", "dh8"],
+        },
+        {
+          itemId: "augmentedCrystariumRobeOfHealing",
+          materiaIds: ["ch8", "ch8"],
+        },
+        {
+          itemId: "edenchoirArmletsOfHealing",
+          materiaIds: ["dh8", "dh8"],
+        },
+        {
+          itemId: "augmentedCrystariumBeltOfHealing",
+          materiaIds: ["dh8", "dh8"],
+        },
+        {
+          itemId: "augmentedCrystariumPantaloonsOfHealing",
+          materiaIds: ["ch8", "ch8"],
+        },
+        {
+          itemId: "edenchoirBootsOfHealing",
+          materiaIds: ["ch8", "ch8"],
+        },
+        {
+          itemId: "edenchoirEarringsOfHealing",
+          materiaIds: ["dh8", "dh8"],
+        },
+        {
+          itemId: "augmentedCrystariumChokerOfHealing",
+          materiaIds: ["ch8", "dh8"],
+        },
+        {
+          itemId: "edenchoirWristbandOfHealing",
+          materiaIds: ["dh8", "dh8"],
+        },
+        {
+          itemId: "edenchoirRingOfHealing",
+          materiaIds: ["dh8", "det8"],
+        },
+        {
+          itemId: "augmentedCrystariumRingOfHealing",
+          materiaIds: ["ch8", "dh8"],
+        },
+      ],
+    },
+  },
+  {
+    type: "ultimate",
+    description: "신앙 1408 절 알렉산더 세트.",
+    attributes: {
+      main: 0,
+      wd: 0,
+      ch: 0,
+      dh: 0,
+      det: 0,
+      sps: 0,
+      pie: 0,
+    },
+    dps: 7533.09,
     hps: 0,
     mpRegen: 0,
     gcd: 0,
-    foodId: "robeLettuceSalad",
+    foodId: "herringPie",
     dh: 0,
     ch: 0,
     dialog: {
-      intro:
-        '직격에 투자해 DPS를 높인 장비 세트입니다. 신앙이 낮은 편이므로 MP 관리에 유의해주세요. 음식은 "요술양배추 샐러드"를 섭취합니다.',
+      intro: "절 알렉산더용 장비 세트.",
       gears: [
         {
           itemId: "edengracePlanisphere",
-          materiaIds: ["ch", "ch"],
+          materiaIds: ["ch8", "ch8"],
         },
         {
           itemId: "edengraceTempleChainOfHealing",
-          materiaIds: ["ch", "ch"],
+          materiaIds: ["ch8", "ch8"],
         },
         {
           itemId: "augmentedDeepshadowScaleMailOfHealing",
-          materiaIds: ["ch", "ch"],
+          materiaIds: ["ch8", "ch8"],
         },
         {
           itemId: "edengraceArmletsOfHealing",
-          materiaIds: ["ch", "ch"],
+          materiaIds: ["ch8", "ch8"],
         },
         {
           itemId: "edengraceTassetsOfHealing",
-          materiaIds: ["dh", "dh"],
+          materiaIds: ["dh8", "dh8"],
         },
         {
           itemId: "edengracePantaloonsOfHealing",
-          materiaIds: ["dh", "dh"],
+          materiaIds: ["dh8", "dh8"],
         },
         {
           itemId: "edengraceSandalsOfHealing",
-          materiaIds: ["ch", "dh"],
+          materiaIds: ["ch8", "dh8"],
         },
         {
           itemId: "augmentedDeepshadowEarringOfHealing",
-          materiaIds: ["dh", "dh"],
+          materiaIds: ["dh8", "dh8"],
         },
         {
           itemId: "augmentedDeepshadowNecklaceOfHealing",
-          materiaIds: ["ch", "dh"],
+          materiaIds: ["ch8", "dh8"],
         },
         {
           itemId: "edengraceBraceletOfHealing",
-          materiaIds: ["dh", "dh"],
+          materiaIds: ["dh8", "dh8"],
         },
         {
           itemId: "augmentedDeepshadowRingOfHealing",
-          materiaIds: ["dh", "dh"],
+          materiaIds: ["dh8", "dh8"],
         },
         {
           itemId: "deepshadowRingOfHealing",
-          materiaIds: ["dh", "dh"],
+          materiaIds: ["dh8", "dh8"],
         },
       ],
     },
   },
   {
-    description: "글쿨 2.41초 신앙 1395 힐러 공용 세트.",
+    type: "ultimate",
+    description: "신앙 1791 높은 신앙 절 트라이용 세트.",
     attributes: {
       main: 0,
       wd: 0,
@@ -144,137 +369,63 @@ const gearSets = [
       sps: 0,
       pie: 0,
     },
-    dps: 0,
+    dps: 7393.16,
     hps: 0,
     mpRegen: 0,
     gcd: 0,
-    foodId: "pixieberryTea",
+    foodId: "herringPie",
     dh: 0,
     ch: 0,
     dialog: {
-      intro:
-        '백마 및 학자와 공유할 수 있는 장비 세트입니다. 다만 점성술사가 사용하기에는 신앙이 낮은 편이므로 MP 관리에 주의를 요합니다. 음식은 점성술사일 경우 "픽시딸기 차"를, 학자나 백마도사일 경우 "쿠쿠루 러스크"를 섭취합니다.',
+      intro: "높은 신앙 절 알렉산더용 장비 세트.",
       gears: [
         {
           itemId: "edengracePlanisphere",
-          materiaIds: ["ch", "ch"],
+          materiaIds: ["ch8", "ch8"],
         },
         {
           itemId: "edengraceTempleChainOfHealing",
-          materiaIds: ["ch", "ch"],
+          materiaIds: ["ch8", "ch8"],
         },
         {
           itemId: "augmentedDeepshadowScaleMailOfHealing",
-          materiaIds: ["ch", "ch"],
-        },
-        {
-          itemId: "edengraceArmletsOfHealing",
-          materiaIds: ["ch", "ch"],
-        },
-        {
-          itemId: "edengraceTassetsOfHealing",
-          materiaIds: ["dh", "dh"],
-        },
-        {
-          itemId: "edengracePantaloonsOfHealing",
-          materiaIds: ["dh", "dh"],
-        },
-        {
-          itemId: "edengraceSandalsOfHealing",
-          materiaIds: ["ch", "dh"],
-        },
-        {
-          itemId: "augmentedDeepshadowEarringOfHealing",
-          materiaIds: ["dh", "dh"],
-        },
-        {
-          itemId: "edengraceChokerOfHealing",
-          materiaIds: ["ch", "ch"],
-        },
-        {
-          itemId: "augmentedDeepshadowBraceletOfHealing",
-          materiaIds: ["ch", "ch"],
-        },
-        {
-          itemId: "edengraceRingOfHealing",
-          materiaIds: ["ch", "ch"],
-        },
-        {
-          itemId: "augmentedDeepshadowRingOfHealing",
-          materiaIds: ["dh", "dh"],
-        },
-      ],
-    },
-  },
-  {
-    description: "글쿨 2.45초 신앙 1791 절 트라이용 세트.",
-    attributes: {
-      main: 0,
-      wd: 0,
-      ch: 0,
-      dh: 0,
-      det: 0,
-      sps: 0,
-      pie: 0,
-    },
-    dps: 0,
-    hps: 0,
-    mpRegen: 0,
-    gcd: 0,
-    foodId: "robeLettuceSalad",
-    dh: 0,
-    ch: 0,
-    dialog: {
-      intro:
-        '직격을 낮추고 신앙을 높인 장비 세트입니다. 음식은 "요술양배추 샐러드"를 섭취합니다.',
-      gears: [
-        {
-          itemId: "edengracePlanisphere",
-          materiaIds: ["ch", "ch"],
-        },
-        {
-          itemId: "edengraceTempleChainOfHealing",
-          materiaIds: ["ch", "ch"],
-        },
-        {
-          itemId: "augmentedDeepshadowScaleMailOfHealing",
-          materiaIds: ["ch", "ch"],
+          materiaIds: ["ch8", "ch8"],
         },
         {
           itemId: "augmentedDeepshadowArmguardsOfHealing",
-          materiaIds: ["ch", "ch"],
+          materiaIds: ["ch8", "ch8"],
         },
         {
           itemId: "edengraceTassetsOfHealing",
-          materiaIds: ["det", "sps"],
+          materiaIds: ["det8", "sps8"],
         },
         {
           itemId: "edengracePantaloonsOfHealing",
-          materiaIds: ["det", "det"],
+          materiaIds: ["det8", "det8"],
         },
         {
           itemId: "edengraceSandalsOfHealing",
-          materiaIds: ["ch", "det"],
+          materiaIds: ["ch8", "det8"],
         },
         {
           itemId: "augmentedDeepshadowEarringOfHealing",
-          materiaIds: ["det", "sps"],
+          materiaIds: ["det8", "sps8"],
         },
         {
           itemId: "augmentedDeepshadowNecklaceOfHealing",
-          materiaIds: ["ch", "det"],
+          materiaIds: ["ch8", "det8"],
         },
         {
           itemId: "edengraceBraceletOfHealing",
-          materiaIds: ["det", "det"],
+          materiaIds: ["det8", "det8"],
         },
         {
           itemId: "edengraceRingOfHealing",
-          materiaIds: ["ch", "ch"],
+          materiaIds: ["ch8", "ch8"],
         },
         {
           itemId: "augmentedDeepshadowRingOfHealing",
-          materiaIds: ["dh", "det"],
+          materiaIds: ["dh8", "det8"],
         },
       ],
     },
@@ -291,10 +442,16 @@ class Ast extends PageComponent {
   }
 
   render() {
-    gearSets.forEach((gearSet) => {
+    const BisItems = {
+      ...BisItemsCommon,
+      ...BisItemsHealer,
+    };
+
+    gearSets.forEach((gearSet, gearSetIndex) => {
+      gearSet.index = gearSetIndex;
       gearSet.attributes.main = Math.floor(
         Math.floor(
-          (BisCalculations.level.main * BisCalculations.whm.mnd) / 100
+          (BisCalculations.level.main * BisCalculations.ast.mnd) / 100
         ) +
           BisCalculations.clan.mnd +
           BisCalculations.trait
@@ -344,14 +501,17 @@ class Ast extends PageComponent {
             return;
           }
 
-          if (!attributeObj[materiaId]) {
-            attributeObj[materiaId] = BisItems[materiaId].value;
-          } else {
-            attributeObj[materiaId] += BisItems[materiaId].value;
+          Object.keys(BisItems[materiaId].stats).forEach((key) => {
+            if (!attributeObj[key]) {
+              attributeObj[key] = BisItems[materiaId].stats[key];
+            } else {
+              attributeObj[key] += BisItems[materiaId].stats[key];
+            }
 
-            if (attributeObj[materiaId] > subAttrMax)
-              attributeObj[materiaId] = subAttrMax;
-          }
+            if (attributeObj[key] && attributeObj[key] > subAttrMax) {
+              attributeObj[key] = subAttrMax;
+            }
+          });
         });
 
         Object.keys(attributeObj).forEach((key) => {
@@ -413,10 +573,9 @@ class Ast extends PageComponent {
             BisCalculations.level.div
         ) + 200;
 
-      const attackPotency = 250;
+      const healingPotency = 700;
       const trait = 30;
-      const fAttack =
-        Math.floor(((gearSet.attributes.main - 340) * 165) / 340) + 100;
+
       const fDet = Math.floor(
         ((gearSet.attributes.det - BisCalculations.level.main) * 130) /
           BisCalculations.level.div +
@@ -432,27 +591,6 @@ class Ast extends PageComponent {
           1400
       );
 
-      const d1 = Math.floor(
-        Math.floor(Math.floor(attackPotency * fAttack * fDet) / 100) / 1000
-      );
-      const d2 = Math.floor(
-        Math.floor(Math.floor(Math.floor(d1 * fWd) / 100) * (trait + 100)) / 100
-      );
-      const d3chdh = Math.floor(
-        Math.floor(Math.floor(Math.floor(d2 * fCrit) / 1000) * 125) / 100
-      );
-      const d3ch = Math.floor(Math.floor(d2 * fCrit) / 1000);
-      const d3dh = Math.floor(Math.floor(d2 * 125) / 100);
-
-      const chdh = ((gearSet.ch / 100) * gearSet.dh) / 100;
-      const ch = gearSet.ch / 100 - chdh;
-      const dh = gearSet.dh / 100 - chdh;
-      const none = 1 - chdh - ch - dh;
-      const damage = d3chdh * chdh + d3ch * ch + d3dh * dh + d2 * none;
-
-      gearSet.dps = Math.floor((damage / gearSet.gcd) * 100) / 100;
-
-      const healingPotency = 700;
       const fHmp =
         Math.floor(((gearSet.attributes.main - 340) * 100) / 304) + 100;
 
@@ -482,10 +620,10 @@ class Ast extends PageComponent {
                 className={this.props.classes.link}
                 color="inherit"
                 onClick={() => {
-                  this.props.router.push("/5.1/guide/bis-guide");
+                  this.props.router.push("/5.2/guide/bis-guide");
                 }}
               >
-                5.1 BiS 가이드
+                5.2 BiS 가이드
               </Link>
               <Typography color="textPrimary">{pageData.title}</Typography>
             </Breadcrumbs>
@@ -523,7 +661,7 @@ class Ast extends PageComponent {
                 </Grid>
                 <Grid item>
                   <Typography variant="body1">
-                    패치 5.1 기준 점성술사의 Best-in-Slot 장비 세트 목록입니다.
+                    패치 5.2 기준 점성술사의 Best-in-Slot 장비 세트 목록입니다.
                     아래 표에서 열람하고자 하는 세트 목록을 클릭해주세요.
                   </Typography>
                   <br />
@@ -552,6 +690,14 @@ class Ast extends PageComponent {
             </Container>
           </Grid>
           <Grid item>
+            <Toolbar>
+              <Typography variant="h6">5.2 BiS</Typography>
+            </Toolbar>
+            <Typography variant="body2">
+              패치 5.3 이전의 점성술사는 MP 관리가 매우 까다로워 추가적으로
+              신앙을 챙긴 BiS를 사용합니다. 본인의 MP 관리 숙련도에 맞춰
+              사용하실 BiS를 고르시는 것을 권장드려요.
+            </Typography>
             <TableContainer>
               <Table>
                 <TableHead>
@@ -569,32 +715,95 @@ class Ast extends PageComponent {
                   </TableRow>
                 </TableHead>
                 <TableBody>
-                  {gearSets.map((gearSet, gearSetIndex) => {
-                    return (
-                      <TableRow
-                        className={this.props.classes.link}
-                        hover
-                        key={gearSetIndex}
-                        onClick={() => {
-                          this.setState({
-                            ...this.state,
-                            openedDialog: gearSetIndex,
-                          });
-                        }}
-                      >
-                        <Hidden mdDown>
-                          <TableCell>{gearSet.description}</TableCell>
-                        </Hidden>
-                        <TableCell>{gearSet.dps}</TableCell>
-                        <TableCell>{gearSet.hps}</TableCell>
-                        <TableCell>{gearSet.mpRegen}</TableCell>
-                        <TableCell>{gearSet.gcd} 초</TableCell>
-                        <TableCell>{BisItems[gearSet.foodId].name}</TableCell>
-                        <TableCell>{gearSet.dh} %</TableCell>
-                        <TableCell>{gearSet.ch} %</TableCell>
-                      </TableRow>
-                    );
-                  })}
+                  {gearSets
+                    .filter((gearSet) => gearSet.type === "5.2bis")
+                    .map((gearSet, gearSetIndex) => {
+                      return (
+                        <TableRow
+                          className={this.props.classes.link}
+                          hover
+                          key={gearSetIndex}
+                          onClick={() => {
+                            this.setState({
+                              ...this.state,
+                              openedDialog: gearSet.index,
+                            });
+                          }}
+                        >
+                          <Hidden mdDown>
+                            <TableCell>{gearSet.description}</TableCell>
+                          </Hidden>
+                          <TableCell>{gearSet.dps}</TableCell>
+                          <TableCell>{gearSet.hps}</TableCell>
+                          <TableCell>{gearSet.mpRegen}</TableCell>
+                          <TableCell>{gearSet.gcd} 초</TableCell>
+                          <TableCell>
+                            {BisItems[gearSet.foodId]
+                              ? BisItems[gearSet.foodId].name
+                              : gearSet.foodId}
+                          </TableCell>
+                          <TableCell>{gearSet.dh} %</TableCell>
+                          <TableCell>{gearSet.ch} %</TableCell>
+                        </TableRow>
+                      );
+                    })}
+                </TableBody>
+              </Table>
+            </TableContainer>
+          </Grid>
+          <Grid item>
+            <Toolbar>
+              <Typography variant="h6">절 알렉산더용 BiS</Typography>
+            </Toolbar>
+            <TableContainer>
+              <Table>
+                <TableHead>
+                  <TableRow>
+                    <Hidden mdDown>
+                      <TableCell />
+                    </Hidden>
+                    <TableCell>평균 DPS</TableCell>
+                    <TableCell>평균 HPS</TableCell>
+                    <TableCell>틱당 MP회복</TableCell>
+                    <TableCell>글로벌 쿨다운</TableCell>
+                    <TableCell>음식</TableCell>
+                    <TableCell>직격 확률</TableCell>
+                    <TableCell>극대 확률</TableCell>
+                  </TableRow>
+                </TableHead>
+                <TableBody>
+                  {gearSets
+                    .filter((gearSet) => gearSet.type === "ultimate")
+                    .map((gearSet, gearSetIndex) => {
+                      return (
+                        <TableRow
+                          className={this.props.classes.link}
+                          hover
+                          key={gearSetIndex}
+                          onClick={() => {
+                            this.setState({
+                              ...this.state,
+                              openedDialog: gearSet.index,
+                            });
+                          }}
+                        >
+                          <Hidden mdDown>
+                            <TableCell>{gearSet.description}</TableCell>
+                          </Hidden>
+                          <TableCell>{gearSet.dps}</TableCell>
+                          <TableCell>{gearSet.hps}</TableCell>
+                          <TableCell>{gearSet.mpRegen}</TableCell>
+                          <TableCell>{gearSet.gcd} 초</TableCell>
+                          <TableCell>
+                            {BisItems[gearSet.foodId]
+                              ? BisItems[gearSet.foodId].name
+                              : gearSet.foodId}
+                          </TableCell>
+                          <TableCell>{gearSet.dh} %</TableCell>
+                          <TableCell>{gearSet.ch} %</TableCell>
+                        </TableRow>
+                      );
+                    })}
                 </TableBody>
               </Table>
             </TableContainer>
@@ -606,14 +815,14 @@ class Ast extends PageComponent {
             <Dialog
               fullWidth
               key={gearSetIndex}
-              maxWidth="md"
+              maxWidth="lg"
               onClose={() => {
                 this.setState({
                   ...this.state,
                   openedDialog: -1,
                 });
               }}
-              open={this.state.openedDialog === gearSetIndex}
+              open={this.state.openedDialog === gearSet.index}
               scroll="paper"
               TransitionComponent={transition}
             >
@@ -688,9 +897,7 @@ class Ast extends PageComponent {
                             <TableCell colSpan={2} />
                             <TableCell align="center">종류</TableCell>
                             <TableCell align="center">이름</TableCell>
-                            <TableCell align="center" colSpan={2}>
-                              마테리아
-                            </TableCell>
+                            <TableCell align="center">마테리아</TableCell>
                             <TableCell align="center">필요 재화</TableCell>
                           </TableRow>
                         </TableHead>
@@ -698,15 +905,19 @@ class Ast extends PageComponent {
                           <TableRow>
                             <TableCell>음식</TableCell>
                             <TableCell>
-                              <Avatar
-                                alt=""
-                                src={BisItems[gearSet.foodId].iconSrc}
-                                variant="square"
-                              />
+                              {BisItems[gearSet.foodId] && (
+                                <Avatar
+                                  alt=""
+                                  src={BisItems[gearSet.foodId].iconSrc}
+                                  variant="square"
+                                />
+                              )}
                             </TableCell>
                             <TableCell>제작</TableCell>
                             <TableCell>
-                              {BisItems[gearSet.foodId].name}
+                              {BisItems[gearSet.foodId]
+                                ? BisItems[gearSet.foodId].name
+                                : gearSet.foodId}
                             </TableCell>
                             <TableCell colSpan={3} />
                           </TableRow>
@@ -720,7 +931,11 @@ class Ast extends PageComponent {
                             return (
                               <TableRow
                                 key={gearId}
-                                selected={item.from === "영웅 레이드"}
+                                selected={
+                                  item.from === "영웅 레이드" ||
+                                  item.from === "극만신" ||
+                                  item.from === "일반 레이드"
+                                }
                               >
                                 <TableCell>{item.type}</TableCell>
                                 <TableCell>
@@ -732,25 +947,68 @@ class Ast extends PageComponent {
                                 </TableCell>
                                 <TableCell>{item.from}</TableCell>
                                 <TableCell>{item.name}</TableCell>
-                                {gear.materiaIds.length === 2 ? (
-                                  gear.materiaIds.map(
-                                    (materiaId, materiaIdIndex) => {
-                                      if (!BisItems[materiaId])
-                                        return (
-                                          <div key={materiaIdIndex}>
-                                            {materiaId}
-                                          </div>
-                                        );
+                                {gear.materiaIds.length > 0 ? (
+                                  <TableCell>
+                                    <Grid container direction="row" spacing={1}>
+                                      {gear.materiaIds.map(
+                                        (materiaId, materiaIdIndex) => {
+                                          if (!BisItems[materiaId]) {
+                                            return (
+                                              <div key={materiaIdIndex}>
+                                                {materiaId}
+                                              </div>
+                                            );
+                                          }
 
-                                      return (
-                                        <TableCell key={materiaIdIndex}>
-                                          {BisItems[materiaId].name}
-                                        </TableCell>
-                                      );
-                                    }
-                                  )
+                                          if (
+                                            materiaIdIndex >=
+                                            item.materiaSlots +
+                                              item.overmeldSlots
+                                          ) {
+                                            return (
+                                              <div key={materiaIdIndex}>
+                                                {gear.itemId}
+                                              </div>
+                                            );
+                                          }
+
+                                          return (
+                                            <Grid item key={materiaIdIndex}>
+                                              <Tooltip
+                                                title={BisItems[materiaId].name}
+                                              >
+                                                <Chip
+                                                  avatar={
+                                                    <Avatar
+                                                      alt=""
+                                                      src={
+                                                        "/icons/materia-slots/" +
+                                                        (materiaIdIndex <
+                                                        item.materiaSlots
+                                                          ? "blue"
+                                                          : "red") +
+                                                        BisItems[materiaId]
+                                                          .materiaNumber +
+                                                        ".png"
+                                                      }
+                                                    />
+                                                  }
+                                                  label={
+                                                    BisItems[materiaId]
+                                                      .shortName
+                                                  }
+                                                  size="small"
+                                                  variant="outlined"
+                                                />
+                                              </Tooltip>
+                                            </Grid>
+                                          );
+                                        }
+                                      )}
+                                    </Grid>
+                                  </TableCell>
                                 ) : (
-                                  <TableCell colSpan={2} />
+                                  <TableCell />
                                 )}
                                 <TableCell>
                                   {item.required

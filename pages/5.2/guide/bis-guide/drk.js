@@ -278,7 +278,7 @@ const gearSets = [
     },
   },
   {
-    type: "5.2bis",
+    type: "ultimate",
     description: "글쿨 2.43초 절 알렉산더 세트.",
     attributes: {
       main: 0,
@@ -350,7 +350,7 @@ const gearSets = [
     },
   },
   {
-    type: "5.2bis",
+    type: "ultimate",
     description: "글쿨 2.41초 절 알렉산더 세트.",
     attributes: {
       main: 0,
@@ -879,6 +879,61 @@ class Drk extends PageComponent {
                 <TableBody>
                   {gearSets
                     .filter((gearSet) => gearSet.type === "5.25bis")
+                    .map((gearSet, gearSetIndex) => {
+                      return (
+                        <TableRow
+                          className={this.props.classes.link}
+                          hover
+                          key={gearSetIndex}
+                          onClick={() => {
+                            this.setState({
+                              ...this.state,
+                              openedDialog: gearSet.index,
+                            });
+                          }}
+                        >
+                          <Hidden mdDown>
+                            <TableCell>{gearSet.description}</TableCell>
+                          </Hidden>
+                          <TableCell>{gearSet.dps}</TableCell>
+                          <TableCell>{gearSet.gcd} 초</TableCell>
+                          <TableCell>
+                            {BisItems[gearSet.foodId]
+                              ? BisItems[gearSet.foodId].name
+                              : gearSet.foodId}
+                          </TableCell>
+                          <TableCell>{gearSet.dh} %</TableCell>
+                          <TableCell>{gearSet.ch} %</TableCell>
+                          <TableCell>{gearSet.ten} %</TableCell>
+                        </TableRow>
+                      );
+                    })}
+                </TableBody>
+              </Table>
+            </TableContainer>
+          </Grid>
+          <Grid item>
+            <Toolbar>
+              <Typography variant="h6">절 알렉산더 BiS</Typography>
+            </Toolbar>
+            <TableContainer>
+              <Table>
+                <TableHead>
+                  <TableRow>
+                    <Hidden mdDown>
+                      <TableCell />
+                    </Hidden>
+                    <TableCell>평균 DPS</TableCell>
+                    <TableCell>글로벌 쿨다운</TableCell>
+                    <TableCell>음식</TableCell>
+                    <TableCell>직격 확률</TableCell>
+                    <TableCell>극대 확률</TableCell>
+                    <TableCell>불굴 추가 방어력</TableCell>
+                  </TableRow>
+                </TableHead>
+                <TableBody>
+                  {gearSets
+                    .filter((gearSet) => gearSet.type === "ultimate")
                     .map((gearSet, gearSetIndex) => {
                       return (
                         <TableRow

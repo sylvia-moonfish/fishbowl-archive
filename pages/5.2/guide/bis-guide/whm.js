@@ -284,7 +284,7 @@ const gearSets = [
     },
   },
   {
-    type: "5.2bis",
+    type: "ultimate",
     description: "신앙 743 절 알렉산더 세트.",
     attributes: {
       main: 0,
@@ -352,6 +352,79 @@ const gearSets = [
         {
           itemId: "deepshadowRingOfHealing",
           materiaIds: ["dh8", "det8"],
+        },
+      ],
+    },
+  },
+  {
+    type: "ultimate",
+    description: "신앙 1915 높은 신앙 절 알렉산더 세트.",
+    attributes: {
+      main: 0,
+      wd: 0,
+      ch: 0,
+      dh: 0,
+      det: 0,
+      sps: 0,
+      pie: 0,
+    },
+    dps: 9288.1,
+    hps: 0,
+    mpRegen: 0,
+    gcd: 0,
+    foodId: "herringPie",
+    dh: 0,
+    ch: 0,
+    dialog: {
+      intro: "높은 신앙 절 알렉산더용 장비 세트.",
+      gears: [
+        {
+          itemId: "edengraceCane",
+          materiaIds: ["ch8", "ch8"],
+        },
+        {
+          itemId: "augmentedDeepshadowHoodOfHealing",
+          materiaIds: ["ch8", "det8"],
+        },
+        {
+          itemId: "augmentedDeepshadowScaleMailOfHealing",
+          materiaIds: ["ch8", "ch8"],
+        },
+        {
+          itemId: "augmentedDeepshadowArmguardsOfHealing",
+          materiaIds: ["ch8", "ch8"],
+        },
+        {
+          itemId: "edengraceTassetsOfHealing",
+          materiaIds: ["dh8", "det8"],
+        },
+        {
+          itemId: "edengracePantaloonsOfHealing",
+          materiaIds: ["det8", "det8"],
+        },
+        {
+          itemId: "edengraceSandalsOfHealing",
+          materiaIds: ["det8", "det8"],
+        },
+        {
+          itemId: "augmentedDeepshadowEarringOfHealing",
+          materiaIds: ["dh8", "det8"],
+        },
+        {
+          itemId: "augmentedDeepshadowNecklaceOfHealing",
+          materiaIds: ["det8", "det8"],
+        },
+        {
+          itemId: "edengraceBraceletOfHealing",
+          materiaIds: ["det8", "det8"],
+        },
+        {
+          itemId: "edengraceRingOfHealing",
+          materiaIds: ["ch8", "det8"],
+        },
+        {
+          itemId: "augmentedDeepshadowRingOfHealing",
+          materiaIds: ["det8", "det8"],
         },
       ],
     },
@@ -643,6 +716,63 @@ class Whm extends PageComponent {
                 <TableBody>
                   {gearSets
                     .filter((gearSet) => gearSet.type === "5.2bis")
+                    .map((gearSet, gearSetIndex) => {
+                      return (
+                        <TableRow
+                          className={this.props.classes.link}
+                          hover
+                          key={gearSetIndex}
+                          onClick={() => {
+                            this.setState({
+                              ...this.state,
+                              openedDialog: gearSet.index,
+                            });
+                          }}
+                        >
+                          <Hidden mdDown>
+                            <TableCell>{gearSet.description}</TableCell>
+                          </Hidden>
+                          <TableCell>{gearSet.dps}</TableCell>
+                          <TableCell>{gearSet.hps}</TableCell>
+                          <TableCell>{gearSet.mpRegen}</TableCell>
+                          <TableCell>{gearSet.gcd} 초</TableCell>
+                          <TableCell>
+                            {BisItems[gearSet.foodId]
+                              ? BisItems[gearSet.foodId].name
+                              : gearSet.foodId}
+                          </TableCell>
+                          <TableCell>{gearSet.dh} %</TableCell>
+                          <TableCell>{gearSet.ch} %</TableCell>
+                        </TableRow>
+                      );
+                    })}
+                </TableBody>
+              </Table>
+            </TableContainer>
+          </Grid>
+          <Grid item>
+            <Toolbar>
+              <Typography variant="h6">절 알렉산더 BiS</Typography>
+            </Toolbar>
+            <TableContainer>
+              <Table>
+                <TableHead>
+                  <TableRow>
+                    <Hidden mdDown>
+                      <TableCell />
+                    </Hidden>
+                    <TableCell>평균 DPS</TableCell>
+                    <TableCell>평균 HPS</TableCell>
+                    <TableCell>틱당 MP회복</TableCell>
+                    <TableCell>글로벌 쿨다운</TableCell>
+                    <TableCell>음식</TableCell>
+                    <TableCell>직격 확률</TableCell>
+                    <TableCell>극대 확률</TableCell>
+                  </TableRow>
+                </TableHead>
+                <TableBody>
+                  {gearSets
+                    .filter((gearSet) => gearSet.type === "ultimate")
                     .map((gearSet, gearSetIndex) => {
                       return (
                         <TableRow

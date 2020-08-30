@@ -1,5 +1,20 @@
 {
   "================================================== Weapon: WHM ==================================================": {},
+  "edengraceCane": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-cane.png",
+    "name": "에덴의 은총 환술봉",
+    "required": "4층 낱장 x 8",
+    "type": "무기",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "wd": 164,
+      "main": 544,
+      "det": 467,
+      "pie": 327
+    }
+  },
   "augmentedDeepshadowSignum": {
     "from": "석판 보강",
     "iconSrc": "/icons/items/augmented-deepshadow-signum.png",
@@ -78,6 +93,38 @@
     }
   },
 
+  "================================================== Weapon: AST ==================================================": {},
+  "edengracePlanisphere": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-planisphere.png",
+    "name": "에덴의 은총 천궁도",
+    "required": "4층 낱장 x 8",
+    "type": "무기",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "wd": 164,
+      "main": 544,
+      "det": 327,
+      "pie": 467
+    }
+  },
+  "edenchoirTorquetum": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edenchoir-torquetum.png",
+    "name": "Edenchoir Torquetum",
+    "required": "4층 낱장 x 8",
+    "type": "무기",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "wd": 172,
+      "main": 634,
+      "det": 349,
+      "pie": 498
+    }
+  },
+
   "================================================== Head: Healer ==================================================": {},
   "edengraceTempleChainOfHealing": {
     "from": "영웅 레이드",
@@ -91,6 +138,20 @@
       "main": 303,
       "det": 264,
       "sps": 185
+    }
+  },
+  "augmentedDeepshadowHoodOfHealing": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-hood-of-healing.png",
+    "name": "보강된 암영 치유사 두건",
+    "required": "석판 495개\n강화섬유\n(3층 낱장 x 4)",
+    "type": "머리",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "main": 303,
+      "det": 185,
+      "pie": 264
     }
   },
   "edenchoirWingsOfHealing": {
@@ -165,6 +226,20 @@
       "main": 303,
       "det": 264,
       "sps": 185
+    }
+  },
+  "augmentedDeepshadowArmguardsOfHealing": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-armguards-of-healing.png",
+    "name": "보강된 암영 치유사 팔보호구",
+    "required": "석판 495개\n강화섬유\n(3층 낱장 x 4)",
+    "type": "손",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "main": 303,
+      "det": 264,
+      "pie": 185
     }
   },
   "edenchoirArmletsOfHealing": {
@@ -271,6 +346,20 @@
       "pie": 264
     }
   },
+  "edenchoirBootsOfHealing": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edenchoir-boots-of-healing.png",
+    "name": "Edenchoir Boots of Healing",
+    "required": "2층 낱장 x 6",
+    "type": "발",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "main": 353,
+      "det": 281,
+      "pie": 197
+    }
+  },
   "augmentedCrystariumShoesOfHealing": {
     "from": "석판 보강",
     "iconSrc": "/icons/items/augmented-crystarium-shoes-of-healing.png",
@@ -329,6 +418,20 @@
       "main": 227,
       "det": 139,
       "sps": 198
+    }
+  },
+  "augmentedDeepshadowNecklaceOfHealing": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-necklace-of-healing.png",
+    "name": "보강된 암영 치유사 목걸이",
+    "required": "석판 375개\n경화약\n(2층 낱장 x 4)",
+    "type": "목걸이",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "main": 227,
+      "ch": 139,
+      "pie": 198
     }
   },
   "augmentedCrystariumChokerOfHealing": {
@@ -391,6 +494,20 @@
   },
 
   "================================================== Ring: Healer ==================================================": {},
+  "edengraceRingOfHealing": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-ring-of-healing.png",
+    "name": "에덴의 은총 치유사 반지",
+    "required": "1층 낱장 x 4",
+    "type": "반지",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "main": 227,
+      "det": 139,
+      "pie": 198
+    }
+  },
   "augmentedDeepshadowRingOfHealing": {
     "from": "석판 보강",
     "iconSrc": "/icons/items/augmented-deepshadow-ring-of-healing.png",
