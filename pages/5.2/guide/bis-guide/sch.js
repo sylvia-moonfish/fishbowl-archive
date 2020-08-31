@@ -138,7 +138,7 @@ const gearSets = [
   },
   {
     type: "5.2bis",
-    description: "신앙 1119 장비 세트.",
+    description: "신앙 1119 높은 신앙 세트.",
     attributes: {
       main: 0,
       wd: 0,

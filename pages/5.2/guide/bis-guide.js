@@ -68,7 +68,6 @@ const jobs = {
     {
       name: "몽크",
       initial: "mnk",
-      disabled: true,
     },
     {
       name: "용기사",

@@ -41,6 +41,9 @@
     <Content Include="data\5.2\bis-items-healer.json">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="data\5.2\bis-items-str.json">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="data\5.2\bis-items-tank.json" />
     <Content Include="data\main-menu.js" />
     <Content Include="data\site-info.json" />
@@ -74,6 +77,9 @@
       <SubType>Code</SubType>
     </Content>
     <Content Include="pages\5.2\guide\bis-guide\gnb.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="pages\5.2\guide\bis-guide\mnk.js">
       <SubType>Code</SubType>
     </Content>
     <Content Include="pages\5.2\guide\bis-guide\pld.js" />
@@ -134,18 +140,23 @@
     <Content Include="public\icons\fflogs.png" />
     <Content Include="public\icons\items\armor-of-early-antiquity.png" />
     <Content Include="public\icons\items\augmented-crystarium-belt-of-healing.png" />
+    <Content Include="public\icons\items\augmented-crystarium-belt-of-striking.png" />
     <Content Include="public\icons\items\augmented-crystarium-choker-of-healing.png" />
+    <Content Include="public\icons\items\augmented-crystarium-choker-of-slaying.png" />
     <Content Include="public\icons\items\augmented-crystarium-circlet-of-fending.png" />
     <Content Include="public\icons\items\augmented-crystarium-codex.png" />
     <Content Include="public\icons\items\augmented-crystarium-earrings-of-fending.png" />
     <Content Include="public\icons\items\augmented-crystarium-pantaloons-of-healing.png" />
+    <Content Include="public\icons\items\augmented-crystarium-pantaloons-of-striking.png" />
     <Content Include="public\icons\items\augmented-crystarium-ring-of-fending.png" />
     <Content Include="public\icons\items\augmented-crystarium-ring-of-healing.png" />
+    <Content Include="public\icons\items\augmented-crystarium-ring-of-slaying.png" />
     <Content Include="public\icons\items\augmented-crystarium-robe-of-healing.png" />
     <Content Include="public\icons\items\augmented-crystarium-shoes-of-healing.png" />
     <Content Include="public\icons\items\augmented-crystarium-tabard-of-fending.png" />
     <Content Include="public\icons\items\augmented-crystarium-thighboots-of-fending.png" />
     <Content Include="public\icons\items\augmented-crystarium-turban-of-healing.png" />
+    <Content Include="public\icons\items\augmented-crystarium-turban-of-striking.png" />
     <Content Include="public\icons\items\augmented-crystarium-wristband-of-fending.png" />
     <Content Include="public\icons\items\augmented-crystarium-wristband-of-healing.png" />
     <Content Include="public\icons\items\augmented-deepshadow-armguards-of-casting.png" />
@@ -256,17 +267,24 @@
     <Content Include="public\icons\items\edenchoir-codex.png" />
     <Content Include="public\icons\items\edenchoir-cuisses-of-fending.png" />
     <Content Include="public\icons\items\edenchoir-earrings-of-healing.png" />
+    <Content Include="public\icons\items\edenchoir-earrings-of-slaying.png" />
+    <Content Include="public\icons\items\edenchoir-gambison-of-striking.png" />
     <Content Include="public\icons\items\edenchoir-gauntlets-of-fending.png" />
+    <Content Include="public\icons\items\edenchoir-gauntlets-of-striking.png" />
     <Content Include="public\icons\items\edenchoir-greatsword.png" />
     <Content Include="public\icons\items\edenchoir-gunblade.png" />
     <Content Include="public\icons\items\edenchoir-helm-of-fending.png" />
+    <Content Include="public\icons\items\edenchoir-jamadhars.png" />
     <Content Include="public\icons\items\edenchoir-ring-of-fending.png" />
     <Content Include="public\icons\items\edenchoir-ring-of-healing.png" />
+    <Content Include="public\icons\items\edenchoir-ring-of-slaying.png" />
     <Content Include="public\icons\items\edenchoir-scutum.png" />
+    <Content Include="public\icons\items\edenchoir-sollerets-of-striking.png" />
     <Content Include="public\icons\items\edenchoir-tassets-of-fending.png" />
     <Content Include="public\icons\items\edenchoir-torquetum.png" />
     <Content Include="public\icons\items\edenchoir-wings-of-healing.png" />
     <Content Include="public\icons\items\edenchoir-wristband-of-healing.png" />
+    <Content Include="public\icons\items\edenchoir-wristband-of-slaying.png" />
     <Content Include="public\icons\items\edengrace-armet-of-fending.png" />
     <Content Include="public\icons\items\edengrace-armlets-of-healing.png" />
     <Content Include="public\icons\items\edengrace-armlets-of-striking.png" />

@@ -30,7 +30,7 @@ import React from "react";
 
 import BisCalculations from "../../../../data/5.2/bis-calculations";
 import BisItemsCommon from "../../../../data/5.2/bis-items-common";
-import BisItemsHealer from "../../../../data/5.2/bis-items-healer";
+import BisItemsStr from "../../../../data/5.2/bis-items-str";
 import SiteInfo from "../../../../data/site-info";
 import PageComponent from "../../../../src/components/page-component";
 
@@ -57,381 +57,229 @@ const styles = (theme) => ({
 });
 
 const pageData = {
-  title: "5.2 백마도사 BiS 가이드",
-  description: "파이널 판타지 14 패치 5.2 백마도사 BiS 가이드.",
+  title: "5.2 몽크 BiS 가이드",
+  description: "파이널 판타지 14 패치 5.2 몽크 BiS 가이드.",
 };
 
 const gearSets = [
   {
     type: "5.2bis",
-    description: "신앙 838 추천 세트.",
+    description: "질풍글쿨 1.95초 추천 세트.",
     attributes: {
       main: 0,
       wd: 0,
       ch: 0,
       dh: 0,
       det: 0,
-      sps: 0,
-      pie: 0,
+      sks: 0,
     },
-    dps: 11899.14,
-    hps: 0,
+    dps: 18715.56,
     gcd: 0,
-    foodId: "herringPie",
+    glGcd: 1.95,
+    foodId: "sausageAndSauerkraut",
     dh: 0,
     ch: 0,
-    mpRegen: 0,
     dialog: {
       intro:
-        "무난하게 사용 가능한 추천 장비 세트. 조금 더 높은 신앙을 선호하시는 분들은 신앙 1049 장비 세트 참조.",
+        "무난하게 사용 가능한 추천 세트. 인터넷 환경이 좋지 않다면 기시에 살짝 더 투자한 1.94초 세트를 추천.",
       gears: [
         {
-          itemId: "edenchoirCane",
-          materiaIds: ["ch8", "ch8"],
-        },
-        {
-          itemId: "edenchoirWingsOfHealing",
+          itemId: "edenchoirJamadhars",
           materiaIds: ["dh8", "dh8"],
         },
         {
-          itemId: "augmentedCrystariumRobeOfHealing",
-          materiaIds: ["ch8", "ch8"],
-        },
-        {
-          itemId: "edenchoirArmletsOfHealing",
+          itemId: "augmentedCrystariumTurbanOfStriking",
           materiaIds: ["dh8", "dh8"],
         },
         {
-          itemId: "augmentedCrystariumBeltOfHealing",
+          itemId: "edenchoirGambisonOfStriking",
           materiaIds: ["dh8", "dh8"],
         },
         {
-          itemId: "edenchoirBreechesOfHealing",
-          materiaIds: ["ch8", "ch8"],
-        },
-        {
-          itemId: "augmentedCrystariumShoesOfHealing",
+          itemId: "edenchoirGauntletsOfStriking",
           materiaIds: ["dh8", "dh8"],
         },
         {
-          itemId: "edenchoirEarringsOfHealing",
+          itemId: "augmentedCrystariumBeltOfStriking",
+          materiaIds: ["ch8", "det8"],
+        },
+        {
+          itemId: "augmentedCrystariumPantaloonsOfStriking",
           materiaIds: ["dh8", "dh8"],
         },
         {
-          itemId: "augmentedCrystariumChokerOfHealing",
-          materiaIds: ["ch8", "dh8"],
+          itemId: "edenchoirSolleretsOfStriking",
+          materiaIds: ["dh8", "det8"],
         },
         {
-          itemId: "edenchoirWristbandOfHealing",
+          itemId: "edenchoirEarringsOfSlaying",
           materiaIds: ["dh8", "dh8"],
         },
         {
-          itemId: "edenchoirRingOfHealing",
+          itemId: "augmentedCrystariumChokerOfSlaying",
           materiaIds: ["dh8", "dh8"],
         },
         {
-          itemId: "augmentedCrystariumRingOfHealing",
-          materiaIds: ["ch8", "sps8"],
+          itemId: "edenchoirWristbandOfSlaying",
+          materiaIds: ["dh8", "sks8"],
+        },
+        {
+          itemId: "edenchoirRingOfSlaying",
+          materiaIds: ["dh8", "det8"],
+        },
+        {
+          itemId: "augmentedCrystariumRingOfSlaying",
+          materiaIds: ["ch8", "sks8"],
         },
       ],
     },
   },
   {
     type: "5.2bis",
-    description: "신앙 838 빠른 마시 세트.",
+    description: "질풍글쿨 1.94초 빠른 기시 세트.",
     attributes: {
       main: 0,
       wd: 0,
       ch: 0,
       dh: 0,
       det: 0,
-      sps: 0,
-      pie: 0,
+      sks: 0,
     },
-    dps: 11897.59,
-    hps: 0,
+    dps: 18706.05,
     gcd: 0,
-    foodId: "herringPie",
+    glGcd: 1.94,
+    foodId: "sausageAndSauerkraut",
     dh: 0,
     ch: 0,
-    mpRegen: 0,
-    dialog: {
-      intro: "빠른 마시를 선호하시는 분들을 위한 장비 세트.",
-      gears: [
-        {
-          itemId: "edenchoirCane",
-          materiaIds: ["ch8", "ch8"],
-        },
-        {
-          itemId: "edenchoirWingsOfHealing",
-          materiaIds: ["dh8", "dh8"],
-        },
-        {
-          itemId: "augmentedCrystariumRobeOfHealing",
-          materiaIds: ["ch8", "ch8"],
-        },
-        {
-          itemId: "edenchoirArmletsOfHealing",
-          materiaIds: ["sps8", "sps8"],
-        },
-        {
-          itemId: "augmentedCrystariumBeltOfHealing",
-          materiaIds: ["sps8", "sps8"],
-        },
-        {
-          itemId: "edenchoirBreechesOfHealing",
-          materiaIds: ["ch8", "ch8"],
-        },
-        {
-          itemId: "augmentedCrystariumShoesOfHealing",
-          materiaIds: ["dh8", "dh8"],
-        },
-        {
-          itemId: "edenchoirEarringsOfHealing",
-          materiaIds: ["dh8", "dh8"],
-        },
-        {
-          itemId: "augmentedCrystariumChokerOfHealing",
-          materiaIds: ["ch8", "dh8"],
-        },
-        {
-          itemId: "edenchoirWristbandOfHealing",
-          materiaIds: ["dh8", "dh8"],
-        },
-        {
-          itemId: "edenchoirRingOfHealing",
-          materiaIds: ["dh8", "dh8"],
-        },
-        {
-          itemId: "augmentedCrystariumRingOfHealing",
-          materiaIds: ["ch8", "dh8"],
-        },
-      ],
-    },
-  },
-  {
-    type: "5.2bis",
-    description: "신앙 1049 높은 신앙 세트.",
-    attributes: {
-      main: 0,
-      wd: 0,
-      ch: 0,
-      dh: 0,
-      det: 0,
-      sps: 0,
-      pie: 0,
-    },
-    dps: 11805.16,
-    hps: 0,
-    gcd: 0,
-    foodId: "herringPie",
-    dh: 0,
-    ch: 0,
-    mpRegen: 0,
     dialog: {
       intro:
-        "신앙에 더 투자한 장비 세트. 힐러 운용에 아직 미숙하거나 MP 관리가 힘드신 분들께 추천.",
+        "1.95초 세트와 DPS에서 큰 차이가 없으면서 질풍 글쿨이 0.01초 더 빠름. 인터넷 환경이 좋지 않은 분들께 추천.",
       gears: [
         {
-          itemId: "edenchoirCane",
-          materiaIds: ["ch8", "ch8"],
-        },
-        {
-          itemId: "edenchoirWingsOfHealing",
+          itemId: "edenchoirJamadhars",
           materiaIds: ["dh8", "dh8"],
         },
         {
-          itemId: "augmentedCrystariumRobeOfHealing",
-          materiaIds: ["ch8", "ch8"],
-        },
-        {
-          itemId: "edenchoirArmletsOfHealing",
+          itemId: "augmentedCrystariumTurbanOfStriking",
           materiaIds: ["dh8", "dh8"],
         },
         {
-          itemId: "augmentedCrystariumBeltOfHealing",
+          itemId: "edenchoirGambisonOfStriking",
           materiaIds: ["dh8", "dh8"],
         },
         {
-          itemId: "edenchoirBreechesOfHealing",
-          materiaIds: ["ch8", "ch8"],
-        },
-        {
-          itemId: "augmentedCrystariumShoesOfHealing",
+          itemId: "edenchoirGauntletsOfStriking",
           materiaIds: ["dh8", "dh8"],
         },
         {
-          itemId: "edenchoirEarringsOfHealing",
+          itemId: "augmentedCrystariumBeltOfStriking",
+          materiaIds: ["ch8", "sks8"],
+        },
+        {
+          itemId: "augmentedCrystariumPantaloonsOfStriking",
           materiaIds: ["dh8", "dh8"],
         },
         {
-          itemId: "augmentedCrystariumChokerOfHealing",
-          materiaIds: ["ch8", "dh8"],
+          itemId: "edenchoirSolleretsOfStriking",
+          materiaIds: ["dh8", "sks8"],
         },
         {
-          itemId: "augmentedCrystariumWristbandOfHealing",
-          materiaIds: ["ch8", "dh8"],
-        },
-        {
-          itemId: "edenchoirRingOfHealing",
+          itemId: "edenchoirEarringsOfSlaying",
           materiaIds: ["dh8", "dh8"],
         },
         {
-          itemId: "augmentedCrystariumRingOfHealing",
-          materiaIds: ["ch8", "sps8"],
+          itemId: "augmentedCrystariumChokerOfSlaying",
+          materiaIds: ["dh8", "dh8"],
+        },
+        {
+          itemId: "edenchoirWristbandOfSlaying",
+          materiaIds: ["dh8", "sks8"],
+        },
+        {
+          itemId: "edenchoirRingOfSlaying",
+          materiaIds: ["dh8", "dh8"],
+        },
+        {
+          itemId: "augmentedCrystariumRingOfSlaying",
+          materiaIds: ["ch8", "sks8"],
         },
       ],
     },
   },
   {
     type: "ultimate",
-    description: "신앙 743 절 알렉산더 세트.",
+    description: "질풍글쿨 1.94초 절 알렉산더 세트.",
     attributes: {
       main: 0,
       wd: 0,
       ch: 0,
       dh: 0,
       det: 0,
-      sps: 0,
-      pie: 0,
+      sks: 0,
     },
-    dps: 9697.76,
-    hps: 0,
-    mpRegen: 0,
+    dps: 15295.31,
     gcd: 0,
-    foodId: "herringPie",
+    glGcd: 1.94,
+    foodId: "sausageAndSauerkraut",
     dh: 0,
     ch: 0,
     dialog: {
-      intro: "절 알렉산더용 장비 세트.",
+      intro: "절 알렉산더용 장비 세트",
       gears: [
         {
-          itemId: "augmentedDeepshadowSignum",
+          itemId: "edengraceKnuckles",
           materiaIds: ["dh8", "dh8"],
         },
         {
-          itemId: "edengraceTempleChainOfHealing",
+          itemId: "augmentedDeepshadowHalfmaskOfStriking",
+          materiaIds: ["dh8", "sks8"],
+        },
+        {
+          itemId: "augmentedDeepshadowScaleMailOfStriking",
           materiaIds: ["ch8", "ch8"],
         },
         {
-          itemId: "augmentedDeepshadowScaleMailOfHealing",
+          itemId: "edengraceArmletsOfStriking",
+          materiaIds: ["dh8", "dh8"],
+        },
+        {
+          itemId: "augmentedDeepshadowTassetsOfStriking",
+          materiaIds: ["dh8", "dh8"],
+        },
+        {
+          itemId: "edengracePantaloonsOfStriking",
           materiaIds: ["ch8", "ch8"],
         },
         {
-          itemId: "edengraceArmletsOfHealing",
-          materiaIds: ["ch8", "ch8"],
-        },
-        {
-          itemId: "edengraceTassetsOfHealing",
+          itemId: "augmentedDeepshadowGreavesOfStriking",
           materiaIds: ["dh8", "dh8"],
         },
         {
-          itemId: "edengracePantaloonsOfHealing",
+          itemId: "augmentedDeepshadowEarringOfSlaying",
           materiaIds: ["dh8", "dh8"],
         },
         {
-          itemId: "edengraceSandalsOfHealing",
-          materiaIds: ["ch8", "dh8"],
+          itemId: "edengraceChokerOfSlaying",
+          materiaIds: ["dh8", "sks8"],
         },
         {
-          itemId: "augmentedDeepshadowEarringOfHealing",
+          itemId: "augmentedDeepshadowBraceletOfSlaying",
           materiaIds: ["dh8", "dh8"],
         },
         {
-          itemId: "edengraceChokerOfHealing",
-          materiaIds: ["ch8", "ch8"],
-        },
-        {
-          itemId: "edengraceBraceletOfHealing",
+          itemId: "edengraceRingOfSlaying",
           materiaIds: ["dh8", "dh8"],
         },
         {
-          itemId: "augmentedDeepshadowRingOfHealing",
-          materiaIds: ["dh8", "dh8"],
-        },
-        {
-          itemId: "deepshadowRingOfHealing",
-          materiaIds: ["dh8", "det8"],
-        },
-      ],
-    },
-  },
-  {
-    type: "ultimate",
-    description: "신앙 1915 높은 신앙 절 알렉산더 세트.",
-    attributes: {
-      main: 0,
-      wd: 0,
-      ch: 0,
-      dh: 0,
-      det: 0,
-      sps: 0,
-      pie: 0,
-    },
-    dps: 9288.1,
-    hps: 0,
-    mpRegen: 0,
-    gcd: 0,
-    foodId: "herringPie",
-    dh: 0,
-    ch: 0,
-    dialog: {
-      intro: "높은 신앙 절 알렉산더용 장비 세트.",
-      gears: [
-        {
-          itemId: "edengraceCane",
-          materiaIds: ["ch8", "ch8"],
-        },
-        {
-          itemId: "augmentedDeepshadowHoodOfHealing",
+          itemId: "augmentedDeepshadowRingOfSlaying",
           materiaIds: ["ch8", "det8"],
-        },
-        {
-          itemId: "augmentedDeepshadowScaleMailOfHealing",
-          materiaIds: ["ch8", "ch8"],
-        },
-        {
-          itemId: "augmentedDeepshadowArmguardsOfHealing",
-          materiaIds: ["ch8", "ch8"],
-        },
-        {
-          itemId: "edengraceTassetsOfHealing",
-          materiaIds: ["dh8", "det8"],
-        },
-        {
-          itemId: "edengracePantaloonsOfHealing",
-          materiaIds: ["det8", "det8"],
-        },
-        {
-          itemId: "edengraceSandalsOfHealing",
-          materiaIds: ["det8", "det8"],
-        },
-        {
-          itemId: "augmentedDeepshadowEarringOfHealing",
-          materiaIds: ["dh8", "det8"],
-        },
-        {
-          itemId: "augmentedDeepshadowNecklaceOfHealing",
-          materiaIds: ["det8", "det8"],
-        },
-        {
-          itemId: "edengraceBraceletOfHealing",
-          materiaIds: ["det8", "det8"],
-        },
-        {
-          itemId: "edengraceRingOfHealing",
-          materiaIds: ["ch8", "det8"],
-        },
-        {
-          itemId: "augmentedDeepshadowRingOfHealing",
-          materiaIds: ["det8", "det8"],
         },
       ],
     },
   },
 ];
 
-class Whm extends PageComponent {
+class Mnk extends PageComponent {
   constructor(props) {
     super(props);
 
@@ -443,23 +291,22 @@ class Whm extends PageComponent {
   render() {
     const BisItems = {
       ...BisItemsCommon,
-      ...BisItemsHealer,
+      ...BisItemsStr,
     };
 
     gearSets.forEach((gearSet, gearSetIndex) => {
       gearSet.index = gearSetIndex;
       gearSet.attributes.main = Math.floor(
         Math.floor(
-          (BisCalculations.level.main * BisCalculations.whm.mnd) / 100
+          (BisCalculations.level.main * BisCalculations.mnk.str) / 100
         ) +
-          BisCalculations.clan.mnd +
+          BisCalculations.clan.str +
           BisCalculations.trait
       );
       gearSet.attributes.ch = BisCalculations.level.sub;
       gearSet.attributes.dh = BisCalculations.level.sub;
       gearSet.attributes.det = BisCalculations.level.main;
-      gearSet.attributes.sps = BisCalculations.level.sub;
-      gearSet.attributes.pie = BisCalculations.level.main;
+      gearSet.attributes.sks = BisCalculations.level.sub;
 
       gearSet.dialog.gears.forEach((gear) => {
         if (!BisItems[gear.itemId]) {
@@ -546,7 +393,7 @@ class Whm extends PageComponent {
           (Math.floor(
             2000 -
               Math.floor(
-                ((gearSet.attributes.sps - BisCalculations.level.sub) * 130) /
+                ((gearSet.attributes.sks - BisCalculations.level.sub) * 130) /
                   BisCalculations.level.div +
                   1000
               )
@@ -571,39 +418,6 @@ class Whm extends PageComponent {
           ((gearSet.attributes.pie - BisCalculations.level.main) * 150) /
             BisCalculations.level.div
         ) + 200;
-
-      const healingPotency = 700;
-      const trait = 30;
-
-      const fDet = Math.floor(
-        ((gearSet.attributes.det - BisCalculations.level.main) * 130) /
-          BisCalculations.level.div +
-          1000
-      );
-      const fWd = Math.floor(
-        (BisCalculations.level.main * BisCalculations.whm.mnd) / 1000 +
-          gearSet.attributes.wd
-      );
-      const fCrit = Math.floor(
-        ((gearSet.attributes.ch - BisCalculations.level.sub) * 200) /
-          BisCalculations.level.div +
-          1400
-      );
-
-      const fHmp =
-        Math.floor(((gearSet.attributes.main - 340) * 100) / 304) + 100;
-
-      const h1 = Math.floor(
-        Math.floor(Math.floor(healingPotency * fHmp * fDet) / 100) / 1000
-      );
-      const h2 = Math.floor(
-        Math.floor(Math.floor(Math.floor(h1 * fWd) / 100) * (trait + 100)) / 100
-      );
-      const h3ch = Math.floor(Math.floor(h2 * fCrit) / 1000);
-      const healing =
-        (h3ch * gearSet.ch) / 100 + (h2 * (100 - gearSet.ch)) / 100;
-
-      gearSet.hps = Math.floor((healing / gearSet.gcd) * 100) / 100;
     });
 
     return (
@@ -653,15 +467,15 @@ class Whm extends PageComponent {
                       <img
                         alt=""
                         className={this.props.classes.banner}
-                        src="/icons/job-crystals/whm.png"
+                        src="/icons/job-crystals/mnk.png"
                       />
                     </Grid>
                   </Grid>
                 </Grid>
                 <Grid item>
                   <Typography variant="body1">
-                    패치 5.2 기준 백마도사의 Best-in-Slot 장비 세트 목록입니다.
-                    아래 표에서 열람하고자 하는 세트 목록을 클릭해주세요.
+                    패치 5.2 기준 몽크의 Best-in-Slot 장비 세트 목록입니다. 아래
+                    표에서 열람하고자 하는 세트 목록을 클릭해주세요.
                   </Typography>
                   <br />
                   <ul>
@@ -692,11 +506,6 @@ class Whm extends PageComponent {
             <Toolbar>
               <Typography variant="h6">5.2 BiS</Typography>
             </Toolbar>
-            <Typography variant="body2">
-              백마도사의 BiS는 신앙 스탯에 따라 갈립니다. 본인이 자주 사망하는
-              편이거나 파티원들이 자주 사망해 부활로 인한 MP 소모가 클 경우 높은
-              신앙을 가진 장비 세트를 선택하는 것이 나을 수 있습니다.
-            </Typography>
             <TableContainer>
               <Table>
                 <TableHead>
@@ -705,9 +514,8 @@ class Whm extends PageComponent {
                       <TableCell />
                     </Hidden>
                     <TableCell>평균 DPS</TableCell>
-                    <TableCell>평균 HPS</TableCell>
-                    <TableCell>틱당 MP회복</TableCell>
-                    <TableCell>글로벌 쿨다운</TableCell>
+                    <TableCell>기본 글쿨</TableCell>
+                    <TableCell>질풍 글쿨</TableCell>
                     <TableCell>음식</TableCell>
                     <TableCell>직격 확률</TableCell>
                     <TableCell>극대 확률</TableCell>
@@ -733,9 +541,8 @@ class Whm extends PageComponent {
                             <TableCell>{gearSet.description}</TableCell>
                           </Hidden>
                           <TableCell>{gearSet.dps}</TableCell>
-                          <TableCell>{gearSet.hps}</TableCell>
-                          <TableCell>{gearSet.mpRegen}</TableCell>
                           <TableCell>{gearSet.gcd} 초</TableCell>
+                          <TableCell>{gearSet.glGcd} 초</TableCell>
                           <TableCell>
                             {BisItems[gearSet.foodId]
                               ? BisItems[gearSet.foodId].name
@@ -762,9 +569,8 @@ class Whm extends PageComponent {
                       <TableCell />
                     </Hidden>
                     <TableCell>평균 DPS</TableCell>
-                    <TableCell>평균 HPS</TableCell>
-                    <TableCell>틱당 MP회복</TableCell>
-                    <TableCell>글로벌 쿨다운</TableCell>
+                    <TableCell>기본 글쿨</TableCell>
+                    <TableCell>질풍 글쿨</TableCell>
                     <TableCell>음식</TableCell>
                     <TableCell>직격 확률</TableCell>
                     <TableCell>극대 확률</TableCell>
@@ -790,9 +596,8 @@ class Whm extends PageComponent {
                             <TableCell>{gearSet.description}</TableCell>
                           </Hidden>
                           <TableCell>{gearSet.dps}</TableCell>
-                          <TableCell>{gearSet.hps}</TableCell>
-                          <TableCell>{gearSet.mpRegen}</TableCell>
                           <TableCell>{gearSet.gcd} 초</TableCell>
+                          <TableCell>{gearSet.glGcd} 초</TableCell>
                           <TableCell>
                             {BisItems[gearSet.foodId]
                               ? BisItems[gearSet.foodId].name
@@ -855,12 +660,11 @@ class Whm extends PageComponent {
                       <Table size="small">
                         <TableHead>
                           <TableRow>
-                            <TableCell align="center">정신력</TableCell>
+                            <TableCell align="center">힘</TableCell>
                             <TableCell align="center">극대</TableCell>
                             <TableCell align="center">직격</TableCell>
                             <TableCell align="center">의지</TableCell>
-                            <TableCell align="center">마시</TableCell>
-                            <TableCell align="center">신앙</TableCell>
+                            <TableCell align="center">기시</TableCell>
                           </TableRow>
                         </TableHead>
                         <TableBody>
@@ -878,10 +682,7 @@ class Whm extends PageComponent {
                               {gearSet.attributes.det}
                             </TableCell>
                             <TableCell align="center">
-                              {gearSet.attributes.sps}
-                            </TableCell>
-                            <TableCell align="center">
-                              {gearSet.attributes.pie}
+                              {gearSet.attributes.sks}
                             </TableCell>
                           </TableRow>
                         </TableBody>
@@ -1042,4 +843,4 @@ class Whm extends PageComponent {
   }
 }
 
-export default withStyles(styles)(withRouter(Whm));
+export default withStyles(styles)(withRouter(Mnk));

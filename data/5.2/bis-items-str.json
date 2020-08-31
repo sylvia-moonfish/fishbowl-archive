@@ -1,0 +1,361 @@
+{
+  "================================================== Weapon: MNK ==================================================": {},
+  "edengraceKnuckles": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-knuckles.png",
+    "name": "에덴의 은총 너클",
+    "required": "4층 낱장 x 8",
+    "type": "무기",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "wd": 122,
+      "main": 544,
+      "ch": 467,
+      "det": 327
+    }
+  },
+  "edenchoirJamadhars": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edenchoir-jamadhars.png",
+    "name": "Edenchoir Jamadhars",
+    "required": "4층 낱장 x 8",
+    "type": "무기",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "wd": 128,
+      "main": 634,
+      "ch": 498,
+      "dh": 349
+    }
+  },
+
+  "================================================== Head: Str ==================================================": {},
+  "augmentedDeepshadowHalfmaskOfStriking": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-halfmask-of-striking.png",
+    "name": "보강된 암영 타격대 반가면",
+    "required": "석판 495개\n강화섬유\n(3층 낱장 x 4)",
+    "type": "머리",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "main": 303,
+      "ch": 264,
+      "dh": 185
+    }
+  },
+  "augmentedCrystariumTurbanOfStriking": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-crystarium-turban-of-striking.png",
+    "name": "Augmented Crystarium Turban of Striking",
+    "required": "석판 495개\n강화섬유\n(3층 낱장 x 4)",
+    "type": "머리",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "main": 353,
+      "ch": 281,
+      "det": 197
+    }
+  },
+
+  "================================================== Body: Str ==================================================": {},
+  "augmentedDeepshadowScaleMailOfStriking": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-scale-mail-of-striking.png",
+    "name": "보강된 암영 타격대 미늘갑옷",
+    "required": "석판 825개\n강화섬유\n(3층 낱장 x 4)",
+    "type": "몸통",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "main": 492,
+      "ch": 300,
+      "sks": 429
+    }
+  },
+  "edenchoirGambisonOfStriking": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edenchoir-gambison-of-striking.png",
+    "name": "Edenchoir Gambison of Striking",
+    "required": "4층 낱장 x 8",
+    "type": "몸통",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "main": 573,
+      "ch": 457,
+      "dh": 320
+    }
+  },
+
+  "================================================== Hands: Str ==================================================": {},
+  "edengraceArmletsOfStriking": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-armlets-of-striking.png",
+    "name": "에덴의 은총 타격대 팔덮개",
+    "required": "2층 낱장 x 6",
+    "type": "손",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "main": 303,
+      "ch": 264,
+      "det": 185
+    }
+  },
+  "edenchoirGauntletsOfStriking": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edenchoir-gauntlets-of-striking.png",
+    "name": "Edenchoir Gauntlets of Striking",
+    "required": "2층 낱장 x 6",
+    "type": "손",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "main": 353,
+      "ch": 281,
+      "sks": 197
+    }
+  },
+
+  "================================================== Waist: Str ==================================================": {},
+  "augmentedDeepshadowTassetsOfStriking": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-tassets-of-striking.png",
+    "name": "보강된 암영 타격대 허리갑옷",
+    "required": "석판 375개\n경화약\n(2층 낱장 x 4)",
+    "type": "허리",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "main": 227,
+      "ch": 198,
+      "det": 139
+    }
+  },
+  "augmentedCrystariumBeltOfStriking": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-crystarium-belt-of-striking.png",
+    "name": "Augmented Crystarium Belt of Striking",
+    "required": "석판 375개\n경화약\n(2층 낱장 x 4)",
+    "type": "허리",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "main": 265,
+      "ch": 148,
+      "dh": 211
+    }
+  },
+
+  "================================================== Legs: Str ==================================================": {},
+  "edengracePantaloonsOfStriking": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-pantaloons-of-striking.png",
+    "name": "에덴의 은총 타격대 나팔바지",
+    "required": "3층 낱장 x 8",
+    "type": "다리",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "main": 492,
+      "det": 429,
+      "dh": 300
+    }
+  },
+  "augmentedCrystariumPantaloonsOfStriking": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-crystarium-pantaloons-of-striking.png",
+    "name": "Augmented Crystarium Pantaloons of Striking",
+    "required": "석판 825개\n강화섬유\n(3층 낱장 x 4)",
+    "type": "다리",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "main": 573,
+      "ch": 457,
+      "det": 320
+    }
+  },
+
+  "================================================== Feet: Str ==================================================": {},
+  "augmentedDeepshadowGreavesOfStriking": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-greaves-of-striking.png",
+    "name": "보강된 암영 타격대 갑주장화",
+    "required": "석판 495개\n강화섬유\n(3층 낱장 x 4)",
+    "type": "발",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "main": 303,
+      "ch": 264,
+      "det": 185
+    }
+  },
+  "edenchoirSolleretsOfStriking": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edenchoir-sollerets-of-striking.png",
+    "name": "Edenchoir Sollerets of Striking",
+    "required": "2층 낱장 x 6",
+    "type": "발",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "main": 353,
+      "ch": 281,
+      "dh": 197
+    }
+  },
+
+  "================================================== Earrings: Str ==================================================": {},
+  "augmentedDeepshadowEarringOfSlaying": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-earring-of-slaying.png",
+    "name": "보강된 암영 공격대 귀걸이",
+    "required": "석판 375개\n경화약\n(2층 낱장 x 4)",
+    "type": "귀걸이",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "main": 227,
+      "ch": 198,
+      "det": 139
+    }
+  },
+  "edenchoirEarringsOfSlaying": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edenchoir-earrings-of-slaying.png",
+    "name": "Edenchoir Earrings of Slaying",
+    "required": "1층 낱장 x 4",
+    "type": "귀걸이",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "main": 265,
+      "ch": 211,
+      "det": 148
+    }
+  },
+
+  "================================================== Necklace: Str ==================================================": {},
+  "edengraceChokerOfSlaying": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-choker-of-slaying.png",
+    "name": "에덴의 은총 공격대 목장식",
+    "required": "1층 낱장 x 4",
+    "type": "목걸이",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "main": 227,
+      "ch": 198,
+      "dh": 139
+    }
+  },
+  "augmentedCrystariumChokerOfSlaying": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-crystarium-choker-of-slaying.png",
+    "name": "Augmented Crystarium Choker of Slaying",
+    "required": "석판 375개\n경화약\n(2층 낱장 x 4)",
+    "type": "목걸이",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "main": 265,
+      "ch": 211,
+      "det": 148
+    }
+  },
+
+  "================================================== Bracelets: Str ==================================================": {},
+  "augmentedDeepshadowBraceletOfSlaying": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-bracelet-of-slaying.png",
+    "name": "보강된 암영 공격대 팔찌",
+    "required": "석판 375개\n경화약\n(2층 낱장 x 4)",
+    "type": "팔찌",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "main": 227,
+      "ch": 198,
+      "det": 139
+    }
+  },
+  "edenchoirWristbandOfSlaying": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edenchoir-wristband-of-slaying.png",
+    "name": "Edenchoir Wristband of Slaying",
+    "required": "1층 낱장 x 4",
+    "type": "팔찌",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "main": 265,
+      "ch": 211,
+      "dh": 148
+    }
+  },
+
+  "================================================== Ring: Str ==================================================": {},
+  "edengraceRingOfSlaying": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-ring-of-slaying.png",
+    "name": "에덴의 은총 공격대 반지",
+    "required": "1층 낱장 x 4",
+    "type": "반지",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "main": 227,
+      "ch": 198,
+      "det": 139
+    }
+  },
+  "augmentedDeepshadowRingOfSlaying": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-ring-of-slaying.png",
+    "name": "보강된 암영 공격대 반지",
+    "required": "석판 375개\n경화약\n(2층 낱장 x 4)",
+    "type": "반지",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "main": 227,
+      "ch": 139,
+      "dh": 198
+    }
+  },
+  "edenchoirRingOfSlaying": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edenchoir-ring-of-slaying.png",
+    "name": "Edenchoir Ring of Slaying",
+    "required": "1층 낱장 x 4",
+    "type": "반지",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "main": 265,
+      "ch": 211,
+      "sks": 148
+    }
+  },
+  "augmentedCrystariumRingOfSlaying": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-crystarium-ring-of-slaying.png",
+    "name": "Augmented Crystarium Ring of Slaying",
+    "required": "석판 375개\n경화약\n(2층 낱장 x 4)",
+    "type": "반지",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "main": 265,
+      "ch": 148,
+      "dh": 211
+    }
+  }
+}
