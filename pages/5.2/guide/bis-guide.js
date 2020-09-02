@@ -72,7 +72,6 @@ const jobs = {
     {
       name: "용기사",
       initial: "drg",
-      disabled: true,
     },
     {
       name: "닌자",

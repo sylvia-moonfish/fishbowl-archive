@@ -57,14 +57,14 @@ const styles = (theme) => ({
 });
 
 const pageData = {
-  title: "5.2 몽크 BiS 가이드",
-  description: "파이널 판타지 14 패치 5.2 몽크 BiS 가이드.",
+  title: "5.2 용기사 BiS 가이드",
+  description: "파이널 판타지 14 패치 5.2 용기사 BiS 가이드.",
 };
 
 const gearSets = [
   {
     type: "5.2bis",
-    description: "질풍글쿨 1.95초 추천 세트.",
+    description: "글쿨 2.48초 추천 세트.",
     attributes: {
       main: 0,
       wd: 0,
@@ -73,47 +73,46 @@ const gearSets = [
       det: 0,
       sks: 0,
     },
-    dps: 18715.56,
+    dps: 17234.04,
     gcd: 0,
-    glGcd: 1.95,
-    foodId: "sausageAndSauerkraut",
+    foodId: "stuffedHighlandCabbage",
     dh: 0,
     ch: 0,
     dialog: {
       intro:
-        "무난하게 사용 가능한 추천 세트. 인터넷 환경이 좋지 않다면 기시에 살짝 더 투자한 1.94초 세트를 추천.",
+        "무난하게 사용 가능한 추천 세트. 인터넷 환경이 좋지 않다면 기시에 살짝 더 투자한 2.46초 세트를 추천.",
       gears: [
         {
-          itemId: "edenchoirJamadhars",
+          itemId: "edenchoirFork",
           materiaIds: ["dh8", "dh8"],
         },
         {
-          itemId: "augmentedCrystariumTurbanOfStriking",
-          materiaIds: ["dh8", "dh8"],
-        },
-        {
-          itemId: "edenchoirGambisonOfStriking",
-          materiaIds: ["dh8", "dh8"],
-        },
-        {
-          itemId: "edenchoirGauntletsOfStriking",
-          materiaIds: ["dh8", "dh8"],
-        },
-        {
-          itemId: "augmentedCrystariumBeltOfStriking",
-          materiaIds: ["ch8", "det8"],
-        },
-        {
-          itemId: "augmentedCrystariumPantaloonsOfStriking",
-          materiaIds: ["dh8", "dh8"],
-        },
-        {
-          itemId: "edenchoirSolleretsOfStriking",
+          itemId: "augmentedCrystariumCircletOfMaiming",
           materiaIds: ["dh8", "det8"],
         },
         {
-          itemId: "edenchoirEarringsOfSlaying",
+          itemId: "edenchoirMailOfMaiming",
           materiaIds: ["dh8", "dh8"],
+        },
+        {
+          itemId: "edenchoirGauntletsOfMaiming",
+          materiaIds: ["ch8", "ch8"],
+        },
+        {
+          itemId: "augmentedCrystariumBeltOfMaiming",
+          materiaIds: ["dh8", "det8"],
+        },
+        {
+          itemId: "edenchoirCuissesOfMaiming",
+          materiaIds: ["dh8", "dh8"],
+        },
+        {
+          itemId: "edenchoirSolleretsOfMaiming",
+          materiaIds: ["ch8", "dh8"],
+        },
+        {
+          itemId: "edenchoirEarringsOfSlaying",
+          materiaIds: ["dh8", "det8"],
         },
         {
           itemId: "augmentedCrystariumChokerOfSlaying",
@@ -121,7 +120,7 @@ const gearSets = [
         },
         {
           itemId: "edenchoirWristbandOfSlaying",
-          materiaIds: ["dh8", "sks8"],
+          materiaIds: ["dh8", "det8"],
         },
         {
           itemId: "edenchoirRingOfSlaying",
@@ -129,14 +128,14 @@ const gearSets = [
         },
         {
           itemId: "augmentedCrystariumRingOfSlaying",
-          materiaIds: ["ch8", "sks8"],
+          materiaIds: ["ch8", "det8"],
         },
       ],
     },
   },
   {
     type: "5.2bis",
-    description: "질풍글쿨 1.94초 빠른 기시 세트.",
+    description: "글쿨 2.46초 추천 세트.",
     attributes: {
       main: 0,
       wd: 0,
@@ -145,43 +144,113 @@ const gearSets = [
       det: 0,
       sks: 0,
     },
-    dps: 18706.05,
+    dps: 17205.95,
     gcd: 0,
-    glGcd: 1.94,
+    foodId: "stuffedHighlandCabbage",
+    dh: 0,
+    ch: 0,
+    dialog: {
+      intro:
+        "2번째 추천 세트. 글쿨 2.48초 세트와 DPS 차이가 크지 않음. 특정 레이드에서는 2.48초 세트보다 최적화에 적합한 경우도 있음.",
+      gears: [
+        {
+          itemId: "edenchoirFork",
+          materiaIds: ["dh8", "dh8"],
+        },
+        {
+          itemId: "augmentedCrystariumCircletOfMaiming",
+          materiaIds: ["dh8", "det8"],
+        },
+        {
+          itemId: "edenchoirMailOfMaiming",
+          materiaIds: ["dh8", "det8"],
+        },
+        {
+          itemId: "augmentedCrystariumGauntletsOfMaiming",
+          materiaIds: ["det8", "det8"],
+        },
+        {
+          itemId: "augmentedCrystariumBeltOfMaiming",
+          materiaIds: ["det8", "det8"],
+        },
+        {
+          itemId: "edenchoirCuissesOfMaiming",
+          materiaIds: ["det8", "det8"],
+        },
+        {
+          itemId: "edenchoirSolleretsOfMaiming",
+          materiaIds: ["ch8", "dh8"],
+        },
+        {
+          itemId: "edenchoirEarringsOfSlaying",
+          materiaIds: ["dh8", "det8"],
+        },
+        {
+          itemId: "augmentedCrystariumChokerOfSlaying",
+          materiaIds: ["dh8", "dh8"],
+        },
+        {
+          itemId: "edenchoirWristbandOfSlaying",
+          materiaIds: ["dh8", "det8"],
+        },
+        {
+          itemId: "edenchoirRingOfSlaying",
+          materiaIds: ["dh8", "dh8"],
+        },
+        {
+          itemId: "augmentedCrystariumRingOfSlaying",
+          materiaIds: ["ch8", "det8"],
+        },
+      ],
+    },
+  },
+  {
+    type: "5.2bis",
+    description: "글쿨 2.38초 빠른 기시 세트.",
+    attributes: {
+      main: 0,
+      wd: 0,
+      ch: 0,
+      dh: 0,
+      det: 0,
+      sks: 0,
+    },
+    dps: 17203.37,
+    gcd: 0,
     foodId: "sausageAndSauerkraut",
     dh: 0,
     ch: 0,
     dialog: {
       intro:
-        "1.95초 세트와 DPS에서 큰 차이가 없으면서 질풍 글쿨이 0.01초 더 빠름. 인터넷 환경이 좋지 않은 분들께 추천.",
+        "글로벌 쿨다운 2.38초 빠른 기시 세트. 빠른 기시를 선호하시는 분들께 추천.",
       gears: [
         {
-          itemId: "edenchoirJamadhars",
-          materiaIds: ["dh8", "dh8"],
+          itemId: "edenchoirFork",
+          materiaIds: ["sks8", "sks8"],
         },
         {
-          itemId: "augmentedCrystariumTurbanOfStriking",
-          materiaIds: ["dh8", "dh8"],
+          itemId: "augmentedCrystariumCircletOfMaiming",
+          materiaIds: ["sks8", "sks8"],
         },
         {
-          itemId: "edenchoirGambisonOfStriking",
-          materiaIds: ["dh8", "dh8"],
+          itemId: "edenchoirMailOfMaiming",
+          materiaIds: ["det8", "det8"],
         },
         {
-          itemId: "edenchoirGauntletsOfStriking",
-          materiaIds: ["dh8", "dh8"],
-        },
-        {
-          itemId: "augmentedCrystariumBeltOfStriking",
-          materiaIds: ["ch8", "sks8"],
-        },
-        {
-          itemId: "augmentedCrystariumPantaloonsOfStriking",
-          materiaIds: ["dh8", "dh8"],
-        },
-        {
-          itemId: "edenchoirSolleretsOfStriking",
+          itemId: "augmentedCrystariumGauntletsOfMaiming",
           materiaIds: ["dh8", "sks8"],
+        },
+        {
+          itemId: "augmentedCrystariumBeltOfMaiming",
+          materiaIds: ["sks8", "sks8"],
+        },
+        {
+          itemId: "edenchoirCuissesOfMaiming",
+          materiaIds: ["dh8", "dh8"],
+        },
+        {
+          itemId: "augmentedCrystariumThighbootsOfMaiming",
+          materiaIds: ["dh8", "dh8"],
         },
         {
           itemId: "edenchoirEarringsOfSlaying",
@@ -208,7 +277,7 @@ const gearSets = [
   },
   {
     type: "ultimate",
-    description: "질풍글쿨 1.94초 절 알렉산더 세트.",
+    description: "글쿨 2.49초 절 알렉산더 세트.",
     attributes: {
       main: 0,
       wd: 0,
@@ -217,42 +286,41 @@ const gearSets = [
       det: 0,
       sks: 0,
     },
-    dps: 15295.31,
+    dps: 14180.74,
     gcd: 0,
-    glGcd: 1.94,
     foodId: "sausageAndSauerkraut",
     dh: 0,
     ch: 0,
     dialog: {
-      intro: "절 알렉산더용 장비 세트",
+      intro: "글로벌 쿨다운 2.49초 절 알렉산더용 장비 세트.",
       gears: [
         {
-          itemId: "edengraceKnuckles",
-          materiaIds: ["dh8", "dh8"],
-        },
-        {
-          itemId: "augmentedDeepshadowHalfmaskOfStriking",
-          materiaIds: ["dh8", "sks8"],
-        },
-        {
-          itemId: "augmentedDeepshadowScaleMailOfStriking",
+          itemId: "edengraceSpear",
           materiaIds: ["ch8", "ch8"],
         },
         {
-          itemId: "edengraceArmletsOfStriking",
+          itemId: "augmentedDeepshadowHelmOfMaiming",
           materiaIds: ["dh8", "dh8"],
         },
         {
-          itemId: "augmentedDeepshadowTassetsOfStriking",
+          itemId: "edengraceMailOfMaiming",
           materiaIds: ["dh8", "dh8"],
         },
         {
-          itemId: "edengracePantaloonsOfStriking",
+          itemId: "edengraceGauntletsOfMaiming",
           materiaIds: ["ch8", "ch8"],
         },
         {
-          itemId: "augmentedDeepshadowGreavesOfStriking",
+          itemId: "edengraceTassetsOfMaiming",
           materiaIds: ["dh8", "dh8"],
+        },
+        {
+          itemId: "edengraceTrousersOfMaiming",
+          materiaIds: ["ch8", "ch8"],
+        },
+        {
+          itemId: "augmentedDeepshadowSolleretsOfMaiming",
+          materiaIds: ["dh8", "det8"],
         },
         {
           itemId: "augmentedDeepshadowEarringOfSlaying",
@@ -260,7 +328,7 @@ const gearSets = [
         },
         {
           itemId: "edengraceChokerOfSlaying",
-          materiaIds: ["dh8", "sks8"],
+          materiaIds: ["dh8", "det8"],
         },
         {
           itemId: "augmentedDeepshadowBraceletOfSlaying",
@@ -279,7 +347,7 @@ const gearSets = [
   },
 ];
 
-class Mnk extends PageComponent {
+class Drg extends PageComponent {
   constructor(props) {
     super(props);
 
@@ -298,7 +366,7 @@ class Mnk extends PageComponent {
       gearSet.index = gearSetIndex;
       gearSet.attributes.main = Math.floor(
         Math.floor(
-          (BisCalculations.level.main * BisCalculations.mnk.str) / 100
+          (BisCalculations.level.main * BisCalculations.drg.str) / 100
         ) +
           BisCalculations.clan.str +
           BisCalculations.trait
@@ -462,15 +530,15 @@ class Mnk extends PageComponent {
                       <img
                         alt=""
                         className={this.props.classes.banner}
-                        src="/icons/job-crystals/mnk.png"
+                        src="/icons/job-crystals/drg.png"
                       />
                     </Grid>
                   </Grid>
                 </Grid>
                 <Grid item>
                   <Typography variant="body1">
-                    패치 5.2 기준 몽크의 Best-in-Slot 장비 세트 목록입니다. 아래
-                    표에서 열람하고자 하는 세트 목록을 클릭해주세요.
+                    패치 5.2 기준 용기사의 Best-in-Slot 장비 세트 목록입니다.
+                    아래 표에서 열람하고자 하는 세트 목록을 클릭해주세요.
                   </Typography>
                   <br />
                   <ul>
@@ -510,7 +578,6 @@ class Mnk extends PageComponent {
                     </Hidden>
                     <TableCell>평균 DPS</TableCell>
                     <TableCell>기본 글쿨</TableCell>
-                    <TableCell>질풍 글쿨</TableCell>
                     <TableCell>음식</TableCell>
                     <TableCell>직격 확률</TableCell>
                     <TableCell>극대 확률</TableCell>
@@ -537,7 +604,6 @@ class Mnk extends PageComponent {
                           </Hidden>
                           <TableCell>{gearSet.dps}</TableCell>
                           <TableCell>{gearSet.gcd} 초</TableCell>
-                          <TableCell>{gearSet.glGcd} 초</TableCell>
                           <TableCell>
                             {BisItems[gearSet.foodId]
                               ? BisItems[gearSet.foodId].name
@@ -565,7 +631,6 @@ class Mnk extends PageComponent {
                     </Hidden>
                     <TableCell>평균 DPS</TableCell>
                     <TableCell>기본 글쿨</TableCell>
-                    <TableCell>질풍 글쿨</TableCell>
                     <TableCell>음식</TableCell>
                     <TableCell>직격 확률</TableCell>
                     <TableCell>극대 확률</TableCell>
@@ -592,7 +657,6 @@ class Mnk extends PageComponent {
                           </Hidden>
                           <TableCell>{gearSet.dps}</TableCell>
                           <TableCell>{gearSet.gcd} 초</TableCell>
-                          <TableCell>{gearSet.glGcd} 초</TableCell>
                           <TableCell>
                             {BisItems[gearSet.foodId]
                               ? BisItems[gearSet.foodId].name
@@ -838,4 +902,4 @@ class Mnk extends PageComponent {
   }
 }
 
-export default withStyles(styles)(withRouter(Mnk));
+export default withStyles(styles)(withRouter(Drg));

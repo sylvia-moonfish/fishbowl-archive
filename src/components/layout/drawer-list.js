@@ -40,7 +40,7 @@ class DrawerList extends React.Component {
     this.state = {
       selectedMenuItem: {},
       isVersionSelectorOpen: false,
-      versionValue: "5.1",
+      versionValue: "5.2",
     };
   }
 
@@ -128,10 +128,11 @@ class DrawerList extends React.Component {
                   }}
                   value={this.state.versionValue}
                 >
-                  <MenuItem value={5.1}>5.1 (한국 서버)</MenuItem>
+                  <MenuItem value={5.2}>5.2 (한국 서버)</MenuItem>
                   <MenuItem value={5.3}>5.3 (글로벌 서버)</MenuItem>
                   <Divider />
-                  <MenuItem value={5.2}>5.2</MenuItem>
+
+                  <MenuItem value={5.1}>5.1</MenuItem>
                   <Divider />
                 </Select>
               </FormControl>

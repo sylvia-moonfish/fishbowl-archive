@@ -73,6 +73,9 @@
     <Content Include="pages\5.2\guide\bis-guide\ast.js">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="pages\5.2\guide\bis-guide\drg.js">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="pages\5.2\guide\bis-guide\drk.js">
       <SubType>Code</SubType>
     </Content>
@@ -140,12 +143,15 @@
     <Content Include="public\icons\fflogs.png" />
     <Content Include="public\icons\items\armor-of-early-antiquity.png" />
     <Content Include="public\icons\items\augmented-crystarium-belt-of-healing.png" />
+    <Content Include="public\icons\items\augmented-crystarium-belt-of-maiming.png" />
     <Content Include="public\icons\items\augmented-crystarium-belt-of-striking.png" />
     <Content Include="public\icons\items\augmented-crystarium-choker-of-healing.png" />
     <Content Include="public\icons\items\augmented-crystarium-choker-of-slaying.png" />
     <Content Include="public\icons\items\augmented-crystarium-circlet-of-fending.png" />
+    <Content Include="public\icons\items\augmented-crystarium-circlet-of-maiming.png" />
     <Content Include="public\icons\items\augmented-crystarium-codex.png" />
     <Content Include="public\icons\items\augmented-crystarium-earrings-of-fending.png" />
+    <Content Include="public\icons\items\augmented-crystarium-gauntlets-of-maiming.png" />
     <Content Include="public\icons\items\augmented-crystarium-pantaloons-of-healing.png" />
     <Content Include="public\icons\items\augmented-crystarium-pantaloons-of-striking.png" />
     <Content Include="public\icons\items\augmented-crystarium-ring-of-fending.png" />
@@ -155,6 +161,7 @@
     <Content Include="public\icons\items\augmented-crystarium-shoes-of-healing.png" />
     <Content Include="public\icons\items\augmented-crystarium-tabard-of-fending.png" />
     <Content Include="public\icons\items\augmented-crystarium-thighboots-of-fending.png" />
+    <Content Include="public\icons\items\augmented-crystarium-thighboots-of-maiming.png" />
     <Content Include="public\icons\items\augmented-crystarium-turban-of-healing.png" />
     <Content Include="public\icons\items\augmented-crystarium-turban-of-striking.png" />
     <Content Include="public\icons\items\augmented-crystarium-wristband-of-fending.png" />
@@ -266,19 +273,24 @@
     <Content Include="public\icons\items\edenchoir-choker-of-fending.png" />
     <Content Include="public\icons\items\edenchoir-codex.png" />
     <Content Include="public\icons\items\edenchoir-cuisses-of-fending.png" />
+    <Content Include="public\icons\items\edenchoir-cuisses-of-maiming.png" />
     <Content Include="public\icons\items\edenchoir-earrings-of-healing.png" />
     <Content Include="public\icons\items\edenchoir-earrings-of-slaying.png" />
+    <Content Include="public\icons\items\edenchoir-fork.png" />
     <Content Include="public\icons\items\edenchoir-gambison-of-striking.png" />
     <Content Include="public\icons\items\edenchoir-gauntlets-of-fending.png" />
+    <Content Include="public\icons\items\edenchoir-gauntlets-of-maiming.png" />
     <Content Include="public\icons\items\edenchoir-gauntlets-of-striking.png" />
     <Content Include="public\icons\items\edenchoir-greatsword.png" />
     <Content Include="public\icons\items\edenchoir-gunblade.png" />
     <Content Include="public\icons\items\edenchoir-helm-of-fending.png" />
     <Content Include="public\icons\items\edenchoir-jamadhars.png" />
+    <Content Include="public\icons\items\edenchoir-mail-of-maiming.png" />
     <Content Include="public\icons\items\edenchoir-ring-of-fending.png" />
     <Content Include="public\icons\items\edenchoir-ring-of-healing.png" />
     <Content Include="public\icons\items\edenchoir-ring-of-slaying.png" />
     <Content Include="public\icons\items\edenchoir-scutum.png" />
+    <Content Include="public\icons\items\edenchoir-sollerets-of-maiming.png" />
     <Content Include="public\icons\items\edenchoir-sollerets-of-striking.png" />
     <Content Include="public\icons\items\edenchoir-tassets-of-fending.png" />
     <Content Include="public\icons\items\edenchoir-torquetum.png" />
