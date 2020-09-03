@@ -372,7 +372,7 @@
     "from": "석판 보강",
     "iconSrc": "/icons/items/augmented-deepshadow-sollerets-of-maiming.png",
     "name": "보강된 암영 학살자 쇠구두",
-    "required": "환상 석판 495개\n암영 강화섬유\n(3층 낱장 x 4)",
+    "required": "석판 495개\n강화섬유\n(3층 낱장 x 4)",
     "type": "발",
     "materiaSlots": 2,
     "overmeldSlots": 0,

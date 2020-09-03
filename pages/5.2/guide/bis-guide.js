@@ -76,7 +76,6 @@ const jobs = {
     {
       name: "닌자",
       initial: "nin",
-      disabled: true,
     },
     {
       name: "사무라이",
