@@ -80,7 +80,6 @@ const jobs = {
     {
       name: "사무라이",
       initial: "sam",
-      disabled: true,
     },
   ],
   physicalRanged: [

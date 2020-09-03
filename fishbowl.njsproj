@@ -92,6 +92,9 @@
       <SubType>Code</SubType>
     </Content>
     <Content Include="pages\5.2\guide\bis-guide\pld.js" />
+    <Content Include="pages\5.2\guide\bis-guide\sam.js">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="pages\5.2\guide\bis-guide\sch.js">
       <SubType>Code</SubType>
     </Content>
@@ -156,6 +159,7 @@
     <Content Include="public\icons\items\augmented-crystarium-choker-of-slaying.png" />
     <Content Include="public\icons\items\augmented-crystarium-circlet-of-fending.png" />
     <Content Include="public\icons\items\augmented-crystarium-circlet-of-maiming.png" />
+    <Content Include="public\icons\items\augmented-crystarium-coat-of-striking.png" />
     <Content Include="public\icons\items\augmented-crystarium-codex.png" />
     <Content Include="public\icons\items\augmented-crystarium-earrings-of-aiming.png" />
     <Content Include="public\icons\items\augmented-crystarium-earrings-of-fending.png" />
@@ -170,6 +174,7 @@
     <Content Include="public\icons\items\augmented-crystarium-ring-of-slaying.png" />
     <Content Include="public\icons\items\augmented-crystarium-robe-of-healing.png" />
     <Content Include="public\icons\items\augmented-crystarium-shoes-of-healing.png" />
+    <Content Include="public\icons\items\augmented-crystarium-shoes-of-striking.png" />
     <Content Include="public\icons\items\augmented-crystarium-tabard-of-fending.png" />
     <Content Include="public\icons\items\augmented-crystarium-thighboots-of-fending.png" />
     <Content Include="public\icons\items\augmented-crystarium-thighboots-of-maiming.png" />
@@ -306,12 +311,14 @@
     <Content Include="public\icons\items\edenchoir-ring-of-fending.png" />
     <Content Include="public\icons\items\edenchoir-ring-of-healing.png" />
     <Content Include="public\icons\items\edenchoir-ring-of-slaying.png" />
+    <Content Include="public\icons\items\edenchoir-samurai-blade.png" />
     <Content Include="public\icons\items\edenchoir-scutum.png" />
     <Content Include="public\icons\items\edenchoir-sollerets-of-maiming.png" />
     <Content Include="public\icons\items\edenchoir-sollerets-of-scouting.png" />
     <Content Include="public\icons\items\edenchoir-sollerets-of-striking.png" />
     <Content Include="public\icons\items\edenchoir-tassets-of-fending.png" />
     <Content Include="public\icons\items\edenchoir-torquetum.png" />
+    <Content Include="public\icons\items\edenchoir-trousers-of-striking.png" />
     <Content Include="public\icons\items\edenchoir-wings-of-healing.png" />
     <Content Include="public\icons\items\edenchoir-wristband-of-healing.png" />
     <Content Include="public\icons\items\edenchoir-wristband-of-slaying.png" />
