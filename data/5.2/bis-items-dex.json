@@ -95,6 +95,38 @@
     }
   },
 
+  "================================================== Weapon: DNC ==================================================": {},
+  "edengraceTathlums": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-tathlums.png",
+    "name": "에덴의 은총 타흘룸",
+    "required": "4층 낱장 x 8",
+    "type": "무기",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "wd": 122,
+      "main": 544,
+      "ch": 327,
+      "dh": 467
+    }
+  },
+  "edenchoirChakrams": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edenchoir-chakrams.png",
+    "name": "Edenchoir Chakrams",
+    "required": "4층 낱장 x 8",
+    "type": "무기",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "wd": 128,
+      "main": 634,
+      "ch": 498,
+      "dh": 349
+    }
+  },
+
   "================================================== Head: Dex ==================================================": {},
   "augmentedDeepshadowMaskOfScouting": {
     "from": "석판 보강",
@@ -574,6 +606,20 @@
       "main": 227,
       "det": 198,
       "dh": 139
+    }
+  },
+  "deepshadowRingOfAiming": {
+    "from": "석판",
+    "iconSrc": "/icons/items/deepshadow-ring-of-aiming.png",
+    "name": "암영 유격대 반지",
+    "required": "석판 375개",
+    "type": "반지",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "main": 215,
+      "det": 192,
+      "dh": 134
     }
   },
   "edenchoirRingOfAiming": {

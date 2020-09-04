@@ -79,6 +79,9 @@
     <Content Include="pages\5.2\guide\bis-guide\brd.js">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="pages\5.2\guide\bis-guide\dnc.js">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="pages\5.2\guide\bis-guide\drg.js">
       <SubType>Code</SubType>
     </Content>
@@ -297,6 +300,7 @@
     <Content Include="public\icons\items\edenchoir-boots-of-healing.png" />
     <Content Include="public\icons\items\edenchoir-breeches-of-healing.png" />
     <Content Include="public\icons\items\edenchoir-cane.png" />
+    <Content Include="public\icons\items\edenchoir-chakrams.png" />
     <Content Include="public\icons\items\edenchoir-chapeau-of-aiming.png" />
     <Content Include="public\icons\items\edenchoir-choker-of-aiming.png" />
     <Content Include="public\icons\items\edenchoir-choker-of-fending.png" />

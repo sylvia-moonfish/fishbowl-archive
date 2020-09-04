@@ -94,7 +94,6 @@ const jobs = {
     {
       name: "무도가",
       initial: "dnc",
-      disabled: true,
     },
   ],
   magicalRanged: [
