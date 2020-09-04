@@ -90,7 +90,6 @@ const jobs = {
     {
       name: "기공사",
       initial: "mch",
-      disabled: true,
     },
     {
       name: "무도가",

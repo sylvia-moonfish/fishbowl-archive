@@ -88,6 +88,9 @@
     <Content Include="pages\5.2\guide\bis-guide\gnb.js">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="pages\5.2\guide\bis-guide\mch.js">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="pages\5.2\guide\bis-guide\mnk.js">
       <SubType>Code</SubType>
     </Content>
@@ -288,6 +291,7 @@
     <Content Include="public\icons\items\eden-minor.png" />
     <Content Include="public\icons\items\edencall-mail-of-fending.png" />
     <Content Include="public\icons\items\edenchoir-armlets-of-healing.png" />
+    <Content Include="public\icons\items\edenchoir-arquebus.png" />
     <Content Include="public\icons\items\edenchoir-bastard-sword.png" />
     <Content Include="public\icons\items\edenchoir-battleaxe.png" />
     <Content Include="public\icons\items\edenchoir-boots-of-healing.png" />

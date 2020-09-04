@@ -63,6 +63,38 @@
     }
   },
 
+  "================================================== Weapon: MCH ==================================================": {},
+  "edengraceRevolver": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-revolver.png",
+    "name": "에덴의 은총 연발권총",
+    "required": "4층 낱장 x 8",
+    "type": "무기",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "wd": 122,
+      "main": 544,
+      "ch": 327,
+      "dh": 467
+    }
+  },
+  "edenchoirArquebus": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edenchoir-arquebus.png",
+    "name": "Edenchoir Arquebus",
+    "required": "4층 낱장 x 8",
+    "type": "무기",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "wd": 128,
+      "main": 634,
+      "ch": 498,
+      "dh": 349
+    }
+  },
+
   "================================================== Head: Dex ==================================================": {},
   "augmentedDeepshadowMaskOfScouting": {
     "from": "석판 보강",
