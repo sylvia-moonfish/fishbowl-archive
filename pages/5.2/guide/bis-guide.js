@@ -86,7 +86,6 @@ const jobs = {
     {
       name: "음유시인",
       initial: "brd",
-      disabled: true,
     },
     {
       name: "기공사",

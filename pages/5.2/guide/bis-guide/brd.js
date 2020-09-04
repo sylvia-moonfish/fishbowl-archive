@@ -57,14 +57,14 @@ const styles = (theme) => ({
 });
 
 const pageData = {
-  title: "5.2 닌자 BiS 가이드",
-  description: "파이널 판타지 14 패치 5.2 닌자 BiS 가이드.",
+  title: "5.2 음유시인 BiS 가이드",
+  description: "파이널 판타지 14 패치 5.2 음유시인 BiS 가이드.",
 };
 
 const gearSets = [
   {
     type: "5.2bis",
-    description: "풍둔 글쿨 2.12초 장비 세트.",
+    description: "글쿨 2.48초 추천 세트.",
     attributes: {
       main: 0,
       wd: 0,
@@ -73,42 +73,112 @@ const gearSets = [
       det: 0,
       sks: 0,
     },
-    dps: 16666.31,
+    dps: 0,
     gcd: 0,
-    futonGcd: 0,
     foodId: "stuffedHighlandCabbage",
     dh: 0,
     ch: 0,
     dialog: {
-      intro: "최소 기시 풍둔 글쿨 2.12초 추천 장비 세트.",
+      intro: "어느 전투에서나 사용하기 무난한 추천 세트.",
       gears: [
         {
-          itemId: "edenchoirDaggers",
-          materiaIds: ["det8", "det8"],
-        },
-        {
-          itemId: "edenchoirEyepatchOfScouting",
-          materiaIds: ["dh8", "dh8"],
-        },
-        {
-          itemId: "edenchoirGambisonOfScouting",
-          materiaIds: ["ch8", "ch8"],
-        },
-        {
-          itemId: "augmentedCrystariumGlovesOfScouting",
-          materiaIds: ["ch8", "ch8"],
-        },
-        {
-          itemId: "augmentedCrystariumBeltOfScouting",
+          itemId: "edenchoirHarpBow",
           materiaIds: ["dh8", "det8"],
         },
         {
-          itemId: "augmentedCrystariumPantaloonsOfScouting",
+          itemId: "edenchoirChapeauOfAiming",
+          materiaIds: ["dh8", "dh8"],
+        },
+        {
+          itemId: "edenchoirGambisonOfAiming",
+          materiaIds: ["det8", "det8"],
+        },
+        {
+          itemId: "augmentedCrystariumGlovesOfAiming",
+          materiaIds: ["dh8", "det8"],
+        },
+        {
+          itemId: "augmentedCrystariumBeltOfAiming",
+          materiaIds: ["ch8", "dh8"],
+        },
+        {
+          itemId: "augmentedCrystariumBreechesOfAiming",
+          materiaIds: ["dh8", "dh8"],
+        },
+        {
+          itemId: "edenchoirShoesOfAiming",
+          materiaIds: ["ch8", "dh8"],
+        },
+        {
+          itemId: "edenchoirEarringsOfAiming",
           materiaIds: ["ch8", "ch8"],
         },
         {
-          itemId: "edenchoirSolleretsOfScouting",
+          itemId: "edenchoirChokerOfAiming",
+          materiaIds: ["dh8", "dh8"],
+        },
+        {
+          itemId: "augmentedCrystariumWristbandOfAiming",
+          materiaIds: ["dh8", "det8"],
+        },
+        {
+          itemId: "edenchoirRingOfAiming",
+          materiaIds: ["dh8", "det8"],
+        },
+        {
+          itemId: "augmentedCrystariumRingOfAiming",
+          materiaIds: ["ch8", "dh8"],
+        },
+      ],
+    },
+  },
+  {
+    type: "5.2bis",
+    description: "글쿨 2.5초 느린 기시 세트.",
+    attributes: {
+      main: 0,
+      wd: 0,
+      ch: 0,
+      dh: 0,
+      det: 0,
+      sks: 0,
+    },
+    dps: 0,
+    gcd: 0,
+    foodId: "stuffedHighlandCabbage",
+    dh: 0,
+    ch: 0,
+    dialog: {
+      intro:
+        "인터넷 환경이 좋지 않거나 여유로운 논글쿨 사용을 선호하시는 분들을 위한 느린 기시 세트.",
+      gears: [
+        {
+          itemId: "edenchoirHarpBow",
+          materiaIds: ["dh8", "dh8"],
+        },
+        {
+          itemId: "edenchoirChapeauOfAiming",
+          materiaIds: ["dh8", "dh8"],
+        },
+        {
+          itemId: "edenchoirGambisonOfAiming",
           materiaIds: ["det8", "det8"],
+        },
+        {
+          itemId: "augmentedCrystariumGlovesOfAiming",
+          materiaIds: ["dh8", "det8"],
+        },
+        {
+          itemId: "augmentedCrystariumBeltOfAiming",
+          materiaIds: ["ch8", "dh8"],
+        },
+        {
+          itemId: "augmentedCrystariumBreechesOfAiming",
+          materiaIds: ["dh8", "dh8"],
+        },
+        {
+          itemId: "edenchoirShoesOfAiming",
+          materiaIds: ["ch8", "dh8"],
         },
         {
           itemId: "augmentedCrystariumEarringsOfAiming",
@@ -116,15 +186,15 @@ const gearSets = [
         },
         {
           itemId: "edenchoirChokerOfAiming",
-          materiaIds: ["dh8", "det8"],
+          materiaIds: ["dh8", "dh8"],
         },
         {
           itemId: "augmentedCrystariumWristbandOfAiming",
-          materiaIds: ["det8", "det8"],
+          materiaIds: ["dh8", "det8"],
         },
         {
           itemId: "edenchoirRingOfAiming",
-          materiaIds: ["det8", "det8"],
+          materiaIds: ["dh8", "det8"],
         },
         {
           itemId: "augmentedCrystariumRingOfAiming",
@@ -135,7 +205,7 @@ const gearSets = [
   },
   {
     type: "ultimate",
-    description: "풍둔 글쿨 2.1초 절 알렉산더 세트.",
+    description: "글쿨 2.48초 절 알렉산더 세트.",
     attributes: {
       main: 0,
       wd: 0,
@@ -144,9 +214,8 @@ const gearSets = [
       det: 0,
       sks: 0,
     },
-    dps: 13596.89,
+    dps: 0,
     gcd: 0,
-    futonGcd: 0,
     foodId: "stuffedHighlandCabbage",
     dh: 0,
     ch: 0,
@@ -154,31 +223,31 @@ const gearSets = [
       intro: "절 알렉산더용 장비 세트.",
       gears: [
         {
-          itemId: "edengraceKnives",
+          itemId: "edengraceHarpBow",
           materiaIds: ["ch8", "ch8"],
         },
         {
-          itemId: "augmentedDeepshadowMaskOfScouting",
-          materiaIds: ["ch8", "det8"],
-        },
-        {
-          itemId: "augmentedDeepshadowScaleMailOfScouting",
+          itemId: "edengraceHelmOfAiming",
           materiaIds: ["ch8", "ch8"],
         },
         {
-          itemId: "augmentedDeepshadowGlovesOfScouting",
+          itemId: "edengraceMailOfAiming",
           materiaIds: ["dh8", "dh8"],
         },
         {
-          itemId: "augmentedDeepshadowTassetsOfScouting",
-          materiaIds: ["ch8", "ch8"],
-        },
-        {
-          itemId: "edengraceBreechesOfScouting",
+          itemId: "augmentedDeepshadowGlovesOfAiming",
           materiaIds: ["dh8", "dh8"],
         },
         {
-          itemId: "edengraceThighbootsOfScouting",
+          itemId: "augmentedDeepshadowTassetsOfAiming",
+          materiaIds: ["dh8", "det8"],
+        },
+        {
+          itemId: "augmentedDeepshadowBreechesOfAiming",
+          materiaIds: ["ch8", "ch8"],
+        },
+        {
+          itemId: "edengraceGreavesOfAiming",
           materiaIds: ["ch8", "dh8"],
         },
         {
@@ -195,7 +264,7 @@ const gearSets = [
         },
         {
           itemId: "edengraceRingOfAiming",
-          materiaIds: ["ch8", "det8"],
+          materiaIds: ["dh8", "dh8"],
         },
         {
           itemId: "augmentedDeepshadowRingOfAiming",
@@ -206,7 +275,7 @@ const gearSets = [
   },
 ];
 
-class Nin extends PageComponent {
+class Brd extends PageComponent {
   constructor(props) {
     super(props);
 
@@ -225,7 +294,7 @@ class Nin extends PageComponent {
       gearSet.index = gearSetIndex;
       gearSet.attributes.main = Math.floor(
         Math.floor(
-          (BisCalculations.level.main * BisCalculations.nin.dex) / 100
+          (BisCalculations.level.main * BisCalculations.brd.dex) / 100
         ) +
           BisCalculations.clan.dex +
           BisCalculations.trait
@@ -315,21 +384,20 @@ class Nin extends PageComponent {
         gearSet.attributes[key] += value;
       });
 
-      const gcd1 = Math.floor(
-        ((2000 -
-          Math.floor(
-            ((gearSet.attributes.sks - BisCalculations.level.sub) * 130) /
-              BisCalculations.level.div +
-              1000
-          )) *
-          2500) /
-          1000
-      );
-      gearSet.gcd = Math.floor(gcd1 / 10) / 100;
-      const gcd3 = (100 - 15) / 100;
-      const gcd4 = Math.floor(gcd1 * gcd3);
-      gearSet.futonGcd = Math.floor(gcd4 / 10) / 100;
-
+      gearSet.gcd =
+        Math.floor(
+          (Math.floor(
+            2000 -
+              Math.floor(
+                ((gearSet.attributes.sks - BisCalculations.level.sub) * 130) /
+                  BisCalculations.level.div +
+                  1000
+              )
+          ) *
+            2500) /
+            1000 /
+            10
+        ) / 100;
       gearSet.ch =
         Math.floor(
           ((gearSet.attributes.ch - BisCalculations.level.sub) * 200) /
@@ -341,6 +409,45 @@ class Nin extends PageComponent {
           ((gearSet.attributes.dh - BisCalculations.level.sub) * 550) /
             BisCalculations.level.div
         ) / 10;
+
+      const attackPotency = 800;
+      const trait = 0;
+      const fAttack =
+        Math.floor(((gearSet.attributes.main - 340) * 165) / 340) + 100;
+      const fDet = Math.floor(
+        ((gearSet.attributes.det - BisCalculations.level.main) * 130) /
+          BisCalculations.level.div +
+          1000
+      );
+      const fWd = Math.floor(
+        (BisCalculations.level.main * BisCalculations.whm.mnd) / 1000 +
+          gearSet.attributes.wd
+      );
+      const fCrit = Math.floor(
+        ((gearSet.attributes.ch - BisCalculations.level.sub) * 200) /
+          BisCalculations.level.div +
+          1400
+      );
+
+      const d1 = Math.floor(
+        Math.floor(Math.floor(attackPotency * fAttack * fDet) / 100) / 1000
+      );
+      const d2 = Math.floor(
+        Math.floor(Math.floor(Math.floor(d1 * fWd) / 100) * (trait + 100)) / 100
+      );
+      const d3chdh = Math.floor(
+        Math.floor(Math.floor(Math.floor(d2 * fCrit) / 1000) * 125) / 100
+      );
+      const d3ch = Math.floor(Math.floor(d2 * fCrit) / 1000);
+      const d3dh = Math.floor(Math.floor(d2 * 125) / 100);
+
+      const chdh = ((gearSet.ch / 100) * gearSet.dh) / 100;
+      const ch = gearSet.ch / 100 - chdh;
+      const dh = gearSet.dh / 100 - chdh;
+      const none = 1 - chdh - ch - dh;
+      const damage = d3chdh * chdh + d3ch * ch + d3dh * dh + d2 * none;
+
+      gearSet.dps = Math.floor((damage / gearSet.gcd) * 100) / 100;
     });
 
     return (
@@ -390,15 +497,15 @@ class Nin extends PageComponent {
                       <img
                         alt=""
                         className={this.props.classes.banner}
-                        src="/icons/job-crystals/nin.png"
+                        src="/icons/job-crystals/brd.png"
                       />
                     </Grid>
                   </Grid>
                 </Grid>
                 <Grid item>
                   <Typography variant="body1">
-                    패치 5.2 기준 닌자의 Best-in-Slot 장비 세트 목록입니다. 아래
-                    표에서 열람하고자 하는 세트 목록을 클릭해주세요.
+                    패치 5.2 기준 음유시인의 Best-in-Slot 장비 세트 목록입니다.
+                    아래 표에서 열람하고자 하는 세트 목록을 클릭해주세요.
                   </Typography>
                   <br />
                   <ul>
@@ -437,8 +544,7 @@ class Nin extends PageComponent {
                       <TableCell />
                     </Hidden>
                     <TableCell>평균 DPS</TableCell>
-                    <TableCell>기본 글쿨</TableCell>
-                    <TableCell>풍둔 글쿨</TableCell>
+                    <TableCell>글로벌 쿨다운</TableCell>
                     <TableCell>음식</TableCell>
                     <TableCell>직격 확률</TableCell>
                     <TableCell>극대 확률</TableCell>
@@ -465,7 +571,6 @@ class Nin extends PageComponent {
                           </Hidden>
                           <TableCell>{gearSet.dps}</TableCell>
                           <TableCell>{gearSet.gcd} 초</TableCell>
-                          <TableCell>{gearSet.futonGcd} 초</TableCell>
                           <TableCell>
                             {BisItems[gearSet.foodId]
                               ? BisItems[gearSet.foodId].name
@@ -492,8 +597,7 @@ class Nin extends PageComponent {
                       <TableCell />
                     </Hidden>
                     <TableCell>평균 DPS</TableCell>
-                    <TableCell>기본 글쿨</TableCell>
-                    <TableCell>풍둔 글쿨</TableCell>
+                    <TableCell>글로벌 쿨다운</TableCell>
                     <TableCell>음식</TableCell>
                     <TableCell>직격 확률</TableCell>
                     <TableCell>극대 확률</TableCell>
@@ -520,7 +624,6 @@ class Nin extends PageComponent {
                           </Hidden>
                           <TableCell>{gearSet.dps}</TableCell>
                           <TableCell>{gearSet.gcd} 초</TableCell>
-                          <TableCell>{gearSet.futonGcd} 초</TableCell>
                           <TableCell>
                             {BisItems[gearSet.foodId]
                               ? BisItems[gearSet.foodId].name
@@ -766,4 +869,4 @@ class Nin extends PageComponent {
   }
 }
 
-export default withStyles(styles)(withRouter(Nin));
+export default withStyles(styles)(withRouter(Brd));
