@@ -42,6 +42,20 @@
       }
     }
   },
+  "pickledHerring": {
+    "name": "Pickled Herring",
+    "iconSrc": "/icons/items/hq/pickled-herring.png",
+    "stats": {
+      "sps": {
+        "value": 10,
+        "max": 168
+      },
+      "dh": {
+        "value": 10,
+        "max": 101
+      }
+    }
+  },
 
   "================================================== Materias ==================================================": {},
   "ch7": {

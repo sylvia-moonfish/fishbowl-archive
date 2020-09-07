@@ -1,0 +1,477 @@
+{
+  "================================================== Weapon: BLM ==================================================": {},
+  "edengraceRod": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-rod.png",
+    "name": "에덴의 은총 주술봉",
+    "required": "4층 낱장 x 8",
+    "type": "무기",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "wd": 164,
+      "main": 544,
+      "sps": 467,
+      "dh": 327
+    }
+  },
+  "edenchoirRod": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edenchoir-rod.png",
+    "name": "Edenchoir Rod",
+    "required": "4층 낱장 x 8",
+    "type": "무기",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "wd": 172,
+      "main": 634,
+      "sps": 498,
+      "dh": 349
+    }
+  },
+
+  "================================================== Weapon: SMN ==================================================": {},
+
+  "================================================== Weapon: RDM ==================================================": {},
+
+  "================================================== Head: Int ==================================================": {},
+  "augmentedDeepshadowHoodOfCasting": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-hood-of-casting.png",
+    "name": "보강된 암영 마술사 두건",
+    "required": "석판 495개\n강화섬유\n(3층 낱장 x 4)",
+    "type": "머리",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "main": 303,
+      "det": 264,
+      "dh": 185
+    }
+  },
+  "edenchoirHatOfCasting": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edenchoir-hat-of-casting.png",
+    "name": "Edenchoir Hat of Casting",
+    "required": "2층 낱장 x 6",
+    "type": "머리",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "main": 353,
+      "sps": 281,
+      "dh": 197
+    }
+  },
+  "augmentedCrystariumHalfmaskOfCasting": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-crystarium-halfmask-of-casting.png",
+    "name": "Augmented Crystarium Halfmask of Casting",
+    "required": "석판 495개\n강화섬유\n(3층 낱장 x 4)",
+    "type": "머리",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "main": 353,
+      "ch": 281,
+      "dh": 197
+    }
+  },
+
+  "================================================== Body: Int ==================================================": {},
+  "edengraceJacketOfCasting": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-jacket-of-casting.png",
+    "name": "에덴의 은총 마술사 재킷",
+    "required": "4층 낱장 x 8",
+    "type": "몸통",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "main": 492,
+      "sps": 300,
+      "dh": 429
+    }
+  },
+  "edenchoirTunicOfCasting": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edenchoir-tunic-of-casting.png",
+    "name": "Edenchoir Tunic of Casting",
+    "required": "4층 낱장 x 8",
+    "type": "몸통",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "main": 573,
+      "ch": 457,
+      "dh": 320
+    }
+  },
+  "augmentedCrystariumRobeOfCasting": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-crystarium-robe-of-casting.png",
+    "name": "Augmented Crystarium Robe of Casting",
+    "required": "석판 825개\n강화섬유\n(3층 낱장 x 4)",
+    "type": "몸통",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "main": 573,
+      "sps": 457,
+      "dh": 320
+    }
+  },
+
+  "================================================== Hands: Int ==================================================": {},
+  "augmentedDeepshadowArmguardsOfCasting": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-armguards-of-casting.png",
+    "name": "보강된 암영 마술사 팔보호구",
+    "required": "석판 495개\n강화섬유\n(3층 낱장 x 4)",
+    "type": "손",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "main": 303,
+      "sps": 264,
+      "dh": 185
+    }
+  },
+  "edenchoirArmletsOfCasting": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edenchoir-armlets-of-casting.png",
+    "name": "Edenchoir Armlets of Casting",
+    "required": "2층 낱장 x 6",
+    "type": "손",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "main": 353,
+      "ch": 281,
+      "det": 197
+    }
+  },
+  "augmentedCrystariumShortglovesOfCasting": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-crystarium-shortgloves-of-casting.png",
+    "name": "Augmented Crystarium Shortgloves of Casting",
+    "required": "석판 495개\n강화섬유\n(3층 낱장 x 4)",
+    "type": "손",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "main": 353,
+      "det": 197,
+      "sps": 281
+    }
+  },
+
+  "================================================== Waist: Int ==================================================": {},
+  "augmentedDeepshadowTassetsOfCasting": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-tassets-of-casting.png",
+    "name": "보강된 암영 마술사 허리갑옷",
+    "required": "석판 375개\n경화약\n(2층 낱장 x 4)",
+    "type": "허리",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "main": 227,
+      "det": 198,
+      "dh": 139
+    }
+  },
+  "edenchoirTassetsOfCasting": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edenchoir-tassets-of-casting.png",
+    "name": "Edenchoir Tassets of Casting",
+    "required": "1층 낱장 x 6",
+    "type": "허리",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "main": 265,
+      "det": 148,
+      "sps": 211
+    }
+  },
+  "augmentedCrystariumBeltOfCasting": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-crystarium-belt-of-casting.png",
+    "name": "Augmented Crystarium Belt of Casting",
+    "required": "석판 375개\n경화약\n(2층 낱장 x 4)",
+    "type": "허리",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "main": 265,
+      "ch": 211,
+      "dh": 148
+    }
+  },
+
+  "================================================== Legs: Int ==================================================": {},
+  "augmentedDeepshadowBreechesOfCasting": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-breeches-of-casting.png",
+    "name": "보강된 암영 마술사 바지",
+    "required": "석판 825개\n강화섬유\n(3층 낱장 x 4)",
+    "type": "다리",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "main": 492,
+      "det": 300,
+      "sps": 429
+    }
+  },
+  "edenchoirBreechesOfCasting": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edenchoir-breeches-of-casting.png",
+    "name": "Edenchoir Breeches of Casting",
+    "required": "3층 낱장 x 8",
+    "type": "다리",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "main": 573,
+      "sps": 457,
+      "dh": 320
+    }
+  },
+  "augmentedCrystariumHoseOfCasting": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-crystarium-hose-of-casting.png",
+    "name": "Augmented Crystarium Hose of Casting",
+    "required": "석판 825개\n강화섬유\n(3층 낱장 x 4)",
+    "type": "다리",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "main": 573,
+      "ch": 457,
+      "dh": 320
+    }
+  },
+
+  "================================================== Feet: Int ==================================================": {},
+  "edengraceThighbootsOfCasting": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-thighboots-of-casting.png",
+    "name": "에덴의 은총 마술사 허벅지장화",
+    "required": "2층 낱장 x 6",
+    "type": "발",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "main": 303,
+      "det": 185,
+      "sps": 264
+    }
+  },
+  "edenchoirBootsOfCasting": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edenchoir-boots-of-casting.png",
+    "name": "Edenchoir Boots of Casting",
+    "required": "2층 낱장 x 6",
+    "type": "발",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "main": 353,
+      "ch": 197,
+      "dh": 281
+    }
+  },
+  "augmentedCrystariumBootsOfCasting": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-crystarium-boots-of-casting.png",
+    "name": "Augmented Crystarium Boots of Casting",
+    "required": "석판 495개\n강화섬유\n(3층 낱장 x 4)",
+    "type": "발",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "main": 353,
+      "sps": 281,
+      "dh": 197
+    }
+  },
+
+  "================================================== Earrings: Int ==================================================": {},
+  "edengraceEarringOfCasting": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-earring-of-casting.png",
+    "name": "에덴의 은총 마술사 귀걸이",
+    "required": "1층 낱장 x 4",
+    "type": "귀걸이",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "main": 227,
+      "det": 198,
+      "dh": 139
+    }
+  },
+  "edenchoirEarringsOfCasting": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edenchoir-earrings-of-casting.png",
+    "name": "Edenchoir Earrings of Casting",
+    "required": "1층 낱장 x 4",
+    "type": "귀걸이",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "main": 265,
+      "sps": 211,
+      "dh": 148
+    }
+  },
+
+  "================================================== Necklace: Int ==================================================": {},
+  "edengraceChokerOfCasting": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-choker-of-casting.png",
+    "name": "에덴의 은총 마술사 목장식",
+    "required": "1층 낱장 x 4",
+    "type": "목걸이",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "main": 227,
+      "det": 139,
+      "sps": 198
+    }
+  },
+  "edenchoirChokerOfCasting": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edenchoir-choker-of-casting.png",
+    "name": "Edenchoir Choker of Casting",
+    "required": "1층 낱장 x 4",
+    "type": "목걸이",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "main": 265,
+      "ch": 211,
+      "det": 148
+    }
+  },
+  "augmentedCrystariumChokerOfCasting": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-crystarium-choker-of-casting.png",
+    "name": "Augmented Crystarium Choker of Casting",
+    "required": "석판 375개\n경화약\n(2층 낱장 x 4)",
+    "type": "목걸이",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "main": 265,
+      "sps": 148,
+      "dh": 211
+    }
+  },
+
+  "================================================== Bracelets: Int ==================================================": {},
+  "augmentedDeepshadowBraceletOfCasting": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-bracelet-of-casting.png",
+    "name": "보강된 암영 마술사 팔찌",
+    "required": "석판 375개\n경화약\n(2층 낱장 x 4)",
+    "type": "팔찌",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "main": 227,
+      "det": 198,
+      "dh": 139
+    }
+  },
+  "edenchoirWristbandOfCasting": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edenchoir-wristband-of-casting.png",
+    "name": "Edenchoir Wristband of Casting",
+    "required": "1층 낱장 x 4",
+    "type": "팔찌",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "main": 265,
+      "ch": 148,
+      "dh": 211
+    }
+  },
+  "augmentedCrystariumWristbandOfCasting": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-crystarium-wristband-of-casting.png",
+    "name": "Augmented Crystarium Wristband of Casting",
+    "required": "석판 375개\n경화약\n(2층 낱장 x 4)",
+    "type": "팔찌",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "main": 265,
+      "det": 211,
+      "sps": 148
+    }
+  },
+
+  "================================================== Ring: Int ==================================================": {},
+  "edengraceRingOfCasting": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-ring-of-casting.png",
+    "name": "에덴의 은총 마술사 반지",
+    "required": "1층 낱장 x 4",
+    "type": "반지",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "main": 227,
+      "det": 139,
+      "dh": 198
+    }
+  },
+  "augmentedDeepshadowRingOfCasting": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-deepshadow-ring-of-casting.png",
+    "name": "보강된 암영 마술사 반지",
+    "required": "석판 375개\n경화약\n(2층 낱장 x 4)",
+    "type": "반지",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "main": 227,
+      "ch": 198,
+      "dh": 139
+    }
+  },
+  "edenchoirRingOfCasting": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edenchoir-ring-of-casting.png",
+    "name": "Edenchoir Ring of Casting",
+    "required": "1층 낱장 x 4",
+    "type": "반지",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "main": 265,
+      "det": 148,
+      "dh": 211
+    }
+  },
+  "augmentedCrystariumRingOfCasting": {
+    "from": "석판 보강",
+    "iconSrc": "/icons/items/augmented-crystarium-ring-of-casting.png",
+    "name": "Augmented Crystarium Ring of Casting",
+    "required": "석판 375개\n경화약\n(2층 낱장 x 4)",
+    "type": "반지",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "main": 265,
+      "ch": 148,
+      "det": 211
+    }
+  }
+}

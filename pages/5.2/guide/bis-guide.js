@@ -100,7 +100,6 @@ const jobs = {
     {
       name: "흑마도사",
       initial: "blm",
-      disabled: true,
     },
     {
       name: "소환사",

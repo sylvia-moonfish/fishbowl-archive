@@ -44,6 +44,9 @@
     <Content Include="data\5.2\bis-items-healer.json">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="data\5.2\bis-items-int.json">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="data\5.2\bis-items-str.json">
       <SubType>Code</SubType>
     </Content>
@@ -74,6 +77,9 @@
     <Content Include="pages\5.1\guide\craft-guide.js" />
     <Content Include="pages\5.2\guide\bis-guide.js" />
     <Content Include="pages\5.2\guide\bis-guide\ast.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="pages\5.2\guide\bis-guide\blm.js">
       <SubType>Code</SubType>
     </Content>
     <Content Include="pages\5.2\guide\bis-guide\brd.js">
@@ -161,11 +167,14 @@
     <Content Include="public\icons\fflogs.png" />
     <Content Include="public\icons\items\armor-of-early-antiquity.png" />
     <Content Include="public\icons\items\augmented-crystarium-belt-of-aiming.png" />
+    <Content Include="public\icons\items\augmented-crystarium-belt-of-casting.png" />
     <Content Include="public\icons\items\augmented-crystarium-belt-of-healing.png" />
     <Content Include="public\icons\items\augmented-crystarium-belt-of-maiming.png" />
     <Content Include="public\icons\items\augmented-crystarium-belt-of-scouting.png" />
     <Content Include="public\icons\items\augmented-crystarium-belt-of-striking.png" />
+    <Content Include="public\icons\items\augmented-crystarium-boots-of-casting.png" />
     <Content Include="public\icons\items\augmented-crystarium-breeches-of-aiming.png" />
+    <Content Include="public\icons\items\augmented-crystarium-choker-of-casting.png" />
     <Content Include="public\icons\items\augmented-crystarium-choker-of-healing.png" />
     <Content Include="public\icons\items\augmented-crystarium-choker-of-slaying.png" />
     <Content Include="public\icons\items\augmented-crystarium-circlet-of-fending.png" />
@@ -177,22 +186,28 @@
     <Content Include="public\icons\items\augmented-crystarium-gauntlets-of-maiming.png" />
     <Content Include="public\icons\items\augmented-crystarium-gloves-of-aiming.png" />
     <Content Include="public\icons\items\augmented-crystarium-gloves-of-scouting.png" />
+    <Content Include="public\icons\items\augmented-crystarium-halfmask-of-casting.png" />
+    <Content Include="public\icons\items\augmented-crystarium-hose-of-casting.png" />
     <Content Include="public\icons\items\augmented-crystarium-pantaloons-of-healing.png" />
     <Content Include="public\icons\items\augmented-crystarium-pantaloons-of-scouting.png" />
     <Content Include="public\icons\items\augmented-crystarium-pantaloons-of-striking.png" />
     <Content Include="public\icons\items\augmented-crystarium-ring-of-aiming.png" />
+    <Content Include="public\icons\items\augmented-crystarium-ring-of-casting.png" />
     <Content Include="public\icons\items\augmented-crystarium-ring-of-fending.png" />
     <Content Include="public\icons\items\augmented-crystarium-ring-of-healing.png" />
     <Content Include="public\icons\items\augmented-crystarium-ring-of-slaying.png" />
+    <Content Include="public\icons\items\augmented-crystarium-robe-of-casting.png" />
     <Content Include="public\icons\items\augmented-crystarium-robe-of-healing.png" />
     <Content Include="public\icons\items\augmented-crystarium-shoes-of-healing.png" />
     <Content Include="public\icons\items\augmented-crystarium-shoes-of-striking.png" />
+    <Content Include="public\icons\items\augmented-crystarium-shortgloves-of-casting.png" />
     <Content Include="public\icons\items\augmented-crystarium-tabard-of-fending.png" />
     <Content Include="public\icons\items\augmented-crystarium-thighboots-of-fending.png" />
     <Content Include="public\icons\items\augmented-crystarium-thighboots-of-maiming.png" />
     <Content Include="public\icons\items\augmented-crystarium-turban-of-healing.png" />
     <Content Include="public\icons\items\augmented-crystarium-turban-of-striking.png" />
     <Content Include="public\icons\items\augmented-crystarium-wristband-of-aiming.png" />
+    <Content Include="public\icons\items\augmented-crystarium-wristband-of-casting.png" />
     <Content Include="public\icons\items\augmented-crystarium-wristband-of-fending.png" />
     <Content Include="public\icons\items\augmented-crystarium-wristband-of-healing.png" />
     <Content Include="public\icons\items\augmented-deepshadow-armguards-of-casting.png" />
@@ -293,22 +308,27 @@
     <Content Include="public\icons\items\earth-crystal.png" />
     <Content Include="public\icons\items\eden-minor.png" />
     <Content Include="public\icons\items\edencall-mail-of-fending.png" />
+    <Content Include="public\icons\items\edenchoir-armlets-of-casting.png" />
     <Content Include="public\icons\items\edenchoir-armlets-of-healing.png" />
     <Content Include="public\icons\items\edenchoir-arquebus.png" />
     <Content Include="public\icons\items\edenchoir-bastard-sword.png" />
     <Content Include="public\icons\items\edenchoir-battleaxe.png" />
+    <Content Include="public\icons\items\edenchoir-boots-of-casting.png" />
     <Content Include="public\icons\items\edenchoir-boots-of-healing.png" />
+    <Content Include="public\icons\items\edenchoir-breeches-of-casting.png" />
     <Content Include="public\icons\items\edenchoir-breeches-of-healing.png" />
     <Content Include="public\icons\items\edenchoir-cane.png" />
     <Content Include="public\icons\items\edenchoir-chakrams.png" />
     <Content Include="public\icons\items\edenchoir-chapeau-of-aiming.png" />
     <Content Include="public\icons\items\edenchoir-choker-of-aiming.png" />
+    <Content Include="public\icons\items\edenchoir-choker-of-casting.png" />
     <Content Include="public\icons\items\edenchoir-choker-of-fending.png" />
     <Content Include="public\icons\items\edenchoir-codex.png" />
     <Content Include="public\icons\items\edenchoir-cuisses-of-fending.png" />
     <Content Include="public\icons\items\edenchoir-cuisses-of-maiming.png" />
     <Content Include="public\icons\items\edenchoir-daggers.png" />
     <Content Include="public\icons\items\edenchoir-earrings-of-aiming.png" />
+    <Content Include="public\icons\items\edenchoir-earrings-of-casting.png" />
     <Content Include="public\icons\items\edenchoir-earrings-of-healing.png" />
     <Content Include="public\icons\items\edenchoir-earrings-of-slaying.png" />
     <Content Include="public\icons\items\edenchoir-eyepatch-of-scouting.png" />
@@ -322,23 +342,29 @@
     <Content Include="public\icons\items\edenchoir-greatsword.png" />
     <Content Include="public\icons\items\edenchoir-gunblade.png" />
     <Content Include="public\icons\items\edenchoir-harp-bow.png" />
+    <Content Include="public\icons\items\edenchoir-hat-of-casting.png" />
     <Content Include="public\icons\items\edenchoir-helm-of-fending.png" />
     <Content Include="public\icons\items\edenchoir-jamadhars.png" />
     <Content Include="public\icons\items\edenchoir-mail-of-maiming.png" />
     <Content Include="public\icons\items\edenchoir-ring-of-aiming.png" />
+    <Content Include="public\icons\items\edenchoir-ring-of-casting.png" />
     <Content Include="public\icons\items\edenchoir-ring-of-fending.png" />
     <Content Include="public\icons\items\edenchoir-ring-of-healing.png" />
     <Content Include="public\icons\items\edenchoir-ring-of-slaying.png" />
+    <Content Include="public\icons\items\edenchoir-rod.png" />
     <Content Include="public\icons\items\edenchoir-samurai-blade.png" />
     <Content Include="public\icons\items\edenchoir-scutum.png" />
     <Content Include="public\icons\items\edenchoir-shoes-of-aiming.png" />
     <Content Include="public\icons\items\edenchoir-sollerets-of-maiming.png" />
     <Content Include="public\icons\items\edenchoir-sollerets-of-scouting.png" />
     <Content Include="public\icons\items\edenchoir-sollerets-of-striking.png" />
+    <Content Include="public\icons\items\edenchoir-tassets-of-casting.png" />
     <Content Include="public\icons\items\edenchoir-tassets-of-fending.png" />
     <Content Include="public\icons\items\edenchoir-torquetum.png" />
     <Content Include="public\icons\items\edenchoir-trousers-of-striking.png" />
+    <Content Include="public\icons\items\edenchoir-tunic-of-casting.png" />
     <Content Include="public\icons\items\edenchoir-wings-of-healing.png" />
+    <Content Include="public\icons\items\edenchoir-wristband-of-casting.png" />
     <Content Include="public\icons\items\edenchoir-wristband-of-healing.png" />
     <Content Include="public\icons\items\edenchoir-wristband-of-slaying.png" />
     <Content Include="public\icons\items\edengrace-armet-of-fending.png" />
@@ -454,6 +480,7 @@
     <Content Include="public\icons\items\hq\neo-ishgardian-sword.png" />
     <Content Include="public\icons\items\hq\neo-ishgardian-top-of-fending.png" />
     <Content Include="public\icons\items\hq\neo-ishgardian-wristbands-of-fending.png" />
+    <Content Include="public\icons\items\hq\pickled-herring.png" />
     <Content Include="public\icons\items\hq\sausage-and-sauerkraut.png" />
     <Content Include="public\icons\items\hq\sea-swallow-leather.png" />
     <Content Include="public\icons\items\hq\stuffed-highland-cabbage.png" />
@@ -482,6 +509,7 @@
     <Content Include="public\icons\items\neo-ishgardian-top-of-fending.png" />
     <Content Include="public\icons\items\neo-ishgardian-wristbands-of-fending.png" />
     <Content Include="public\icons\items\orchestrion-roll.png" />
+    <Content Include="public\icons\items\pickled-herring.png" />
     <Content Include="public\icons\items\pixieberry-tea.png" />
     <Content Include="public\icons\items\popoto-salad.png" />
     <Content Include="public\icons\items\purple-viii.png" />
