@@ -1,7 +1,7 @@
 {
   "================================================== Food ==================================================": {},
   "sausageAndSauerkraut": {
-    "name": "Sausage and Sauerkraut",
+    "name": "소시지 자우어크라우트",
     "iconSrc": "/icons/items/hq/sausage-and-sauerkraut.png",
     "stats": {
       "ch": {
@@ -15,7 +15,7 @@
     }
   },
   "stuffedHighlandCabbage": {
-    "name": "Stuffed Highland Cabbage",
+    "name": "다진고기 고원 양배추말이",
     "iconSrc": "/icons/items/hq/stuffed-highland-cabbage.png",
     "stats": {
       "det": {
@@ -29,7 +29,7 @@
     }
   },
   "herringPie": {
-    "name": "Herring Pie",
+    "name": "청어 파이",
     "iconSrc": "/icons/items/hq/herring-pie.png",
     "stats": {
       "ch": {
@@ -43,7 +43,7 @@
     }
   },
   "pickledHerring": {
-    "name": "Pickled Herring",
+    "name": "청어 새콤절임",
     "iconSrc": "/icons/items/hq/pickled-herring.png",
     "stats": {
       "sps": {

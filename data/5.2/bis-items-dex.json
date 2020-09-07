@@ -18,7 +18,7 @@
   "edenchoirDaggers": {
     "from": "영웅 레이드",
     "iconSrc": "/icons/items/edenchoir-daggers.png",
-    "name": "Edenchoir Daggers",
+    "name": "에덴의 합창 단검",
     "required": "4층 낱장 x 8",
     "type": "무기",
     "materiaSlots": 2,
@@ -50,7 +50,7 @@
   "edenchoirHarpBow": {
     "from": "영웅 레이드",
     "iconSrc": "/icons/items/edenchoir-harp-bow.png",
-    "name": "Edenchoir Harp Bow",
+    "name": "에덴의 합창 현악궁",
     "required": "4층 낱장 x 8",
     "type": "무기",
     "materiaSlots": 2,
@@ -82,7 +82,7 @@
   "edenchoirArquebus": {
     "from": "영웅 레이드",
     "iconSrc": "/icons/items/edenchoir-arquebus.png",
-    "name": "Edenchoir Arquebus",
+    "name": "에덴의 합창 화승총",
     "required": "4층 낱장 x 8",
     "type": "무기",
     "materiaSlots": 2,
@@ -114,7 +114,7 @@
   "edenchoirChakrams": {
     "from": "영웅 레이드",
     "iconSrc": "/icons/items/edenchoir-chakrams.png",
-    "name": "Edenchoir Chakrams",
+    "name": "에덴의 합창 차크람",
     "required": "4층 낱장 x 8",
     "type": "무기",
     "materiaSlots": 2,
@@ -159,7 +159,7 @@
   "edenchoirEyepatchOfScouting": {
     "from": "영웅 레이드",
     "iconSrc": "/icons/items/edenchoir-eyepatch-of-scouting.png",
-    "name": "Edenchoir Eyepatch of Scouting",
+    "name": "에덴의 합창 정찰대 안대",
     "required": "2층 낱장 x 6",
     "type": "머리",
     "materiaSlots": 2,
@@ -173,7 +173,7 @@
   "edenchoirChapeauOfAiming": {
     "from": "영웅 레이드",
     "iconSrc": "/icons/items/edenchoir-chapeau-of-aiming.png",
-    "name": "Edenchoir Chapeau of Aiming",
+    "name": "에덴의 합창 유격대 깃모자",
     "required": "2층 낱장 x 6",
     "type": "머리",
     "materiaSlots": 2,
@@ -217,7 +217,7 @@
   "edenchoirGambisonOfScouting": {
     "from": "영웅 레이드",
     "iconSrc": "/icons/items/edenchoir-gambison-of-scouting.png",
-    "name": "Edenchoir Gambison of Scouting",
+    "name": "에덴의 합창 정찰대 보호덧옷",
     "required": "4층 낱장 x 8",
     "type": "몸통",
     "materiaSlots": 2,
@@ -231,7 +231,7 @@
   "edenchoirGambisonOfAiming": {
     "from": "영웅 레이드",
     "iconSrc": "/icons/items/edenchoir-gambison-of-aiming.png",
-    "name": "Edenchoir Gambison of Aiming",
+    "name": "에덴의 합창 유격대 보호덧옷",
     "required": "4층 낱장 x 8",
     "type": "몸통",
     "materiaSlots": 2,
@@ -275,7 +275,7 @@
   "augmentedCrystariumGlovesOfScouting": {
     "from": "석판 보강",
     "iconSrc": "/icons/items/augmented-crystarium-gloves-of-scouting.png",
-    "name": "Augmented Crystarium Gloves of Scouting",
+    "name": "보강된 크리스타리움 정찰대 장갑",
     "required": "석판 495개\n강화섬유\n(3층 낱장 x 4)",
     "type": "손",
     "materiaSlots": 2,
@@ -289,7 +289,7 @@
   "augmentedCrystariumGlovesOfAiming": {
     "from": "석판 보강",
     "iconSrc": "/icons/items/augmented-crystarium-gloves-of-aiming.png",
-    "name": "Augmented Crystarium Gloves of Aiming",
+    "name": "보강된 크리스타리움 유격대 장갑",
     "required": "석판 495개\n강화섬유\n(3층 낱장 x 4)",
     "type": "손",
     "materiaSlots": 2,
@@ -333,7 +333,7 @@
   "augmentedCrystariumBeltOfScouting": {
     "from": "석판 보강",
     "iconSrc": "/icons/items/augmented-crystarium-belt-of-scouting.png",
-    "name": "Augmented Crystarium Belt of Scouting",
+    "name": "보강된 크리스타리움 정찰대 허리띠",
     "required": "석판 375개\n경화약\n(2층 낱장 x 4)",
     "type": "허리",
     "materiaSlots": 2,
@@ -347,7 +347,7 @@
   "augmentedCrystariumBeltOfAiming": {
     "from": "석판 보강",
     "iconSrc": "/icons/items/augmented-crystarium-belt-of-aiming.png",
-    "name": "Augmented Crystarium Belt of Aiming",
+    "name": "보강된 크리스타리움 유격대 허리띠",
     "required": "석판 375개\n경화약\n(2층 낱장 x 4)",
     "type": "허리",
     "materiaSlots": 2,
@@ -391,7 +391,7 @@
   "augmentedCrystariumPantaloonsOfScouting": {
     "from": "석판 보강",
     "iconSrc": "/icons/items/augmented-crystarium-pantaloons-of-scouting.png",
-    "name": "Augmented Crystarium Pantaloons of Scouting",
+    "name": "보강된 크리스타리움 정찰대 나팔바지",
     "required": "석판 825개\n강화섬유\n(3층 낱장 x 4)",
     "type": "다리",
     "materiaSlots": 2,
@@ -405,7 +405,7 @@
   "augmentedCrystariumBreechesOfAiming": {
     "from": "석판 보강",
     "iconSrc": "/icons/items/augmented-crystarium-breeches-of-aiming.png",
-    "name": "Augmented Crystarium Breeches of Aiming",
+    "name": "보강된 크리스타리움 유격대 바지",
     "required": "석판 825개\n강화섬유\n(3층 낱장 x 4)",
     "type": "다리",
     "materiaSlots": 2,
@@ -449,7 +449,7 @@
   "edenchoirSolleretsOfScouting": {
     "from": "영웅 레이드",
     "iconSrc": "/icons/items/edenchoir-sollerets-of-scouting.png",
-    "name": "Edenchoir Sollerets of Scouting",
+    "name": "에덴의 합창 정찰대 쇠구두",
     "required": "2층 낱장 x 6",
     "type": "발",
     "materiaSlots": 2,
@@ -463,7 +463,7 @@
   "edenchoirShoesOfAiming": {
     "from": "영웅 레이드",
     "iconSrc": "/icons/items/edenchoir-shoes-of-aiming.png",
-    "name": "Edenchoir Shoes of Aiming",
+    "name": "에덴의 합창 유격대 신발",
     "required": "2층 낱장 x 6",
     "type": "발",
     "materiaSlots": 2,
@@ -493,7 +493,7 @@
   "edenchoirEarringsOfAiming": {
     "from": "영웅 레이드",
     "iconSrc": "/icons/items/edenchoir-earrings-of-aiming.png",
-    "name": "Edenchoir Earrings of Aiming",
+    "name": "에덴의 합창 유격대 귀걸이",
     "required": "1층 낱장 x 4",
     "type": "귀걸이",
     "materiaSlots": 2,
@@ -507,7 +507,7 @@
   "augmentedCrystariumEarringsOfAiming": {
     "from": "석판 보강",
     "iconSrc": "/icons/items/augmented-crystarium-earrings-of-aiming.png",
-    "name": "Augmented Crystarium Earrings of Aiming",
+    "name": "보강된 크리스타리움 유격대 귀걸이",
     "required": "석판 375개\n경화약\n(2층 낱장 x 4)",
     "type": "귀걸이",
     "materiaSlots": 2,
@@ -537,7 +537,7 @@
   "edenchoirChokerOfAiming": {
     "from": "영웅 레이드",
     "iconSrc": "/icons/items/edenchoir-choker-of-aiming.png",
-    "name": "Edenchoir Choker of Aiming",
+    "name": "에덴의 합창 유격대 목장식",
     "required": "1층 낱장 x 4",
     "type": "목걸이",
     "materiaSlots": 2,
@@ -567,7 +567,7 @@
   "augmentedCrystariumWristbandOfAiming": {
     "from": "석판 보강",
     "iconSrc": "/icons/items/augmented-crystarium-wristband-of-aiming.png",
-    "name": "Augmented Crystarium Wristband of Aiming",
+    "name": "보강된 크리스타리움 유격대 손목띠",
     "required": "석판 375개\n경화약\n(2층 낱장 x 4)",
     "type": "팔찌",
     "materiaSlots": 2,
@@ -625,7 +625,7 @@
   "edenchoirRingOfAiming": {
     "from": "영웅 레이드",
     "iconSrc": "/icons/items/edenchoir-ring-of-aiming.png",
-    "name": "Edenchoir Ring of Aiming",
+    "name": "에덴의 합창 유격대 반지",
     "required": "1층 낱장 x 4",
     "type": "반지",
     "materiaSlots": 2,
@@ -639,7 +639,7 @@
   "augmentedCrystariumRingOfAiming": {
     "from": "석판 보강",
     "iconSrc": "/icons/items/augmented-crystarium-ring-of-aiming.png",
-    "name": "Augmented Crystarium Ring of Aiming",
+    "name": "보강된 크리스타리움 유격대 반지",
     "required": "석판 375개\n경화약\n(2층 낱장 x 4)",
     "type": "반지",
     "materiaSlots": 2,

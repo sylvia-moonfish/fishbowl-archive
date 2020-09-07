@@ -33,7 +33,7 @@
   "edenchoirCane": {
     "from": "영웅 레이드",
     "iconSrc": "/icons/items/edenchoir-cane.png",
-    "name": "Edenchoir Cane",
+    "name": "에덴의 합창 환술봉",
     "required": "4층 낱장 x 8",
     "type": "무기",
     "materiaSlots": 2,
@@ -65,7 +65,7 @@
   "edenchoirCodex": {
     "from": "영웅 레이드",
     "iconSrc": "/icons/items/edenchoir-codex.png",
-    "name": "Edenchoir Codex",
+    "name": "에덴의 합창 치유서",
     "required": "4층 낱장 x 8",
     "type": "무기",
     "materiaSlots": 2,
@@ -80,7 +80,7 @@
   "augmentedCrystariumCodex": {
     "from": "석판 보강",
     "iconSrc": "/icons/items/augmented-crystarium-codex.png",
-    "name": "Augmented Crystarium Codex",
+    "name": "보강된 크리스타리움 치유서",
     "required": "석판 1000개\n무기 석판\n강화약\n(3층 낱장 x 4)",
     "type": "무기",
     "materiaSlots": 2,
@@ -112,7 +112,7 @@
   "edenchoirTorquetum": {
     "from": "영웅 레이드",
     "iconSrc": "/icons/items/edenchoir-torquetum.png",
-    "name": "Edenchoir Torquetum",
+    "name": "에덴의 합창 좌표기",
     "required": "4층 낱장 x 8",
     "type": "무기",
     "materiaSlots": 2,
@@ -157,7 +157,7 @@
   "edenchoirWingsOfHealing": {
     "from": "영웅 레이드",
     "iconSrc": "/icons/items/edenchoir-wings-of-healing.png",
-    "name": "Edenchoir Wings of Healing",
+    "name": "에덴의 합창 치유사 날개",
     "required": "2층 낱장 x 6",
     "type": "머리",
     "materiaSlots": 2,
@@ -171,7 +171,7 @@
   "augmentedCrystariumTurbanOfHealing": {
     "from": "석판 보강",
     "iconSrc": "/icons/items/augmented-crystarium-turban-of-healing.png",
-    "name": "Augmented Crystarium Turban of Healing",
+    "name": "보강된 크리스타리움 치유사 터번",
     "required": "석판 495개\n강화섬유\n(3층 낱장 x 4)",
     "type": "머리",
     "materiaSlots": 2,
@@ -201,7 +201,7 @@
   "augmentedCrystariumRobeOfHealing": {
     "from": "석판 보강",
     "iconSrc": "/icons/items/augmented-crystarium-robe-of-healing.png",
-    "name": "Augmented Crystarium Robe of Healing",
+    "name": "보강된 크리스타리움 치유사 로브",
     "required": "석판 825개\n강화섬유\n(3층 낱장 x 4)",
     "type": "몸통",
     "materiaSlots": 2,
@@ -245,7 +245,7 @@
   "edenchoirArmletsOfHealing": {
     "from": "영웅 레이드",
     "iconSrc": "/icons/items/edenchoir-armlets-of-healing.png",
-    "name": "Edenchoir Armlets of Healing",
+    "name": "에덴의 합창 치유사 팔덮개",
     "required": "2층 낱장 x 6",
     "type": "손",
     "materiaSlots": 2,
@@ -275,7 +275,7 @@
   "augmentedCrystariumBeltOfHealing": {
     "from": "석판 보강",
     "iconSrc": "/icons/items/augmented-crystarium-belt-of-healing.png",
-    "name": "Augmented Crystarium Belt of Healing",
+    "name": "보강된 크리스타리움 치유사 허리띠",
     "required": "석판 375개\n경화약\n(2층 낱장 x 4)",
     "type": "허리",
     "materiaSlots": 2,
@@ -305,7 +305,7 @@
   "edenchoirBreechesOfHealing": {
     "from": "영웅 레이드",
     "iconSrc": "/icons/items/edenchoir-breeches-of-healing.png",
-    "name": "Edenchoir Breeches of Healing",
+    "name": "에덴의 합창 치유사 바지",
     "required": "3층 낱장 x 8",
     "type": "다리",
     "materiaSlots": 2,
@@ -319,7 +319,7 @@
   "augmentedCrystariumPantaloonsOfHealing": {
     "from": "석판 보강",
     "iconSrc": "/icons/items/augmented-crystarium-pantaloons-of-healing.png",
-    "name": "Augmented Crystarium Pantaloons of Healing",
+    "name": "보강된 크리스타리움 치유사 나팔바지",
     "required": "석판 825개\n강화섬유\n(3층 낱장 x 4)",
     "type": "다리",
     "materiaSlots": 2,
@@ -349,7 +349,7 @@
   "edenchoirBootsOfHealing": {
     "from": "영웅 레이드",
     "iconSrc": "/icons/items/edenchoir-boots-of-healing.png",
-    "name": "Edenchoir Boots of Healing",
+    "name": "에덴의 합창 치유사 장화",
     "required": "2층 낱장 x 6",
     "type": "발",
     "materiaSlots": 2,
@@ -363,7 +363,7 @@
   "augmentedCrystariumShoesOfHealing": {
     "from": "석판 보강",
     "iconSrc": "/icons/items/augmented-crystarium-shoes-of-healing.png",
-    "name": "Augmented Crystarium Shoes of Healing",
+    "name": "보강된 크리스타리움 치유사 신발",
     "required": "석판 495개\n강화섬유\n(3층 낱장 x 4)",
     "type": "발",
     "materiaSlots": 2,
@@ -393,7 +393,7 @@
   "edenchoirEarringsOfHealing": {
     "from": "영웅 레이드",
     "iconSrc": "/icons/items/edenchoir-earrings-of-healing.png",
-    "name": "Edenchoir Earrings of Healing",
+    "name": "에덴의 합창 치유사 귀걸이",
     "required": "1층 낱장 x 4",
     "type": "귀걸이",
     "materiaSlots": 2,
@@ -437,7 +437,7 @@
   "augmentedCrystariumChokerOfHealing": {
     "from": "석판 보강",
     "iconSrc": "/icons/items/augmented-crystarium-choker-of-healing.png",
-    "name": "Augmented Crystarium Choker of Healing",
+    "name": "보강된 크리스타리움 치유사 목장식",
     "required": "석판 375개\n경화약\n(2층 낱장 x 4)",
     "type": "목걸이",
     "materiaSlots": 2,
@@ -467,7 +467,7 @@
   "edenchoirWristbandOfHealing": {
     "from": "영웅 레이드",
     "iconSrc": "/icons/items/edenchoir-wristband-of-healing.png",
-    "name": "Edenchoir Wristband of Healing",
+    "name": "에덴의 합창 치유사 손목띠",
     "required": "1층 낱장 x 4",
     "type": "팔찌",
     "materiaSlots": 2,
@@ -481,7 +481,7 @@
   "augmentedCrystariumWristbandOfHealing": {
     "from": "석판 보강",
     "iconSrc": "/icons/items/augmented-crystarium-wristband-of-healing.png",
-    "name": "Augmented Crystarium Wristband of Healing",
+    "name": "보강된 크리스타리움 치유사 손목띠",
     "required": "석판 375개\n경화약\n(2층 낱장 x 4)",
     "type": "팔찌",
     "materiaSlots": 2,
@@ -539,7 +539,7 @@
   "edenchoirRingOfHealing": {
     "from": "영웅 레이드",
     "iconSrc": "/icons/items/edenchoir-ring-of-healing.png",
-    "name": "Edenchoir Ring of Healing",
+    "name": "에덴의 합창 치유사 반지",
     "required": "1층 낱장 x 4",
     "type": "반지",
     "materiaSlots": 2,
@@ -553,7 +553,7 @@
   "augmentedCrystariumRingOfHealing": {
     "from": "석판 보강",
     "iconSrc": "/icons/items/augmented-crystarium-ring-of-healing.png",
-    "name": "Augmented Crystarium Ring of Healing",
+    "name": "보강된 크리스타리움 치유사 반지",
     "required": "석판 375개\n경화약\n(2층 낱장 x 4)",
     "type": "반지",
     "materiaSlots": 2,

@@ -108,7 +108,6 @@ const jobs = {
     {
       name: "적마도사",
       initial: "rdm",
-      disabled: true,
     },
   ],
 };

@@ -18,7 +18,7 @@
   "edenchoirRod": {
     "from": "영웅 레이드",
     "iconSrc": "/icons/items/edenchoir-rod.png",
-    "name": "Edenchoir Rod",
+    "name": "에덴의 합창 주술봉",
     "required": "4층 낱장 x 8",
     "type": "무기",
     "materiaSlots": 2,
@@ -50,7 +50,7 @@
   "edenchoirIndex": {
     "from": "영웅 레이드",
     "iconSrc": "/icons/items/edenchoir-index.png",
-    "name": "Edenchoir Index",
+    "name": "에덴의 합창 금서",
     "required": "4층 낱장 x 8",
     "type": "무기",
     "materiaSlots": 2,
@@ -64,6 +64,36 @@
   },
 
   "================================================== Weapon: RDM ==================================================": {},
+  "edengraceRapier": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edengrace-rapier.png",
+    "name": "에덴의 은총 레이피어",
+    "required": "4층 낱장 x 8",
+    "type": "무기",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "wd": 164,
+      "main": 544,
+      "ch": 327,
+      "dh": 467
+    }
+  },
+  "edenchoirRapier": {
+    "from": "영웅 레이드",
+    "iconSrc": "/icons/items/edenchoir-rapier.png",
+    "name": "에덴의 합창 레이피어",
+    "required": "4층 낱장 x 8",
+    "type": "무기",
+    "materiaSlots": 2,
+    "overmeldSlots": 0,
+    "stats": {
+      "wd": 172,
+      "main": 634,
+      "ch": 498,
+      "dh": 349
+    }
+  },
 
   "================================================== Head: Int ==================================================": {},
   "edengraceCircletOfCasting": {
@@ -97,7 +127,7 @@
   "edenchoirHatOfCasting": {
     "from": "영웅 레이드",
     "iconSrc": "/icons/items/edenchoir-hat-of-casting.png",
-    "name": "Edenchoir Hat of Casting",
+    "name": "에덴의 합창 마술사 모자",
     "required": "2층 낱장 x 6",
     "type": "머리",
     "materiaSlots": 2,
@@ -111,7 +141,7 @@
   "augmentedCrystariumHalfmaskOfCasting": {
     "from": "석판 보강",
     "iconSrc": "/icons/items/augmented-crystarium-halfmask-of-casting.png",
-    "name": "Augmented Crystarium Halfmask of Casting",
+    "name": "보강된 크리스타리움 마술사 반가면",
     "required": "석판 495개\n강화섬유\n(3층 낱장 x 4)",
     "type": "머리",
     "materiaSlots": 2,
@@ -155,7 +185,7 @@
   "edenchoirTunicOfCasting": {
     "from": "영웅 레이드",
     "iconSrc": "/icons/items/edenchoir-tunic-of-casting.png",
-    "name": "Edenchoir Tunic of Casting",
+    "name": "에덴의 합창 마술사 튜닉",
     "required": "4층 낱장 x 8",
     "type": "몸통",
     "materiaSlots": 2,
@@ -169,7 +199,7 @@
   "augmentedCrystariumRobeOfCasting": {
     "from": "석판 보강",
     "iconSrc": "/icons/items/augmented-crystarium-robe-of-casting.png",
-    "name": "Augmented Crystarium Robe of Casting",
+    "name": "보강된 크리스타리움 마술사 로브",
     "required": "석판 825개\n강화섬유\n(3층 낱장 x 4)",
     "type": "몸통",
     "materiaSlots": 2,
@@ -213,7 +243,7 @@
   "edenchoirArmletsOfCasting": {
     "from": "영웅 레이드",
     "iconSrc": "/icons/items/edenchoir-armlets-of-casting.png",
-    "name": "Edenchoir Armlets of Casting",
+    "name": "에덴의 합창 마술사 팔덮개",
     "required": "2층 낱장 x 6",
     "type": "손",
     "materiaSlots": 2,
@@ -227,7 +257,7 @@
   "augmentedCrystariumShortglovesOfCasting": {
     "from": "석판 보강",
     "iconSrc": "/icons/items/augmented-crystarium-shortgloves-of-casting.png",
-    "name": "Augmented Crystarium Shortgloves of Casting",
+    "name": "보강된 크리스타리움 마술사 단장갑",
     "required": "석판 495개\n강화섬유\n(3층 낱장 x 4)",
     "type": "손",
     "materiaSlots": 2,
@@ -271,7 +301,7 @@
   "edenchoirTassetsOfCasting": {
     "from": "영웅 레이드",
     "iconSrc": "/icons/items/edenchoir-tassets-of-casting.png",
-    "name": "Edenchoir Tassets of Casting",
+    "name": "에덴의 합창 마술사 허리갑옷",
     "required": "1층 낱장 x 6",
     "type": "허리",
     "materiaSlots": 2,
@@ -285,7 +315,7 @@
   "augmentedCrystariumBeltOfCasting": {
     "from": "석판 보강",
     "iconSrc": "/icons/items/augmented-crystarium-belt-of-casting.png",
-    "name": "Augmented Crystarium Belt of Casting",
+    "name": "보강된 크리스타리움 마술사 허리띠",
     "required": "석판 375개\n경화약\n(2층 낱장 x 4)",
     "type": "허리",
     "materiaSlots": 2,
@@ -329,7 +359,7 @@
   "edenchoirBreechesOfCasting": {
     "from": "영웅 레이드",
     "iconSrc": "/icons/items/edenchoir-breeches-of-casting.png",
-    "name": "Edenchoir Breeches of Casting",
+    "name": "에덴의 합창 마술사 바지",
     "required": "3층 낱장 x 8",
     "type": "다리",
     "materiaSlots": 2,
@@ -343,7 +373,7 @@
   "augmentedCrystariumHoseOfCasting": {
     "from": "석판 보강",
     "iconSrc": "/icons/items/augmented-crystarium-hose-of-casting.png",
-    "name": "Augmented Crystarium Hose of Casting",
+    "name": "보강된 크리스타리움 마술사 기마바지",
     "required": "석판 825개\n강화섬유\n(3층 낱장 x 4)",
     "type": "다리",
     "materiaSlots": 2,
@@ -387,7 +417,7 @@
   "edenchoirBootsOfCasting": {
     "from": "영웅 레이드",
     "iconSrc": "/icons/items/edenchoir-boots-of-casting.png",
-    "name": "Edenchoir Boots of Casting",
+    "name": "에덴의 합창 마술사 장화",
     "required": "2층 낱장 x 6",
     "type": "발",
     "materiaSlots": 2,
@@ -401,7 +431,7 @@
   "augmentedCrystariumBootsOfCasting": {
     "from": "석판 보강",
     "iconSrc": "/icons/items/augmented-crystarium-boots-of-casting.png",
-    "name": "Augmented Crystarium Boots of Casting",
+    "name": "보강된 크리스타리움 마술사 장화",
     "required": "석판 495개\n강화섬유\n(3층 낱장 x 4)",
     "type": "발",
     "materiaSlots": 2,
@@ -431,7 +461,7 @@
   "edenchoirEarringsOfCasting": {
     "from": "영웅 레이드",
     "iconSrc": "/icons/items/edenchoir-earrings-of-casting.png",
-    "name": "Edenchoir Earrings of Casting",
+    "name": "에덴의 합창 마술사 귀걸이",
     "required": "1층 낱장 x 4",
     "type": "귀걸이",
     "materiaSlots": 2,
@@ -445,7 +475,7 @@
   "augmentedCrystariumEarringsOfCasting": {
     "from": "석판 보강",
     "iconSrc": "/icons/items/augmented-crystarium-earrings-of-casting.png",
-    "name": "Augmented Crystarium Earrings of Casting",
+    "name": "보강된 크리스타리움 마술사 귀걸이",
     "required": "석판 375개\n경화약\n(2층 낱장 x 4)",
     "type": "귀걸이",
     "materiaSlots": 2,
@@ -489,7 +519,7 @@
   "edenchoirChokerOfCasting": {
     "from": "영웅 레이드",
     "iconSrc": "/icons/items/edenchoir-choker-of-casting.png",
-    "name": "Edenchoir Choker of Casting",
+    "name": "에덴의 합창 마술사 목장식",
     "required": "1층 낱장 x 4",
     "type": "목걸이",
     "materiaSlots": 2,
@@ -503,7 +533,7 @@
   "augmentedCrystariumChokerOfCasting": {
     "from": "석판 보강",
     "iconSrc": "/icons/items/augmented-crystarium-choker-of-casting.png",
-    "name": "Augmented Crystarium Choker of Casting",
+    "name": "보강된 크리스타리움 마술사 목장식",
     "required": "석판 375개\n경화약\n(2층 낱장 x 4)",
     "type": "목걸이",
     "materiaSlots": 2,
@@ -533,7 +563,7 @@
   "edenchoirWristbandOfCasting": {
     "from": "영웅 레이드",
     "iconSrc": "/icons/items/edenchoir-wristband-of-casting.png",
-    "name": "Edenchoir Wristband of Casting",
+    "name": "에덴의 합창 마술사 손목띠",
     "required": "1층 낱장 x 4",
     "type": "팔찌",
     "materiaSlots": 2,
@@ -547,7 +577,7 @@
   "augmentedCrystariumWristbandOfCasting": {
     "from": "석판 보강",
     "iconSrc": "/icons/items/augmented-crystarium-wristband-of-casting.png",
-    "name": "Augmented Crystarium Wristband of Casting",
+    "name": "보강된 크리스타리움 마술사 손목띠",
     "required": "석판 375개\n경화약\n(2층 낱장 x 4)",
     "type": "팔찌",
     "materiaSlots": 2,
@@ -591,7 +621,7 @@
   "edenchoirRingOfCasting": {
     "from": "영웅 레이드",
     "iconSrc": "/icons/items/edenchoir-ring-of-casting.png",
-    "name": "Edenchoir Ring of Casting",
+    "name": "에덴의 합창 마술사 반지",
     "required": "1층 낱장 x 4",
     "type": "반지",
     "materiaSlots": 2,
@@ -605,7 +635,7 @@
   "augmentedCrystariumRingOfCasting": {
     "from": "석판 보강",
     "iconSrc": "/icons/items/augmented-crystarium-ring-of-casting.png",
-    "name": "Augmented Crystarium Ring of Casting",
+    "name": "보강된 크리스타리움 마술사 반지",
     "required": "석판 375개\n경화약\n(2층 낱장 x 4)",
     "type": "반지",
     "materiaSlots": 2,

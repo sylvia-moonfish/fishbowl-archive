@@ -18,7 +18,7 @@
   "neoIshgardianSword": {
     "from": "제작",
     "iconSrc": "/icons/items/hq/neo-ishgardian-sword.png",
-    "name": "Neo-Ishgardian Sword",
+    "name": "신이슈가르드 한손검",
     "required": "제작",
     "type": "무기",
     "materiaSlots": 2,
@@ -33,7 +33,7 @@
   "neoIshgardianShield": {
     "from": "제작",
     "iconSrc": "/icons/items/hq/neo-ishgardian-shield.png",
-    "name": "Neo-Ishgardian Shield",
+    "name": "신이슈가르드 방패",
     "required": "제작",
     "type": "방패",
     "materiaSlots": 0,
@@ -47,7 +47,7 @@
   "rubyBroadsword": {
     "from": "극만신",
     "iconSrc": "/icons/items/ruby-broadsword.png",
-    "name": "Ruby Broadsword",
+    "name": "루비 웨폰 브로드소드",
     "required": "우상 x 7",
     "type": "무기",
     "materiaSlots": 2,
@@ -62,7 +62,7 @@
   "rubyScutum": {
     "from": "극만신",
     "iconSrc": "/icons/items/ruby-scutum.png",
-    "name": "Ruby Scutum",
+    "name": "루비 웨폰 사각방패",
     "required": "우상 x 3",
     "type": "방패",
     "materiaSlots": 0,
@@ -76,7 +76,7 @@
   "edenchoirBastardSword": {
     "from": "영웅 레이드",
     "iconSrc": "/icons/items/edenchoir-bastard-sword.png",
-    "name": "Edenchoir Bastard Sword",
+    "name": "에덴의 합창 바스타드소드",
     "required": "4층 낱장 x 5",
     "type": "무기",
     "materiaSlots": 2,
@@ -91,7 +91,7 @@
   "edenchoirScutum": {
     "from": "영웅 레이드",
     "iconSrc": "/icons/items/edenchoir-scutum.png",
-    "name": "Edenchoir Scutum",
+    "name": "에덴의 합창 사각방패",
     "required": "4층 낱장 x 3",
     "type": "방패",
     "materiaSlots": 0,
@@ -122,7 +122,7 @@
   "edenchoirBattleaxe": {
     "from": "영웅 레이드",
     "iconSrc": "/icons/items/edenchoir-battleaxe.png",
-    "name": "Edenchoir Battleaxe",
+    "name": "에덴의 합창 전투도끼",
     "required": "4층 낱장 x 8",
     "type": "무기",
     "materiaSlots": 2,
@@ -154,7 +154,7 @@
   "edenchoirGreatsword": {
     "from": "영웅 레이드",
     "iconSrc": "/icons/items/edenchoir-greatsword.png",
-    "name": "Edenchoir Greatsword",
+    "name": "에덴의 합창 그레이트소드",
     "required": "4층 낱장 x 8",
     "type": "무기",
     "materiaSlots": 2,
@@ -186,7 +186,7 @@
   "edenchoirGunblade": {
     "from": "영웅 레이드",
     "iconSrc": "/icons/items/edenchoir-gunblade.png",
-    "name": "Edenchoir Gunblade",
+    "name": "에덴의 합창 건블레이드",
     "required": "4층 낱장 x 8",
     "type": "무기",
     "materiaSlots": 2,
@@ -217,7 +217,7 @@
   "neoIshgardianCapOfFending": {
     "from": "제작",
     "iconSrc": "/icons/items/hq/neo-ishgardian-cap-of-fending.png",
-    "name": "Neo-Ishgardian Cap of Fending",
+    "name": "신이슈가르드 수호자 모자",
     "required": "제작",
     "type": "머리",
     "materiaSlots": 2,
@@ -231,7 +231,7 @@
   "edenchoirHelmOfFending": {
     "from": "영웅 레이드",
     "iconSrc": "/icons/items/edenchoir-helm-of-fending.png",
-    "name": "Edenchoir Helm of Fending",
+    "name": "에덴의 합창 수호자 투구",
     "required": "2층 낱장 x 6",
     "type": "머리",
     "materiaSlots": 2,
@@ -245,7 +245,7 @@
   "augmentedCrystariumCircletOfFending": {
     "from": "석판 보강",
     "iconSrc": "/icons/items/augmented-crystarium-circlet-of-fending.png",
-    "name": "Augmented Crystarium Circlet of Fending",
+    "name": "보강된 크리스타리움 수호자 머리장식",
     "required": "석판 495개\n강화섬유\n(3층 낱장 x 4)",
     "type": "머리",
     "materiaSlots": 2,
@@ -331,7 +331,7 @@
   "neoIshgardianTopOfFending": {
     "from": "제작",
     "iconSrc": "/icons/items/hq/neo-ishgardian-top-of-fending.png",
-    "name": "Neo-Ishgardian Top of Fending",
+    "name": "신이슈가르드 수호자 상의",
     "required": "제작",
     "type": "몸통",
     "materiaSlots": 2,
@@ -345,7 +345,7 @@
   "edencallMailOfFending": {
     "from": "일반 레이드",
     "iconSrc": "/icons/items/edencall-mail-of-fending.png",
-    "name": "Edencall Mail of Fending",
+    "name": "에덴의 외침 수호자 갑옷",
     "required": "갑옷 x 4",
     "type": "몸통",
     "materiaSlots": 2,
@@ -359,7 +359,7 @@
   "augmentedCrystariumTabardOfFending": {
     "from": "석판 보강",
     "iconSrc": "/icons/items/augmented-crystarium-tabard-of-fending.png",
-    "name": "Augmented Crystarium Tabard of Fending",
+    "name": "보강된 크리스타리움 수호자 휘장복",
     "required": "석판 825개\n강화섬유\n(3층 낱장 x 4)",
     "type": "몸통",
     "materiaSlots": 2,
@@ -389,7 +389,7 @@
   "neoIshgardianGauntletsOfFending": {
     "from": "제작",
     "iconSrc": "/icons/items/hq/neo-ishgardian-gauntlets-of-fending.png",
-    "name": "Neo-Ishgardian Gauntlets of Fending",
+    "name": "신이슈가르드 수호자 건틀릿",
     "required": "제작",
     "type": "손",
     "materiaSlots": 2,
@@ -403,7 +403,7 @@
   "edenchoirGauntletsOfFending": {
     "from": "영웅 레이드",
     "iconSrc": "/icons/items/edenchoir-gauntlets-of-fending.png",
-    "name": "Edenchoir Gauntlets of Fending",
+    "name": "에덴의 합창 수호자 건틀릿",
     "required": "2층 낱장 x 6",
     "type": "손",
     "materiaSlots": 2,
@@ -433,7 +433,7 @@
   "neoIshgardianPlateBeltOfFending": {
     "from": "제작",
     "iconSrc": "/icons/items/hq/neo-ishgardian-plate-belt-of-fending.png",
-    "name": "Neo-Ishgardian Plate Belt of Fending",
+    "name": "신이슈가르드 수호자 판금 허리띠",
     "required": "제작",
     "type": "허리",
     "materiaSlots": 1,
@@ -447,7 +447,7 @@
   "edenchoirTassetsOfFending": {
     "from": "영웅 레이드",
     "iconSrc": "/icons/items/edenchoir-tassets-of-fending.png",
-    "name": "Edenchoir Tassets of Fending",
+    "name": "에덴의 합창 수호자 허리갑옷",
     "required": "1층 낱장 x 6",
     "type": "허리",
     "materiaSlots": 2,
@@ -477,7 +477,7 @@
   "neoIshgardianBottomsOfFending": {
     "from": "제작",
     "iconSrc": "/icons/items/hq/neo-ishgardian-bottoms-of-fending.png",
-    "name": "Neo-Ishgardian Bottoms of Fending",
+    "name": "신이슈가르드 수호자 하의",
     "required": "제작",
     "type": "다리",
     "materiaSlots": 2,
@@ -491,7 +491,7 @@
   "edenchoirCuissesOfFending": {
     "from": "영웅 레이드",
     "iconSrc": "/icons/items/edenchoir-cuisses-of-fending.png",
-    "name": "Edenchoir Cuisses of Fending",
+    "name": "에덴의 합창 수호자 허벅지보호대",
     "required": "3층 낱장 x 8",
     "type": "다리",
     "materiaSlots": 2,
@@ -521,7 +521,7 @@
   "neoIshgardianSolleretsOfFending": {
     "from": "제작",
     "iconSrc": "/icons/items/hq/neo-ishgardian-sollerets-of-fending.png",
-    "name": "Neo-Ishgardian Sollerets of Fending",
+    "name": "신이슈가르드 수호자 쇠구두",
     "required": "제작",
     "type": "발",
     "materiaSlots": 2,
@@ -535,7 +535,7 @@
   "augmentedCrystariumThighbootsOfFending": {
     "from": "석판 보강",
     "iconSrc": "/icons/items/augmented-crystarium-thighboots-of-fending.png",
-    "name": "Augmented Crystarium Thighboots of Fending",
+    "name": "보강된 크리스타리움 수호자 허벅지장화",
     "required": "석판 495개\n강화섬유\n(3층 낱장 x 4)",
     "type": "발",
     "materiaSlots": 2,
@@ -579,7 +579,7 @@
   "neoIshgardianEarringOfFending": {
     "from": "제작",
     "iconSrc": "/icons/items/hq/neo-ishgardian-earring-of-fending.png",
-    "name": "Neo-Ishgardian Earring of Fending",
+    "name": "신이슈가르드 수호자 귀걸이",
     "required": "제작",
     "type": "귀걸이",
     "materiaSlots": 1,
@@ -593,7 +593,7 @@
   "augmentedCrystariumEarringsOfFending": {
     "from": "석판 보강",
     "iconSrc": "/icons/items/augmented-crystarium-earrings-of-fending.png",
-    "name": "Augmented Crystarium Earrings of Fending",
+    "name": "보강된 크리스타리움 수호자 귀걸이",
     "required": "석판 375개\n경화약\n(2층 낱장 x 4)",
     "type": "귀걸이",
     "materiaSlots": 2,
@@ -623,7 +623,7 @@
   "neoIshgardianChokerOfFending": {
     "from": "제작",
     "iconSrc": "/icons/items/hq/neo-ishgardian-choker-of-fending.png",
-    "name": "Neo-Ishgardian Choker of Fending",
+    "name": "신이슈가르드 수호자 목장식",
     "required": "제작",
     "type": "목걸이",
     "materiaSlots": 1,
@@ -637,7 +637,7 @@
   "edenchoirChokerOfFending": {
     "from": "영웅 레이드",
     "iconSrc": "/icons/items/edenchoir-choker-of-fending.png",
-    "name": "Edenchoir Choker of Fending",
+    "name": "에덴의 합창 수호자 목장식",
     "required": "1층 낱장 x 4",
     "type": "목걸이",
     "materiaSlots": 2,
@@ -667,7 +667,7 @@
   "neoIshgardianWristbandsOfFending": {
     "from": "제작",
     "iconSrc": "/icons/items/hq/neo-ishgardian-wristbands-of-fending.png",
-    "name": "Neo-Ishgardian Wristbands of Fending",
+    "name": "신이슈가르드 수호자 손목띠",
     "required": "제작",
     "type": "팔찌",
     "materiaSlots": 1,
@@ -681,7 +681,7 @@
   "augmentedCrystariumWristbandOfFending": {
     "from": "석판 보강",
     "iconSrc": "/icons/items/augmented-crystarium-wristband-of-fending.png",
-    "name": "Augmented Crystarium Wristband of Fending",
+    "name": "보강된 크리스타리움 수호자 손목띠",
     "required": "석판 375개\n경화약\n(2층 낱장 x 4)",
     "type": "팔찌",
     "materiaSlots": 2,
@@ -725,7 +725,7 @@
   "neoIshgardianRingOfFending": {
     "from": "제작",
     "iconSrc": "/icons/items/hq/neo-ishgardian-ring-of-fending.png",
-    "name": "Neo-Ishgardian Ring of Fending",
+    "name": "신이슈가르드 수호자 반지",
     "required": "제작",
     "type": "반지",
     "materiaSlots": 1,
@@ -739,7 +739,7 @@
   "crystariumRingOfFending": {
     "from": "석판",
     "iconSrc": "/icons/items/crystarium-ring-of-fending.png",
-    "name": "Crystarium Ring of Fending",
+    "name": "크리스타리움 수호자 반지",
     "required": "석판 375개",
     "type": "반지",
     "materiaSlots": 2,
@@ -753,7 +753,7 @@
   "edenchoirRingOfFending": {
     "from": "영웅 레이드",
     "iconSrc": "/icons/items/edenchoir-ring-of-fending.png",
-    "name": "Edenchoir Ring of Fending",
+    "name": "에덴의 합창 수호자 반지",
     "required": "1층 낱장 x 4",
     "type": "반지",
     "materiaSlots": 2,
@@ -767,7 +767,7 @@
   "augmentedCrystariumRingOfFending": {
     "from": "석판 보강",
     "iconSrc": "/icons/items/augmented-crystarium-ring-of-fending.png",
-    "name": "Augmented Crystarium Ring of Fending",
+    "name": "보강된 크리스타리움 수호자 반지",
     "required": "석판 375개\n경화약\n(2층 낱장 x 4)",
     "type": "반지",
     "materiaSlots": 2,

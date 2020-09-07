@@ -18,7 +18,7 @@
   "edenchoirJamadhars": {
     "from": "영웅 레이드",
     "iconSrc": "/icons/items/edenchoir-jamadhars.png",
-    "name": "Edenchoir Jamadhars",
+    "name": "에덴의 합창 자마다르",
     "required": "4층 낱장 x 8",
     "type": "무기",
     "materiaSlots": 2,
@@ -50,7 +50,7 @@
   "edenchoirFork": {
     "from": "영웅 레이드",
     "iconSrc": "/icons/items/edenchoir-fork.png",
-    "name": "Edenchoir Fork",
+    "name": "에덴의 합창 갈래창",
     "required": "4층 낱장 x 8",
     "type": "무기",
     "materiaSlots": 2,
@@ -82,7 +82,7 @@
   "edenchoirSamuraiBlade": {
     "from": "영웅 레이드",
     "iconSrc": "/icons/items/edenchoir-samurai-blade.png",
-    "name": "Edenchoir Samurai Blade",
+    "name": "에덴의 합창 외날검",
     "required": "4층 낱장 x 8",
     "type": "무기",
     "materiaSlots": 2,
@@ -127,7 +127,7 @@
   "augmentedCrystariumCircletOfMaiming": {
     "from": "석판 보강",
     "iconSrc": "/icons/items/augmented-crystarium-circlet-of-maiming.png",
-    "name": "Augmented Crystarium Circlet of Maiming",
+    "name": "보강된 크리스타리움 학살자 머리장식",
     "required": "석판 495개\n강화섬유\n(3층 낱장 x 4)",
     "type": "머리",
     "materiaSlots": 2,
@@ -141,7 +141,7 @@
   "augmentedCrystariumTurbanOfStriking": {
     "from": "석판 보강",
     "iconSrc": "/icons/items/augmented-crystarium-turban-of-striking.png",
-    "name": "Augmented Crystarium Turban of Striking",
+    "name": "보강된 크리스타리움 타격대 터번",
     "required": "석판 495개\n강화섬유\n(3층 낱장 x 4)",
     "type": "머리",
     "materiaSlots": 2,
@@ -185,7 +185,7 @@
   "edenchoirMailOfMaiming": {
     "from": "영웅 레이드",
     "iconSrc": "/icons/items/edenchoir-mail-of-maiming.png",
-    "name": "Edenchoir Mail of Maiming",
+    "name": "에덴의 합창 학살자 갑옷",
     "required": "4층 낱장 x 8",
     "type": "몸통",
     "materiaSlots": 2,
@@ -199,7 +199,7 @@
   "edenchoirGambisonOfStriking": {
     "from": "영웅 레이드",
     "iconSrc": "/icons/items/edenchoir-gambison-of-striking.png",
-    "name": "Edenchoir Gambison of Striking",
+    "name": "에덴의 합창 타격대 보호덧옷",
     "required": "4층 낱장 x 8",
     "type": "몸통",
     "materiaSlots": 2,
@@ -213,7 +213,7 @@
   "augmentedCrystariumCoatOfStriking": {
     "from": "석판 보강",
     "iconSrc": "/icons/items/augmented-crystarium-coat-of-striking.png",
-    "name": "Augmented Crystarium Coat of Striking",
+    "name": "보강된 크리스타리움 타격대 외투",
     "required": "석판 825개\n강화섬유\n(3층 낱장 x 4)",
     "type": "몸통",
     "materiaSlots": 2,
@@ -271,7 +271,7 @@
   "edenchoirGauntletsOfMaiming": {
     "from": "영웅 레이드",
     "iconSrc": "/icons/items/edenchoir-gauntlets-of-maiming.png",
-    "name": "Edenchoir Gauntlets of Maiming",
+    "name": "에덴의 합창 학살자 건틀릿",
     "required": "2층 낱장 x 6",
     "type": "손",
     "materiaSlots": 2,
@@ -285,7 +285,7 @@
   "augmentedCrystariumGauntletsOfMaiming": {
     "from": "석판 보강",
     "iconSrc": "/icons/items/augmented-crystarium-gauntlets-of-maiming.png",
-    "name": "Augmented Crystarium Gauntlets of Maiming",
+    "name": "보강된 크리스타리움 학살자 건틀릿",
     "required": "석판 495개\n강화섬유\n(3층 낱장 x 4)",
     "type": "손",
     "materiaSlots": 2,
@@ -299,7 +299,7 @@
   "edenchoirGauntletsOfStriking": {
     "from": "영웅 레이드",
     "iconSrc": "/icons/items/edenchoir-gauntlets-of-striking.png",
-    "name": "Edenchoir Gauntlets of Striking",
+    "name": "에덴의 합창 타격대 건틀릿",
     "required": "2층 낱장 x 6",
     "type": "손",
     "materiaSlots": 2,
@@ -343,7 +343,7 @@
   "augmentedCrystariumBeltOfMaiming": {
     "from": "석판 보강",
     "iconSrc": "/icons/items/augmented-crystarium-belt-of-maiming.png",
-    "name": "Augmented Crystarium Belt of Maiming",
+    "name": "보강된 크리스타리움 학살자 허리띠",
     "required": "석판 375개\n경화약\n(2층 낱장 x 4)",
     "type": "허리",
     "materiaSlots": 2,
@@ -357,7 +357,7 @@
   "augmentedCrystariumBeltOfStriking": {
     "from": "석판 보강",
     "iconSrc": "/icons/items/augmented-crystarium-belt-of-striking.png",
-    "name": "Augmented Crystarium Belt of Striking",
+    "name": "보강된 크리스타리움 타격대 허리띠",
     "required": "석판 375개\n경화약\n(2층 낱장 x 4)",
     "type": "허리",
     "materiaSlots": 2,
@@ -401,7 +401,7 @@
   "edenchoirCuissesOfMaiming": {
     "from": "영웅 레이드",
     "iconSrc": "/icons/items/edenchoir-cuisses-of-maiming.png",
-    "name": "Edenchoir Cuisses of Maiming",
+    "name": "에덴의 합창 학살자 허벅지보호대",
     "required": "3층 낱장 x 8",
     "type": "다리",
     "materiaSlots": 2,
@@ -415,7 +415,7 @@
   "edenchoirTrousersOfStriking": {
     "from": "영웅 레이드",
     "iconSrc": "/icons/items/edenchoir-trousers-of-striking.png",
-    "name": "Edenchoir Trousers of Striking",
+    "name": "에덴의 합창 타격대 긴바지",
     "required": "3층 낱장 x 8",
     "type": "다리",
     "materiaSlots": 2,
@@ -429,7 +429,7 @@
   "augmentedCrystariumPantaloonsOfStriking": {
     "from": "석판 보강",
     "iconSrc": "/icons/items/augmented-crystarium-pantaloons-of-striking.png",
-    "name": "Augmented Crystarium Pantaloons of Striking",
+    "name": "보강된 크리스타리움 타격대 나팔바지",
     "required": "석판 825개\n강화섬유\n(3층 낱장 x 4)",
     "type": "다리",
     "materiaSlots": 2,
@@ -473,7 +473,7 @@
   "edenchoirSolleretsOfMaiming": {
     "from": "영웅 레이드",
     "iconSrc": "/icons/items/edenchoir-sollerets-of-maiming.png",
-    "name": "Edenchoir Sollerets of Maiming",
+    "name": "에덴의 합창 학살자 쇠구두",
     "required": "2층 낱장 x 6",
     "type": "발",
     "materiaSlots": 2,
@@ -487,7 +487,7 @@
   "augmentedCrystariumThighbootsOfMaiming": {
     "from": "석판 보강",
     "iconSrc": "/icons/items/augmented-crystarium-thighboots-of-maiming.png",
-    "name": "Augmented Crystarium Thighboots of Maiming",
+    "name": "보강된 크리스타리움 학살자 허벅지장화",
     "required": "석판 495개\n강화섬유\n(3층 낱장 x 4)",
     "type": "발",
     "materiaSlots": 2,
@@ -501,7 +501,7 @@
   "edenchoirSolleretsOfStriking": {
     "from": "영웅 레이드",
     "iconSrc": "/icons/items/edenchoir-sollerets-of-striking.png",
-    "name": "Edenchoir Sollerets of Striking",
+    "name": "에덴의 합창 타격대 쇠구두",
     "required": "2층 낱장 x 6",
     "type": "발",
     "materiaSlots": 2,
@@ -515,7 +515,7 @@
   "augmentedCrystariumShoesOfStriking": {
     "from": "석판 보강",
     "iconSrc": "/icons/items/augmented-crystarium-shoes-of-striking.png",
-    "name": "Augmented Crystarium Shoes of Striking",
+    "name": "보강된 크리스타리움 타격대 신발",
     "required": "석판 495개\n강화섬유\n(3층 낱장 x 4)",
     "type": "발",
     "materiaSlots": 2,
@@ -545,7 +545,7 @@
   "edenchoirEarringsOfSlaying": {
     "from": "영웅 레이드",
     "iconSrc": "/icons/items/edenchoir-earrings-of-slaying.png",
-    "name": "Edenchoir Earrings of Slaying",
+    "name": "에덴의 합창 공격대 귀걸이",
     "required": "1층 낱장 x 4",
     "type": "귀걸이",
     "materiaSlots": 2,
@@ -575,7 +575,7 @@
   "augmentedCrystariumChokerOfSlaying": {
     "from": "석판 보강",
     "iconSrc": "/icons/items/augmented-crystarium-choker-of-slaying.png",
-    "name": "Augmented Crystarium Choker of Slaying",
+    "name": "보강된 크리스타리움 공격대 목장식",
     "required": "석판 375개\n경화약\n(2층 낱장 x 4)",
     "type": "목걸이",
     "materiaSlots": 2,
@@ -605,7 +605,7 @@
   "edenchoirWristbandOfSlaying": {
     "from": "영웅 레이드",
     "iconSrc": "/icons/items/edenchoir-wristband-of-slaying.png",
-    "name": "Edenchoir Wristband of Slaying",
+    "name": "에덴의 합창 공격대 손목띠",
     "required": "1층 낱장 x 4",
     "type": "팔찌",
     "materiaSlots": 2,
@@ -649,7 +649,7 @@
   "edenchoirRingOfSlaying": {
     "from": "영웅 레이드",
     "iconSrc": "/icons/items/edenchoir-ring-of-slaying.png",
-    "name": "Edenchoir Ring of Slaying",
+    "name": "에덴의 합창 공격대 반지",
     "required": "1층 낱장 x 4",
     "type": "반지",
     "materiaSlots": 2,
@@ -663,7 +663,7 @@
   "augmentedCrystariumRingOfSlaying": {
     "from": "석판 보강",
     "iconSrc": "/icons/items/augmented-crystarium-ring-of-slaying.png",
-    "name": "Augmented Crystarium Ring of Slaying",
+    "name": "보강된 크리스타리움 공격대 반지",
     "required": "석판 375개\n경화약\n(2층 낱장 x 4)",
     "type": "반지",
     "materiaSlots": 2,

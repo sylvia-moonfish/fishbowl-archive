@@ -107,6 +107,9 @@
       <SubType>Code</SubType>
     </Content>
     <Content Include="pages\5.2\guide\bis-guide\pld.js" />
+    <Content Include="pages\5.2\guide\bis-guide\rdm.js">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="pages\5.2\guide\bis-guide\sam.js">
       <SubType>Code</SubType>
     </Content>
@@ -351,6 +354,7 @@
     <Content Include="public\icons\items\edenchoir-index.png" />
     <Content Include="public\icons\items\edenchoir-jamadhars.png" />
     <Content Include="public\icons\items\edenchoir-mail-of-maiming.png" />
+    <Content Include="public\icons\items\edenchoir-rapier.png" />
     <Content Include="public\icons\items\edenchoir-ring-of-aiming.png" />
     <Content Include="public\icons\items\edenchoir-ring-of-casting.png" />
     <Content Include="public\icons\items\edenchoir-ring-of-fending.png" />
