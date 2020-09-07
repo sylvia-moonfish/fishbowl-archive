@@ -104,7 +104,6 @@ const jobs = {
     {
       name: "소환사",
       initial: "smn",
-      disabled: true,
     },
     {
       name: "적마도사",
