@@ -9,7 +9,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>1d43dee4-c5d4-494b-bec7-a7d04af632c3</ProjectGuid>
+    <ProjectGuid>545b6eb7-0ba2-4d8b-8112-8b06448f34b4</ProjectGuid>
     <ProjectHome>.</ProjectHome>
     <StartupFile>
     </StartupFile>
@@ -29,30 +29,22 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include=".prettierignore" />
     <Content Include="data\5.1\bis-calculations.json" />
     <Content Include="data\5.1\bis-items.json" />
     <Content Include="data\5.1\craft-actions.json" />
     <Content Include="data\5.1\craft-items.json" />
     <Content Include="data\5.2\bis-calculations.json" />
-    <Content Include="data\5.2\bis-items-common.json">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="data\5.2\bis-items-dex.json">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="data\5.2\bis-items-healer.json">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="data\5.2\bis-items-int.json">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="data\5.2\bis-items-str.json">
-      <SubType>Code</SubType>
-    </Content>
+    <Content Include="data\5.2\bis-items-common.json" />
+    <Content Include="data\5.2\bis-items-dex.json" />
+    <Content Include="data\5.2\bis-items-healer.json" />
+    <Content Include="data\5.2\bis-items-int.json" />
+    <Content Include="data\5.2\bis-items-str.json" />
     <Content Include="data\5.2\bis-items-tank.json" />
     <Content Include="data\main-menu.js" />
     <Content Include="data\site-info.json" />
+    <Content Include="jsconfig.json">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="next.config.js" />
     <Content Include="now.json" />
     <Content Include="package.json" />
@@ -76,534 +68,33 @@
     <Content Include="pages\5.1\guide\bis-guide\whm.js" />
     <Content Include="pages\5.1\guide\craft-guide.js" />
     <Content Include="pages\5.2\guide\bis-guide.js" />
-    <Content Include="pages\5.2\guide\bis-guide\ast.js">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="pages\5.2\guide\bis-guide\blm.js">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="pages\5.2\guide\bis-guide\brd.js">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="pages\5.2\guide\bis-guide\dnc.js">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="pages\5.2\guide\bis-guide\drg.js">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="pages\5.2\guide\bis-guide\drk.js">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="pages\5.2\guide\bis-guide\gnb.js">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="pages\5.2\guide\bis-guide\mch.js">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="pages\5.2\guide\bis-guide\mnk.js">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="pages\5.2\guide\bis-guide\nin.js">
-      <SubType>Code</SubType>
-    </Content>
+    <Content Include="pages\5.2\guide\bis-guide\ast.js" />
+    <Content Include="pages\5.2\guide\bis-guide\blm.js" />
+    <Content Include="pages\5.2\guide\bis-guide\brd.js" />
+    <Content Include="pages\5.2\guide\bis-guide\dnc.js" />
+    <Content Include="pages\5.2\guide\bis-guide\drg.js" />
+    <Content Include="pages\5.2\guide\bis-guide\drk.js" />
+    <Content Include="pages\5.2\guide\bis-guide\gnb.js" />
+    <Content Include="pages\5.2\guide\bis-guide\mch.js" />
+    <Content Include="pages\5.2\guide\bis-guide\mnk.js" />
+    <Content Include="pages\5.2\guide\bis-guide\nin.js" />
     <Content Include="pages\5.2\guide\bis-guide\pld.js" />
-    <Content Include="pages\5.2\guide\bis-guide\rdm.js">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="pages\5.2\guide\bis-guide\sam.js">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="pages\5.2\guide\bis-guide\sch.js">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="pages\5.2\guide\bis-guide\smn.js">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="pages\5.2\guide\bis-guide\war.js">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="pages\5.2\guide\bis-guide\whm.js">
-      <SubType>Code</SubType>
-    </Content>
+    <Content Include="pages\5.2\guide\bis-guide\rdm.js" />
+    <Content Include="pages\5.2\guide\bis-guide\sam.js" />
+    <Content Include="pages\5.2\guide\bis-guide\sch.js" />
+    <Content Include="pages\5.2\guide\bis-guide\smn.js" />
+    <Content Include="pages\5.2\guide\bis-guide\war.js" />
+    <Content Include="pages\5.2\guide\bis-guide\whm.js" />
     <Content Include="pages\5.2\guide\craft-guide.js" />
     <Content Include="pages\5.3\guide\bis-guide.js" />
     <Content Include="pages\5.3\guide\craft-guide.js" />
-    <Content Include="pages\guide\job-guide.js" />
-    <Content Include="pages\guide\job-guide\ast\5-1-bis.js" />
-    <Content Include="pages\guide\job-guide\blm\5-1-bis.js" />
-    <Content Include="pages\guide\job-guide\brd\5-1-bis.js" />
-    <Content Include="pages\guide\job-guide\dnc\5-1-bis.js" />
-    <Content Include="pages\guide\job-guide\drg\5-1-bis.js" />
-    <Content Include="pages\guide\job-guide\drk\5-1-bis.js" />
-    <Content Include="pages\guide\job-guide\gnb\5-1-bis.js" />
-    <Content Include="pages\guide\job-guide\mch\5-1-bis.js" />
-    <Content Include="pages\guide\job-guide\mnk\5-1-bis.js" />
-    <Content Include="pages\guide\job-guide\nin\5-1-bis.js" />
-    <Content Include="pages\guide\job-guide\pld\5-1-bis.js" />
-    <Content Include="pages\guide\job-guide\rdm\5-1-bis.js" />
-    <Content Include="pages\guide\job-guide\sam\5-1-bis.js" />
-    <Content Include="pages\guide\job-guide\sch\5-1-bis.js" />
-    <Content Include="pages\guide\job-guide\smn\5-1-bis.js" />
-    <Content Include="pages\guide\job-guide\war\5-1-bis.js" />
-    <Content Include="pages\guide\job-guide\whm\5-1-bis.js" />
     <Content Include="pages\index.js" />
     <Content Include="pages\_app.js" />
     <Content Include="pages\_document.js" />
-    <Content Include="public\192.png" />
-    <Content Include="public\512.png" />
-    <Content Include="public\header.png" />
-    <Content Include="public\icons\actions\basic-synthesis.png" />
-    <Content Include="public\icons\actions\basic-touch.png" />
-    <Content Include="public\icons\actions\byregots-blessing.png" />
-    <Content Include="public\icons\actions\careful-synthesis.png" />
-    <Content Include="public\icons\actions\delicate-synthesis.png" />
-    <Content Include="public\icons\actions\focused-synthesis.png" />
-    <Content Include="public\icons\actions\great-strides.png" />
-    <Content Include="public\icons\actions\ingenuity.png" />
-    <Content Include="public\icons\actions\innovation.png" />
-    <Content Include="public\icons\actions\manipulation.png" />
-    <Content Include="public\icons\actions\observe.png" />
-    <Content Include="public\icons\actions\preparatory-touch.png" />
-    <Content Include="public\icons\actions\prudent-touch.png" />
-    <Content Include="public\icons\actions\reflect.png" />
-    <Content Include="public\icons\actions\reuse.png" />
-    <Content Include="public\icons\actions\trained-eye.png" />
-    <Content Include="public\icons\actions\waste-not.png" />
-    <Content Include="public\icons\craft-guide.png" />
-    <Content Include="public\icons\fflogs.png" />
-    <Content Include="public\icons\items\armor-of-early-antiquity.png" />
-    <Content Include="public\icons\items\augmented-crystarium-belt-of-aiming.png" />
-    <Content Include="public\icons\items\augmented-crystarium-belt-of-casting.png" />
-    <Content Include="public\icons\items\augmented-crystarium-belt-of-healing.png" />
-    <Content Include="public\icons\items\augmented-crystarium-belt-of-maiming.png" />
-    <Content Include="public\icons\items\augmented-crystarium-belt-of-scouting.png" />
-    <Content Include="public\icons\items\augmented-crystarium-belt-of-striking.png" />
-    <Content Include="public\icons\items\augmented-crystarium-boots-of-casting.png" />
-    <Content Include="public\icons\items\augmented-crystarium-breeches-of-aiming.png" />
-    <Content Include="public\icons\items\augmented-crystarium-choker-of-casting.png" />
-    <Content Include="public\icons\items\augmented-crystarium-choker-of-healing.png" />
-    <Content Include="public\icons\items\augmented-crystarium-choker-of-slaying.png" />
-    <Content Include="public\icons\items\augmented-crystarium-circlet-of-fending.png" />
-    <Content Include="public\icons\items\augmented-crystarium-circlet-of-maiming.png" />
-    <Content Include="public\icons\items\augmented-crystarium-coat-of-striking.png" />
-    <Content Include="public\icons\items\augmented-crystarium-codex.png" />
-    <Content Include="public\icons\items\augmented-crystarium-earrings-of-aiming.png" />
-    <Content Include="public\icons\items\augmented-crystarium-earrings-of-casting.png" />
-    <Content Include="public\icons\items\augmented-crystarium-earrings-of-fending.png" />
-    <Content Include="public\icons\items\augmented-crystarium-gauntlets-of-maiming.png" />
-    <Content Include="public\icons\items\augmented-crystarium-gloves-of-aiming.png" />
-    <Content Include="public\icons\items\augmented-crystarium-gloves-of-scouting.png" />
-    <Content Include="public\icons\items\augmented-crystarium-halfmask-of-casting.png" />
-    <Content Include="public\icons\items\augmented-crystarium-hose-of-casting.png" />
-    <Content Include="public\icons\items\augmented-crystarium-pantaloons-of-healing.png" />
-    <Content Include="public\icons\items\augmented-crystarium-pantaloons-of-scouting.png" />
-    <Content Include="public\icons\items\augmented-crystarium-pantaloons-of-striking.png" />
-    <Content Include="public\icons\items\augmented-crystarium-ring-of-aiming.png" />
-    <Content Include="public\icons\items\augmented-crystarium-ring-of-casting.png" />
-    <Content Include="public\icons\items\augmented-crystarium-ring-of-fending.png" />
-    <Content Include="public\icons\items\augmented-crystarium-ring-of-healing.png" />
-    <Content Include="public\icons\items\augmented-crystarium-ring-of-slaying.png" />
-    <Content Include="public\icons\items\augmented-crystarium-robe-of-casting.png" />
-    <Content Include="public\icons\items\augmented-crystarium-robe-of-healing.png" />
-    <Content Include="public\icons\items\augmented-crystarium-shoes-of-healing.png" />
-    <Content Include="public\icons\items\augmented-crystarium-shoes-of-striking.png" />
-    <Content Include="public\icons\items\augmented-crystarium-shortgloves-of-casting.png" />
-    <Content Include="public\icons\items\augmented-crystarium-tabard-of-fending.png" />
-    <Content Include="public\icons\items\augmented-crystarium-thighboots-of-fending.png" />
-    <Content Include="public\icons\items\augmented-crystarium-thighboots-of-maiming.png" />
-    <Content Include="public\icons\items\augmented-crystarium-turban-of-healing.png" />
-    <Content Include="public\icons\items\augmented-crystarium-turban-of-striking.png" />
-    <Content Include="public\icons\items\augmented-crystarium-wristband-of-aiming.png" />
-    <Content Include="public\icons\items\augmented-crystarium-wristband-of-casting.png" />
-    <Content Include="public\icons\items\augmented-crystarium-wristband-of-fending.png" />
-    <Content Include="public\icons\items\augmented-crystarium-wristband-of-healing.png" />
-    <Content Include="public\icons\items\augmented-deepshadow-armguards-of-casting.png" />
-    <Content Include="public\icons\items\augmented-deepshadow-armguards-of-healing.png" />
-    <Content Include="public\icons\items\augmented-deepshadow-bottoms-of-striking.png" />
-    <Content Include="public\icons\items\augmented-deepshadow-bracelet-of-aiming.png" />
-    <Content Include="public\icons\items\augmented-deepshadow-bracelet-of-casting.png" />
-    <Content Include="public\icons\items\augmented-deepshadow-bracelet-of-fending.png" />
-    <Content Include="public\icons\items\augmented-deepshadow-bracelet-of-healing.png" />
-    <Content Include="public\icons\items\augmented-deepshadow-bracelet-of-slaying.png" />
-    <Content Include="public\icons\items\augmented-deepshadow-breeches-of-aiming.png" />
-    <Content Include="public\icons\items\augmented-deepshadow-breeches-of-casting.png" />
-    <Content Include="public\icons\items\augmented-deepshadow-breeches-of-fending.png" />
-    <Content Include="public\icons\items\augmented-deepshadow-chapeau-of-aiming.png" />
-    <Content Include="public\icons\items\augmented-deepshadow-cuirass-of-fending.png" />
-    <Content Include="public\icons\items\augmented-deepshadow-cuirass-of-maiming.png" />
-    <Content Include="public\icons\items\augmented-deepshadow-earring-of-aiming.png" />
-    <Content Include="public\icons\items\augmented-deepshadow-earring-of-casting.png" />
-    <Content Include="public\icons\items\augmented-deepshadow-earring-of-fending.png" />
-    <Content Include="public\icons\items\augmented-deepshadow-earring-of-healing.png" />
-    <Content Include="public\icons\items\augmented-deepshadow-earring-of-slaying.png" />
-    <Content Include="public\icons\items\augmented-deepshadow-gauntlets-of-fending.png" />
-    <Content Include="public\icons\items\augmented-deepshadow-gauntlets-of-maiming.png" />
-    <Content Include="public\icons\items\augmented-deepshadow-gloves-of-aiming.png" />
-    <Content Include="public\icons\items\augmented-deepshadow-gloves-of-scouting.png" />
-    <Content Include="public\icons\items\augmented-deepshadow-gloves-of-striking.png" />
-    <Content Include="public\icons\items\augmented-deepshadow-greaves-of-casting.png" />
-    <Content Include="public\icons\items\augmented-deepshadow-greaves-of-healing.png" />
-    <Content Include="public\icons\items\augmented-deepshadow-greaves-of-scouting.png" />
-    <Content Include="public\icons\items\augmented-deepshadow-greaves-of-striking.png" />
-    <Content Include="public\icons\items\augmented-deepshadow-halfmask-of-striking.png" />
-    <Content Include="public\icons\items\augmented-deepshadow-helm-of-fending.png" />
-    <Content Include="public\icons\items\augmented-deepshadow-helm-of-maiming.png" />
-    <Content Include="public\icons\items\augmented-deepshadow-hood-of-casting.png" />
-    <Content Include="public\icons\items\augmented-deepshadow-hood-of-healing.png" />
-    <Content Include="public\icons\items\augmented-deepshadow-mask-of-scouting.png" />
-    <Content Include="public\icons\items\augmented-deepshadow-necklace-of-aiming.png" />
-    <Content Include="public\icons\items\augmented-deepshadow-necklace-of-casting.png" />
-    <Content Include="public\icons\items\augmented-deepshadow-necklace-of-fending.png" />
-    <Content Include="public\icons\items\augmented-deepshadow-necklace-of-healing.png" />
-    <Content Include="public\icons\items\augmented-deepshadow-ring-of-aiming.png" />
-    <Content Include="public\icons\items\augmented-deepshadow-ring-of-casting.png" />
-    <Content Include="public\icons\items\augmented-deepshadow-ring-of-fending.png" />
-    <Content Include="public\icons\items\augmented-deepshadow-ring-of-healing.png" />
-    <Content Include="public\icons\items\augmented-deepshadow-ring-of-slaying.png" />
-    <Content Include="public\icons\items\augmented-deepshadow-scale-mail-of-casting.png" />
-    <Content Include="public\icons\items\augmented-deepshadow-scale-mail-of-healing.png" />
-    <Content Include="public\icons\items\augmented-deepshadow-scale-mail-of-scouting.png" />
-    <Content Include="public\icons\items\augmented-deepshadow-scale-mail-of-striking.png" />
-    <Content Include="public\icons\items\augmented-deepshadow-signum.png" />
-    <Content Include="public\icons\items\augmented-deepshadow-sollerets-of-fending.png" />
-    <Content Include="public\icons\items\augmented-deepshadow-sollerets-of-maiming.png" />
-    <Content Include="public\icons\items\augmented-deepshadow-tassets-of-aiming.png" />
-    <Content Include="public\icons\items\augmented-deepshadow-tassets-of-casting.png" />
-    <Content Include="public\icons\items\augmented-deepshadow-tassets-of-fending.png" />
-    <Content Include="public\icons\items\augmented-deepshadow-tassets-of-scouting.png" />
-    <Content Include="public\icons\items\augmented-deepshadow-tassets-of-striking.png" />
-    <Content Include="public\icons\items\bangle-of-early-antiquity.png" />
-    <Content Include="public\icons\items\blade-of-early-antiquity.png" />
-    <Content Include="public\icons\items\blood-bouillabaisse.png" />
-    <Content Include="public\icons\items\book-of-grace.png" />
-    <Content Include="public\icons\items\chausses-of-early-antiquity.png" />
-    <Content Include="public\icons\items\craftsmans-command-materia-iv.png" />
-    <Content Include="public\icons\items\craftsmans-command-materia-vi.png" />
-    <Content Include="public\icons\items\craftsmans-command-materia-vii.png" />
-    <Content Include="public\icons\items\craftsmans-command-materia-viii.png" />
-    <Content Include="public\icons\items\craftsmans-competence-materia-i.png" />
-    <Content Include="public\icons\items\craftsmans-competence-materia-ii.png" />
-    <Content Include="public\icons\items\craftsmans-competence-materia-iv.png" />
-    <Content Include="public\icons\items\craftsmans-competence-materia-vi.png" />
-    <Content Include="public\icons\items\craftsmans-competence-materia-vii.png" />
-    <Content Include="public\icons\items\craftsmans-competence-materia-viii.png" />
-    <Content Include="public\icons\items\craftsmans-cunning-materia-i.png" />
-    <Content Include="public\icons\items\craftsmans-cunning-materia-ii.png" />
-    <Content Include="public\icons\items\craftsmans-cunning-materia-iii.png" />
-    <Content Include="public\icons\items\craftsmans-cunning-materia-iv.png" />
-    <Content Include="public\icons\items\craftsmans-cunning-materia-v.png" />
-    <Content Include="public\icons\items\craftsmans-cunning-materia-vi.png" />
-    <Content Include="public\icons\items\craftsmans-cunning-materia-viii.png" />
-    <Content Include="public\icons\items\creamy-salmon-pasta.png" />
-    <Content Include="public\icons\items\crystarium-ring-of-fending.png" />
-    <Content Include="public\icons\items\deepshadow-ring-of-aiming.png" />
-    <Content Include="public\icons\items\deepshadow-ring-of-healing.png" />
-    <Content Include="public\icons\items\dimythrite-sand.png" />
-    <Content Include="public\icons\items\dwarven-cotton-beret.png" />
-    <Content Include="public\icons\items\dwarven-cotton-boll.png" />
-    <Content Include="public\icons\items\dwarven-cotton-jacket.png" />
-    <Content Include="public\icons\items\dwarven-cotton-thread.png" />
-    <Content Include="public\icons\items\dwarven-cotton-trousers.png" />
-    <Content Include="public\icons\items\dwarven-cotton.png" />
-    <Content Include="public\icons\items\dwarven-mythril-bracelets.png" />
-    <Content Include="public\icons\items\dwarven-mythril-choker.png" />
-    <Content Include="public\icons\items\dwarven-mythril-claw-hammer.png" />
-    <Content Include="public\icons\items\dwarven-mythril-ear-cuffs.png" />
-    <Content Include="public\icons\items\dwarven-mythril-nugget.png" />
-    <Content Include="public\icons\items\dwarven-mythril-ring.png" />
-    <Content Include="public\icons\items\dwarven-mythril-saw.png" />
-    <Content Include="public\icons\items\earth-crystal.png" />
-    <Content Include="public\icons\items\eden-minor.png" />
-    <Content Include="public\icons\items\edencall-mail-of-fending.png" />
-    <Content Include="public\icons\items\edenchoir-armlets-of-casting.png" />
-    <Content Include="public\icons\items\edenchoir-armlets-of-healing.png" />
-    <Content Include="public\icons\items\edenchoir-arquebus.png" />
-    <Content Include="public\icons\items\edenchoir-bastard-sword.png" />
-    <Content Include="public\icons\items\edenchoir-battleaxe.png" />
-    <Content Include="public\icons\items\edenchoir-boots-of-casting.png" />
-    <Content Include="public\icons\items\edenchoir-boots-of-healing.png" />
-    <Content Include="public\icons\items\edenchoir-breeches-of-casting.png" />
-    <Content Include="public\icons\items\edenchoir-breeches-of-healing.png" />
-    <Content Include="public\icons\items\edenchoir-cane.png" />
-    <Content Include="public\icons\items\edenchoir-chakrams.png" />
-    <Content Include="public\icons\items\edenchoir-chapeau-of-aiming.png" />
-    <Content Include="public\icons\items\edenchoir-choker-of-aiming.png" />
-    <Content Include="public\icons\items\edenchoir-choker-of-casting.png" />
-    <Content Include="public\icons\items\edenchoir-choker-of-fending.png" />
-    <Content Include="public\icons\items\edenchoir-codex.png" />
-    <Content Include="public\icons\items\edenchoir-cuisses-of-fending.png" />
-    <Content Include="public\icons\items\edenchoir-cuisses-of-maiming.png" />
-    <Content Include="public\icons\items\edenchoir-daggers.png" />
-    <Content Include="public\icons\items\edenchoir-earrings-of-aiming.png" />
-    <Content Include="public\icons\items\edenchoir-earrings-of-casting.png" />
-    <Content Include="public\icons\items\edenchoir-earrings-of-healing.png" />
-    <Content Include="public\icons\items\edenchoir-earrings-of-slaying.png" />
-    <Content Include="public\icons\items\edenchoir-eyepatch-of-scouting.png" />
-    <Content Include="public\icons\items\edenchoir-fork.png" />
-    <Content Include="public\icons\items\edenchoir-gambison-of-aiming.png" />
-    <Content Include="public\icons\items\edenchoir-gambison-of-scouting.png" />
-    <Content Include="public\icons\items\edenchoir-gambison-of-striking.png" />
-    <Content Include="public\icons\items\edenchoir-gauntlets-of-fending.png" />
-    <Content Include="public\icons\items\edenchoir-gauntlets-of-maiming.png" />
-    <Content Include="public\icons\items\edenchoir-gauntlets-of-striking.png" />
-    <Content Include="public\icons\items\edenchoir-greatsword.png" />
-    <Content Include="public\icons\items\edenchoir-gunblade.png" />
-    <Content Include="public\icons\items\edenchoir-harp-bow.png" />
-    <Content Include="public\icons\items\edenchoir-hat-of-casting.png" />
-    <Content Include="public\icons\items\edenchoir-helm-of-fending.png" />
-    <Content Include="public\icons\items\edenchoir-index.png" />
-    <Content Include="public\icons\items\edenchoir-jamadhars.png" />
-    <Content Include="public\icons\items\edenchoir-mail-of-maiming.png" />
-    <Content Include="public\icons\items\edenchoir-rapier.png" />
-    <Content Include="public\icons\items\edenchoir-ring-of-aiming.png" />
-    <Content Include="public\icons\items\edenchoir-ring-of-casting.png" />
-    <Content Include="public\icons\items\edenchoir-ring-of-fending.png" />
-    <Content Include="public\icons\items\edenchoir-ring-of-healing.png" />
-    <Content Include="public\icons\items\edenchoir-ring-of-slaying.png" />
-    <Content Include="public\icons\items\edenchoir-rod.png" />
-    <Content Include="public\icons\items\edenchoir-samurai-blade.png" />
-    <Content Include="public\icons\items\edenchoir-scutum.png" />
-    <Content Include="public\icons\items\edenchoir-shoes-of-aiming.png" />
-    <Content Include="public\icons\items\edenchoir-sollerets-of-maiming.png" />
-    <Content Include="public\icons\items\edenchoir-sollerets-of-scouting.png" />
-    <Content Include="public\icons\items\edenchoir-sollerets-of-striking.png" />
-    <Content Include="public\icons\items\edenchoir-tassets-of-casting.png" />
-    <Content Include="public\icons\items\edenchoir-tassets-of-fending.png" />
-    <Content Include="public\icons\items\edenchoir-torquetum.png" />
-    <Content Include="public\icons\items\edenchoir-trousers-of-striking.png" />
-    <Content Include="public\icons\items\edenchoir-tunic-of-casting.png" />
-    <Content Include="public\icons\items\edenchoir-wings-of-healing.png" />
-    <Content Include="public\icons\items\edenchoir-wristband-of-casting.png" />
-    <Content Include="public\icons\items\edenchoir-wristband-of-healing.png" />
-    <Content Include="public\icons\items\edenchoir-wristband-of-slaying.png" />
-    <Content Include="public\icons\items\edengrace-armet-of-fending.png" />
-    <Content Include="public\icons\items\edengrace-armlets-of-healing.png" />
-    <Content Include="public\icons\items\edengrace-armlets-of-striking.png" />
-    <Content Include="public\icons\items\edengrace-bastard-sword.png" />
-    <Content Include="public\icons\items\edengrace-battleaxe.png" />
-    <Content Include="public\icons\items\edengrace-blade.png" />
-    <Content Include="public\icons\items\edengrace-bracelet-of-aiming.png" />
-    <Content Include="public\icons\items\edengrace-bracelet-of-casting.png" />
-    <Content Include="public\icons\items\edengrace-bracelet-of-fending.png" />
-    <Content Include="public\icons\items\edengrace-bracelet-of-healing.png" />
-    <Content Include="public\icons\items\edengrace-breeches-of-casting.png" />
-    <Content Include="public\icons\items\edengrace-breeches-of-scouting.png" />
-    <Content Include="public\icons\items\edengrace-cane.png" />
-    <Content Include="public\icons\items\edengrace-choker-of-aiming.png" />
-    <Content Include="public\icons\items\edengrace-choker-of-casting.png" />
-    <Content Include="public\icons\items\edengrace-choker-of-fending.png" />
-    <Content Include="public\icons\items\edengrace-choker-of-healing.png" />
-    <Content Include="public\icons\items\edengrace-choker-of-slaying.png" />
-    <Content Include="public\icons\items\edengrace-circlet-of-casting.png" />
-    <Content Include="public\icons\items\edengrace-earring-of-aiming.png" />
-    <Content Include="public\icons\items\edengrace-earring-of-casting.png" />
-    <Content Include="public\icons\items\edengrace-earring-of-fending.png" />
-    <Content Include="public\icons\items\edengrace-earring-of-slaying.png" />
-    <Content Include="public\icons\items\edengrace-gauntlets-of-aiming.png" />
-    <Content Include="public\icons\items\edengrace-gauntlets-of-fending.png" />
-    <Content Include="public\icons\items\edengrace-gauntlets-of-maiming.png" />
-    <Content Include="public\icons\items\edengrace-greatsword.png" />
-    <Content Include="public\icons\items\edengrace-greaves-of-aiming.png" />
-    <Content Include="public\icons\items\edengrace-greaves-of-fending.png" />
-    <Content Include="public\icons\items\edengrace-halfgloves-of-casting.png" />
-    <Content Include="public\icons\items\edengrace-harp-bow.png" />
-    <Content Include="public\icons\items\edengrace-helm-of-aiming.png" />
-    <Content Include="public\icons\items\edengrace-jacket-of-casting.png" />
-    <Content Include="public\icons\items\edengrace-jacket-of-scouting.png" />
-    <Content Include="public\icons\items\edengrace-knives.png" />
-    <Content Include="public\icons\items\edengrace-knuckles.png" />
-    <Content Include="public\icons\items\edengrace-mail-of-aiming.png" />
-    <Content Include="public\icons\items\edengrace-mail-of-fending.png" />
-    <Content Include="public\icons\items\edengrace-mail-of-maiming.png" />
-    <Content Include="public\icons\items\edengrace-manatrigger.png" />
-    <Content Include="public\icons\items\edengrace-pantaloons-of-healing.png" />
-    <Content Include="public\icons\items\edengrace-pantaloons-of-striking.png" />
-    <Content Include="public\icons\items\edengrace-planisphere.png" />
-    <Content Include="public\icons\items\edengrace-rapier.png" />
-    <Content Include="public\icons\items\edengrace-revolver.png" />
-    <Content Include="public\icons\items\edengrace-ring-of-aiming.png" />
-    <Content Include="public\icons\items\edengrace-ring-of-casting.png" />
-    <Content Include="public\icons\items\edengrace-ring-of-fending.png" />
-    <Content Include="public\icons\items\edengrace-ring-of-healing.png" />
-    <Content Include="public\icons\items\edengrace-ring-of-slaying.png" />
-    <Content Include="public\icons\items\edengrace-robe-of-striking.png" />
-    <Content Include="public\icons\items\edengrace-rod.png" />
-    <Content Include="public\icons\items\edengrace-sandals-of-healing.png" />
-    <Content Include="public\icons\items\edengrace-sandals-of-striking.png" />
-    <Content Include="public\icons\items\edengrace-shield.png" />
-    <Content Include="public\icons\items\edengrace-spear.png" />
-    <Content Include="public\icons\items\edengrace-tassets-of-casting.png" />
-    <Content Include="public\icons\items\edengrace-tassets-of-fending.png" />
-    <Content Include="public\icons\items\edengrace-tassets-of-healing.png" />
-    <Content Include="public\icons\items\edengrace-tassets-of-maiming.png" />
-    <Content Include="public\icons\items\edengrace-tassets-of-striking.png" />
-    <Content Include="public\icons\items\edengrace-tathlums.png" />
-    <Content Include="public\icons\items\edengrace-temple-chain-of-healing.png" />
-    <Content Include="public\icons\items\edengrace-thighboots-of-casting.png" />
-    <Content Include="public\icons\items\edengrace-thighboots-of-scouting.png" />
-    <Content Include="public\icons\items\edengrace-trousers-of-fending.png" />
-    <Content Include="public\icons\items\edengrace-trousers-of-maiming.png" />
-    <Content Include="public\icons\items\effervescent-water.png" />
-    <Content Include="public\icons\items\facet-boots-of-crafting.png" />
-    <Content Include="public\icons\items\facet-claw-hammer.png" />
-    <Content Include="public\icons\items\facet-coat-of-crafting.png" />
-    <Content Include="public\icons\items\facet-gloves-of-crafting.png" />
-    <Content Include="public\icons\items\facet-hat-of-crafting.png" />
-    <Content Include="public\icons\items\facet-saw.png" />
-    <Content Include="public\icons\items\facet-trousers-of-crafting.png" />
-    <Content Include="public\icons\items\fire-crystal.png" />
-    <Content Include="public\icons\items\gauntlets-of-early-antiquity.png" />
-    <Content Include="public\icons\items\gold-ore.png" />
-    <Content Include="public\icons\items\greaves-of-early-antiquity.png" />
-    <Content Include="public\icons\items\herring-pie.png" />
-    <Content Include="public\icons\items\hq\blood-bouillabaisse.png" />
-    <Content Include="public\icons\items\hq\dwarven-cotton-beret.png" />
-    <Content Include="public\icons\items\hq\dwarven-cotton-jacket.png" />
-    <Content Include="public\icons\items\hq\dwarven-cotton-trousers.png" />
-    <Content Include="public\icons\items\hq\dwarven-cotton.png" />
-    <Content Include="public\icons\items\hq\dwarven-mythril-bracelets.png" />
-    <Content Include="public\icons\items\hq\dwarven-mythril-choker.png" />
-    <Content Include="public\icons\items\hq\dwarven-mythril-claw-hammer.png" />
-    <Content Include="public\icons\items\hq\dwarven-mythril-ear-cuffs.png" />
-    <Content Include="public\icons\items\hq\dwarven-mythril-nugget.png" />
-    <Content Include="public\icons\items\hq\dwarven-mythril-ring.png" />
-    <Content Include="public\icons\items\hq\dwarven-mythril-saw.png" />
-    <Content Include="public\icons\items\hq\facet-boots-of-crafting.png" />
-    <Content Include="public\icons\items\hq\facet-claw-hammer.png" />
-    <Content Include="public\icons\items\hq\facet-coat-of-crafting.png" />
-    <Content Include="public\icons\items\hq\facet-gloves-of-crafting.png" />
-    <Content Include="public\icons\items\hq\facet-hat-of-crafting.png" />
-    <Content Include="public\icons\items\hq\facet-saw.png" />
-    <Content Include="public\icons\items\hq\facet-trousers-of-crafting.png" />
-    <Content Include="public\icons\items\hq\herring-pie.png" />
-    <Content Include="public\icons\items\hq\iridescent-silk-thread.png" />
-    <Content Include="public\icons\items\hq\neo-ishgardian-bottoms-of-fending.png" />
-    <Content Include="public\icons\items\hq\neo-ishgardian-cap-of-fending.png" />
-    <Content Include="public\icons\items\hq\neo-ishgardian-choker-of-fending.png" />
-    <Content Include="public\icons\items\hq\neo-ishgardian-earring-of-fending.png" />
-    <Content Include="public\icons\items\hq\neo-ishgardian-gauntlets-of-fending.png" />
-    <Content Include="public\icons\items\hq\neo-ishgardian-plate-belt-of-fending.png" />
-    <Content Include="public\icons\items\hq\neo-ishgardian-ring-of-fending.png" />
-    <Content Include="public\icons\items\hq\neo-ishgardian-shield.png" />
-    <Content Include="public\icons\items\hq\neo-ishgardian-sollerets-of-fending.png" />
-    <Content Include="public\icons\items\hq\neo-ishgardian-sword.png" />
-    <Content Include="public\icons\items\hq\neo-ishgardian-top-of-fending.png" />
-    <Content Include="public\icons\items\hq\neo-ishgardian-wristbands-of-fending.png" />
-    <Content Include="public\icons\items\hq\pickled-herring.png" />
-    <Content Include="public\icons\items\hq\sausage-and-sauerkraut.png" />
-    <Content Include="public\icons\items\hq\sea-swallow-leather.png" />
-    <Content Include="public\icons\items\hq\stuffed-highland-cabbage.png" />
-    <Content Include="public\icons\items\hq\swallowskin-fingerless-gloves.png" />
-    <Content Include="public\icons\items\hq\swallowskin-shoes.png" />
-    <Content Include="public\icons\items\hq\swallowskin-tool-belt.png" />
-    <Content Include="public\icons\items\idealized-bale-burgeonet.png" />
-    <Content Include="public\icons\items\idealized-bodyguards-blinder.png" />
-    <Content Include="public\icons\items\idealized-chevaliers-temple-chain.png" />
-    <Content Include="public\icons\items\iridescent-cocoon.png" />
-    <Content Include="public\icons\items\iridescent-silk-thread.png" />
-    <Content Include="public\icons\items\kukuru-rusk.png" />
-    <Content Include="public\icons\items\lemon-curd-sachertorte.png" />
-    <Content Include="public\icons\items\lightning-crystal.png" />
-    <Content Include="public\icons\items\mythrite-sand.png" />
-    <Content Include="public\icons\items\neo-ishgardian-bottoms-of-fending.png" />
-    <Content Include="public\icons\items\neo-ishgardian-cap-of-fending.png" />
-    <Content Include="public\icons\items\neo-ishgardian-choker-of-fending.png" />
-    <Content Include="public\icons\items\neo-ishgardian-earring-of-fending.png" />
-    <Content Include="public\icons\items\neo-ishgardian-gauntlets-of-fending.png" />
-    <Content Include="public\icons\items\neo-ishgardian-plate-belt-of-fending.png" />
-    <Content Include="public\icons\items\neo-ishgardian-ring-of-fending.png" />
-    <Content Include="public\icons\items\neo-ishgardian-shield.png" />
-    <Content Include="public\icons\items\neo-ishgardian-sollerets-of-fending.png" />
-    <Content Include="public\icons\items\neo-ishgardian-sword.png" />
-    <Content Include="public\icons\items\neo-ishgardian-top-of-fending.png" />
-    <Content Include="public\icons\items\neo-ishgardian-wristbands-of-fending.png" />
-    <Content Include="public\icons\items\orchestrion-roll.png" />
-    <Content Include="public\icons\items\pickled-herring.png" />
-    <Content Include="public\icons\items\pixieberry-tea.png" />
-    <Content Include="public\icons\items\popoto-salad.png" />
-    <Content Include="public\icons\items\purple-viii.png" />
-    <Content Include="public\icons\items\rare-roast-beef.png" />
-    <Content Include="public\icons\items\red-vii.png" />
-    <Content Include="public\icons\items\red-viii.png" />
-    <Content Include="public\icons\items\robe-lettuce-salad.png" />
-    <Content Include="public\icons\items\ruby-broadsword.png" />
-    <Content Include="public\icons\items\ruby-scutum.png" />
-    <Content Include="public\icons\items\sausage-and-sauerkraut.png" />
-    <Content Include="public\icons\items\sea-swallow-leather.png" />
-    <Content Include="public\icons\items\stuffed-highland-cabbage.png" />
-    <Content Include="public\icons\items\swallowskin-fingerless-gloves.png" />
-    <Content Include="public\icons\items\swallowskin-shoes.png" />
-    <Content Include="public\icons\items\swallowskin-tool-belt.png" />
-    <Content Include="public\icons\items\water-shard.png" />
-    <Content Include="public\icons\items\wind-crystal.png" />
-    <Content Include="public\icons\items\word-of-grace.png" />
-    <Content Include="public\icons\items\yellow-viii.png" />
-    <Content Include="public\icons\items\zelkova-bracelets.png" />
-    <Content Include="public\icons\items\zelkova-earrings.png" />
-    <Content Include="public\icons\items\zelkova-necklace.png" />
-    <Content Include="public\icons\items\zelkova-ring.png" />
-    <Content Include="public\icons\job-crystals\ast.png" />
-    <Content Include="public\icons\job-crystals\blm.png" />
-    <Content Include="public\icons\job-crystals\brd.png" />
-    <Content Include="public\icons\job-crystals\dnc.png" />
-    <Content Include="public\icons\job-crystals\drg.png" />
-    <Content Include="public\icons\job-crystals\drk.png" />
-    <Content Include="public\icons\job-crystals\gnb.png" />
-    <Content Include="public\icons\job-crystals\mch.png" />
-    <Content Include="public\icons\job-crystals\mnk.png" />
-    <Content Include="public\icons\job-crystals\nin.png" />
-    <Content Include="public\icons\job-crystals\pld.png" />
-    <Content Include="public\icons\job-crystals\rdm.png" />
-    <Content Include="public\icons\job-crystals\sam.png" />
-    <Content Include="public\icons\job-crystals\sch.png" />
-    <Content Include="public\icons\job-crystals\smn.png" />
-    <Content Include="public\icons\job-crystals\war.png" />
-    <Content Include="public\icons\job-crystals\whm.png" />
-    <Content Include="public\icons\job-guide-inv.png" />
-    <Content Include="public\icons\job-guide.png" />
-    <Content Include="public\icons\jobs\ast.png" />
-    <Content Include="public\icons\jobs\blm.png" />
-    <Content Include="public\icons\jobs\brd.png" />
-    <Content Include="public\icons\jobs\dnc.png" />
-    <Content Include="public\icons\jobs\dps.png" />
-    <Content Include="public\icons\jobs\drg.png" />
-    <Content Include="public\icons\jobs\drk.png" />
-    <Content Include="public\icons\jobs\gnb.png" />
-    <Content Include="public\icons\jobs\healer.png" />
-    <Content Include="public\icons\jobs\mch.png" />
-    <Content Include="public\icons\jobs\mnk.png" />
-    <Content Include="public\icons\jobs\nin.png" />
-    <Content Include="public\icons\jobs\pld.png" />
-    <Content Include="public\icons\jobs\rdm.png" />
-    <Content Include="public\icons\jobs\sam.png" />
-    <Content Include="public\icons\jobs\sch.png" />
-    <Content Include="public\icons\jobs\smn.png" />
-    <Content Include="public\icons\jobs\tank.png" />
-    <Content Include="public\icons\jobs\war.png" />
-    <Content Include="public\icons\jobs\whm.png" />
-    <Content Include="public\icons\materia-slots\blue1.png" />
-    <Content Include="public\icons\materia-slots\blue2.png" />
-    <Content Include="public\icons\materia-slots\blue3.png" />
-    <Content Include="public\icons\materia-slots\blue4.png" />
-    <Content Include="public\icons\materia-slots\blue5.png" />
-    <Content Include="public\icons\materia-slots\blue6.png" />
-    <Content Include="public\icons\materia-slots\blue7.png" />
-    <Content Include="public\icons\materia-slots\blue8.png" />
-    <Content Include="public\icons\materia-slots\empty.png" />
-    <Content Include="public\icons\materia-slots\red1.png" />
-    <Content Include="public\icons\materia-slots\red2.png" />
-    <Content Include="public\icons\materia-slots\red3.png" />
-    <Content Include="public\icons\materia-slots\red4.png" />
-    <Content Include="public\icons\materia-slots\red5.png" />
-    <Content Include="public\icons\materia-slots\red6.png" />
-    <Content Include="public\icons\materia-slots\red7.png" />
-    <Content Include="public\icons\materia-slots\red8.png" />
-    <Content Include="public\manifest.json" />
-    <Content Include="public\patch-banners\shb\5.0.png" />
-    <Content Include="public\patch-banners\shb\5.1.png" />
-    <Content Include="public\patch-banners\shb\5.2.png" />
-    <Content Include="public\patch-banners\shb\5.3.png" />
     <Content Include="README.md" />
+    <Content Include="src\components\bis-guide\list-page-component.js">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="src\components\common\expansion-panels.js" />
     <Content Include="src\components\common\panel-divider.js" />
     <Content Include="src\components\craft-guide\craft-action-card.js" />
@@ -620,7 +111,6 @@
     <Content Include="src\components\layout\drawer-impl.js" />
     <Content Include="src\components\layout\drawer-list.js" />
     <Content Include="src\components\page-component.js" />
-    <Content Include="src\components\redirect-component.js" />
     <Content Include="src\theme.js" />
   </ItemGroup>
   <ItemGroup>
@@ -636,41 +126,13 @@
     <Folder Include="pages\5.2\guide\bis-guide\" />
     <Folder Include="pages\5.3\" />
     <Folder Include="pages\5.3\guide\" />
-    <Folder Include="pages\guide\" />
-    <Folder Include="pages\guide\job-guide\" />
-    <Folder Include="pages\guide\job-guide\ast\" />
-    <Folder Include="pages\guide\job-guide\blm\" />
-    <Folder Include="pages\guide\job-guide\brd\" />
-    <Folder Include="pages\guide\job-guide\dnc\" />
-    <Folder Include="pages\guide\job-guide\drg\" />
-    <Folder Include="pages\guide\job-guide\drk\" />
-    <Folder Include="pages\guide\job-guide\gnb\" />
-    <Folder Include="pages\guide\job-guide\mch\" />
-    <Folder Include="pages\guide\job-guide\mnk\" />
-    <Folder Include="pages\guide\job-guide\nin\" />
-    <Folder Include="pages\guide\job-guide\pld\" />
-    <Folder Include="pages\guide\job-guide\rdm\" />
-    <Folder Include="pages\guide\job-guide\sam\" />
-    <Folder Include="pages\guide\job-guide\sch\" />
-    <Folder Include="pages\guide\job-guide\smn\" />
-    <Folder Include="pages\guide\job-guide\war\" />
-    <Folder Include="pages\guide\job-guide\whm\" />
-    <Folder Include="public\" />
-    <Folder Include="public\icons\" />
-    <Folder Include="public\icons\actions\" />
-    <Folder Include="public\icons\items\" />
-    <Folder Include="public\icons\items\hq\" />
-    <Folder Include="public\icons\job-crystals\" />
-    <Folder Include="public\icons\jobs\" />
-    <Folder Include="public\icons\materia-slots\" />
-    <Folder Include="public\patch-banners\" />
-    <Folder Include="public\patch-banners\shb\" />
     <Folder Include="src\" />
     <Folder Include="src\components\" />
     <Folder Include="src\components\common\" />
     <Folder Include="src\components\craft-guide\" />
     <Folder Include="src\components\icons\" />
     <Folder Include="src\components\layout\" />
+    <Folder Include="src\components\bis-guide\" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
 </Project>

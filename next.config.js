@@ -1,6 +1,16 @@
 const withOffline = require("next-offline");
 
 module.exports = withOffline({
+    async rewrites() {
+        return [
+            {
+                source: '/guide/job-guide/:job/5-1-bis',
+                destination: '/5.1/guide/bis-guide/:job'
+            }, {
+                source: '/guide/job-guide',
+                destination: '/5.1/guide/bis-guide'
+            }]
+    },
   target: "serverless",
   transformManifest: (manifest) => ["/"].concat(manifest),
   generateInDevMode: true,
