@@ -48,5 +48,3 @@ const MainMenu = {
 };
 
 export default MainMenu;
-
-export const HrefArray = ["/guide/bis-guide", "/guide/craft-guide"];

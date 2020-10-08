@@ -1,14 +1,12 @@
-import Grid from "@material-ui/core/Grid";
+import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
-import Typography from "@material-ui/core/Typography";
+import Typography from '@material-ui/core/Typography';
 
-import Head from "next/head";
+import Head from 'next/head';
 
 import PropTypes from 'prop-types';
 
-import React from "react";
-
-import SiteInfo from "data/site-info";
+import SiteInfo from 'data/site-info';
 
 const useStyles = makeStyles(theme => ({
     copyrightTypography: {
@@ -16,9 +14,9 @@ const useStyles = makeStyles(theme => ({
     }
 }));
 
-const PageComponent = props => {
+const PageComponent =  props => {
     const classes = useStyles();
-
+    
     return (
         <React.Fragment>
             <Head>
@@ -41,21 +39,20 @@ const PageComponent = props => {
                 />
             </Head>
             <Grid container direction="column" spacing={5}>
-                <props.Component {...props.pageProps} />
+                {props.children}
                 <Grid item>
-            <Grid container justify="center">
-                <Typography
+                    <Grid container justify="center">
+                        <Typography
                             align="center"
                             className={classes.copyrightTypography}
-                    paragraph
-                    variant="caption"
-                >
-                    {SiteInfo.siteTitle} ⓒ {SiteInfo.copyrightYear} {SiteInfo.author}. All
-          Rights Reserved.
-        </Typography>
-                    </Grid>
+                            paragraph
+                            variant="caption"
+                        >
+                            {SiteInfo.siteTitle} ⓒ {SiteInfo.copyrightYear} {SiteInfo.author}. All Rights Reserved.
+                        </Typography>
                     </Grid>
                 </Grid>
+            </Grid>
         </React.Fragment>
     );
 };
@@ -63,9 +60,6 @@ const PageComponent = props => {
 PageComponent.propTypes = {
     title: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
-
-    Component: PropTypes.func.isRequired,
-    pageProps: PropTypes.object.isRequired
 };
 
 export default PageComponent;

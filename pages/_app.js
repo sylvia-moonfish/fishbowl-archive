@@ -8,9 +8,9 @@ import { useRouter } from "next/router";
 
 import PropTypes from 'prop-types';
 
-import React, { useEffect, useState } from "react";
+import React from "react";
 
-import { HrefArray } from "data/main-menu";
+import MainMenu from "data/main-menu";
 import SiteInfo from "data/site-info";
 import AppBarImpl from "src/components/layout/app-bar-impl";
 import DrawerImpl from "src/components/layout/drawer-impl";
@@ -31,7 +31,8 @@ const App =  props => {
     const classes = useStyles();
     const router = useRouter();
 
-    const [currentTheme, setCurrentTheme] = useState('dark');
+    const [currentTheme, setCurrentTheme] = React.useState('dark');
+
     const toggleTheme = () => {
         if (currentTheme === 'dark') {
             setCurrentTheme('light');
@@ -39,29 +40,22 @@ const App =  props => {
             setCurrentTheme('dark');
         }
     };
-    const [isMobileOpen, setMobileOpen] = useState(false);
+    const [isMobileOpen, setMobileOpen] = React.useState(false);
     const toggleMobileOpen = () => {
         setMobileOpen(!isMobileOpen);
     };
-    const [currentMenu, setCurrentMenu] = useState('');
+    const [currentMenu, setCurrentMenu] = React.useState('');
 
     const determineCurrentMenu = () => {
         if (router.pathname === "/") {
             setCurrentMenu('');
         } else {
-            let targetHref = "";
-
-            HrefArray.forEach((href) => {
-                if (router.pathname.indexOf(href) !== -1) {
-                    targetHref = href;
-                }
-            });
-
-            setCurrentMenu(targetHref);
+            const targetHref = MainMenu.menuGroups.map(menuGroup => menuGroup.menus.map(menu => menu.href)).flat().find(e => router.pathname.indexOf(e) !== -1);
+            setCurrentMenu(targetHref ? targetHref : '');
         }
     };
 
-    useEffect(() => {
+    React.useEffect(() => {
         if (document) {
             const jssStyles = document.querySelector('#jss-server-side');
 
@@ -75,15 +69,8 @@ const App =  props => {
         }
 
         if (typeof window !== "undefined") {
-            window.gtag("config", SiteInfo.gtmId, {
-                page_location: router.pathname,
-            });
-
             router.events.on("routeChangeComplete", (url) => {
                 determineCurrentMenu();
-                window.gtag("config", SiteInfo.gtmId, {
-                    page_location: url,
-                });
             });
         }
     });
@@ -113,24 +100,6 @@ const App =  props => {
                     href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap"
                     rel="stylesheet"
                 />
-
-                <script
-                    async
-                    src={
-                        "https://www.googletagmanager.com/gtag/js?id=" + SiteInfo.gtmId
-                    }
-                />
-                <script
-                    dangerouslySetInnerHTML={{
-                        __html: `
-window.dataLayer = window.dataLayer || [];
-function gtag() {
-dataLayer.push(arguments);
-}
-gtag('js', new Date());
-gtag('config', '${SiteInfo.gtmId}');`,
-                    }}
-                />
             </Head>
             <ThemeProvider
                 theme={currentTheme === "dark" ? DarkTheme : LightTheme}
@@ -138,7 +107,6 @@ gtag('config', '${SiteInfo.gtmId}');`,
                 <CssBaseline />
                 <main className={classes.root}>
                     <AppBarImpl
-                        isMobileOpen={isMobileOpen}
                         toggleMobileOpen={toggleMobileOpen}
                         toggleTheme={toggleTheme}
                     />
